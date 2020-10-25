@@ -16,7 +16,7 @@ export class IndexComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.pronomoj$ = this.esperantoService.getPronomoj();
+    this.pronomoj$ = this.esperantoService.getPronomojFromJSON();
   }
 
 }

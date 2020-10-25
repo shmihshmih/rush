@@ -1,3 +1,4 @@
+import { DictionaryService } from './../../core/services/esperanto/store/dictionary.service';
 import { EsperantoService } from './../../core/services/esperanto/esperanto.service';
 import { EsperantoRoutingModule } from './esperanto-routing.module';
 import { NgModule } from '@angular/core';
@@ -12,6 +13,6 @@ import { IndexComponent } from './components/index/index.component';
     CommonModule,
     EsperantoRoutingModule
   ],
-  providers: [EsperantoService]
+  providers: [DictionaryService, EsperantoService]
 })
 export class EsperantoModule { }
