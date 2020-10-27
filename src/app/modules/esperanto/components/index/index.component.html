@@ -1,4 +1,15 @@
-<p>index works!</p>
+<p>pronomoj</p>
 <div *ngFor="let word of pronomoj$ | async">
-  {{word.main}}
+  {{word.esperanto}}
+</div>
+
+<p>pronomoj</p>
+<div *ngFor="let word of verboj$ | async">
+  {{word.esperanto}}
+  /{{esperantoService.makePastVerb(word.esperanto)}}
+  /{{esperantoService.makePresentVerb(word.esperanto)}}
+  /{{esperantoService.makeFutureVerb(word.esperanto)}}
+  /{{esperantoService.makeAdverb(esperantoService.makeRoot('infinitiveVerb', word.esperanto)) }}
+  /{{esperantoService.makeAdjective(esperantoService.makeRoot('infinitiveVerb',word.esperanto))}}
+  /{{esperantoService.makeInfinitiveVerb(esperantoService.makeRoot('infinitiveVerb',word.esperanto))}}
 </div>

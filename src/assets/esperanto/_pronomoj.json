@@ -1,10 +1,10 @@
 [
-  {"main": "Mi",   "english": "I",    "russian": "Я"},
-  {"main": "Ni",   "english": "We",   "russian": "Мы"},
-  {"main": "Vi",   "english": "You",  "russian": "Ты"},
-  {"main": "Vi",   "english": "You",  "russian": "Вы"},
-  {"main": "Li",   "english": "He",   "russian": "Он"},
-  {"main": "Si ",  "english": "She",  "russian": "Она"},
-  {"main": "Gi",   "english": "It",   "russian": "Оно"},
-  {"main": "Ili ", "english": "They", "russian": "Они"}
+  {"esperanto": "Mi",   "english": "I",    "russian": "Я"},
+  {"esperanto": "Ni",   "english": "We",   "russian": "Мы"},
+  {"esperanto": "Vi",   "english": "You",  "russian": "Ты"},
+  {"esperanto": "Vi",   "english": "You",  "russian": "Вы"},
+  {"esperanto": "Li",   "english": "He",   "russian": "Он"},
+  {"esperanto": "Si ",  "english": "She",  "russian": "Она"},
+  {"esperanto": "Gi",   "english": "It",   "russian": "Оно"},
+  {"esperanto": "Ili ", "english": "They", "russian": "Они"}
 ]

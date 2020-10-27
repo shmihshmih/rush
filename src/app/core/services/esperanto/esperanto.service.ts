@@ -6,28 +6,113 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class EsperantoService {
-
   constructor(
     private httpClient: HttpClient,
     private dictionaryService: DictionaryService
   ) { }
 
-/**
- * In the future we must choose JSON or Store. It depences on base we will use.
- */
-  public getPronomojFromJSON(): Observable<IWord[]> {
+  /**
+   * TODO In the future we must choose JSON or Store. It depences on base we will use.
+   */
+
+  /**
+   * Pronomoj
+   * get pronouns (получить местоимения) JSON
+   */
+  public getPronounsFromJSON(): Observable<IWord[]> {
     return this.httpClient.get<IWord[]>('./assets/esperanto/_pronomoj.json');
   }
 
-  public getPronomoj(): Observable<IWord[]> {
+  /**
+   * verboj
+   * get verbs (получить глаголы)
+   */
+  public getVerbsFromJSON(): Observable<IWord[]> {
+    return this.httpClient.get<IWord[]>('./assets/esperanto/_verboj.json');
+  }
+
+  /**
+   * Pronomoj
+   * get pronouns (получить местоимения)
+   */
+  public getPronouns(): Observable<IWord[]> {
     return this.dictionaryService.getPronomoj();
   }
 
-  public makePastVerb() {}
-  public makePresentVerb() {}
-  public makeFutureVerb() {}
-  public makeVerb() {}
-  public makeAdjective() {}
-  public makeAdverb() {}
+  /**
+   * radiko de la vorto
+   * Take root (ПОлучает корень слова)
+   * @param type string
+   * @param word string
+   */
+  public makeRoot(type: string, word: string): string {
+    switch (type) {
+      case 'infinitiveVerb':
+        return word.toLowerCase().slice(0, -1);
+    }
+  }
+
+  /**
+   * preterito verbo
+   * Create past verb using + is to root (Создает глагол прошедшего воемени путем добавления к корню is)
+   * @param verb string
+   */
+  public makePastVerb(verb: string): string {
+    return this.makeRoot('infinitiveVerb', verb) + 'is';
+  }
+
+  /**
+   * nuna verbo
+   * Create present verb using + as to root (Создает глагол настоящего воемени путем добавления к корню as)
+   * @param verb string
+   */
+  public makePresentVerb(verb: string): string {
+    return this.makeRoot('infinitiveVerb', verb) + 'as';
+  }
+
+  /**
+   * estonta verbo
+   * Create future verb using + os to root (Создает глагол будущего воемени путем добавления к корню os)
+   * @param verb string
+   */
+  public makeFutureVerb(verb: string): string {
+    return this.makeRoot('infinitiveVerb', verb) + 'os';
+  }
+
+  /**
+   * infinitivo
+   * Create infinitive verb by adding i to root (Создаем инфинитив глагола путем добавления к корню i)
+   * @param root string
+   */
+  public makeInfinitiveVerb(root: string): string {
+    return root + 'i';
+  }
+
+  /**
+   * adjektivo
+   * Create an adjective by adding a to root (Создаем прилагательное добавлением a к корню)
+   * @param root string
+   */
+  public makeAdjective(root: string): string {
+    return root + 'a';
+  }
+
+  /**
+   * adverbo
+   * Create an adverb by adding e to root (Создаем наречие добавлением e к корню)
+   * @param root string
+   */
+  public makeAdverb(root: string): string {
+    return root + 'e';
+  }
+
+  /**
+   * substantivo
+   * Create a noun by adding a to the root (Создаем существительное добавлением o к корню)
+   * @param root string
+   */
+  public makeNoun(root: string): string {
+    return root + 'o';
+  }
 }
 

@@ -1,5 +1,5 @@
 export interface IWord {
-  main: string;
+  esperanto: string;
   english: string;
   russian: string;
 }

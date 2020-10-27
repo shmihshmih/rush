@@ -10,13 +10,15 @@ import { Observable } from 'rxjs';
 })
 export class IndexComponent implements OnInit {
   pronomoj$: Observable<IWord[]>;
+  verboj$: Observable<IWord[]>;
 
   constructor(
-    private esperantoService: EsperantoService
+    public esperantoService: EsperantoService
   ) { }
 
   ngOnInit(): void {
-    this.pronomoj$ = this.esperantoService.getPronomojFromJSON();
+    this.pronomoj$ = this.esperantoService.getPronounsFromJSON();
+    this.verboj$ = this.esperantoService.getVerbsFromJSON();
   }
 
 }
