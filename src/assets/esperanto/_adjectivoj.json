@@ -1,0 +1,14 @@
+[
+  {"esperanto": "bone",      "english": "good",        "russian": "хороший"},
+  {"esperanto": "malbona",   "english": "bad",         "russian": "плохой"},
+  {"esperanto": "granda",    "english": "big",         "russian": "большой"},
+  {"esperanto": "malmulte",  "english": "small",       "russian": "маленький"},
+  {"esperanto": "bonkora",   "english": "kind",        "russian": "добрый"},
+  {"esperanto": "malbono",   "english": "evil",        "russian": "злой"},
+  {"esperanto": "rapida",    "english": "fast",        "russian": "быстрый"},
+  {"esperanto": "malrapida", "english": "slow",        "russian": "медленный"},
+  {"esperanto": "gaja",      "english": "cheerful",    "russian": "веселый"},
+  {"esperanto": "malĝoja",   "english": "sad",         "russian": "грустный"},
+  {"esperanto": "enuiga",    "english": "boring",      "russian": "скучный"},
+  {"esperanto": "interesaj", "english": "interesting", "russian": "интересный"}
+]

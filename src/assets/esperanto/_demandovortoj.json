@@ -1,0 +1,14 @@
+[
+  {"esperanto": "kiu",      "english": "who",        "russian": "кто"},
+  {"esperanto": "kio",      "english": "what",       "russian": "что"},
+  {"esperanto": "kial",     "english": "why",        "russian": "почему"},
+  {"esperanto": "kial",     "english": "why",        "russian": "зачем"},
+  {"esperanto": "kiom",     "english": "how much",   "russian": "сколько"},
+  {"esperanto": "kiam ",    "english": "when",       "russian": "когда"},
+  {"esperanto": "kie",      "english": "where",      "russian": "где"},
+  {"esperanto": "kia",      "english": "which",      "russian": "какой"},
+  {"esperanto": "kien",     "english": "where",      "russian": "куда"},
+  {"esperanto": "kiun",     "english": "whom",       "russian": "кого"},
+  {"esperanto": "kies",     "english": "whose",      "russian": "чей"},
+  {"esperanto": "kiel",     "english": "how",        "russian": "как"}
+]

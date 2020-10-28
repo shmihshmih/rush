@@ -32,6 +32,22 @@ export class EsperantoService {
   }
 
   /**
+   * adjectivoj
+   * get adjectives (получить прилашательные)
+   */
+  public getAdjectivesFromJSON(): Observable<IWord[]> {
+    return this.httpClient.get<IWord[]>('./assets/esperanto/_adjectivoj.json');
+  }
+
+  /**
+   * demandovortoj
+   * get question words (получить вопросительные слова)
+   */
+  public getDemandoVortojFromJSON(): Observable<IWord[]> {
+    return this.httpClient.get<IWord[]>('./assets/esperanto/_demandovortoj.json');
+  }
+
+  /**
    * Pronomoj
    * get pronouns (получить местоимения)
    */

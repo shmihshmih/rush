@@ -11,6 +11,8 @@ import { Observable } from 'rxjs';
 export class IndexComponent implements OnInit {
   pronomoj$: Observable<IWord[]>;
   verboj$: Observable<IWord[]>;
+  adjektivoj$: Observable<IWord[]>;
+  demandoVortoj$: Observable<IWord[]>;
 
   constructor(
     public esperantoService: EsperantoService
@@ -19,6 +21,8 @@ export class IndexComponent implements OnInit {
   ngOnInit(): void {
     this.pronomoj$ = this.esperantoService.getPronounsFromJSON();
     this.verboj$ = this.esperantoService.getVerbsFromJSON();
+    this.adjektivoj$ = this.esperantoService.getAdjectivesFromJSON();
+    this.demandoVortoj$ = this.esperantoService.getDemandoVortojFromJSON();
   }
 
 }

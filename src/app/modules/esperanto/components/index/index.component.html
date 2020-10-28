@@ -1,9 +1,9 @@
 <p>pronomoj</p>
 <div *ngFor="let word of pronomoj$ | async">
-  {{word.esperanto}}
+  {{word.esperanto}} / {{word.english}} / {{word.russian}}
 </div>
 
-<p>pronomoj</p>
+<p>primeroj</p>
 <div *ngFor="let word of verboj$ | async">
   {{word.esperanto}}
   /{{esperantoService.makePastVerb(word.esperanto)}}
@@ -12,4 +12,14 @@
   /{{esperantoService.makeAdverb(esperantoService.makeRoot('infinitiveVerb', word.esperanto)) }}
   /{{esperantoService.makeAdjective(esperantoService.makeRoot('infinitiveVerb',word.esperanto))}}
   /{{esperantoService.makeInfinitiveVerb(esperantoService.makeRoot('infinitiveVerb',word.esperanto))}}
+</div>
+
+<p>adjectivoj</p>
+<div *ngFor="let word of adjektivoj$ | async">
+  {{word.esperanto}} / {{word.english}} / {{word.russian}}
+</div>
+
+<p>Demandovortoj</p>
+<div *ngFor="let word of demandoVortoj$ | async">
+  {{word.esperanto}} / {{word.english}} / {{word.russian}}
 </div>
