@@ -48,6 +48,22 @@ export class EsperantoService {
   }
 
   /**
+   * konjunkcioj
+   * get conjunction (получить союзы)
+   */
+  public getKonjunkciojFromJSON(): Observable<IWord[]> {
+    return this.httpClient.get<IWord[]>('./assets/esperanto/_konjunkcioj.json');
+  }
+
+  /**
+   * prepozicioj
+   * get prepositions (получить предлоги)
+   */
+  public getPrepoziciojFromJSON(): Observable<IWord[]> {
+    return this.httpClient.get<IWord[]>('./assets/esperanto/_prepozicioj.json');
+  }
+
+  /**
    * Pronomoj
    * get pronouns (получить местоимения)
    */

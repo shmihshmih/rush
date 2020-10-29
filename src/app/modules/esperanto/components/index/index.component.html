@@ -23,3 +23,13 @@
 <div *ngFor="let word of demandoVortoj$ | async">
   {{word.esperanto}} / {{word.english}} / {{word.russian}}
 </div>
+
+<p>Konjunkcioj</p>
+<div *ngFor="let word of konjunkcioj$ | async">
+  {{word.esperanto}} / {{word.english}} / {{word.russian}}
+</div>
+
+<p>Prepozicioj</p>
+<div *ngFor="let word of prepozicioj$ | async">
+  {{word.esperanto}} / {{word.english}} / {{word.russian}}
+</div>

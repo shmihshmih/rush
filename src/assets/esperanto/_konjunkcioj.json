@@ -1,0 +1,11 @@
+[
+  {"esperanto": "kaj",      "english": "and",       "russian": "и"},
+  {"esperanto": "aŭ ",      "english": "or",        "russian": "или"},
+  {"esperanto": "ke",       "english": "that",      "russian": "чтобы"},
+  {"esperanto": "kvankam",  "english": "although",  "russian": "хотя"},
+  {"esperanto": "nek ",     "english": "nor",       "russian": "ни"},
+  {"esperanto": "ol ",      "english": "than",      "russian": "чем"},
+  {"esperanto": "sed   ",   "english": "but",       "russian": "если"},
+  {"esperanto": "ĉar  ",    "english": "because",   "russian": "потому что"},
+  {"esperanto": "tamen  ",  "english": "however",   "russian": "однако"}
+]
