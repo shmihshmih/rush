@@ -72,6 +72,14 @@ export class EsperantoService {
   }
 
   /**
+   * Fructoj
+   * get fruits (получить фрукты)
+   */
+  public getFructojFromJSON(): Observable<IWord[]> {
+    return this.httpClient.get<IWord[]>('./assets/esperanto/_fructoj.json');
+  }
+
+  /**
    * Pronomoj
    * get pronouns (получить местоимения)
    */

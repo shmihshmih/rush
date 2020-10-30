@@ -38,3 +38,8 @@
 <div *ngFor="let word of numeraloj$ | async">
   {{word.wordcode }} / {{word.esperanto}} / {{word.english}} / {{word.russian}}
 </div>
+
+<p>Fructoj</p>
+<div *ngFor="let word of fructoj$ | async">
+  {{word.esperanto}} / {{word.english}} / {{word.russian}}
+</div>

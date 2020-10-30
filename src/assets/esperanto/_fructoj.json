@@ -1,0 +1,14 @@
+[
+  {"esperanto": "pomo",        "english": "apple",        "russian": "яблоко"},
+  {"esperanto": "banano",      "english": "banana",       "russian": "банан"},
+  {"esperanto": "akvomelono",  "english": "watermelon",   "russian": "арбуз"},
+  {"esperanto": "persiko",     "english": "peach",        "russian": "персик"},
+  {"esperanto": "oranĝa",      "english": "orange",       "russian": "апельсин"},
+  {"esperanto": "melono",      "english": "melon",        "russian": "дыня"},
+  {"esperanto": "abrikoto",    "english": "apricot",      "russian": "абрикос"},
+  {"esperanto": "mango",       "english": "mango",        "russian": "манго"},
+  {"esperanto": "ananaso",     "english": "pineapple",    "russian": "ананас"},
+  {"esperanto": "piro",        "english": "pear",         "russian": "груша"},
+  {"esperanto": "kivio",       "english": "kiwi",         "russian": "киви"},
+  {"esperanto": "citrono",     "english": "lemon",        "russian": "лимон"}
+]

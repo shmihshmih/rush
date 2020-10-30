@@ -16,6 +16,7 @@ export class IndexComponent implements OnInit {
   konjunkcioj$: Observable<IWord[]>;
   prepozicioj$: Observable<IWord[]>;
   numeraloj$: Observable<IWord[]>;
+  fructoj$: Observable<IWord[]>;
 
   constructor(
     public esperantoService: EsperantoService
@@ -29,6 +30,7 @@ export class IndexComponent implements OnInit {
     this.konjunkcioj$ = this.esperantoService.getKonjunkciojFromJSON();
     this.prepozicioj$ = this.esperantoService.getPrepoziciojFromJSON();
     this.numeraloj$ = this.esperantoService.getNumeralojFromJSON();
+    this.fructoj$ = this.esperantoService.getFructojFromJSON();
   }
 
 }
