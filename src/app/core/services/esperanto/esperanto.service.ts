@@ -64,6 +64,14 @@ export class EsperantoService {
   }
 
   /**
+   * Numeraloj
+   * get numbers (получить числа)
+   */
+  public getNumeralojFromJSON(): Observable<IWord[]> {
+    return this.httpClient.get<IWord[]>('./assets/esperanto/_numeraloj.json');
+  }
+
+  /**
    * Pronomoj
    * get pronouns (получить местоимения)
    */
