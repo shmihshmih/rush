@@ -79,6 +79,14 @@ export class EsperantoService {
     return this.httpClient.get<IWord[]>('./assets/esperanto/_fructoj.json');
   }
 
+    /**
+   * tempo
+   * get time (получить время)
+   */
+  public getTempoFromJSON(): Observable<IWord[]> {
+    return this.httpClient.get<IWord[]>('./assets/esperanto/_tempo.json');
+  }
+
   /**
    * Pronomoj
    * get pronouns (получить местоимения)
