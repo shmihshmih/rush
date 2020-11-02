@@ -1,0 +1,27 @@
+<mat-toolbar>
+  <div>
+    <div><a (click)="sidenavToggle()"><mat-icon fxLayout fxFlex>menu</mat-icon></a></div>
+  </div>
+  <div class="header-logo">
+    <img src="assets/img/logo_golem.png" alt="logo_golem.png">
+    <a [routerLink]="['']" >Логово Голема</a>
+  </div>
+  <div fxLayout fxFlex fxLayoutAlign="flex-end">
+    <ul class="toolbar-list">
+      <li><a [routerLink]="['']"         >Профиль   </a></li>
+      <li><a [routerLink]="['esperanto']">Эсперанто </a></li>
+      <li><a [routerLink]="['english']"  >Английский</a></li>
+      <li><a [routerLink]="['blog']"     >Блог      </a></li>
+      <li><a [routerLink]="['socrates']" >Socrates  </a></li>
+      <li><a [routerLink]="['']"         >Выйти     </a></li>
+      <li><a [routerLink]="['']"         >Войти     </a></li>
+    </ul>
+  </div>
+</mat-toolbar>
+
+
+
+
+
+
+
