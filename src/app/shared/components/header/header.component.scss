@@ -1,4 +1,6 @@
 .toolbar-list {
+  align-items: center;
+  display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -8,8 +10,8 @@
     text-decoration: none;
     cursor: pointer;
   }
-  .mat-icon {
-    cursor: pointer;
+  a {
+    display: flex;
   }
 }
 .header-logo {
