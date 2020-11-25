@@ -1,15 +1,25 @@
-import { DictionaryService } from './store/dictionary.service';
-import { IWord } from './../../../shared/models/esperanto/word.interface';
-import { Observable } from 'rxjs';
-import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import {DictionaryService} from './store/dictionary.service';
+import {IWord} from './../../../shared/models/esperanto/word.interface';
+import {Observable} from 'rxjs';
+import {HttpClient} from '@angular/common/http';
+import {Injectable} from '@angular/core';
+import {IListWord} from '../../../shared/models/esperanto/word_list.interface';
 
 @Injectable()
 export class EsperantoService {
   constructor(
     private httpClient: HttpClient,
     private dictionaryService: DictionaryService
-  ) { }
+  ) {
+  }
+
+  /**
+   * Vortlisto
+   * get all lists words (получить все списки слов)
+   */
+  public getAllDictionariesWithoutWords(): Observable<any[]> {
+    return this.httpClient.get<IListWord[]>('./assets/esperanto/_list_words.json');
+  }
 
   /**
    * TODO In the future we must choose JSON or Store. It depences on base we will use.
@@ -36,7 +46,7 @@ export class EsperantoService {
    * get adjectives (получить прилашательные)
    */
   public getAdjectivesFromJSON(): Observable<IWord[]> {
-    return this.httpClient.get<IWord[]>('./assets/esperanto/_adjectivoj.json');
+    return this.httpClient.get<IWord[]>('./assets/esperanto/_adjektivoj.json');
   }
 
   /**
@@ -75,11 +85,11 @@ export class EsperantoService {
    * Fructoj
    * get fruits (получить фрукты)
    */
-  public getFructojFromJSON(): Observable<IWord[]> {
-    return this.httpClient.get<IWord[]>('./assets/esperanto/_fructoj.json');
+  public getFruktojFromJSON(): Observable<IWord[]> {
+    return this.httpClient.get<IWord[]>('./assets/esperanto/_fruktoj.json');
   }
 
-    /**
+  /**
    * tempo
    * get time (получить время)
    */

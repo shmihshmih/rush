@@ -1,7 +1,8 @@
-import { IWord } from './../../../../shared/models/esperanto/word.interface';
-import { EsperantoService } from './../../../../core/services/esperanto/esperanto.service';
-import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import {IWord} from '../../../../shared/models/esperanto/word.interface';
+import {EsperantoService} from '../../../../core/services/esperanto/esperanto.service';
+import {Component, OnInit} from '@angular/core';
+import {Observable} from 'rxjs';
+import {IListWord} from '../../../../shared/models/esperanto/word_list.interface';
 
 @Component({
   selector: 'app-index',
@@ -16,12 +17,14 @@ export class IndexComponent implements OnInit {
   konjunkcioj$: Observable<IWord[]>;
   prepozicioj$: Observable<IWord[]>;
   numeraloj$: Observable<IWord[]>;
-  fructoj$: Observable<IWord[]>;
+  fruktoj$: Observable<IWord[]>;
   tempo$: Observable<IWord[]>;
+  vortlistoj$: Observable<IListWord[]>;
 
   constructor(
     public esperantoService: EsperantoService
-  ) { }
+  ) {
+  }
 
   ngOnInit(): void {
     this.pronomoj$ = this.esperantoService.getPronounsFromJSON();
@@ -31,8 +34,9 @@ export class IndexComponent implements OnInit {
     this.konjunkcioj$ = this.esperantoService.getKonjunkciojFromJSON();
     this.prepozicioj$ = this.esperantoService.getPrepoziciojFromJSON();
     this.numeraloj$ = this.esperantoService.getNumeralojFromJSON();
-    this.fructoj$ = this.esperantoService.getFructojFromJSON();
+    this.fruktoj$ = this.esperantoService.getFruktojFromJSON();
     this.tempo$ = this.esperantoService.getTempoFromJSON();
+    this.vortlistoj$ = this.esperantoService.getAllDictionariesWithoutWords();
   }
 
 }

@@ -1,50 +1,70 @@
-<p>pronomoj</p>
-<div *ngFor="let word of pronomoj$ | async">
-  {{word.esperanto}} / {{word.english}} / {{word.russian}}
+<div class="main-container">
+  <mat-card *ngFor="let vortListo of vortlistoj$ | async" class="esperanto-main-card">
+    <mat-card-header>
+      <mat-card-title><h1>{{vortListo.title}}</h1></mat-card-title>
+      <mat-card-subtitle>{{vortListo.level}}</mat-card-subtitle>
+    </mat-card-header>
+    <div class="img-container" [ngStyle]="vortListo.cover && {'background': 'center/50% url(' + vortListo.cover + ')'}">
+    </div>
+    <mat-card-content>
+      <p>
+        {{vortListo.caption.russian}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button color="primary">Посмотреть</button>
+      <button mat-button color="primary">Карточки</button>
+    </mat-card-actions>
+  </mat-card>
 </div>
 
-<p>primeroj</p>
-<div *ngFor="let word of verboj$ | async">
-  {{word.esperanto}}
-  /{{esperantoService.makePastVerb(word.esperanto)}}
-  /{{esperantoService.makePresentVerb(word.esperanto)}}
-  /{{esperantoService.makeFutureVerb(word.esperanto)}}
-  /{{esperantoService.makeAdverb(esperantoService.makeRoot('infinitiveVerb', word.esperanto)) }}
-  /{{esperantoService.makeAdjective(esperantoService.makeRoot('infinitiveVerb',word.esperanto))}}
-  /{{esperantoService.makeInfinitiveVerb(esperantoService.makeRoot('infinitiveVerb',word.esperanto))}}
-</div>
+<!--<p>pronomoj</p>-->
+<!--<div *ngFor="let word of pronomoj$ | async">-->
+<!--  {{word.esperanto}} / {{word.english}} / {{word.russian}}-->
+<!--</div>-->
 
-<p>adjectivoj</p>
-<div *ngFor="let word of adjektivoj$ | async">
-  {{word.esperanto}} / {{word.english}} / {{word.russian}}
-</div>
+<!--<p>primeroj</p>-->
+<!--<div *ngFor="let word of verboj$ | async">-->
+<!--  {{word.esperanto}}-->
+<!--  /{{esperantoService.makePastVerb(word.esperanto)}}-->
+<!--  /{{esperantoService.makePresentVerb(word.esperanto)}}-->
+<!--  /{{esperantoService.makeFutureVerb(word.esperanto)}}-->
+<!--  /{{esperantoService.makeAdverb(esperantoService.makeRoot('infinitiveVerb', word.esperanto)) }}-->
+<!--  /{{esperantoService.makeAdjective(esperantoService.makeRoot('infinitiveVerb',word.esperanto))}}-->
+<!--  /{{esperantoService.makeInfinitiveVerb(esperantoService.makeRoot('infinitiveVerb',word.esperanto))}}-->
+<!--</div>-->
 
-<p>Demandovortoj</p>
-<div *ngFor="let word of demandoVortoj$ | async">
-  {{word.esperanto}} / {{word.english}} / {{word.russian}}
-</div>
+<!--<p>adjectivoj</p>-->
+<!--<div *ngFor="let word of adjektivoj$ | async">-->
+<!--  {{word.esperanto}} / {{word.english}} / {{word.russian}}-->
+<!--</div>-->
 
-<p>Konjunkcioj</p>
-<div *ngFor="let word of konjunkcioj$ | async">
-  {{word.esperanto}} / {{word.english}} / {{word.russian}}
-</div>
+<!--<p>Demandovortoj</p>-->
+<!--<div *ngFor="let word of demandoVortoj$ | async">-->
+<!--  {{word.esperanto}} / {{word.english}} / {{word.russian}}-->
+<!--</div>-->
 
-<p>Prepozicioj</p>
-<div *ngFor="let word of prepozicioj$ | async">
-  {{word.esperanto}} / {{word.english}} / {{word.russian}}
-</div>
+<!--<p>Konjunkcioj</p>-->
+<!--<div *ngFor="let word of konjunkcioj$ | async">-->
+<!--  {{word.esperanto}} / {{word.english}} / {{word.russian}}-->
+<!--</div>-->
 
-<p>Numeraloj</p>
-<div *ngFor="let word of numeraloj$ | async">
-  {{word.wordcode }} / {{word.esperanto}} / {{word.english}} / {{word.russian}}
-</div>
+<!--<p>Prepozicioj</p>-->
+<!--<div *ngFor="let word of prepozicioj$ | async">-->
+<!--  {{word.esperanto}} / {{word.english}} / {{word.russian}}-->
+<!--</div>-->
 
-<p>Fructoj</p>
-<div *ngFor="let word of fructoj$ | async">
-  {{word.esperanto}} / {{word.english}} / {{word.russian}}
-</div>
+<!--<p>Numeraloj</p>-->
+<!--<div *ngFor="let word of numeraloj$ | async">-->
+<!--  {{word.wordcode }} / {{word.esperanto}} / {{word.english}} / {{word.russian}}-->
+<!--</div>-->
 
-<p>Tempo</p>
-<div *ngFor="let word of tempo$ | async">
-  {{word.esperanto}} / {{word.english}} / {{word.russian}}
-</div>
+<!--<p>Fructoj</p>-->
+<!--<div *ngFor="let word of fructoj$ | async">-->
+<!--  {{word.esperanto}} / {{word.english}} / {{word.russian}}-->
+<!--</div>-->
+
+<!--<p>Tempo</p>-->
+<!--<div *ngFor="let word of tempo$ | async">-->
+<!--  {{word.esperanto}} / {{word.english}} / {{word.russian}}-->
+<!--</div>-->

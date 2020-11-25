@@ -8,14 +8,19 @@ import {OverlayContainer} from '@angular/cdk/overlay';
 })
 export class HeaderComponent implements OnInit {
   @Output() sidenav = new EventEmitter();
-  @HostBinding('class') componentCssClass = 'default-theme';
-  constructor(public overlayContainer: OverlayContainer){}
+  @HostBinding('class') componentCssClass = 'my-theme';
+
+  constructor(public overlayContainer: OverlayContainer) {
+  }
+
   toggleTheme(): void {
     this.componentCssClass === 'default-theme' ? this.componentCssClass = 'dark-theme' : this.componentCssClass = 'default-theme';
     this.overlayContainer.getContainerElement().classList.add(this.componentCssClass);
   }
+
   ngOnInit(): void {
   }
+
   sidenavToggle(): void {
     this.sidenav.emit();
   }
