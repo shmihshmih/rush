@@ -6,13 +6,19 @@ import {CommonModule} from '@angular/common';
 import {RouterModule} from '@angular/router';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {WordListComponent} from './components/word-list/word-list.component';
+import {WordCardComponent} from './components/word-card/word-card.component';
+import {WordCardHelpComponent} from './components/word-card/popup/word-card-help/word-card-help.component';
+import {WordCardSettingsComponent} from './components/word-card/popup/word-card-settings/word-card-settings.component';
 
 
 @NgModule({
   declarations: [
     HeaderComponent,
     NavListComponent,
-    WordListComponent
+    WordListComponent,
+    WordCardComponent,
+    WordCardHelpComponent,
+    WordCardSettingsComponent
   ],
   imports: [
     CommonModule,
@@ -25,7 +31,10 @@ import {WordListComponent} from './components/word-list/word-list.component';
     HeaderComponent,
     NavListComponent,
     FlexLayoutModule,
-    WordListComponent]
+    WordListComponent,
+    WordCardComponent
+  ],
+  entryComponents: [WordCardHelpComponent, WordCardSettingsComponent]
 })
 export class SharedModule {
 }

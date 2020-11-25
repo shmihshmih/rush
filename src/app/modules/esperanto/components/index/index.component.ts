@@ -46,6 +46,6 @@ export class IndexComponent implements OnInit {
   }
 
   openCardExercise(title: string): void {
-    console.log('title: ', title);
+    this.router.navigate(['esperanto', 'vortokarto', title]);
   }
 }

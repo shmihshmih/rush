@@ -1,0 +1,49 @@
+<table>
+  <tr id="settingsForSecondEx">
+    <td colspan="5">
+      <div>
+        <div id="checkboxesChoosenWords2ex">
+          Используемые слова:
+          <ol>
+            <li><input type="checkbox" name="animalsEX2"                   checked="checked"> Животные</li>
+            <li><input type="checkbox" name="regularVerbsEX2"              checked="checked"> Глаголы стандартные</li>
+            <li><input type="checkbox" name="irRegularVerbsEX2"            checked="checked"> Глаголы нестандартные</li>
+            <li><input type="checkbox" name="pronounsEX2"                  checked="checked"> Местоимения</li>
+            <li><input type="checkbox" name="timesEX2"                     checked="checked"> Время</li>
+            <li><input type="checkbox" name="senTypesEX2"                  checked="checked"> Типы предложений</li>
+            <li><input type="checkbox" name="adjectivesEX2"                checked="checked"> Прилагательные</li>
+            <li><input type="checkbox" name="bersekerDictionaryEX2"        checked="checked"> Berserk</li>
+            <li><input type="checkbox" name="commonIntrodactoryPhrasesEX2" checked="checked"> Вводные фразы</li>
+          </ol>
+        </div>
+        <div><input type="checkbox" id="repeatingWords2ex" checked="checked"> Повторять слова</div>
+        <div>Скорость воспроизведения:
+          1<input type="radio" name="speechRateEx2" value="0.5">
+          2<input type="radio" name="speechRateEx2" value="1" checked="checked">
+          3<input type="radio" name="speechRateEx2" value="1.5">
+        </div>
+        <div>
+          Тип карточек:
+          Спрашивать английский<input type="radio" name="typeOfAsk" value="askEnglishSide">
+          Спрашивать русский   <input type="radio" name="typeOfAsk" value="askRussianSide" checked="checked">
+        </div>
+        <div>
+          Высота голоса:
+          1<input type="radio" name="speechPitchEx2" value="0.5">
+          2<input type="radio" name="speechPitchEx2" value="1" checked="checked">
+          3<input type="radio" name="speechPitchEx2" value="1.5">
+        </div>
+        <div>
+          Голос:
+          UK мужской <input type="radio" name="speechVoiceEx2" value="UK English Male" checked="checked">
+          UK женский <input type="radio" name="speechVoiceEx2" value="UK English Female">
+          US мужской <input type="radio" name="speechVoiceEx2" value="US English Male">
+          US женский <input type="radio" name="speechVoiceEx2" value="US English Female">
+        </div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <button color="primary" (click)="closePopup()" mat-button="">Ok</button>
+  </tr>
+</table>

@@ -2,6 +2,7 @@ import {IndexComponent} from './components/index/index.component';
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 import {WordListComponent} from '../../shared/components/word-list/word-list.component';
+import {WordCardComponent} from '../../shared/components/word-card/word-card.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,16 @@ const routes: Routes = [
   {
     path: 'vortlisto/:vortListo',
     component: WordListComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'vortokarto/',
+    component: WordCardComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'vortokarto/:vortListo',
+    component: WordCardComponent,
     pathMatch: 'full'
   }
 ];
