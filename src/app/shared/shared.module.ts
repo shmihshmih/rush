@@ -1,17 +1,18 @@
-import { NavListComponent } from './components/nav-list/nav-list.component';
-import { HeaderComponent } from './components/header/header.component';
-import { MaterialModule } from './material.module';
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NavListComponent} from './components/nav-list/nav-list.component';
+import {HeaderComponent} from './components/header/header.component';
+import {MaterialModule} from './material.module';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 import {RouterModule} from '@angular/router';
 import {FlexLayoutModule} from '@angular/flex-layout';
-
+import {WordListComponent} from './components/word-list/word-list.component';
 
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    NavListComponent
+    NavListComponent,
+    WordListComponent
   ],
   imports: [
     CommonModule,
@@ -23,6 +24,8 @@ import {FlexLayoutModule} from '@angular/flex-layout';
     MaterialModule,
     HeaderComponent,
     NavListComponent,
-    FlexLayoutModule]
+    FlexLayoutModule,
+    WordListComponent]
 })
-export class SharedModule { }
+export class SharedModule {
+}

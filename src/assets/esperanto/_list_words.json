@@ -1,11 +1,11 @@
 [
   {
-    "title": "adjectivoj",
-    "collection": "adjectivoj",
+    "title": "adjektivoj",
+    "collection": "adjektivoj",
     "cover": "assets/img/esperanto/adjektivoj/adjektivoj.png",
     "level": "fundamentoj",
     "caption": {
-      "esperanto": "Adjectivoj",
+      "esperanto": "Adjektivoj",
       "english": "Adjectives",
       "russian": "Прилагательные"
     }
@@ -96,17 +96,6 @@
       "esperanto": "Verboj",
       "english": "Verbs",
       "russian": "Глаголы"
-    }
-  },
-  {
-    "title": "test",
-    "collection": "test",
-    "cover": "",
-    "level": "fundamentoj",
-    "caption": {
-      "esperanto": "test",
-      "english": "test",
-      "russian": "test"
     }
   }
 ]

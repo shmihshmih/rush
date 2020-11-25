@@ -3,6 +3,7 @@ import {EsperantoService} from '../../../../core/services/esperanto/esperanto.se
 import {Component, OnInit} from '@angular/core';
 import {Observable} from 'rxjs';
 import {IListWord} from '../../../../shared/models/esperanto/word_list.interface';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-index',
@@ -22,7 +23,8 @@ export class IndexComponent implements OnInit {
   vortlistoj$: Observable<IListWord[]>;
 
   constructor(
-    public esperantoService: EsperantoService
+    public esperantoService: EsperantoService,
+    private router: Router
   ) {
   }
 
@@ -39,4 +41,11 @@ export class IndexComponent implements OnInit {
     this.vortlistoj$ = this.esperantoService.getAllDictionariesWithoutWords();
   }
 
+  openListWord(title: string): void {
+    this.router.navigate(['esperanto', 'vortlisto', title]);
+  }
+
+  openCardExercise(title: string): void {
+    console.log('title: ', title);
+  }
 }

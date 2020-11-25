@@ -1,5 +1,5 @@
 import {DictionaryService} from './store/dictionary.service';
-import {IWord} from './../../../shared/models/esperanto/word.interface';
+import {IWord} from '../../../shared/models/esperanto/word.interface';
 import {Observable} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
 import {Injectable} from '@angular/core';
@@ -17,8 +17,16 @@ export class EsperantoService {
    * Vortlisto
    * get all lists words (получить все списки слов)
    */
-  public getAllDictionariesWithoutWords(): Observable<any[]> {
+  public getAllDictionariesWithoutWords(): Observable<IListWord[]> {
     return this.httpClient.get<IListWord[]>('./assets/esperanto/_list_words.json');
+  }
+
+  /**
+   * Возвращает список необходимых слов по названию листа
+   * @param list
+   */
+  public getListWordFromJSON(list: string): Observable<IWord[]> {
+    return this.httpClient.get<IWord[]>(`./assets/esperanto/_${list}.json`);
   }
 
   /**
@@ -42,7 +50,7 @@ export class EsperantoService {
   }
 
   /**
-   * adjectivoj
+   * adjektivoj
    * get adjectives (получить прилашательные)
    */
   public getAdjectivesFromJSON(): Observable<IWord[]> {
