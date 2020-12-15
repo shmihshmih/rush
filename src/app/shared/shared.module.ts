@@ -9,7 +9,7 @@ import {WordListComponent} from './components/word-list/word-list.component';
 import {WordCardComponent} from './components/word-card/word-card.component';
 import {WordCardHelpComponent} from './components/word-card/popup/word-card-help/word-card-help.component';
 import {WordCardSettingsComponent} from './components/word-card/popup/word-card-settings/word-card-settings.component';
-
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,8 @@ import {WordCardSettingsComponent} from './components/word-card/popup/word-card-
     CommonModule,
     MaterialModule,
     RouterModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    ReactiveFormsModule
   ],
   exports: [
     MaterialModule,
@@ -32,7 +33,8 @@ import {WordCardSettingsComponent} from './components/word-card/popup/word-card-
     NavListComponent,
     FlexLayoutModule,
     WordListComponent,
-    WordCardComponent
+    WordCardComponent,
+    ReactiveFormsModule
   ],
   entryComponents: [WordCardHelpComponent, WordCardSettingsComponent]
 })

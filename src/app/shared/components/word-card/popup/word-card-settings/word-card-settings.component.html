@@ -1,45 +1,80 @@
 <table>
-  <tr id="settingsForSecondEx">
-    <td colspan="5">
+  <tr>
+    <td colspan="5" [formGroup]="wordCardSettingsForm">
       <div>
-        <div id="checkboxesChoosenWords2ex">
-          Используемые слова:
-          <ol>
-            <li><input type="checkbox" name="animalsEX2"                   checked="checked"> Животные</li>
-            <li><input type="checkbox" name="regularVerbsEX2"              checked="checked"> Глаголы стандартные</li>
-            <li><input type="checkbox" name="irRegularVerbsEX2"            checked="checked"> Глаголы нестандартные</li>
-            <li><input type="checkbox" name="pronounsEX2"                  checked="checked"> Местоимения</li>
-            <li><input type="checkbox" name="timesEX2"                     checked="checked"> Время</li>
-            <li><input type="checkbox" name="senTypesEX2"                  checked="checked"> Типы предложений</li>
-            <li><input type="checkbox" name="adjectivesEX2"                checked="checked"> Прилагательные</li>
-            <li><input type="checkbox" name="bersekerDictionaryEX2"        checked="checked"> Berserk</li>
-            <li><input type="checkbox" name="commonIntrodactoryPhrasesEX2" checked="checked"> Вводные фразы</li>
-          </ol>
-        </div>
-        <div><input type="checkbox" id="repeatingWords2ex" checked="checked"> Повторять слова</div>
-        <div>Скорость воспроизведения:
-          1<input type="radio" name="speechRateEx2" value="0.5">
-          2<input type="radio" name="speechRateEx2" value="1" checked="checked">
-          3<input type="radio" name="speechRateEx2" value="1.5">
-        </div>
         <div>
-          Тип карточек:
-          Спрашивать английский<input type="radio" name="typeOfAsk" value="askEnglishSide">
-          Спрашивать русский   <input type="radio" name="typeOfAsk" value="askRussianSide" checked="checked">
+          <mat-form-field class="w-100">
+            <mat-label>Favorite Fruits</mat-label>
+            <mat-chip-list #chipList aria-label="Fruit selection">
+              <mat-chip
+                *ngFor="let activeList of activeWordLists"
+                [selectable]="selectable"
+                [removable]="removable"
+                (removed)="remove(activeList.title)">
+                {{activeList.caption.russian}}
+                <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+              </mat-chip>
+              <input
+                placeholder="New list..."
+                #listInput
+                [formControl]="listCtrl"
+                [matAutocomplete]="auto"
+                [matChipInputFor]="chipList"
+                [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                (matChipInputTokenEnd)="add($event)">
+            </mat-chip-list>
+            <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
+              <mat-option *ngFor="let list of filteredLists | async" [value]="list.caption.russian">
+                {{list.caption.russian}}
+              </mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
         </div>
-        <div>
-          Высота голоса:
-          1<input type="radio" name="speechPitchEx2" value="0.5">
-          2<input type="radio" name="speechPitchEx2" value="1" checked="checked">
-          3<input type="radio" name="speechPitchEx2" value="1.5">
+        <div class="mb-16">
+          <mat-checkbox color="primary" formControlName="isRepeat" class="fw-600">Повторять слова</mat-checkbox>
         </div>
-        <div>
-          Голос:
-          UK мужской <input type="radio" name="speechVoiceEx2" value="UK English Male" checked="checked">
-          UK женский <input type="radio" name="speechVoiceEx2" value="UK English Female">
-          US мужской <input type="radio" name="speechVoiceEx2" value="US English Male">
-          US женский <input type="radio" name="speechVoiceEx2" value="US English Female">
+<!--         TODO работа с голосом-->
+<!--        <div class="mb-16">-->
+<!--          <p class="m-0 fw-600">Скорость воспроизведения:</p>-->
+<!--          <mat-radio-group formControlName="playbackSpeed" aria-label="Скорость воспроизведения:" color="primary">-->
+<!--            <mat-radio-button class="mr-32" value="0.5">0.5</mat-radio-button>-->
+<!--            <mat-radio-button class="mr-32" value="1">1</mat-radio-button>-->
+<!--            <mat-radio-button value="1.5">1.5</mat-radio-button>-->
+<!--          </mat-radio-group>-->
+<!--        </div>-->
+        <div class="mb-16">
+          <p class="m-0 fw-600">Начальный язык:</p>
+          <mat-radio-group formControlName="startLang" aria-label="Начальный язык: " color="primary">
+            <mat-radio-button class="mr-32" value="english">english</mat-radio-button>
+            <mat-radio-button class="mr-32" value="russian">русский</mat-radio-button>
+            <mat-radio-button value="esperanto">esperanto</mat-radio-button>
+          </mat-radio-group>
         </div>
+        <div class="mb-16">
+          <p class="m-0 fw-600">Конечный язык:</p>
+          <mat-radio-group formControlName="finishLang" aria-label="Конечный язык: " color="primary">
+            <mat-radio-button class="mr-32" value="english">english</mat-radio-button>
+            <mat-radio-button class="mr-32" value="russian">русский</mat-radio-button>
+            <mat-radio-button value="esperanto">esperanto</mat-radio-button>
+          </mat-radio-group>
+        </div>
+<!--        <div class="mb-16">-->
+<!--          <p class="m-0 fw-600">Высота голоса:</p>-->
+<!--          <mat-radio-group formControlName="voicePitch" aria-label="Высота голоса: " color="primary">-->
+<!--            <mat-radio-button class="mr-32" value="0.5">0.5</mat-radio-button>-->
+<!--            <mat-radio-button class="mr-32" value="1">1</mat-radio-button>-->
+<!--            <mat-radio-button value="1.5">1.5</mat-radio-button>-->
+<!--          </mat-radio-group>-->
+<!--        </div>-->
+<!--        <div class="mb-16">-->
+<!--          <p class="m-0 fw-600">Голос:</p>-->
+<!--          <mat-radio-group formControlName="voiceType" aria-label="Голос: " color="primary">-->
+<!--            <mat-radio-button class="d-b" value="UK English Male">UK English Male</mat-radio-button>-->
+<!--            <mat-radio-button class="d-b" value="UK English Female">UK English Female</mat-radio-button>-->
+<!--            <mat-radio-button class="d-b" value="US English Male">US English Male</mat-radio-button>-->
+<!--            <mat-radio-button class="d-b" value="US English Female">US English Female</mat-radio-button>-->
+<!--          </mat-radio-group>-->
+<!--        </div>-->
       </div>
     </td>
   </tr>

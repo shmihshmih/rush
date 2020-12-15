@@ -1,6 +1,6 @@
 import {DictionaryService} from './store/dictionary.service';
 import {IWord} from '../../../shared/models/esperanto/word.interface';
-import {Observable} from 'rxjs';
+import {BehaviorSubject, Observable, Subject} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
 import {Injectable} from '@angular/core';
 import {IListWord} from '../../../shared/models/esperanto/word_list.interface';
@@ -13,13 +13,32 @@ export class EsperantoService {
   ) {
   }
 
+  _vortlistoj$: BehaviorSubject<IListWord[]> = new BehaviorSubject([]);
+  vortlistoj$: Observable<IListWord[]> = this._vortlistoj$.asObservable();
+
+  /**
+   * Start app
+   */
+  public init(): void {
+    this.getAllDictionaries();
+  }
+
   /**
    * Vortlisto
    * get all lists words (получить все списки слов)
    */
+
   public getAllDictionariesWithoutWords(): Observable<IListWord[]> {
     return this.httpClient.get<IListWord[]>('./assets/esperanto/_list_words.json');
   }
+
+  public getAllDictionaries(): void {
+    this.httpClient.get<IListWord[]>('./assets/esperanto/_list_words.json').subscribe((lists: IListWord[]) => this._vortlistoj$.next(lists));
+  }
+
+  /**
+   * TODO In the future we must choose JSON or Store. It depences on base we will use.
+   */
 
   /**
    * Возвращает список необходимых слов по названию листа
@@ -28,10 +47,6 @@ export class EsperantoService {
   public getListWordFromJSON(list: string): Observable<IWord[]> {
     return this.httpClient.get<IWord[]>(`./assets/esperanto/_${list}.json`);
   }
-
-  /**
-   * TODO In the future we must choose JSON or Store. It depences on base we will use.
-   */
 
   /**
    * Pronomoj

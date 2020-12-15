@@ -10,7 +10,11 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSortModule} from '@angular/material/sort';
 import {MatInputModule} from '@angular/material/input';
 import {MatDialogModule} from '@angular/material/dialog';
-
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatSelectModule} from '@angular/material/select';
+import {MatChipsModule} from '@angular/material/chips';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
 
 @NgModule({
   declarations: [],
@@ -25,7 +29,12 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatFormFieldModule,
     MatPaginatorModule,
     MatSortModule,
-    MatDialogModule
+    MatDialogModule,
+    MatCheckboxModule,
+    MatRadioModule,
+    MatSelectModule,
+    MatChipsModule,
+    MatAutocompleteModule
   ],
   exports: [
     MatToolbarModule,
@@ -37,7 +46,12 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatFormFieldModule,
     MatPaginatorModule,
     MatSortModule,
-    MatDialogModule
+    MatDialogModule,
+    MatCheckboxModule,
+    MatRadioModule,
+    MatSelectModule,
+    MatChipsModule,
+    MatAutocompleteModule
   ]
 })
 export class MaterialModule {

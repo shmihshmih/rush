@@ -1,11 +1,78 @@
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; font-size: 12pt; }
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 12pt;
+}
+
 a {
   color: black;
   text-decoration: none;
+
   &:hover, &:active {
     cursor: pointer;
     transition: 0.3s all;
     color: grey;
   }
-};
+}
+
+
+// library of common styles
+.w-100 {
+  width: 100%;
+}
+
+.f-16em {
+  font-size: 16em;
+}
+
+.lh-1 {
+  line-height: 1;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+
+.df-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mr-32 {
+  margin-right: 32px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.d-b {
+  display: block !important;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+// Карточки слов: настройки попапа
+.wordCardSettingsPopup {
+  overflow: auto;
+  height: auto !important;
+
+  .mat-dialog-container {
+    height: auto !important;
+    overflow: auto;
+    transform: none;
+
+    .mat-dialog-content {
+      height: auto !important;
+      width: 500px;
+      overflow: auto;
+      transform: none;
+    }
+  }
+}
