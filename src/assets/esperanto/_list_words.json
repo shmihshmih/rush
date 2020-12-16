@@ -1,7 +1,7 @@
 [
   {
     "title": "adjektivoj",
-    "collection": "adjektivoj",
+    "collection_caption": "adjektivoj",
     "cover": "assets/img/esperanto/adjektivoj/adjektivoj.png",
     "level": "fundamentoj",
     "caption": {
@@ -12,7 +12,7 @@
   },
   {
     "title": "demandovortoj",
-    "collection": "demandovortoj",
+    "collection_caption": "demandovortoj",
     "cover": "assets/img/esperanto/demandovortoj/demandovortoj.png",
     "level": "fundamentoj",
     "caption": {
@@ -23,7 +23,7 @@
   },
   {
     "title": "fruktoj",
-    "collection": "fruktoj",
+    "collection_caption": "fruktoj",
     "cover": "assets/img/esperanto/fruktoj/fruktoj.png",
     "level": "fundamentoj",
     "caption": {
@@ -34,7 +34,7 @@
   },
   {
     "title": "konjunkcioj",
-    "collection": "konjunkcioj",
+    "collection_caption": "konjunkcioj",
     "cover": "assets/img/esperanto/konjunkcioj/konjunkcioj.png",
     "level": "fundamentoj",
     "caption": {
@@ -45,7 +45,7 @@
   },
   {
     "title": "numeraloj",
-    "collection": "numeraloj",
+    "collection_caption": "numeraloj",
     "cover": "assets/img/esperanto/numeroj/numeroj.png",
     "level": "fundamentoj",
     "caption": {
@@ -56,7 +56,7 @@
   },
   {
     "title": "prepozicioj",
-    "collection": "prepozicioj",
+    "collection_caption": "prepozicioj",
     "cover": "assets/img/esperanto/prepozicioj/prepozicioj.png",
     "level": "fundamentoj",
     "caption": {
@@ -67,7 +67,7 @@
   },
   {
     "title": "pronomoj",
-    "collection": "pronomoj",
+    "collection_caption": "pronomoj",
     "cover": "assets/img/esperanto/pronomoj/pronomoj.png",
     "level": "fundamentoj",
     "caption": {
@@ -78,7 +78,7 @@
   },
   {
     "title": "tempo",
-    "collection": "tempo",
+    "collection_caption": "tempo",
     "cover": "assets/img/esperanto/tempo/tempo.png",
     "level": "fundamentoj",
     "caption": {
@@ -89,7 +89,7 @@
   },
   {
     "title": "verboj",
-    "collection": "verboj",
+    "collection_caption": "verboj",
     "cover": "assets/img/esperanto/verboj/verboj.png",
     "level": "fundamentoj",
     "caption": {

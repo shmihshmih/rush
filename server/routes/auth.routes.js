@@ -15,48 +15,57 @@ const responseStatus = {
 
 router.get(
   '/d',
-  (req, res) => {
-    res.send('GET request to the homepage from auth js');
-  });
+  async (req, res) => {
+    const isExist = await UserModel.find({});
+
+    //checking of exist
+    if (isExist) {
+        res.status(201).json({
+          isExist
+        })
+      res.send('GET request to the homepage from auth js');
+    }
+  }
+);
 
 router.post(
   '/',
   async (req, res) => {
     try {
       const user = req.body;
-      const isExist = await UserModel.findOne({ email: user.email })
+      const isExist = await UserModel.findOne({email: user.email})
 
       //checking of exist
-      if(isExist) {
-        if(user && isExist && !user.password) {
+      if (isExist) {
+        if (user && isExist && !user.password) {
           res.status(201).json({
             message: "Пользователь существует",
             email: isExist.email,
             status: responseStatus.userExist
           })
         }
-          //login
-          if(user && isExist && user.password) {
-            const isPassMatch = await bcrypt.compare(user.password, isExist.password)
-            if(isPassMatch) {
-              const token = jwt.sign(
-                {email: user.email},
-                config.get('jwtSecret'),
-                {expiresIn: '12h'}
-              )
-              res.status(201).json({ email: user.email, token, status: responseStatus.passMatched})
-            } else {
-              res.status(201).json({ auth: false, email: user.email, status: responseStatus.passNotMathed})
-            }
+        //login
+        if (user && isExist && user.password) {
+          const isPassMatch = await bcrypt.compare(user.password, isExist.password)
+          if (isPassMatch) {
+            const token = jwt.sign(
+              {email: user.email},
+              config.get('jwtSecret'),
+              {expiresIn: '12h'}
+            )
+            res.status(201).json({email: user.email, token, status: responseStatus.passMatched})
+          } else {
+            res.status(201).json({auth: false, email: user.email, status: responseStatus.passNotMathed})
           }
+        }
       }
 
       //registration
-      if(!isExist) {
+      if (!isExist) {
         //register
-        if(user && !isExist && user.email && user.password) {
+        if (user && !isExist && user.email && user.password) {
           const hashedPass = await bcrypt.hash(user.password, 12)
-          const addUser = new UserModel({...user,password: hashedPass })
+          const addUser = new UserModel({...user, password: hashedPass})
           await addUser.save()
           res.status(201).json({message: 'Пользователь создан', user, status: responseStatus.userCreated})
         }

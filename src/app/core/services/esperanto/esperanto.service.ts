@@ -4,12 +4,14 @@ import {BehaviorSubject, Observable, Subject} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
 import {Injectable} from '@angular/core';
 import {IListWord} from '../../../shared/models/esperanto/word_list.interface';
+import {ApiService} from '../api.service';
 
 @Injectable()
 export class EsperantoService {
   constructor(
     private httpClient: HttpClient,
-    private dictionaryService: DictionaryService
+    private dictionaryService: DictionaryService,
+    private apiService: ApiService
   ) {
   }
 
@@ -21,6 +23,10 @@ export class EsperantoService {
    */
   public init(): void {
     this.getAllDictionaries();
+  }
+
+  getAllDictionariesWithoutWords2(): Observable<IListWord[]> {
+    return this.httpClient.get<IListWord[]>(`${this.apiService.MAIN_SERVER}esperanto/wordLists`);
   }
 
   /**

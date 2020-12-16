@@ -1,6 +1,6 @@
 export interface IListWord {
   title: string;
-  collection: string;
+  collection_caption: string;
   level: string;
   cover: string;
   caption: {
