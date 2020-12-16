@@ -1,4 +1,4 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
+import {Component, HostListener, OnDestroy, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {EsperantoService} from '../../../core/services/esperanto/esperanto.service';
 import {switchMap, takeUntil, tap} from 'rxjs/operators';
@@ -22,6 +22,14 @@ export class WordCardComponent implements OnInit, OnDestroy {
   finishLang: 'russian' | 'english' | 'esperanto' = 'esperanto';
   isShowAnswer = false;
   activeWord: Subject<IWord> = new Subject();
+
+  // при нажатии на клавишу переключается слово
+  @HostListener('window:keyup', ['$event'])
+  keyEvent(event: KeyboardEvent): void {
+    if (event.key === 'ArrowRight' || event.key === ' ') {
+      this.showAnswer();
+    }
+  }
 
   constructor(private activatedRoute: ActivatedRoute,
               private esperantoService: EsperantoService,

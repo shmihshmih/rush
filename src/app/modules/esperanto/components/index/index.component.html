@@ -13,8 +13,12 @@
       </p>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-button color="primary" (click)="openListWord(vortListo.title)">Посмотреть</button>
-      <button mat-button color="primary" (click)="openCardExercise(vortListo.title)">Карточки</button>
+      <button mat-raised-button color="primary" (click)="openListWord(vortListo.title)">
+        <i class="material-icons-outlined">remove_red_eye</i>
+      </button>
+      <button mat-raised-button color="primary" (click)="openCardExercise(vortListo.title)">
+        <i class="material-icons-outlined">view_stream</i>
+      </button>
     </mat-card-actions>
   </mat-card>
 </div>
