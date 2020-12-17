@@ -46,7 +46,7 @@ export class WordCardSettingsComponent implements OnInit {
     this.formPatcher(this.wordCardSettingsForm, this.data.settings);
 
     // получение списка всех списков слов
-    this.esperantoService.getAllDictionariesWithoutWords().subscribe(wordList => {
+    this.esperantoService.getWordLists().subscribe(wordList => {
       this.allWordLists = wordList;
 
       this.data.activeWordLists.forEach(activeWordList => {

@@ -1,14 +1,14 @@
 [
-  {"esperanto": "bone",      "english": "good",        "russian": "хороший"},
-  {"esperanto": "malbona",   "english": "bad",         "russian": "плохой"},
-  {"esperanto": "granda",    "english": "big",         "russian": "большой"},
-  {"esperanto": "malmulte",  "english": "small",       "russian": "маленький"},
-  {"esperanto": "bonkora",   "english": "kind",        "russian": "добрый"},
-  {"esperanto": "malbono",   "english": "evil",        "russian": "злой"},
-  {"esperanto": "rapida",    "english": "fast",        "russian": "быстрый"},
-  {"esperanto": "malrapida", "english": "slow",        "russian": "медленный"},
-  {"esperanto": "gaja",      "english": "cheerful",    "russian": "веселый"},
-  {"esperanto": "malĝoja",   "english": "sad",         "russian": "грустный"},
-  {"esperanto": "enuiga",    "english": "boring",      "russian": "скучный"},
-  {"esperanto": "interesaj", "english": "interesting", "russian": "интересный"}
+  {"word_type": "adjektivoj", "esperanto": "bone",      "english": "good",        "russian": "хороший"},
+  {"word_type": "adjektivoj", "esperanto": "malbona",   "english": "bad",         "russian": "плохой"},
+  {"word_type": "adjektivoj", "esperanto": "granda",    "english": "big",         "russian": "большой"},
+  {"word_type": "adjektivoj", "esperanto": "malmulte",  "english": "small",       "russian": "маленький"},
+  {"word_type": "adjektivoj", "esperanto": "bonkora",   "english": "kind",        "russian": "добрый"},
+  {"word_type": "adjektivoj", "esperanto": "malbono",   "english": "evil",        "russian": "злой"},
+  {"word_type": "adjektivoj", "esperanto": "rapida",    "english": "fast",        "russian": "быстрый"},
+  {"word_type": "adjektivoj", "esperanto": "malrapida", "english": "slow",        "russian": "медленный"},
+  {"word_type": "adjektivoj", "esperanto": "gaja",      "english": "cheerful",    "russian": "веселый"},
+  {"word_type": "adjektivoj", "esperanto": "malĝoja",   "english": "sad",         "russian": "грустный"},
+  {"word_type": "adjektivoj", "esperanto": "enuiga",    "english": "boring",      "russian": "скучный"},
+  {"word_type": "adjektivoj", "esperanto": "interesaj", "english": "interesting", "russian": "интересный"}
 ]

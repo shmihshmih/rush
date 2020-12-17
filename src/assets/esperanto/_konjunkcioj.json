@@ -1,11 +1,11 @@
 [
-  {"esperanto": "kaj",      "english": "and",       "russian": "и"},
-  {"esperanto": "aŭ ",      "english": "or",        "russian": "или"},
-  {"esperanto": "ke",       "english": "that",      "russian": "чтобы"},
-  {"esperanto": "kvankam",  "english": "although",  "russian": "хотя"},
-  {"esperanto": "nek ",     "english": "nor",       "russian": "ни"},
-  {"esperanto": "ol ",      "english": "than",      "russian": "чем"},
-  {"esperanto": "sed   ",   "english": "but",       "russian": "если"},
-  {"esperanto": "ĉar  ",    "english": "because",   "russian": "потому что"},
-  {"esperanto": "tamen  ",  "english": "however",   "russian": "однако"}
+  {"word_type":"konjunkcioj", "esperanto": "kaj",      "english": "and",       "russian": "и"},
+  {"word_type":"konjunkcioj", "esperanto": "aŭ ",      "english": "or",        "russian": "или"},
+  {"word_type":"konjunkcioj", "esperanto": "ke",       "english": "that",      "russian": "чтобы"},
+  {"word_type":"konjunkcioj", "esperanto": "kvankam",  "english": "although",  "russian": "хотя"},
+  {"word_type":"konjunkcioj", "esperanto": "nek ",     "english": "nor",       "russian": "ни"},
+  {"word_type":"konjunkcioj", "esperanto": "ol ",      "english": "than",      "russian": "чем"},
+  {"word_type":"konjunkcioj", "esperanto": "sed   ",   "english": "but",       "russian": "если"},
+  {"word_type":"konjunkcioj", "esperanto": "ĉar  ",    "english": "because",   "russian": "потому что"},
+  {"word_type":"konjunkcioj", "esperanto": "tamen  ",  "english": "however",   "russian": "однако"}
 ]

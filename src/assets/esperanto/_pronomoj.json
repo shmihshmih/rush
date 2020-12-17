@@ -1,10 +1,10 @@
 [
-  {"esperanto": "Mi",   "english": "I",    "russian": "Я"},
-  {"esperanto": "Ni",   "english": "We",   "russian": "Мы"},
-  {"esperanto": "Vi",   "english": "You",  "russian": "Ты"},
-  {"esperanto": "Vi",   "english": "You",  "russian": "Вы"},
-  {"esperanto": "Li",   "english": "He",   "russian": "Он"},
-  {"esperanto": "Si ",  "english": "She",  "russian": "Она"},
-  {"esperanto": "Gi",   "english": "It",   "russian": "Оно"},
-  {"esperanto": "Ili ", "english": "They", "russian": "Они"}
+  {"word_type":"pronomoj", "esperanto": "Mi",   "english": "I",    "russian": "Я"},
+  {"word_type":"pronomoj", "esperanto": "Ni",   "english": "We",   "russian": "Мы"},
+  {"word_type":"pronomoj", "esperanto": "Vi",   "english": "You",  "russian": "Ты"},
+  {"word_type":"pronomoj", "esperanto": "Vi",   "english": "You",  "russian": "Вы"},
+  {"word_type":"pronomoj", "esperanto": "Li",   "english": "He",   "russian": "Он"},
+  {"word_type":"pronomoj", "esperanto": "Si ",  "english": "She",  "russian": "Она"},
+  {"word_type":"pronomoj", "esperanto": "Gi",   "english": "It",   "russian": "Оно"},
+  {"word_type":"pronomoj", "esperanto": "Ili ", "english": "They", "russian": "Они"}
 ]

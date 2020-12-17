@@ -38,7 +38,7 @@ export class WordListComponent implements OnDestroy {
     if (!list) {
       return;
     }
-    this.esperantoService.getListWordFromJSON(list).pipe(
+    this.esperantoService.getWordsByWordList(list).pipe(
       takeUntil(this.unsubscribe$)
     ).subscribe((words: IWord[]) => {
       this.dataSource = new MatTableDataSource(words);

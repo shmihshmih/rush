@@ -15,123 +15,25 @@ export class EsperantoService {
   ) {
   }
 
-  _vortlistoj$: BehaviorSubject<IListWord[]> = new BehaviorSubject([]);
-  vortlistoj$: Observable<IListWord[]> = this._vortlistoj$.asObservable();
-
-  /**
-   * Start app
-   */
-  public init(): void {
-    this.getAllDictionaries();
-  }
-
-  getAllDictionariesWithoutWords2(): Observable<IListWord[]> {
+  getWordLists(): Observable<IListWord[]> {
     return this.httpClient.get<IListWord[]>(`${this.apiService.MAIN_SERVER}esperanto/wordLists`);
   }
 
   /**
-   * Vortlisto
-   * get all lists words (получить все списки слов)
+   * get all words from word list
+   * @param wordList list we need
    */
-
-  public getAllDictionariesWithoutWords(): Observable<IListWord[]> {
-    return this.httpClient.get<IListWord[]>('./assets/esperanto/_list_words.json');
+  getWordsByWordList(wordList): Observable<IWord[]> {
+    const params = {wordList};
+    return this.httpClient.get<IWord[]>(`${this.apiService.MAIN_SERVER}esperanto/wordList`, {params});
   }
-
-  public getAllDictionaries(): void {
-    this.httpClient.get<IListWord[]>('./assets/esperanto/_list_words.json').subscribe((lists: IListWord[]) => this._vortlistoj$.next(lists));
-  }
-
-  /**
-   * TODO In the future we must choose JSON or Store. It depences on base we will use.
-   */
 
   /**
    * Возвращает список необходимых слов по названию листа
-   * @param list
+   * @param q
    */
-  public getListWordFromJSON(list: string): Observable<IWord[]> {
-    return this.httpClient.get<IWord[]>(`./assets/esperanto/_${list}.json`);
-  }
-
-  /**
-   * Pronomoj
-   * get pronouns (получить местоимения) JSON
-   */
-  public getPronounsFromJSON(): Observable<IWord[]> {
-    return this.httpClient.get<IWord[]>('./assets/esperanto/_pronomoj.json');
-  }
-
-  /**
-   * verboj
-   * get verbs (получить глаголы)
-   */
-  public getVerbsFromJSON(): Observable<IWord[]> {
-    return this.httpClient.get<IWord[]>('./assets/esperanto/_verboj.json');
-  }
-
-  /**
-   * adjektivoj
-   * get adjectives (получить прилашательные)
-   */
-  public getAdjectivesFromJSON(): Observable<IWord[]> {
-    return this.httpClient.get<IWord[]>('./assets/esperanto/_adjektivoj.json');
-  }
-
-  /**
-   * demandovortoj
-   * get question words (получить вопросительные слова)
-   */
-  public getDemandoVortojFromJSON(): Observable<IWord[]> {
-    return this.httpClient.get<IWord[]>('./assets/esperanto/_demandovortoj.json');
-  }
-
-  /**
-   * konjunkcioj
-   * get conjunction (получить союзы)
-   */
-  public getKonjunkciojFromJSON(): Observable<IWord[]> {
-    return this.httpClient.get<IWord[]>('./assets/esperanto/_konjunkcioj.json');
-  }
-
-  /**
-   * prepozicioj
-   * get prepositions (получить предлоги)
-   */
-  public getPrepoziciojFromJSON(): Observable<IWord[]> {
-    return this.httpClient.get<IWord[]>('./assets/esperanto/_prepozicioj.json');
-  }
-
-  /**
-   * Numeraloj
-   * get numbers (получить числа)
-   */
-  public getNumeralojFromJSON(): Observable<IWord[]> {
-    return this.httpClient.get<IWord[]>('./assets/esperanto/_numeraloj.json');
-  }
-
-  /**
-   * Fructoj
-   * get fruits (получить фрукты)
-   */
-  public getFruktojFromJSON(): Observable<IWord[]> {
-    return this.httpClient.get<IWord[]>('./assets/esperanto/_fruktoj.json');
-  }
-
-  /**
-   * tempo
-   * get time (получить время)
-   */
-  public getTempoFromJSON(): Observable<IWord[]> {
-    return this.httpClient.get<IWord[]>('./assets/esperanto/_tempo.json');
-  }
-
-  /**
-   * Pronomoj
-   * get pronouns (получить местоимения)
-   */
-  public getPronouns(): Observable<IWord[]> {
-    return this.dictionaryService.getPronomoj();
+  public getWordsFromJSON(q: string): Observable<IWord[]> {
+    return this.httpClient.get<IWord[]>(`./assets/esperanto/_${q}.json`);
   }
 
   /**

@@ -38,7 +38,7 @@ export class WordCardComponent implements OnInit, OnDestroy {
       switchMap(params => {
         if (params.vortListo) {
           this.activeWordLists.push(params.vortListo);
-          return this.esperantoService.getListWordFromJSON(params.vortListo);
+          return this.esperantoService.getWordsByWordList(params.vortListo);
         }
       }),
       tap(words => {
@@ -122,7 +122,7 @@ export class WordCardComponent implements OnInit, OnDestroy {
     this.startLang = settings.startLang;
     this.finishLang = settings.finishLang;
     wordLists.forEach(list => {
-      allWordLists.push(this.esperantoService.getListWordFromJSON(list.title));
+      allWordLists.push(this.esperantoService.getWordsByWordList(list.title));
       this.activeWordLists.push(list.title);
     });
     const allWordsFromAllLists: Observable<IWord[]> = forkJoin<IWord>([...allWordLists]);
