@@ -1,4 +1,4 @@
-const {Schema, model, Types} = require('mongoose')
+const {Schema, model} = require('mongoose')
 
 const UserSchema = new Schema({
     id: {type: String},
@@ -6,15 +6,8 @@ const UserSchema = new Schema({
     email: {type: String, required: true},
     password: {type: String},
     avatar: {type: String},
-    isDriver: {type: Boolean},
-    isPedestrian: {type: Boolean},
     about: {type: String},
-    birth: {type: String},
-    rate: {type: String},
-    car: {type: String},
-    isCarVisible: {type: Boolean},
-    carNumber: {type: String},
-    isCarNumberVisible: {type: Boolean}
+    birth: {type: String}
 })
 
 module.exports = model('UserModel', UserSchema)

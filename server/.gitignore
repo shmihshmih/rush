@@ -125,3 +125,5 @@ dist
 .pnp.*
 
 production.json
+
+package-lock.json
