@@ -1,21 +1,25 @@
 <mat-toolbar>
   <div fxHide fxShow.lt-md>
-    <div><a (click)="sidenavToggle()"><mat-icon fxLayout fxFlex>menu</mat-icon></a></div>
+    <div><a (click)="sidenavToggle()">
+      <mat-icon fxLayout fxFlex>menu</mat-icon>
+    </a></div>
   </div>
   <div class="header-logo">
     <img src="assets/img/logo_golem.png" alt="logo_golem.png">
-    <a [routerLink]="['']" >Логово Голема</a>
+    <a [routerLink]="['']">Логово Голема</a>
   </div>
   <div fxLayout fxFlex fxLayoutAlign="flex-end">
     <ul class="toolbar-list">
-      <li fxHide.lt-md><a [routerLink]="['']"         >Профиль   </a></li>
+      <li fxHide.lt-md><a [routerLink]="['']">Профиль </a></li>
       <li fxHide.lt-md><a [routerLink]="['esperanto']">Эсперанто </a></li>
-      <li fxHide.lt-md><a [routerLink]="['english']"  >Английский</a></li>
-      <li fxHide.lt-md><a [routerLink]="['blog']"     >Блог      </a></li>
-      <li fxHide.lt-md><a [routerLink]="['socrates']" >Socrates  </a></li>
-      <li fxHide.lt-md><a [routerLink]="['']"         >Выйти     </a></li>
-      <li fxHide.lt-md><a [routerLink]="['']"         >Войти     </a></li>
-      <li><a (click)="toggleTheme()"><mat-icon>brightness_medium</mat-icon></a></li>
+      <li fxHide.lt-md><a [routerLink]="['english']">Английский</a></li>
+      <li fxHide.lt-md><a [routerLink]="['blog']">Блог </a></li>
+      <li fxHide.lt-md><a [routerLink]="['socrates']">Socrates </a></li>
+      <li *ngIf="(apiService.isAuth | async) === true" fxHide.lt-md (click)="apiService.logout()"><a>Выйти</a></li>
+      <li *ngIf="(apiService.isAuth | async) === false" fxHide.lt-md (click)="openAuth()"><a>Войти</a></li>
+      <li><a (click)="toggleTheme()">
+        <mat-icon>brightness_medium</mat-icon>
+      </a></li>
     </ul>
   </div>
 </mat-toolbar>

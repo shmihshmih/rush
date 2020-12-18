@@ -1,6 +1,6 @@
 import {DictionaryService} from './store/dictionary.service';
 import {IWord} from '../../../shared/models/esperanto/word.interface';
-import {BehaviorSubject, Observable, Subject} from 'rxjs';
+import {Observable} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
 import {Injectable} from '@angular/core';
 import {IListWord} from '../../../shared/models/esperanto/word_list.interface';
@@ -15,6 +15,9 @@ export class EsperantoService {
   ) {
   }
 
+  /**
+   * get all word lists
+   */
   getWordLists(): Observable<IListWord[]> {
     return this.httpClient.get<IListWord[]>(`${this.apiService.MAIN_SERVER}esperanto/wordLists`);
   }

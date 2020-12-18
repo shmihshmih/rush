@@ -31,10 +31,8 @@ async function start() {
     });
     let db = mongoose.connection;
     db.on('error', console.error.bind(console, 'MongoDB connection error:'));
-    app.listen(PORT, () => console.log(`App has been started on port ${PORT}...`))
-  } catch (e) {
-    console.log(e.message)
-  }
+    app.listen(PORT, () => {})
+  } catch (e) {}
 }
 
 start()

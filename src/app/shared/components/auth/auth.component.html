@@ -1,0 +1,13 @@
+<div>
+  <form class="authForm" [formGroup]="authForm">
+    <mat-form-field>
+      <mat-label>login</mat-label>
+      <input matInput formControlName="email" placeholder="login">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>password</mat-label>
+      <input matInput formControlName="password" placeholder="password">
+    </mat-form-field>
+    <button color="primary" (click)="closePopup()" mat-raised-button>Enter</button>
+  </form>
+</div>

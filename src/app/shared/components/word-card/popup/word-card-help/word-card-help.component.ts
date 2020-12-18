@@ -21,8 +21,6 @@ export class WordCardHelpComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // @ts-ignore
-    console.log('data: ', this.data.text);
   }
 
 }

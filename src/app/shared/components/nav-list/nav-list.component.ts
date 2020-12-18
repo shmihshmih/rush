@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import {AuthComponent} from '../auth/auth.component';
+import {ApiService} from '../../../core/services/api.service';
+import {OverlayContainer} from '@angular/cdk/overlay';
+import {MatDialog} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-nav-list',
@@ -7,9 +11,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavListComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public apiService: ApiService,
+    public overlayContainer: OverlayContainer,
+    public dialog: MatDialog
+  ) { }
 
   ngOnInit(): void {
   }
 
+  openAuth(): void {
+    const dialogRef = this.dialog.open(AuthComponent, {
+      panelClass: [''],
+      data: {}
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (!result) {
+        return;
+      }
+    });
+  }
 }
