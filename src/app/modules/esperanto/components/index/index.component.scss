@@ -1,7 +1,12 @@
+:host ::ng-deep .mat-card-header-text {
+  width: 100%;
+}
+
 .main-container {
   display: flex;
   flex-flow: wrap row;
   justify-content: center;
+
   .esperanto-main-card {
     display: inline-block;
     margin: 8px;

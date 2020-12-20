@@ -1,26 +1,28 @@
 <div class="main-container">
   <mat-card *ngFor="let vortListo of vortlistoj$ | async" class="esperanto-main-card">
-    <mat-card-header>
-      <mat-card-title>
-        <h1 [routerLink]="['vortlisto', vortListo.title]">{{vortListo.title}}</h1>
-        <i (click)="delWordList(vortListo)" class="material-icons-outlined">delete</i>
-        <i (click)="updateWordList(vortListo)" class="material-icons-outlined">update</i>
+    <mat-card-header class="w-100">
+      <mat-card-title fxLayout="row" fxLayoutAlign="space-between center" class="w-100">
+        <h1 [routerLink]="['vortlisto', vortListo.collection_caption]">{{vortListo.title}}</h1>
+        <div *ngIf="apiService.isAuth | async">
+          <i (click)="updateWordList(vortListo)" class="material-icons-outlined">edit</i>
+          <i (click)="delWordList(vortListo)" class="material-icons-outlined">delete</i>
+        </div>
       </mat-card-title>
       <mat-card-subtitle>{{vortListo.level}}</mat-card-subtitle>
     </mat-card-header>
-    <div class="img-container" [routerLink]="['vortlisto', vortListo.title]"
+    <div class="img-container" [routerLink]="['vortlisto', vortListo.collection_caption]"
          [ngStyle]="vortListo.cover && {'background': 'center/50% url(' + vortListo.cover + ')'}">
     </div>
-    <mat-card-content [routerLink]="['vortlisto', vortListo.title]">
+    <mat-card-content [routerLink]="['vortlisto', vortListo.collection_caption]">
       <p>
         {{vortListo.caption.russian}}
       </p>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-raised-button color="primary" (click)="openListWord(vortListo.title)">
+      <button mat-raised-button color="primary" (click)="openListWord(vortListo.collection_caption)">
         <i class="material-icons-outlined">remove_red_eye</i>
       </button>
-      <button mat-raised-button color="primary" (click)="openCardExercise(vortListo.title)">
+      <button mat-raised-button color="primary" (click)="openCardExercise(vortListo.collection_caption)">
         <i class="material-icons-outlined">view_stream</i>
       </button>
     </mat-card-actions>

@@ -45,4 +45,34 @@ router.put('/wordList', async (req, res) => {
   })
 })
 
+// add word
+router.post('/word', async (req, res) => {
+  const newWord = new WordModel(req.body.params);
+  newWord.save((err, done) => {
+    if (err) return console.error(err);
+    res.status(201).json({item: req.body, message: "saved to wordModels collection."});
+  });
+})
+
+// delete word
+router.delete('/word', async (req, res) => {
+  const _id = [];
+  for (let o in req.query) {
+    _id.push(req.query[o])
+  }
+  WordModel.deleteOne({_id: _id.join('')}, (err, done) => {
+    if (err) return console.error(err);
+    res.status(201).json({item: _id.join(''), message: "deleted from wordModels collection."});
+  })
+})
+
+// update word
+router.put('/word', async (req, res) => {
+  const word = req.body.params;
+  WordModel.updateOne({_id: word._id}, {...req.body.params}, (err, done) => {
+    if (err) return console.error(err);
+    res.status(201).json({item: req.body, message: "item updated in wordListModels collection."});
+  })
+})
+
 module.exports = router

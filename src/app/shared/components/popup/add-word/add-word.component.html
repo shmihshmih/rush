@@ -1,0 +1,22 @@
+<div>
+  <form fxFlex fxLayout="column" fxLayoutAlign="center center" [formGroup]="wordForm">
+    <mat-form-field>
+      <mat-label>Список</mat-label>
+      <input matInput formControlName="word_type" placeholder="login">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>esperanto</mat-label>
+      <input matInput formControlName="esperanto" placeholder="login">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>english</mat-label>
+      <input matInput formControlName="english" placeholder="login">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>russian</mat-label>
+      <input matInput formControlName="russian" placeholder="login">
+    </mat-form-field>
+    <button *ngIf="!data.word" mat-raised-button (click)="addWord()" color="primary">add</button>
+    <button *ngIf="data && data.word && data.word._id" mat-raised-button (click)="updateWord(this.data.word._id)" color="primary">update</button>
+  </form>
+</div>
