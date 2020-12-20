@@ -33,7 +33,6 @@ export class AuthComponent implements OnInit {
     this.apiService.login(this.authForm.value).subscribe((res) => {
       if (res.token) {
         localStorage.setItem('token', res.token);
-        localStorage.setItem('email', res.email);
         this.apiService.isAuth.next(true);
         this.dialogRef.close();
       }

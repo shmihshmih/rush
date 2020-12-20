@@ -1,7 +1,11 @@
 <div class="main-container">
   <mat-card *ngFor="let vortListo of vortlistoj$ | async" class="esperanto-main-card">
     <mat-card-header>
-      <mat-card-title><h1 [routerLink]="['vortlisto', vortListo.title]">{{vortListo.title}}</h1></mat-card-title>
+      <mat-card-title>
+        <h1 [routerLink]="['vortlisto', vortListo.title]">{{vortListo.title}}</h1>
+        <i (click)="delWordList(vortListo)" class="material-icons-outlined">delete</i>
+        <i (click)="updateWordList(vortListo)" class="material-icons-outlined">update</i>
+      </mat-card-title>
       <mat-card-subtitle>{{vortListo.level}}</mat-card-subtitle>
     </mat-card-header>
     <div class="img-container" [routerLink]="['vortlisto', vortListo.title]"
@@ -21,55 +25,13 @@
       </button>
     </mat-card-actions>
   </mat-card>
+
+  <mat-card *ngIf="(apiService.isAuth | async) === true" (click)="addList()" class="esperanto-main-card add-list">
+    <mat-card-content fxFlex fxLayoutAlign="center center">
+      <button mat-raised-button color="primary">
+        <i class="material-icons-outlined">add_circle_outline</i>
+      </button>
+    </mat-card-content>
+  </mat-card>
+
 </div>
-
-<!--<p>pronomoj</p>-->
-<!--<div *ngFor="let word of pronomoj$ | async">-->
-<!--  {{word.esperanto}} / {{word.english}} / {{word.russian}}-->
-<!--</div>-->
-
-<!--<p>primeroj</p>-->
-<!--<div *ngFor="let word of verboj$ | async">-->
-<!--  {{word.esperanto}}-->
-<!--  /{{esperantoService.makePastVerb(word.esperanto)}}-->
-<!--  /{{esperantoService.makePresentVerb(word.esperanto)}}-->
-<!--  /{{esperantoService.makeFutureVerb(word.esperanto)}}-->
-<!--  /{{esperantoService.makeAdverb(esperantoService.makeRoot('infinitiveVerb', word.esperanto)) }}-->
-<!--  /{{esperantoService.makeAdjective(esperantoService.makeRoot('infinitiveVerb',word.esperanto))}}-->
-<!--  /{{esperantoService.makeInfinitiveVerb(esperantoService.makeRoot('infinitiveVerb',word.esperanto))}}-->
-<!--</div>-->
-
-<!--<p>adjektivoj</p>-->
-<!--<div *ngFor="let word of adjektivoj$ | async">-->
-<!--  {{word.esperanto}} / {{word.english}} / {{word.russian}}-->
-<!--</div>-->
-
-<!--<p>Demandovortoj</p>-->
-<!--<div *ngFor="let word of demandoVortoj$ | async">-->
-<!--  {{word.esperanto}} / {{word.english}} / {{word.russian}}-->
-<!--</div>-->
-
-<!--<p>Konjunkcioj</p>-->
-<!--<div *ngFor="let word of konjunkcioj$ | async">-->
-<!--  {{word.esperanto}} / {{word.english}} / {{word.russian}}-->
-<!--</div>-->
-
-<!--<p>Prepozicioj</p>-->
-<!--<div *ngFor="let word of prepozicioj$ | async">-->
-<!--  {{word.esperanto}} / {{word.english}} / {{word.russian}}-->
-<!--</div>-->
-
-<!--<p>Numeraloj</p>-->
-<!--<div *ngFor="let word of numeraloj$ | async">-->
-<!--  {{word.wordcode }} / {{word.esperanto}} / {{word.english}} / {{word.russian}}-->
-<!--</div>-->
-
-<!--<p>Fructoj</p>-->
-<!--<div *ngFor="let word of fructoj$ | async">-->
-<!--  {{word.esperanto}} / {{word.english}} / {{word.russian}}-->
-<!--</div>-->
-
-<!--<p>Tempo</p>-->
-<!--<div *ngFor="let word of tempo$ | async">-->
-<!--  {{word.esperanto}} / {{word.english}} / {{word.russian}}-->
-<!--</div>-->

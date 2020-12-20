@@ -1,0 +1,38 @@
+<div>
+  <form fxLayout="column" fxFlex fxLayoutAlign="center center" [formGroup]="wordListForm">
+    <mat-form-field>
+      <mat-label>title</mat-label>
+      <input matInput formControlName="title">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>collection_caption</mat-label>
+      <input matInput formControlName="collection_caption">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>cover</mat-label>
+      <input matInput formControlName="cover">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>level</mat-label>
+      <input matInput formControlName="level">
+    </mat-form-field>
+
+    <div fxLayout="column" fxFlex fxLayoutAlign="center center" formGroupName="caption">
+      <mat-form-field>
+        <mat-label>esperanto</mat-label>
+        <input matInput formControlName="esperanto">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>english</mat-label>
+        <input matInput formControlName="english">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>russian</mat-label>
+        <input matInput formControlName="russian">
+      </mat-form-field>
+    </div>
+
+    <button *ngIf="!data.wordList" mat-raised-button color="primary" (click)="addList()">add</button>
+    <button *ngIf="data && data.wordList && data.wordList._id" mat-raised-button color="primary" (click)="updateList(this.data.wordList._id)">update</button>
+  </form>
+</div>

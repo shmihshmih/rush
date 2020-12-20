@@ -66,6 +66,10 @@ a {
   overflow-wrap: anywhere;
 }
 
+.of-auto {
+  overflow: auto;
+}
+
 // Карточки слов: настройки попапа
 .wordCardSettingsPopup {
   overflow: auto;

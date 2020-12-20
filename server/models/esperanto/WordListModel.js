@@ -1,7 +1,6 @@
 const {Schema, model, Types} = require('mongoose')
 
 const WordListSchema = new Schema({
-  _id: Types.ObjectId,
   title: {type: String},
   collection_caption: {type: String},
   cover: {type: String},

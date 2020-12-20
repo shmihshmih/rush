@@ -11,6 +11,7 @@ import {WordCardHelpComponent} from './components/word-card/popup/word-card-help
 import {WordCardSettingsComponent} from './components/word-card/popup/word-card-settings/word-card-settings.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {AuthComponent} from './components/auth/auth.component';
+import {AddListComponent} from './components/popup/add-list/add-list.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {AuthComponent} from './components/auth/auth.component';
     WordCardComponent,
     WordCardHelpComponent,
     WordCardSettingsComponent,
-    AuthComponent
+    AuthComponent,
+    AddListComponent
   ],
   imports: [
     CommonModule,
@@ -38,7 +40,7 @@ import {AuthComponent} from './components/auth/auth.component';
     WordCardComponent,
     ReactiveFormsModule
   ],
-  entryComponents: [WordCardHelpComponent, WordCardSettingsComponent, AuthComponent]
+  entryComponents: [WordCardHelpComponent, WordCardSettingsComponent, AuthComponent, AddListComponent]
 })
 export class SharedModule {
 }

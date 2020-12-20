@@ -1,13 +1,16 @@
 import {DictionaryService} from './store/dictionary.service';
 import {IWord} from '../../../shared/models/esperanto/word.interface';
-import {Observable} from 'rxjs';
+import {Observable, of, Subject} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
-import {Injectable} from '@angular/core';
+import {Injectable, OnDestroy} from '@angular/core';
 import {IListWord} from '../../../shared/models/esperanto/word_list.interface';
 import {ApiService} from '../api.service';
+import {switchMap, takeUntil} from 'rxjs/operators';
 
 @Injectable()
-export class EsperantoService {
+export class EsperantoService implements OnDestroy {
+  unsubscribe$: Subject<boolean> = new Subject();
+
   constructor(
     private httpClient: HttpClient,
     private dictionaryService: DictionaryService,
@@ -29,6 +32,93 @@ export class EsperantoService {
   getWordsByWordList(wordList): Observable<IWord[]> {
     const params = {wordList};
     return this.httpClient.get<IWord[]>(`${this.apiService.MAIN_SERVER}esperanto/wordList`, {params});
+  }
+
+  /**
+   * Добавление нового списка слов с проверкой авторизации
+   * @param wordList название списка
+   */
+  addWordList(wordList): Observable<any> {
+    const params = wordList;
+    const token = localStorage.getItem('token');
+    if (token) {
+      return this.apiService.checkToken().pipe(
+        switchMap((isAuth): Observable<any> => {
+          if (isAuth.error) {
+            return of(false);
+          } else if (isAuth.token && isAuth.decoded) {
+            return of(true);
+          }
+        }),
+        switchMap(auth => {
+          if (auth) {
+            return this.httpClient.post(`${this.apiService.MAIN_SERVER}esperanto/wordList`, {params});
+          } else {
+            return of({message: 'Вы не можете совершить эту операцию!'});
+          }
+        })
+      );
+    } else {
+      return of({error: 'NoAuth', message: 'Залогиньтесь!'});
+    }
+  }
+
+  /**
+   * Удаление списка слов с проверкой авторизации
+   * @param wordList название списка
+   */
+  delWordList(wordList): Observable<any> {
+    const params = wordList._id;
+    const token = localStorage.getItem('token');
+    if (token) {
+      return this.apiService.checkToken().pipe(
+        switchMap((isAuth): Observable<any> => {
+          if (isAuth.error) {
+            return of(false);
+          } else if (isAuth.token && isAuth.decoded) {
+            return of(true);
+          }
+        }),
+        switchMap(auth => {
+          if (auth) {
+            return this.httpClient.delete(`${this.apiService.MAIN_SERVER}esperanto/wordList`, {params});
+          } else {
+            return of({message: 'Вы не можете совершить эту операцию!'});
+          }
+        })
+      );
+    } else {
+      return of({error: 'NoAuth', message: 'Залогиньтесь!'});
+    }
+  }
+
+  /**
+   * Редактирование списка слов с проверкой авторизации
+   * @param wordList название списка
+   */
+  updateWordList(wordList): Observable<any> {
+    const params = wordList;
+    const token = localStorage.getItem('token');
+    if (token) {
+      return this.apiService.checkToken().pipe(
+        switchMap((isAuth): Observable<any> => {
+          if (isAuth.error) {
+            return of(false);
+          } else if (isAuth.token && isAuth.decoded) {
+            return of(true);
+          }
+        }),
+        switchMap(auth => {
+          if (auth) {
+            return this.httpClient.put(`${this.apiService.MAIN_SERVER}esperanto/wordList`, {params});
+          } else {
+            return of({message: 'Вы не можете совершить эту операцию!'});
+          }
+        })
+      );
+    } else {
+      return of({error: 'NoAuth', message: 'Залогиньтесь!'});
+    }
   }
 
   /**
@@ -113,6 +203,10 @@ export class EsperantoService {
    */
   public makeNoun(root: string): string {
     return root + 'o';
+  }
+
+  ngOnDestroy(): void {
+    this.unsubscribe$.complete();
   }
 }
 
