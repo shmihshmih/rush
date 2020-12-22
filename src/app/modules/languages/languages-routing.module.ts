@@ -29,6 +29,26 @@ const routes: Routes = [
     path: 'vortokarto/:vortListo',
     component: WordCardComponent,
     pathMatch: 'full'
+  },
+  {
+    path: 'wordList',
+    component: WordListComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'wordList/:wordList',
+    component: WordListComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'wordcard/',
+    component: WordCardComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'wordcard/:wordList',
+    component: WordCardComponent,
+    pathMatch: 'full'
   }
 ];
 
@@ -36,5 +56,5 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class EsperantoRoutingModule {
+export class LanguagesRoutingModule {
 }

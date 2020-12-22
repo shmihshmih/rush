@@ -1,7 +1,6 @@
-import { SocratesRoutingModule } from './socrates-routing.module';
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-
+import {SocratesRoutingModule} from './socrates-routing.module';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
 
 @NgModule({
@@ -11,4 +10,5 @@ import { CommonModule } from '@angular/common';
     SocratesRoutingModule
   ]
 })
-export class SocratesModule { }
+export class SocratesModule {
+}

@@ -1,34 +1,44 @@
-import {EsperantoService} from '../../../../core/services/esperanto/esperanto.service';
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Observable, Subject} from 'rxjs';
-import {IListWord} from '../../../../shared/models/esperanto/word_list.interface';
+import {IListWord} from '../../models/esperanto/word_list.interface';
+import {EsperantoService} from '../../../core/services/esperanto/esperanto.service';
 import {Router} from '@angular/router';
-import {ApiService} from '../../../../core/services/api.service';
-import {OverlayContainer} from '@angular/cdk/overlay';
+import {ApiService} from '../../../core/services/api.service';
 import {MatDialog} from '@angular/material/dialog';
-import {AddListComponent} from '../../../../shared/components/popup/add-list/add-list.component';
+import {AddListComponent} from '../popup/add-list/add-list.component';
 import {takeUntil} from 'rxjs/operators';
 
 @Component({
-  selector: 'app-index',
-  templateUrl: './index.component.html',
-  styleUrls: ['./index.component.scss']
+  selector: 'app-word-lists',
+  templateUrl: './word-lists.component.html',
+  styleUrls: ['./word-lists.component.scss']
 })
-export class IndexComponent implements OnInit, OnDestroy {
+export class WordListsComponent implements OnInit, OnDestroy {
   unsubscribe$: Subject<boolean> = new Subject();
   vortlistoj$: Observable<IListWord[]>;
+  mode: 'russian' | 'english' | 'esperanto' = 'english';
 
   constructor(
     public esperantoService: EsperantoService,
     private router: Router,
     public apiService: ApiService,
-    public overlayContainer: OverlayContainer,
     public dialog: MatDialog
   ) {
   }
 
   ngOnInit(): void {
     this.vortlistoj$ = this.esperantoService.getWordLists();
+    switch (this.router.url.split('/')[1]) {
+      case 'russian' :
+        this.mode = 'russian';
+        break;
+      case 'esperanto':
+        this.mode = 'esperanto';
+        break;
+      case 'english':
+        this.mode = 'english';
+        break;
+    }
   }
 
   openListWord(title: string): void {

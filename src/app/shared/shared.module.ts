@@ -13,6 +13,8 @@ import {ReactiveFormsModule} from '@angular/forms';
 import {AuthComponent} from './components/auth/auth.component';
 import {AddListComponent} from './components/popup/add-list/add-list.component';
 import {AddWordComponent} from './components/popup/add-word/add-word.component';
+import {WordListsComponent} from './components/word-lists/word-lists.component';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -24,14 +26,16 @@ import {AddWordComponent} from './components/popup/add-word/add-word.component';
     WordCardSettingsComponent,
     AuthComponent,
     AddListComponent,
-    AddWordComponent
+    AddWordComponent,
+    WordListsComponent
   ],
   imports: [
     CommonModule,
     MaterialModule,
     RouterModule,
     FlexLayoutModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatCardModule
   ],
   exports: [
     MaterialModule,
@@ -40,7 +44,8 @@ import {AddWordComponent} from './components/popup/add-word/add-word.component';
     FlexLayoutModule,
     WordListComponent,
     WordCardComponent,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    WordListsComponent
   ],
   entryComponents: [WordCardHelpComponent, WordCardSettingsComponent, AuthComponent, AddListComponent, AddWordComponent]
 })
