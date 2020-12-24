@@ -14,7 +14,7 @@ import {AuthComponent} from './components/auth/auth.component';
 import {AddListComponent} from './components/popup/add-list/add-list.component';
 import {AddWordComponent} from './components/popup/add-word/add-word.component';
 import {WordListsComponent} from './components/word-lists/word-lists.component';
-import {MatCardModule} from '@angular/material/card';
+import {BookQuestComponent} from './components/book-quest/book-quest.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +27,8 @@ import {MatCardModule} from '@angular/material/card';
     AuthComponent,
     AddListComponent,
     AddWordComponent,
-    WordListsComponent
+    WordListsComponent,
+    BookQuestComponent
   ],
   imports: [
     CommonModule,
@@ -35,7 +36,6 @@ import {MatCardModule} from '@angular/material/card';
     RouterModule,
     FlexLayoutModule,
     ReactiveFormsModule,
-    MatCardModule
   ],
   exports: [
     MaterialModule,
@@ -45,7 +45,8 @@ import {MatCardModule} from '@angular/material/card';
     WordListComponent,
     WordCardComponent,
     ReactiveFormsModule,
-    WordListsComponent
+    WordListsComponent,
+    BookQuestComponent
   ],
   entryComponents: [WordCardHelpComponent, WordCardSettingsComponent, AuthComponent, AddListComponent, AddWordComponent]
 })

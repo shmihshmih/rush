@@ -2,5 +2,5 @@
   "jwtSecret": "hello from my heart",
   "port": 5000,
   "baseUrl": "http://localhost:5000",
-  "mongoURLesperanto": "mongodb://localhost:27017/esperanto"
+  "MongoRushService": "mongodb://localhost:27017/rushservice"
 }

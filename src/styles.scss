@@ -25,21 +25,34 @@ a {
   width: 100%;
 }
 
-.f-16em {
-  font-size: 16em;
-}
 
+// line-height
 .lh-1 {
   line-height: 1;
 }
 
-.m-0 {
-  margin: 0 !important;
+.lh-2rem {
+  line-height: 2rem;
 }
 
-.df-space-between {
-  display: flex;
-  justify-content: space-between;
+// font-size
+.fs-2rem {
+  font-size: 2rem;
+}
+
+// обычно большой текст для карточек
+.fs-20vw {
+  font-size: 20vw;
+}
+
+// обычно большой текст для карточек
+.f-16em {
+  font-size: 16em;
+}
+
+// margin
+.m-0 {
+  margin: 0 !important;
 }
 
 .mr-32 {
@@ -54,6 +67,11 @@ a {
   margin-bottom: 16px;
 }
 
+.df-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
 .d-b {
   display: block !important;
 }
@@ -62,16 +80,21 @@ a {
   font-weight: 600;
 }
 
-.fs-20vw {
-  font-size: 20vw;
-}
-
 .ow-anywhere {
   overflow-wrap: anywhere;
 }
 
 .of-auto {
   overflow: auto;
+}
+
+.td-underline {
+  text-decoration: underline;
+}
+
+// padding
+.p-16 {
+  padding: 16px;
 }
 
 // Карточки слов: настройки попапа

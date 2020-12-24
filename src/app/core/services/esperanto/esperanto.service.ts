@@ -1,11 +1,10 @@
-import {DictionaryService} from './store/dictionary.service';
 import {IWord} from '../../../shared/models/esperanto/word.interface';
 import {Observable, of, Subject} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
 import {Injectable, OnDestroy} from '@angular/core';
 import {IListWord} from '../../../shared/models/esperanto/word_list.interface';
 import {ApiService} from '../api.service';
-import {switchMap, takeUntil} from 'rxjs/operators';
+import {switchMap} from 'rxjs/operators';
 
 @Injectable()
 export class EsperantoService implements OnDestroy {
@@ -13,7 +12,6 @@ export class EsperantoService implements OnDestroy {
 
   constructor(
     private httpClient: HttpClient,
-    private dictionaryService: DictionaryService,
     private apiService: ApiService
   ) {
   }

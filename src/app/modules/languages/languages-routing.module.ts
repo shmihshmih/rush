@@ -1,4 +1,4 @@
-import {IndexComponent} from './components/index/index.component';
+import {IndexComponent} from './pages/index/index.component';
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 import {WordListComponent} from '../../shared/components/word-list/word-list.component';

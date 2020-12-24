@@ -1,0 +1,19 @@
+<div fxLayout="row" fxFlex fxLayoutAlign="center center" class="w-100 lh-2rem fs-2rem">
+  <div class="book-quest-part-container p-16">
+      <span *ngFor="let part of questPart">
+    <span *ngIf="part" ngSwitch="{{part.type}}">
+
+      <span *ngSwitchCase="'txt'">{{part.data}}</span>
+
+      <span *ngSwitchCase="'link'">
+        <a class="td-underline" [routerLink]="['/', 'blog', 'bookquest', questTitle, part.data]">[{{part.data}}]</a>
+      </span>
+
+      <p *ngSwitchCase="'no-data'">
+        <a class="td-underline" (click)="location.back()">[назад]</a>
+      </p>
+
+    </span>
+  </span>
+  </div>
+</div>

@@ -21,15 +21,16 @@ app.use(cors())
 
 app.use('/api/user', require('./routes/auth.routes'))
 app.use('/api/esperanto', require('./routes/esperanto.routes'))
+app.use('/api/blog', require('./routes/blog.routes'))
 
 async function start() {
   try {
-    await mongoose.connect(config.get('mongoURLesperanto'), {
+    await mongoose.connect(config.get('MongoRushService'), {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useCreateIndex: true
     });
-    let db = mongoose.connection;
+    const db = mongoose.connection;
     db.on('error', console.error.bind(console, 'MongoDB connection error:'));
     app.listen(PORT, () => {})
   } catch (e) {}
