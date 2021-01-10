@@ -208,7 +208,7 @@ export class EsperantoService implements OnDestroy {
 
   /**
    * Возвращает список необходимых слов по названию листа
-   * @param q
+   * @param q название документа
    */
   public getWordsFromJSON(q: string): Observable<IWord[]> {
     return this.httpClient.get<IWord[]>(`./assets/esperanto/_${q}.json`);

@@ -1,0 +1,6512 @@
+[
+  {
+    "esperanto": "",
+    "english": "abide",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "abided / abode",
+      "englishThirdForm": "abided",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "alight",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "alighted / alit",
+      "englishThirdForm": "alighted / alit",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "arise",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "arose",
+      "englishThirdForm": "arisen",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "awake",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "awakened / awoke",
+      "englishThirdForm": "awakened / awoken",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "backbite",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "backbit",
+      "englishThirdForm": "backbitten",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "backslide",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "backslid",
+      "englishThirdForm": "backslidden / backslid",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "be",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "was, were",
+      "englishThirdForm": "been",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "bear",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "bore",
+      "englishThirdForm": "born / borne",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "beat",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "beat",
+      "englishThirdForm": "beaten / beat",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "become",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "became",
+      "englishThirdForm": "become",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "befall",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "befell",
+      "englishThirdForm": "befallen",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "beget",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "begat / begot",
+      "englishThirdForm": "begotten",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "begin",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "began",
+      "englishThirdForm": "begun",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "behold",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "beheld",
+      "englishThirdForm": "beheld",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "bend",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "bent",
+      "englishThirdForm": "bent",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "bereave",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "bereaved / bereft",
+      "englishThirdForm": "bereaved / bereft",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "beseech",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "besought / beseeched",
+      "englishThirdForm": "besought / beseeched",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "beset",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "beset",
+      "englishThirdForm": "beset",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "bestrew",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "bestrewed",
+      "englishThirdForm": "bestrewn / bestrewed",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "bet",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "",
+      "englishThirdForm": "",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "betake",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "betook",
+      "englishThirdForm": "betaken",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "bethink",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "bethought",
+      "englishThirdForm": "bethought",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "bid (farewell)",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "bid / bade",
+      "englishThirdForm": "bidden",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "bid (offer amount)",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "bid",
+      "englishThirdForm": "bid",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "bind",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "bound",
+      "englishThirdForm": "bound",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "bite",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "bit",
+      "englishThirdForm": "bitten",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "bleed",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "bled",
+      "englishThirdForm": "bled",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "blow",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "blew",
+      "englishThirdForm": "blown",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "break",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "broke",
+      "englishThirdForm": "broken",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "breed",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "bred",
+      "englishThirdForm": "bred",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "bring",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "brought",
+      "englishThirdForm": "brought",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "broadcast",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "broadcast / broadcasted",
+      "englishThirdForm": "broadcast / broadcasted",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "browbeat",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "browbeat",
+      "englishThirdForm": "browbeaten / browbeat",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "build",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "built",
+      "englishThirdForm": "built",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "burn",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "",
+      "englishThirdForm": "",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "burst",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "burst",
+      "englishThirdForm": "burst",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "bust",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "busted / bust",
+      "englishThirdForm": "busted / bust",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "buy",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "bought",
+      "englishThirdForm": "bought",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "cast",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "cast",
+      "englishThirdForm": "cast",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "catch",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "caught",
+      "englishThirdForm": "caught",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "chide",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "chided / chid",
+      "englishThirdForm": "chided / chidden",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "choose",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "chose",
+      "englishThirdForm": "chosen",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "clap",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "",
+      "englishThirdForm": "",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "cling",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "clung",
+      "englishThirdForm": "clung",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "clothe",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "",
+      "englishThirdForm": "",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "colorbreed",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "colorbred",
+      "englishThirdForm": "colorbred",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "come",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "came",
+      "englishThirdForm": "come",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "cost",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "cost",
+      "englishThirdForm": "cost",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "creep",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "crept",
+      "englishThirdForm": "crept",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "crossbreed",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "crossbred",
+      "englishThirdForm": "crossbred",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "cut",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "cut",
+      "englishThirdForm": "cut",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "dare",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "dared / durst",
+      "englishThirdForm": "dared / durst",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "daydream",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "",
+      "englishThirdForm": "",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "deal",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "dealt",
+      "englishThirdForm": "dealt",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "dig",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "dug",
+      "englishThirdForm": "dug",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "dight",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "dighted / dight",
+      "englishThirdForm": "dighted / dight",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "disprove",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "disproved",
+      "englishThirdForm": "disproved / disproven",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "dive (jump head-first)",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "dove / dived",
+      "englishThirdForm": "dived",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "dive (scuba diving)",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "dived / dove",
+      "englishThirdForm": "dived",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "do",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "did",
+      "englishThirdForm": "done",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "draw",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "drew",
+      "englishThirdForm": "drawn",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "dream",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "",
+      "englishThirdForm": "",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "drink",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "drank",
+      "englishThirdForm": "drunk",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "drive",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "drove",
+      "englishThirdForm": "driven",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "dwell",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "",
+      "englishThirdForm": "",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "eat",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "ate",
+      "englishThirdForm": "eaten",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "enwind",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "enwound",
+      "englishThirdForm": "enwound",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "fall",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "fell",
+      "englishThirdForm": "fallen",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "feed",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "fed",
+      "englishThirdForm": "fed",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "feel",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "felt",
+      "englishThirdForm": "felt",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "fight",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "fought",
+      "englishThirdForm": "fought",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "find",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "found",
+      "englishThirdForm": "found",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "flee",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "fled",
+      "englishThirdForm": "fled",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "fling",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "flung",
+      "englishThirdForm": "flung",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "fly",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "flew",
+      "englishThirdForm": "flown",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "forbear",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "forbore",
+      "englishThirdForm": "forborne",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "forbid",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "forbade",
+      "englishThirdForm": "forbidden",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "fordo",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "fordid",
+      "englishThirdForm": "fordone",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "forecast",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "forecast",
+      "englishThirdForm": "forecast",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "forego (also forgo)",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "forewent",
+      "englishThirdForm": "foregone",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "foreknow",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "foreknew",
+      "englishThirdForm": "foreknown",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "forerun",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "foreran",
+      "englishThirdForm": "forerun",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "foresee",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "foresaw",
+      "englishThirdForm": "foreseen",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "foreshow",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "foreshowed",
+      "englishThirdForm": "foreshown / foreshowed",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "forespeak",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "forespoke",
+      "englishThirdForm": "forespoken",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "foretell",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "foretold",
+      "englishThirdForm": "foretold",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "forget",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "forgot",
+      "englishThirdForm": "",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "forgive",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "forgave",
+      "englishThirdForm": "forgiven",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "forsake",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "forsook",
+      "englishThirdForm": "forsaken",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "forswear",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "forswore",
+      "englishThirdForm": "forsworn",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "fraught",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "fraught",
+      "englishThirdForm": "fraught",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "freeze",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "froze",
+      "englishThirdForm": "frozen",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "frostbite",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "frostbit",
+      "englishThirdForm": "frostbitten",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "gainsay",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "gainsaid",
+      "englishThirdForm": "gainsaid",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "get",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "got",
+      "englishThirdForm": "",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "gild",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "gilded / gilt",
+      "englishThirdForm": "gilded / gilt",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "give",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "gave",
+      "englishThirdForm": "given",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "go",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "went",
+      "englishThirdForm": "gone",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "grind",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "ground",
+      "englishThirdForm": "ground",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "grow",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "grew",
+      "englishThirdForm": "grown",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "hagride",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "hagrode",
+      "englishThirdForm": "hagridden",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "halterbreak",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "halterbroke",
+      "englishThirdForm": "halterbroken",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "hamstring",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "hamstrung",
+      "englishThirdForm": "hamstrung",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "handwrite",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "handwrote",
+      "englishThirdForm": "handwritten",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "hang",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "hung",
+      "englishThirdForm": "hung",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "hang (kill by hanging)",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "hanged / hung",
+      "englishThirdForm": "hanged / hung",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "have",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "had",
+      "englishThirdForm": "had",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "hear",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "heard",
+      "englishThirdForm": "heard",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "heave",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "heaved / hove",
+      "englishThirdForm": "heaved / hove",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "hew",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "hewed",
+      "englishThirdForm": "hewn / hewed",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "hide",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "hid",
+      "englishThirdForm": "hidden",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "hit",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "hit",
+      "englishThirdForm": "hit",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "hold",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "held",
+      "englishThirdForm": "held",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "hurt",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "hurt",
+      "englishThirdForm": "hurt",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "inbreed",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "inbred",
+      "englishThirdForm": "inbred",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "inlay",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "inlaid",
+      "englishThirdForm": "inlaid",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "input",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "input / inputted",
+      "englishThirdForm": "input / inputted",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "inset",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "inset",
+      "englishThirdForm": "inset",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "interbreed",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "interbred",
+      "englishThirdForm": "interbred",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "intercut",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "intercut",
+      "englishThirdForm": "intercut",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "interlay",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "interlaid",
+      "englishThirdForm": "interlaid",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "interset",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "interset",
+      "englishThirdForm": "interset",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "interweave",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "interwove / interweaved",
+      "englishThirdForm": "interwoven / interweaved",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "interwind",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "interwound",
+      "englishThirdForm": "interwound",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "inweave",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "inwove / inweaved",
+      "englishThirdForm": "inwoven / inweaved",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "keep",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "kept",
+      "englishThirdForm": "kept",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "kneel",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "knelt / kneeled",
+      "englishThirdForm": "knelt / kneeled",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "knit",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "knitted / knit",
+      "englishThirdForm": "knitted / knit",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "know",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "knew",
+      "englishThirdForm": "known",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "lade",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "laded",
+      "englishThirdForm": "laden / laded",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "landslide",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "landslid",
+      "englishThirdForm": "landslid",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "lay",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "laid",
+      "englishThirdForm": "laid",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "lead",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "led",
+      "englishThirdForm": "led",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "lean",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "",
+      "englishThirdForm": "",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "leap",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "",
+      "englishThirdForm": "",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "learn",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "",
+      "englishThirdForm": "",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "leave",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "left",
+      "englishThirdForm": "left",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "lend",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "lent",
+      "englishThirdForm": "lent",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "let",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "let",
+      "englishThirdForm": "let",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "lie",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "lay",
+      "englishThirdForm": "lain",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "light",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "lit / lighted",
+      "englishThirdForm": "lit / lighted",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "lose",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "lost",
+      "englishThirdForm": "lost",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "make",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "made",
+      "englishThirdForm": "made",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "mean",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "meant",
+      "englishThirdForm": "meant",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "meet",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "met",
+      "englishThirdForm": "met",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "misbecome",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "misbecame",
+      "englishThirdForm": "misbecome",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "miscast",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "miscast",
+      "englishThirdForm": "miscast",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "miscut",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "miscut",
+      "englishThirdForm": "miscut",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "misdeal",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "misdealt",
+      "englishThirdForm": "misdealt",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "misdo",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "misdid",
+      "englishThirdForm": "misdone",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "mishear",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "misheard",
+      "englishThirdForm": "misheard",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "mishit",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "mishit",
+      "englishThirdForm": "mishit",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "mislay",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "mislaid",
+      "englishThirdForm": "mislaid",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "mislead",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "misled",
+      "englishThirdForm": "misled",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "mislearn",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "",
+      "englishThirdForm": "",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "misread",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "misread",
+      "englishThirdForm": "misread",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "missay",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "missaid",
+      "englishThirdForm": "missaid",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "missend",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "missent",
+      "englishThirdForm": "missent",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "misset",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "misset",
+      "englishThirdForm": "misset",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "misspeak",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "misspoke",
+      "englishThirdForm": "misspoken",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "misspell",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "",
+      "englishThirdForm": "",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "misspend",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "misspent",
+      "englishThirdForm": "misspent",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "misswear",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "misswore",
+      "englishThirdForm": "missworn",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "mistake",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "mistook",
+      "englishThirdForm": "mistaken",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "misteach",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "mistaught",
+      "englishThirdForm": "mistaught",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "mistell",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "mistold",
+      "englishThirdForm": "mistold",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "misthink",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "misthought",
+      "englishThirdForm": "misthought",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "misunderstand",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "misunderstood",
+      "englishThirdForm": "misunderstood",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "miswear",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "miswore",
+      "englishThirdForm": "misworn",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "miswed",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "miswed / miswedded",
+      "englishThirdForm": "miswed / miswedded",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "miswrite",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "miswrote",
+      "englishThirdForm": "miswritten",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "mow",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "mowed",
+      "englishThirdForm": "mowed / mown",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "offset",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "offset",
+      "englishThirdForm": "offset",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "outbid",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "outbid",
+      "englishThirdForm": "outbid",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "outbreed",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "outbred",
+      "englishThirdForm": "outbred",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "outdo",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "outdid",
+      "englishThirdForm": "outdone",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "outdraw",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "outdrew",
+      "englishThirdForm": "outdrawn",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "outdrink",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "outdrank",
+      "englishThirdForm": "outdrunk",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "outdrive",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "outdrove",
+      "englishThirdForm": "outdriven",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "outfight",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "outfought",
+      "englishThirdForm": "outfought",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "outfly",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "outflew",
+      "englishThirdForm": "outflown",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "outgrow",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "outgrew",
+      "englishThirdForm": "outgrown",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "outlay",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "outlaid",
+      "englishThirdForm": "outlaid",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "outleap",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "",
+      "englishThirdForm": "",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "output",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "output / outputted",
+      "englishThirdForm": "output / outputted",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "outride",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "outrode",
+      "englishThirdForm": "outridden",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "outrun",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "outran",
+      "englishThirdForm": "outrun",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "outsee",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "outsaw",
+      "englishThirdForm": "outseen",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "outsell",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "outsold",
+      "englishThirdForm": "outsold",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "outshine",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "",
+      "englishThirdForm": "",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "outshoot",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "outshot",
+      "englishThirdForm": "outshot",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "outsing",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "outsang",
+      "englishThirdForm": "outsung",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "outsit",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "outsat",
+      "englishThirdForm": "outsat",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "outsleep",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "outslept",
+      "englishThirdForm": "outslept",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "outsmell",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "",
+      "englishThirdForm": "",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "outspeak",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "outspoke",
+      "englishThirdForm": "outspoken",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "outspeed",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "outsped",
+      "englishThirdForm": "outsped",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "outspend",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "outspent",
+      "englishThirdForm": "outspent",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "outspin",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "outspun",
+      "englishThirdForm": "outspun",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "outspring",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "outsprang / outsprung",
+      "englishThirdForm": "outsprung",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "outstand",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "outstood",
+      "englishThirdForm": "outstood",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "outswear",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "outswore",
+      "englishThirdForm": "outsworn",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "outswim",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "outswam",
+      "englishThirdForm": "outswum",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "outtell",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "outtold",
+      "englishThirdForm": "outtold",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "outthink",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "outthought",
+      "englishThirdForm": "outthought",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "outthrow",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "outthrew",
+      "englishThirdForm": "outthrown",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "outwear",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "outwore",
+      "englishThirdForm": "outworn",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "outwind",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "outwound",
+      "englishThirdForm": "outwound",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "outwrite",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "outwrote",
+      "englishThirdForm": "outwritten",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "overbear",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "overbore",
+      "englishThirdForm": "overborne / overborn",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "overbid",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "overbid",
+      "englishThirdForm": "overbid",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "overbreed",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "overbred",
+      "englishThirdForm": "overbred",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "overbuild",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "overbuilt",
+      "englishThirdForm": "overbuilt",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "overbuy",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "overbought",
+      "englishThirdForm": "overbought",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "overcast",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "overcast",
+      "englishThirdForm": "overcast",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "overcome",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "overcame",
+      "englishThirdForm": "overcome",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "overcut",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "overcut",
+      "englishThirdForm": "overcut",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "overdo",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "overdid",
+      "englishThirdForm": "overdone",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "overdraw",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "overdrew",
+      "englishThirdForm": "overdrawn",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "overdrink",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "overdrank",
+      "englishThirdForm": "overdrunk",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "overeat",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "overate",
+      "englishThirdForm": "overeaten",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "overfeed",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "overfed",
+      "englishThirdForm": "overfed",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "overhang",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "overhung",
+      "englishThirdForm": "overhung",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "overhear",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "overheard",
+      "englishThirdForm": "overheard",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "overlay",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "overlaid",
+      "englishThirdForm": "overlaid",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "overleap",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "",
+      "englishThirdForm": "",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "overlie",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "overlay",
+      "englishThirdForm": "overlain",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "overpay",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "overpaid",
+      "englishThirdForm": "overpaid",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "override",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "overrode",
+      "englishThirdForm": "overridden",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "overrun",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "overran",
+      "englishThirdForm": "overrun",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "oversee",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "oversaw",
+      "englishThirdForm": "overseen",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "oversell",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "oversold",
+      "englishThirdForm": "oversold",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "overset",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "overset",
+      "englishThirdForm": "overset",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "oversew",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "oversewed",
+      "englishThirdForm": "oversewn / oversewed",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "overshoot",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "overshot",
+      "englishThirdForm": "overshot",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "oversleep",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "overslept",
+      "englishThirdForm": "overslept",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "oversow",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "oversowed",
+      "englishThirdForm": "oversown / oversowed",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "overspeak",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "overspoke",
+      "englishThirdForm": "overspoken",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "overspend",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "overspent",
+      "englishThirdForm": "overspent",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "overspill",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "",
+      "englishThirdForm": "",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "overspin",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "overspun",
+      "englishThirdForm": "overspun",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "overspread",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "overspread",
+      "englishThirdForm": "overspread",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "overspring",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "oversprang / oversprung / ",
+      "englishThirdForm": "oversprung",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "overstand",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "overstood",
+      "englishThirdForm": "overstood",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "overstrew",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "overstrewed",
+      "englishThirdForm": "overstrewn / overstrewed",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "overstride",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "overstrode",
+      "englishThirdForm": "overstridden",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "overstrike",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "overstruck",
+      "englishThirdForm": "overstruck",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "overtake",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "overtook",
+      "englishThirdForm": "overtaken",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "overthink",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "overthought",
+      "englishThirdForm": "overthought",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "overthrow",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "overthrew",
+      "englishThirdForm": "overthrown",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "overwear",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "overwore",
+      "englishThirdForm": "overworn",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "overwind",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "overwound",
+      "englishThirdForm": "overwound",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "overwrite",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "overwrote",
+      "englishThirdForm": "overwritten",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "partake",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "partook",
+      "englishThirdForm": "partaken",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "pay",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "paid",
+      "englishThirdForm": "paid",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "plead",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "pleaded / pled",
+      "englishThirdForm": "pleaded / pled",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "prebuild",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "prebuilt",
+      "englishThirdForm": "prebuilt",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "predo",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "predid",
+      "englishThirdForm": "predone",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "premake",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "premade",
+      "englishThirdForm": "premade",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "prepay",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "prepaid",
+      "englishThirdForm": "prepaid",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "presell",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "presold",
+      "englishThirdForm": "presold",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "preset",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "preset",
+      "englishThirdForm": "preset",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "preshrink",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "preshrank",
+      "englishThirdForm": "preshrunk",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "presplit",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "presplit",
+      "englishThirdForm": "presplit",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "proofread",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "proofread",
+      "englishThirdForm": "proofread",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "prove",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "proved",
+      "englishThirdForm": "proven / proved",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "put",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "put",
+      "englishThirdForm": "put",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "quit",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "",
+      "englishThirdForm": "",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "read",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "",
+      "englishThirdForm": "",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "reawake",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "reawoke",
+      "englishThirdForm": "reawaken",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "rebid",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "rebid",
+      "englishThirdForm": "rebid",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "rebind",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "rebound",
+      "englishThirdForm": "rebound",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "rebroadcast",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "rebroadcast / rebroadcasted",
+      "englishThirdForm": "rebroadcast / rebroadcasted",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "rebuild",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "rebuilt",
+      "englishThirdForm": "rebuilt",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "recast",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "recast",
+      "englishThirdForm": "recast",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "recut",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "recut",
+      "englishThirdForm": "recut",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "redeal",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "redealt",
+      "englishThirdForm": "redealt",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "redo",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "redid",
+      "englishThirdForm": "redone",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "redraw",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "redrew",
+      "englishThirdForm": "redrawn",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "reeve",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "reeved / rove",
+      "englishThirdForm": "reeved / rove",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "regrind",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "reground",
+      "englishThirdForm": "reground",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "regrow",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "regrew",
+      "englishThirdForm": "regrown",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "rehang",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "rehung",
+      "englishThirdForm": "rehung",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "rehear",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "reheard",
+      "englishThirdForm": "reheard",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "reknit",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "reknitted / reknit",
+      "englishThirdForm": "reknitted / reknit",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "relay (for example tiles)",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "relaid",
+      "englishThirdForm": "relaid",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "relay (pass along) REGULAR",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "relayed",
+      "englishThirdForm": "relayed",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "relearn",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "",
+      "englishThirdForm": "",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "relight",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "relit / relighted",
+      "englishThirdForm": "relit / relighted",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "remake",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "remade",
+      "englishThirdForm": "remade",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "rend",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "rent / rended",
+      "englishThirdForm": "rent / rended",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "repay",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "repaid",
+      "englishThirdForm": "repaid",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "reread",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "reread",
+      "englishThirdForm": "reread",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "rerun",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "reran",
+      "englishThirdForm": "rerun",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "resell",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "resold",
+      "englishThirdForm": "resold",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "resend",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "resent",
+      "englishThirdForm": "resent",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "reset",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "reset",
+      "englishThirdForm": "reset",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "resew",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "resewed",
+      "englishThirdForm": "resewn / resewed",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "retake",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "retook",
+      "englishThirdForm": "retaken",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "reteach",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "retaught",
+      "englishThirdForm": "retaught",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "retear",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "retore",
+      "englishThirdForm": "retorn",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "retell",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "retold",
+      "englishThirdForm": "retold",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "rethink",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "rethought",
+      "englishThirdForm": "rethought",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "retread",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "retread",
+      "englishThirdForm": "retread",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "retrofit",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "",
+      "englishThirdForm": "",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "rewake",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "rewoke / rewaked",
+      "englishThirdForm": "rewaken / rewaked",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "rewear",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "rewore",
+      "englishThirdForm": "reworn",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "reweave",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "rewove / reweaved",
+      "englishThirdForm": "rewoven / reweaved",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "rewed",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "rewed / rewedded",
+      "englishThirdForm": "rewed / rewedded",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "rewet",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "",
+      "englishThirdForm": "",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "rewin",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "rewon",
+      "englishThirdForm": "rewon",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "rewind",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "rewound",
+      "englishThirdForm": "rewound",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "rewrite",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "rewrote",
+      "englishThirdForm": "rewritten",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "rid",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "rid",
+      "englishThirdForm": "rid",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "ride",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "rode",
+      "englishThirdForm": "ridden",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "ring",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "rang",
+      "englishThirdForm": "rung",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "rise",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "rose",
+      "englishThirdForm": "risen",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "rive",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "rived",
+      "englishThirdForm": "riven / rived",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "roughcast",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "roughcast",
+      "englishThirdForm": "roughcast",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "run",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "ran",
+      "englishThirdForm": "run",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "saw",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "sawed",
+      "englishThirdForm": "sawed / sawn",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "say",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "said",
+      "englishThirdForm": "said",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "see",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "saw",
+      "englishThirdForm": "seen",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "seek",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "sought",
+      "englishThirdForm": "sought",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "sell",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "sold",
+      "englishThirdForm": "sold",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "send",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "sent",
+      "englishThirdForm": "sent",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "set",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "set",
+      "englishThirdForm": "set",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "sew",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "sewed",
+      "englishThirdForm": "sewn / sewed",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "shake",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "shook",
+      "englishThirdForm": "shaken",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "shave",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "shaved",
+      "englishThirdForm": "shaved / shaven",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "shear",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "sheared",
+      "englishThirdForm": "sheared / shorn ",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "shed",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "shed",
+      "englishThirdForm": "shed",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "shine",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "",
+      "englishThirdForm": "",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "shit",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "",
+      "englishThirdForm": "",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "shoe",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "shoed / shod",
+      "englishThirdForm": "shoed / shod",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "shoot",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "shot",
+      "englishThirdForm": "shot",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "show",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "showed",
+      "englishThirdForm": "shown / showed",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "shrink",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "shrank / shrunk",
+      "englishThirdForm": "shrunk",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "shrive",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "shrived / shrove",
+      "englishThirdForm": "shriven",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "shut",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "shut",
+      "englishThirdForm": "shut",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "sing",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "sang",
+      "englishThirdForm": "sung",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "sink",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "sank / sunk",
+      "englishThirdForm": "sunk",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "sit",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "sat",
+      "englishThirdForm": "sat",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "skywrite",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "skywrote",
+      "englishThirdForm": "skywritten",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "slay (kill)",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "slew / slayed",
+      "englishThirdForm": "slain / slayed",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "slay (amuse)",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "slayed",
+      "englishThirdForm": "slayed",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "sleep",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "slept",
+      "englishThirdForm": "slept",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "slide",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "slid",
+      "englishThirdForm": "slid",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "sling",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "slung",
+      "englishThirdForm": "slung",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "slink",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "slinked / slunk",
+      "englishThirdForm": "slinked / slunk",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "slit",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "slit",
+      "englishThirdForm": "slit",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "smell",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "",
+      "englishThirdForm": "",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "smite",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "smote",
+      "englishThirdForm": "smitten / smote",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "sneak",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "sneaked / snuck",
+      "englishThirdForm": "sneaked / snuck",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "sow",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "sowed",
+      "englishThirdForm": "sown / sowed",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "speak",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "spoke",
+      "englishThirdForm": "spoken",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "speed",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "sped / speeded",
+      "englishThirdForm": "sped / speeded",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "spell",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "",
+      "englishThirdForm": "",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "spend",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "spent",
+      "englishThirdForm": "spent",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "spill",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "",
+      "englishThirdForm": "",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "spin",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "spun",
+      "englishThirdForm": "spun",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "spit",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "",
+      "englishThirdForm": "",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "split",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "split",
+      "englishThirdForm": "split",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "spoil",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "",
+      "englishThirdForm": "",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "spread",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "spread",
+      "englishThirdForm": "spread",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "spring",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "sprang / sprung",
+      "englishThirdForm": "sprung",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "stand",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "stood",
+      "englishThirdForm": "stood",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "stave",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "staved / stove",
+      "englishThirdForm": "staved / stove",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "steal",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "stole",
+      "englishThirdForm": "stolen",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "stick",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "stuck",
+      "englishThirdForm": "stuck",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "sting",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "stung",
+      "englishThirdForm": "stung",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "stink",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "stunk / stank",
+      "englishThirdForm": "stunk",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "strew",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "strewed",
+      "englishThirdForm": "strewn / strewed",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "stride",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "strode",
+      "englishThirdForm": "stridden",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "strike (delete)",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "struck",
+      "englishThirdForm": "stricken",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "strike (hit)",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "struck",
+      "englishThirdForm": "struck / stricken",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "string",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "strung",
+      "englishThirdForm": "strung",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "strip",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "",
+      "englishThirdForm": "",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "strive",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "strove / strived",
+      "englishThirdForm": "striven / strived",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "sublet",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "sublet",
+      "englishThirdForm": "",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "sunburn",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "",
+      "englishThirdForm": "",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "swear",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "swore",
+      "englishThirdForm": "sworn",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "sweat",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "sweat / sweated",
+      "englishThirdForm": "sweat / sweated",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "sweep",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "swept",
+      "englishThirdForm": "swept",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "swell",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "swelled",
+      "englishThirdForm": "swollen / swelled",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "swim",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "swam",
+      "englishThirdForm": "swum",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "swing",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "swung",
+      "englishThirdForm": "swung",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "take",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "took",
+      "englishThirdForm": "taken",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "teach",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "taught",
+      "englishThirdForm": "taught",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "tear",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "tore",
+      "englishThirdForm": "torn",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "telecast",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "telecast",
+      "englishThirdForm": "telecast",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "tell",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "told",
+      "englishThirdForm": "told",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "think",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "thought",
+      "englishThirdForm": "thought",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "thrive",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "thrived / throve",
+      "englishThirdForm": "thrived / thriven",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "throw",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "threw",
+      "englishThirdForm": "thrown",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "thrust",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "thrust",
+      "englishThirdForm": "thrust",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "tread",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "trod",
+      "englishThirdForm": "trodden / trod",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "troubleshoot",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "troubleshot",
+      "englishThirdForm": "troubleshot",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "typecast",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "typecast",
+      "englishThirdForm": "typecast",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "typeset",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "typeset",
+      "englishThirdForm": "typeset",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "typewrite",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "typewrote",
+      "englishThirdForm": "typewritten",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "unbear",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "unbore",
+      "englishThirdForm": "unborn / unborne",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "unbend",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "unbent",
+      "englishThirdForm": "unbent",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "unbind",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "unbound",
+      "englishThirdForm": "unbound",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "unbuild",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "unbuilt",
+      "englishThirdForm": "unbuilt",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "unclothe",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "",
+      "englishThirdForm": "",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "underbid",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "underbid",
+      "englishThirdForm": "underbid",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "underbuy",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "underbought",
+      "englishThirdForm": "underbought",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "undercut",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "undercut",
+      "englishThirdForm": "undercut",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "underfeed",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "underfed",
+      "englishThirdForm": "underfed",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "undergo",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "underwent",
+      "englishThirdForm": "undergone",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "underlay",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "underlaid",
+      "englishThirdForm": "underlaid",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "underlet",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "underlet",
+      "englishThirdForm": "underlet",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "underlie",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "underlay",
+      "englishThirdForm": "underlain",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "underrun",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "underran",
+      "englishThirdForm": "underrun",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "undersell",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "undersold",
+      "englishThirdForm": "undersold",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "undershoot",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "undershot",
+      "englishThirdForm": "undershot",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "underspend",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "underspent",
+      "englishThirdForm": "underspent",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "understand",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "understood",
+      "englishThirdForm": "understood",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "undertake",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "undertook",
+      "englishThirdForm": "undertaken",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "underthrust",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "underthrust",
+      "englishThirdForm": "underthrust",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "underwrite",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "underwrote",
+      "englishThirdForm": "underwritten",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "undo",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "undid",
+      "englishThirdForm": "undone",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "undraw",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "undrew",
+      "englishThirdForm": "undrawn",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "unfreeze",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "unfroze",
+      "englishThirdForm": "unfrozen",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "unhang",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "unhung",
+      "englishThirdForm": "unhung",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "unhide",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "unhid",
+      "englishThirdForm": "unhidden",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "unhold",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "unheld",
+      "englishThirdForm": "unheld",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "unknit",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "unknitted / unknit",
+      "englishThirdForm": "unknitted / unknit",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "unlade",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "unladed",
+      "englishThirdForm": "unladen / unladed",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "unlay",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "unlaid",
+      "englishThirdForm": "unlaid",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "unlead",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "unleaded",
+      "englishThirdForm": "unleaded",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "unlearn",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "",
+      "englishThirdForm": "",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "unmake",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "unmade",
+      "englishThirdForm": "unmade",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "unreeve",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "unreeved / unrove",
+      "englishThirdForm": "unreeved / unrove",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "unsay",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "unsaid",
+      "englishThirdForm": "unsaid",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "unsew",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "unsewed",
+      "englishThirdForm": "unsewn / unsewed",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "unsling",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "unslung",
+      "englishThirdForm": "unslung",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "unspin",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "unspun",
+      "englishThirdForm": "unspun",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "unstick",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "unstuck",
+      "englishThirdForm": "unstuck",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "unstring",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "unstrung",
+      "englishThirdForm": "unstrung",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "unswear",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "unswore",
+      "englishThirdForm": "unsworn",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "unteach",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "untaught",
+      "englishThirdForm": "untaught",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "unthink",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "unthought",
+      "englishThirdForm": "unthought",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "unweave",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "unwove / unweaved",
+      "englishThirdForm": "unwoven / unweaved",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "unwind",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "unwound",
+      "englishThirdForm": "unwound",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "unwrite",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "unwrote",
+      "englishThirdForm": "unwritten",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "uphold",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "upheld",
+      "englishThirdForm": "upheld",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "upset",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "upset",
+      "englishThirdForm": "upset",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "vex",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "",
+      "englishThirdForm": "",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "wake",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "woke / waked",
+      "englishThirdForm": "woken / waked",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "waylay",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "waylaid",
+      "englishThirdForm": "waylaid",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "wear",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "wore",
+      "englishThirdForm": "worn",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "weave",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "wove / weaved",
+      "englishThirdForm": "woven / weaved",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "wed",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "wed / wedded",
+      "englishThirdForm": "wed / wedded",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "weep",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "wept",
+      "englishThirdForm": "wept",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "wet",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "",
+      "englishThirdForm": "",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "whet",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "whetted",
+      "englishThirdForm": "whetted",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "win",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "won",
+      "englishThirdForm": "won",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "wind",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "wound",
+      "englishThirdForm": "wound",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "withdraw",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "withdrew",
+      "englishThirdForm": "withdrawn",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "withhold",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "withheld",
+      "englishThirdForm": "withheld",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "withstand",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "withstood",
+      "englishThirdForm": "withstood",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "wring",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "wrung",
+      "englishThirdForm": "wrung",
+      "wordcode": ""
+    }
+  },
+  {
+    "esperanto": "",
+    "english": "write",
+    "russian": "",
+    "word_type": [
+      "verbs",
+      "irregular_verbs"
+    ],
+    "extra_data": {
+      "englishSecondForm": "wrote",
+      "englishThirdForm": "written",
+      "wordcode": ""
+    }
+  }
+]

@@ -3,6 +3,7 @@ import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 import {WordListComponent} from '../../shared/components/word-list/word-list.component';
 import {WordCardComponent} from '../../shared/components/word-card/word-card.component';
+import {EnglishSentencesCreatorComponent} from './pages/english-sentences-creator/english-sentences-creator.component';
 
 const routes: Routes = [
   {
@@ -48,6 +49,11 @@ const routes: Routes = [
   {
     path: 'wordcard/:wordList',
     component: WordCardComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'sentences-creator',
+    component: EnglishSentencesCreatorComponent,
     pathMatch: 'full'
   }
 ];

@@ -5,10 +5,11 @@ import {FlexModule} from '@angular/flex-layout';
 import {IndexComponent} from './pages/index/index.component';
 import {LanguagesRoutingModule} from './languages-routing.module';
 import {SharedModule} from '../../shared/shared.module';
+import {EnglishSentencesCreatorComponent} from './pages/english-sentences-creator/english-sentences-creator.component';
 
 
 @NgModule({
-  declarations: [IndexComponent],
+  declarations: [IndexComponent, EnglishSentencesCreatorComponent],
   imports: [
     CommonModule,
     FlexModule,

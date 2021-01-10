@@ -117,7 +117,7 @@ export class WordListComponent implements OnDestroy {
       ).subscribe(res => {
         if (res.item) {
           // TODO в будущем не перезагружать и работать со списком, который уже вызван
-          this.loadListWords(word.word_type);
+          // this.loadListWords(word.word_type);
         }
       });
     }

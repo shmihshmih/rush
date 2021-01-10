@@ -1,0 +1,30 @@
+<div>
+  <h1>Конструктор предложений</h1>
+</div>
+<div>
+  <table *ngIf="randomSentence">
+    <tr>
+      <td>Местоимение</td>
+      <td>{{randomSentence.Pronoun.russian}}</td>
+    </tr>
+    <tr>
+      <td>Время</td>
+      <td>{{randomSentence.Time}}</td>
+    </tr>
+    <tr>
+      <td>Глагол</td>
+      <td>{{randomSentence.Verb.russian}}</td>
+    </tr>
+    <tr>
+      <td>Тип</td>
+      <td>{{sentenceTypeTranslation(randomSentence.SentenceType)}}</td>
+    </tr>
+    <tr>
+      <td>Ответ:</td>
+      <td>{{randomSentence.answer.toLowerCase()}}</td>
+    </tr>
+    <tr>
+      <button (click)="nextSentence()">next</button>
+    </tr>
+  </table>
+</div>

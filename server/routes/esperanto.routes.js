@@ -1,7 +1,7 @@
 const Router = require('express')
 const router = Router()
-const WordListModel = require('../models/esperanto/WordListModel')
-const WordModel = require('../models/esperanto/WordModel')
+const WordListModel = require('../models/languages/WordListModel')
+const WordModel = require('../models/languages/WordModel')
 
 // take all wordLists
 router.get('/wordLists', async (req, res) => {

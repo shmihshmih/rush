@@ -1,0 +1,5 @@
+[
+  {"esperanto": "", "english": "negative",      "russian": "отрицательное",  "word_type": ["sentence_types"]},
+  {"esperanto": "", "english": "affirmative",   "russian": "Утвердительное", "word_type": ["sentence_types"]},
+  {"esperanto": "", "english": "interrogative", "russian": "Вопросительное", "word_type": ["sentence_types"]}
+]

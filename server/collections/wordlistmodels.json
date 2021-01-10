@@ -1,0 +1,131 @@
+[{
+  "_id": {
+    "$oid": "5fda4f8b59c30237e489e284"
+  },
+  "title": "adjektivoj",
+  "collection_caption": "adjektivoj",
+  "cover": "assets/img/esperanto/adjektivoj/adjektivoj.png",
+  "level": "fundamentoj",
+  "caption": {
+    "esperanto": "Adjektivoj",
+    "english": "Adjectives",
+    "russian": "Прилагательные"
+  }
+},{
+  "_id": {
+    "$oid": "5fda4f8b59c30237e489e285"
+  },
+  "title": "demandovortoj",
+  "collection_caption": "demandovortoj",
+  "cover": "assets/img/esperanto/demandovortoj/demandovortoj.png",
+  "level": "fundamentoj",
+  "caption": {
+    "esperanto": "Demandovortoj",
+    "english": "Question words",
+    "russian": "Вопросительные слова"
+  }
+},{
+  "_id": {
+    "$oid": "5fda4f8b59c30237e489e286"
+  },
+  "title": "fruktoj",
+  "collection_caption": "fruktoj",
+  "cover": "assets/img/esperanto/fruktoj/fruktoj.png",
+  "level": "fundamentoj",
+  "caption": {
+    "esperanto": "Fruktoj",
+    "english": "Fruits",
+    "russian": "Фрукты"
+  }
+},{
+  "_id": {
+    "$oid": "5fda4f8b59c30237e489e287"
+  },
+  "title": "konjunkcioj",
+  "collection_caption": "konjunkcioj",
+  "cover": "assets/img/esperanto/konjunkcioj/konjunkcioj.png",
+  "level": "fundamentoj",
+  "caption": {
+    "esperanto": "Konjunkcioj",
+    "english": "Conjunction",
+    "russian": "Союзы"
+  }
+},{
+  "_id": {
+    "$oid": "5fda4f8b59c30237e489e288"
+  },
+  "title": "numeraloj",
+  "collection_caption": "numeraloj",
+  "cover": "assets/img/esperanto/numeroj/numeroj.png",
+  "level": "fundamentoj",
+  "caption": {
+    "esperanto": "Numeraloj",
+    "english": "Numbers",
+    "russian": "Цифры"
+  }
+},{
+  "_id": {
+    "$oid": "5fda4f8b59c30237e489e289"
+  },
+  "title": "prepozicioj",
+  "collection_caption": "prepozicioj",
+  "cover": "assets/img/esperanto/prepozicioj/prepozicioj.png",
+  "level": "fundamentoj",
+  "caption": {
+    "esperanto": "Prepozicioj",
+    "english": "Prepositions",
+    "russian": "Предлоги"
+  }
+},{
+  "_id": {
+    "$oid": "5fda4f8b59c30237e489e28a"
+  },
+  "title": "pronomoj",
+  "collection_caption": "pronomoj",
+  "cover": "assets/img/esperanto/pronomoj/pronomoj.png",
+  "level": "fundamentoj",
+  "caption": {
+    "esperanto": "Pronomoj",
+    "english": "Pronouns",
+    "russian": "Местоимения"
+  }
+},{
+  "_id": {
+    "$oid": "5fda4f8b59c30237e489e28b"
+  },
+  "title": "tempo",
+  "collection_caption": "tempo",
+  "cover": "assets/img/esperanto/tempo/tempo.png",
+  "level": "fundamentoj",
+  "caption": {
+    "esperanto": "Tempo",
+    "english": "Time",
+    "russian": "Время"
+  }
+},{
+  "_id": {
+    "$oid": "5fda4f8b59c30237e489e28c"
+  },
+  "title": "verboj",
+  "collection_caption": "verboj",
+  "cover": "assets/img/esperanto/verboj/verboj.png",
+  "level": "fundamentoj",
+  "caption": {
+    "esperanto": "Verboj",
+    "english": "Verbs",
+    "russian": "Глаголы"
+  }
+},{
+  "_id": {
+    "$oid": "5fdf56bf3d94e545e49b31c5"
+  },
+  "title": "Harry Potter",
+  "collection_caption": "harrypotter",
+  "cover": "https://cdn1.ozone.ru/s3/multimedia-d/wc1200/6020381557.jpg",
+  "level": "asd",
+  "caption": {
+    "esperanto": "Harry Potter",
+    "english": "Harry Potter",
+    "russian": "Гарри Поттер"
+  }
+}]

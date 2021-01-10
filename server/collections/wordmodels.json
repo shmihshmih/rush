@@ -1,0 +1,1225 @@
+[{
+  "_id": {
+    "$oid": "5fdb39d9de8a0736d4092bee"
+  },
+  "word_type": "adjektivoj",
+  "esperanto": "bone",
+  "english": "good",
+  "russian": "хороший"
+},{
+  "_id": {
+    "$oid": "5fdb39d9de8a0736d4092bef"
+  },
+  "word_type": "adjektivoj",
+  "esperanto": "malbona",
+  "english": "bad",
+  "russian": "плохой"
+},{
+  "_id": {
+    "$oid": "5fdb39d9de8a0736d4092bf0"
+  },
+  "word_type": "adjektivoj",
+  "esperanto": "granda",
+  "english": "big",
+  "russian": "большой"
+},{
+  "_id": {
+    "$oid": "5fdb39d9de8a0736d4092bf1"
+  },
+  "word_type": "adjektivoj",
+  "esperanto": "malmulte",
+  "english": "small",
+  "russian": "маленький"
+},{
+  "_id": {
+    "$oid": "5fdb39d9de8a0736d4092bf2"
+  },
+  "word_type": "adjektivoj",
+  "esperanto": "bonkora",
+  "english": "kind",
+  "russian": "добрый"
+},{
+  "_id": {
+    "$oid": "5fdb39d9de8a0736d4092bf3"
+  },
+  "word_type": "adjektivoj",
+  "esperanto": "malbono",
+  "english": "evil",
+  "russian": "злой"
+},{
+  "_id": {
+    "$oid": "5fdb39d9de8a0736d4092bf4"
+  },
+  "word_type": "adjektivoj",
+  "esperanto": "rapida",
+  "english": "fast",
+  "russian": "быстрый"
+},{
+  "_id": {
+    "$oid": "5fdb39d9de8a0736d4092bf5"
+  },
+  "word_type": "adjektivoj",
+  "esperanto": "malrapida",
+  "english": "slow",
+  "russian": "медленный"
+},{
+  "_id": {
+    "$oid": "5fdb39d9de8a0736d4092bf6"
+  },
+  "word_type": "adjektivoj",
+  "esperanto": "gaja",
+  "english": "cheerful",
+  "russian": "веселый"
+},{
+  "_id": {
+    "$oid": "5fdb39d9de8a0736d4092bf7"
+  },
+  "word_type": "adjektivoj",
+  "esperanto": "malĝoja",
+  "english": "sad",
+  "russian": "грустный"
+},{
+  "_id": {
+    "$oid": "5fdb39d9de8a0736d4092bf8"
+  },
+  "word_type": "adjektivoj",
+  "esperanto": "enuiga",
+  "english": "boring",
+  "russian": "скучный"
+},{
+  "_id": {
+    "$oid": "5fdb39d9de8a0736d4092bf9"
+  },
+  "word_type": "adjektivoj",
+  "esperanto": "interesaj",
+  "english": "interesting",
+  "russian": "интересный"
+},{
+  "_id": {
+    "$oid": "5fdb39f2de8a0736d4092bfa"
+  },
+  "word_type": "demandovortoj",
+  "esperanto": "kiu",
+  "english": "who",
+  "russian": "кто"
+},{
+  "_id": {
+    "$oid": "5fdb39f2de8a0736d4092bfb"
+  },
+  "word_type": "demandovortoj",
+  "esperanto": "kio",
+  "english": "what",
+  "russian": "что"
+},{
+  "_id": {
+    "$oid": "5fdb39f2de8a0736d4092bfc"
+  },
+  "word_type": "demandovortoj",
+  "esperanto": "kial",
+  "english": "why",
+  "russian": "почему"
+},{
+  "_id": {
+    "$oid": "5fdb39f2de8a0736d4092bfd"
+  },
+  "word_type": "demandovortoj",
+  "esperanto": "kial",
+  "english": "why",
+  "russian": "зачем"
+},{
+  "_id": {
+    "$oid": "5fdb39f2de8a0736d4092bfe"
+  },
+  "word_type": "demandovortoj",
+  "esperanto": "kiom",
+  "english": "how much",
+  "russian": "сколько"
+},{
+  "_id": {
+    "$oid": "5fdb39f2de8a0736d4092bff"
+  },
+  "word_type": "demandovortoj",
+  "esperanto": "kiam ",
+  "english": "when",
+  "russian": "когда"
+},{
+  "_id": {
+    "$oid": "5fdb39f2de8a0736d4092c00"
+  },
+  "word_type": "demandovortoj",
+  "esperanto": "kie",
+  "english": "where",
+  "russian": "где"
+},{
+  "_id": {
+    "$oid": "5fdb39f2de8a0736d4092c01"
+  },
+  "word_type": "demandovortoj",
+  "esperanto": "kia",
+  "english": "which",
+  "russian": "какой"
+},{
+  "_id": {
+    "$oid": "5fdb39f2de8a0736d4092c02"
+  },
+  "word_type": "demandovortoj",
+  "esperanto": "kien",
+  "english": "where",
+  "russian": "куда"
+},{
+  "_id": {
+    "$oid": "5fdb39f2de8a0736d4092c03"
+  },
+  "word_type": "demandovortoj",
+  "esperanto": "kiun",
+  "english": "whom",
+  "russian": "кого"
+},{
+  "_id": {
+    "$oid": "5fdb39f2de8a0736d4092c04"
+  },
+  "word_type": "demandovortoj",
+  "esperanto": "kies",
+  "english": "whose",
+  "russian": "чей"
+},{
+  "_id": {
+    "$oid": "5fdb39f2de8a0736d4092c05"
+  },
+  "word_type": "demandovortoj",
+  "esperanto": "kiel",
+  "english": "how",
+  "russian": "как"
+},{
+  "_id": {
+    "$oid": "5fdb3a08de8a0736d4092c06"
+  },
+  "word_type": "fruktoj",
+  "esperanto": "pomo",
+  "english": "apple",
+  "russian": "яблоко"
+},{
+  "_id": {
+    "$oid": "5fdb3a08de8a0736d4092c07"
+  },
+  "word_type": "fruktoj",
+  "esperanto": "banano",
+  "english": "banana",
+  "russian": "банан"
+},{
+  "_id": {
+    "$oid": "5fdb3a08de8a0736d4092c08"
+  },
+  "word_type": "fruktoj",
+  "esperanto": "akvomelono",
+  "english": "watermelon",
+  "russian": "арбуз"
+},{
+  "_id": {
+    "$oid": "5fdb3a08de8a0736d4092c09"
+  },
+  "word_type": "fruktoj",
+  "esperanto": "persiko",
+  "english": "peach",
+  "russian": "персик"
+},{
+  "_id": {
+    "$oid": "5fdb3a08de8a0736d4092c0a"
+  },
+  "word_type": "fruktoj",
+  "esperanto": "oranĝa",
+  "english": "orange",
+  "russian": "апельсин"
+},{
+  "_id": {
+    "$oid": "5fdb3a08de8a0736d4092c0b"
+  },
+  "word_type": "fruktoj",
+  "esperanto": "melono",
+  "english": "melon",
+  "russian": "дыня"
+},{
+  "_id": {
+    "$oid": "5fdb3a08de8a0736d4092c0c"
+  },
+  "word_type": "fruktoj",
+  "esperanto": "abrikoto",
+  "english": "apricot",
+  "russian": "абрикос"
+},{
+  "_id": {
+    "$oid": "5fdb3a08de8a0736d4092c0d"
+  },
+  "word_type": "fruktoj",
+  "esperanto": "mango",
+  "english": "mango",
+  "russian": "манго"
+},{
+  "_id": {
+    "$oid": "5fdb3a08de8a0736d4092c0e"
+  },
+  "word_type": "fruktoj",
+  "esperanto": "ananaso",
+  "english": "pineapple",
+  "russian": "ананас"
+},{
+  "_id": {
+    "$oid": "5fdb3a08de8a0736d4092c0f"
+  },
+  "word_type": "fruktoj",
+  "esperanto": "piro",
+  "english": "pear",
+  "russian": "груша"
+},{
+  "_id": {
+    "$oid": "5fdb3a08de8a0736d4092c10"
+  },
+  "word_type": "fruktoj",
+  "esperanto": "kivio",
+  "english": "kiwi",
+  "russian": "киви"
+},{
+  "_id": {
+    "$oid": "5fdb3a08de8a0736d4092c11"
+  },
+  "word_type": "fruktoj",
+  "esperanto": "citrono",
+  "english": "lemon",
+  "russian": "лимон"
+},{
+  "_id": {
+    "$oid": "5fdb3a13de8a0736d4092c12"
+  },
+  "word_type": "konjunkcioj",
+  "esperanto": "kaj",
+  "english": "and",
+  "russian": "и"
+},{
+  "_id": {
+    "$oid": "5fdb3a13de8a0736d4092c13"
+  },
+  "word_type": "konjunkcioj",
+  "esperanto": "aŭ ",
+  "english": "or",
+  "russian": "или"
+},{
+  "_id": {
+    "$oid": "5fdb3a13de8a0736d4092c14"
+  },
+  "word_type": "konjunkcioj",
+  "esperanto": "ke",
+  "english": "that",
+  "russian": "чтобы"
+},{
+  "_id": {
+    "$oid": "5fdb3a13de8a0736d4092c15"
+  },
+  "word_type": "konjunkcioj",
+  "esperanto": "kvankam",
+  "english": "although",
+  "russian": "хотя"
+},{
+  "_id": {
+    "$oid": "5fdb3a13de8a0736d4092c16"
+  },
+  "word_type": "konjunkcioj",
+  "esperanto": "nek ",
+  "english": "nor",
+  "russian": "ни"
+},{
+  "_id": {
+    "$oid": "5fdb3a13de8a0736d4092c17"
+  },
+  "word_type": "konjunkcioj",
+  "esperanto": "ol ",
+  "english": "than",
+  "russian": "чем"
+},{
+  "_id": {
+    "$oid": "5fdb3a13de8a0736d4092c18"
+  },
+  "word_type": "konjunkcioj",
+  "esperanto": "sed   ",
+  "english": "but",
+  "russian": "если"
+},{
+  "_id": {
+    "$oid": "5fdb3a13de8a0736d4092c19"
+  },
+  "word_type": "konjunkcioj",
+  "esperanto": "ĉar  ",
+  "english": "because",
+  "russian": "потому что"
+},{
+  "_id": {
+    "$oid": "5fdb3a13de8a0736d4092c1a"
+  },
+  "word_type": "konjunkcioj",
+  "esperanto": "tamen  ",
+  "english": "however",
+  "russian": "однако"
+},{
+  "_id": {
+    "$oid": "5fdb3a20de8a0736d4092c1b"
+  },
+  "word_type": "numeraloj",
+  "esperanto": "nulo",
+  "english": "zero",
+  "russian": "ноль"
+},{
+  "_id": {
+    "$oid": "5fdb3a20de8a0736d4092c1c"
+  },
+  "word_type": "numeraloj",
+  "esperanto": "unu",
+  "english": "one",
+  "russian": "один"
+},{
+  "_id": {
+    "$oid": "5fdb3a20de8a0736d4092c1d"
+  },
+  "word_type": "numeraloj",
+  "esperanto": "du",
+  "english": "two",
+  "russian": "два"
+},{
+  "_id": {
+    "$oid": "5fdb3a20de8a0736d4092c1e"
+  },
+  "word_type": "numeraloj",
+  "esperanto": "tri",
+  "english": "three",
+  "russian": "три"
+},{
+  "_id": {
+    "$oid": "5fdb3a20de8a0736d4092c1f"
+  },
+  "word_type": "numeraloj",
+  "esperanto": "kvar",
+  "english": "four",
+  "russian": "четыре"
+},{
+  "_id": {
+    "$oid": "5fdb3a20de8a0736d4092c20"
+  },
+  "word_type": "numeraloj",
+  "esperanto": "kvin",
+  "english": "five",
+  "russian": "пять"
+},{
+  "_id": {
+    "$oid": "5fdb3a20de8a0736d4092c21"
+  },
+  "word_type": "numeraloj",
+  "esperanto": "ses",
+  "english": "six",
+  "russian": "шесть"
+},{
+  "_id": {
+    "$oid": "5fdb3a20de8a0736d4092c22"
+  },
+  "word_type": "numeraloj",
+  "esperanto": "sep",
+  "english": "seven",
+  "russian": "семь"
+},{
+  "_id": {
+    "$oid": "5fdb3a20de8a0736d4092c23"
+  },
+  "word_type": "numeraloj",
+  "esperanto": "ok",
+  "english": "eight",
+  "russian": "восемь"
+},{
+  "_id": {
+    "$oid": "5fdb3a20de8a0736d4092c24"
+  },
+  "word_type": "numeraloj",
+  "esperanto": "naŭ",
+  "english": "nine",
+  "russian": "девять"
+},{
+  "_id": {
+    "$oid": "5fdb3a20de8a0736d4092c25"
+  },
+  "word_type": "numeraloj",
+  "esperanto": "dek",
+  "english": "ten",
+  "russian": "десять"
+},{
+  "_id": {
+    "$oid": "5fdb3a20de8a0736d4092c26"
+  },
+  "word_type": "numeraloj",
+  "esperanto": "dek unu",
+  "english": "eleven",
+  "russian": "одиннадцать"
+},{
+  "_id": {
+    "$oid": "5fdb3a20de8a0736d4092c27"
+  },
+  "word_type": "numeraloj",
+  "esperanto": "dek du",
+  "english": "twelve",
+  "russian": "двенадцать"
+},{
+  "_id": {
+    "$oid": "5fdb3a20de8a0736d4092c28"
+  },
+  "word_type": "numeraloj",
+  "esperanto": "dek tri",
+  "english": "thirteen",
+  "russian": "тринадцать"
+},{
+  "_id": {
+    "$oid": "5fdb3a20de8a0736d4092c29"
+  },
+  "word_type": "numeraloj",
+  "esperanto": "dudek",
+  "english": "twenty",
+  "russian": "двадцать"
+},{
+  "_id": {
+    "$oid": "5fdb3a20de8a0736d4092c2a"
+  },
+  "word_type": "numeraloj",
+  "esperanto": "tridek",
+  "english": "thirty",
+  "russian": "тридцать"
+},{
+  "_id": {
+    "$oid": "5fdb3a20de8a0736d4092c2b"
+  },
+  "word_type": "numeraloj",
+  "esperanto": "kvardek",
+  "english": "fourty",
+  "russian": "сорок"
+},{
+  "_id": {
+    "$oid": "5fdb3a20de8a0736d4092c2c"
+  },
+  "word_type": "numeraloj",
+  "esperanto": "kvindek",
+  "english": "fifty",
+  "russian": "пятьдесят"
+},{
+  "_id": {
+    "$oid": "5fdb3a20de8a0736d4092c2d"
+  },
+  "word_type": "numeraloj",
+  "esperanto": "sesdek",
+  "english": "sixty",
+  "russian": "шестьдесят"
+},{
+  "_id": {
+    "$oid": "5fdb3a20de8a0736d4092c2e"
+  },
+  "word_type": "numeraloj",
+  "esperanto": "sepdek",
+  "english": "seventy",
+  "russian": "семьдесят"
+},{
+  "_id": {
+    "$oid": "5fdb3a20de8a0736d4092c2f"
+  },
+  "word_type": "numeraloj",
+  "esperanto": "okdek",
+  "english": "eighty",
+  "russian": "восемьдесят"
+},{
+  "_id": {
+    "$oid": "5fdb3a20de8a0736d4092c30"
+  },
+  "word_type": "numeraloj",
+  "esperanto": "naudek",
+  "english": "ninety",
+  "russian": "девяносто"
+},{
+  "_id": {
+    "$oid": "5fdb3a20de8a0736d4092c31"
+  },
+  "word_type": "numeraloj",
+  "esperanto": "cent",
+  "english": "hundred",
+  "russian": "сто"
+},{
+  "_id": {
+    "$oid": "5fdb3a20de8a0736d4092c32"
+  },
+  "word_type": "numeraloj",
+  "esperanto": "mil",
+  "english": "thousand",
+  "russian": "тысяча"
+},{
+  "_id": {
+    "$oid": "5fdb3a20de8a0736d4092c33"
+  },
+  "word_type": "numeraloj",
+  "esperanto": "miliono",
+  "english": "million",
+  "russian": "миллион"
+},{
+  "_id": {
+    "$oid": "5fdb3a20de8a0736d4092c34"
+  },
+  "word_type": "numeraloj",
+  "esperanto": "miliardo",
+  "english": "billion",
+  "russian": "миллиард"
+},{
+  "_id": {
+    "$oid": "5fdb3a2bde8a0736d4092c35"
+  },
+  "word_type": "prepozicioj",
+  "esperanto": "al ",
+  "english": "to",
+  "russian": "к"
+},{
+  "_id": {
+    "$oid": "5fdb3a2bde8a0736d4092c36"
+  },
+  "word_type": "prepozicioj",
+  "esperanto": "anstataŭ",
+  "english": "instead",
+  "russian": "вместо"
+},{
+  "_id": {
+    "$oid": "5fdb3a2bde8a0736d4092c37"
+  },
+  "word_type": "prepozicioj",
+  "esperanto": "antaŭ",
+  "english": "before",
+  "russian": "перед"
+},{
+  "_id": {
+    "$oid": "5fdb3a2bde8a0736d4092c38"
+  },
+  "word_type": "prepozicioj",
+  "esperanto": "apud",
+  "english": "about",
+  "russian": "около"
+},{
+  "_id": {
+    "$oid": "5fdb3a2bde8a0736d4092c39"
+  },
+  "word_type": "prepozicioj",
+  "esperanto": "dum",
+  "english": "during",
+  "russian": "в течение"
+},{
+  "_id": {
+    "$oid": "5fdb3a2bde8a0736d4092c3a"
+  },
+  "word_type": "prepozicioj",
+  "esperanto": "ekde",
+  "english": "with",
+  "russian": "с"
+},{
+  "_id": {
+    "$oid": "5fdb3a2bde8a0736d4092c3b"
+  },
+  "word_type": "prepozicioj",
+  "esperanto": "ekster",
+  "english": "outside",
+  "russian": "вне"
+},{
+  "_id": {
+    "$oid": "5fdb3a2bde8a0736d4092c3c"
+  },
+  "word_type": "prepozicioj",
+  "esperanto": "el",
+  "english": "from",
+  "russian": "из"
+},{
+  "_id": {
+    "$oid": "5fdb3a2bde8a0736d4092c3d"
+  },
+  "word_type": "prepozicioj",
+  "esperanto": "en",
+  "english": "at",
+  "russian": "в"
+},{
+  "_id": {
+    "$oid": "5fdb3a2bde8a0736d4092c3e"
+  },
+  "word_type": "prepozicioj",
+  "esperanto": "inter",
+  "english": "between",
+  "russian": "между"
+},{
+  "_id": {
+    "$oid": "5fdb3a2bde8a0736d4092c3f"
+  },
+  "word_type": "prepozicioj",
+  "esperanto": "je",
+  "english": "on",
+  "russian": "на"
+},{
+  "_id": {
+    "$oid": "5fdb3a2bde8a0736d4092c40"
+  },
+  "word_type": "prepozicioj",
+  "esperanto": "kontraŭ",
+  "english": "against",
+  "russian": "против"
+},{
+  "_id": {
+    "$oid": "5fdb3a2bde8a0736d4092c41"
+  },
+  "word_type": "prepozicioj",
+  "esperanto": "krom",
+  "english": "Besides",
+  "russian": "кроме"
+},{
+  "_id": {
+    "$oid": "5fdb3a2bde8a0736d4092c42"
+  },
+  "word_type": "prepozicioj",
+  "esperanto": "kun",
+  "english": "with",
+  "russian": "с"
+},{
+  "_id": {
+    "$oid": "5fdb3a2bde8a0736d4092c43"
+  },
+  "word_type": "prepozicioj",
+  "esperanto": "laŭ",
+  "english": "by",
+  "russian": "по"
+},{
+  "_id": {
+    "$oid": "5fdb3a2bde8a0736d4092c44"
+  },
+  "word_type": "prepozicioj",
+  "esperanto": "per",
+  "english": "across",
+  "russian": "через"
+},{
+  "_id": {
+    "$oid": "5fdb3a2bde8a0736d4092c45"
+  },
+  "word_type": "prepozicioj",
+  "esperanto": "por",
+  "english": "for",
+  "russian": "для"
+},{
+  "_id": {
+    "$oid": "5fdb3a2bde8a0736d4092c46"
+  },
+  "word_type": "prepozicioj",
+  "esperanto": "post",
+  "english": "after",
+  "russian": "после"
+},{
+  "_id": {
+    "$oid": "5fdb3a2bde8a0736d4092c47"
+  },
+  "word_type": "prepozicioj",
+  "esperanto": "pri",
+  "english": "about",
+  "russian": "о"
+},{
+  "_id": {
+    "$oid": "5fdb3a2bde8a0736d4092c48"
+  },
+  "word_type": "prepozicioj",
+  "esperanto": "pro",
+  "english": "because of",
+  "russian": "из-за"
+},{
+  "_id": {
+    "$oid": "5fdb3a2bde8a0736d4092c49"
+  },
+  "word_type": "prepozicioj",
+  "esperanto": "sen",
+  "english": "without",
+  "russian": "без"
+},{
+  "_id": {
+    "$oid": "5fdb3a2bde8a0736d4092c4a"
+  },
+  "word_type": "prepozicioj",
+  "esperanto": "sub",
+  "english": "under",
+  "russian": "под"
+},{
+  "_id": {
+    "$oid": "5fdb3a2bde8a0736d4092c4b"
+  },
+  "word_type": "prepozicioj",
+  "esperanto": "super",
+  "english": "over",
+  "russian": "над"
+},{
+  "_id": {
+    "$oid": "5fdb3a2bde8a0736d4092c4c"
+  },
+  "word_type": "prepozicioj",
+  "esperanto": "sur",
+  "english": "above",
+  "russian": "над"
+},{
+  "_id": {
+    "$oid": "5fdb3a2bde8a0736d4092c4d"
+  },
+  "word_type": "prepozicioj",
+  "esperanto": "tra",
+  "english": "through",
+  "russian": "сквозь"
+},{
+  "_id": {
+    "$oid": "5fdb3a2bde8a0736d4092c4e"
+  },
+  "word_type": "prepozicioj",
+  "esperanto": "trans",
+  "english": "via",
+  "russian": "через"
+},{
+  "_id": {
+    "$oid": "5fdb3a2bde8a0736d4092c4f"
+  },
+  "word_type": "prepozicioj",
+  "esperanto": "ĉe",
+  "english": "at",
+  "russian": "при"
+},{
+  "_id": {
+    "$oid": "5fdb3a2bde8a0736d4092c50"
+  },
+  "word_type": "prepozicioj",
+  "esperanto": "ĉirkaŭ",
+  "english": "around",
+  "russian": "около "
+},{
+  "_id": {
+    "$oid": "5fdb3a2bde8a0736d4092c51"
+  },
+  "word_type": "prepozicioj",
+  "esperanto": "ĝis",
+  "english": "before",
+  "russian": "до "
+},{
+  "_id": {
+    "$oid": "5fdb3a35de8a0736d4092c52"
+  },
+  "word_type": "pronomoj",
+  "esperanto": "Mi",
+  "english": "I",
+  "russian": "Я"
+},{
+  "_id": {
+    "$oid": "5fdb3a35de8a0736d4092c53"
+  },
+  "word_type": "pronomoj",
+  "esperanto": "Ni",
+  "english": "We",
+  "russian": "Мы"
+},{
+  "_id": {
+    "$oid": "5fdb3a35de8a0736d4092c54"
+  },
+  "word_type": "pronomoj",
+  "esperanto": "Vi",
+  "english": "You",
+  "russian": "Ты"
+},{
+  "_id": {
+    "$oid": "5fdb3a35de8a0736d4092c55"
+  },
+  "word_type": "pronomoj",
+  "esperanto": "Vi",
+  "english": "You",
+  "russian": "Вы"
+},{
+  "_id": {
+    "$oid": "5fdb3a35de8a0736d4092c56"
+  },
+  "word_type": "pronomoj",
+  "esperanto": "Li",
+  "english": "He",
+  "russian": "Он"
+},{
+  "_id": {
+    "$oid": "5fdb3a35de8a0736d4092c57"
+  },
+  "word_type": "pronomoj",
+  "esperanto": "Si ",
+  "english": "She",
+  "russian": "Она"
+},{
+  "_id": {
+    "$oid": "5fdb3a35de8a0736d4092c58"
+  },
+  "word_type": "pronomoj",
+  "esperanto": "Gi",
+  "english": "It",
+  "russian": "Оно"
+},{
+  "_id": {
+    "$oid": "5fdb3a35de8a0736d4092c59"
+  },
+  "word_type": "pronomoj",
+  "esperanto": "Ili ",
+  "english": "They",
+  "russian": "Они"
+},{
+  "_id": {
+    "$oid": "5fdb3a43de8a0736d4092c5a"
+  },
+  "word_type": "tempo",
+  "esperanto": "Lundo",
+  "english": "monday",
+  "russian": "понедельник"
+},{
+  "_id": {
+    "$oid": "5fdb3a43de8a0736d4092c5b"
+  },
+  "word_type": "tempo",
+  "esperanto": "Mardo",
+  "english": "tuesday",
+  "russian": "вторник"
+},{
+  "_id": {
+    "$oid": "5fdb3a43de8a0736d4092c5c"
+  },
+  "word_type": "tempo",
+  "esperanto": "merkredo",
+  "english": "wednesday",
+  "russian": "среда"
+},{
+  "_id": {
+    "$oid": "5fdb3a43de8a0736d4092c5d"
+  },
+  "word_type": "tempo",
+  "esperanto": "ĵaŭdo",
+  "english": "Thursday",
+  "russian": "четверг"
+},{
+  "_id": {
+    "$oid": "5fdb3a43de8a0736d4092c5e"
+  },
+  "word_type": "tempo",
+  "esperanto": "vendredo",
+  "english": "Friday",
+  "russian": "пятница"
+},{
+  "_id": {
+    "$oid": "5fdb3a43de8a0736d4092c5f"
+  },
+  "word_type": "tempo",
+  "esperanto": "sabato",
+  "english": "Saturday",
+  "russian": "суббота"
+},{
+  "_id": {
+    "$oid": "5fdb3a43de8a0736d4092c60"
+  },
+  "word_type": "tempo",
+  "esperanto": "dimanĉo",
+  "english": "Sunday",
+  "russian": "воскресенье"
+},{
+  "_id": {
+    "$oid": "5fdb3a43de8a0736d4092c61"
+  },
+  "word_type": "tempo",
+  "esperanto": "semajno",
+  "english": "week",
+  "russian": "неделя"
+},{
+  "_id": {
+    "$oid": "5fdb3a43de8a0736d4092c62"
+  },
+  "word_type": "tempo",
+  "esperanto": "hodiaŭ",
+  "english": "today",
+  "russian": "сегодня"
+},{
+  "_id": {
+    "$oid": "5fdb3a43de8a0736d4092c63"
+  },
+  "word_type": "tempo",
+  "esperanto": "morgaŭ",
+  "english": "tomorrow",
+  "russian": "завтра"
+},{
+  "_id": {
+    "$oid": "5fdb3a43de8a0736d4092c64"
+  },
+  "word_type": "tempo",
+  "esperanto": "hieraŭ",
+  "english": "yesterday",
+  "russian": "вчера"
+},{
+  "_id": {
+    "$oid": "5fdb3a43de8a0736d4092c65"
+  },
+  "word_type": "tempo",
+  "esperanto": "horo",
+  "english": "hour",
+  "russian": "час"
+},{
+  "_id": {
+    "$oid": "5fdb3a43de8a0736d4092c66"
+  },
+  "word_type": "tempo",
+  "esperanto": "minuto",
+  "english": "minute",
+  "russian": "минута"
+},{
+  "_id": {
+    "$oid": "5fdb3a43de8a0736d4092c67"
+  },
+  "word_type": "tempo",
+  "esperanto": "dua",
+  "english": "second",
+  "russian": "секунда"
+},{
+  "_id": {
+    "$oid": "5fdb3a43de8a0736d4092c68"
+  },
+  "word_type": "tempo",
+  "esperanto": "tago",
+  "english": "day",
+  "russian": "день"
+},{
+  "_id": {
+    "$oid": "5fdb3a43de8a0736d4092c69"
+  },
+  "word_type": "tempo",
+  "esperanto": "monato",
+  "english": "month",
+  "russian": "месяц"
+},{
+  "_id": {
+    "$oid": "5fdb3a43de8a0736d4092c6a"
+  },
+  "word_type": "tempo",
+  "esperanto": "jaro",
+  "english": "year",
+  "russian": "год"
+},{
+  "_id": {
+    "$oid": "5fdb3a43de8a0736d4092c6b"
+  },
+  "word_type": "tempo",
+  "esperanto": "horloĝo",
+  "english": "clock",
+  "russian": "часы"
+},{
+  "_id": {
+    "$oid": "5fdb3a43de8a0736d4092c6c"
+  },
+  "word_type": "tempo",
+  "esperanto": "jarcento",
+  "english": "century",
+  "russian": "столетие"
+},{
+  "_id": {
+    "$oid": "5fdb3a43de8a0736d4092c6d"
+  },
+  "word_type": "tempo",
+  "esperanto": "jarmilo",
+  "english": "millennium",
+  "russian": "тысячелетие"
+},{
+  "_id": {
+    "$oid": "5fdb3a43de8a0736d4092c6e"
+  },
+  "word_type": "tempo",
+  "esperanto": "nokto",
+  "english": "night",
+  "russian": "ночь"
+},{
+  "_id": {
+    "$oid": "5fdb3a43de8a0736d4092c6f"
+  },
+  "word_type": "tempo",
+  "esperanto": "Januaro",
+  "english": "January",
+  "russian": "январь"
+},{
+  "_id": {
+    "$oid": "5fdb3a43de8a0736d4092c70"
+  },
+  "word_type": "tempo",
+  "esperanto": "Februaro",
+  "english": "February",
+  "russian": "февраль"
+},{
+  "_id": {
+    "$oid": "5fdb3a43de8a0736d4092c71"
+  },
+  "word_type": "tempo",
+  "esperanto": "Marto",
+  "english": "March",
+  "russian": "март"
+},{
+  "_id": {
+    "$oid": "5fdb3a43de8a0736d4092c72"
+  },
+  "word_type": "tempo",
+  "esperanto": "Aprilo",
+  "english": "April",
+  "russian": "апрель"
+},{
+  "_id": {
+    "$oid": "5fdb3a43de8a0736d4092c73"
+  },
+  "word_type": "tempo",
+  "esperanto": "Majo",
+  "english": "May",
+  "russian": "май"
+},{
+  "_id": {
+    "$oid": "5fdb3a43de8a0736d4092c74"
+  },
+  "word_type": "tempo",
+  "esperanto": "junio",
+  "english": "June",
+  "russian": "июнь"
+},{
+  "_id": {
+    "$oid": "5fdb3a43de8a0736d4092c75"
+  },
+  "word_type": "tempo",
+  "esperanto": "Julio",
+  "english": "July",
+  "russian": "июль"
+},{
+  "_id": {
+    "$oid": "5fdb3a43de8a0736d4092c76"
+  },
+  "word_type": "tempo",
+  "esperanto": "Aŭgusto",
+  "english": "August",
+  "russian": "август"
+},{
+  "_id": {
+    "$oid": "5fdb3a43de8a0736d4092c77"
+  },
+  "word_type": "tempo",
+  "esperanto": "Septembro",
+  "english": "September",
+  "russian": "сентябрь"
+},{
+  "_id": {
+    "$oid": "5fdb3a43de8a0736d4092c78"
+  },
+  "word_type": "tempo",
+  "esperanto": "Oktobro",
+  "english": "October",
+  "russian": "октябрь"
+},{
+  "_id": {
+    "$oid": "5fdb3a43de8a0736d4092c79"
+  },
+  "word_type": "tempo",
+  "esperanto": "Novembro",
+  "english": "November",
+  "russian": "ноябрь"
+},{
+  "_id": {
+    "$oid": "5fdb3a43de8a0736d4092c7a"
+  },
+  "word_type": "tempo",
+  "esperanto": "Decembro",
+  "english": "December",
+  "russian": "декабрь"
+},{
+  "_id": {
+    "$oid": "5fdb3a4dde8a0736d4092c7b"
+  },
+  "word_type": "verboj",
+  "esperanto": "skribi",
+  "english": "write",
+  "russian": "писать"
+},{
+  "_id": {
+    "$oid": "5fdb3a4dde8a0736d4092c7c"
+  },
+  "word_type": "verboj",
+  "esperanto": "legi",
+  "english": "read",
+  "russian": "читать"
+},{
+  "_id": {
+    "$oid": "5fdb3a4dde8a0736d4092c7d"
+  },
+  "word_type": "verboj",
+  "esperanto": "marŝi",
+  "english": "walk",
+  "russian": "ходить"
+},{
+  "_id": {
+    "$oid": "5fdb3a4dde8a0736d4092c7e"
+  },
+  "word_type": "verboj",
+  "esperanto": "dormi",
+  "english": "sleep",
+  "russian": "спать"
+},{
+  "_id": {
+    "$oid": "5fdb3a4dde8a0736d4092c7f"
+  },
+  "word_type": "verboj",
+  "esperanto": "vivi",
+  "english": "live",
+  "russian": "жить"
+},{
+  "_id": {
+    "$oid": "5fdb3a4dde8a0736d4092c80"
+  },
+  "word_type": "verboj",
+  "esperanto": "manĝi",
+  "english": "eat",
+  "russian": "кушать"
+},{
+  "_id": {
+    "$oid": "5fdb3a4dde8a0736d4092c81"
+  },
+  "word_type": "verboj",
+  "esperanto": "ridu",
+  "english": "laugh",
+  "russian": "смеяться"
+},{
+  "_id": {
+    "$oid": "5fdb3a4dde8a0736d4092c82"
+  },
+  "word_type": "verboj",
+  "esperanto": "ludi",
+  "english": "play",
+  "russian": "играть"
+},{
+  "_id": {
+    "$oid": "5fdb3a4dde8a0736d4092c83"
+  },
+  "word_type": "verboj",
+  "esperanto": "paroli",
+  "english": "speak",
+  "russian": "говорить"
+},{
+  "_id": {
+    "$oid": "5fdb3a4dde8a0736d4092c84"
+  },
+  "word_type": "verboj",
+  "esperanto": "rigardu",
+  "english": "look",
+  "russian": "смотреть"
+},{
+  "_id": {
+    "$oid": "5fdf6f20a383f2129806fcb7"
+  },
+  "word_type": "harrypotter",
+  "esperanto": "kik",
+  "english": "kik",
+  "russian": "kik"
+},{
+  "_id": {
+    "$oid": "5fe1fcb21bba524c24915341"
+  },
+  "word_type": "harrypotter",
+  "esperanto": "ds1",
+  "english": "sda1",
+  "russian": "sda1"
+}]

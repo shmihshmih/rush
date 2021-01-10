@@ -2,6 +2,7 @@ import {Injectable, OnDestroy} from '@angular/core';
 import {BehaviorSubject, Observable, Subject} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
 import {takeUntil} from 'rxjs/operators';
+import {IWord} from '../../shared/models/esperanto/word.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -45,6 +46,14 @@ export class ApiService implements OnDestroy {
   authWithToken(): Observable<any> {
     const token = localStorage.getItem('token');
     return this.httpClient.post(`${this.MAIN_SERVER_AUTH}isAuth`, {token});
+  }
+
+  /**
+   * Возвращает данные из json по адресу
+   * @param q полный адрес
+   */
+  public getDataFromJSON(q: string): Observable<any[]> {
+    return this.httpClient.get<any[]>(q);
   }
 
   ngOnDestroy(): void {

@@ -1,6 +1,6 @@
 {
-  "jwtSecret": "hello from my heart",
-  "port": 5000,
-  "baseUrl": "http://localhost:5000",
-  "MongoRushService": "mongodb://localhost:27017/rushservice"
+  "jwtSecret": "",
+  "port": null,
+  "baseUrl": "",
+  "MongoRushService": ""
 }
