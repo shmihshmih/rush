@@ -2,14 +2,14 @@ import {Injectable, OnDestroy} from '@angular/core';
 import {BehaviorSubject, Observable, Subject} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
 import {takeUntil} from 'rxjs/operators';
-import {IWord} from '../../shared/models/esperanto/word.interface';
+import {environment} from '../../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ApiService implements OnDestroy {
-  public MAIN_SERVER = 'http://localhost:5000/api/';
-  public MAIN_SERVER_AUTH = 'http://localhost:5000/api/user/';
+  public MAIN_SERVER = environment.MAIN_SERVER;
+  public MAIN_SERVER_AUTH = environment.MAIN_SERVER_AUTH;
   public isAuth: BehaviorSubject<boolean> = new BehaviorSubject(false);
   unsubscribe$: Subject<boolean> = new Subject();
 
