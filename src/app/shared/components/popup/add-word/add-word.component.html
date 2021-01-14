@@ -1,20 +1,44 @@
 <div>
   <form fxFlex fxLayout="column" fxLayoutAlign="center center" [formGroup]="wordForm">
-    <mat-form-field>
-      <mat-label>Список</mat-label>
-      <input matInput formControlName="word_type" placeholder="login">
+
+    <mat-form-field class="example-chip-list">
+      <mat-label>Списки</mat-label>
+      <mat-chip-list #chipList aria-label="List selection">
+        <mat-chip
+          *ngFor="let list of selectedWordLists"
+          [selectable]="selectable"
+          [removable]="removable"
+          (removed)="remove(list)">
+          {{list}}
+          <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+        </mat-chip>
+        <input
+          placeholder="New list..."
+          #fruitInput
+          [formControl]="listCtrl"
+          [matAutocomplete]="auto"
+          [matChipInputFor]="chipList"
+          [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+          (matChipInputTokenEnd)="add($event)">
+      </mat-chip-list>
+      <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
+        <mat-option *ngFor="let list of filteredLists | async" [value]="list">
+          {{list}}
+        </mat-option>
+      </mat-autocomplete>
     </mat-form-field>
+
     <mat-form-field>
       <mat-label>esperanto</mat-label>
-      <input matInput formControlName="esperanto" placeholder="login">
+      <input matInput formControlName="esperanto" placeholder="esperanto">
     </mat-form-field>
     <mat-form-field>
       <mat-label>english</mat-label>
-      <input matInput formControlName="english" placeholder="login">
+      <input matInput formControlName="english" placeholder="english">
     </mat-form-field>
     <mat-form-field>
       <mat-label>russian</mat-label>
-      <input matInput formControlName="russian" placeholder="login">
+      <input matInput formControlName="russian" placeholder="russian">
     </mat-form-field>
     <button *ngIf="!data.word" mat-raised-button (click)="addWord()" color="primary">add</button>
     <button *ngIf="data && data.word && data.word._id" mat-raised-button (click)="updateWord(this.data.word._id)" color="primary">update</button>

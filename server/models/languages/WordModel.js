@@ -4,7 +4,7 @@ const WordSchema = new Schema({
   esperanto: {type: String},
   russian: {type: String},
   english: {type: String},
-  word_type: {type: String}
+  word_type: [{type: String}]
 })
 
 module.exports = model('WordModel', WordSchema);
