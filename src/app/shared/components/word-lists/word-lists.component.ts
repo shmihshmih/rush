@@ -42,11 +42,11 @@ export class WordListsComponent implements OnInit, OnDestroy {
   }
 
   openListWord(title: string): void {
-    this.router.navigate(['esperanto', 'vortlisto', title]);
+    this.router.navigate([this.mode, this.mode === 'esperanto' ? 'vortlisto' : 'wordList', title]);
   }
 
   openCardExercise(title: string): void {
-    this.router.navigate(['esperanto', 'vortokarto', title]);
+    this.router.navigate([this.mode, this.mode === 'esperanto' ? 'vortokarto' : 'wordCard', title]);
   }
 
   addList(): void {

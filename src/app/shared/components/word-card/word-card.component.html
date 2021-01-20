@@ -1,12 +1,12 @@
 <div fxLayout="column" fxFlex fxLayoutAlign="center center" (keydown)="nextWord()">
   <div *ngIf="activeWord | async as word">
     <div>
-      <div fxLayoutAlign="center center" class="fs-20vw ow-anywhere lh-1">{{word[startLang]}}</div>
+      <div fxLayoutAlign="center center" class="fs-10vw ow-anywhere lh-1">{{word[startLang]}}</div>
     </div>
     <div>
-      <div fxLayoutAlign="center center" class="fs-20vw ow-anywhere lh-1"
+      <div fxLayoutAlign="center center" class="fs-10vw ow-anywhere lh-1"
            *ngIf="isShowAnswer">{{word[finishLang]}}</div>
-      <div fxLayoutAlign="center center" class="fs-20vw ow-anywhere lh-1" *ngIf="!isShowAnswer">?</div>
+      <div fxLayoutAlign="center center" class="fs-10vw ow-anywhere lh-1" *ngIf="!isShowAnswer">?</div>
     </div>
     <div fxLayoutAlign="center center">
       <button color="primary" (click)="showAnswer()" mat-button="">Ответ</button>

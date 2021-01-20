@@ -33,8 +33,8 @@ export class WordListComponent implements OnDestroy {
     this.activatedRoute.params.pipe(
       takeUntil(this.unsubscribe$)
     ).subscribe(params => {
-      if (params.vortListo) {
-        this.loadListWords(params.vortListo);
+      if (params.wordList) {
+        this.loadListWords(params.wordList);
       }
     });
     this.apiService.isAuth.subscribe(isAuth => {

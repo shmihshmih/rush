@@ -1,5 +1,5 @@
 import {Component, HostListener, OnDestroy, OnInit} from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 import {EsperantoService} from '../../../core/services/esperanto/esperanto.service';
 import {switchMap, takeUntil, tap} from 'rxjs/operators';
 import {forkJoin, Observable, Subject} from 'rxjs';
@@ -33,12 +33,16 @@ export class WordCardComponent implements OnInit, OnDestroy {
 
   constructor(private activatedRoute: ActivatedRoute,
               private esperantoService: EsperantoService,
-              public dialog: MatDialog) {
+              public dialog: MatDialog,
+              private router: Router) {
+    // получаем мод, для конечного языка
+    this.finishLang = this.router.url.split('/')[1] as 'russian' | 'english' | 'esperanto';
+    // получаем список для загрузки
     this.activatedRoute.params.pipe(
       switchMap(params => {
-        if (params.vortListo) {
-          this.activeWordLists.push(params.vortListo);
-          return this.esperantoService.getWordsByWordList(params.vortListo);
+        if (params.wordList) {
+          this.activeWordLists.push(params.wordList);
+          return this.esperantoService.getWordsByWordList(params.wordList);
         }
       }),
       tap(words => {
@@ -122,7 +126,7 @@ export class WordCardComponent implements OnInit, OnDestroy {
     this.startLang = settings.startLang;
     this.finishLang = settings.finishLang;
     wordLists.forEach(list => {
-      allWordLists.push(this.esperantoService.getWordsByWordList(list.title));
+      allWordLists.push(this.esperantoService.getWordsByWordList(list.collection_caption));
       this.activeWordLists.push(list.title);
     });
     const allWordsFromAllLists: Observable<IWord[]> = forkJoin<IWord>([...allWordLists]);

@@ -17,7 +17,7 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'vortlisto/:vortListo',
+    path: 'vortlisto/:wordList',
     component: WordListComponent,
     pathMatch: 'full'
   },
@@ -27,7 +27,7 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'vortokarto/:vortListo',
+    path: 'vortokarto/:wordList',
     component: WordCardComponent,
     pathMatch: 'full'
   },
@@ -42,12 +42,12 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'wordcard/',
+    path: 'wordCard/',
     component: WordCardComponent,
     pathMatch: 'full'
   },
   {
-    path: 'wordcard/:wordList',
+    path: 'wordCard/:wordList',
     component: WordCardComponent,
     pathMatch: 'full'
   },
