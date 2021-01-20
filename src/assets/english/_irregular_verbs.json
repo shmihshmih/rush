@@ -1,8 +1,8 @@
 [
   {
-    "esperanto": "",
+    "esperanto": "resti",
     "english": "abide",
-    "russian": "",
+    "russian": "соблюдать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -28,9 +28,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "ekesti",
     "english": "arise",
-    "russian": "",
+    "russian": "возникать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -42,9 +42,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "maldorma",
     "english": "awake",
-    "russian": "",
+    "russian": "просыпаться",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -84,9 +84,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "esti",
     "english": "be",
-    "russian": "",
+    "russian": "быть",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -98,9 +98,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "generi",
     "english": "bear",
-    "russian": "",
+    "russian": "рождать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -112,9 +112,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "bati",
     "english": "beat",
-    "russian": "",
+    "russian": "бить",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -126,9 +126,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "iĝi",
     "english": "become",
-    "russian": "",
+    "russian": "становиться",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -168,9 +168,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "komenci",
     "english": "begin",
-    "russian": "",
+    "russian": "начинать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -196,9 +196,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "fleksi",
     "english": "bend",
-    "russian": "",
+    "russian": "гнуть",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -336,9 +336,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "ligi",
     "english": "bind",
-    "russian": "",
+    "russian": "связывать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -350,9 +350,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "mordi",
     "english": "bite",
-    "russian": "",
+    "russian": "кусать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -364,9 +364,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "sangi",
     "english": "bleed",
-    "russian": "",
+    "russian": "кровоточить",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -378,9 +378,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "blovi",
     "english": "blow",
-    "russian": "",
+    "russian": "дуть",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -392,9 +392,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "rompi",
     "english": "break",
-    "russian": "",
+    "russian": "ломать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -406,9 +406,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "eduki",
     "english": "breed",
-    "russian": "",
+    "russian": "воспитывать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -420,9 +420,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "alporti",
     "english": "bring",
-    "russian": "",
+    "russian": "приносить",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -462,9 +462,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "konstrui",
     "english": "build",
-    "russian": "",
+    "russian": "строить",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -476,9 +476,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "bruligi",
     "english": "burn",
-    "russian": "",
+    "russian": "гореть",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -490,9 +490,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "eksplodi",
     "english": "burst",
-    "russian": "",
+    "russian": "взрывать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -518,9 +518,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "Aĉeti",
     "english": "buy",
-    "russian": "",
+    "russian": "покупать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -532,9 +532,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "ĵeti",
     "english": "cast",
-    "russian": "",
+    "russian": "кинуть",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -546,9 +546,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "kapti",
     "english": "catch",
-    "russian": "",
+    "russian": "ловить",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -574,9 +574,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "elekti",
     "english": "choose",
-    "russian": "",
+    "russian": "выбирать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -644,9 +644,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "veni",
     "english": "come",
-    "russian": "",
+    "russian": "приходить",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -658,9 +658,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "kosto",
     "english": "cost",
-    "russian": "",
+    "russian": "стоить",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -700,9 +700,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "tranĉi",
     "english": "cut",
-    "russian": "",
+    "russian": "резать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -756,9 +756,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "fosi",
     "english": "dig",
-    "russian": "",
+    "russian": "копать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -826,9 +826,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "fari",
     "english": "do",
-    "russian": "",
+    "russian": "делать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -840,9 +840,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "farbo",
     "english": "draw",
-    "russian": "",
+    "russian": "рисовать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -854,9 +854,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "sonĝo",
     "english": "dream",
-    "russian": "",
+    "russian": "мечтать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -868,9 +868,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "trinki",
     "english": "drink",
-    "russian": "",
+    "russian": "пить",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -882,9 +882,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "stiri",
     "english": "drive",
-    "russian": "",
+    "russian": "водить",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -910,9 +910,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "manĝi",
     "english": "eat",
-    "russian": "",
+    "russian": "есть",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -938,9 +938,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "fali",
     "english": "fall",
-    "russian": "",
+    "russian": "падать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -952,9 +952,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "nutri",
     "english": "feed",
-    "russian": "",
+    "russian": "кормить",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -966,9 +966,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "senti",
     "english": "feel",
-    "russian": "",
+    "russian": "чувствовать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -980,9 +980,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "batali",
     "english": "fight",
-    "russian": "",
+    "russian": "бороться",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -994,9 +994,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "trovi",
     "english": "find",
-    "russian": "",
+    "russian": "находить",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -1036,9 +1036,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "flugi",
     "english": "fly",
-    "russian": "",
+    "russian": "летать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -1204,9 +1204,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "forgesu",
     "english": "forget",
-    "russian": "",
+    "russian": "забывать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -1218,9 +1218,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "pardoni",
     "english": "forgive",
-    "russian": "",
+    "russian": "прощать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -1274,9 +1274,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "frostigi",
     "english": "freeze",
-    "russian": "",
+    "russian": "замерзать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -1316,9 +1316,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "ricevi",
     "english": "get",
-    "russian": "",
+    "russian": "получать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -1344,9 +1344,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "doni",
     "english": "give",
-    "russian": "",
+    "russian": "давать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -1358,9 +1358,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "iru",
     "english": "go",
-    "russian": "",
+    "russian": "идти",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -1386,9 +1386,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "kreski",
     "english": "grow",
-    "russian": "",
+    "russian": "расти",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -1456,9 +1456,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "pendi",
     "english": "hang",
-    "russian": "",
+    "russian": "висеть",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -1484,9 +1484,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "havi",
     "english": "have",
-    "russian": "",
+    "russian": "иметь",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -1498,9 +1498,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "aŭdi",
     "english": "hear",
-    "russian": "",
+    "russian": "слышать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -1540,9 +1540,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "kaŝi",
     "english": "hide",
-    "russian": "",
+    "russian": "прятать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -1554,9 +1554,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "trafi",
     "english": "hit",
-    "russian": "",
+    "russian": "попадать в цель",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -1568,9 +1568,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "Konservu",
     "english": "hold",
-    "russian": "",
+    "russian": "держать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -1582,9 +1582,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "vundi",
     "english": "hurt",
-    "russian": "",
+    "russian": "ранить",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -1750,9 +1750,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "savi",
     "english": "keep",
-    "russian": "",
+    "russian": "сохранять",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -1764,9 +1764,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "surgenuiĝi",
     "english": "kneel",
-    "russian": "",
+    "russian": "становиться на колени",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -1778,9 +1778,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "triki",
     "english": "knit",
-    "russian": "",
+    "russian": "вязать ",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -1792,9 +1792,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "sciu",
     "english": "know",
-    "russian": "",
+    "russian": "знать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -1834,9 +1834,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "kuŝi",
     "english": "lay",
-    "russian": "",
+    "russian": "класть",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -1848,9 +1848,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "plumbo",
     "english": "lead",
-    "russian": "",
+    "russian": "вести",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -1862,9 +1862,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "klini",
     "english": "lean",
-    "russian": "",
+    "russian": "наклоняться",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -1890,9 +1890,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "instrui",
     "english": "learn",
-    "russian": "",
+    "russian": "учить",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -1904,9 +1904,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "foriri",
     "english": "leave",
-    "russian": "",
+    "russian": "покидать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -1918,9 +1918,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "pruntedoni",
     "english": "lend",
-    "russian": "",
+    "russian": "одалживать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -1932,9 +1932,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "lasu",
     "english": "let",
-    "russian": "",
+    "russian": "позволять",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -1946,9 +1946,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "kuŝu",
     "english": "lie",
-    "russian": "",
+    "russian": "лежать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -1960,9 +1960,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "lumigi",
     "english": "light",
-    "russian": "",
+    "russian": "освещать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -1974,9 +1974,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "perdi",
     "english": "lose",
-    "russian": "",
+    "russian": "терять",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -1988,9 +1988,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "fari",
     "english": "make",
-    "russian": "",
+    "russian": "делать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -2002,9 +2002,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "malbona",
     "english": "mean",
-    "russian": "",
+    "russian": "значить",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -2016,9 +2016,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "renkonti",
     "english": "meet",
-    "russian": "",
+    "russian": "встречать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -2282,9 +2282,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "eraro",
     "english": "mistake",
-    "russian": "",
+    "russian": "ошибаться",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -3556,9 +3556,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "pagi",
     "english": "pay",
-    "russian": "",
+    "russian": "платить",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -3724,9 +3724,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "meti",
     "english": "put",
-    "russian": "",
+    "russian": "класть",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -3752,9 +3752,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "legi",
     "english": "read",
-    "russian": "",
+    "russian": "читать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -4396,9 +4396,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "rajdi",
     "english": "ride",
-    "russian": "",
+    "russian": "ехать верхом",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -4410,9 +4410,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "sonorigi",
     "english": "ring",
-    "russian": "",
+    "russian": "звонить",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -4424,9 +4424,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "leviĝi",
     "english": "rise",
-    "russian": "",
+    "russian": "подниматься",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -4466,9 +4466,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "forkuri",
     "english": "run",
-    "russian": "",
+    "russian": "бежать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -4494,9 +4494,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "diru",
     "english": "say",
-    "russian": "",
+    "russian": "говорить",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -4508,9 +4508,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "vidu",
     "english": "see",
-    "russian": "",
+    "russian": "видеть",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -4522,9 +4522,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "serĉi",
     "english": "seek",
-    "russian": "",
+    "russian": "искать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -4536,9 +4536,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "vendi",
     "english": "sell",
-    "russian": "",
+    "russian": "продавать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -4550,9 +4550,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "sendi",
     "english": "send",
-    "russian": "",
+    "russian": "посылать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -4564,9 +4564,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "aro",
     "english": "set",
-    "russian": "",
+    "russian": "ставить",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -4592,9 +4592,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "skui",
     "english": "shake",
-    "russian": "",
+    "russian": "трясти",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -4648,9 +4648,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "brili",
     "english": "shine",
-    "russian": "",
+    "russian": "сиять",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -4690,9 +4690,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "pafi",
     "english": "shoot",
-    "russian": "",
+    "russian": "стрелять",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -4704,9 +4704,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "spektaklo",
     "english": "show",
-    "russian": "",
+    "russian": "показывать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -4718,9 +4718,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "ŝrumpi",
     "english": "shrink",
-    "russian": "",
+    "russian": "сокращать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -4746,9 +4746,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "fermu",
     "english": "shut",
-    "russian": "",
+    "russian": "закрывать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -4760,9 +4760,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "kanti",
     "english": "sing",
-    "russian": "",
+    "russian": "петь",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -4774,9 +4774,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "lavujo",
     "english": "sink",
-    "russian": "",
+    "russian": "тонуть",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -4788,9 +4788,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "sidi",
     "english": "sit",
-    "russian": "",
+    "russian": "сидеть",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -4844,9 +4844,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "dormi",
     "english": "sleep",
-    "russian": "",
+    "russian": "спать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -4858,9 +4858,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "gliti",
     "english": "slide",
-    "russian": "",
+    "russian": "скользить",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -4914,9 +4914,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "odoro",
     "english": "smell",
-    "russian": "",
+    "russian": "нюхать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -4956,9 +4956,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "semi",
     "english": "sow",
-    "russian": "",
+    "russian": "сеять",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -4970,9 +4970,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "paroli",
     "english": "speak",
-    "russian": "",
+    "russian": "говорить",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -4998,9 +4998,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "sorĉo",
     "english": "spell",
-    "russian": "",
+    "russian": "произносить по буквам",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -5012,9 +5012,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "elspezi",
     "english": "spend",
-    "russian": "",
+    "russian": "тратить",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -5026,9 +5026,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "verŝi",
     "english": "spill",
-    "russian": "",
+    "russian": "проливать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -5054,9 +5054,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "kraĉi",
     "english": "spit",
-    "russian": "",
+    "russian": "плевать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -5068,9 +5068,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "disigi",
     "english": "split",
-    "russian": "",
+    "russian": "расщеплять",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -5082,9 +5082,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "difekti",
     "english": "spoil",
-    "russian": "",
+    "russian": "портить",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -5096,9 +5096,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "disvastigi",
     "english": "spread",
-    "russian": "",
+    "russian": "распространять",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -5124,9 +5124,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "stari",
     "english": "stand",
-    "russian": "",
+    "russian": "стоять",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -5152,9 +5152,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "ŝteli",
     "english": "steal",
-    "russian": "",
+    "russian": "воровать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -5166,9 +5166,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "bastono",
     "english": "stick",
-    "russian": "",
+    "russian": "приклеивать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -5180,9 +5180,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "piki",
     "english": "sting",
-    "russian": "",
+    "russian": "жалить",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -5236,9 +5236,9 @@
     }
   },
   {
-    "esperanto": "",
-    "english": "strike (delete)",
-    "russian": "",
+    "esperanto": "striki",
+    "english": "strike",
+    "russian": "бастовать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -5250,9 +5250,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "striki",
     "english": "strike (hit)",
-    "russian": "",
+    "russian": "ударять",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -5292,9 +5292,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "strebi",
     "english": "strive",
-    "russian": "",
+    "russian": "стремиться",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -5334,9 +5334,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "ĵuri",
     "english": "swear",
-    "russian": "",
+    "russian": "клясться",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -5362,9 +5362,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "balai",
     "english": "sweep",
-    "russian": "",
+    "russian": "мести",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -5390,9 +5390,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "naĝi",
     "english": "swim",
-    "russian": "",
+    "russian": "плавать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -5418,9 +5418,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "prenu",
     "english": "take",
-    "russian": "",
+    "russian": "брать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -5432,9 +5432,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "instrui",
     "english": "teach",
-    "russian": "",
+    "russian": "учить",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -5446,9 +5446,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "larmo",
     "english": "tear",
-    "russian": "",
+    "russian": "рвать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -5474,9 +5474,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "rakontu",
     "english": "tell",
-    "russian": "",
+    "russian": "рассказывать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -5488,9 +5488,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "pensu",
     "english": "think",
-    "russian": "",
+    "russian": "думать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -5516,9 +5516,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "ĵeti",
     "english": "throw",
-    "russian": "",
+    "russian": "бросать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -5852,9 +5852,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "kompreni",
     "english": "understand",
-    "russian": "",
+    "russian": "понимать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -6272,9 +6272,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "ĉagrenita",
     "english": "upset",
-    "russian": "",
+    "russian": "огорчать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -6300,9 +6300,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "maldormo",
     "english": "wake",
-    "russian": "",
+    "russian": "просыпаться",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -6328,9 +6328,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "porti",
     "english": "wear",
-    "russian": "",
+    "russian": "одевать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -6370,9 +6370,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "plori",
     "english": "weep",
-    "russian": "",
+    "russian": "плакать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -6384,9 +6384,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "malseka",
     "english": "wet",
-    "russian": "",
+    "russian": "мочить",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -6412,9 +6412,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "gajni",
     "english": "win",
-    "russian": "",
+    "russian": "побеждать",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -6426,9 +6426,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "vento",
     "english": "wind",
-    "russian": "",
+    "russian": "извиваться",
     "word_type": [
       "verbs",
       "irregular_verbs"
@@ -6496,9 +6496,9 @@
     }
   },
   {
-    "esperanto": "",
+    "esperanto": "skribi",
     "english": "write",
-    "russian": "",
+    "russian": "писать",
     "word_type": [
       "verbs",
       "irregular_verbs"
