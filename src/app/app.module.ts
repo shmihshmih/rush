@@ -10,11 +10,13 @@ import {HttpClientModule} from '@angular/common/http';
 import {NotFoundComponent} from './shared/components/not-found/not-found.component';
 import {FormsModule} from '@angular/forms';
 import {LanguagesModule} from './modules/languages/languages.module';
+import {IndexComponent} from './shared/components/index/index.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    IndexComponent
   ],
   imports: [
     BrowserModule,

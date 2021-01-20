@@ -10,7 +10,7 @@
   </div>
   <div fxLayout fxFlex fxLayoutAlign="flex-end">
     <ul class="toolbar-list">
-      <li fxHide.lt-md><a [routerLink]="['']">Профиль </a></li>
+      <li *ngIf="(apiService.isAuth | async) === true" fxHide.lt-md><a [routerLink]="['']">Профиль </a></li>
       <li fxHide.lt-md><a [routerLink]="['esperanto']">Эсперанто </a></li>
       <li fxHide.lt-md><a [routerLink]="['english']">Английский</a></li>
       <li fxHide.lt-md><a [routerLink]="['blog']">Блог </a></li>

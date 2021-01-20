@@ -1,6 +1,7 @@
 import {NotFoundComponent} from './shared/components/not-found/not-found.component';
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
+import {IndexComponent} from './shared/components/index/index.component';
 
 const routes: Routes = [
   {
@@ -21,7 +22,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '',
+    component: IndexComponent,
     pathMatch: 'full'
   },
   {path: '404', component: NotFoundComponent},

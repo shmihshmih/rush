@@ -1,5 +1,5 @@
 <ul class="nav-list">
-  <li [routerLink]="['']">
+  <li *ngIf="(apiService.isAuth | async) === true" [routerLink]="['']">
     <mat-icon>face</mat-icon><a>Профиль</a>
   </li>
   <li [routerLink]="['']">
