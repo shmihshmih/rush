@@ -1,4 +1,4 @@
-import {Component, HostListener, OnDestroy, OnInit} from '@angular/core';
+import {Component, HostListener, OnChanges, OnDestroy, OnInit, SimpleChange, SimpleChanges} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {EsperantoService} from '../../../core/services/esperanto/esperanto.service';
 import {switchMap, takeUntil, tap} from 'rxjs/operators';
@@ -13,7 +13,7 @@ import {WordCardSettingsComponent} from './popup/word-card-settings/word-card-se
   templateUrl: './word-card.component.html',
   styleUrls: ['./word-card.component.scss']
 })
-export class WordCardComponent implements OnInit, OnDestroy {
+export class WordCardComponent implements OnInit, OnDestroy, OnChanges {
   unsubscribe$: Subject<boolean> = new Subject();
   listWord: IWord[] = [];
   activeWordLists: string[] = [];
@@ -21,6 +21,9 @@ export class WordCardComponent implements OnInit, OnDestroy {
   startLang: 'russian' | 'english' | 'esperanto' = 'russian';
   finishLang: 'russian' | 'english' | 'esperanto' = 'esperanto';
   isShowAnswer = false;
+  isAuto = false;
+  timer = null;
+  wordInterval = null;
   activeWord: Subject<IWord> = new Subject();
 
   // при нажатии на клавишу переключается слово
@@ -58,6 +61,11 @@ export class WordCardComponent implements OnInit, OnDestroy {
 
   }
 
+  ngOnChanges(changes: SimpleChanges): void {
+    console.log('simpleChanges: ', changes);
+
+  }
+
   ngOnDestroy(): void {
     this.unsubscribe$.complete();
   }
@@ -92,7 +100,9 @@ export class WordCardComponent implements OnInit, OnDestroy {
         settings: {
           isRepeat: this.isRepeat,
           startLang: this.startLang,
-          finishLang: this.finishLang
+          finishLang: this.finishLang,
+          isAuto: this.isAuto,
+          timer: this.timer
         }
       }
     });
@@ -115,21 +125,43 @@ export class WordCardComponent implements OnInit, OnDestroy {
     });
   }
 
-  setCardSettings(settings:
-                    { isRepeat: boolean, startLang: 'russian' | 'english' | 'esperanto', finishLang: 'russian' | 'english' | 'esperanto' } =
-                    {isRepeat: false, startLang: 'russian', finishLang: 'esperanto'},
-                  wordLists = []): void {
+  setCardSettings(
+    settings: ISettings = {isRepeat: false, startLang: 'russian', finishLang: 'esperanto', isAuto: false, timer: null},
+    wordLists = []): void {
     const allWordLists = [];
     this.listWord = [];
     this.activeWordLists = [];
     this.isRepeat = settings.isRepeat;
     this.startLang = settings.startLang;
     this.finishLang = settings.finishLang;
+    this.isAuto = settings.isAuto;
+    this.timer = settings.timer;
     wordLists.forEach(list => {
       allWordLists.push(this.esperantoService.getWordsByWordList(list.collection_caption));
       this.activeWordLists.push(list.title);
     });
     const allWordsFromAllLists: Observable<IWord[]> = forkJoin<IWord>([...allWordLists]);
-    allWordsFromAllLists.subscribe((words: []) => words.forEach((list: IWord[]) => this.listWord.push(...list)));
+    allWordsFromAllLists.subscribe((words: []) => {
+        words.forEach((list: IWord[]) => this.listWord.push(...list));
+        this.setWordInterval();
+      }
+    );
   }
+
+  setWordInterval(): void {
+    clearInterval(this.wordInterval);
+    if (this.isAuto) {
+      this.wordInterval = setInterval(() => {
+        this.showAnswer();
+      }, this.timer);
+    }
+  }
+}
+
+export interface ISettings {
+  isRepeat: boolean;
+  startLang: 'russian' | 'english' | 'esperanto';
+  finishLang: 'russian' | 'english' | 'esperanto';
+  isAuto: boolean;
+  timer: number;
 }

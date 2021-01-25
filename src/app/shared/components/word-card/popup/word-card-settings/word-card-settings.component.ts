@@ -42,7 +42,7 @@ export class WordCardSettingsComponent implements OnInit {
 
     this.createWordCardSettingsForm();
 
-    // патчим натсройки по умолчанию
+    // патчим настройки по умолчанию
     this.formPatcher(this.wordCardSettingsForm, this.data.settings);
 
     // получение списка всех списков слов
@@ -104,6 +104,8 @@ export class WordCardSettingsComponent implements OnInit {
       // playbackSpeed: ['1', Validators.required],
       startLang: ['', Validators.required],
       finishLang: ['', Validators.required],
+      isAuto: [false, Validators.required],
+      timer: [0, Validators.required]
       // voicePitch: ['1', Validators.required],
       // voiceType: ['UK English Male', Validators.required],
     });

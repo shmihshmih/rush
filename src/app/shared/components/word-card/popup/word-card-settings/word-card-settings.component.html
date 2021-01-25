@@ -58,6 +58,13 @@
             <mat-radio-button value="esperanto">esperanto</mat-radio-button>
           </mat-radio-group>
         </div>
+        <div class="mb-16">
+          <mat-checkbox color="primary" formControlName="isAuto" class="fw-600 mr-32">Таймер</mat-checkbox>
+          <mat-form-field>
+            <mat-label>Milliseconds</mat-label>
+            <input type="number" formControlName="timer" matInput placeholder="Milliseconds">
+          </mat-form-field>
+        </div>
 <!--        <div class="mb-16">-->
 <!--          <p class="m-0 fw-600">Высота голоса:</p>-->
 <!--          <mat-radio-group formControlName="voicePitch" aria-label="Высота голоса: " color="primary">-->
