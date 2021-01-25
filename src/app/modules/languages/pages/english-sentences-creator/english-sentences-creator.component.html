@@ -1,30 +1,31 @@
-<div>
-  <h1>Конструктор предложений</h1>
-</div>
-<div>
-  <table *ngIf="randomSentence">
-    <tr>
-      <td>Местоимение</td>
-      <td>{{randomSentence.Pronoun.russian}}</td>
-    </tr>
-    <tr>
-      <td>Время</td>
-      <td>{{randomSentence.Time}}</td>
-    </tr>
-    <tr>
-      <td>Глагол</td>
-      <td>{{randomSentence.Verb.russian}}</td>
-    </tr>
-    <tr>
-      <td>Тип</td>
-      <td>{{sentenceTypeTranslation(randomSentence.SentenceType)}}</td>
-    </tr>
-    <tr>
-      <td>Ответ:</td>
-      <td>{{randomSentence.answer.toLowerCase()}}</td>
-    </tr>
-    <tr>
-      <button (click)="nextSentence()">next</button>
-    </tr>
-  </table>
+<div *ngIf="randomSentence" fxLayout="column" fxFlex fxLayoutAlign="center center">
+
+  <div>
+    <h1>Конструктор предложений</h1>
+  </div>
+
+  <div *ngIf="randomSentence" class="w-100" fxLayout="row" fxFlex fxLayoutAlign="center center">
+    <div class="w-100 fs-5vw ow-anywhere lh-1" fxLayout="column" fxFlex>
+      <div>Местоимение</div>
+      <div>Время</div>
+      <div>Глагол</div>
+      <div>Тип</div>
+      <div>Ответ:</div>
+    </div>
+    <div class="w-100 fs-5vw ow-anywhere lh-1 h-100" fxLayout="column" fxFlex fxLayoutAlign="start">
+      <div>{{randomSentence.Pronoun.russian}}</div>
+      <div>{{randomSentence.Time}}</div>
+      <div>{{randomSentence.Verb.russian}}</div>
+      <div>{{sentenceTypeTranslation(randomSentence.SentenceType)}}</div>
+      <div *ngIf="isShowAnswer">{{randomSentence.answer.toLowerCase()}}</div>
+    </div>
+  </div>
+
+  <div>
+    <div fxLayoutAlign="center center">
+      <button color="primary" (click)="showAnswer()"   mat-button="">Ответ</button>
+      <button color="primary" (click)="nextSentence()" mat-button="">Следующее</button>
+    </div>
+  </div>
+
 </div>

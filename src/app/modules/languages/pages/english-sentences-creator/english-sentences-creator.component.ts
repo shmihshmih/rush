@@ -33,7 +33,7 @@ export class EnglishSentencesCreatorComponent implements OnInit, OnDestroy {
     Verb: IWord;
     answer: string;
   };
-
+  isShowAnswer = false;
 
   constructor(
     private esperantoService: EsperantoService,
@@ -603,6 +603,15 @@ export class EnglishSentencesCreatorComponent implements OnInit, OnDestroy {
   // следующее предложение
   nextSentence(): void {
     this.createRandomSentence();
+  }
+
+  showAnswer(): void {
+    if (this.isShowAnswer === true) {
+      this.isShowAnswer = false;
+      this.nextSentence();
+    } else {
+      this.isShowAnswer = true;
+    }
   }
 
   ngOnDestroy(): void {
