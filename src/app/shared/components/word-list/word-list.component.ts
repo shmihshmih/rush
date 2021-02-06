@@ -33,9 +33,7 @@ export class WordListComponent implements OnDestroy {
     this.activatedRoute.params.pipe(
       takeUntil(this.unsubscribe$)
     ).subscribe(params => {
-      if (params.wordList) {
-        this.loadListWords(params.wordList);
-      }
+      this.loadListWords(params?.wordList);
     });
     this.apiService.isAuth.subscribe(isAuth => {
       if (isAuth) {
@@ -48,7 +46,13 @@ export class WordListComponent implements OnDestroy {
 
   loadListWords(list: string): void {
     if (!list) {
-      return;
+      this.esperantoService.getWords().pipe(
+        takeUntil(this.unsubscribe$)
+      ).subscribe(words => {
+        this.dataSource = new MatTableDataSource(words);
+        this.dataSource.paginator = this.paginator;
+        this.dataSource.sort = this.sort;
+      });
     }
     this.esperantoService.getWordsByWordList(list).pipe(
       takeUntil(this.unsubscribe$)

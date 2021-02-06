@@ -15,6 +15,12 @@ router.get('/wordList', async (req, res) => {
   res.status(201).json(words);
 })
 
+// take all words
+router.get('/allWords', async (req, res) => {
+  const words = await WordModel.find({});
+  res.status(201).json(words);
+})
+
 // add word list
 router.post('/wordList', async (req, res) => {
   const newWordList = new WordListModel(req.body.params);

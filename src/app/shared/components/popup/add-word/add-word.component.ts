@@ -28,7 +28,6 @@ export class AddWordComponent implements OnInit, OnDestroy {
   @ViewChild('fruitInput') fruitInput: ElementRef<HTMLInputElement>;
   @ViewChild('auto') matAutocomplete: MatAutocomplete;
 
-
   unsubscribe$: Subject<boolean> = new Subject();
   wordForm: FormGroup;
 

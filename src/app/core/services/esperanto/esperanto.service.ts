@@ -17,6 +17,13 @@ export class EsperantoService implements OnDestroy {
   }
 
   /**
+   * get all words
+   */
+  getWords(): Observable<IWord[]> {
+    return this.httpClient.get<IWord[]>(`${this.apiService.MAIN_SERVER}esperanto/allWords`);
+  }
+
+  /**
    * get all word lists
    */
   getWordLists(): Observable<IListWord[]> {
