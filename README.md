@@ -13,6 +13,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Tips for server: use PM2. install locally with npm install pm2 --save, start it with node_modules/.bin/pm2 --help. In config change default and production environments. pkill node - kill node server process. Also you might use NODE_ENV=production NODE_PORT=7564
 
 ## Running unit tests
 
