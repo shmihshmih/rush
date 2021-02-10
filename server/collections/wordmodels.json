@@ -1228,7 +1228,7 @@
   },
   "russian": "начинать",
   "english": "start",
-  "esperanto": "",
+  "esperanto": "komenci",
   "word_type": [
     "verbs"
   ]
@@ -1238,7 +1238,7 @@
   },
   "russian": "любить",
   "english": "love",
-  "esperanto": "",
+  "esperanto": "amo",
   "word_type": [
     "verbs"
   ]
@@ -1248,7 +1248,7 @@
   },
   "russian": "прыгать",
   "english": "jump",
-  "esperanto": "",
+  "esperanto": "salti",
   "word_type": [
     "verbs"
   ]
@@ -1258,7 +1258,7 @@
   },
   "russian": "звонить(звать)",
   "english": "call",
-  "esperanto": "",
+  "esperanto": "voki",
   "word_type": [
     "verbs"
   ]
@@ -1268,7 +1268,7 @@
   },
   "russian": "помогать",
   "english": "help",
-  "esperanto": "",
+  "esperanto": "helpi",
   "word_type": [
     "verbs"
   ]
@@ -1278,7 +1278,7 @@
   },
   "russian": "игнорировать",
   "english": "ignore",
-  "esperanto": "",
+  "esperanto": "ignori",
   "word_type": [
     "verbs"
   ]
@@ -1288,7 +1288,7 @@
   },
   "russian": "управлять",
   "english": "manage",
-  "esperanto": "",
+  "esperanto": "administri",
   "word_type": [
     "verbs"
   ]
@@ -1298,7 +1298,7 @@
   },
   "russian": "соглашаться",
   "english": "agree",
-  "esperanto": "",
+  "esperanto": "konsentu",
   "word_type": [
     "verbs"
   ]
@@ -1308,7 +1308,7 @@
   },
   "russian": "чистить",
   "english": "dry",
-  "esperanto": "",
+  "esperanto": "pura",
   "word_type": [
     "verbs"
   ]
@@ -1318,7 +1318,7 @@
   },
   "russian": "жениться",
   "english": "marry",
-  "esperanto": "",
+  "esperanto": "edziĝi",
   "word_type": [
     "verbs"
   ]
@@ -1328,7 +1328,7 @@
   },
   "russian": "играть",
   "english": "play",
-  "esperanto": "",
+  "esperanto": "ludi",
   "word_type": [
     "verbs"
   ]
@@ -1338,7 +1338,7 @@
   },
   "russian": "наслаждаться",
   "english": "enjoy",
-  "esperanto": "",
+  "esperanto": "ĝui",
   "word_type": [
     "verbs"
   ]
@@ -1348,7 +1348,7 @@
   },
   "russian": "кивать",
   "english": "nod",
-  "esperanto": "",
+  "esperanto": "kapjesas",
   "word_type": [
     "verbs"
   ]
@@ -1358,7 +1358,7 @@
   },
   "russian": "остановить",
   "english": "stop",
-  "esperanto": "",
+  "esperanto": "halti",
   "word_type": [
     "verbs"
   ]
@@ -1368,7 +1368,7 @@
   },
   "russian": "смешивать",
   "english": "mix",
-  "esperanto": "",
+  "esperanto": "miksi",
   "word_type": [
     "verbs"
   ]
@@ -1378,7 +1378,7 @@
   },
   "russian": "чинить",
   "english": "fix",
-  "esperanto": "",
+  "esperanto": "ripari",
   "word_type": [
     "verbs"
   ]
@@ -1388,7 +1388,7 @@
   },
   "russian": "расслабляться",
   "english": "relax",
-  "esperanto": "",
+  "esperanto": "malstreĉiĝi",
   "word_type": [
     "verbs"
   ]
@@ -1398,7 +1398,7 @@
   },
   "russian": "паниковать",
   "english": "panic",
-  "esperanto": "",
+  "esperanto": "paniko",
   "word_type": [
     "verbs"
   ]
@@ -1408,7 +1408,7 @@
   },
   "russian": "работать",
   "english": "work",
-  "esperanto": "",
+  "esperanto": "laboro",
   "word_type": [
     "verbs"
   ]
@@ -1418,7 +1418,7 @@
   },
   "russian": "показывать",
   "english": "show",
-  "esperanto": "",
+  "esperanto": "spektaklo",
   "word_type": [
     "verbs"
   ]
@@ -1428,7 +1428,7 @@
   },
   "russian": "готовить",
   "english": "cook",
-  "esperanto": "",
+  "esperanto": "kuiri",
   "word_type": [
     "verbs"
   ]
@@ -1438,7 +1438,7 @@
   },
   "russian": "чихать",
   "english": "sneeze",
-  "esperanto": "",
+  "esperanto": "terni",
   "word_type": [
     "verbs"
   ]
@@ -1448,7 +1448,7 @@
   },
   "russian": "жить",
   "english": "live",
-  "esperanto": "",
+  "esperanto": "vivi",
   "word_type": [
     "verbs"
   ]
@@ -1458,7 +1458,7 @@
   },
   "russian": "умирать",
   "english": "die",
-  "esperanto": "",
+  "esperanto": "morti",
   "word_type": [
     "verbs"
   ]
@@ -1468,7 +1468,7 @@
   },
   "russian": "брать",
   "english": "take",
-  "esperanto": "",
+  "esperanto": "prenu",
   "word_type": [
     "verbs"
   ]
@@ -1478,7 +1478,7 @@
   },
   "russian": "целовать",
   "english": "kiss",
-  "esperanto": "",
+  "esperanto": "kiso",
   "word_type": [
     "verbs"
   ]
@@ -1488,7 +1488,7 @@
   },
   "russian": "трогать",
   "english": "touch",
-  "esperanto": "",
+  "esperanto": "tuŝi",
   "word_type": [
     "verbs"
   ]
@@ -1498,7 +1498,7 @@
   },
   "russian": "смотреть",
   "english": "watch",
-  "esperanto": "",
+  "esperanto": "rigardi",
   "word_type": [
     "verbs"
   ]
@@ -1508,7 +1508,7 @@
   },
   "russian": "разлетаться",
   "english": "fuzz",
-  "esperanto": "",
+  "esperanto": "fuzz",
   "word_type": [
     "verbs"
   ]
@@ -1518,7 +1518,7 @@
   },
   "russian": "гнать",
   "english": "rush",
-  "esperanto": "",
+  "esperanto": "rapidi",
   "word_type": [
     "verbs"
   ]
@@ -1528,7 +1528,7 @@
   },
   "russian": "жужжать",
   "english": "buzz",
-  "esperanto": "",
+  "esperanto": "zumado",
   "word_type": [
     "verbs"
   ]
@@ -1538,7 +1538,7 @@
   },
   "russian": "сокрушать",
   "english": "crash",
-  "esperanto": "",
+  "esperanto": "kraŝo",
   "word_type": [
     "verbs"
   ]
@@ -1548,7 +1548,7 @@
   },
   "russian": "мыть",
   "english": "bath",
-  "esperanto": "",
+  "esperanto": "bano",
   "word_type": [
     "verbs"
   ]
@@ -1558,7 +1558,7 @@
   },
   "russian": "рождать",
   "english": "birth",
-  "esperanto": "",
+  "esperanto": "naskiĝo",
   "word_type": [
     "verbs"
   ]
@@ -1568,7 +1568,7 @@
   },
   "russian": "окапываться",
   "english": "earth",
-  "esperanto": "",
+  "esperanto": "enfosi",
   "word_type": [
     "verbs"
   ]
@@ -1578,7 +1578,7 @@
   },
   "russian": "говорить",
   "english": "mouth",
-  "esperanto": "",
+  "esperanto": "paroli",
   "word_type": [
     "verbs"
   ]
@@ -1588,7 +1588,7 @@
   },
   "russian": "разглаживать",
   "english": "smooth",
-  "esperanto": "",
+  "esperanto": "glata",
   "word_type": [
     "verbs"
   ]
@@ -1598,7 +1598,7 @@
   },
   "russian": "завещать",
   "english": "bequeath",
-  "esperanto": "",
+  "esperanto": "testamenti",
   "word_type": [
     "verbs"
   ]
@@ -1608,7 +1608,7 @@
   },
   "russian": "молиться",
   "english": "prey",
-  "esperanto": "",
+  "esperanto": "predo",
   "word_type": [
     "verbs"
   ]
@@ -1618,7 +1618,7 @@
   },
   "russian": "нанимать",
   "english": "employ",
-  "esperanto": "",
+  "esperanto": "dungi",
   "word_type": [
     "verbs"
   ]
@@ -1628,7 +1628,7 @@
   },
   "russian": "копировать",
   "english": "copy",
-  "esperanto": "",
+  "esperanto": "kopii",
   "word_type": [
     "verbs"
   ]
@@ -1638,7 +1638,7 @@
   },
   "russian": "плакать",
   "english": "cry",
-  "esperanto": "",
+  "esperanto": "plori",
   "word_type": [
     "verbs"
   ]
@@ -1648,7 +1648,7 @@
   },
   "russian": "пытаться",
   "english": "try",
-  "esperanto": "",
+  "esperanto": "provu",
   "word_type": [
     "verbs"
   ]
@@ -1658,7 +1658,7 @@
   },
   "russian": "чистить",
   "english": "tidy",
-  "esperanto": "",
+  "esperanto": "ordigita",
   "word_type": [
     "verbs"
   ]
@@ -1668,7 +1668,7 @@
   },
   "russian": "быть звездой",
   "english": "star",
-  "esperanto": "",
+  "esperanto": "estu stelo",
   "word_type": [
     "verbs"
   ]
@@ -1678,7 +1678,7 @@
   },
   "russian": "сбросить",
   "english": "drop",
-  "esperanto": "",
+  "esperanto": "faligi",
   "word_type": [
     "verbs"
   ]
@@ -1688,7 +1688,7 @@
   },
   "russian": "украсть",
   "english": "rob",
-  "esperanto": "",
+  "esperanto": "Ŝteli",
   "word_type": [
     "verbs"
   ]
@@ -1698,7 +1698,7 @@
   },
   "russian": "просить",
   "english": "beg",
-  "esperanto": "",
+  "esperanto": "petegi",
   "word_type": [
     "verbs"
   ]
@@ -1708,7 +1708,7 @@
   },
   "russian": "ссылаться",
   "english": "refer",
-  "esperanto": "",
+  "esperanto": "referenci",
   "word_type": [
     "verbs"
   ]
@@ -1718,7 +1718,7 @@
   },
   "russian": "предпочитать",
   "english": "prefer",
-  "esperanto": "",
+  "esperanto": "preferi",
   "word_type": [
     "verbs"
   ]
@@ -1728,7 +1728,7 @@
   },
   "russian": "карабкаться",
   "english": "climb",
-  "esperanto": "",
+  "esperanto": "grimpi",
   "word_type": [
     "verbs"
   ]
@@ -1738,7 +1738,7 @@
   },
   "russian": "причесываться",
   "english": "comb",
-  "esperanto": "",
+  "esperanto": "kombilo",
   "word_type": [
     "verbs"
   ]
@@ -1748,7 +1748,7 @@
   },
   "russian": "начинать",
   "english": "start",
-  "esperanto": "",
+  "esperanto": "komenci",
   "word_type": [
     "verbs"
   ]
@@ -1758,7 +1758,7 @@
   },
   "russian": "пользоваться преимуществом",
   "english": "benefit",
-  "esperanto": "",
+  "esperanto": "profito",
   "word_type": [
     "verbs"
   ]
@@ -1768,7 +1768,7 @@
   },
   "russian": "получать прибыль",
   "english": "profit",
-  "esperanto": "",
+  "esperanto": "profito",
   "word_type": [
     "verbs"
   ]
@@ -2930,7 +2930,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a73"
   },
-  "esperanto": "",
+  "esperanto": "avara",
   "english": "stingy",
   "russian": "скупой",
   "word_type": [
@@ -2940,7 +2940,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a74"
   },
-  "esperanto": "",
+  "esperanto": "nutraĵo",
   "english": "nourishment",
   "russian": "питание",
   "word_type": [
@@ -2950,7 +2950,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a75"
   },
-  "esperanto": "",
+  "esperanto": "vesto",
   "english": "garment",
   "russian": "одеяние",
   "word_type": [
@@ -2960,7 +2960,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a76"
   },
-  "esperanto": "",
+  "esperanto": "penetri",
   "english": "penetrate",
   "russian": "проникать",
   "word_type": [
@@ -2970,7 +2970,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a77"
   },
-  "esperanto": "",
+  "esperanto": "novaĵoj",
   "english": "novice",
   "russian": "новичок",
   "word_type": [
@@ -2980,7 +2980,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a78"
   },
-  "esperanto": "",
+  "esperanto": "Cetere",
   "english": "besides",
   "russian": "кроме того",
   "word_type": [
@@ -2990,7 +2990,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a79"
   },
-  "esperanto": "",
+  "esperanto": "streĉo",
   "english": "strain",
   "russian": "деформировать",
   "word_type": [
@@ -3000,7 +3000,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a7a"
   },
-  "esperanto": "",
+  "esperanto": "fidi",
   "english": "rely",
   "russian": "полагаться",
   "word_type": [
@@ -3010,7 +3010,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a7b"
   },
-  "esperanto": "",
+  "esperanto": "obstina",
   "english": "obstinate",
   "russian": "упрямый",
   "word_type": [
@@ -3020,7 +3020,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a7c"
   },
-  "esperanto": "",
+  "esperanto": "bagatela",
   "english": "petty",
   "russian": "мелкий",
   "word_type": [
@@ -3030,7 +3030,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a7d"
   },
-  "esperanto": "",
+  "esperanto": "simple",
   "english": "merely",
   "russian": "просто(только)",
   "word_type": [
@@ -3040,7 +3040,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a7e"
   },
-  "esperanto": "",
+  "esperanto": "senila",
   "english": "senile",
   "russian": "дряхлый",
   "word_type": [
@@ -3050,7 +3050,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a7f"
   },
-  "esperanto": "",
+  "esperanto": "malzorgema",
   "english": "reckless",
   "russian": "опрометчивый(безрассудный)",
   "word_type": [
@@ -3060,7 +3060,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a80"
   },
-  "esperanto": "",
+  "esperanto": "bebo",
   "english": "infant",
   "russian": "младенец",
   "word_type": [
@@ -3070,7 +3070,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a81"
   },
-  "esperanto": "",
+  "esperanto": "forpaso",
   "english": "demise",
   "russian": "кончина",
   "word_type": [
@@ -3080,7 +3080,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a82"
   },
-  "esperanto": "",
+  "esperanto": "kruda",
   "english": "gross",
   "russian": "большой",
   "word_type": [
@@ -3090,7 +3090,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a83"
   },
-  "esperanto": "",
+  "esperanto": "aserto",
   "english": "claim",
   "russian": "утверждать",
   "word_type": [
@@ -3100,7 +3100,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a84"
   },
-  "esperanto": "",
+  "esperanto": "koto",
   "english": "mud",
   "russian": "грязь",
   "word_type": [
@@ -3110,7 +3110,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a85"
   },
-  "esperanto": "",
+  "esperanto": "neta",
   "english": "neat",
   "russian": "аккуратный",
   "word_type": [
@@ -3120,7 +3120,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a86"
   },
-  "esperanto": "",
+  "esperanto": "nesto",
   "english": "nest",
   "russian": "гнездо",
   "word_type": [
@@ -3130,7 +3130,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a87"
   },
-  "esperanto": "",
+  "esperanto": "percepti",
   "english": "percieve",
   "russian": "воспринимать",
   "word_type": [
@@ -3140,7 +3140,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a88"
   },
-  "esperanto": "",
+  "esperanto": "laŭ",
   "english": "according",
   "russian": "согласно",
   "word_type": [
@@ -3150,7 +3150,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a89"
   },
-  "esperanto": "",
+  "esperanto": "plu ankoraŭ",
   "english": "further still",
   "russian": "еще дальше",
   "word_type": [
@@ -3160,7 +3160,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a8a"
   },
-  "esperanto": "",
+  "esperanto": "eble",
   "english": "perhaps",
   "russian": "возможно",
   "word_type": [
@@ -3170,7 +3170,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a8b"
   },
-  "esperanto": "",
+  "esperanto": "certa",
   "english": "certain",
   "russian": "определенный",
   "word_type": [
@@ -3180,7 +3180,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a8c"
   },
-  "esperanto": "",
+  "esperanto": "registaro",
   "english": "govern",
   "russian": "править",
   "word_type": [
@@ -3190,7 +3190,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a8d"
   },
-  "esperanto": "",
+  "esperanto": "revelacio",
   "english": "revelation",
   "russian": "откровение",
   "word_type": [
@@ -3200,7 +3200,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a8e"
   },
-  "esperanto": "",
+  "esperanto": "kontestita",
   "english": "contested",
   "russian": "спорить(бороться)",
   "word_type": [
@@ -3210,7 +3210,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a8f"
   },
-  "esperanto": "",
+  "esperanto": "renkontita",
   "english": "encountered",
   "russian": "столкнуться с чем-то",
   "word_type": [
@@ -3220,7 +3220,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a90"
   },
-  "esperanto": "",
+  "esperanto": "disĉiplo",
   "english": "disciple",
   "russian": "ученик",
   "word_type": [
@@ -3230,7 +3230,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a91"
   },
-  "esperanto": "",
+  "esperanto": "signifa",
   "english": "significant",
   "russian": "значимый",
   "word_type": [
@@ -3240,7 +3240,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a92"
   },
-  "esperanto": "",
+  "esperanto": "tintiloj",
   "english": "tingles",
   "russian": "покалывания",
   "word_type": [
@@ -3250,7 +3250,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a93"
   },
-  "esperanto": "",
+  "esperanto": "ungvento",
   "english": "ointment",
   "russian": "мазь",
   "word_type": [
@@ -3260,7 +3260,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a94"
   },
-  "esperanto": "",
+  "esperanto": "konsekri",
   "english": "consecrate",
   "russian": "освященный",
   "word_type": [
@@ -3270,7 +3270,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a95"
   },
-  "esperanto": "",
+  "esperanto": "ŝanceliĝi",
   "english": "falter",
   "russian": "колебаться",
   "word_type": [
@@ -3280,7 +3280,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a96"
   },
-  "esperanto": "",
+  "esperanto": "disĵeti",
   "english": "scatter",
   "russian": "разбрасывать",
   "word_type": [
@@ -3290,7 +3290,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a97"
   },
-  "esperanto": "",
+  "esperanto": "reciproka",
   "english": "mutual",
   "russian": "обоюдный",
   "word_type": [
@@ -3300,7 +3300,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a98"
   },
-  "esperanto": "",
+  "esperanto": "interstico",
   "english": "interstice",
   "russian": "расщелина",
   "word_type": [
@@ -3310,7 +3310,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a99"
   },
-  "esperanto": "",
+  "esperanto": "belega",
   "english": "splendid",
   "russian": "великолепный",
   "word_type": [
@@ -3320,7 +3320,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a9a"
   },
-  "esperanto": "",
+  "esperanto": "ĝeno",
   "english": "nuisance",
   "russian": "досада",
   "word_type": [
@@ -3330,7 +3330,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a9b"
   },
-  "esperanto": "",
+  "esperanto": "malvirta",
   "english": "vicious",
   "russian": "порочный",
   "word_type": [
@@ -3340,7 +3340,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a9c"
   },
-  "esperanto": "",
+  "esperanto": "vanteco",
   "english": "vanity",
   "russian": "тщеславие",
   "word_type": [
@@ -3350,7 +3350,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a9d"
   },
-  "esperanto": "",
+  "esperanto": "svaga",
   "english": "vague",
   "russian": "расплывчатый",
   "word_type": [
@@ -3360,7 +3360,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a9e"
   },
-  "esperanto": "",
+  "esperanto": "bulo",
   "english": "lump",
   "russian": "сваливать",
   "word_type": [
@@ -3370,7 +3370,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395a9f"
   },
-  "esperanto": "",
+  "esperanto": "rustika",
   "english": "rustic",
   "russian": "деревенский",
   "word_type": [
@@ -3380,7 +3380,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395aa0"
   },
-  "esperanto": "",
+  "esperanto": "alvoki",
   "english": "invoke",
   "russian": "призывать",
   "word_type": [
@@ -3390,7 +3390,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395aa1"
   },
-  "esperanto": "",
+  "esperanto": "savo",
   "english": "salvation",
   "russian": "спасение",
   "word_type": [
@@ -3400,7 +3400,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395aa2"
   },
-  "esperanto": "",
+  "esperanto": "falko",
   "english": "falcon",
   "russian": "сокол",
   "word_type": [
@@ -3410,7 +3410,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395aa3"
   },
-  "esperanto": "",
+  "esperanto": "fasko",
   "english": "bunch",
   "russian": "кучка",
   "word_type": [
@@ -3420,7 +3420,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395aa4"
   },
-  "esperanto": "",
+  "esperanto": "tasko",
   "english": "errand",
   "russian": "поручение",
   "word_type": [
@@ -3430,7 +3430,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395aa5"
   },
-  "esperanto": "",
+  "esperanto": "parencaro",
   "english": "kindred",
   "russian": "родственный",
   "word_type": [
@@ -3440,7 +3440,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395aa6"
   },
-  "esperanto": "",
+  "esperanto": "stagna",
   "english": "stagnant",
   "russian": "застойный",
   "word_type": [
@@ -3450,7 +3450,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395aa7"
   },
-  "esperanto": "",
+  "esperanto": "festeno",
   "english": "feast",
   "russian": "пир",
   "word_type": [
@@ -3460,7 +3460,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395aa8"
   },
-  "esperanto": "",
+  "esperanto": "promeni",
   "english": "stroll",
   "russian": "прогулка",
   "word_type": [
@@ -3470,7 +3470,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395aa9"
   },
-  "esperanto": "",
+  "esperanto": "piki",
   "english": "sting",
   "russian": "жалить",
   "word_type": [
@@ -3480,7 +3480,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395aaa"
   },
-  "esperanto": "",
+  "esperanto": "sagaca",
   "english": "shrewd",
   "russian": "проницательный",
   "word_type": [
@@ -3490,7 +3490,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395aab"
   },
-  "esperanto": "",
+  "esperanto": "fakte",
   "english": "indeed",
   "russian": "действительно",
   "word_type": [
@@ -3500,7 +3500,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395aac"
   },
-  "esperanto": "",
+  "esperanto": "od",
   "english": "od",
   "russian": "защитный",
   "word_type": [
@@ -3510,7 +3510,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395aad"
   },
-  "esperanto": "",
+  "esperanto": "grego",
   "english": "herd",
   "russian": "примкнуть",
   "word_type": [
@@ -3520,7 +3520,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395aae"
   },
-  "esperanto": "",
+  "esperanto": "odoro",
   "english": "scent",
   "russian": "запах, нюх ",
   "word_type": [
@@ -3530,7 +3530,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395aaf"
   },
-  "esperanto": "",
+  "esperanto": "almenaŭ",
   "english": "at least",
   "russian": "по крайней мере",
   "word_type": [
@@ -3540,7 +3540,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ab0"
   },
-  "esperanto": "",
+  "esperanto": "platigita",
   "english": "flattened",
   "russian": "сплющенный",
   "word_type": [
@@ -3550,7 +3550,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ab1"
   },
-  "esperanto": "",
+  "esperanto": "kantino",
   "english": "canteen",
   "russian": "буфет",
   "word_type": [
@@ -3560,7 +3560,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ab2"
   },
-  "esperanto": "",
+  "esperanto": "mallerte",
   "english": "clumsily",
   "russian": "неумело",
   "word_type": [
@@ -3570,7 +3570,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ab3"
   },
-  "esperanto": "",
+  "esperanto": "maljuste",
   "english": "unjustly",
   "russian": "незаслуженно",
   "word_type": [
@@ -3580,7 +3580,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ab4"
   },
-  "esperanto": "",
+  "esperanto": "timema",
   "english": "timid",
   "russian": "робкий",
   "word_type": [
@@ -3590,7 +3590,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ab5"
   },
-  "esperanto": "",
+  "esperanto": "maldececo",
   "english": "indecency",
   "russian": "непристойность",
   "word_type": [
@@ -3600,7 +3600,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ab6"
   },
-  "esperanto": "",
+  "esperanto": "hezito",
   "english": "hesitation",
   "russian": "нерешительность",
   "word_type": [
@@ -3610,7 +3610,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ab7"
   },
-  "esperanto": "",
+  "esperanto": "rafinado",
   "english": "refinement",
   "russian": "утонченность",
   "word_type": [
@@ -3620,7 +3620,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ab8"
   },
-  "esperanto": "",
+  "esperanto": "elaĉeto",
   "english": "ransom",
   "russian": "выкуп",
   "word_type": [
@@ -3630,7 +3630,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ab9"
   },
-  "esperanto": "",
+  "esperanto": "konjunkcio",
   "english": "conjuction",
   "russian": "союз, соединение",
   "word_type": [
@@ -3640,7 +3640,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395aba"
   },
-  "esperanto": "",
+  "esperanto": "ligita",
   "english": "attached",
   "russian": "приложенный",
   "word_type": [
@@ -3650,7 +3650,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395abb"
   },
-  "esperanto": "",
+  "esperanto": "fascinita",
   "english": "fascinated",
   "russian": "очарованный",
   "word_type": [
@@ -3660,7 +3660,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395abc"
   },
-  "esperanto": "",
+  "esperanto": "fantomo",
   "english": "wraith",
   "russian": "привидение",
   "word_type": [
@@ -3670,7 +3670,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395abd"
   },
-  "esperanto": "",
+  "esperanto": "senmanka",
   "english": "flawless",
   "russian": "безупречный",
   "word_type": [
@@ -3680,7 +3680,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395abe"
   },
-  "esperanto": "",
+  "esperanto": "loĝejo",
   "english": "dwelling",
   "russian": "жилище",
   "word_type": [
@@ -3690,7 +3690,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395abf"
   },
-  "esperanto": "",
+  "esperanto": "sinteno",
   "english": "posture",
   "russian": "поза",
   "word_type": [
@@ -3700,7 +3700,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ac0"
   },
-  "esperanto": "",
+  "esperanto": "snufante",
   "english": "sniffing",
   "russian": "нюхать",
   "word_type": [
@@ -3710,7 +3710,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ac1"
   },
-  "esperanto": "",
+  "esperanto": "aŭroro",
   "english": "aurora",
   "russian": "северное сияние, утренняя заря",
   "word_type": [
@@ -3720,7 +3720,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ac2"
   },
-  "esperanto": "",
+  "esperanto": "bastiono",
   "english": "bulwark",
   "russian": "оплот, бастион",
   "word_type": [
@@ -3730,7 +3730,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ac3"
   },
-  "esperanto": "",
+  "esperanto": "deturni",
   "english": "divert",
   "russian": "отвлекать",
   "word_type": [
@@ -3740,7 +3740,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ac4"
   },
-  "esperanto": "",
+  "esperanto": "sola",
   "english": "sole",
   "russian": "подошва",
   "word_type": [
@@ -3750,7 +3750,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ac5"
   },
-  "esperanto": "",
+  "esperanto": "Kajto",
   "english": "kite",
   "russian": "коршун",
   "word_type": [
@@ -3760,7 +3760,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ac6"
   },
-  "esperanto": "",
+  "esperanto": "limigi",
   "english": "curtail",
   "russian": "сокращение",
   "word_type": [
@@ -3770,7 +3770,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ac7"
   },
-  "esperanto": "",
+  "esperanto": "kidnapi",
   "english": "abduct",
   "russian": "исчезновение",
   "word_type": [
@@ -3780,7 +3780,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ac8"
   },
-  "esperanto": "",
+  "esperanto": "remistoj",
   "english": "oarsmen",
   "russian": "гребцы",
   "word_type": [
@@ -3790,7 +3790,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ac9"
   },
-  "esperanto": "",
+  "esperanto": "solena",
   "english": "solemn",
   "russian": "торжественный",
   "word_type": [
@@ -3800,7 +3800,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395aca"
   },
-  "esperanto": "",
+  "esperanto": "spino",
   "english": "backbone",
   "russian": "позвоночник",
   "word_type": [
@@ -3810,7 +3810,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395acb"
   },
-  "esperanto": "",
+  "esperanto": "obstina",
   "english": "obstonate",
   "russian": "упрямый",
   "word_type": [
@@ -3820,7 +3820,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395acc"
   },
-  "esperanto": "",
+  "esperanto": "efikeco",
   "english": "efficacy",
   "russian": "эффективный",
   "word_type": [
@@ -3830,7 +3830,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395acd"
   },
-  "esperanto": "",
+  "esperanto": "fianĉo",
   "english": "fiance",
   "russian": "жених",
   "word_type": [
@@ -3840,7 +3840,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ace"
   },
-  "esperanto": "",
+  "esperanto": "soleca",
   "english": "forlorn",
   "russian": "покинутый",
   "word_type": [
@@ -3850,7 +3850,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395acf"
   },
-  "esperanto": "",
+  "esperanto": "kapti",
   "english": "seize",
   "russian": "воспользоваться",
   "word_type": [
@@ -3860,7 +3860,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ad0"
   },
-  "esperanto": "",
+  "esperanto": "nekontestebla",
   "english": "undeniable",
   "russian": "бесспорный",
   "word_type": [
@@ -3870,7 +3870,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ad1"
   },
-  "esperanto": "",
+  "esperanto": "silenta",
   "english": "tacit",
   "russian": "подразумеваемый",
   "word_type": [
@@ -3880,7 +3880,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ad2"
   },
-  "esperanto": "",
+  "esperanto": "supera",
   "english": "supreme",
   "russian": "высший",
   "word_type": [
@@ -3890,7 +3890,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ad3"
   },
-  "esperanto": "",
+  "esperanto": "ĵetante",
   "english": "tossing",
   "russian": "бросание, качка",
   "word_type": [
@@ -3900,7 +3900,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ad4"
   },
-  "esperanto": "",
+  "esperanto": "gastigita",
   "english": "harbored",
   "russian": "укрывал",
   "word_type": [
@@ -3910,7 +3910,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ad5"
   },
-  "esperanto": "",
+  "esperanto": "densa",
   "english": "dense",
   "russian": "плотный",
   "word_type": [
@@ -3920,7 +3920,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ad6"
   },
-  "esperanto": "",
+  "esperanto": "malforta",
   "english": "frail",
   "russian": "хилый",
   "word_type": [
@@ -3930,7 +3930,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ad7"
   },
-  "esperanto": "",
+  "esperanto": "bisekci",
   "english": "bisect",
   "russian": "разрубить пополам",
   "word_type": [
@@ -3940,7 +3940,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ad8"
   },
-  "esperanto": "",
+  "esperanto": "fuŝis",
   "english": "blundered",
   "russian": "сплоховал",
   "word_type": [
@@ -3950,7 +3950,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ad9"
   },
-  "esperanto": "",
+  "esperanto": "maramea",
   "english": "naval",
   "russian": "флотский",
   "word_type": [
@@ -3960,7 +3960,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ada"
   },
-  "esperanto": "",
+  "esperanto": "vendetto",
   "english": "feud",
   "russian": "междуусобица",
   "word_type": [
@@ -3970,7 +3970,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395adb"
   },
-  "esperanto": "",
+  "esperanto": "decida",
   "english": "crucial",
   "russian": "ключевой",
   "word_type": [
@@ -3980,7 +3980,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395adc"
   },
-  "esperanto": "",
+  "esperanto": "sensacio",
   "english": "sensation",
   "russian": "ощущение",
   "word_type": [
@@ -3990,7 +3990,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395add"
   },
-  "esperanto": "",
+  "esperanto": "portempa",
   "english": "temporary",
   "russian": "временный",
   "word_type": [
@@ -4000,7 +4000,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ade"
   },
-  "esperanto": "",
+  "esperanto": "malsovaĝigita",
   "english": "tamed",
   "russian": "прирученный",
   "word_type": [
@@ -4010,7 +4010,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395adf"
   },
-  "esperanto": "",
+  "esperanto": "ĉiopovo",
   "english": "omnipotence",
   "russian": "всемогущество",
   "word_type": [
@@ -4020,7 +4020,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ae0"
   },
-  "esperanto": "",
+  "esperanto": "certa",
   "english": "certain",
   "russian": "определенный",
   "word_type": [
@@ -4030,7 +4030,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ae1"
   },
-  "esperanto": "",
+  "esperanto": "intesto",
   "english": "bowel",
   "russian": "кишка",
   "word_type": [
@@ -4040,7 +4040,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ae2"
   },
-  "esperanto": "",
+  "esperanto": "sinistra",
   "english": "sinister",
   "russian": "зловещий",
   "word_type": [
@@ -4050,7 +4050,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ae3"
   },
-  "esperanto": "",
+  "esperanto": "kapablo",
   "english": "capacity",
   "russian": "вместимость",
   "word_type": [
@@ -4060,7 +4060,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ae4"
   },
-  "esperanto": "",
+  "esperanto": "apud",
   "english": "alongside",
   "russian": "на стороне",
   "word_type": [
@@ -4070,7 +4070,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ae5"
   },
-  "esperanto": "",
+  "esperanto": "persistema",
   "english": "tenacious",
   "russian": "цепкий",
   "word_type": [
@@ -4080,7 +4080,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ae6"
   },
-  "esperanto": "",
+  "esperanto": "avast",
   "english": "avast!",
   "russian": "стой!",
   "word_type": [
@@ -4090,7 +4090,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ae7"
   },
-  "esperanto": "",
+  "esperanto": "rusta",
   "english": "rusty",
   "russian": "ржавый",
   "word_type": [
@@ -4100,7 +4100,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ae8"
   },
-  "esperanto": "",
+  "esperanto": "stranga",
   "english": "odd",
   "russian": "странный",
   "word_type": [
@@ -4110,7 +4110,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395ae9"
   },
-  "esperanto": "",
+  "esperanto": "soleca",
   "english": "solitary",
   "russian": "уединенный",
   "word_type": [
@@ -4120,7 +4120,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395aea"
   },
-  "esperanto": "",
+  "esperanto": "ekscitita",
   "english": "hectic",
   "russian": "беспокойный",
   "word_type": [
@@ -4130,7 +4130,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395aeb"
   },
-  "esperanto": "",
+  "esperanto": "svaga",
   "english": "vague",
   "russian": "расплывчатый",
   "word_type": [
@@ -4140,7 +4140,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395aec"
   },
-  "esperanto": "",
+  "esperanto": "svenas",
   "english": "faint",
   "russian": "унывать",
   "word_type": [
@@ -4150,7 +4150,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395aed"
   },
-  "esperanto": "",
+  "esperanto": "Merrow",
   "english": "merrow",
   "russian": "русалка",
   "word_type": [
@@ -4160,7 +4160,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395aee"
   },
-  "esperanto": "",
+  "esperanto": "kolombo",
   "english": "dove",
   "russian": "голубь",
   "word_type": [
@@ -4170,7 +4170,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395aef"
   },
-  "esperanto": "",
+  "esperanto": "limako",
   "english": "slug",
   "russian": "слизень",
   "word_type": [
@@ -4180,7 +4180,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395af0"
   },
-  "esperanto": "",
+  "esperanto": "sopiras",
   "english": "yearn",
   "russian": "тосковать",
   "word_type": [
@@ -4190,7 +4190,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395af1"
   },
-  "esperanto": "",
+  "esperanto": "tenilo",
   "english": "handle",
   "russian": "рукоять",
   "word_type": [
@@ -4200,7 +4200,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395af2"
   },
-  "esperanto": "",
+  "esperanto": "eterna",
   "english": "everlasting",
   "russian": "вечный",
   "word_type": [
@@ -4210,7 +4210,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395af3"
   },
-  "esperanto": "",
+  "esperanto": "oportuna",
   "english": "convenient",
   "russian": "удобный",
   "word_type": [
@@ -4220,7 +4220,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395af4"
   },
-  "esperanto": "",
+  "esperanto": "maw",
   "english": "maw",
   "russian": "пасть",
   "word_type": [
@@ -4230,7 +4230,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395af5"
   },
-  "esperanto": "",
+  "esperanto": "abomeninda",
   "english": "repulsive",
   "russian": "отталкивающий",
   "word_type": [
@@ -4240,7 +4240,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395af6"
   },
-  "esperanto": "",
+  "esperanto": "fratoj",
   "english": "brethren",
   "russian": "братия",
   "word_type": [
@@ -4250,7 +4250,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395af7"
   },
-  "esperanto": "",
+  "esperanto": "alkroĉiĝu",
   "english": "cling",
   "russian": "цепляться",
   "word_type": [
@@ -4260,7 +4260,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395af8"
   },
-  "esperanto": "",
+  "esperanto": "heredaĵo",
   "english": "heirloom",
   "russian": "фамильная ценность",
   "word_type": [
@@ -4270,7 +4270,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395af9"
   },
-  "esperanto": "",
+  "esperanto": "pliiĝo",
   "english": "surge",
   "russian": "волна",
   "word_type": [
@@ -4280,7 +4280,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395afa"
   },
-  "esperanto": "",
+  "esperanto": "raslo",
   "english": "rattle",
   "russian": "грохот",
   "word_type": [
@@ -4290,7 +4290,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395afb"
   },
-  "esperanto": "",
+  "esperanto": "laboro",
   "english": "labor",
   "russian": "труд, работа",
   "word_type": [
@@ -4300,7 +4300,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395afc"
   },
-  "esperanto": "",
+  "esperanto": "vestita",
   "english": "clad",
   "russian": "облекать",
   "word_type": [
@@ -4310,7 +4310,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395afd"
   },
-  "esperanto": "",
+  "esperanto": "rando",
   "english": "verge",
   "russian": "обочина",
   "word_type": [
@@ -4320,7 +4320,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395afe"
   },
-  "esperanto": "",
+  "esperanto": "malglata",
   "english": "rough",
   "russian": "грубый",
   "word_type": [
@@ -4330,7 +4330,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395aff"
   },
-  "esperanto": "",
+  "esperanto": "katastrofo",
   "english": "disaster",
   "russian": "стихийное бедствие",
   "word_type": [
@@ -4340,7 +4340,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395b00"
   },
-  "esperanto": "",
+  "esperanto": "malemo",
   "english": "reluctance",
   "russian": "нежелание",
   "word_type": [
@@ -4350,7 +4350,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395b01"
   },
-  "esperanto": "",
+  "esperanto": "fuŝi",
   "english": "mess",
   "russian": "беспорядок",
   "word_type": [
@@ -4360,7 +4360,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395b02"
   },
-  "esperanto": "",
+  "esperanto": "ĉifono",
   "english": "rag",
   "russian": "тряпка",
   "word_type": [
@@ -4370,7 +4370,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395b03"
   },
-  "esperanto": "",
+  "esperanto": "elŝipiĝi",
   "english": "disembark",
   "russian": "высаживаться",
   "word_type": [
@@ -4380,7 +4380,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395b04"
   },
-  "esperanto": "",
+  "esperanto": "mevo",
   "english": "seagull",
   "russian": "чайка",
   "word_type": [
@@ -4390,7 +4390,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395b05"
   },
-  "esperanto": "",
+  "esperanto": "trudiĝo",
   "english": "trespass",
   "russian": "прегрешение, посягательство",
   "word_type": [
@@ -4400,7 +4400,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395b06"
   },
-  "esperanto": "",
+  "esperanto": "tempesto",
   "english": "tempest",
   "russian": "буря",
   "word_type": [
@@ -4410,7 +4410,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395b07"
   },
-  "esperanto": "",
+  "esperanto": "neta",
   "english": "neat",
   "russian": "аккуратный",
   "word_type": [
@@ -4420,7 +4420,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395b08"
   },
-  "esperanto": "",
+  "esperanto": "sentima",
   "english": "intrepid",
   "russian": "бесстрашный",
   "word_type": [
@@ -4430,7 +4430,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395b09"
   },
-  "esperanto": "",
+  "esperanto": "ekbrilo",
   "english": "glimmer",
   "russian": "мерцание",
   "word_type": [
@@ -4440,7 +4440,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395b0a"
   },
-  "esperanto": "",
+  "esperanto": "sigelo",
   "english": "seal",
   "russian": "тюлень",
   "word_type": [
@@ -4450,7 +4450,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395b0b"
   },
-  "esperanto": "",
+  "esperanto": "sorbi",
   "english": "absorb",
   "russian": "поглощать",
   "word_type": [
@@ -4460,7 +4460,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395b0c"
   },
-  "esperanto": "",
+  "esperanto": "muĝi",
   "english": "roar",
   "russian": "рев",
   "word_type": [
@@ -4470,7 +4470,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395b0d"
   },
-  "esperanto": "",
+  "esperanto": "vasta",
   "english": "vast",
   "russian": "огромный",
   "word_type": [
@@ -4480,7 +4480,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395b0e"
   },
-  "esperanto": "",
+  "esperanto": "ĉeesti",
   "english": "attend",
   "russian": "посещать",
   "word_type": [
@@ -4490,7 +4490,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395b0f"
   },
-  "esperanto": "",
+  "esperanto": "gnomo",
   "english": "brownie",
   "russian": "домовой",
   "word_type": [
@@ -4500,7 +4500,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395b10"
   },
-  "esperanto": "",
+  "esperanto": "enprofundiĝi",
   "english": "delve",
   "russian": "копаться",
   "word_type": [
@@ -4510,7 +4510,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395b11"
   },
-  "esperanto": "",
+  "esperanto": "enspiri",
   "english": "inhale",
   "russian": "вдох",
   "word_type": [
@@ -4520,7 +4520,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395b12"
   },
-  "esperanto": "",
+  "esperanto": "florado",
   "english": "blossom",
   "russian": "цвести",
   "word_type": [
@@ -4530,7 +4530,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395b13"
   },
-  "esperanto": "",
+  "esperanto": "alproksimiĝo",
   "english": "approach",
   "russian": "подход",
   "word_type": [
@@ -4540,7 +4540,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395b14"
   },
-  "esperanto": "",
+  "esperanto": "doni",
   "english": "bestow",
   "russian": "даровать",
   "word_type": [
@@ -4550,7 +4550,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395b15"
   },
-  "esperanto": "",
+  "esperanto": "ekvido",
   "english": "glimpse",
   "russian": "проблеск",
   "word_type": [
@@ -4560,7 +4560,7 @@
   "_id": {
     "$oid": "6007fe96d69a251b7c395b16"
   },
-  "esperanto": "",
+  "esperanto": "transdoni",
   "english": "convey",
   "russian": "транспортировать",
   "word_type": [
@@ -4570,7 +4570,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b17"
   },
-  "esperanto": "",
+  "esperanto": "kato",
   "english": "Сat",
   "russian": "Кот",
   "word_type": [
@@ -4580,7 +4580,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b18"
   },
-  "esperanto": "",
+  "esperanto": "Katido",
   "english": "Kitten",
   "russian": "Котенок",
   "word_type": [
@@ -4590,7 +4590,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b19"
   },
-  "esperanto": "",
+  "esperanto": "Hundo",
   "english": "Dog",
   "russian": "Собака",
   "word_type": [
@@ -4600,7 +4600,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b1a"
   },
-  "esperanto": "",
+  "esperanto": "Hundido",
   "english": "Puppy",
   "russian": "Щенок",
   "word_type": [
@@ -4610,7 +4610,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b1b"
   },
-  "esperanto": "",
+  "esperanto": "Hamstro",
   "english": "Hamster",
   "russian": "Хомяк",
   "word_type": [
@@ -4620,7 +4620,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b1c"
   },
-  "esperanto": "",
+  "esperanto": "Papago",
   "english": "Parrot",
   "russian": "Попугай",
   "word_type": [
@@ -4630,7 +4630,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b1d"
   },
-  "esperanto": "",
+  "esperanto": "kobajo",
   "english": "guinea pig",
   "russian": "морская свинка",
   "word_type": [
@@ -4640,7 +4640,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b1e"
   },
-  "esperanto": "",
+  "esperanto": "Kokido",
   "english": "Chicken",
   "russian": "Курица",
   "word_type": [
@@ -4650,7 +4650,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b1f"
   },
-  "esperanto": "",
+  "esperanto": "Koko",
   "english": "Rooster",
   "russian": "Петух",
   "word_type": [
@@ -4660,7 +4660,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b20"
   },
-  "esperanto": "",
+  "esperanto": "Turkujo",
   "english": "Turkey",
   "russian": "Индейка",
   "word_type": [
@@ -4670,7 +4670,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b21"
   },
-  "esperanto": "",
+  "esperanto": "Turkujo",
   "english": "Gobbler",
   "russian": "Индюк",
   "word_type": [
@@ -4680,7 +4680,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b22"
   },
-  "esperanto": "",
+  "esperanto": "Kapro",
   "english": "Goat",
   "russian": "Коза",
   "word_type": [
@@ -4690,7 +4690,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b23"
   },
-  "esperanto": "",
+  "esperanto": "kapreolo",
   "english": "billy goat",
   "russian": "Козел",
   "word_type": [
@@ -4700,7 +4700,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b24"
   },
-  "esperanto": "",
+  "esperanto": "Infano",
   "english": "Kid",
   "russian": "Козленок",
   "word_type": [
@@ -4710,7 +4710,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b25"
   },
-  "esperanto": "",
+  "esperanto": "Ŝafoj",
   "english": "Sheep",
   "russian": "Овца",
   "word_type": [
@@ -4720,7 +4720,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b26"
   },
-  "esperanto": "",
+  "esperanto": "Virŝafo",
   "english": "Ram",
   "russian": "Баран",
   "word_type": [
@@ -4730,7 +4730,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b27"
   },
-  "esperanto": "",
+  "esperanto": "Ŝafido",
   "english": "Lamb",
   "russian": "Ягненок",
   "word_type": [
@@ -4740,7 +4740,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b28"
   },
-  "esperanto": "",
+  "esperanto": "Virbovo",
   "english": "Bull",
   "russian": "Бык",
   "word_type": [
@@ -4750,7 +4750,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b29"
   },
-  "esperanto": "",
+  "esperanto": "Bovino",
   "english": "Cow",
   "russian": "Корова",
   "word_type": [
@@ -4760,7 +4760,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b2a"
   },
-  "esperanto": "",
+  "esperanto": "Bovido",
   "english": "Calf",
   "russian": "Теленок",
   "word_type": [
@@ -4770,7 +4770,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b2b"
   },
-  "esperanto": "",
+  "esperanto": "Ĉevalo",
   "english": "Horse",
   "russian": "Лошадь",
   "word_type": [
@@ -4780,9 +4780,9 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b2c"
   },
-  "esperanto": "",
-  "english": "Stallon",
-  "russian": "Жеребек",
+  "esperanto": "ĉevalido",
+  "english": "foal",
+  "russian": "Жеребенок",
   "word_type": [
     "animals"
   ]
@@ -4790,7 +4790,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b2d"
   },
-  "esperanto": "",
+  "esperanto": "Virĉevalido",
   "english": "Colt",
   "russian": "Жеребенок",
   "word_type": [
@@ -4800,7 +4800,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b2e"
   },
-  "esperanto": "",
+  "esperanto": "Ĉevalino",
   "english": "Mare",
   "russian": "Кобыла",
   "word_type": [
@@ -4810,7 +4810,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b2f"
   },
-  "esperanto": "",
+  "esperanto": "Porko",
   "english": "Pig",
   "russian": "Свинья",
   "word_type": [
@@ -4820,7 +4820,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b30"
   },
-  "esperanto": "",
+  "esperanto": "Semi",
   "english": "Sow",
   "russian": "самка свиньи",
   "word_type": [
@@ -4830,7 +4830,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b31"
   },
-  "esperanto": "",
+  "esperanto": "Porkido",
   "english": "Piglet",
   "russian": "Поросенок",
   "word_type": [
@@ -4840,7 +4840,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b32"
   },
-  "esperanto": "",
+  "esperanto": "Kuniklo",
   "english": "Rabbit",
   "russian": "Кролик",
   "word_type": [
@@ -4850,7 +4850,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b33"
   },
-  "esperanto": "",
+  "esperanto": "Ilaro",
   "english": "Kit",
   "russian": "Крольченок",
   "word_type": [
@@ -4860,7 +4860,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b34"
   },
-  "esperanto": "",
+  "esperanto": "Damaino",
   "english": "Doe",
   "russian": "Самка",
   "word_type": [
@@ -4870,7 +4870,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b35"
   },
-  "esperanto": "",
+  "esperanto": "Virbesto",
   "english": "Buck",
   "russian": "Самец",
   "word_type": [
@@ -4880,7 +4880,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b36"
   },
-  "esperanto": "",
+  "esperanto": "Krokodilo",
   "english": "Crocodile",
   "russian": "Крокодил",
   "word_type": [
@@ -4890,7 +4890,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b37"
   },
-  "esperanto": "",
+  "esperanto": "Cervoj",
   "english": "Deer",
   "russian": "Олень",
   "word_type": [
@@ -4900,7 +4900,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b38"
   },
-  "esperanto": "",
+  "esperanto": "Elefanto",
   "english": "Elephant",
   "russian": "Слон",
   "word_type": [
@@ -4910,7 +4910,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b39"
   },
-  "esperanto": "",
+  "esperanto": "Alko",
   "english": "Elk",
   "russian": "Лось",
   "word_type": [
@@ -4920,7 +4920,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b3a"
   },
-  "esperanto": "",
+  "esperanto": "Vulpo",
   "english": "Fox",
   "russian": "Лиса",
   "word_type": [
@@ -4930,7 +4930,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b3b"
   },
-  "esperanto": "",
+  "esperanto": "Ĝirafo",
   "english": "Giraffe",
   "russian": "Жираф",
   "word_type": [
@@ -4940,7 +4940,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b3c"
   },
-  "esperanto": "",
+  "esperanto": "Kapro",
   "english": "Goat",
   "russian": "Козёл",
   "word_type": [
@@ -4950,7 +4950,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b3d"
   },
-  "esperanto": "",
+  "esperanto": "leporo",
   "english": "Hare",
   "russian": "Заяц",
   "word_type": [
@@ -4960,7 +4960,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b3e"
   },
-  "esperanto": "",
+  "esperanto": "Hipopotamo",
   "english": "Hippopotamus",
   "russian": "Бегемот",
   "word_type": [
@@ -4970,7 +4970,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b3f"
   },
-  "esperanto": "",
+  "esperanto": "Hieno",
   "english": "Hyena",
   "russian": "Гиена",
   "word_type": [
@@ -4980,7 +4980,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b40"
   },
-  "esperanto": "",
+  "esperanto": "Jaguaro",
   "english": "Jaguar",
   "russian": "Ягуар",
   "word_type": [
@@ -4990,7 +4990,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b41"
   },
-  "esperanto": "",
+  "esperanto": "Leopardo",
   "english": "Leopard",
   "russian": "Леопард",
   "word_type": [
@@ -5000,7 +5000,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b42"
   },
-  "esperanto": "",
+  "esperanto": "Leono",
   "english": "Lion",
   "russian": "Лев",
   "word_type": [
@@ -5010,7 +5010,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b43"
   },
-  "esperanto": "",
+  "esperanto": "Linko",
   "english": "Lynx",
   "russian": "Рысь",
   "word_type": [
@@ -5020,7 +5020,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b44"
   },
-  "esperanto": "",
+  "esperanto": "Marten",
   "english": "Marten",
   "russian": "Куница",
   "word_type": [
@@ -5030,7 +5030,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b45"
   },
-  "esperanto": "",
+  "esperanto": "Vizono",
   "english": "Mink",
   "russian": "Норка",
   "word_type": [
@@ -5040,7 +5040,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b46"
   },
-  "esperanto": "",
+  "esperanto": "talpo",
   "english": "mole",
   "russian": "Крот",
   "word_type": [
@@ -5050,7 +5050,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b47"
   },
-  "esperanto": "",
+  "esperanto": "Mungoto",
   "english": "Mongoose",
   "russian": "Мангуст",
   "word_type": [
@@ -5060,7 +5060,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b48"
   },
-  "esperanto": "",
+  "esperanto": "Simio",
   "english": "Monkey",
   "russian": "Обезьяна",
   "word_type": [
@@ -5070,7 +5070,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b49"
   },
-  "esperanto": "",
+  "esperanto": "Muso",
   "english": "Mouse",
   "russian": "Мышь",
   "word_type": [
@@ -5080,7 +5080,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b4a"
   },
-  "esperanto": "",
+  "esperanto": "Erinaco",
   "english": "Hedgehog",
   "russian": "Еж",
   "word_type": [
@@ -5090,7 +5090,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b4b"
   },
-  "esperanto": "",
+  "esperanto": "Muskrat",
   "english": "Muskrat",
   "russian": "Ондатра",
   "word_type": [
@@ -5100,7 +5100,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b4c"
   },
-  "esperanto": "",
+  "esperanto": "Lutro",
   "english": "Otter",
   "russian": "Выдра",
   "word_type": [
@@ -5110,7 +5110,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b4d"
   },
-  "esperanto": "",
+  "esperanto": "Pando",
   "english": "Panda",
   "russian": "Панда",
   "word_type": [
@@ -5120,7 +5120,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b4e"
   },
-  "esperanto": "",
+  "esperanto": "Pantero",
   "english": "Panther",
   "russian": "Пантера",
   "word_type": [
@@ -5130,7 +5130,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b4f"
   },
-  "esperanto": "",
+  "esperanto": "Polusa (arkta) vulpo",
   "english": "Polar(arctic) fox",
   "russian": "песец",
   "word_type": [
@@ -5140,7 +5140,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b50"
   },
-  "esperanto": "",
+  "esperanto": "Pumo",
   "english": "Puma",
   "russian": "Пума",
   "word_type": [
@@ -5150,7 +5150,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b51"
   },
-  "esperanto": "",
+  "esperanto": "Lavurso",
   "english": "Raccoon",
   "russian": "Енот",
   "word_type": [
@@ -5160,7 +5160,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b52"
   },
-  "esperanto": "",
+  "esperanto": "Rinocero",
   "english": "Rhinoceros",
   "russian": "Носорог",
   "word_type": [
@@ -5170,7 +5170,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b53"
   },
-  "esperanto": "",
+  "esperanto": "Zibelo",
   "english": "Sable",
   "russian": "Соболь",
   "word_type": [
@@ -5180,7 +5180,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b54"
   },
-  "esperanto": "",
+  "esperanto": "Sciuro",
   "english": "Squirrel",
   "russian": "Белка",
   "word_type": [
@@ -5190,7 +5190,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b55"
   },
-  "esperanto": "",
+  "esperanto": "Tigro",
   "english": "Tiger",
   "russian": "Тигр",
   "word_type": [
@@ -5200,7 +5200,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b56"
   },
-  "esperanto": "",
+  "esperanto": "Testudo",
   "english": "Tortoise",
   "russian": "Черепаха",
   "word_type": [
@@ -5210,7 +5210,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b57"
   },
-  "esperanto": "",
+  "esperanto": "Lupo",
   "english": "Wolf",
   "russian": "Волк",
   "word_type": [
@@ -5220,7 +5220,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b58"
   },
-  "esperanto": "",
+  "esperanto": "Yak",
   "english": "Yak",
   "russian": "Як",
   "word_type": [
@@ -5230,7 +5230,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b59"
   },
-  "esperanto": "",
+  "esperanto": "Zebro",
   "english": "Zebra",
   "russian": "зебра",
   "word_type": [
@@ -5240,7 +5240,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b5a"
   },
-  "esperanto": "",
+  "esperanto": "sibla blato",
   "english": "hissing cockroach",
   "russian": "шипящий таракан",
   "word_type": [
@@ -5250,7 +5250,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b5b"
   },
-  "esperanto": "",
+  "esperanto": "Tritono",
   "english": "Triton",
   "russian": "Тритон",
   "word_type": [
@@ -5260,7 +5260,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b5c"
   },
-  "esperanto": "",
+  "esperanto": "Piranjo",
   "english": "Piranha",
   "russian": "Пиранья",
   "word_type": [
@@ -5270,7 +5270,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b5d"
   },
-  "esperanto": "",
+  "esperanto": "Skorpio",
   "english": "Scorpion",
   "russian": "Скорпион",
   "word_type": [
@@ -5280,7 +5280,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b5e"
   },
-  "esperanto": "",
+  "esperanto": "Salamandro",
   "english": "Salamander",
   "russian": "Саламандра",
   "word_type": [
@@ -5290,7 +5290,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b5f"
   },
-  "esperanto": "",
+  "esperanto": "Kameleono",
   "english": "Chameleon",
   "russian": "Хамелеон",
   "word_type": [
@@ -5300,7 +5300,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b60"
   },
-  "esperanto": "",
+  "esperanto": "Tarantulo",
   "english": "Tarantula",
   "russian": "Тарантул",
   "word_type": [
@@ -5310,7 +5310,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b61"
   },
-  "esperanto": "",
+  "esperanto": "verda igvano",
   "english": "green iguana",
   "russian": "зеленая игуана",
   "word_type": [
@@ -5320,7 +5320,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b62"
   },
-  "esperanto": "",
+  "esperanto": "Tamandua",
   "english": "Tamandua",
   "russian": "Муравьед",
   "word_type": [
@@ -5330,7 +5330,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b63"
   },
-  "esperanto": "",
+  "esperanto": "flugsciuro",
   "english": "flying squirrel ",
   "russian": "белка–летяга",
   "word_type": [
@@ -5340,7 +5340,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b64"
   },
-  "esperanto": "",
+  "esperanto": "Kinkajou",
   "english": "Kinkajou",
   "russian": "кинкажу (цепохвостый медведь)",
   "word_type": [
@@ -5350,7 +5350,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b65"
   },
-  "esperanto": "",
+  "esperanto": "fenech",
   "english": "chanterelle fennec",
   "russian": "фенек, африканская лисица",
   "word_type": [
@@ -5360,7 +5360,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b66"
   },
-  "esperanto": "",
+  "esperanto": "Mefito",
   "english": "Skunk",
   "russian": "Скунс",
   "word_type": [
@@ -5370,7 +5370,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b67"
   },
-  "esperanto": "",
+  "esperanto": "Kapibaro",
   "english": "Capybara",
   "russian": "капибара, водосвинка",
   "word_type": [
@@ -5380,7 +5380,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b68"
   },
-  "esperanto": "",
+  "esperanto": "ermito сrab",
   "english": "hermit сrab",
   "russian": "краб–отшельник",
   "word_type": [
@@ -5390,7 +5390,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b69"
   },
-  "esperanto": "",
+  "esperanto": "arbeta bebo",
   "english": "bush baby",
   "russian": "галаго (полуобезьяна)",
   "word_type": [
@@ -5400,7 +5400,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b6a"
   },
-  "esperanto": "",
+  "esperanto": "Aligatoro",
   "english": "Alligator",
   "russian": "Аллигатор",
   "word_type": [
@@ -5410,7 +5410,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b6b"
   },
-  "esperanto": "",
+  "esperanto": "Krokodilo",
   "english": "Crocodile",
   "russian": "Крокодил",
   "word_type": [
@@ -5420,7 +5420,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b6c"
   },
-  "esperanto": "",
+  "esperanto": "Emu",
   "english": "Emu",
   "russian": "Эму",
   "word_type": [
@@ -5430,7 +5430,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b6d"
   },
-  "esperanto": "",
+  "esperanto": "Struto",
   "english": "Ostrich",
   "russian": "Страуc",
   "word_type": [
@@ -5440,7 +5440,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b6e"
   },
-  "esperanto": "",
+  "esperanto": "pingveno",
   "english": "Penguin",
   "russian": "Пингвин",
   "word_type": [
@@ -5450,7 +5450,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b6f"
   },
-  "esperanto": "",
+  "esperanto": "Serpento",
   "english": "Snake",
   "russian": "Змея",
   "word_type": [
@@ -5460,7 +5460,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b70"
   },
-  "esperanto": "",
+  "esperanto": "Lacerto",
   "english": "Lizard",
   "russian": "Ящерица",
   "word_type": [
@@ -5470,7 +5470,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b71"
   },
-  "esperanto": "",
+  "esperanto": "Ĉinĉilo",
   "english": "Chinchilla",
   "russian": "Шиншилла",
   "word_type": [
@@ -5480,7 +5480,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b72"
   },
-  "esperanto": "",
+  "esperanto": "Kanguruo",
   "english": "Kangaroo",
   "russian": "Кенгуру",
   "word_type": [
@@ -5490,7 +5490,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b73"
   },
-  "esperanto": "",
+  "esperanto": "moskito",
   "english": "mosquito",
   "russian": "комар",
   "word_type": [
@@ -5500,7 +5500,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b74"
   },
-  "esperanto": "",
+  "esperanto": "korno",
   "english": "horn",
   "russian": "Рог",
   "word_type": [
@@ -5510,7 +5510,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b75"
   },
-  "esperanto": "",
+  "esperanto": "hufo",
   "english": "hoof",
   "russian": "Копыто",
   "word_type": [
@@ -5520,7 +5520,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b76"
   },
-  "esperanto": "",
+  "esperanto": "lano",
   "english": "wool",
   "russian": "Шерсть",
   "word_type": [
@@ -5530,7 +5530,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b77"
   },
-  "esperanto": "",
+  "esperanto": "dento",
   "english": "tooth",
   "russian": "Зуб",
   "word_type": [
@@ -5540,7 +5540,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b78"
   },
-  "esperanto": "",
+  "esperanto": "dentego",
   "english": "fang",
   "russian": "Клык",
   "word_type": [
@@ -5550,7 +5550,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b79"
   },
-  "esperanto": "",
+  "esperanto": "ungegoj",
   "english": "claws",
   "russian": "Когти",
   "word_type": [
@@ -5560,7 +5560,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b7a"
   },
-  "esperanto": "",
+  "esperanto": "mamulo",
   "english": "mammal",
   "russian": "Млекопитающее",
   "word_type": [
@@ -5570,7 +5570,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b7b"
   },
-  "esperanto": "",
+  "esperanto": "reptilio",
   "english": "reptile",
   "russian": "Рептилия",
   "word_type": [
@@ -5580,7 +5580,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b7c"
   },
-  "esperanto": "",
+  "esperanto": "insekto",
   "english": "insect",
   "russian": "насекомое",
   "word_type": [
@@ -5590,7 +5590,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b7d"
   },
-  "esperanto": "",
+  "esperanto": "odoro",
   "english": "smell",
   "russian": "Запах",
   "word_type": [
@@ -5600,7 +5600,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b7e"
   },
-  "esperanto": "",
+  "esperanto": "vosto",
   "english": "tail",
   "russian": "хвост",
   "word_type": [
@@ -5610,7 +5610,7 @@
   "_id": {
     "$oid": "60080168d69a251b7c395b7f"
   },
-  "esperanto": "",
+  "esperanto": "piedo",
   "english": "paw",
   "russian": "лапа",
   "word_type": [
@@ -7832,7 +7832,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c49"
   },
-  "esperanto": "",
+  "esperanto": "Cetere",
   "english": "Moreover, …",
   "russian": "Более того, …",
   "word_type": [
@@ -7842,7 +7842,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c4a"
   },
-  "esperanto": "",
+  "esperanto": "Plejparte",
   "english": "Most of all, …",
   "russian": "Больше всего …",
   "word_type": [
@@ -7852,7 +7852,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c4b"
   },
-  "esperanto": "",
+  "esperanto": "Gravas noti tion",
   "english": "It is important to note that ...",
   "russian": "Важно отметить, что ...",
   "word_type": [
@@ -7862,7 +7862,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c4c"
   },
-  "esperanto": "",
+  "esperanto": "Gravas memori tion",
   "english": "It is important to remember that ...",
   "russian": "Важно помнить, что ...",
   "word_type": [
@@ -7872,7 +7872,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c4d"
   },
-  "esperanto": "",
+  "esperanto": "Grava punkto estas tio",
   "english": "An important point is that ...",
   "russian": "Важным является то, что ...",
   "word_type": [
@@ -7882,7 +7882,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c4e"
   },
-  "esperanto": "",
+  "esperanto": "Nuntempe",
   "english": "Аt the moment, …",
   "russian": "В данный момент, …",
   "word_type": [
@@ -7892,7 +7892,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c4f"
   },
-  "esperanto": "",
+  "esperanto": "Konklude",
   "english": "In conclusion,...",
   "russian": "В заключение, ...",
   "word_type": [
@@ -7902,7 +7902,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c50"
   },
-  "esperanto": "",
+  "esperanto": "Finfine",
   "english": "After all, …",
   "russian": "В конце концов, …",
   "word_type": [
@@ -7912,7 +7912,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c51"
   },
-  "esperanto": "",
+  "esperanto": "Ĉiukaze",
   "english": "In any case, … / Anyway, … / Either way, …",
   "russian": "В любом случае, …",
   "word_type": [
@@ -7922,7 +7922,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c52"
   },
-  "esperanto": "",
+  "esperanto": "Fakte",
   "english": "Actually, ...",
   "russian": "Вообще-то, …",
   "word_type": [
@@ -7932,7 +7932,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c53"
   },
-  "esperanto": "",
+  "esperanto": "Unue",
   "english": "Firstly, …",
   "russian": "Во-первых, …",
   "word_type": [
@@ -7942,7 +7942,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c54"
   },
-  "esperanto": "",
+  "esperanto": "Entute",
   "english": "All in all, …",
   "russian": "В общем, …",
   "word_type": [
@@ -7952,7 +7952,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c55"
   },
-  "esperanto": "",
+  "esperanto": "Anstataŭ",
   "english": "Instead of …",
   "russian": "Вместо того, чтобы …",
   "word_type": [
@@ -7962,7 +7962,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c56"
   },
-  "esperanto": "",
+  "esperanto": "Unue",
   "english": "In the first place, …",
   "russian": "В первую очередь, …",
   "word_type": [
@@ -7972,7 +7972,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c57"
   },
-  "esperanto": "",
+  "esperanto": "De tempo al tempo",
   "english": "From time to time, …",
   "russian": "Время от времени, …",
   "word_type": [
@@ -7982,7 +7982,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c58"
   },
-  "esperanto": "",
+  "esperanto": "Kiel rezulto de",
   "english": "Аs a result of …",
   "russian": "В результате …",
   "word_type": [
@@ -7992,7 +7992,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c59"
   },
-  "esperanto": "",
+  "esperanto": "Fakte",
   "english": "Indeed, …",
   "russian": "Действительно, …",
   "word_type": [
@@ -8002,7 +8002,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c5a"
   },
-  "esperanto": "",
+  "esperanto": "Por",
   "english": "In order to …",
   "russian": "Для того, чтобы …",
   "word_type": [
@@ -8012,7 +8012,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c5b"
   },
-  "esperanto": "",
+  "esperanto": "Mi devas konfesi",
   "english": "I must admit, …",
   "russian": "Должен признать, …",
   "word_type": [
@@ -8022,7 +8022,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c5c"
   },
-  "esperanto": "",
+  "esperanto": "Alivorte",
   "english": "In other words, …",
   "russian": "Другими словами, …",
   "word_type": [
@@ -8032,7 +8032,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c5d"
   },
-  "esperanto": "",
+  "esperanto": "Ĝi havas sencon",
   "english": "It makes sense (to) …",
   "russian": "Имеет смысл …",
   "word_type": [
@@ -8042,7 +8042,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c5e"
   },
-  "esperanto": "",
+  "esperanto": "Ŝajnas ke",
   "english": "It seems that …",
   "russian": "Кажется, (что) …",
   "word_type": [
@@ -8052,7 +8052,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c5f"
   },
-  "esperanto": "",
+  "esperanto": "Mallonge",
   "english": "In short, ... / In a nutshell, ...",
   "russian": "Короче, ... / Короче говоря, ...",
   "word_type": [
@@ -8062,7 +8062,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c60"
   },
-  "esperanto": "",
+  "esperanto": "Cetere",
   "english": "Besides, …",
   "russian": "Кроме того, …",
   "word_type": [
@@ -8072,7 +8072,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c61"
   },
-  "esperanto": "",
+  "esperanto": "Bonŝance",
   "english": "Luckily, … / Fortunately, …",
   "russian": "К счастью ...",
   "word_type": [
@@ -8082,7 +8082,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c62"
   },
-  "esperanto": "",
+  "esperanto": "Bedaŭrinde",
   "english": "Unfortunately, ...",
   "russian": "К сожалению, ...",
   "word_type": [
@@ -8092,7 +8092,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c63"
   },
-  "esperanto": "",
+  "esperanto": "Krome",
   "english": "In addition, ...",
   "russian": "К тому же, ...",
   "word_type": [
@@ -8102,7 +8102,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c64"
   },
-  "esperanto": "",
+  "esperanto": "Parenteze",
   "english": "By the way, …",
   "russian": "Между прочим, … / Кстати, …",
   "word_type": [
@@ -8112,7 +8112,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c65"
   },
-  "esperanto": "",
+  "esperanto": "mi devus",
   "english": "I should … / I had better …",
   "russian": "Мне следовало бы …",
   "word_type": [
@@ -8122,7 +8122,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c66"
   },
-  "esperanto": "",
+  "esperanto": "Eble ŝajnas tio",
   "english": "It may seem that …",
   "russian": "Может показаться, что …",
   "word_type": [
@@ -8132,7 +8132,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c67"
   },
-  "esperanto": "",
+  "esperanto": "Fine",
   "english": "Finally, …",
   "russian": "Наконец, …",
   "word_type": [
@@ -8142,7 +8142,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c68"
   },
-  "esperanto": "",
+  "esperanto": "Fakte",
   "english": "In fact, … / Actually, …",
   "russian": "На самом деле, …",
   "word_type": [
@@ -8152,7 +8152,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c69"
   },
-  "esperanto": "",
+  "esperanto": "Laŭ mia scio",
   "english": "As far as I know, …",
   "russian": "Насколько я знаю …",
   "word_type": [
@@ -8162,7 +8162,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c6a"
   },
-  "esperanto": "",
+  "esperanto": "kiom mi povas juĝi",
   "english": "as far as I can judge, …",
   "russian": "Насколько я могу судить, ….",
   "word_type": [
@@ -8172,7 +8172,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c6b"
   },
-  "esperanto": "",
+  "esperanto": "Ne gravas tio",
   "english": "It doesn\"t matter that …",
   "russian": "Не важно, что …",
   "word_type": [
@@ -8182,7 +8182,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c6c"
   },
-  "esperanto": "",
+  "esperanto": "Ne mirigas tion",
   "english": "It is not surprising that... / It is no great surprise that ...",
   "russian": "Не удивительно, что ...",
   "word_type": [
@@ -8192,7 +8192,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c6d"
   },
-  "esperanto": "",
+  "esperanto": "Sed krom tio",
   "english": "But other than that, …",
   "russian": "Но кроме этого …",
   "word_type": [
@@ -8202,7 +8202,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c6e"
   },
-  "esperanto": "",
+  "esperanto": "Tamen",
   "english": "However, …",
   "russian": "Однако, … / Тем не менее, …",
   "word_type": [
@@ -8212,7 +8212,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c6f"
   },
-  "esperanto": "",
+  "esperanto": "Unuvorte",
   "english": "In a word, ...",
   "russian": "Одним словом, ...",
   "word_type": [
@@ -8222,7 +8222,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c70"
   },
-  "esperanto": "",
+  "esperanto": "Rezultis tio",
   "english": "It turned out that …",
   "russian": "Оказалось, что ...",
   "word_type": [
@@ -8232,7 +8232,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c71"
   },
-  "esperanto": "",
+  "esperanto": "Malkaŝe dirante",
   "english": "Frankly speaking, … / To tell the truth, …",
   "russian": "Откровенно говоря, … / Честно говоря, …",
   "word_type": [
@@ -8242,7 +8242,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c72"
   },
-  "esperanto": "",
+  "esperanto": "Miaopinie",
   "english": "In my opinion, ….",
   "russian": "По моему мнению, …",
   "word_type": [
@@ -8252,7 +8252,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c73"
   },
-  "esperanto": "",
+  "esperanto": "Por diri la veron",
   "english": "To tell the truth, …",
   "russian": "По правде говоря, …",
   "word_type": [
@@ -8262,7 +8262,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c74"
   },
-  "esperanto": "",
+  "esperanto": "Fakte",
   "english": "As a matter of fact, ...",
   "russian": "По сути дела, ...",
   "word_type": [
@@ -8272,7 +8272,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c75"
   },
-  "esperanto": "",
+  "esperanto": "Antaŭ ĉio",
   "english": "First of all, … / Above all, …",
   "russian": "Прежде всего, …",
   "word_type": [
@@ -8282,7 +8282,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c76"
   },
-  "esperanto": "",
+  "esperanto": "Estas memkompreneble, ke",
   "english": "It is self-evident that ...",
   "russian": "Само собой понятно, что ...",
   "word_type": [
@@ -8292,7 +8292,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c77"
   },
-  "esperanto": "",
+  "esperanto": "Kompreneble estas tio",
   "english": "It goes without saying that …",
   "russian": "Само собой разумеется, что…",
   "word_type": [
@@ -8302,7 +8302,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c78"
   },
-  "esperanto": "",
+  "esperanto": "Oni notu tion",
   "english": "It should be noted that ...",
   "russian": "Следует отметить, что ...",
   "word_type": [
@@ -8312,7 +8312,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c79"
   },
-  "esperanto": "",
+  "esperanto": "Unue",
   "english": "Аt first, … / First, ...",
   "russian": "Сначала …",
   "word_type": [
@@ -8322,7 +8322,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c7a"
   },
-  "esperanto": "",
+  "esperanto": "Mi konsilas vin",
   "english": "I advise you (to) …",
   "russian": "Советую вам …",
   "word_type": [
@@ -8332,7 +8332,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c7b"
   },
-  "esperanto": "",
+  "esperanto": "Unuflanke, ..., aliflanke, ...",
   "english": "On the one hand, ... , on the other hand, ...",
   "russian": "С одной стороны, ... , с другой стороны, ...",
   "word_type": [
@@ -8342,7 +8342,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c7c"
   },
-  "esperanto": "",
+  "esperanto": "Ankaŭ",
   "english": "Also, …",
   "russian": "Также …",
   "word_type": [
@@ -8352,7 +8352,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c7d"
   },
-  "esperanto": "",
+  "esperanto": "Kaj ankaŭ",
   "english": "As well as …",
   "russian": "Так же как и …",
   "word_type": [
@@ -8362,7 +8362,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c7e"
   },
-  "esperanto": "",
+  "esperanto": "Dume",
   "english": "Meanwhile, … / Meantime, …",
   "russian": "Тем временем, …",
   "word_type": [
@@ -8372,7 +8372,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c7f"
   },
-  "esperanto": "",
+  "esperanto": "Tamen",
   "english": "Nevertheless, …",
   "russian": "Тем не менее, … / Всё-таки, … / Однако, …",
   "word_type": [
@@ -8382,7 +8382,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c80"
   },
-  "esperanto": "",
+  "esperanto": "Estas bone konata tio",
   "english": "It is well known that ...",
   "russian": "Хорошо известно, что ...",
   "word_type": [
@@ -8392,7 +8392,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c81"
   },
-  "esperanto": "",
+  "esperanto": "Koncerne ... / Pri ...",
   "english": "As for ... / Concerning ...",
   "russian": "Что касается ...",
   "word_type": [
@@ -8402,7 +8402,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c82"
   },
-  "esperanto": "",
+  "esperanto": "Ĝi povas signifi, ke ...",
   "english": "It can mean, that …",
   "russian": "Это может означать, что …",
   "word_type": [
@@ -8412,7 +8412,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c83"
   },
-  "esperanto": "",
+  "esperanto": "mi preferus",
   "english": "I would rather …",
   "russian": "Я бы предпочел …",
   "word_type": [
@@ -8422,7 +8422,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c84"
   },
-  "esperanto": "",
+  "esperanto": "Mi ŝatus",
   "english": "I would like to …",
   "russian": "Я бы хотел …",
   "word_type": [
@@ -8432,7 +8432,7 @@
   "_id": {
     "$oid": "600802ead69a251b7c395c85"
   },
-  "esperanto": "",
+  "esperanto": "Mi pensas, ... / Mi kredas, ... / Mi supozas, ...",
   "english": "I think, … / I believe, … / I guess, …",
   "russian": "Я думаю, … / Я полагаю, … / Я считаю, …",
   "word_type": [
@@ -12539,7 +12539,7 @@
     "$oid": "601a6693d69a251b7c396128"
   },
   "esperanto": "stafeto",
-  "english": "relay (pass along) REGULAR",
+  "english": "relay (pass along)",
   "russian": "ретранслировать",
   "word_type": [
     "verbs",
@@ -15334,4 +15334,65 @@
     "englishThirdForm": "written",
     "wordcode": ""
   }
+},{
+  "_id": {
+    "$oid": "601aa9d23550538e20f6bc19"
+  },
+  "word_type": [
+    "test_collection",
+    "mandalorian"
+  ],
+  "esperanto": "test",
+  "english": "testo",
+  "russian": "тест"
+},{
+  "_id": {
+    "$oid": "601e6d70f66e14204c2095af"
+  },
+  "word_type": [
+    "verbs"
+  ],
+  "esperanto": "flori",
+  "english": "flourish",
+  "russian": "процветать"
+},{
+  "_id": {
+    "$oid": "601e6da7f66e14204c2095b0"
+  },
+  "word_type": [
+    "verbs"
+  ],
+  "esperanto": "resti",
+  "english": "remain",
+  "russian": "оставаться"
+},{
+  "_id": {
+    "$oid": "601e6dc9f66e14204c2095b1"
+  },
+  "word_type": [
+    "verbs"
+  ],
+  "esperanto": "konsenti",
+  "english": "concur",
+  "russian": "соглашаться"
+},{
+  "_id": {
+    "$oid": "601e6dfbf66e14204c2095b2"
+  },
+  "word_type": [
+    "verbs"
+  ],
+  "esperanto": "antaŭeniri",
+  "english": "advance",
+  "russian": "продвигать"
+},{
+  "_id": {
+    "$oid": "6020fc9dc2b561d23b26fc3f"
+  },
+  "word_type": [
+    "test_collection"
+  ],
+  "esperanto": "tetest",
+  "english": "tetest",
+  "russian": "tetest"
 }]

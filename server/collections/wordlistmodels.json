@@ -117,15 +117,128 @@
   }
 },{
   "_id": {
-    "$oid": "5fdf56bf3d94e545e49b31c5"
+    "$oid": "60054c1ebe827e0ec72dd229"
   },
-  "title": "Harry Potter",
-  "collection_caption": "harrypotter",
-  "cover": "https://cdn1.ozone.ru/s3/multimedia-d/wc1200/6020381557.jpg",
-  "level": "asd",
+  "title": "The Quin's Gambit",
+  "collection_caption": "quins_gambit",
+  "cover": "https://upload.wikimedia.org/wikipedia/en/d/d3/The_Queen%27s_Gambit.jpg",
+  "level": "expert",
   "caption": {
-    "esperanto": "Harry Potter",
-    "english": "Harry Potter",
-    "russian": "Гарри Поттер"
-  }
+    "esperanto": "La Quin's Gambito",
+    "english": "The Quin's Gambit",
+    "russian": "Ход королевы"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6007fe52fa484e3ea08f4cab"
+  },
+  "title": "Berserk(40manga)",
+  "collection_caption": "berserk_manga",
+  "cover": "https://upload.wikimedia.org/wikipedia/en/4/45/Berserk_vol01.jpg",
+  "level": "expert",
+  "caption": {
+    "esperanto": "Berserk",
+    "english": "Berserk",
+    "russian": "Берсерк"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60080158fa484e3ea08f4cac"
+  },
+  "title": "Animals",
+  "collection_caption": "animals",
+  "cover": "https://upload.wikimedia.org/wikipedia/commons/1/14/Animal_diversity.png",
+  "level": "fundamentoj",
+  "caption": {
+    "esperanto": " Bestoj",
+    "english": "Animals",
+    "russian": "Животные"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60080224fa484e3ea08f4cad"
+  },
+  "title": "Gravity Falls (2s)",
+  "collection_caption": "gravity_falls",
+  "cover": "https://upload.wikimedia.org/wikipedia/ru/b/bb/Gravity_Falls_logo.svg",
+  "level": "expert",
+  "caption": {
+    "esperanto": "Gravity Falls",
+    "english": "Gravity Falls",
+    "russian": "Гравити Фолз"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6008027cfa484e3ea08f4cae"
+  },
+  "title": "Mandalorian",
+  "collection_caption": "mandalorian",
+  "cover": "https://upload.wikimedia.org/wikipedia/commons/9/97/The_Mandalorian_black_background.svg",
+  "level": "expert",
+  "caption": {
+    "esperanto": "Mandalorian",
+    "english": "Mandalorian",
+    "russian": "Мандалорец"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "600802e2fa484e3ea08f4caf"
+  },
+  "title": "Вводные слова",
+  "collection_caption": "introductory_phrases",
+  "cover": "https://cathleentownsend.files.wordpress.com/2015/09/comma-man-studying-e1441180005223.jpg",
+  "level": "fundamentoj",
+  "caption": {
+    "esperanto": "Introductory phrases",
+    "english": "Introductory phrases",
+    "russian": "Вводные слова"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6008252bfa484e3ea08f4cb0"
+  },
+  "title": "Неправильные глаголы",
+  "collection_caption": "irregular_verbs",
+  "cover": "https://3.bp.blogspot.com/-bMdJDO-BlMA/WKROG1NnN7I/AAAAAAAAD20/Us0QbyMOgmk6tLICnAw6qPOw1_l6RfYNgCLcB/s1600/Ir%2Bverbs.jpg",
+  "level": "fundamentoj",
+  "caption": {
+    "esperanto": "Neregulaj verboj",
+    "english": "Irregular verbs",
+    "russian": "Неправильные глаголы"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "601aa9a53550538e20f6bc18"
+  },
+  "title": "test",
+  "collection_caption": "test_collection",
+  "cover": "",
+  "level": "entry",
+  "caption": {
+    "esperanto": "test",
+    "english": "test",
+    "russian": "Тест"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "601e6b8077875fb348f4dd8c"
+  },
+  "title": "Verbs",
+  "collection_caption": "verbs",
+  "cover": "https://englishwithstar.files.wordpress.com/2015/10/9verbs_pic_1.png",
+  "level": "entry",
+  "caption": {
+    "esperanto": "verboj",
+    "english": "verbs",
+    "russian": "Глаголы"
+  },
+  "__v": 0
 }]
