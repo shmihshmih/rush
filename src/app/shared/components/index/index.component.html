@@ -3,12 +3,12 @@
   <mat-card class="esperanto-main-card">
     <mat-card-header class="w-100">
       <mat-card-title fxLayout="row" fxLayoutAlign="space-between center" class="w-100">
-        <h1 [routerLink]="['english', 'wordCard', 'irregular_verbs']">Карточки слов</h1>
+        <h1 [routerLink]="['english', 'wordCard', 'irregular_verbs']" [matTooltip]="'Карточки всех слов, которые есть в базе'" [matTooltipClass]="'toolTipClass'">Карточки слов</h1>
       </mat-card-title>
-      <mat-card-subtitle>Генератор</mat-card-subtitle>
+      <mat-card-subtitle>Тип: Генератор</mat-card-subtitle>
     </mat-card-header>
-    <div class="img-container" [routerLink]="['english', 'wordCard', 'irregular_verbs']"
-         [ngStyle]="{'background': 'center/100% url()'}">
+    <div class="img-container" [routerLink]="['english', 'wordCard', 'irregular_verbs']">
+      🦵🐶🌕🌏🍉⚽🤸‍♂️🚆⌚🛏🦵🐶🌕🌏🍉⚽🤸‍♂️🦵🐶🌕🌏🍉⚽🤸‍♂️🚆⌚🛏🦵🐶🌕🌏🍉⚽🤸‍♂️🦵🐶🌕🌏🍉⚽🤸‍♂️🚆⌚🛏🦵🐶🌕🌏🍉⚽🤸‍♂️
     </div>
     <mat-card-content [routerLink]="['english', 'wordCard', 'irregular_verbs']">
       <p>
@@ -16,7 +16,7 @@
       </p>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-raised-button color="primary" [routerLink]="['english', 'wordCard', 'irregular_verbs']">
+      <button mat-raised-button color="primary" [routerLink]="['english', 'wordCard', 'irregular_verbs']" [matTooltip]="'Открыть'" [matTooltipClass]="'toolTipClass'">
         <i class="material-icons-outlined">view_stream</i>
       </button>
     </mat-card-actions>
@@ -25,12 +25,12 @@
   <mat-card class="esperanto-main-card">
     <mat-card-header class="w-100">
       <mat-card-title fxLayout="row" fxLayoutAlign="space-between center" class="w-100">
-        <h1 [routerLink]="['english', 'wordList']">Список слов</h1>
+        <h1 [routerLink]="['english', 'wordList']" [matTooltip]="'Таблица-список всех слов, которые есть в базе'" [matTooltipClass]="'toolTipClass'">Список слов</h1>
       </mat-card-title>
-      <mat-card-subtitle>Списки</mat-card-subtitle>
+      <mat-card-subtitle>Тип: Списки</mat-card-subtitle>
     </mat-card-header>
-    <div class="img-container" [routerLink]="['english', 'wordList']"
-         [ngStyle]="{'background': 'center/100% url()'}">
+    <div class="img-container" [routerLink]="['english', 'wordList']">
+      🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷
     </div>
     <mat-card-content [routerLink]="['english', 'wordList']">
       <p>
@@ -38,7 +38,7 @@
       </p>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-raised-button color="primary" [routerLink]="['english', 'wordCard', 'verbs']">
+      <button mat-raised-button color="primary" [routerLink]="['english', 'wordList']" [matTooltip]="'Открыть'" [matTooltipClass]="'toolTipClass'">
         <i class="material-icons-outlined">view_stream</i>
       </button>
     </mat-card-actions>
@@ -47,12 +47,12 @@
   <mat-card class="esperanto-main-card">
     <mat-card-header class="w-100">
       <mat-card-title fxLayout="row" fxLayoutAlign="space-between center" class="w-100">
-        <h1 [routerLink]="['english', 'sentences-creator']">Генератор предложений</h1>
+        <h1 [routerLink]="['english', 'sentences-creator']" [matTooltip]="'Генератор предложений по всем временам со всеми глаголами, которые есть в системе'" [matTooltipClass]="'toolTipClass'">Генератор предложений</h1>
       </mat-card-title>
-      <mat-card-subtitle>Генератор</mat-card-subtitle>
+      <mat-card-subtitle>Тип: Генератор</mat-card-subtitle>
     </mat-card-header>
-    <div class="img-container" [routerLink]="['english', 'sentences-creator']"
-         [ngStyle]="{'background': 'center/100% url()'}">
+    <div class="img-container" [routerLink]="['english', 'sentences-creator']">
+      🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂
     </div>
     <mat-card-content [routerLink]="['english', 'sentences-creator']">
       <p>
@@ -60,7 +60,7 @@
       </p>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-raised-button color="primary" [routerLink]="['english', 'sentences-creator']">
+      <button mat-raised-button color="primary" [routerLink]="['english', 'sentences-creator']" [matTooltip]="'Открыть'" [matTooltipClass]="'toolTipClass'">
         <i class="material-icons-outlined">view_stream</i>
       </button>
     </mat-card-actions>
@@ -69,12 +69,12 @@
   <mat-card class="esperanto-main-card">
     <mat-card-header class="w-100">
       <mat-card-title fxLayout="row" fxLayoutAlign="space-between center" class="w-100">
-        <h1 [routerLink]="['blog', 'bookquest', 'thestainlesssteelrat', 1]">Книжный квест</h1>
+        <h1 [routerLink]="['blog', 'bookquest', 'thestainlesssteelrat', 1]" [matTooltip]="'Демонстрация книжного квеста. Здесь просто \<Стальная крыса\> Гарри Гаррисона'" [matTooltipClass]="'toolTipClass'">Книжный квест</h1>
       </mat-card-title>
-      <mat-card-subtitle>Генератор</mat-card-subtitle>
+      <mat-card-subtitle>Тип: Генератор</mat-card-subtitle>
     </mat-card-header>
-    <div class="img-container" [routerLink]="['blog', 'bookquest', 'thestainlesssteelrat', 1]"
-         [ngStyle]="{'background': 'center/100% url()'}">
+    <div class="img-container" [routerLink]="['blog', 'bookquest', 'thestainlesssteelrat', 1]">
+      📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️
     </div>
     <mat-card-content [routerLink]="['blog', 'bookquest', 'thestainlesssteelrat', 1]">
       <p>
@@ -82,7 +82,7 @@
       </p>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-raised-button color="primary" [routerLink]="['blog', 'bookquest', 'thestainlesssteelrat', 1]">
+      <button mat-raised-button color="primary" [routerLink]="['blog', 'bookquest', 'thestainlesssteelrat', 1]" [matTooltip]="'Открыть'" [matTooltipClass]="'toolTipClass'">
         <i class="material-icons-outlined">view_stream</i>
       </button>
     </mat-card-actions>

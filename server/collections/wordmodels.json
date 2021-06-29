@@ -1781,7 +1781,8 @@
   ],
   "esperanto": "ффф",
   "english": "ффф",
-  "russian": "ффф"
+  "russian": "ффф",
+  "__v": 0
 },{
   "_id": {
     "$oid": "60054c47c7841824a4e374c7"
@@ -4123,16 +4124,6 @@
   "esperanto": "ekscitita",
   "english": "hectic",
   "russian": "беспокойный",
-  "word_type": [
-    "berserk_manga"
-  ]
-},{
-  "_id": {
-    "$oid": "6007fe96d69a251b7c395aeb"
-  },
-  "esperanto": "svaga",
-  "english": "vague",
-  "russian": "расплывчатый",
   "word_type": [
     "berserk_manga"
   ]
@@ -15344,7 +15335,8 @@
   ],
   "esperanto": "test",
   "english": "testo",
-  "russian": "тест"
+  "russian": "тест",
+  "__v": 0
 },{
   "_id": {
     "$oid": "601e6d70f66e14204c2095af"
@@ -15354,7 +15346,8 @@
   ],
   "esperanto": "flori",
   "english": "flourish",
-  "russian": "процветать"
+  "russian": "процветать",
+  "__v": 0
 },{
   "_id": {
     "$oid": "601e6da7f66e14204c2095b0"
@@ -15364,7 +15357,8 @@
   ],
   "esperanto": "resti",
   "english": "remain",
-  "russian": "оставаться"
+  "russian": "оставаться",
+  "__v": 0
 },{
   "_id": {
     "$oid": "601e6dc9f66e14204c2095b1"
@@ -15374,7 +15368,8 @@
   ],
   "esperanto": "konsenti",
   "english": "concur",
-  "russian": "соглашаться"
+  "russian": "соглашаться",
+  "__v": 0
 },{
   "_id": {
     "$oid": "601e6dfbf66e14204c2095b2"
@@ -15384,7 +15379,8 @@
   ],
   "esperanto": "antaŭeniri",
   "english": "advance",
-  "russian": "продвигать"
+  "russian": "продвигать",
+  "__v": 0
 },{
   "_id": {
     "$oid": "6020fc9dc2b561d23b26fc3f"
@@ -15394,5 +15390,996 @@
   ],
   "esperanto": "tetest",
   "english": "tetest",
-  "russian": "tetest"
+  "russian": "tetest",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602639edc4a39213c513f7d0"
+  },
+  "word_type": [
+    "oxygen_not_included"
+  ],
+  "esperanto": "ordigado",
+  "english": "tidying",
+  "russian": "уборка",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60263a1fc4a39213c513f7d1"
+  },
+  "word_type": [
+    "oxygen_not_included"
+  ],
+  "esperanto": "graso",
+  "english": "grease",
+  "russian": "смазывать",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60263a42c4a39213c513f7d2"
+  },
+  "word_type": [
+    "oxygen_not_included"
+  ],
+  "esperanto": "jugo",
+  "english": "yoke",
+  "russian": "ярмо",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60263a68c4a39213c513f7d3"
+  },
+  "word_type": [
+    "oxygen_not_included"
+  ],
+  "esperanto": "komisio",
+  "english": "errand",
+  "russian": "поручение",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60263a80c4a39213c513f7d4"
+  },
+  "word_type": [
+    "oxygen_not_included"
+  ],
+  "esperanto": "vomilo",
+  "english": "vomiter",
+  "russian": "рвота",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60263aafc4a39213c513f7d5"
+  },
+  "word_type": [
+    "oxygen_not_included"
+  ],
+  "esperanto": "ŝlosilo",
+  "english": "wrench",
+  "russian": "гаечный ключ",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60263ad7c4a39213c513f7d6"
+  },
+  "word_type": [
+    "oxygen_not_included"
+  ],
+  "esperanto": "aĉa",
+  "english": "squeamish",
+  "russian": "щепетильный",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60263b05c4a39213c513f7d7"
+  },
+  "word_type": [
+    "oxygen_not_included"
+  ],
+  "esperanto": "bredado",
+  "english": "husbandry",
+  "russian": "земледелие",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60263b2fc4a39213c513f7d8"
+  },
+  "word_type": [
+    "oxygen_not_included"
+  ],
+  "esperanto": "nudeloj",
+  "english": "noodles",
+  "russian": "лапша",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60263b57c4a39213c513f7d9"
+  },
+  "word_type": [
+    "oxygen_not_included"
+  ],
+  "esperanto": "elfosado",
+  "english": "excavation",
+  "russian": "земляные работы",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60263b78c4a39213c513f7da"
+  },
+  "word_type": [
+    "oxygen_not_included"
+  ],
+  "esperanto": "enŝipiĝi",
+  "english": "embark",
+  "russian": "садиться",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60263fdfc4a39213c513f7db"
+  },
+  "word_type": [
+    "oxygen_not_included"
+  ],
+  "esperanto": "besto",
+  "english": "critter",
+  "russian": "тварь",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60264051c4a39213c513f7dc"
+  },
+  "word_type": [
+    "oxygen_not_included"
+  ],
+  "esperanto": "konsumado",
+  "english": "consumption",
+  "russian": "потребление",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6026406fc4a39213c513f7dd"
+  },
+  "word_type": [
+    "oxygen_not_included"
+  ],
+  "esperanto": "kuirarto",
+  "english": "cuisine",
+  "russian": "кухня",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602642b4c4a39213c513f7de"
+  },
+  "word_type": [
+    "oxygen_not_included"
+  ],
+  "esperanto": "ĝermoj",
+  "english": "germs",
+  "russian": "микробы",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60264850c4a39213c513f7df"
+  },
+  "word_type": [
+    "oxygen_not_included"
+  ],
+  "esperanto": "pedikoj",
+  "english": "lice",
+  "russian": "вши",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60264874c4a39213c513f7e0"
+  },
+  "word_type": [
+    "oxygen_not_included"
+  ],
+  "esperanto": "konsumeblaj",
+  "english": "consumables",
+  "russian": "расходные материалы",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60264abfc4a39213c513f7e1"
+  },
+  "word_type": [
+    "oxygen_not_included"
+  ],
+  "esperanto": "algoj",
+  "english": "algae",
+  "russian": "водоросли",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60264b0bc4a39213c513f7e2"
+  },
+  "word_type": [
+    "oxygen_not_included"
+  ],
+  "esperanto": "konsumanto",
+  "english": "consumer",
+  "russian": "потребитель",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602656abc4a39213c513f7e3"
+  },
+  "word_type": [
+    "oxygen_not_included"
+  ],
+  "esperanto": "diketa",
+  "english": "chubby",
+  "russian": "круглолицый",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60265aafc4a39213c513f7e4"
+  },
+  "word_type": [
+    "oxygen_not_included"
+  ],
+  "esperanto": "agrableco",
+  "english": "amenity",
+  "russian": "удобства",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60265fd8c4a39213c513f7e5"
+  },
+  "word_type": [
+    "oxygen_not_included"
+  ],
+  "esperanto": "ligno",
+  "english": "lumber",
+  "russian": "пиломатериалы",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60266550c4a39213c513f7e6"
+  },
+  "word_type": [
+    "oxygen_not_included"
+  ],
+  "esperanto": "nesufiĉa",
+  "english": "insufficient",
+  "russian": "недостаточный",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60266579c4a39213c513f7e7"
+  },
+  "word_type": [
+    "oxygen_not_included"
+  ],
+  "esperanto": "manko",
+  "english": "lack",
+  "russian": "недостаток",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6028eca9c4a39213c513f7e8"
+  },
+  "word_type": [
+    "oxygen_not_included"
+  ],
+  "esperanto": "haltis",
+  "english": "halted",
+  "russian": "остановлен",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6029018cc4a39213c513f7e9"
+  },
+  "word_type": [
+    "oxygen_not_included"
+  ],
+  "esperanto": "kribri",
+  "english": "sieve",
+  "russian": "просеивать",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60290309c4a39213c513f7ea"
+  },
+  "word_type": [
+    "oxygen_not_included"
+  ],
+  "esperanto": "ŝlimo",
+  "english": "slime",
+  "russian": "слизь",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60290346c4a39213c513f7eb"
+  },
+  "word_type": [
+    "oxygen_not_included"
+  ],
+  "esperanto": "argilo",
+  "english": "clay",
+  "russian": "глина",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602906afc4a39213c513f7ec"
+  },
+  "word_type": [
+    "oxygen_not_included"
+  ],
+  "esperanto": "disvastigo",
+  "english": "dispersal",
+  "russian": "рассредоточение",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60290b76c4a39213c513f7ed"
+  },
+  "word_type": [
+    "oxygen_not_included"
+  ],
+  "esperanto": "funga",
+  "english": "fungal",
+  "russian": "грибковый",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602912e7c4a39213c513f7ee"
+  },
+  "word_type": [
+    "oxygen_not_included"
+  ],
+  "esperanto": "broganta",
+  "english": "scalding",
+  "russian": "ошпаривание",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602914ebc4a39213c513f7ef"
+  },
+  "word_type": [
+    "oxygen_not_included"
+  ],
+  "esperanto": "severeco",
+  "english": "severity",
+  "russian": "строгость",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60291798c4a39213c513f7f0"
+  },
+  "word_type": [
+    "oxygen_not_included"
+  ],
+  "esperanto": "kanfibro",
+  "english": "reed fiber",
+  "russian": "тростниковое волокно",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60292737c4a39213c513f7f1"
+  },
+  "word_type": [
+    "oxygen_not_included"
+  ],
+  "esperanto": "apuda",
+  "english": "adjacent",
+  "russian": "соседний",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602a4e68c4a39213c513f7f2"
+  },
+  "word_type": [
+    "verbs"
+  ],
+  "esperanto": "interrompi",
+  "english": "suspend ",
+  "russian": "приостановить",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60479d93c4a39213c513f7f4"
+  },
+  "word_type": [
+    "darkest_dungeon"
+  ],
+  "esperanto": "banditoj",
+  "english": "brigands",
+  "russian": "разбойники",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6047a0b4c4a39213c513f7f5"
+  },
+  "word_type": [
+    "darkest_dungeon"
+  ],
+  "esperanto": "amplekso",
+  "english": "extent",
+  "russian": "степень",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6047a1ddc4a39213c513f7f6"
+  },
+  "word_type": [
+    "darkest_dungeon"
+  ],
+  "esperanto": "fek",
+  "english": "weald",
+  "russian": "пустошь",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6047a329c4a39213c513f7f7"
+  },
+  "word_type": [
+    "darkest_dungeon"
+  ],
+  "esperanto": "golfeto",
+  "english": "cove",
+  "russian": "бухта",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6059cf59c4a39213c513f7f9"
+  },
+  "word_type": [
+    "firewatch"
+  ],
+  "esperanto": "malklarigi",
+  "english": "slur",
+  "russian": "ругать",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6059cf94c4a39213c513f7fa"
+  },
+  "word_type": [
+    "firewatch"
+  ],
+  "esperanto": "timiga",
+  "english": "intimidating",
+  "russian": "пугающий",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6059cfb2c4a39213c513f7fb"
+  },
+  "word_type": [
+    "firewatch"
+  ],
+  "esperanto": "petolema",
+  "english": "frolic",
+  "russian": "резвиться",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6059cfc8c4a39213c513f7fc"
+  },
+  "word_type": [
+    "firewatch"
+  ],
+  "esperanto": "taso",
+  "english": "mug",
+  "russian": "кружка",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6059cfe2c4a39213c513f7fd"
+  },
+  "word_type": [
+    "firewatch"
+  ],
+  "esperanto": "konsternita",
+  "english": "flustered",
+  "russian": "взволнованный",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6059cff7c4a39213c513f7fe"
+  },
+  "word_type": [
+    "firewatch"
+  ],
+  "esperanto": "pulpo",
+  "english": "pulp",
+  "russian": "мякоть",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6059d010c4a39213c513f7ff"
+  },
+  "word_type": [
+    "firewatch"
+  ],
+  "esperanto": "aflikto",
+  "english": "affliction",
+  "russian": "несчастье",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6059d029c4a39213c513f800"
+  },
+  "word_type": [
+    "firewatch"
+  ],
+  "esperanto": "fuŝi",
+  "english": "shamble",
+  "russian": "болтаться",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6059d041c4a39213c513f801"
+  },
+  "word_type": [
+    "firewatch"
+  ],
+  "esperanto": "drogo",
+  "english": "dope",
+  "russian": "наркотик",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6059d05ac4a39213c513f802"
+  },
+  "word_type": [
+    "firewatch"
+  ],
+  "esperanto": "ardezargilo",
+  "english": "shale",
+  "russian": "сланец",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6059d070c4a39213c513f803"
+  },
+  "word_type": [
+    "firewatch"
+  ],
+  "esperanto": "falsa",
+  "english": "bogus",
+  "russian": "фальшивка",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6059d086c4a39213c513f804"
+  },
+  "word_type": [
+    "firewatch"
+  ],
+  "esperanto": "perfido",
+  "english": "treason",
+  "russian": "измена",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6059d09dc4a39213c513f805"
+  },
+  "word_type": [
+    "firewatch"
+  ],
+  "esperanto": "ŝrumpi",
+  "english": "shrink",
+  "russian": "сокращать",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6059d0b3c4a39213c513f806"
+  },
+  "word_type": [
+    "firewatch"
+  ],
+  "esperanto": "supereco",
+  "english": "supremacy",
+  "russian": "превосходство",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6059d27fc4a39213c513f807"
+  },
+  "word_type": [
+    "firewatch"
+  ],
+  "esperanto": "enketo",
+  "english": "survey",
+  "russian": "опрос",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6059d3dec4a39213c513f808"
+  },
+  "word_type": [
+    "firewatch"
+  ],
+  "esperanto": "mantelo",
+  "english": "mantle",
+  "russian": "мантия",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6059ec19c4a39213c513f809"
+  },
+  "word_type": [
+    "firewatch"
+  ],
+  "esperanto": "retrovi",
+  "english": "retrieve",
+  "russian": "забрать",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6059ec51c4a39213c513f80a"
+  },
+  "word_type": [
+    "firewatch"
+  ],
+  "esperanto": "kornaro",
+  "english": "antler",
+  "russian": "рог",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6059ec69c4a39213c513f80b"
+  },
+  "word_type": [
+    "firewatch"
+  ],
+  "esperanto": "danĝero",
+  "english": "peril",
+  "russian": "опасность",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6059ec88c4a39213c513f80c"
+  },
+  "word_type": [
+    "firewatch"
+  ],
+  "esperanto": "likeno",
+  "english": "lichen",
+  "russian": "лишайник",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6059eca7c4a39213c513f80d"
+  },
+  "word_type": [
+    "firewatch"
+  ],
+  "esperanto": "abunda",
+  "english": "lush",
+  "russian": "пышный",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6059ecbcc4a39213c513f80e"
+  },
+  "word_type": [
+    "firewatch"
+  ],
+  "esperanto": "tremolo",
+  "english": "aspen",
+  "russian": "осина",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6059ece0c4a39213c513f80f"
+  },
+  "word_type": [
+    "firewatch"
+  ],
+  "esperanto": "frapoj",
+  "english": "hunks",
+  "russian": "скряга",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6059ed09c4a39213c513f810"
+  },
+  "word_type": [
+    "firewatch"
+  ],
+  "esperanto": "ripari",
+  "english": "patch",
+  "russian": "латать",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6059ed2ac4a39213c513f811"
+  },
+  "word_type": [
+    "firewatch"
+  ],
+  "esperanto": "smokingo",
+  "english": "tuxedos",
+  "russian": "смокинги",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6059ed4dc4a39213c513f812"
+  },
+  "word_type": [
+    "firewatch"
+  ],
+  "esperanto": "pritondas",
+  "english": "prune",
+  "russian": "чернослив",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6059ef74c4a39213c513f813"
+  },
+  "word_type": [
+    "firewatch"
+  ],
+  "esperanto": "klapeto",
+  "english": "flapjack",
+  "russian": "оладья",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6059efacc4a39213c513f814"
+  },
+  "word_type": [
+    "firewatch"
+  ],
+  "esperanto": "plonĝi",
+  "english": "plunge",
+  "russian": "окунуться",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6059f02cc4a39213c513f815"
+  },
+  "word_type": [
+    "firewatch"
+  ],
+  "esperanto": "ŝtelĉasisto",
+  "english": "poacher",
+  "russian": "браконьер",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6059f25ac4a39213c513f816"
+  },
+  "word_type": [
+    "firewatch"
+  ],
+  "esperanto": "puŝi",
+  "english": "shove",
+  "russian": "толкать",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6059f682c4a39213c513f817"
+  },
+  "word_type": [
+    "firewatch"
+  ],
+  "esperanto": "lageto",
+  "english": "pond",
+  "russian": "пруд",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6059f6ebc4a39213c513f818"
+  },
+  "word_type": [
+    "firewatch"
+  ],
+  "esperanto": "interkrutejo",
+  "english": "ravine",
+  "russian": "овраг",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "605a1c70c4a39213c513f819"
+  },
+  "word_type": [
+    "firewatch"
+  ],
+  "esperanto": "rivereto",
+  "english": "creek",
+  "russian": "ручей",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "605a1f6cc4a39213c513f81a"
+  },
+  "word_type": [
+    "firewatch"
+  ],
+  "esperanto": "herbejo",
+  "english": "meadow",
+  "russian": "луг",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "605a1fe8c4a39213c513f81b"
+  },
+  "word_type": [
+    "firewatch"
+  ],
+  "esperanto": "alko",
+  "english": "elk",
+  "russian": "лось",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "605a22cec4a39213c513f81c"
+  },
+  "word_type": [
+    "firewatch"
+  ],
+  "esperanto": "doodads",
+  "english": "doodads",
+  "russian": "пустяки",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "605a313ac4a39213c513f81d"
+  },
+  "word_type": [
+    "firewatch"
+  ],
+  "esperanto": "resumado ",
+  "english": "debrief",
+  "russian": "подведение итогов ",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60605015c4a39213c513f81f"
+  },
+  "word_type": [
+    "valheim"
+  ],
+  "esperanto": "siliko",
+  "english": "flint",
+  "russian": "кремень ",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "606050b3c4a39213c513f820"
+  },
+  "word_type": [
+    "valheim"
+  ],
+  "esperanto": "fago",
+  "english": "beech",
+  "russian": "бук",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "606050efc4a39213c513f821"
+  },
+  "word_type": [
+    "valheim"
+  ],
+  "esperanto": "rezino",
+  "english": "resin",
+  "russian": "смола",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60605d16c4a39213c513f822"
+  },
+  "word_type": [
+    "valheim"
+  ],
+  "esperanto": "abio",
+  "english": "fir",
+  "russian": "ель",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6060b53cc4a39213c513f823"
+  },
+  "word_type": [
+    "valheim"
+  ],
+  "esperanto": "kornaro ",
+  "english": "antler",
+  "russian": "рог ",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60632dcfc4a39213c513f824"
+  },
+  "word_type": [
+    "valheim"
+  ],
+  "esperanto": "ambro",
+  "english": "amber",
+  "russian": "Янтарь",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60633986c4a39213c513f825"
+  },
+  "word_type": [
+    "valheim"
+  ],
+  "esperanto": "kardo ",
+  "english": "thistle",
+  "russian": "чертополох",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60643c9fc4a39213c513f826"
+  },
+  "word_type": [
+    "valheim"
+  ],
+  "esperanto": "forno ",
+  "english": "kiln",
+  "russian": "печь ",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6064440dc4a39213c513f827"
+  },
+  "word_type": [
+    "valheim"
+  ],
+  "esperanto": "kupro",
+  "english": "copper",
+  "russian": "медь",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60644789c4a39213c513f828"
+  },
+  "word_type": [
+    "valheim"
+  ],
+  "esperanto": "kandelingo",
+  "english": "sconce",
+  "russian": "подсвечник",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "606463c3c4a39213c513f829"
+  },
+  "word_type": [
+    "valheim"
+  ],
+  "esperanto": "trapiki",
+  "english": "pierce",
+  "russian": "проколоть",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60646729c4a39213c513f82a"
+  },
+  "word_type": [
+    "valheim"
+  ],
+  "esperanto": "stano",
+  "english": "tin",
+  "russian": "олово",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60646ca9c4a39213c513f82b"
+  },
+  "word_type": [
+    "valheim"
+  ],
+  "esperanto": "kaldrono",
+  "english": "cauldron",
+  "russian": "котел",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60646d4dc4a39213c513f82c"
+  },
+  "word_type": [
+    "valheim"
+  ],
+  "esperanto": "forĝejo",
+  "english": "forge",
+  "russian": "ковать",
+  "__v": 0
 }]

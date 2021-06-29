@@ -17,8 +17,9 @@
     border: 1px solid transparent;
 
     .img-container {
-      height: 150px;
-      // background: center/100% url('/assets/img/languages/default_vortlisto.png');
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     &:hover {
@@ -29,3 +30,6 @@
   }
 }
 
+::ng-deep .toolTipClass {
+  font-size: 200%;
+}

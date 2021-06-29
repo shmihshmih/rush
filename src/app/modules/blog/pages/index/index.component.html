@@ -2,12 +2,14 @@
   <mat-card *ngFor="let bookQuest of bookQuestList" class="esperanto-main-card">
     <mat-card-header class="w-100">
       <mat-card-title fxLayout="row" fxLayoutAlign="space-between center" class="w-100">
-        <h1 [routerLink]="['/', 'blog', 'bookquest', bookQuest.collection_caption, '1']">{{bookQuest.title}}</h1>
+        <h1 [routerLink]="['/', 'blog', 'bookquest', bookQuest.collection_caption, '1']"
+            [matTooltip]="'Книга-квест ' + bookQuest.title + '. Аавтор: ' + bookQuest.author" [matTooltipClass]="'toolTipClass'"
+        >{{bookQuest.title}}</h1>
       </mat-card-title>
       <mat-card-subtitle>{{bookQuest.item_type}}</mat-card-subtitle>
     </mat-card-header>
-    <div class="img-container" [routerLink]="['/', 'blog', 'bookquest', bookQuest.collection_caption, '1']"
-         [ngStyle]="bookQuest.cover && {'background': 'center/50% url(' + bookQuest.cover + ')'}">
+    <div class="img-container" [routerLink]="['/', 'blog', 'bookquest', bookQuest.collection_caption, '1']">
+      {{bookQuest.cover}}
     </div>
     <mat-card-content [routerLink]="['/', 'blog', 'bookquest', bookQuest.collection_caption, '1']">
       <p>
@@ -15,7 +17,9 @@
       </p>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-raised-button color="primary" (click)="openBookQuest(bookQuest.collection_caption)">
+      <button mat-raised-button color="primary" (click)="openBookQuest(bookQuest.collection_caption)"
+              [matTooltip]="'Начать квест'" [matTooltipClass]="'toolTipClass'"
+      >
         <i class="material-icons-outlined">remove_red_eye</i>
       </button>
     </mat-card-actions>
