@@ -1,7 +1,9 @@
 <div *ngIf="randomSentence" fxLayout="column" fxFlex fxLayoutAlign="center center">
 
-  <div>
+  <div fxFlex fxLayoutAlign="center center">
     <h1>Конструктор предложений</h1>
+    <mat-icon class="h1-icon" [matTooltip]="'Выбрать проверяемые времена, типы предложений, местоимения, глаголы и т.д.'"
+              [matTooltipClass]="'toolTipClass'" (click)="openSettings()">settings</mat-icon>
   </div>
 
   <div *ngIf="randomSentence" class="w-100" fxLayout="row" fxFlex fxLayoutAlign="center center">

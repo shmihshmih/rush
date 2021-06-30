@@ -1,0 +1,58 @@
+<div fxFlex fxLayout="row" [formGroup]="configForm">
+  <div fxFlex fxLayout="column">
+    <h1>Типы предложений</h1>
+    <div formArrayName="sentenceType">
+      <div *ngFor="let sentenceType of sentenceType.controls; let inx = index;">
+        <p>
+          <mat-checkbox [formControlName]="inx">{{data.sentenceType[inx]}}</mat-checkbox>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div fxFlex fxLayout="column">
+    <h1>Времена</h1>
+    <div formArrayName="times">
+      <div *ngFor="let time of times.controls; let inx = index;">
+        <p>
+          <mat-checkbox [formControlName]="inx">{{data.times[inx]}}</mat-checkbox>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div fxFlex fxLayout="column">
+    <h1>Местоимения</h1>
+    <div formArrayName="pronouns">
+      <div *ngFor="let pronoun of pronouns.controls; let inx = index;">
+        <p>
+          <mat-checkbox [formControlName]="inx">{{data.pronouns[inx].english}} - {{data.pronouns[inx].russian}}</mat-checkbox>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div fxFlex fxLayout="column">
+    <h1>Глаголы</h1>
+    <div>
+      <p>
+        <mat-checkbox #checkbox1 (click)="setVerbs('all', !checkbox1.checked)">Все глаголы</mat-checkbox>
+      </p>
+      <p>
+        <mat-checkbox #checkbox2 (click)="setVerbs('regular', !checkbox2.checked)">regular verbs</mat-checkbox>
+      </p>
+      <p>
+        <mat-checkbox #checkbox3 (click)="setVerbs('irregular', !checkbox3.checked)">irregular verbs</mat-checkbox>
+      </p>
+      <hr>
+      <div formArrayName="verbs">
+        <div *ngFor="let verb of verbs.controls; let inx = index;">
+          <p>
+            <mat-checkbox [formControlName]="inx">{{data.verbs[inx].english}} - {{data.verbs[inx].russian}}</mat-checkbox>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="actions">
+    <button color="primary" (click)="closePopup()" mat-button="">Отмена</button>
+    <button color="primary" (click)="submitConfigs()" mat-button="">Принять</button>
+  </div>
+</div>

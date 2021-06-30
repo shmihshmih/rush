@@ -2,7 +2,11 @@ import {Component, OnDestroy, OnInit} from '@angular/core';
 import {IWord} from '../../../../shared/models/esperanto/word.interface';
 import {EsperantoService} from '../../../../core/services/esperanto/esperanto.service';
 import {ApiService} from '../../../../core/services/api.service';
-import {forkJoin, Observable} from 'rxjs';
+import {forkJoin, Observable, Subject} from 'rxjs';
+import {AddListComponent} from '../../../../shared/components/popup/add-list/add-list.component';
+import {takeUntil} from 'rxjs/operators';
+import {EscSettingsPopupComponent} from '../../components/esc-settings-popup/esc-settings-popup.component';
+import {MatDialog} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-english-sentences-creator',
@@ -10,8 +14,8 @@ import {forkJoin, Observable} from 'rxjs';
   styleUrls: ['./english-sentences-creator.component.scss']
 })
 export class EnglishSentencesCreatorComponent implements OnInit, OnDestroy {
+  unsubscribe$: Subject<boolean> = new Subject();
   // все используемые слова в предложении
-  words: IWord[];
   pronouns: IWord[];
   verbs: IWord[];
   // гласные
@@ -37,15 +41,13 @@ export class EnglishSentencesCreatorComponent implements OnInit, OnDestroy {
 
   constructor(
     private esperantoService: EsperantoService,
-    private apiService: ApiService
+    private apiService: ApiService,
+    private dialog: MatDialog
   ) {
     this.init();
   }
 
   ngOnInit(): void {
-    this.apiService.getDataFromJSON('./assets/english/_verbs.json').subscribe(words => {
-      this.words = words;
-    });
   }
 
   // sentence type переводчик
@@ -94,8 +96,6 @@ export class EnglishSentencesCreatorComponent implements OnInit, OnDestroy {
     } else {
       // если заканчивается на y
       if (lastLetter === 'y') {
-        // tslint:disable-next-line:no-bitwise
-        console.log('this.consonants.indexOf(preLastLetter): ', ~this.consonants.indexOf(preLastLetter));
         // если предпоследняя - гласная
         // tslint:disable-next-line:no-bitwise
         if (~this.consonants.indexOf(preLastLetter)) {
@@ -614,6 +614,33 @@ export class EnglishSentencesCreatorComponent implements OnInit, OnDestroy {
     }
   }
 
+  openSettings(): void {
+    const dialogRef = this.dialog.open(EscSettingsPopupComponent, {
+      panelClass: ['of-auto'],
+      data: {times: this.times, sentenceType: this.sentenceType, pronouns: this.pronouns, verbs: this.verbs}
+    });
+
+    dialogRef.afterClosed().pipe(
+      takeUntil(this.unsubscribe$)
+    ).subscribe(result => {
+      if (!result) {
+        return;
+      }
+      if (result) {
+        this.setGenerratorConfigs(result.config);
+        this.createRandomSentence();
+      }
+    });
+  }
+
+  setGenerratorConfigs(config): void {
+    this.times = config.times;
+    this.verbs = config.verbs;
+    this.sentenceType = config.sentenceType;
+    this.pronouns = config.pronouns;
+  }
+
   ngOnDestroy(): void {
+    this.unsubscribe$.complete();
   }
 }

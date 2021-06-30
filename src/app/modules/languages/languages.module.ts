@@ -6,10 +6,11 @@ import {IndexComponent} from './pages/index/index.component';
 import {LanguagesRoutingModule} from './languages-routing.module';
 import {SharedModule} from '../../shared/shared.module';
 import {EnglishSentencesCreatorComponent} from './pages/english-sentences-creator/english-sentences-creator.component';
+import {EscSettingsPopupComponent} from './components/esc-settings-popup/esc-settings-popup.component';
 
 
 @NgModule({
-  declarations: [IndexComponent, EnglishSentencesCreatorComponent],
+  declarations: [IndexComponent, EnglishSentencesCreatorComponent, EscSettingsPopupComponent],
   imports: [
     CommonModule,
     FlexModule,
