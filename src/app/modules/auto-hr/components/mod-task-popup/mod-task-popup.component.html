@@ -23,7 +23,7 @@
           <div fxLayout="column" fxLayoutAlign="center" class="mb-24">
             <div formArrayName="text">
               <div *ngFor="let text of textList.controls; let i=index">
-                <mat-form-field [style.width.%]="95">
+                <mat-form-field [style.width.%]="94">
                   <mat-label>Ответ {{i}}</mat-label>
                   <textarea class="w-100" cdkTextareaAutosize [formControlName]="i" [rows]="5" matInput
                             placeholder="" value="{{text}}"></textarea>
@@ -39,7 +39,7 @@
           <div fxLayout="column" fxLayoutAlign="center" class="mb-24">
             <div formArrayName="code">
               <div *ngFor="let code of codeList.controls; let i=index">
-                <mat-form-field [style.width.%]="95">
+                <mat-form-field [style.width.%]="94">
                   <mat-label>Код {{i}}</mat-label>
                   <textarea class="w-100" cdkTextareaAutosize [formControlName]="i" [rows]="5" matInput
                             placeholder="" value="{{code}}"></textarea>
@@ -55,7 +55,7 @@
           <div fxLayout="column" fxLayoutAlign="center" class="mb-24">
             <div formArrayName="link">
               <div *ngFor="let link of linkList.controls; let i=index">
-                <mat-form-field [style.width.%]="95">
+                <mat-form-field [style.width.%]="94">
                   <mat-label>Ссылка {{i}}</mat-label>
                   <input matInput [formControlName]="i" placeholder="" value="{{link}}">
                 </mat-form-field>
@@ -136,7 +136,7 @@
       <div class="mb-24">
         <div formArrayName="competence">
           <div *ngFor="let competence of competenceList.controls; let i=index">
-            <mat-form-field>
+            <mat-form-field [style.width.%]="80">
               <mat-label>Компетенции {{i}}</mat-label>
               <input matInput [formControlName]="i" placeholder="" value="{{competence}}">
             </mat-form-field>

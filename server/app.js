@@ -22,6 +22,7 @@ app.use(cors())
 app.use('/api/user', require('./routes/auth.routes'))
 app.use('/api/esperanto', require('./routes/esperanto.routes'))
 app.use('/api/blog', require('./routes/blog.routes'))
+app.use('/api/autohr', require('./routes/autohr.routes'))
 
 async function start() {
   try {

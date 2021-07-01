@@ -11,6 +11,7 @@ import {ActivatedRoute} from '@angular/router';
 import {InterviewPopupComponent} from '../../components/interview-popup/interview-popup.component';
 import {TaskAnswerPopupComponent} from '../../components/task-answer-popup/task-answer-popup.component';
 import {ModTaskPopupComponent} from '../../components/mod-task-popup/mod-task-popup.component';
+import {ApiService} from '../../../../core/services/api.service';
 
 @Component({
   selector: 'app-index',
@@ -50,7 +51,9 @@ export class IndexComponent implements OnInit, AfterViewInit {
   constructor(
     private api: AutoHRService,
     public dialog: MatDialog,
-    public activatedRoute: ActivatedRoute
+    public activatedRoute: ActivatedRoute,
+    public ahs: AutoHRService,
+    public apiService: ApiService
   ) {
     this.api.getAllTasks().subscribe((tasks) => {
       this.tasks = tasks;
@@ -188,16 +191,20 @@ export class IndexComponent implements OnInit, AfterViewInit {
         });
       }
 
-      if (data.id) {
+      if (data._id) {
         // update
-        this.tasks[data.tableIndex - 1] = {...data, prevDifficulty, nextDifficulty};
-        const tableDataSrc = this.setTableIndex(0, this.tasks);
-        this.dataSource = new MatTableDataSource(tableDataSrc);
+        this.ahs.updateTask(data).subscribe(res => {
+          this.tasks[data.tableIndex - 1] = {...data, prevDifficulty, nextDifficulty};
+          const tableDataSrc = this.setTableIndex(0, this.tasks);
+          this.dataSource = new MatTableDataSource(tableDataSrc);
+        });
       } else {
         // create
-        this.tasks.push({...data, prevDifficulty, nextDifficulty});
-        const tableDataSrc = this.setTableIndex(0, this.tasks);
-        this.dataSource = new MatTableDataSource(tableDataSrc);
+        this.ahs.addTask(data).subscribe(res => {
+          this.tasks.push({...data, prevDifficulty, nextDifficulty});
+          const tableDataSrc = this.setTableIndex(0, this.tasks);
+          this.dataSource = new MatTableDataSource(tableDataSrc);
+        });
       }
     });
   }
@@ -332,14 +339,16 @@ export class IndexComponent implements OnInit, AfterViewInit {
 
   // удаление таска
   removeTask(task: ITask): void {
-    const isRemove = confirm('Удалить вопрос из таблицы (из системы не удалится)?');
+    const isRemove = confirm('Удалить вопрос из таблицы?');
     if (!isRemove) {
       return;
     }
-    const newDataSource = this.dataSource.filteredData.filter((item: ITask) => {
-      return item.id !== task.id;
+    this.ahs.delTask(task).subscribe(res => {
+      const newDataSource = this.dataSource.filteredData.filter((item: ITask) => {
+        return item.id !== task.id;
+      });
+      this.dataSource = new MatTableDataSource(newDataSource);
     });
-    this.dataSource = new MatTableDataSource(newDataSource);
   }
 
   // связываем вручную пагинатор и таблицу и данные
