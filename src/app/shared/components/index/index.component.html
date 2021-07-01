@@ -88,4 +88,28 @@
     </mat-card-actions>
   </mat-card>
 
+  <mat-card class="esperanto-main-card">
+    <mat-card-header class="w-100">
+      <mat-card-title fxLayout="row" fxLayoutAlign="space-between center" class="w-100">
+        <h1 [routerLink]="['autoHR']" [matTooltip]="'Пройти собеседование или посмотреть вопросы и ответы'" [matTooltipClass]="'toolTipClass'">autoHR</h1>
+      </mat-card-title>
+      <mat-card-subtitle>Тип: Генератор + Списки</mat-card-subtitle>
+    </mat-card-header>
+    <div class="img-container" [routerLink]="['autoHR']">
+      ⌚📌🕵️‍♀️🧷👨‍💼👨‍🎓⌚📌🕵️‍♀️🧷👨‍💼👨‍🎓⌚📌🕵️‍♀️🧷👨‍💼👨‍🎓
+      ⌚📌🕵️‍♀️🧷👨‍💼👨‍🎓⌚📌🕵️‍♀️🧷👨‍💼👨‍🎓⌚📌🕵️‍♀️🧷👨‍💼👨‍🎓
+      ⌚📌🕵️‍♀️🧷👨‍💼👨‍🎓⌚📌🕵️‍♀️🧷👨‍💼👨‍🎓⌚📌🕵️‍♀️🧷👨‍💼👨‍🎓
+    </div>
+    <mat-card-content [routerLink]="['autoHR']">
+      <p>
+        Генератор собеседований
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" [routerLink]="['autoHR']" [matTooltip]="'Открыть'" [matTooltipClass]="'toolTipClass'">
+        <i class="material-icons-outlined">view_stream</i>
+      </button>
+    </mat-card-actions>
+  </mat-card>
+
 </div>

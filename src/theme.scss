@@ -4,22 +4,22 @@
 
 // Typography
 $custom-typography: mat-typography-config(
-  $font-family: Raleway,
+  $font-family: Roboto,
   $headline: mat-typography-level(24px, 48px, 400),
-  $body-1: mat-typography-level(16px, 24px, 400)
+  $body-1: mat-typography-level(14px, 24px, 400)
 );
 @include angular-material-typography($custom-typography);
 
 // Default colors
-$my-app-primary: mat-palette($mat-teal, 700, 100, 800);
-$my-app-accent: mat-palette($mat-teal, 900, 900, 900);
+$my-app-primary: mat-palette($mat-blue, 200, 500, 300);
+$my-app-accent: mat-palette($mat-red, 200);
 $my-app-theme: mat-light-theme($my-app-primary, $my-app-accent);
 @include angular-material-theme($my-app-theme);
 
 // Dark theme
-$dark-primary: mat-palette($mat-blue-grey);
-$dark-accent: mat-palette($mat-amber, A200, A100, A400);
-$dark-warn: mat-palette($mat-deep-orange);
+$dark-primary: mat-palette($mat-blue, 200, 500, 300);
+$dark-accent: mat-palette($mat-red, 200);
+$dark-warn: mat-palette($mat-deep-orange, 200);
 $dark-theme: mat-dark-theme($dark-primary, $dark-accent, $dark-warn);
 .dark-theme {
   @include angular-material-theme($dark-theme);
@@ -31,8 +31,8 @@ $dark-theme: mat-dark-theme($dark-primary, $dark-accent, $dark-warn);
 }
 
 // Light theme
-$light-primary: mat-palette($mat-grey, 200, 500, 300);
-$light-accent: mat-palette($mat-brown, 200);
+$light-primary: mat-palette($mat-blue, 200, 500, 300);
+$light-accent: mat-palette($mat-red, 200);
 $light-warn: mat-palette($mat-deep-orange, 200);
 $light-theme: mat-light-theme($light-primary, $light-accent, $light-warn);
 .light-theme {
@@ -40,8 +40,8 @@ $light-theme: mat-light-theme($light-primary, $light-accent, $light-warn);
 }
 
 // My theme
-$my-theme-primary: mat-palette($mat-light-green, 200, 500, 300);
-$my-theme-accent: mat-palette($mat-green, 200);
+$my-theme-primary: mat-palette($mat-blue, 200, 500, 300);
+$my-theme-accent: mat-palette($mat-red, 200);
 $my-theme-warn: mat-palette($mat-deep-orange, 200);
 $my-theme: mat-dark-theme($my-theme-primary, $my-theme-accent, $my-theme-warn);
 .my-theme {

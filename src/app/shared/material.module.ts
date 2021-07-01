@@ -17,6 +17,7 @@ import {MatChipsModule} from '@angular/material/chips';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatCardModule} from '@angular/material/card';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatSliderModule} from '@angular/material/slider';
 
 @NgModule({
   declarations: [],
@@ -39,6 +40,18 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     MatAutocompleteModule,
     MatCardModule,
     MatButtonModule,
+    MatTooltipModule,
+    MatInputModule,
+    MatButtonModule,
+    MatDialogModule,
+    MatTableModule,
+    MatSelectModule,
+    MatFormFieldModule,
+    MatSliderModule,
+    MatIconModule,
+    MatPaginatorModule,
+    MatChipsModule,
+    MatSortModule,
     MatTooltipModule
   ],
   exports: [
@@ -59,6 +72,18 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     MatAutocompleteModule,
     MatCardModule,
     MatButtonModule,
+    MatTooltipModule,
+    MatInputModule,
+    MatButtonModule,
+    MatDialogModule,
+    MatTableModule,
+    MatSelectModule,
+    MatFormFieldModule,
+    MatSliderModule,
+    MatIconModule,
+    MatPaginatorModule,
+    MatChipsModule,
+    MatSortModule,
     MatTooltipModule
   ]
 })

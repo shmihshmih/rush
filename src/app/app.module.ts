@@ -11,6 +11,7 @@ import {NotFoundComponent} from './shared/components/not-found/not-found.compone
 import {FormsModule} from '@angular/forms';
 import {LanguagesModule} from './modules/languages/languages.module';
 import {IndexComponent} from './shared/components/index/index.component';
+import {AutoHRModule} from './modules/auto-hr/auto-hr.module';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import {IndexComponent} from './shared/components/index/index.component';
     SharedModule,
     BlogModule,
     SocratesModule,
-    LanguagesModule
+    LanguagesModule,
+    AutoHRModule
   ],
   providers: [],
   bootstrap: [AppComponent]

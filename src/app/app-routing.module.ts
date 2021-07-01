@@ -21,6 +21,10 @@ const routes: Routes = [
     loadChildren: () => import('./modules/languages/languages.module').then(m => m.LanguagesModule)
   },
   {
+    path: 'autoHR',
+    loadChildren: () => import('./modules/auto-hr/auto-hr.module').then(m => m.AutoHRModule)
+  },
+  {
     path: '',
     component: IndexComponent,
     pathMatch: 'full'
