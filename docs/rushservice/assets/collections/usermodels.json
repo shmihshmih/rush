@@ -1,0 +1,12 @@
+[{
+  "_id": {
+    "$oid": "5fdca0817617ad2858b994b2"
+  },
+  "email": "kasta@neda",
+  "name": "Anton2",
+  "password": "123456",
+  "avatar": "ya.ru",
+  "about": "all about me",
+  "birth": "16/05/1992",
+  "__v": 0
+}]
