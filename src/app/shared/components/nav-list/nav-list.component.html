@@ -20,7 +20,10 @@
   <li *ngIf="(apiService.isAuth | async) === true" (click)="apiService.logout()">
     <mat-icon>exit_to_app</mat-icon><a>Выйти</a>
   </li>
-  <li *ngIf="(apiService.isAuth | async) === false" (click)="openAuth()">
+<!--  <li *ngIf="(apiService.isAuth | async) === false" (click)="openAuth()">-->
+<!--    <mat-icon>login</mat-icon><a >Войти</a>-->
+<!--  </li>-->
+  <li *ngIf="false" (click)="openAuth()">
     <mat-icon>login</mat-icon><a >Войти</a>
   </li>
 </ul>

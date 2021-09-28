@@ -62,8 +62,6 @@ export class WordCardComponent implements OnInit, OnDestroy, OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    console.log('simpleChanges: ', changes);
-
   }
 
   ngOnDestroy(): void {

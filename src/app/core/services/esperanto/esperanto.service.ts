@@ -4,7 +4,7 @@ import {HttpClient} from '@angular/common/http';
 import {Injectable, OnDestroy} from '@angular/core';
 import {IListWord} from '../../../shared/models/esperanto/word_list.interface';
 import {ApiService} from '../api.service';
-import {switchMap} from 'rxjs/operators';
+import {filter, map, switchMap, tap} from 'rxjs/operators';
 
 @Injectable()
 export class EsperantoService implements OnDestroy {
@@ -19,24 +19,44 @@ export class EsperantoService implements OnDestroy {
   /**
    * get all words
    */
+  // getWords(): Observable<IWord[]> {
+  //   return this.httpClient.get<IWord[]>(`${this.apiService.MAIN_SERVER}esperanto/allWords`);
+  // }
   getWords(): Observable<IWord[]> {
-    return this.httpClient.get<IWord[]>(`${this.apiService.MAIN_SERVER}esperanto/allWords`);
+    return this.httpClient.get<IWord[]>(`./assets/collections/wordmodels.json`);
   }
 
   /**
    * get all word lists
    */
+  // getWordLists(): Observable<IListWord[]> {
+  //   return this.httpClient.get<IListWord[]>(`${this.apiService.MAIN_SERVER}esperanto/wordLists`);
+  // }
   getWordLists(): Observable<IListWord[]> {
-    return this.httpClient.get<IListWord[]>(`${this.apiService.MAIN_SERVER}esperanto/wordLists`);
+    return this.httpClient.get<IListWord[]>(`./assets/collections/wordlistmodels.json`);
   }
 
   /**
    * get all words from word list
    * @param wordList list we need
    */
+  // getWordsByWordList(wordList): Observable<IWord[]> {
+  //   const params = {wordList};
+  //   return this.httpClient.get<IWord[]>(`${this.apiService.MAIN_SERVER}esperanto/wordList`, {params});
+  // }
   getWordsByWordList(wordList): Observable<IWord[]> {
-    const params = {wordList};
-    return this.httpClient.get<IWord[]>(`${this.apiService.MAIN_SERVER}esperanto/wordList`, {params});
+    return this.httpClient.get<IWord[]>(`./assets/collections/wordmodels.json`)
+      .pipe(
+        map((res) => {
+          let wordsByWordList = [];
+          if (wordList) {
+            wordsByWordList = res.filter(word => word.word_type === wordList || word.word_type.includes(wordList));
+          } else {
+            wordsByWordList = res;
+          }
+          return wordsByWordList;
+        })
+      );
   }
 
   /**
@@ -301,4 +321,3 @@ export class EsperantoService implements OnDestroy {
     this.unsubscribe$.complete();
   }
 }
-

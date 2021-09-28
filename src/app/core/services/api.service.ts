@@ -1,5 +1,5 @@
 import {Injectable, OnDestroy} from '@angular/core';
-import {BehaviorSubject, Observable, Subject} from 'rxjs';
+import {BehaviorSubject, Observable, of, Subject} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
 import {takeUntil} from 'rxjs/operators';
 import {environment} from '../../../environments/environment';
@@ -16,21 +16,25 @@ export class ApiService implements OnDestroy {
   constructor(
     private httpClient: HttpClient
   ) {
-    this.authWithToken().pipe(
-      takeUntil(this.unsubscribe$)
-    ).subscribe(isAuth => {
-      if (isAuth.error) {
-        this.isAuth.next(false);
-        localStorage.removeItem('token');
-      } else if (isAuth.token && isAuth.decoded) {
-        this.isAuth.next(true);
-      }
-    });
+    // this.authWithToken().pipe(
+    //   takeUntil(this.unsubscribe$)
+    // ).subscribe(isAuth => {
+    //   if (isAuth.error) {
+    //     this.isAuth.next(false);
+    //     localStorage.removeItem('token');
+    //   } else if (isAuth.token && isAuth.decoded) {
+    //     this.isAuth.next(true);
+    //   }
+    // });
   }
 
+  // login(loginData): Observable<any> {
+  //   const authData = loginData;
+  //   return this.httpClient.post(`${this.MAIN_SERVER_AUTH}auth`, authData);
+  // }
   login(loginData): Observable<any> {
     const authData = loginData;
-    return this.httpClient.post(`${this.MAIN_SERVER_AUTH}auth`, authData);
+    return of({token: '12345'});
   }
 
   logout(): void {

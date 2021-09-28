@@ -18,8 +18,11 @@ export class AutoHRService {
   }
 
   // получить все вопросы
+  // getAllTasks(): Observable<ITask[]> {
+  //   return this.http.get<ITask[]>(`${this.apiService.MAIN_SERVER}autohr/questionList`);
+  // }
   getAllTasks(): Observable<ITask[]> {
-    return this.http.get<ITask[]>(`${this.apiService.MAIN_SERVER}autohr/questionList`);
+    return this.http.get<ITask[]>(`./assets/collections/questionmodels.json`);
   }
 
   // добавить вопрос
