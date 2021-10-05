@@ -12,6 +12,8 @@ import {FormsModule} from '@angular/forms';
 import {LanguagesModule} from './modules/languages/languages.module';
 import {IndexComponent} from './shared/components/index/index.component';
 import {AutoHRModule} from './modules/auto-hr/auto-hr.module';
+import { StoreModule } from '@ngrx/store';
+import {StoreModuleReducers} from './state/app.state';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,16 @@ import {AutoHRModule} from './modules/auto-hr/auto-hr.module';
     BlogModule,
     SocratesModule,
     LanguagesModule,
-    AutoHRModule
+    AutoHRModule,
+    StoreModule.forRoot(StoreModuleReducers, {
+      runtimeChecks: {
+        strictStateImmutability: true,
+        strictActionImmutability: true,
+        strictStateSerializability: true,
+        strictActionSerializability: true,
+        strictActionWithinNgZone: true,
+        strictActionTypeUniqueness: true,
+      }})
   ],
   providers: [],
   bootstrap: [AppComponent]
