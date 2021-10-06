@@ -12,11 +12,12 @@ import {FormsModule} from '@angular/forms';
 import {LanguagesModule} from './modules/languages/languages.module';
 import {IndexComponent} from './shared/components/index/index.component';
 import {AutoHRModule} from './modules/auto-hr/auto-hr.module';
-import { StoreModule } from '@ngrx/store';
+import {StoreModule} from '@ngrx/store';
 import {StoreModuleReducers} from './state/app.state';
-import { EffectsModule } from '@ngrx/effects';
-import { StoreDevtoolsModule } from '@ngrx/store-devtools';
-import { environment } from '../environments/environment';
+import {EffectsModule} from '@ngrx/effects';
+import {StoreDevtoolsModule} from '@ngrx/store-devtools';
+import {environment} from '../environments/environment';
+import {WordsEffects} from './state/languages/words.effects';
 
 @NgModule({
   declarations: [
@@ -43,9 +44,10 @@ import { environment } from '../environments/environment';
         strictActionSerializability: true,
         strictActionWithinNgZone: true,
         strictActionTypeUniqueness: true,
-      }}),
-    EffectsModule.forRoot([]),
-    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production })
+      }
+    }),
+    EffectsModule.forRoot([WordsEffects]),
+    StoreDevtoolsModule.instrument({maxAge: 25, logOnly: environment.production})
   ],
   providers: [],
   bootstrap: [AppComponent]

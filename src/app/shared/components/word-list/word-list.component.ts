@@ -12,7 +12,7 @@ import {MatDialog} from '@angular/material/dialog';
 import {AddWordComponent} from '../popup/add-word/add-word.component';
 import {select, Store} from '@ngrx/store';
 import {selectWords} from '../../../state/languages/words.selectors';
-import {setWords} from '../../../state/languages/words.actions';
+import {getAllWords} from '../../../state/languages/words.actions';
 
 /**
  * Компоннет содержащий списки слов. Таблица.
@@ -76,13 +76,13 @@ export class WordListComponent implements OnInit, OnDestroy {
       this.esperantoService.getWords().pipe(
         takeUntil(this.unsubscribe$)
       ).subscribe(words => {
-        this.store.dispatch(setWords({words}));
+        this.store.dispatch(getAllWords());
       });
     } else {
       this.esperantoService.getWordsByWordList(list).pipe(
         takeUntil(this.unsubscribe$)
       ).subscribe((words: IWord[]) => {
-        this.store.dispatch(setWords({words}));
+        this.store.dispatch(getAllWords());
       });
     }
   }
