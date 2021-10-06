@@ -1,8 +1,4 @@
 <div>
-  <div *ngFor="let word of listWord$ | async">
-    {{word.esperanto}} / {{word.english}} / {{word.russian}}
-  </div>
-
   <div *ngIf="apiService.isAuth | async">
     <button fxFlex fxLayoutAlign="center" mat-button (click)="addWord()" color="primary">add new word</button>
   </div>

@@ -3,10 +3,10 @@ import {ActivatedRoute, Router} from '@angular/router';
 import {EsperantoService} from '../../../core/services/esperanto/esperanto.service';
 import {switchMap, takeUntil, tap} from 'rxjs/operators';
 import {forkJoin, Observable, Subject} from 'rxjs';
-import {IWord} from '../../models/esperanto/word.interface';
 import {MatDialog} from '@angular/material/dialog';
 import {WordCardHelpComponent} from './popup/word-card-help/word-card-help.component';
 import {WordCardSettingsComponent} from './popup/word-card-settings/word-card-settings.component';
+import {IWord} from '../../models/esperanto/word.interface';
 
 @Component({
   selector: 'app-word-card',
@@ -138,7 +138,7 @@ export class WordCardComponent implements OnInit, OnDestroy, OnChanges {
       allWordLists.push(this.esperantoService.getWordsByWordList(list.collection_caption));
       this.activeWordLists.push(list.title);
     });
-    const allWordsFromAllLists: Observable<IWord[]> = forkJoin<IWord>([...allWordLists]);
+    const allWordsFromAllLists: Observable<IWord[]> = forkJoin<IWord[]>([...allWordLists]);
     allWordsFromAllLists.subscribe((words: []) => {
         words.forEach((list: IWord[]) => this.listWord.push(...list));
         this.setWordInterval();

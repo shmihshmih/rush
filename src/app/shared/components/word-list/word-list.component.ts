@@ -1,6 +1,6 @@
-import {Component, OnDestroy, ViewChild} from '@angular/core';
+import {Component, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
-import {Observable, Subject} from 'rxjs';
+import {Subject} from 'rxjs';
 import {takeUntil} from 'rxjs/operators';
 import {EsperantoService} from '../../../core/services/esperanto/esperanto.service';
 import {IWord} from '../../models/esperanto/word.interface';
@@ -10,15 +10,20 @@ import {MatSort} from '@angular/material/sort';
 import {ApiService} from '../../../core/services/api.service';
 import {MatDialog} from '@angular/material/dialog';
 import {AddWordComponent} from '../popup/add-word/add-word.component';
+import {select, Store} from '@ngrx/store';
+import {selectWords} from '../../../state/languages/words.selectors';
+import {setWords} from '../../../state/languages/words.actions';
 
+/**
+ * Компоннет содержащий списки слов. Таблица.
+ */
 @Component({
   selector: 'app-word-list',
   templateUrl: './word-list.component.html',
   styleUrls: ['./word-list.component.scss']
 })
-export class WordListComponent implements OnDestroy {
+export class WordListComponent implements OnInit, OnDestroy {
   unsubscribe$: Subject<boolean> = new Subject();
-  listWord$: Observable<IWord[]>;
 
   displayedColumns: string[] = ['esperanto', 'english', 'russian'];
   dataSource: MatTableDataSource<IWord>;
@@ -26,15 +31,22 @@ export class WordListComponent implements OnDestroy {
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
 
+  words$ = this.store.pipe(select(selectWords));
+
   constructor(private activatedRoute: ActivatedRoute,
               private esperantoService: EsperantoService,
               public apiService: ApiService,
-              public dialog: MatDialog) {
+              public dialog: MatDialog,
+              private store: Store) {
+
+    // получаем список слов в зависимости от роута
     this.activatedRoute.params.pipe(
       takeUntil(this.unsubscribe$)
     ).subscribe(params => {
       this.loadListWords(params?.wordList);
     });
+
+    // будем ли отображать админские функции
     this.apiService.isAuth.subscribe(isAuth => {
       if (isAuth) {
         this.displayedColumns.push('actions');
@@ -44,23 +56,35 @@ export class WordListComponent implements OnDestroy {
     });
   }
 
+  ngOnInit(): void {
+    // подписываемся на список слов
+    this.words$.subscribe((words: IWord[]) => {
+      if (words) {
+        this.dataSource = new MatTableDataSource(words);
+        this.dataSource.paginator = this.paginator;
+        this.dataSource.sort = this.sort;
+      }
+    });
+  }
+
+  /**
+   * Загрузить необходимый список слов. Либо все слова, если списка нет.
+   * @param list string
+   */
   loadListWords(list: string): void {
     if (!list) {
       this.esperantoService.getWords().pipe(
         takeUntil(this.unsubscribe$)
       ).subscribe(words => {
-        this.dataSource = new MatTableDataSource(words);
-        this.dataSource.paginator = this.paginator;
-        this.dataSource.sort = this.sort;
+        this.store.dispatch(setWords({words}));
+      });
+    } else {
+      this.esperantoService.getWordsByWordList(list).pipe(
+        takeUntil(this.unsubscribe$)
+      ).subscribe((words: IWord[]) => {
+        this.store.dispatch(setWords({words}));
       });
     }
-    this.esperantoService.getWordsByWordList(list).pipe(
-      takeUntil(this.unsubscribe$)
-    ).subscribe((words: IWord[]) => {
-      this.dataSource = new MatTableDataSource(words);
-      this.dataSource.paginator = this.paginator;
-      this.dataSource.sort = this.sort;
-    });
   }
 
   applyFilter(event: Event): void {
@@ -71,10 +95,9 @@ export class WordListComponent implements OnDestroy {
     }
   }
 
-  ngOnDestroy(): void {
-    this.unsubscribe$.complete();
-  }
-
+  /**
+   * Добавить новое слово
+   */
   addWord(): void {
     const dialogRef = this.dialog.open(AddWordComponent, {
       panelClass: ['of-auto'],
@@ -94,6 +117,10 @@ export class WordListComponent implements OnDestroy {
     });
   }
 
+  /**
+   * обновить слово
+   * @param word IWord
+   */
   updateWord(word): void {
     const dialogRef = this.dialog.open(AddWordComponent, {
       panelClass: ['of-auto'],
@@ -113,6 +140,10 @@ export class WordListComponent implements OnDestroy {
     });
   }
 
+  /**
+   * Удалить слово
+   * @param word IWord
+   */
   delWord(word: IWord): void {
     const areYouSure = confirm('Точно удалить слово?');
     if (areYouSure) {
@@ -127,5 +158,8 @@ export class WordListComponent implements OnDestroy {
     }
   }
 
-}
+  ngOnDestroy(): void {
+    this.unsubscribe$.complete();
+  }
 
+}
