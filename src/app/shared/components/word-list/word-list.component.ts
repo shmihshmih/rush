@@ -11,8 +11,8 @@ import {ApiService} from '../../../core/services/api.service';
 import {MatDialog} from '@angular/material/dialog';
 import {AddWordComponent} from '../popup/add-word/add-word.component';
 import {select, Store} from '@ngrx/store';
-import {selectWords} from '../../../state/languages/words.selectors';
-import {getAllWords} from '../../../state/languages/words.actions';
+import {loadWords} from '../../../state/languages/words/words.actions';
+import {selectWords} from '../../../state/languages/words/words.selectors';
 
 /**
  * Компоннет содержащий списки слов. Таблица.
@@ -58,7 +58,7 @@ export class WordListComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     // подписываемся на список слов
-    this.words$.subscribe((words: IWord[]) => {
+    this.words$.subscribe((words) => {
       if (words) {
         this.dataSource = new MatTableDataSource(words);
         this.dataSource.paginator = this.paginator;
@@ -76,13 +76,13 @@ export class WordListComponent implements OnInit, OnDestroy {
       this.esperantoService.getWords().pipe(
         takeUntil(this.unsubscribe$)
       ).subscribe(words => {
-        this.store.dispatch(getAllWords());
+        this.store.dispatch(loadWords());
       });
     } else {
       this.esperantoService.getWordsByWordList(list).pipe(
         takeUntil(this.unsubscribe$)
       ).subscribe((words: IWord[]) => {
-        this.store.dispatch(getAllWords());
+        this.store.dispatch(loadWords());
       });
     }
   }

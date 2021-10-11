@@ -1,10 +1,16 @@
-import {wordsReducer} from './languages/words.reducer';
-import {IWord} from '../shared/models/esperanto/word.interface';
+import {createReducer} from '@ngrx/store';
+import * as fromWords from './languages/words';
 
 export interface AppState {
-  words: IWord[];
+  wordsFeature: fromWords.State;
+  error: string;
 }
 
-export const StoreModuleReducers = {
-  words: wordsReducer
+const initialState: AppState = {
+  wordsFeature: {
+    words: []
+  },
+  error: ''
 };
+
+export const StoreModuleReducers = createReducer(initialState);

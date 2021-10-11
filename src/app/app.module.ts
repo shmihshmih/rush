@@ -13,11 +13,12 @@ import {LanguagesModule} from './modules/languages/languages.module';
 import {IndexComponent} from './shared/components/index/index.component';
 import {AutoHRModule} from './modules/auto-hr/auto-hr.module';
 import {StoreModule} from '@ngrx/store';
-import {StoreModuleReducers} from './state/app.state';
 import {EffectsModule} from '@ngrx/effects';
 import {StoreDevtoolsModule} from '@ngrx/store-devtools';
 import {environment} from '../environments/environment';
-import {WordsEffects} from './state/languages/words.effects';
+import {WordsEffects} from './state/languages/words/words.effects';
+import {StoreModuleReducers} from './state/app.state';
+import * as fromWords from './state/languages/words/index';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import {WordsEffects} from './state/languages/words.effects';
         strictActionTypeUniqueness: true,
       }
     }),
+    StoreModule.forFeature(fromWords.wordsFeatureKey, fromWords.wordsReducers),
     EffectsModule.forRoot([WordsEffects]),
     StoreDevtoolsModule.instrument({maxAge: 25, logOnly: environment.production})
   ],
