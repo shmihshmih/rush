@@ -2,12 +2,12 @@ import {createReducer} from '@ngrx/store';
 import * as fromWords from './languages/words';
 
 export interface AppState {
-  wordsFeature: fromWords.State;
+  [fromWords.wordsFeatureKey]: fromWords.State;
   error: string;
 }
 
 const initialState: AppState = {
-  wordsFeature: {
+  [fromWords.wordsFeatureKey]: {
     words: []
   },
   error: ''
