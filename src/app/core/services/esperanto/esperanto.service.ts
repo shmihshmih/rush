@@ -2,9 +2,9 @@ import {IWord} from '../../../shared/models/esperanto/word.interface';
 import {Observable, of, Subject} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
 import {Injectable, OnDestroy} from '@angular/core';
-import {IListWord} from '../../../shared/models/esperanto/word_list.interface';
 import {ApiService} from '../api.service';
-import {filter, map, switchMap, tap} from 'rxjs/operators';
+import {map, switchMap} from 'rxjs/operators';
+import {IWordList} from '../../../shared/models/esperanto/word_list.interface';
 
 @Injectable()
 export class EsperantoService implements OnDestroy {
@@ -29,11 +29,11 @@ export class EsperantoService implements OnDestroy {
   /**
    * get all word lists
    */
-  // getWordLists(): Observable<IListWord[]> {
-  //   return this.httpClient.get<IListWord[]>(`${this.apiService.MAIN_SERVER}esperanto/wordLists`);
+  // getWordLists(): Observable<IWordList[]> {
+  //   return this.httpClient.get<IWordList[]>(`${this.apiService.MAIN_SERVER}esperanto/wordLists`);
   // }
-  getWordLists(): Observable<IListWord[]> {
-    return this.httpClient.get<IListWord[]>(`./assets/collections/wordlistmodels.json`);
+  getWordLists(): Observable<IWordList[]> {
+    return this.httpClient.get<IWordList[]>(`./assets/collections/wordlistmodels.json`);
   }
 
   /**

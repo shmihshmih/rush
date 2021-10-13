@@ -1,12 +1,15 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Observable, Subject} from 'rxjs';
-import {IListWord} from '../../models/esperanto/word_list.interface';
 import {EsperantoService} from '../../../core/services/esperanto/esperanto.service';
 import {Router} from '@angular/router';
 import {ApiService} from '../../../core/services/api.service';
 import {MatDialog} from '@angular/material/dialog';
 import {AddListComponent} from '../popup/add-list/add-list.component';
 import {takeUntil} from 'rxjs/operators';
+import {IWordList} from '../../models/esperanto/word_list.interface';
+import {Store} from '@ngrx/store';
+import {selectWordLists} from '../../../state/languages/words/words.selectors';
+import {loadWordLists} from '../../../state/languages/words/words.actions';
 
 @Component({
   selector: 'app-word-lists',
@@ -15,19 +18,20 @@ import {takeUntil} from 'rxjs/operators';
 })
 export class WordListsComponent implements OnInit, OnDestroy {
   unsubscribe$: Subject<boolean> = new Subject();
-  vortlistoj$: Observable<IListWord[]>;
   mode: 'russian' | 'english' | 'esperanto' = 'english';
+
+  public vortlistoj$: Observable<IWordList[]> = this.store.select(selectWordLists);
 
   constructor(
     public esperantoService: EsperantoService,
     private router: Router,
     public apiService: ApiService,
-    public dialog: MatDialog
+    public dialog: MatDialog,
+    private store: Store
   ) {
   }
 
   ngOnInit(): void {
-    this.vortlistoj$ = this.esperantoService.getWordLists();
     switch (this.router.url.split('/')[1]) {
       case 'russian' :
         this.mode = 'russian';
@@ -62,8 +66,7 @@ export class WordListsComponent implements OnInit, OnDestroy {
         return;
       }
       if (result.item) {
-        // TODO в будущем не перезагружать и работать со списком, который уже вызван
-        this.vortlistoj$ = this.esperantoService.getWordLists();
+        this.store.dispatch(loadWordLists());
       }
     });
   }
@@ -81,21 +84,19 @@ export class WordListsComponent implements OnInit, OnDestroy {
         return;
       }
       if (result.item) {
-        // TODO в будущем не перезагружать и работать со списком, который уже вызван
-        this.vortlistoj$ = this.esperantoService.getWordLists();
+        this.store.dispatch(loadWordLists());
       }
     });
   }
 
-  delWordList(vortListo: IListWord): void {
+  delWordList(vortListo: IWordList): void {
     const areYouSure = confirm('Точно удалить список?');
     if (areYouSure) {
       this.esperantoService.delWordList(vortListo).pipe(
         takeUntil(this.unsubscribe$)
       ).subscribe(res => {
         if (res.item) {
-          // TODO в будущем не перезагружать и работать со списком, который уже вызван
-          this.vortlistoj$ = this.esperantoService.getWordLists();
+          this.store.dispatch(loadWordLists());
         }
       });
     }

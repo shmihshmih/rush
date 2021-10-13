@@ -1,6 +1,6 @@
-export interface IListWord {
-  title: string;
-  collection_caption: string;
+export interface IWordList {
+  title: string; // название списка
+  collection_caption: string; // название таблицы в базе
   level: string;
   cover: string;
   caption: {

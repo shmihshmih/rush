@@ -6,8 +6,10 @@ import {Observable} from 'rxjs';
 import {MatAutocomplete, MatAutocompleteSelectedEvent} from '@angular/material/autocomplete';
 import {map, startWith} from 'rxjs/operators';
 import {MatChipInputEvent} from '@angular/material/chips';
-import {IListWord} from '../../../../models/esperanto/word_list.interface';
 import {EsperantoService} from '../../../../../core/services/esperanto/esperanto.service';
+import {IWordList} from '../../../../models/esperanto/word_list.interface';
+import {Store} from '@ngrx/store';
+import {selectWordLists} from '../../../../../state/languages/words/words.selectors';
 
 @Component({
   selector: 'app-word-card-settings',
@@ -20,9 +22,9 @@ export class WordCardSettingsComponent implements OnInit {
   removable = true;
   separatorKeysCodes: number[] = [ENTER, COMMA];
   listCtrl = new FormControl();
-  filteredLists: Observable<IListWord[]>;
-  allWordLists: IListWord[] = [];
-  activeWordLists: IListWord[] = [];
+  filteredLists: Observable<IWordList[]>;
+  allWordLists: IWordList[] = [];
+  activeWordLists: IWordList[] = [];
   @ViewChild('listInput') listInput: ElementRef<HTMLInputElement>;
   @ViewChild('auto') matAutocomplete: MatAutocomplete;
 
@@ -30,7 +32,8 @@ export class WordCardSettingsComponent implements OnInit {
     public dialogRef: MatDialogRef<WordCardSettingsComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any,
     public fb: FormBuilder,
-    private esperantoService: EsperantoService
+    private esperantoService: EsperantoService,
+    private store: Store
   ) {
   }
 
@@ -46,11 +49,10 @@ export class WordCardSettingsComponent implements OnInit {
     this.formPatcher(this.wordCardSettingsForm, this.data.settings);
 
     // получение списка всех списков слов
-    this.esperantoService.getWordLists().subscribe(wordList => {
+    this.store.select(selectWordLists).subscribe(wordList => {
       this.allWordLists = wordList;
-
       this.data.activeWordLists.forEach(activeWordList => {
-        const activeList = this.allWordLists.filter((list: IListWord) => list.caption.esperanto.toLowerCase() === activeWordList.toLowerCase())[0];
+        const activeList = this.allWordLists.filter((list: IWordList) => list.caption.esperanto.toLowerCase() === activeWordList.toLowerCase())[0];
         if (activeList) {
           this.activeWordLists.push(activeList);
         }
@@ -82,13 +84,13 @@ export class WordCardSettingsComponent implements OnInit {
     this.listCtrl.setValue(null);
   }
 
-  private _filter(title: string): IListWord[] {
+  private _filter(title: string): IWordList[] {
     const filterValue = title.toLowerCase();
     const unselectedLists = this.listsWithoutSelected();
     return unselectedLists.filter(list => list.caption.russian.toLowerCase().indexOf(filterValue) === 0);
   }
 
-  private listsWithoutSelected(): IListWord[] {
+  private listsWithoutSelected(): IWordList[] {
     let unSelectedLists = this.allWordLists;
     this.activeWordLists.forEach(list => {
       const filteredLists = unSelectedLists.filter(list2 => list2.caption.russian.toLowerCase() !== list.caption.russian.toLowerCase());

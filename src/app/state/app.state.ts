@@ -8,7 +8,8 @@ export interface AppState {
 
 const initialState: AppState = {
   [fromWords.wordsFeatureKey]: {
-    words: []
+    words: [],
+    wordLists: []
   },
   error: ''
 };

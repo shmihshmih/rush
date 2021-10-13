@@ -11,8 +11,8 @@ import {ApiService} from '../../../core/services/api.service';
 import {MatDialog} from '@angular/material/dialog';
 import {AddWordComponent} from '../popup/add-word/add-word.component';
 import {select, Store} from '@ngrx/store';
-import {loadWords} from '../../../state/languages/words/words.actions';
-import {selectWords} from '../../../state/languages/words/words.selectors';
+import {loadWordLists, loadWords} from '../../../state/languages/words/words.actions';
+import {selectWordLists, selectWords} from '../../../state/languages/words/words.selectors';
 
 /**
  * Компоннет содержащий списки слов. Таблица.
@@ -32,6 +32,7 @@ export class WordListComponent implements OnInit, OnDestroy {
   @ViewChild(MatSort) sort: MatSort;
 
   words$ = this.store.pipe(select(selectWords));
+  wordsLists$ = this.store.pipe(select(selectWordLists));
 
   constructor(private activatedRoute: ActivatedRoute,
               private esperantoService: EsperantoService,
@@ -54,6 +55,9 @@ export class WordListComponent implements OnInit, OnDestroy {
         this.displayedColumns = this.displayedColumns.filter(col => col !== 'actions');
       }
     });
+
+    // получение списков слов диспатч
+    this.store.dispatch(loadWordLists());
   }
 
   ngOnInit(): void {
@@ -64,6 +68,10 @@ export class WordListComponent implements OnInit, OnDestroy {
         this.dataSource.paginator = this.paginator;
         this.dataSource.sort = this.sort;
       }
+    });
+
+    this.wordsLists$.subscribe((wordLists) => {
+      console.log('wordLists: ', wordLists);
     });
   }
 

@@ -7,7 +7,9 @@ import {map, startWith, takeUntil} from 'rxjs/operators';
 import {MatAutocomplete, MatAutocompleteSelectedEvent} from '@angular/material/autocomplete';
 import {COMMA, ENTER} from '@angular/cdk/keycodes';
 import {MatChipInputEvent} from '@angular/material/chips';
-import {IListWord} from '../../../models/esperanto/word_list.interface';
+import {IWordList} from '../../../models/esperanto/word_list.interface';
+import {Store} from '@ngrx/store';
+import {selectWordLists} from '../../../../state/languages/words/words.selectors';
 
 @Component({
   selector: 'app-add-word',
@@ -35,8 +37,10 @@ export class AddWordComponent implements OnInit, OnDestroy {
     public fb: FormBuilder,
     public dialogRef: MatDialogRef<AddWordComponent>,
     @Inject(MAT_DIALOG_DATA) public data,
-    private esperantoService: EsperantoService
-  ) {}
+    private esperantoService: EsperantoService,
+    private store: Store
+  ) {
+  }
 
   ngOnInit(): void {
     this.createWordForm();
@@ -44,8 +48,9 @@ export class AddWordComponent implements OnInit, OnDestroy {
       this.formPatcher(this.wordForm, this.data.word);
       this.selectedWordLists = this.data.word.word_type;
     }
-    this.esperantoService.getWordLists().pipe(
-      map((lists: IListWord[], i): string[] => {
+
+    this.store.select(selectWordLists).pipe(
+      map((lists: IWordList[], i): string[] => {
         return lists.map(list => list.collection_caption);
       }),
       takeUntil(this.unsubscribe$)
@@ -56,6 +61,7 @@ export class AddWordComponent implements OnInit, OnDestroy {
           startWith(null),
           map((list: string[] | null) => list ? this._filter(list) : this.wordLists.slice()));
       });
+
   }
 
   createWordForm(): void {

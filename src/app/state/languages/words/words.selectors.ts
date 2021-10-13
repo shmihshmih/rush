@@ -10,3 +10,10 @@ export const selectWords = createSelector(
     return state.words;
   }
 );
+
+export const selectWordLists = createSelector(
+  selectWordsFeature,
+  (state: fromWords.State) => {
+    return state.wordLists;
+  }
+);

@@ -1,11 +1,12 @@
 import {createReducer, on} from '@ngrx/store';
-import {loadWordsFail, loadWordsSuccess} from './words.actions';
+import {loadWordListsFail, loadWordListsSuccess, loadWordsFail, loadWordsSuccess} from './words.actions';
 import {IWord} from '../../../shared/models/esperanto/word.interface';
+import {IWordList} from '../../../shared/models/esperanto/word_list.interface';
 
-export const initialWordsState: IWord[] = [];
+/** words */
+const initialWordsState: IWord[] = [];
 
-
-export const createdWordsReducer = createReducer(
+const createdWordsReducer = createReducer(
   initialWordsState,
   on(loadWordsSuccess, (state, {words}) => {
     return words;
@@ -17,4 +18,21 @@ export const createdWordsReducer = createReducer(
 
 export function wordsReducer(state, action): IWord[] {
   return createdWordsReducer(state, action);
+}
+
+/** wordLists */
+const initialWordListsState: IWordList[] = [];
+
+const createWordListsReducer = createReducer(
+  initialWordListsState,
+  on(loadWordListsSuccess, (state, {wordLists}) => {
+    return wordLists;
+  }),
+  on(loadWordListsFail, (state, {error}) => {
+    return [];
+  })
+);
+
+export function wordListsReducer(state, action): IWordList[] {
+  return createWordListsReducer(state, action);
 }
