@@ -28,4 +28,5 @@ export class WordsEffects {
       catchError((error) => of(loadWordListsFail({error})))
     ))
   ));
+
 }

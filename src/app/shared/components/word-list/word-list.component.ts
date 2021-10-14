@@ -71,7 +71,6 @@ export class WordListComponent implements OnInit, OnDestroy {
     });
 
     this.wordsLists$.subscribe((wordLists) => {
-      console.log('wordLists: ', wordLists);
     });
   }
 

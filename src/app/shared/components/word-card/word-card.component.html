@@ -1,5 +1,5 @@
 <div fxLayout="column" fxFlex fxLayoutAlign="center center" (keydown)="nextWord()">
-  <div *ngIf="activeWord | async as word">
+  <div *ngIf="activeWord as word">
     <div>
       <div fxLayoutAlign="center center" class="fs-10vw ow-anywhere lh-1">{{word[startLang]}}</div>
     </div>

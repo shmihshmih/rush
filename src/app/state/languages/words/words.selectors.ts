@@ -4,6 +4,7 @@ import * as fromRoot from '../../app.state';
 
 export const selectWordsFeature = createFeatureSelector<fromRoot.AppState, fromWords.State>(fromWords.wordsFeatureKey);
 
+/** Получить все слова */
 export const selectWords = createSelector(
   selectWordsFeature,
   (state: fromWords.State) => {
@@ -11,9 +12,35 @@ export const selectWords = createSelector(
   }
 );
 
+/** Получить все списки слов */
 export const selectWordLists = createSelector(
   selectWordsFeature,
   (state: fromWords.State) => {
     return state.wordLists;
+  }
+);
+
+/** Получить все активные списки */
+export const selectSelectedWordLists = createSelector(
+  selectWordsFeature,
+  (state: fromWords.State) => {
+    return state.selectedWordLists;
+  }
+);
+
+/** Получить все слова из активных списков */
+export const selectWordsFromSelectedLists = createSelector(
+  selectWords,
+  selectSelectedWordLists,
+  (words, selectedLists) => {
+    const wordsWeNeed = [];
+    if (selectedLists.length > 0) {
+      words.forEach(word => {
+        if (word.word_type.includes(selectedLists.join(' '))) {
+          wordsWeNeed.push(word);
+        }
+      });
+    }
+    return wordsWeNeed;
   }
 );

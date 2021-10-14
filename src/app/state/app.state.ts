@@ -9,7 +9,9 @@ export interface AppState {
 const initialState: AppState = {
   [fromWords.wordsFeatureKey]: {
     words: [],
-    wordLists: []
+    wordLists: [],
+    selectedWordLists: [],
+    // wordsFromSelectedLists: [] а нам вообще нужна какая-либо работа с ними? Мб нет
   },
   error: ''
 };

@@ -1,22 +1,26 @@
-import {Component, HostListener, OnChanges, OnDestroy, OnInit, SimpleChange, SimpleChanges} from '@angular/core';
+import {Component, HostListener, OnDestroy, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {EsperantoService} from '../../../core/services/esperanto/esperanto.service';
-import {switchMap, takeUntil, tap} from 'rxjs/operators';
+import {takeUntil, tap} from 'rxjs/operators';
 import {forkJoin, Observable, Subject} from 'rxjs';
 import {MatDialog} from '@angular/material/dialog';
 import {WordCardHelpComponent} from './popup/word-card-help/word-card-help.component';
 import {WordCardSettingsComponent} from './popup/word-card-settings/word-card-settings.component';
 import {IWord} from '../../models/esperanto/word.interface';
+import {Store} from '@ngrx/store';
+import {clearSelectedWordLists, setSelectedWordLists} from '../../../state/languages/words/words.actions';
+import {selectSelectedWordLists, selectWordsFromSelectedLists} from '../../../state/languages/words/words.selectors';
 
 @Component({
   selector: 'app-word-card',
   templateUrl: './word-card.component.html',
   styleUrls: ['./word-card.component.scss']
 })
-export class WordCardComponent implements OnInit, OnDestroy, OnChanges {
+export class WordCardComponent implements OnInit, OnDestroy {
   unsubscribe$: Subject<boolean> = new Subject();
+  listWord$: Observable<IWord[]> = this.store.select(selectWordsFromSelectedLists);
   listWord: IWord[] = [];
-  activeWordLists: string[] = [];
+  activeWordLists$: Observable<string[]> = this.store.select(selectSelectedWordLists);
   isRepeat = false;
   startLang: 'russian' | 'english' | 'esperanto' = 'russian';
   finishLang: 'russian' | 'english' | 'esperanto' = 'esperanto';
@@ -24,7 +28,7 @@ export class WordCardComponent implements OnInit, OnDestroy, OnChanges {
   isAuto = false;
   timer = null;
   wordInterval = null;
-  activeWord: Subject<IWord> = new Subject();
+  activeWord: IWord;
 
   // при нажатии на клавишу переключается слово
   @HostListener('window:keyup', ['$event'])
@@ -37,47 +41,43 @@ export class WordCardComponent implements OnInit, OnDestroy, OnChanges {
   constructor(private activatedRoute: ActivatedRoute,
               private esperantoService: EsperantoService,
               public dialog: MatDialog,
-              private router: Router) {
+              private router: Router,
+              private store: Store) {
+
     // получаем мод, для конечного языка
     this.finishLang = this.router.url.split('/')[1] as 'russian' | 'english' | 'esperanto';
+
     // получаем список для загрузки
     this.activatedRoute.params.pipe(
-      switchMap(params => {
+      tap(params => {
         if (params.wordList) {
-          this.activeWordLists.push(params.wordList);
-          return this.esperantoService.getWordsByWordList(params.wordList);
+          this.store.dispatch(setSelectedWordLists({selectedWordLists: [params.wordList]}));
         }
-      }),
-      tap(words => {
-        this.listWord = words;
       }),
       takeUntil(this.unsubscribe$)
     ).subscribe(params => {
-      this.nextWord();
     });
   }
 
   ngOnInit(): void {
-
+    this.listWord$.subscribe(words => {
+      this.listWord = words;
+      this.nextWord();
+    });
   }
 
-  ngOnChanges(changes: SimpleChanges): void {
-  }
-
-  ngOnDestroy(): void {
-    this.unsubscribe$.complete();
-  }
 
   nextWord(): void {
     this.isShowAnswer = false;
+    this.activeWord = null;
     if (this.listWord.length === 0) {
       return;
     }
     const randomNumber = Math.floor(Math.random() * this.listWord.length);
     if (this.isRepeat) {
-      this.activeWord.next(this.listWord[randomNumber]);
+      this.activeWord = this.listWord[randomNumber];
     } else {
-      this.activeWord.next(this.listWord.splice(randomNumber, 1)[0]);
+      this.activeWord = this.listWord.splice(randomNumber, 1)[0];
     }
   }
 
@@ -94,7 +94,7 @@ export class WordCardComponent implements OnInit, OnDestroy, OnChanges {
     const dialogRef = this.dialog.open(WordCardSettingsComponent, {
       panelClass: ['wordCardSettingsPopup'],
       data: {
-        activeWordLists: this.activeWordLists,
+        // activeWordLists: this.activeWordLists,
         settings: {
           isRepeat: this.isRepeat,
           startLang: this.startLang,
@@ -127,8 +127,8 @@ export class WordCardComponent implements OnInit, OnDestroy, OnChanges {
     settings: ISettings = {isRepeat: false, startLang: 'russian', finishLang: 'esperanto', isAuto: false, timer: null},
     wordLists = []): void {
     const allWordLists = [];
-    this.listWord = [];
-    this.activeWordLists = [];
+    // this.listWord = [];
+    // this.activeWordLists = [];
     this.isRepeat = settings.isRepeat;
     this.startLang = settings.startLang;
     this.finishLang = settings.finishLang;
@@ -136,14 +136,14 @@ export class WordCardComponent implements OnInit, OnDestroy, OnChanges {
     this.timer = settings.timer;
     wordLists.forEach(list => {
       allWordLists.push(this.esperantoService.getWordsByWordList(list.collection_caption));
-      this.activeWordLists.push(list.title);
+      // this.activeWordLists.push(list.title);
     });
     const allWordsFromAllLists: Observable<IWord[]> = forkJoin<IWord[]>([...allWordLists]);
-    allWordsFromAllLists.subscribe((words: []) => {
-        words.forEach((list: IWord[]) => this.listWord.push(...list));
-        this.setWordInterval();
-      }
-    );
+    // allWordsFromAllLists.subscribe((words: []) => {
+    //     words.forEach((list: IWord[]) => this.listWord.push(...list));
+    //     this.setWordInterval();
+    //   }
+    // );
   }
 
   setWordInterval(): void {
@@ -153,6 +153,11 @@ export class WordCardComponent implements OnInit, OnDestroy, OnChanges {
         this.showAnswer();
       }, this.timer);
     }
+  }
+
+  ngOnDestroy(): void {
+    this.store.dispatch(clearSelectedWordLists());
+    this.unsubscribe$.complete();
   }
 }
 
