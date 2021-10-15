@@ -11,7 +11,7 @@ import {ApiService} from '../../../core/services/api.service';
 import {MatDialog} from '@angular/material/dialog';
 import {AddWordComponent} from '../popup/add-word/add-word.component';
 import {select, Store} from '@ngrx/store';
-import {loadWordLists, loadWords, setSelectedWordLists} from '../../../state/languages/words/words.actions';
+import {setSelectedWordLists} from '../../../state/languages/words/words.actions';
 import {selectWords, selectWordsFromSelectedLists} from '../../../state/languages/words/words.selectors';
 
 /**
@@ -54,12 +54,6 @@ export class WordListComponent implements OnInit, OnDestroy {
         this.displayedColumns = this.displayedColumns.filter(col => col !== 'actions');
       }
     });
-
-    // получение списков слов диспатч
-    this.store.dispatch(loadWordLists());
-
-    // получение слов
-    this.store.dispatch(loadWords());
   }
 
   ngOnInit(): void {

@@ -19,6 +19,11 @@ import {environment} from '../environments/environment';
 import {WordsEffects} from './state/languages/words/words.effects';
 import {StoreModuleReducers} from './state/app.state';
 import * as fromWords from './state/languages/words/index';
+import * as fromAuth from './state/auth';
+import * as fromQuestions from './state/autoHR';
+import {authReducer} from './state/auth/auth.reducer';
+import {AuthEffects} from './state/auth/auth.effects';
+import {AutoHREffects} from './state/autoHR/autoHR.effects';
 
 @NgModule({
   declarations: [
@@ -48,7 +53,9 @@ import * as fromWords from './state/languages/words/index';
       }
     }),
     StoreModule.forFeature(fromWords.wordsFeatureKey, fromWords.wordsReducers),
-    EffectsModule.forRoot([WordsEffects]),
+    StoreModule.forFeature(fromQuestions.autoHRFeatureKey, fromQuestions.autoHRReducers),
+    StoreModule.forFeature(fromAuth.authFeatureKey, authReducer),
+    EffectsModule.forRoot([WordsEffects, AuthEffects, AutoHREffects]),
     StoreDevtoolsModule.instrument({maxAge: 25, logOnly: environment.production})
   ],
   providers: [],

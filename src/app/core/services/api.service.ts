@@ -1,7 +1,6 @@
 import {Injectable, OnDestroy} from '@angular/core';
 import {BehaviorSubject, Observable, of, Subject} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
-import {takeUntil} from 'rxjs/operators';
 import {environment} from '../../../environments/environment';
 
 @Injectable({
@@ -32,9 +31,9 @@ export class ApiService implements OnDestroy {
   //   const authData = loginData;
   //   return this.httpClient.post(`${this.MAIN_SERVER_AUTH}auth`, authData);
   // }
-  login(loginData): Observable<any> {
-    const authData = loginData;
-    return of({token: '12345'});
+  login(): Observable<any> {
+    const authData = localStorage.getItem('authData');
+    return of(JSON.parse(authData));
   }
 
   logout(): void {

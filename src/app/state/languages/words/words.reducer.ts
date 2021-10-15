@@ -9,6 +9,7 @@ import {
 } from './words.actions';
 import {IWord} from '../../../shared/models/esperanto/word.interface';
 import {IWordList} from '../../../shared/models/esperanto/word_list.interface';
+import {State} from './index';
 
 /** all words */
 const initialWordsState: IWord[] = [];
@@ -45,7 +46,7 @@ export function wordListsReducer(state, action): IWordList[] {
 }
 
 /** selected wordLists */
-const initialSelectedWordListsState: IWordList[] = [];
+const initialSelectedWordListsState: string[] = [];
 
 const createSelectedWordListsReducer = createReducer(
   initialSelectedWordListsState,
@@ -57,7 +58,7 @@ const createSelectedWordListsReducer = createReducer(
   })
 );
 
-export function selectedWordListsReducer(state, action): IWordList[] {
+export function selectedWordListsReducer(state, action): string[] {
   return createSelectedWordListsReducer(state, action);
 }
 
@@ -77,3 +78,10 @@ export function selectedWordListsReducer(state, action): IWordList[] {
 // export function wordsFromSelectedListsReducer(state, action): IWord[] {
 //   return createWordsFromSelectedListsReducer(state, action);
 // }
+
+export const initialWordsFeatureState: State = {
+  words: initialWordsState,
+  wordLists: initialWordListsState,
+  selectedWordLists: initialSelectedWordListsState
+  // wordsFromSelectedLists: [] а нам вообще нужна какая-либо работа с ними? Мб нет
+};

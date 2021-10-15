@@ -2,6 +2,8 @@ import {Component, Inject, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
 import {ApiService} from '../../../core/services/api.service';
+import {Store} from '@ngrx/store';
+import {makeAuthorization} from '../../../state/auth/auth.actions';
 
 @Component({
   selector: 'app-auth',
@@ -15,7 +17,8 @@ export class AuthComponent implements OnInit {
     private apiService: ApiService,
     public fb: FormBuilder,
     public dialogRef: MatDialogRef<AuthComponent>,
-    @Inject(MAT_DIALOG_DATA) public data) {
+    @Inject(MAT_DIALOG_DATA) public data,
+    private store: Store) {
   }
 
   ngOnInit(): void {
@@ -30,13 +33,9 @@ export class AuthComponent implements OnInit {
   }
 
   closePopup(): void {
-    this.apiService.login(this.authForm.value).subscribe((res) => {
-      if (res.token) {
-        localStorage.setItem('token', res.token);
-        this.apiService.isAuth.next(true);
-        this.dialogRef.close();
-      }
-    });
+    const authData = {...this.authForm.value};
+    localStorage.setItem('authData', JSON.stringify(authData));
+    this.store.dispatch(makeAuthorization());
   }
 
 }

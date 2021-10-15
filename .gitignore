@@ -48,3 +48,6 @@ package-lock.json
 .angulardoc.json
 src/environments/environment.prod.ts
 .vscode
+
+/.github
+/public

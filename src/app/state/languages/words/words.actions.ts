@@ -2,7 +2,7 @@ import {createAction, props} from '@ngrx/store';
 
 /** words */
 
-export enum WordsActionsTypes {
+enum WordsActionsTypes {
   loadWords = '[WORDS] load words',
   loadWordsSuccess = '[WORDS] load words success',
   loadWordsFail = '[WORDS] load words fail'
@@ -14,7 +14,7 @@ export const loadWordsFail = createAction(WordsActionsTypes.loadWordsFail, props
 
 /** wordLists */
 
-export enum wordListsActionsTypes {
+enum wordListsActionsTypes {
   loadWordLists = '[WORD LISTS] load wordLists',
   loadWordListsSuccess = '[WORD LISTS] load wordLists success',
   loadWordListsFail = '[WORD LISTS] load wordLists fail'
@@ -25,7 +25,7 @@ export const loadWordListsSuccess = createAction(wordListsActionsTypes.loadWordL
 export const loadWordListsFail = createAction(wordListsActionsTypes.loadWordListsFail, props<{ error: string }>());
 
 /** selected wordLists */
-export enum selectedWordListsActionTypes {
+enum selectedWordListsActionTypes {
   setSelectedWordLists = '[SELECTED WORD LISTS] set chosen word lists for render',
   clearSelectedWordLists = '[SELECTED WORD LISTS] clear selected word lists'
 }
