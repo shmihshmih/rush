@@ -36,7 +36,7 @@ export const selectWordsFromSelectedLists = createSelector(
     const wordsWeNeed = [];
     if (selectedLists.length > 0) {
       words.forEach(word => {
-        if (word.word_type.includes(selectedLists.join(' '))) {
+        if (word.word_type.some(type => selectedLists.includes(type))) {
           wordsWeNeed.push(word);
         }
       });

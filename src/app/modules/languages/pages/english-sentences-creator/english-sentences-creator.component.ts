@@ -2,11 +2,13 @@ import {Component, OnDestroy, OnInit} from '@angular/core';
 import {IWord} from '../../../../shared/models/esperanto/word.interface';
 import {EsperantoService} from '../../../../core/services/esperanto/esperanto.service';
 import {ApiService} from '../../../../core/services/api.service';
-import {forkJoin, Observable, Subject} from 'rxjs';
-import {AddListComponent} from '../../../../shared/components/popup/add-list/add-list.component';
+import {Subject} from 'rxjs';
 import {takeUntil} from 'rxjs/operators';
 import {EscSettingsPopupComponent} from '../../components/esc-settings-popup/esc-settings-popup.component';
 import {MatDialog} from '@angular/material/dialog';
+import {Store} from '@ngrx/store';
+import {setSelectedWordLists} from '../../../../state/languages/words/words.actions';
+import {selectWordsFromSelectedLists} from '../../../../state/languages/words/words.selectors';
 
 @Component({
   selector: 'app-english-sentences-creator',
@@ -39,12 +41,21 @@ export class EnglishSentencesCreatorComponent implements OnInit, OnDestroy {
   };
   isShowAnswer = false;
 
+  allWords$ = this.store.select(selectWordsFromSelectedLists);
+
   constructor(
     private esperantoService: EsperantoService,
     private apiService: ApiService,
-    private dialog: MatDialog
+    private dialog: MatDialog,
+    private store: Store
   ) {
-    this.init();
+    // инициализация конструктора, включает в себя загрузку слов (местоимения, глаголы)
+    this.store.dispatch(setSelectedWordLists({selectedWordLists: ['pronomoj', 'verbs']}));
+    this.allWords$.pipe().subscribe(words => {
+      this.pronouns = words.filter(word => word.word_type.includes('pronomoj'));
+      this.verbs = words.filter(word => word.word_type.includes('verbs'));
+      this.createRandomSentence();
+    });
   }
 
   ngOnInit(): void {
@@ -234,7 +245,7 @@ export class EnglishSentencesCreatorComponent implements OnInit, OnDestroy {
         // tslint:disable-next-line:no-bitwise
         && (~this.consonants.indexOf(lastLetter))
         && !((lastLetter === 'w')
-        || ((lastLetter) === 'x'))) {
+          || ((lastLetter) === 'x'))) {
         wordWith_ing = word.english + lastLetter + 'ing';
       } else
 
@@ -586,18 +597,6 @@ export class EnglishSentencesCreatorComponent implements OnInit, OnDestroy {
     let choosenPronoun: IWord;
     choosenPronoun = this.pronouns[Math.floor(Math.random() * this.pronouns.length)];
     return choosenPronoun;
-  }
-
-  // инициализация конструктора, включает в себя загрузку слов (местоимения, глаголы)
-  init(): void {
-    const loadPronouns$: Observable<any> = this.esperantoService.getWordsByWordList('pronomoj');
-    const loadVerbs$: Observable<any> = this.esperantoService.getWordsByWordList('verbs');
-    const allWords$ = forkJoin([loadPronouns$, loadVerbs$]);
-    allWords$.subscribe((words: IWord[][]) => {
-      this.pronouns = words[0];
-      this.verbs = words[1];
-      this.createRandomSentence();
-    });
   }
 
   // следующее предложение

@@ -1,6 +1,6 @@
 import {Component, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
-import {Subject} from 'rxjs';
+import {Observable, Subject} from 'rxjs';
 import {takeUntil} from 'rxjs/operators';
 import {EsperantoService} from '../../../core/services/esperanto/esperanto.service';
 import {IWord} from '../../models/esperanto/word.interface';
@@ -11,8 +11,8 @@ import {ApiService} from '../../../core/services/api.service';
 import {MatDialog} from '@angular/material/dialog';
 import {AddWordComponent} from '../popup/add-word/add-word.component';
 import {select, Store} from '@ngrx/store';
-import {loadWordLists, loadWords} from '../../../state/languages/words/words.actions';
-import {selectWordLists, selectWords} from '../../../state/languages/words/words.selectors';
+import {loadWordLists, loadWords, setSelectedWordLists} from '../../../state/languages/words/words.actions';
+import {selectWords, selectWordsFromSelectedLists} from '../../../state/languages/words/words.selectors';
 
 /**
  * Компоннет содержащий списки слов. Таблица.
@@ -31,8 +31,7 @@ export class WordListComponent implements OnInit, OnDestroy {
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
 
-  words$ = this.store.pipe(select(selectWords));
-  wordsLists$ = this.store.pipe(select(selectWordLists));
+  words$: Observable<IWord[]>;
 
   constructor(private activatedRoute: ActivatedRoute,
               private esperantoService: EsperantoService,
@@ -58,6 +57,9 @@ export class WordListComponent implements OnInit, OnDestroy {
 
     // получение списков слов диспатч
     this.store.dispatch(loadWordLists());
+
+    // получение слов
+    this.store.dispatch(loadWords());
   }
 
   ngOnInit(): void {
@@ -69,9 +71,6 @@ export class WordListComponent implements OnInit, OnDestroy {
         this.dataSource.sort = this.sort;
       }
     });
-
-    this.wordsLists$.subscribe((wordLists) => {
-    });
   }
 
   /**
@@ -80,17 +79,10 @@ export class WordListComponent implements OnInit, OnDestroy {
    */
   loadListWords(list: string): void {
     if (!list) {
-      this.esperantoService.getWords().pipe(
-        takeUntil(this.unsubscribe$)
-      ).subscribe(words => {
-        this.store.dispatch(loadWords());
-      });
+      this.words$ = this.store.pipe(select(selectWords));
     } else {
-      this.esperantoService.getWordsByWordList(list).pipe(
-        takeUntil(this.unsubscribe$)
-      ).subscribe((words: IWord[]) => {
-        this.store.dispatch(loadWords());
-      });
+      this.store.dispatch(setSelectedWordLists({selectedWordLists: [list]}));
+      this.words$ = this.store.pipe(select(selectWordsFromSelectedLists));
     }
   }
 
