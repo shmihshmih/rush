@@ -1,12 +1,15 @@
 import {ITask} from '../../shared/models/autoHR/question.model';
-import {questionReducer} from './autoHR.reducer';
+import {configReducer, tasksReducer} from './autoHR.reducer';
+import {ISobesConfigModel} from '../../shared/models/autoHR/sobesConfig.model';
 
 export const autoHRFeatureKey = 'autoHRFeature';
 
 export const autoHRReducers = {
-  questions: questionReducer
+  tasks: tasksReducer,
+  config: configReducer
 };
 
 export interface State {
-  questions: ITask[];
+  tasks: ITask[];
+  config: ISobesConfigModel;
 }

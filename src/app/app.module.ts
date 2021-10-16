@@ -20,7 +20,7 @@ import {WordsEffects} from './state/languages/words/words.effects';
 import {StoreModuleReducers} from './state/app.state';
 import * as fromWords from './state/languages/words/index';
 import * as fromAuth from './state/auth';
-import * as fromQuestions from './state/autoHR';
+import * as fromTasks from './state/autoHR';
 import {authReducer} from './state/auth/auth.reducer';
 import {AuthEffects} from './state/auth/auth.effects';
 import {AutoHREffects} from './state/autoHR/autoHR.effects';
@@ -53,7 +53,7 @@ import {AutoHREffects} from './state/autoHR/autoHR.effects';
       }
     }),
     StoreModule.forFeature(fromWords.wordsFeatureKey, fromWords.wordsReducers),
-    StoreModule.forFeature(fromQuestions.autoHRFeatureKey, fromQuestions.autoHRReducers),
+    StoreModule.forFeature(fromTasks.autoHRFeatureKey, fromTasks.autoHRReducers),
     StoreModule.forFeature(fromAuth.authFeatureKey, authReducer),
     EffectsModule.forRoot([WordsEffects, AuthEffects, AutoHREffects]),
     StoreDevtoolsModule.instrument({maxAge: 25, logOnly: environment.production})

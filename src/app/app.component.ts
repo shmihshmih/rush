@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 import {loadWordLists, loadWords} from './state/languages/words/words.actions';
 import {Store} from '@ngrx/store';
 import {setAuthDataFromLocalStorage} from './state/auth/auth.actions';
-import {loadQuestions} from './state/autoHR/autoHR.actions';
+import {loadTasks} from './state/autoHR/autoHR.actions';
 
 @Component({
   selector: 'app-root',
@@ -18,9 +18,9 @@ export class AppComponent {
 
     // получение слов
     this.store.dispatch(loadWords());
-    
+
     // получение всех вопросов
-    this.store.dispatch(loadQuestions());
+    this.store.dispatch(loadTasks());
 
     // устанавливаем юзера из localStorage
     const authData = JSON.parse(localStorage.getItem('authData'));

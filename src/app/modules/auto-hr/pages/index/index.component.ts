@@ -12,6 +12,8 @@ import {InterviewPopupComponent} from '../../components/interview-popup/intervie
 import {TaskAnswerPopupComponent} from '../../components/task-answer-popup/task-answer-popup.component';
 import {ModTaskPopupComponent} from '../../components/mod-task-popup/mod-task-popup.component';
 import {ApiService} from '../../../../core/services/api.service';
+import {setAutoHRConfig} from '../../../../state/autoHR/autoHR.actions';
+import {Store} from '@ngrx/store';
 
 @Component({
   selector: 'app-index',
@@ -53,7 +55,8 @@ export class IndexComponent implements OnInit, AfterViewInit {
     public dialog: MatDialog,
     public activatedRoute: ActivatedRoute,
     public ahs: AutoHRService,
-    public apiService: ApiService
+    public apiService: ApiService,
+    private store: Store
   ) {
     this.api.getAllTasks().subscribe((tasks) => {
       this.tasks = tasks;
@@ -109,6 +112,7 @@ export class IndexComponent implements OnInit, AfterViewInit {
         this.popularityControl.patchValue(config.popularity);
         this.config = config;
         this.setTableData(config);
+        this.store.dispatch(setAutoHRConfig({config}));
       }
     });
   }

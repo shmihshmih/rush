@@ -1,11 +1,11 @@
 import {createFeatureSelector, createSelector} from '@ngrx/store';
-import * as fromQuestions from './index';
+import * as fromTasks from './index';
 import * as fromRoot from '../app.state';
 
-const autoHRFeatureSelector = createFeatureSelector<fromRoot.AppState, fromQuestions.State>(fromQuestions.autoHRFeatureKey);
+const autoHRFeatureSelector = createFeatureSelector<fromRoot.AppState, fromTasks.State>(fromTasks.autoHRFeatureKey);
 
 export const selectQuestions = createSelector(
   autoHRFeatureSelector,
-  (state: fromQuestions.State) => {
-    return state.questions;
+  (state: fromTasks.State) => {
+    return state.tasks;
   });

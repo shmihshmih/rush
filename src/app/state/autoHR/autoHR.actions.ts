@@ -1,11 +1,13 @@
 import {createAction, props} from '@ngrx/store';
 
 enum AutoHRActionsTypes {
-  loadQuestions = '[AUTO HR] load questions',
-  loadQuestionsSuccess = '[AUTO HR] load questions success',
-  loadQuestionsFail = '[AUTO HR] load questions fail'
+  loadTasks = '[AUTO HR] load tasks',
+  loadTasksSuccess = '[AUTO HR] load tasks success',
+  loadTasksFail = '[AUTO HR] load tasks fail',
+  setAutoHRConfig = '[AUTO HR] set autoHR config'
 }
 
-export const loadQuestions = createAction(AutoHRActionsTypes.loadQuestions); // effect
-export const loadQuestionsSuccess = createAction(AutoHRActionsTypes.loadQuestionsSuccess, props<{ questions }>());
-export const loadQuestionsFail = createAction(AutoHRActionsTypes.loadQuestionsFail, props<{ error }>());
+export const loadTasks = createAction(AutoHRActionsTypes.loadTasks); // effect
+export const loadTasksSuccess = createAction(AutoHRActionsTypes.loadTasksSuccess, props<{ tasks }>());
+export const loadTasksFail = createAction(AutoHRActionsTypes.loadTasksFail, props<{ error }>());
+export const setAutoHRConfig = createAction(AutoHRActionsTypes.setAutoHRConfig, props<{ config }>());
