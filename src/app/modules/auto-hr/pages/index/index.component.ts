@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, OnInit, ViewChild} from '@angular/core';
+import {AfterViewInit, Component, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import {animate, state, style, transition, trigger} from '@angular/animations';
 import {ITask} from '../../../../shared/models/autoHR/question.model';
 import {MatTableDataSource} from '@angular/material/table';
@@ -12,8 +12,9 @@ import {InterviewPopupComponent} from '../../components/interview-popup/intervie
 import {TaskAnswerPopupComponent} from '../../components/task-answer-popup/task-answer-popup.component';
 import {ModTaskPopupComponent} from '../../components/mod-task-popup/mod-task-popup.component';
 import {ApiService} from '../../../../core/services/api.service';
-import {setAutoHRConfig} from '../../../../state/autoHR/autoHR.actions';
+import {clearAutoHRConfig, setAutoHRConfig} from '../../../../state/autoHR/autoHR.actions';
 import {Store} from '@ngrx/store';
+import {selectAutoHRConfig, selectTasks} from '../../../../state/autoHR/autoHR.selectors';
 
 @Component({
   selector: 'app-index',
@@ -27,7 +28,9 @@ import {Store} from '@ngrx/store';
     ]),
   ]
 })
-export class IndexComponent implements OnInit, AfterViewInit {
+export class IndexComponent implements OnInit, AfterViewInit, OnDestroy {
+  tasks$ = this.store.select(selectTasks);
+  config$ = this.store.select(selectAutoHRConfig);
   // просто список тасков. Мы его не меняем, работаем и обрабатываем.
   tasks: ITask[] = [];
   dataSource = new MatTableDataSource<ITask>();
@@ -58,10 +61,17 @@ export class IndexComponent implements OnInit, AfterViewInit {
     public apiService: ApiService,
     private store: Store
   ) {
-    this.api.getAllTasks().subscribe((tasks) => {
-      this.tasks = tasks;
-      const tableDataSrc = this.setTableIndex(0, this.tasks);
-      this.dataSource = new MatTableDataSource(tableDataSrc);
+
+    this.tasks$.subscribe(
+      (tasks: ITask[]) => {
+        this.tasks = tasks;
+        const tableDataSrc = this.setTableIndex(0, this.tasks);
+        this.dataSource = new MatTableDataSource(tableDataSrc);
+      }
+    );
+
+    this.config$.subscribe((config) => {
+      this.setTableData(config);
     });
   }
 
@@ -111,7 +121,6 @@ export class IndexComponent implements OnInit, AfterViewInit {
         this.competencesControl.patchValue(config.competence);
         this.popularityControl.patchValue(config.popularity);
         this.config = config;
-        this.setTableData(config);
         this.store.dispatch(setAutoHRConfig({config}));
       }
     });
@@ -187,11 +196,11 @@ export class IndexComponent implements OnInit, AfterViewInit {
 
       if (data.nextDifficulty.length > 0) {
         nextDifficulty = data.nextDifficulty.map((pr: string) => {
-          return this.tasks.filter(task => {
-            return +task.id === +pr;
+          return this.tasks.filter(t => {
+            return +t.id === +pr;
           })[0];
-        }).map((task: ITask) => {
-          return {id: task.id, caption: task.question};
+        }).map((t2: ITask) => {
+          return {id: t2.id, caption: t2.question};
         });
       }
 
@@ -216,13 +225,13 @@ export class IndexComponent implements OnInit, AfterViewInit {
   // открыть определенный ответ по id таска
   openSolution(id: string): void {
     this.step = 'catalog';
-    const task = this.tasks.filter(task => {
-      return task.id == id;
+    const task = this.tasks.filter(t => {
+      return t.id === id;
     })[0];
     this.openTaskAnswerPopup(task);
   }
 
-  // обновляем данные в таблице в соответсвии с новым конфигом
+  // обновляем данные в таблице в соответствии с новым конфигом
   refreshTable(): void {
     this.config = {
       count: this.tasksCount,
@@ -231,7 +240,7 @@ export class IndexComponent implements OnInit, AfterViewInit {
       competence: this.competencesControl.value,
       popularity: this.popularityControl.value
     };
-    this.setTableData(this.config);
+    this.store.dispatch(setAutoHRConfig({config: this.config}));
   }
 
   // фильтруем таски как надо и выставляем в таблицу
@@ -339,6 +348,8 @@ export class IndexComponent implements OnInit, AfterViewInit {
     if (type === 'close-block') {
       this.step = 'start';
     }
+
+    this.store.dispatch(clearAutoHRConfig());
   }
 
   // удаление таска
@@ -369,5 +380,9 @@ export class IndexComponent implements OnInit, AfterViewInit {
       indexedData.push({...data[j], tableIndex: i + 1});
     }
     return indexedData;
+  }
+
+  ngOnDestroy(): void {
+    this.store.dispatch(clearAutoHRConfig());
   }
 }

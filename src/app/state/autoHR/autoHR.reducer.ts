@@ -1,6 +1,6 @@
 import {createReducer, on} from '@ngrx/store';
 import * as fromTasks from './index';
-import {loadTasksFail, loadTasksSuccess, setAutoHRConfig} from './autoHR.actions';
+import {clearAutoHRConfig, loadTasksFail, loadTasksSuccess, setAutoHRConfig} from './autoHR.actions';
 import {ITask} from '../../shared/models/autoHR/question.model';
 import {ISobesConfigModel} from '../../shared/models/autoHR/sobesConfig.model';
 
@@ -17,13 +17,16 @@ export const tasksReducer = createReducer(initialTasksState,
 export const initialConfigState: ISobesConfigModel = {
   count: null,
   type: null,
-  difficulty: null,
-  competence: null,
-  popularity: null
+  difficulty: [],
+  competence: [],
+  popularity: []
 };
 export const configReducer = createReducer(initialConfigState,
   on(setAutoHRConfig, (state, {config}) => {
     return config;
+  }),
+  on(clearAutoHRConfig, () => {
+    return initialConfigState;
   })
 );
 
