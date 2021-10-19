@@ -4,6 +4,9 @@ import {ActivatedRoute} from '@angular/router';
 import {takeUntil} from 'rxjs/operators';
 import {BlogService} from '../../../core/services/blog/blog.service';
 import {Location} from '@angular/common';
+import {IQuestBookPart} from '../../models/blog/questBook.model';
+import {Store} from '@ngrx/store';
+import {clearActiveQuestBook, clearSelectedQuestBookPart} from '../../../state/blog/blog.actions';
 
 @Component({
   selector: 'app-book-quest',
@@ -17,13 +20,17 @@ export class BookQuestComponent implements OnInit, OnDestroy {
 
   constructor(private activatedRoute: ActivatedRoute,
               private blogService: BlogService,
-              public location: Location
+              public location: Location,
+              private store: Store
   ) {
     this.activatedRoute.params.pipe(
       takeUntil(this.unsubscribe$)
     ).subscribe(params => {
-      if (params.quest) {
-        this.blogService.getQuestPart(params.quest, params.part).subscribe((text: { part: string, id: number }) => {
+      if (params.quest && params.part) {
+        // this.store.dispatch(loadActiveQuestBook({activeQuestBookCollectionCaption: params.quest}));
+        // this.store.dispatch(setSelectedQuestBookPart({selectedPart: params.part}));
+
+        this.blogService.getQuestPart(params.quest, params.part).subscribe((text: IQuestBookPart) => {
           this.questTitle = params.quest;
           const parts = [];
 
@@ -71,6 +78,8 @@ export class BookQuestComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
+    this.store.dispatch(clearActiveQuestBook());
+    this.store.dispatch(clearSelectedQuestBookPart());
     this.unsubscribe$.complete();
   }
 

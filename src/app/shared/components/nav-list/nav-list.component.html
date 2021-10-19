@@ -19,10 +19,6 @@
     <mat-icon>fact_check</mat-icon>
     <a>Блог</a>
   </li>
-  <li [routerLink]="['socrates']">
-    <mat-icon>psychology</mat-icon>
-    <a>Socrates</a>
-  </li>
   <li *ngIf="(isAuth$| async) === true" (click)="apiService.logout()">
     <mat-icon>exit_to_app</mat-icon>
     <a>Выйти</a>

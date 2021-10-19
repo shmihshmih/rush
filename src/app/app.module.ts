@@ -1,6 +1,5 @@
 import {NgModule} from '@angular/core';
 import {SharedModule} from './shared/shared.module';
-import {SocratesModule} from './modules/socrates/socrates.module';
 import {BlogModule} from './modules/blog/blog.module';
 import {BrowserModule} from '@angular/platform-browser';
 import {AppRoutingModule} from './app-routing.module';
@@ -24,6 +23,8 @@ import * as fromTasks from './state/autoHR';
 import {authReducer} from './state/auth/auth.reducer';
 import {AuthEffects} from './state/auth/auth.effects';
 import {AutoHREffects} from './state/autoHR/autoHR.effects';
+import * as fromBlog from './state/blog';
+import {BlogEffects} from './state/blog/blog.effects';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,6 @@ import {AutoHREffects} from './state/autoHR/autoHR.effects';
     HttpClientModule,
     SharedModule,
     BlogModule,
-    SocratesModule,
     LanguagesModule,
     AutoHRModule,
     StoreModule.forRoot(StoreModuleReducers, {
@@ -55,7 +55,8 @@ import {AutoHREffects} from './state/autoHR/autoHR.effects';
     StoreModule.forFeature(fromWords.wordsFeatureKey, fromWords.wordsReducers),
     StoreModule.forFeature(fromTasks.autoHRFeatureKey, fromTasks.autoHRReducers),
     StoreModule.forFeature(fromAuth.authFeatureKey, authReducer),
-    EffectsModule.forRoot([WordsEffects, AuthEffects, AutoHREffects]),
+    StoreModule.forFeature(fromBlog.blogFeatureKey, fromBlog.blogReducers),
+    EffectsModule.forRoot([WordsEffects, AuthEffects, AutoHREffects, BlogEffects]),
     StoreDevtoolsModule.instrument({maxAge: 25, logOnly: environment.production})
   ],
   providers: [],

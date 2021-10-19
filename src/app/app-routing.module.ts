@@ -1,16 +1,12 @@
 import {NotFoundComponent} from './shared/components/not-found/not-found.component';
 import {NgModule} from '@angular/core';
-import {Routes, RouterModule} from '@angular/router';
+import {RouterModule, Routes} from '@angular/router';
 import {IndexComponent} from './shared/components/index/index.component';
 
 const routes: Routes = [
   {
     path: 'blog',
     loadChildren: () => import('./modules/blog/blog.module').then(m => m.BlogModule)
-  },
-  {
-    path: 'socrates',
-    loadChildren: () => import('./modules/socrates/socrates.module').then(m => m.SocratesModule)
   },
   {
     path: 'esperanto',

@@ -3,7 +3,8 @@
     <mat-card-header class="w-100">
       <mat-card-title fxLayout="row" fxLayoutAlign="space-between center" class="w-100">
         <h1 [routerLink]="['/', 'blog', 'bookquest', bookQuest.collection_caption, '1']"
-            [matTooltip]="'Книга-квест ' + bookQuest.title + '. Аавтор: ' + bookQuest.author" [matTooltipClass]="'toolTipClass'"
+            [matTooltip]="'Книга-квест ' + bookQuest.title + '. Автор: ' + bookQuest.author"
+            [matTooltipClass]="'toolTipClass'"
         >{{bookQuest.title}}</h1>
       </mat-card-title>
       <mat-card-subtitle>{{bookQuest.item_type}}</mat-card-subtitle>
