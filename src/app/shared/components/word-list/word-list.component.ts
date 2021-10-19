@@ -13,6 +13,7 @@ import {AddWordComponent} from '../popup/add-word/add-word.component';
 import {select, Store} from '@ngrx/store';
 import {setSelectedWordLists} from '../../../state/languages/words/words.actions';
 import {selectWords, selectWordsFromSelectedLists} from '../../../state/languages/words/words.selectors';
+import {selectIsAuth} from '../../../state/auth/auth.selectors';
 
 /**
  * Компоннет содержащий списки слов. Таблица.
@@ -23,6 +24,7 @@ import {selectWords, selectWordsFromSelectedLists} from '../../../state/language
   styleUrls: ['./word-list.component.scss']
 })
 export class WordListComponent implements OnInit, OnDestroy {
+  isAuth$ = this.store.select(selectIsAuth);
   unsubscribe$: Subject<boolean> = new Subject();
 
   displayedColumns: string[] = ['esperanto', 'english', 'russian'];
@@ -47,7 +49,7 @@ export class WordListComponent implements OnInit, OnDestroy {
     });
 
     // будем ли отображать админские функции
-    this.apiService.isAuth.subscribe(isAuth => {
+    this.isAuth$.subscribe(isAuth => {
       if (isAuth) {
         this.displayedColumns.push('actions');
       } else {

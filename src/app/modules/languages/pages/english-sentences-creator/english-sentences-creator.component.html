@@ -2,8 +2,10 @@
 
   <div fxFlex fxLayoutAlign="center center">
     <h1>Конструктор предложений</h1>
-    <mat-icon class="h1-icon" [matTooltip]="'Выбрать проверяемые времена, типы предложений, местоимения, глаголы и т.д.'"
-              [matTooltipClass]="'toolTipClass'" (click)="openSettings()">settings</mat-icon>
+    <mat-icon class="h1-icon"
+              [matTooltip]="'Выбрать проверяемые времена, типы предложений, местоимения, глаголы и т.д.'"
+              [matTooltipClass]="'toolTipClass'" (click)="openSettings()">settings
+    </mat-icon>
   </div>
 
   <div *ngIf="randomSentence" class="w-100" fxLayout="row" fxFlex fxLayoutAlign="center center">
@@ -14,7 +16,8 @@
       <div>Тип</div>
       <div>Ответ:</div>
     </div>
-    <div class="w-100 fs-5vw ow-anywhere lh-1 h-100" fxLayout="column" fxFlex fxLayoutAlign="start">
+    <div *ngIf="randomSentence.Pronoun && randomSentence.Verb" class="w-100 fs-5vw ow-anywhere lh-1 h-100"
+         fxLayout="column" fxFlex fxLayoutAlign="start">
       <div>{{randomSentence.Pronoun.russian}}</div>
       <div>{{randomSentence.Time}}</div>
       <div>{{randomSentence.Verb.russian}}</div>
@@ -25,7 +28,7 @@
 
   <div>
     <div fxLayoutAlign="center center">
-      <button color="primary" (click)="showAnswer()"   mat-button="">Ответ</button>
+      <button color="primary" (click)="showAnswer()" mat-button="">Ответ</button>
       <button color="primary" (click)="nextSentence()" mat-button="">Следующее</button>
     </div>
   </div>

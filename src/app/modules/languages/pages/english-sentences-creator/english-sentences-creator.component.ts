@@ -38,6 +38,12 @@ export class EnglishSentencesCreatorComponent implements OnInit, OnDestroy {
     Pronoun: IWord;
     Verb: IWord;
     answer: string;
+  } = {
+    Time: '',
+    SentenceType: '',
+    Pronoun: null,
+    Verb: null,
+    answer: ''
   };
   isShowAnswer = false;
 
@@ -269,6 +275,7 @@ export class EnglishSentencesCreatorComponent implements OnInit, OnDestroy {
 
   // создание примера
   createRandomSentence(): void {
+
     this.randomSentence = {
       Time: this.getRandomTime(),
       SentenceType: this.getRandomSentenceType(),
@@ -276,6 +283,11 @@ export class EnglishSentencesCreatorComponent implements OnInit, OnDestroy {
       Verb: this.getRandomVerb(),
       answer: ''
     };
+
+    if (!this.randomSentence.Pronoun || !this.randomSentence.Verb) {
+      return;
+    }
+
     switch (this.randomSentence.Time) {
       case 'Present Simple':
         this.createPresentSimpleSentence(this.randomSentence.SentenceType, this.randomSentence.Pronoun, this.randomSentence.Verb);

@@ -1,8 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {AuthComponent} from '../auth/auth.component';
 import {ApiService} from '../../../core/services/api.service';
 import {OverlayContainer} from '@angular/cdk/overlay';
 import {MatDialog} from '@angular/material/dialog';
+import {Store} from '@ngrx/store';
+import {selectIsAuth} from '../../../state/auth/auth.selectors';
 
 @Component({
   selector: 'app-nav-list',
@@ -10,12 +12,15 @@ import {MatDialog} from '@angular/material/dialog';
   styleUrls: ['./nav-list.component.scss']
 })
 export class NavListComponent implements OnInit {
+  isAuth$ = this.store.select(selectIsAuth);
 
   constructor(
     public apiService: ApiService,
     public overlayContainer: OverlayContainer,
-    public dialog: MatDialog
-  ) { }
+    public dialog: MatDialog,
+    private store: Store
+  ) {
+  }
 
   ngOnInit(): void {
   }

@@ -1,8 +1,10 @@
-import {Component, EventEmitter, HostBinding, Inject, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, HostBinding, OnInit, Output} from '@angular/core';
 import {OverlayContainer} from '@angular/cdk/overlay';
 import {AuthComponent} from '../auth/auth.component';
-import {MAT_DIALOG_DATA, MatDialog, MatDialogRef} from '@angular/material/dialog';
+import {MatDialog} from '@angular/material/dialog';
 import {ApiService} from '../../../core/services/api.service';
+import {selectIsAuth} from '../../../state/auth/auth.selectors';
+import {Store} from '@ngrx/store';
 
 @Component({
   selector: 'app-header',
@@ -10,13 +12,15 @@ import {ApiService} from '../../../core/services/api.service';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  isAuth$ = this.store.select(selectIsAuth);
   @Output() sidenav = new EventEmitter();
   @HostBinding('class') componentCssClass = 'my-theme';
 
   constructor(
     public apiService: ApiService,
     public overlayContainer: OverlayContainer,
-    public dialog: MatDialog) {
+    public dialog: MatDialog,
+    private store: Store) {
   }
 
   toggleTheme(): void {

@@ -1,6 +1,6 @@
 import {createReducer, on} from '@ngrx/store';
 import {State} from './index';
-import {makeAuthorizationFail, makeAuthorizationSuccess, setAuthDataFromLocalStorage} from './auth.actions';
+import {logout, makeAuthorizationFail, makeAuthorizationSuccess, setAuthDataFromLocalStorage} from './auth.actions';
 
 export const initialAuthState: State = {
   isAuth: false,
@@ -9,7 +9,7 @@ export const initialAuthState: State = {
 
 export const createAuthReducer = createReducer(initialAuthState,
   on(makeAuthorizationSuccess, (state, {authData}) => {
-    return {...state, user: authData};
+    return {...state, user: authData, isAuth: true};
   }),
   on(makeAuthorizationFail, (state, {error}) => {
     return error;
@@ -20,7 +20,10 @@ export const createAuthReducer = createReducer(initialAuthState,
     } else {
       return state;
     }
-
+  }),
+  on(logout, (state) => {
+    localStorage.removeItem('token');
+    return {...state, isAuth: false};
   }));
 
 export function authReducer(state, action): State {

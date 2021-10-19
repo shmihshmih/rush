@@ -10,6 +10,7 @@ import {IWordList} from '../../models/esperanto/word_list.interface';
 import {Store} from '@ngrx/store';
 import {selectWordLists} from '../../../state/languages/words/words.selectors';
 import {loadWordLists} from '../../../state/languages/words/words.actions';
+import {selectIsAuth} from '../../../state/auth/auth.selectors';
 
 @Component({
   selector: 'app-word-lists',
@@ -17,6 +18,7 @@ import {loadWordLists} from '../../../state/languages/words/words.actions';
   styleUrls: ['./word-lists.component.scss']
 })
 export class WordListsComponent implements OnInit, OnDestroy {
+  isAuth$ = this.store.select(selectIsAuth);
   unsubscribe$: Subject<boolean> = new Subject();
   mode: 'russian' | 'english' | 'esperanto' = 'english';
 

@@ -1,7 +1,10 @@
 import {Injectable, OnDestroy} from '@angular/core';
-import {BehaviorSubject, Observable, of, Subject} from 'rxjs';
+import {Observable, of, Subject} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
 import {environment} from '../../../environments/environment';
+import {Store} from '@ngrx/store';
+import {selectIsAuth} from '../../state/auth/auth.selectors';
+import {logout} from '../../state/auth/auth.actions';
 
 @Injectable({
   providedIn: 'root'
@@ -9,11 +12,12 @@ import {environment} from '../../../environments/environment';
 export class ApiService implements OnDestroy {
   public MAIN_SERVER = environment.MAIN_SERVER;
   public MAIN_SERVER_AUTH = environment.MAIN_SERVER_AUTH;
-  public isAuth: BehaviorSubject<boolean> = new BehaviorSubject(false);
+  public isAuth$: Observable<boolean> = this.store.select(selectIsAuth);
   unsubscribe$: Subject<boolean> = new Subject();
 
   constructor(
-    private httpClient: HttpClient
+    private httpClient: HttpClient,
+    private store: Store
   ) {
     // this.authWithToken().pipe(
     //   takeUntil(this.unsubscribe$)
@@ -37,8 +41,7 @@ export class ApiService implements OnDestroy {
   }
 
   logout(): void {
-    localStorage.removeItem('token');
-    this.isAuth.next(false);
+    this.store.dispatch(logout());
   }
 
   checkToken(): Observable<any> {

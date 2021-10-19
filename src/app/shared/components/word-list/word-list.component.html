@@ -1,5 +1,5 @@
 <div>
-  <div *ngIf="apiService.isAuth | async">
+  <div *ngIf="isAuth$ | async">
     <button fxFlex fxLayoutAlign="center" mat-button (click)="addWord()" color="primary">add new word</button>
   </div>
 
@@ -30,12 +30,15 @@
       </ng-container>
 
       <!-- actions Column -->
-      <ng-container *ngIf="apiService.isAuth | async" matColumnDef="actions">
+      <ng-container *ngIf="isAuth$ | async" matColumnDef="actions">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> actions</th>
         <td mat-cell *matCellDef="let row" [style.color]="'black'">
           <div>
-            <button mat-raised-button color="primary"><em (click)="updateWord(row)" class="material-icons-outlined">edit</em></button>
-            <button class="ml-16" mat-raised-button color="primary"><em (click)="delWord(row)" class="material-icons-outlined">delete</em></button>
+            <button mat-raised-button color="primary"><em (click)="updateWord(row)"
+                                                          class="material-icons-outlined">edit</em></button>
+            <button class="ml-16" mat-raised-button color="primary"><em (click)="delWord(row)"
+                                                                        class="material-icons-outlined">delete</em>
+            </button>
           </div>
         </td>
       </ng-container>

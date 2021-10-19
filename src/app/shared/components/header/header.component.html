@@ -10,13 +10,13 @@
   </div>
   <div fxLayout fxFlex fxLayoutAlign="flex-end">
     <ul class="toolbar-list">
-      <li *ngIf="(apiService.isAuth | async) === true" fxHide.lt-md><a [routerLink]="['']">Профиль </a></li>
+      <li *ngIf="(isAuth$ | async) === true" fxHide.lt-md><a [routerLink]="['']">Профиль </a></li>
       <li fxHide.lt-md><a [routerLink]="['esperanto']">Эсперанто </a></li>
       <li fxHide.lt-md><a [routerLink]="['english']">Английский</a></li>
       <li fxHide.lt-md><a [routerLink]="['blog']">Блог </a></li>
       <li fxHide.lt-md><a [routerLink]="['socrates']">Socrates </a></li>
-      <li *ngIf="(apiService.isAuth | async) === true" fxHide.lt-md (click)="apiService.logout()"><a>Выйти</a></li>
-      <li *ngIf="(apiService.isAuth | async) === false" fxHide.lt-md (click)="openAuth()"><a>Войти</a></li>
+      <li *ngIf="(isAuth$ | async) === true" fxHide.lt-md (click)="apiService.logout()"><a>Выйти</a></li>
+      <li *ngIf="(isAuth$ | async) === false" fxHide.lt-md (click)="openAuth()"><a>Войти</a></li>
       <li><a (click)="toggleTheme()">
         <mat-icon>brightness_medium</mat-icon>
       </a></li>

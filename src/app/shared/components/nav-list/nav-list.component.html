@@ -1,29 +1,37 @@
 <ul class="nav-list">
-  <li *ngIf="(apiService.isAuth | async) === true" [routerLink]="['']">
-    <mat-icon>face</mat-icon><a>Профиль</a>
+  <li *ngIf="(isAuth$ | async) === true" [routerLink]="['']">
+    <mat-icon>face</mat-icon>
+    <a>Профиль</a>
   </li>
   <li [routerLink]="['']">
-    <mat-icon>home</mat-icon><a>Главная</a>
+    <mat-icon>home</mat-icon>
+    <a>Главная</a>
   </li>
   <li [routerLink]="['esperanto']">
-    <mat-icon>language</mat-icon><a>Эсперанто</a>
+    <mat-icon>language</mat-icon>
+    <a>Эсперанто</a>
   </li>
   <li [routerLink]="['english']">
-    <mat-icon>chrome_reader_mode</mat-icon><a>Английский</a>
+    <mat-icon>chrome_reader_mode</mat-icon>
+    <a>Английский</a>
   </li>
   <li [routerLink]="['blog']">
-    <mat-icon>fact_check</mat-icon><a>Блог</a>
+    <mat-icon>fact_check</mat-icon>
+    <a>Блог</a>
   </li>
   <li [routerLink]="['socrates']">
-    <mat-icon>psychology</mat-icon><a>Socrates</a>
+    <mat-icon>psychology</mat-icon>
+    <a>Socrates</a>
   </li>
-  <li *ngIf="(apiService.isAuth | async) === true" (click)="apiService.logout()">
-    <mat-icon>exit_to_app</mat-icon><a>Выйти</a>
+  <li *ngIf="(isAuth$| async) === true" (click)="apiService.logout()">
+    <mat-icon>exit_to_app</mat-icon>
+    <a>Выйти</a>
   </li>
-<!--  <li *ngIf="(apiService.isAuth | async) === false" (click)="openAuth()">-->
-<!--    <mat-icon>login</mat-icon><a >Войти</a>-->
-<!--  </li>-->
+  <!--  <li *ngIf="(apiService.isAuth | async) === false" (click)="openAuth()">-->
+  <!--    <mat-icon>login</mat-icon><a >Войти</a>-->
+  <!--  </li>-->
   <li *ngIf="false" (click)="openAuth()">
-    <mat-icon>login</mat-icon><a >Войти</a>
+    <mat-icon>login</mat-icon>
+    <a>Войти</a>
   </li>
 </ul>

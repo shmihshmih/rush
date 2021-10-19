@@ -14,7 +14,14 @@ import {ModTaskPopupComponent} from '../../components/mod-task-popup/mod-task-po
 import {ApiService} from '../../../../core/services/api.service';
 import {clearAutoHRConfig, setAutoHRConfig} from '../../../../state/autoHR/autoHR.actions';
 import {Store} from '@ngrx/store';
-import {selectAutoHRConfig, selectTasks} from '../../../../state/autoHR/autoHR.selectors';
+import {
+  selectAutoHRConfig,
+  selectCompetenceCatalog,
+  selectDifficultyCatalog,
+  selectPopularityCatalog,
+  selectTasks
+} from '../../../../state/autoHR/autoHR.selectors';
+import {Observable} from 'rxjs';
 
 @Component({
   selector: 'app-index',
@@ -38,8 +45,13 @@ export class IndexComponent implements OnInit, AfterViewInit, OnDestroy {
   expandedElement: ITask | null = null;
   step: 'start' | 'interview' | 'catalog' = 'start';
 
+  difficultiesList$: Observable<string[]> = this.store.select(selectDifficultyCatalog);
   difficultiesList: string[] = [];
+
+  competencesList$: Observable<string[]> = this.store.select(selectCompetenceCatalog);
   competencesList: string[] = [];
+
+  popularityList$: Observable<string[]> = this.store.select(selectPopularityCatalog);
   popularityList: string[] = [];
 
   difficultiesControl = new FormControl();
@@ -82,13 +94,13 @@ export class IndexComponent implements OnInit, AfterViewInit, OnDestroy {
       }
     });
     // получаем справочники
-    this.api.getDifficulties().subscribe((difficulties) => {
+    this.difficultiesList$.subscribe((difficulties) => {
       this.difficultiesList = difficulties;
     });
-    this.api.getCompetences().subscribe((competences) => {
+    this.competencesList$.subscribe((competences) => {
       this.competencesList = competences;
     });
-    this.api.getPopularity().subscribe((popularity) => {
+    this.popularityList$.subscribe((popularity) => {
       this.popularityList = popularity;
     });
   }

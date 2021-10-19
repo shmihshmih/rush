@@ -3,16 +3,18 @@
     <mat-card-header class="w-100">
       <mat-card-title fxLayout="row" fxLayoutAlign="space-between center" class="w-100">
         <h1 [routerLink]="[mode === 'esperanto' ? 'vortlisto' : 'wordList', vortListo.collection_caption]"
-            [matTooltip]="'Карточки всех слов, которые есть в базе по теме <' + vortListo.collection_caption + '>'" [matTooltipClass]="'toolTipClass'"
+            [matTooltip]="'Карточки всех слов, которые есть в базе по теме <' + vortListo.collection_caption + '>'"
+            [matTooltipClass]="'toolTipClass'"
         >{{vortListo.caption[mode]}}</h1>
-        <div *ngIf="apiService.isAuth | async">
+        <div *ngIf="isAuth$ | async">
           <i (click)="updateWordList(vortListo)" class="material-icons-outlined">edit</i>
           <i (click)="delWordList(vortListo)" class="material-icons-outlined">delete</i>
         </div>
       </mat-card-title>
       <mat-card-subtitle>{{vortListo.level}}</mat-card-subtitle>
     </mat-card-header>
-    <div class="img-container" [routerLink]="[mode === 'esperanto' ? 'vortlisto' : 'wordList', vortListo.collection_caption]">
+    <div class="img-container"
+         [routerLink]="[mode === 'esperanto' ? 'vortlisto' : 'wordList', vortListo.collection_caption]">
       {{vortListo.cover}}
     </div>
     <mat-card-content [routerLink]="[mode === 'esperanto' ? 'vortlisto' : 'wordList', vortListo.collection_caption]">
@@ -21,16 +23,20 @@
       </p>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-raised-button color="primary" (click)="openListWord(vortListo.collection_caption)" [matTooltip]="'Открыть полный список слов по теме <' + vortListo.collection_caption + '> для просмотра'" [matTooltipClass]="'toolTipClass'">
+      <button mat-raised-button color="primary" (click)="openListWord(vortListo.collection_caption)"
+              [matTooltip]="'Открыть полный список слов по теме <' + vortListo.collection_caption + '> для просмотра'"
+              [matTooltipClass]="'toolTipClass'">
         <i class="material-icons-outlined">remove_red_eye</i>
       </button>
-      <button mat-raised-button color="primary" (click)="openCardExercise(vortListo.collection_caption)" [matTooltip]="'Открыть карточки проверки слов по теме <' + vortListo.collection_caption + '>'" [matTooltipClass]="'toolTipClass'">
+      <button mat-raised-button color="primary" (click)="openCardExercise(vortListo.collection_caption)"
+              [matTooltip]="'Открыть карточки проверки слов по теме <' + vortListo.collection_caption + '>'"
+              [matTooltipClass]="'toolTipClass'">
         <i class="material-icons-outlined">view_stream</i>
       </button>
     </mat-card-actions>
   </mat-card>
 
-  <mat-card *ngIf="(apiService.isAuth | async) === true" (click)="addList()" class="esperanto-main-card add-list">
+  <mat-card *ngIf="(isAuth$ | async) === true" (click)="addList()" class="esperanto-main-card add-list">
     <mat-card-content fxFlex fxLayoutAlign="center center">
       <button mat-raised-button color="primary">
         <i class="material-icons-outlined">add_circle_outline</i>
