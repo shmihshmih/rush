@@ -51,9 +51,7 @@ export const activeQuestBookReducer = createReducer(
     return {collection_caption, dataCollection, selectedPart};
   }),
   on(setSelectedQuestBookPart, (state, {selectedPart}) => {
-    console.log('selectedPart: ', selectedPart);
     const partWeNeed = state.dataCollection.filter(part => +part.id === +selectedPart)[0];
-    console.log('partWeNeed: ', partWeNeed);
     return {...state, selectedPart: partWeNeed};
   }),
   on(loadActiveQuestBookFail, (state, {error}) => {

@@ -12,6 +12,14 @@ export const selectQuestBooksCatalog = createSelector(
   }
 );
 
+/** get active quest book */
+export const selectActiveQuestBook = createSelector(
+  blogFeatureSelector,
+  (state: fromBlog.State) => {
+    return state.activeQuestBook;
+  }
+);
+
 /** get quest book part */
 export const selectQuestBookPart = createSelector(
   blogFeatureSelector,
