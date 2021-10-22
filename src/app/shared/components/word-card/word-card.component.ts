@@ -2,7 +2,7 @@ import {Component, HostListener, OnDestroy, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {EsperantoService} from '../../../core/services/esperanto/esperanto.service';
 import {takeUntil, tap} from 'rxjs/operators';
-import {forkJoin, Observable, Subject} from 'rxjs';
+import {Observable, Subject} from 'rxjs';
 import {MatDialog} from '@angular/material/dialog';
 import {WordCardHelpComponent} from './popup/word-card-help/word-card-help.component';
 import {WordCardSettingsComponent} from './popup/word-card-settings/word-card-settings.component';
@@ -10,6 +10,7 @@ import {IWord} from '../../models/esperanto/word.interface';
 import {Store} from '@ngrx/store';
 import {clearSelectedWordLists, setSelectedWordLists} from '../../../state/languages/words/words.actions';
 import {selectSelectedWordLists, selectWordsFromSelectedLists} from '../../../state/languages/words/words.selectors';
+import {IWordList} from '../../models/esperanto/word_list.interface';
 
 @Component({
   selector: 'app-word-card',
@@ -94,7 +95,6 @@ export class WordCardComponent implements OnInit, OnDestroy {
     const dialogRef = this.dialog.open(WordCardSettingsComponent, {
       panelClass: ['wordCardSettingsPopup'],
       data: {
-        // activeWordLists: this.activeWordLists,
         settings: {
           isRepeat: this.isRepeat,
           startLang: this.startLang,
@@ -125,25 +125,18 @@ export class WordCardComponent implements OnInit, OnDestroy {
 
   setCardSettings(
     settings: ISettings = {isRepeat: false, startLang: 'russian', finishLang: 'esperanto', isAuto: false, timer: null},
-    wordLists = []): void {
-    const allWordLists = [];
-    // this.listWord = [];
-    // this.activeWordLists = [];
+    wordLists: IWordList[]): void {
+    const activeWordLists: string[] = [];
     this.isRepeat = settings.isRepeat;
     this.startLang = settings.startLang;
     this.finishLang = settings.finishLang;
     this.isAuto = settings.isAuto;
     this.timer = settings.timer;
     wordLists.forEach(list => {
-      allWordLists.push(this.esperantoService.getWordsByWordList(list.collection_caption));
-      // this.activeWordLists.push(list.title);
+      activeWordLists.push(list.collection_caption);
     });
-    const allWordsFromAllLists: Observable<IWord[]> = forkJoin<IWord[]>([...allWordLists]);
-    // allWordsFromAllLists.subscribe((words: []) => {
-    //     words.forEach((list: IWord[]) => this.listWord.push(...list));
-    //     this.setWordInterval();
-    //   }
-    // );
+    this.store.dispatch(setSelectedWordLists({selectedWordLists: [...activeWordLists]}));
+    this.setWordInterval();
   }
 
   setWordInterval(): void {

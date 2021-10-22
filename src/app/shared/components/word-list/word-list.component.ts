@@ -16,7 +16,7 @@ import {selectWords, selectWordsFromSelectedLists} from '../../../state/language
 import {selectIsAuth} from '../../../state/auth/auth.selectors';
 
 /**
- * Компоннет содержащий списки слов. Таблица.
+ * Компонент содержащий списки слов. Таблица.
  */
 @Component({
   selector: 'app-word-list',

@@ -2,14 +2,14 @@ import {Component, ElementRef, Inject, OnInit, ViewChild} from '@angular/core';
 import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
 import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 import {COMMA, ENTER} from '@angular/cdk/keycodes';
-import {Observable} from 'rxjs';
+import {combineLatest, Observable} from 'rxjs';
 import {MatAutocomplete, MatAutocompleteSelectedEvent} from '@angular/material/autocomplete';
-import {map, startWith} from 'rxjs/operators';
+import {map, startWith, tap} from 'rxjs/operators';
 import {MatChipInputEvent} from '@angular/material/chips';
 import {EsperantoService} from '../../../../../core/services/esperanto/esperanto.service';
 import {IWordList} from '../../../../models/esperanto/word_list.interface';
 import {Store} from '@ngrx/store';
-import {selectWordLists} from '../../../../../state/languages/words/words.selectors';
+import {selectSelectedWordLists, selectWordLists} from '../../../../../state/languages/words/words.selectors';
 
 @Component({
   selector: 'app-word-card-settings',
@@ -23,8 +23,13 @@ export class WordCardSettingsComponent implements OnInit {
   separatorKeysCodes: number[] = [ENTER, COMMA];
   listCtrl = new FormControl();
   filteredLists: Observable<IWordList[]>;
+
+  allWordLists$: Observable<IWordList[]> = this.store.select(selectWordLists);
   allWordLists: IWordList[] = [];
+
+  activeWordLists$: Observable<string[]> = this.store.select(selectSelectedWordLists);
   activeWordLists: IWordList[] = [];
+
   @ViewChild('listInput') listInput: ElementRef<HTMLInputElement>;
   @ViewChild('auto') matAutocomplete: MatAutocomplete;
 
@@ -43,21 +48,37 @@ export class WordCardSettingsComponent implements OnInit {
       map((list: string | null) => list ? this._filter(list) : this.listsWithoutSelected())
     );
 
+    combineLatest([this.allWordLists$, this.activeWordLists$]).pipe(
+      tap((wordLists: [IWordList[], string[]]) => {
+        if ((wordLists[0].length > 0) && (wordLists[1].length > 0)) {
+
+          // листы, которые уже заняты
+          this.allWordLists = wordLists[0];
+          this.activeWordLists.forEach(activeWordList => {
+            const activeList = this.allWordLists.filter(
+              (list: IWordList) => list.caption.esperanto.toLowerCase() === activeWordList.collection_caption.toLowerCase()
+            )[0];
+            if (activeList) {
+              this.activeWordLists.push(activeList);
+            }
+          });
+
+          // листы активные
+          const awl = [];
+          wordLists[0].forEach((wordList: IWordList) => {
+            if (wordLists[1].some(list => wordList.collection_caption === list)) {
+              awl.push(wordList);
+            }
+          });
+          this.activeWordLists = [...awl];
+
+        }
+      })
+    ).subscribe();
     this.createWordCardSettingsForm();
 
     // патчим настройки по умолчанию
     this.formPatcher(this.wordCardSettingsForm, this.data.settings);
-
-    // получение списка всех списков слов
-    this.store.select(selectWordLists).subscribe(wordList => {
-      this.allWordLists = wordList;
-      this.data.activeWordLists.forEach(activeWordList => {
-        const activeList = this.allWordLists.filter((list: IWordList) => list.caption.esperanto.toLowerCase() === activeWordList.toLowerCase())[0];
-        if (activeList) {
-          this.activeWordLists.push(activeList);
-        }
-      });
-    });
   }
 
   add(event: MatChipInputEvent): void {

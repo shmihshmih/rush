@@ -48,7 +48,9 @@ export class BookQuestComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
 
-    this.activeQuestBook$.subscribe(activeQuestBook => {
+    this.activeQuestBook$.pipe(
+      takeUntil(this.unsubscribe$)
+    ).subscribe(activeQuestBook => {
       // если в нашем сторе нет нужной книги - грузим, если уже есть, больше не грузим
       if (this.questTitle && (activeQuestBook.collection_caption !== this.questTitle)) {
         this.store.dispatch(loadActiveQuestBook({activeQuestBookCollectionCaption: this.questTitle}));
@@ -100,8 +102,10 @@ export class BookQuestComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    this.store.dispatch(clearActiveQuestBook());
     this.store.dispatch(clearSelectedQuestBookPart());
+    this.store.dispatch(clearActiveQuestBook());
+    this.questTitle = null;
+    this.questPartParam = null;
     this.unsubscribe$.complete();
   }
 
