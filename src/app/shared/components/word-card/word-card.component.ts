@@ -88,6 +88,7 @@ export class WordCardComponent implements OnInit, OnDestroy {
       this.nextWord();
     } else {
       this.isShowAnswer = true;
+      console.log('check');
     }
   }
 
