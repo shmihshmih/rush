@@ -73,7 +73,6 @@ export class IndexComponent implements OnInit, AfterViewInit, OnDestroy {
     public apiService: ApiService,
     private store: Store
   ) {
-
     this.tasks$.subscribe(
       (tasks: ITask[]) => {
         this.tasks = tasks;
@@ -83,6 +82,7 @@ export class IndexComponent implements OnInit, AfterViewInit, OnDestroy {
     );
 
     this.config$.subscribe((config) => {
+      this.config = config;
       this.setTableData(config);
     });
   }
@@ -341,13 +341,7 @@ export class IndexComponent implements OnInit, AfterViewInit, OnDestroy {
    * @param type: 'reset-filters' | 'close-block'
    */
   goToStart(type: 'reset-filters' | 'close-block'): void {
-    this.config = {
-      count: 0,
-      type: 0,
-      difficulty: [],
-      competence: [],
-      popularity: []
-    };
+    this.store.dispatch(clearAutoHRConfig());
 
     this.dataSource = new MatTableDataSource(this.setTableIndex(0, this.tasks));
 
@@ -360,8 +354,6 @@ export class IndexComponent implements OnInit, AfterViewInit, OnDestroy {
     if (type === 'close-block') {
       this.step = 'start';
     }
-
-    this.store.dispatch(clearAutoHRConfig());
   }
 
   // удаление таска
