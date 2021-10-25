@@ -21,7 +21,7 @@ import {
   selectPopularityCatalog,
   selectTasks
 } from '../../../../state/autoHR/autoHR.selectors';
-import {Observable} from 'rxjs';
+import {combineLatest, Observable} from 'rxjs';
 
 @Component({
   selector: 'app-index',
@@ -73,17 +73,12 @@ export class IndexComponent implements OnInit, AfterViewInit, OnDestroy {
     public apiService: ApiService,
     private store: Store
   ) {
-    this.tasks$.subscribe(
-      (tasks: ITask[]) => {
+    combineLatest(this.tasks$, this.config$).subscribe(([tasks, config]) => {
+      if (tasks && config) {
         this.tasks = tasks;
-        const tableDataSrc = this.setTableIndex(0, this.tasks);
-        this.dataSource = new MatTableDataSource(tableDataSrc);
+        this.config = config;
+        this.setTableData(config);
       }
-    );
-
-    this.config$.subscribe((config) => {
-      this.config = config;
-      this.setTableData(config);
     });
   }
 
@@ -258,6 +253,13 @@ export class IndexComponent implements OnInit, AfterViewInit, OnDestroy {
   // фильтруем таски как надо и выставляем в таблицу
   setTableData(config: ISobesConfigModel): void {
     let newDataSource: ITask[] = [];
+
+    // если нет конфигов, отдаем все
+    if (!config.count) {
+      newDataSource = this.setTableIndex(0, this.tasks);
+      this.dataSource = new MatTableDataSource(newDataSource);
+      return;
+    }
 
     const matchedQuestions: ITask[] = [];
     const matchedExercises: ITask[] = [];
