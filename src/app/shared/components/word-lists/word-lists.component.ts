@@ -1,8 +1,6 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Observable, Subject} from 'rxjs';
-import {EsperantoService} from '../../../core/services/esperanto/esperanto.service';
 import {Router} from '@angular/router';
-import {ApiService} from '../../../core/services/api.service';
 import {MatDialog} from '@angular/material/dialog';
 import {AddListComponent} from '../popup/add-list/add-list.component';
 import {IWordList} from '../../models/esperanto/word_list.interface';
@@ -24,9 +22,7 @@ export class WordListsComponent implements OnInit, OnDestroy {
   public vortlistoj$: Observable<IWordList[]> = this.store.select(selectWordLists);
 
   constructor(
-    public esperantoService: EsperantoService,
     private router: Router,
-    public apiService: ApiService,
     public dialog: MatDialog,
     private store: Store
   ) {

@@ -2,7 +2,6 @@ import {Component, ElementRef, Inject, OnDestroy, OnInit, ViewChild} from '@angu
 import {Observable, Subject} from 'rxjs';
 import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
-import {EsperantoService} from '../../../../core/services/esperanto/esperanto.service';
 import {map, startWith, takeUntil} from 'rxjs/operators';
 import {MatAutocomplete, MatAutocompleteSelectedEvent} from '@angular/material/autocomplete';
 import {COMMA, ENTER} from '@angular/cdk/keycodes';
@@ -10,6 +9,7 @@ import {MatChipInputEvent} from '@angular/material/chips';
 import {IWordList} from '../../../models/esperanto/word_list.interface';
 import {Store} from '@ngrx/store';
 import {selectWordLists} from '../../../../state/languages/words/words.selectors';
+import {addWord, updateWord} from '../../../../state/languages/words/words.actions';
 
 @Component({
   selector: 'app-add-word',
@@ -37,7 +37,6 @@ export class AddWordComponent implements OnInit, OnDestroy {
     public fb: FormBuilder,
     public dialogRef: MatDialogRef<AddWordComponent>,
     @Inject(MAT_DIALOG_DATA) public data,
-    private esperantoService: EsperantoService,
     private store: Store
   ) {
   }
@@ -80,23 +79,13 @@ export class AddWordComponent implements OnInit, OnDestroy {
   }
 
   addWord(): void {
-    this.esperantoService.addWord(this.wordForm.value).pipe(
-      takeUntil(this.unsubscribe$)
-    ).subscribe(res => {
-      if (!res.error) {
-        this.dialogRef.close(res);
-      }
-    });
+    this.store.dispatch(addWord({newWord: this.wordForm.value}));
+    this.dialogRef.close();
   }
 
   updateWord(wordId): void {
-    this.esperantoService.updateWord({_id: wordId, ...this.wordForm.value}).pipe(
-      takeUntil(this.unsubscribe$)
-    ).subscribe(res => {
-      if (!res.error) {
-        this.dialogRef.close(res);
-      }
-    });
+    this.store.dispatch(updateWord({updatedWord: {_id: wordId, ...this.wordForm.value}}));
+    this.dialogRef.close();
   }
 
   add(event: MatChipInputEvent): void {

@@ -1,7 +1,5 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {IWord} from '../../../../shared/models/esperanto/word.interface';
-import {EsperantoService} from '../../../../core/services/esperanto/esperanto.service';
-import {ApiService} from '../../../../core/services/api.service';
 import {Subject} from 'rxjs';
 import {takeUntil} from 'rxjs/operators';
 import {EscSettingsPopupComponent} from '../../components/esc-settings-popup/esc-settings-popup.component';
@@ -50,8 +48,6 @@ export class EnglishSentencesCreatorComponent implements OnInit, OnDestroy {
   allWords$ = this.store.select(selectWordsFromSelectedLists);
 
   constructor(
-    private esperantoService: EsperantoService,
-    private apiService: ApiService,
     private dialog: MatDialog,
     private store: Store
   ) {

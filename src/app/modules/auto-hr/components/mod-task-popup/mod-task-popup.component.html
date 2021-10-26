@@ -101,37 +101,6 @@
           </mat-select>
         </mat-form-field>
       </div>
-      <h2>Связи</h2>
-      <div class="mb-24">
-        <div formArrayName="prevDifficulty">
-          <div *ngFor="let prev of prevDifficultyList.controls; let i=index">
-            <mat-form-field [style.width.%]="80">
-              <mat-label>Предущий вопрос {{i}}</mat-label>
-              <input matInput [formControlName]="i" placeholder="" value="{{prev}}">
-            </mat-form-field>
-            <button mat-icon-button color="warn" (click)="removeControl('prevDifficulty', i)">
-              <mat-icon>delete</mat-icon>
-            </button>
-          </div>
-        </div>
-        <button mat-raised-button color="primary" (click)="addControl('prevDifficulty')">Добавить предыдущий вопрос
-        </button>
-      </div>
-      <div class="mb-24">
-        <div formArrayName="nextDifficulty">
-          <div *ngFor="let next of nextDifficultyList.controls; let i=index">
-            <mat-form-field [style.width.%]="80">
-              <mat-label>Следующий вопрос {{i}}</mat-label>
-              <input matInput [formControlName]="i" placeholder="" value="{{next}}">
-            </mat-form-field>
-            <button mat-icon-button color="warn" (click)="removeControl('nextDifficulty', i)">
-              <mat-icon>delete</mat-icon>
-            </button>
-          </div>
-        </div>
-        <button mat-raised-button color="primary" (click)="addControl('nextDifficulty')">Добавить следующий вопрос
-        </button>
-      </div>
       <h2>Компетенции</h2>
       <div class="mb-24">
         <div formArrayName="competence">

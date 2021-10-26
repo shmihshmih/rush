@@ -2,16 +2,14 @@ import {Component, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {Observable, Subject} from 'rxjs';
 import {takeUntil} from 'rxjs/operators';
-import {EsperantoService} from '../../../core/services/esperanto/esperanto.service';
 import {IWord} from '../../models/esperanto/word.interface';
 import {MatTableDataSource} from '@angular/material/table';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatSort} from '@angular/material/sort';
-import {ApiService} from '../../../core/services/api.service';
 import {MatDialog} from '@angular/material/dialog';
 import {AddWordComponent} from '../popup/add-word/add-word.component';
 import {select, Store} from '@ngrx/store';
-import {setSelectedWordLists} from '../../../state/languages/words/words.actions';
+import {removeWord, setSelectedWordLists} from '../../../state/languages/words/words.actions';
 import {selectWords, selectWordsFromSelectedLists} from '../../../state/languages/words/words.selectors';
 import {selectIsAuth} from '../../../state/auth/auth.selectors';
 
@@ -36,8 +34,6 @@ export class WordListComponent implements OnInit, OnDestroy {
   words$: Observable<IWord[]>;
 
   constructor(private activatedRoute: ActivatedRoute,
-              private esperantoService: EsperantoService,
-              public apiService: ApiService,
               public dialog: MatDialog,
               private store: Store) {
 
@@ -101,15 +97,7 @@ export class WordListComponent implements OnInit, OnDestroy {
 
     dialogRef.afterClosed().pipe(
       takeUntil(this.unsubscribe$)
-    ).subscribe(result => {
-      if (!result) {
-        return;
-      }
-      if (result.item) {
-        // TODO в будущем не перезагружать и работать со списком, который уже вызван
-        this.loadListWords(result.item.params.word_type);
-      }
-    });
+    ).subscribe();
   }
 
   /**
@@ -142,14 +130,7 @@ export class WordListComponent implements OnInit, OnDestroy {
   delWord(word: IWord): void {
     const areYouSure = confirm('Точно удалить слово?');
     if (areYouSure) {
-      this.esperantoService.delWord(word).pipe(
-        takeUntil(this.unsubscribe$)
-      ).subscribe(res => {
-        if (res.item) {
-          // TODO в будущем не перезагружать и работать со списком, который уже вызван
-          // this.loadListWords(word.word_type);
-        }
-      });
+      this.store.dispatch(removeWord({deletedWord: word}));
     }
   }
 

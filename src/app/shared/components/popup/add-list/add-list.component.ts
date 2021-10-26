@@ -1,7 +1,6 @@
 import {Component, Inject, OnDestroy, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
-import {EsperantoService} from '../../../../core/services/esperanto/esperanto.service';
 import {Subject} from 'rxjs';
 import {Store} from '@ngrx/store';
 import {addWordList, updateWordList} from '../../../../state/languages/words/words.actions';
@@ -20,7 +19,6 @@ export class AddListComponent implements OnInit, OnDestroy {
     public fb: FormBuilder,
     public dialogRef: MatDialogRef<AddListComponent>,
     @Inject(MAT_DIALOG_DATA) public data,
-    private esperantoService: EsperantoService,
     private store: Store
   ) {
   }

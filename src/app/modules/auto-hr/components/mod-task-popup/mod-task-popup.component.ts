@@ -9,18 +9,12 @@ import {ITask} from '../../../../shared/models/autoHR/question.model';
   styleUrls: ['./mod-task-popup.component.css']
 })
 export class ModTaskPopupComponent implements OnInit {
+  // TODO
   types = ['question', 'exercise'];
   difficulties = ['beginner', 'junior', 'middle', 'senior'];
   popularities = ['1', '2', '3', '4', '5'];
+
   taskForm: FormGroup = new FormGroup({});
-
-  get prevDifficultyList() {
-    return this.taskForm.get('prevDifficulty') as FormArray;
-  }
-
-  get nextDifficultyList() {
-    return this.taskForm.get('nextDifficulty') as FormArray;
-  }
 
   get linkList() {
     return this.taskForm.controls.answer.get('link') as FormArray;
@@ -54,8 +48,6 @@ export class ModTaskPopupComponent implements OnInit {
     this.taskForm = this.fb.group({
       question: ['', Validators.required],
       description: ['', Validators.required],
-      prevDifficulty: this.fb.array([this.fb.control('')]),
-      nextDifficulty: this.fb.array([this.fb.control('')]),
       answer: this.fb.group({
         link: this.fb.array([this.fb.control('')]),
         text: this.fb.array([this.fb.control('', Validators.required)]),
@@ -81,8 +73,6 @@ export class ModTaskPopupComponent implements OnInit {
     this.linkList.clear();
     this.textList.clear();
     this.codeList.clear();
-    this.prevDifficultyList.clear();
-    this.nextDifficultyList.clear();
     this.competenceList.clear();
     // наполняем массивы
     data.answer.link?.forEach(link => {
@@ -94,24 +84,12 @@ export class ModTaskPopupComponent implements OnInit {
     data.answer.code?.forEach(code => {
       this.codeList.push(this.fb.control(code));
     });
-    data.prevDifficulty?.forEach(pd => {
-      this.prevDifficultyList.push(this.fb.control(pd.id));
-    });
-    data.nextDifficulty?.forEach(nd => {
-      this.nextDifficultyList.push(this.fb.control(nd.id));
-    });
     data.competence?.forEach(c => {
       this.competenceList.push(this.fb.control(c));
     });
   }
 
   addControl(controlName: string): void {
-    if (controlName === 'prevDifficulty') {
-      this.prevDifficultyList.push(this.fb.control(''));
-    }
-    if (controlName === 'nextDifficulty') {
-      this.nextDifficultyList.push(this.fb.control(''));
-    }
     if (controlName === 'link') {
       this.linkList.push(this.fb.control(''));
     }
@@ -127,12 +105,6 @@ export class ModTaskPopupComponent implements OnInit {
   }
 
   removeControl(controlName: string, i: number): void {
-    if (controlName === 'prevDifficulty') {
-      this.prevDifficultyList.removeAt(i);
-    }
-    if (controlName === 'nextDifficulty') {
-      this.nextDifficultyList.removeAt(i);
-    }
     if (controlName === 'link') {
       this.linkList.removeAt(i);
     }
@@ -148,7 +120,7 @@ export class ModTaskPopupComponent implements OnInit {
   }
 
   submit(): void {
-    let submitData = {...this.data.task, ...this.taskForm.value};
+    const submitData = {...this.data.task, ...this.taskForm.value};
     this.dialogRef.close(submitData);
   }
 

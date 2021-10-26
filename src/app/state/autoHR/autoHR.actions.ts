@@ -2,11 +2,27 @@ import {createAction, props} from '@ngrx/store';
 
 enum AutoHRActionsTypes {
   /** Задачи */
+    // 1. Получение всех задач
   loadTasks = '[AUTO HR] load tasks',
   loadTasksSuccess = '[AUTO HR] load tasks success',
+  loadTasksFail = '[AUTO HR] load tasks fail',
+
+  // 2. Добавление новой задачи
+  addTask = '[AUTO HR] add task',
+  addTaskSuccess = '[AUTO HR] add task success',
+  addTaskFail = '[AUTO HR] add task fail',
+
+  // 3. Удаление задачи
+  removeTask = '[AUTO HR] remove task',
+  removeTaskSuccess = '[AUTO HR] remove task success',
+  removeTaskFail = '[AUTO HR] remove task fail',
+
+  // 4. Редактирование задачи
+  updateTask = '[AUTO HR] update task',
+  updateTaskSuccess = '[AUTO HR] update task success',
+  updateTaskFail = '[AUTO HR] update task fail',
 
   /** Конфиги */
-  loadTasksFail = '[AUTO HR] load tasks fail',
   setAutoHRConfig = '[AUTO HR] set autoHR config',
   clearAutoHRConfig = `[AUTO HR] clear autoHR config`,
 
@@ -27,9 +43,25 @@ enum AutoHRActionsTypes {
 }
 
 /** Задачи */
+// 1. Получение всех задач
 export const loadTasks = createAction(AutoHRActionsTypes.loadTasks); // effect
 export const loadTasksSuccess = createAction(AutoHRActionsTypes.loadTasksSuccess, props<{ tasks }>());
 export const loadTasksFail = createAction(AutoHRActionsTypes.loadTasksFail, props<{ error }>());
+
+// 2. Добавление новой задачи
+export const addTask = createAction(AutoHRActionsTypes.addTask, props<{ newTask }>());
+export const addTaskSuccess = createAction(AutoHRActionsTypes.addTaskSuccess, props<{ newTask }>());
+export const addTaskFail = createAction(AutoHRActionsTypes.addTaskFail, props<{ error }>());
+
+// 3. Удаление задачи
+export const removeTask = createAction(AutoHRActionsTypes.removeTask, props<{ deletedTask }>());
+export const removeTaskSuccess = createAction(AutoHRActionsTypes.removeTaskSuccess, props<{ deletedTask }>());
+export const removeTaskFail = createAction(AutoHRActionsTypes.removeTaskFail, props<{ error }>());
+
+// 4. Редактирование задачи
+export const updateTask = createAction(AutoHRActionsTypes.updateTask, props<{ updatedTask }>());
+export const updateTaskSuccess = createAction(AutoHRActionsTypes.updateTaskSuccess, props<{ updatedTask }>());
+export const updateTaskFail = createAction(AutoHRActionsTypes.updateTaskFail, props<{ error }>());
 
 /** Конфиги */
 export const setAutoHRConfig = createAction(AutoHRActionsTypes.setAutoHRConfig, props<{ config }>());

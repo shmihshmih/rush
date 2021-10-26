@@ -3,14 +3,46 @@ import {createAction, props} from '@ngrx/store';
 /** words */
 
 enum WordsActionsTypes {
+  // 1. Получение всех слов
   loadWords = '[WORDS] load words',
   loadWordsSuccess = '[WORDS] load words success',
-  loadWordsFail = '[WORDS] load words fail'
+  loadWordsFail = '[WORDS] load words fail',
+
+  // 2. Добавление нового слова
+  addWord = '[WORDS] add new word',
+  addWordSuccess = '[WORDS] add new word success',
+  addWordFail = '[WORDS] add new word fail',
+
+  // 3. Удаление слова
+  removeWord = '[WORDS] delete word',
+  removeWordSuccess = '[WORDS] delete word Success',
+  removeWordFail = '[WORDS] delete word Fail',
+
+  // 4. Редактирование слова
+  updateWord = '[WORDS] update word',
+  updateWordSuccess = '[WORDS] update word Success',
+  updateWordFail = '[WORDS] update word Fail',
 }
 
+// 1. Получение всех слов
 export const loadWords = createAction(WordsActionsTypes.loadWords); // effect
 export const loadWordsSuccess = createAction(WordsActionsTypes.loadWordsSuccess, props<{ words }>());
 export const loadWordsFail = createAction(WordsActionsTypes.loadWordsFail, props<{ error: string }>());
+
+// 2. Добавление нового слова
+export const addWord = createAction(WordsActionsTypes.addWord, props<{ newWord }>()); // effect
+export const addWordSuccess = createAction(WordsActionsTypes.addWordSuccess, props<{ newWord }>());
+export const addWordFail = createAction(WordsActionsTypes.addWordFail, props<{ error }>());
+
+// 3. Удаление слова
+export const removeWord = createAction(WordsActionsTypes.removeWord, props<{ deletedWord }>()); // effect
+export const removeWordSuccess = createAction(WordsActionsTypes.removeWordSuccess, props<{ deletedWord }>());
+export const removeWordFail = createAction(WordsActionsTypes.removeWordFail, props<{ error }>());
+
+// 4. Редактирование слова
+export const updateWord = createAction(WordsActionsTypes.updateWord, props<{ updatedWord }>()); // effect
+export const updateWordSuccess = createAction(WordsActionsTypes.updateWordSuccess, props<{ updatedWord }>());
+export const updateWordFail = createAction(WordsActionsTypes.updateWordFail, props<{ error }>());
 
 /** wordLists */
 

@@ -5,14 +5,12 @@ import {MatTableDataSource} from '@angular/material/table';
 import {FormControl} from '@angular/forms';
 import {ISobesConfigModel} from '../../../../shared/models/autoHR/sobesConfig.model';
 import {MatSort} from '@angular/material/sort';
-import {AutoHRService} from '../../../../core/services/autohr/auto-hr.service';
 import {MatDialog} from '@angular/material/dialog';
 import {ActivatedRoute} from '@angular/router';
 import {InterviewPopupComponent} from '../../components/interview-popup/interview-popup.component';
 import {TaskAnswerPopupComponent} from '../../components/task-answer-popup/task-answer-popup.component';
 import {ModTaskPopupComponent} from '../../components/mod-task-popup/mod-task-popup.component';
-import {ApiService} from '../../../../core/services/api.service';
-import {clearAutoHRConfig, setAutoHRConfig} from '../../../../state/autoHR/autoHR.actions';
+import {addTask, clearAutoHRConfig, removeTask, setAutoHRConfig, updateTask} from '../../../../state/autoHR/autoHR.actions';
 import {Store} from '@ngrx/store';
 import {
   selectAutoHRConfig,
@@ -22,6 +20,7 @@ import {
   selectTasks
 } from '../../../../state/autoHR/autoHR.selectors';
 import {combineLatest, Observable} from 'rxjs';
+import {selectIsAuth} from '../../../../state/auth/auth.selectors';
 
 @Component({
   selector: 'app-index',
@@ -36,6 +35,7 @@ import {combineLatest, Observable} from 'rxjs';
   ]
 })
 export class IndexComponent implements OnInit, AfterViewInit, OnDestroy {
+  isAuth$ = this.store.select(selectIsAuth);
   tasks$ = this.store.select(selectTasks);
   config$ = this.store.select(selectAutoHRConfig);
   // просто список тасков. Мы его не меняем, работаем и обрабатываем.
@@ -66,11 +66,8 @@ export class IndexComponent implements OnInit, AfterViewInit, OnDestroy {
   @ViewChild(MatSort) sort: MatSort;
 
   constructor(
-    private api: AutoHRService,
     public dialog: MatDialog,
     public activatedRoute: ActivatedRoute,
-    public ahs: AutoHRService,
-    public apiService: ApiService,
     private store: Store
   ) {
     combineLatest(this.tasks$, this.config$).subscribe(([tasks, config]) => {
@@ -146,20 +143,8 @@ export class IndexComponent implements OnInit, AfterViewInit, OnDestroy {
 
   // очищение таски пустышек, которые возникают на форме создания/редактировани
   clearEmptyArrays(task: ITask): ITask {
-    const prevDifficulty: any[] = [];
-    const nextDifficulty: any[] = [];
     const answerLink: any[] = [];
     const answerCode: any[] = [];
-    task.prevDifficulty?.forEach(prev => {
-      if (prev) {
-        prevDifficulty.push(prev);
-      }
-    });
-    task.nextDifficulty?.forEach(next => {
-      if (next) {
-        nextDifficulty.push(next);
-      }
-    });
     task.answer.link?.forEach(link => {
       if (link) {
         answerLink.push(link);
@@ -170,7 +155,7 @@ export class IndexComponent implements OnInit, AfterViewInit, OnDestroy {
         answerCode.push(code);
       }
     });
-    return {...task, prevDifficulty, nextDifficulty, answer: {...task.answer, link: answerLink, code: answerCode}};
+    return {...task, answer: {...task.answer, link: answerLink, code: answerCode}};
   }
 
   // попап редактирования таска
@@ -187,44 +172,12 @@ export class IndexComponent implements OnInit, AfterViewInit, OnDestroy {
 
       data = this.clearEmptyArrays(data);
 
-      // с формы приходят только ид, тут мы докидываем caption, чтобы потом просто отображать в таблице
-      let prevDifficulty = [];
-      let nextDifficulty = [];
-
-      if (data.prevDifficulty.length > 0) {
-        prevDifficulty = data.prevDifficulty.map((pr: string) => {
-          return this.tasks.filter(task1 => {
-            return +task1.id === +pr;
-          })[0];
-        }).map((task2: ITask) => {
-          return {id: task2.id, caption: task2.question};
-        });
-      }
-
-      if (data.nextDifficulty.length > 0) {
-        nextDifficulty = data.nextDifficulty.map((pr: string) => {
-          return this.tasks.filter(t => {
-            return +t.id === +pr;
-          })[0];
-        }).map((t2: ITask) => {
-          return {id: t2.id, caption: t2.question};
-        });
-      }
-
       if (data._id) {
         // update
-        this.ahs.updateTask(data).subscribe(res => {
-          this.tasks[data.tableIndex - 1] = {...data, prevDifficulty, nextDifficulty};
-          const tableDataSrc = this.setTableIndex(0, this.tasks);
-          this.dataSource = new MatTableDataSource(tableDataSrc);
-        });
+        this.store.dispatch(updateTask({updatedTask: data}));
       } else {
         // create
-        this.ahs.addTask(data).subscribe(res => {
-          this.tasks.push({...data, prevDifficulty, nextDifficulty});
-          const tableDataSrc = this.setTableIndex(0, this.tasks);
-          this.dataSource = new MatTableDataSource(tableDataSrc);
-        });
+        this.store.dispatch(addTask({newTask: data}));
       }
     });
   }
@@ -364,12 +317,7 @@ export class IndexComponent implements OnInit, AfterViewInit, OnDestroy {
     if (!isRemove) {
       return;
     }
-    this.ahs.delTask(task).subscribe(res => {
-      const newDataSource = this.dataSource.filteredData.filter((item: ITask) => {
-        return item.id !== task.id;
-      });
-      this.dataSource = new MatTableDataSource(newDataSource);
-    });
+    this.store.dispatch(removeTask({deletedTask: task}));
   }
 
   // связываем вручную пагинатор и таблицу и данные

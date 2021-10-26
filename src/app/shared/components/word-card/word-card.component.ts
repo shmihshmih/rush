@@ -1,6 +1,5 @@
 import {Component, HostListener, OnDestroy, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
-import {EsperantoService} from '../../../core/services/esperanto/esperanto.service';
 import {takeUntil, tap} from 'rxjs/operators';
 import {Observable, Subject} from 'rxjs';
 import {MatDialog} from '@angular/material/dialog';
@@ -40,7 +39,6 @@ export class WordCardComponent implements OnInit, OnDestroy {
   }
 
   constructor(private activatedRoute: ActivatedRoute,
-              private esperantoService: EsperantoService,
               public dialog: MatDialog,
               private router: Router,
               private store: Store) {

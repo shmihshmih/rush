@@ -4,8 +4,6 @@ const QuestionSchema = new Schema({
   id: {type: String},  // систменый id
   question: {type: String}, // основная часть вопроса
   description: {type: String}, // описание задачи\вопроса
-  prevDifficulty: [{type: String}], // вопрос по теме, но полегче
-  nextDifficulty: [{type: String}], // вопрос по теме, но потруднее
   answer: {
     link: [{type: String}], // ссылка на ресурс
     text: [{type: String}], // самописный ответ

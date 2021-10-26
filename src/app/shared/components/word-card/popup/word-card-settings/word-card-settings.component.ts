@@ -6,7 +6,6 @@ import {combineLatest, Observable} from 'rxjs';
 import {MatAutocomplete, MatAutocompleteSelectedEvent} from '@angular/material/autocomplete';
 import {map, startWith, tap} from 'rxjs/operators';
 import {MatChipInputEvent} from '@angular/material/chips';
-import {EsperantoService} from '../../../../../core/services/esperanto/esperanto.service';
 import {IWordList} from '../../../../models/esperanto/word_list.interface';
 import {Store} from '@ngrx/store';
 import {selectSelectedWordLists, selectWordLists} from '../../../../../state/languages/words/words.selectors';
@@ -37,7 +36,6 @@ export class WordCardSettingsComponent implements OnInit {
     public dialogRef: MatDialogRef<WordCardSettingsComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any,
     public fb: FormBuilder,
-    private esperantoService: EsperantoService,
     private store: Store
   ) {
   }

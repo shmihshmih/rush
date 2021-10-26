@@ -4,6 +4,17 @@ import {AutoHRService} from '../../core/services/autohr/auto-hr.service';
 import {catchError, mergeMap, of} from 'rxjs';
 import {map} from 'rxjs/operators';
 import * as actions from './autoHR.actions';
+import {
+  addTask,
+  addTaskFail,
+  addTaskSuccess,
+  removeTask,
+  removeTaskFail,
+  removeTaskSuccess,
+  updateTask,
+  updateTaskFail,
+  updateTaskSuccess
+} from './autoHR.actions';
 
 @Injectable()
 export class AutoHREffects {
@@ -11,13 +22,40 @@ export class AutoHREffects {
               private autoHRService: AutoHRService) {
   }
 
-  /** Получение всех заданий */
+  /** Задание */
+    // 1. Получение всех задач
   loadTasks$ = createEffect(() => this.actions$.pipe(
     ofType(actions.loadTasks),
     mergeMap(() => this.autoHRService.getAllTasks().pipe(
       map(tasks => actions.loadTasksSuccess({tasks})),
       catchError(error => of(actions.loadTasksFail({error})))
     ))
+  ));
+
+  // 2. Добавление новой задачи
+  addTask$ = createEffect(() => this.actions$.pipe(
+    ofType(addTask),
+    mergeMap((action) => this.autoHRService.addTask(action.newTask).pipe(
+      map((newTask) => addTaskSuccess({newTask})),
+      catchError((error) => of(addTaskFail({error})))
+    ))
+  ));
+
+  // 3. Удаление задачи
+  removeTask$ = createEffect(() => this.actions$.pipe(
+    ofType(removeTask),
+    mergeMap((action) => this.autoHRService.delTask(action.deletedTask).pipe(
+      map((deletedTask) => removeTaskSuccess({deletedTask})),
+      catchError((error) => of(removeTaskFail({error})))
+    ))
+  ));
+  // 4. Редактирование задачи
+  updateTask$ = createEffect(() => this.actions$.pipe(
+    ofType(updateTask),
+    mergeMap((action) => this.autoHRService.updateTask(action.updatedTask).pipe(
+      map((updatedTask) => updateTaskSuccess({updatedTask})),
+      catchError((error) => of(updateTaskFail({error}))))
+    )
   ));
 
   /** Получение списка трудностей */

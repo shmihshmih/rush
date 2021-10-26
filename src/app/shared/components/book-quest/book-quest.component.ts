@@ -2,7 +2,6 @@ import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Subject} from 'rxjs';
 import {ActivatedRoute} from '@angular/router';
 import {takeUntil} from 'rxjs/operators';
-import {BlogService} from '../../../core/services/blog/blog.service';
 import {Location} from '@angular/common';
 import {IQuestBookPart} from '../../models/blog/questBook.model';
 import {Store} from '@ngrx/store';
@@ -31,7 +30,6 @@ export class BookQuestComponent implements OnInit, OnDestroy {
   questTitle: string;
 
   constructor(private activatedRoute: ActivatedRoute,
-              private blogService: BlogService,
               public location: Location,
               private store: Store
   ) {

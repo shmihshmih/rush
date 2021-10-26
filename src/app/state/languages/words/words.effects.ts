@@ -4,21 +4,30 @@ import {catchError, mergeMap, of} from 'rxjs';
 import {EsperantoService} from '../../../core/services/esperanto/esperanto.service';
 import {map} from 'rxjs/operators';
 import {
+  addWord,
+  addWordFail,
   addWordList,
   addWordListFail,
   addWordListSuccess,
+  addWordSuccess,
   loadWordLists,
   loadWordListsFail,
   loadWordListsSuccess,
   loadWords,
   loadWordsFail,
   loadWordsSuccess,
+  removeWord,
+  removeWordFail,
   removeWordList,
   removeWordListFail,
   removeWordListSuccess,
+  removeWordSuccess,
+  updateWord,
+  updateWordFail,
   updateWordList,
   updateWordListFail,
-  updateWordListSuccess
+  updateWordListSuccess,
+  updateWordSuccess
 } from './words.actions';
 
 @Injectable()
@@ -33,6 +42,33 @@ export class WordsEffects {
     mergeMap(() => this.esperantoService.getWords().pipe(
       map(words => loadWordsSuccess({words})),
       catchError((error) => of(loadWordsFail({error})))
+    ))
+  ));
+
+  /** Добавление нового слова */
+  addNewWord$ = createEffect(() => this.actions$.pipe(
+    ofType(addWord),
+    mergeMap((action) => this.esperantoService.addWord(action.newWord).pipe(
+      map((newWord) => addWordSuccess({newWord})),
+      catchError((error) => of(addWordFail({error})))
+    ))
+  ));
+
+  /** Удаление слова */
+  removeWord$ = createEffect(() => this.actions$.pipe(
+    ofType(removeWord),
+    mergeMap((action) => this.esperantoService.delWord(action.deletedWord).pipe(
+      map((deletedWord) => removeWordSuccess({deletedWord})),
+      catchError(({error}) => of(removeWordFail({error})))
+    ))
+  ));
+
+  /** Редактирование слова */
+  updateWord$ = createEffect(() => this.actions$.pipe(
+    ofType(updateWord),
+    mergeMap((action) => this.esperantoService.updateWord(action.updatedWord).pipe(
+      map((updatedWord) => updateWordSuccess({updatedWord})),
+      catchError((error) => of(updateWordFail({error})))
     ))
   ));
 

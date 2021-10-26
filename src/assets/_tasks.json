@@ -3,26 +3,6 @@
     "id": 1,
     "question": "Объясните\n делегирование событий",
     "description": "Красивым русским языком обьясните это явление. Пожалуйста!",
-    "prevDifficulty": [
-      {
-        "id": 1,
-        "caption": "Объясните\n делегирование событий"
-      },
-      {
-        "id": 3,
-        "caption": "Объясните,\n как this работает в JavaScript"
-      }
-    ],
-    "nextDifficulty": [
-      {
-        "id": 1,
-        "caption": "Объясните\n делегирование событий"
-      },
-      {
-        "id": 3,
-        "caption": "Объясните,\n как this работает в JavaScript"
-      }
-    ],
     "answer": {
       "link": [
         "https://davidwalsh.name/event-delegate",
@@ -50,8 +30,6 @@
     "id": 3,
     "question": "Объясните,\n как this работает в JavaScript",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "https://codeburst.io/the-simple-rules-to-this-in-javascript-35d97f31bde3",
@@ -74,8 +52,6 @@
     "id": 5,
     "question": "Расскажите,\n как работает прототипное наследование",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "https://www.quora.com/What-is-prototypal-inheritance/answer/Kyle-Simpson",
@@ -99,8 +75,6 @@
     "id": 7,
     "question": "Что\n вы думаете о AMD против CommonJS?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "https://auth0.com/blog/javascript-module-systems-showdown/",
@@ -123,8 +97,6 @@
     "id": 9,
     "question": "Объясните,\n почему это не является IIFE: `function foo(){ }();`. Что необходимо изменить,\n чтобы это стало IIFE??",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "http://lucybain.com/blog/2014/immediately-invoked-function-expression/",
@@ -146,8 +118,6 @@
     "id": 11,
     "question": "В\n чем различие между переменными, значение которых: `null`, `undefined` и не\n объявлено? Как бы вы проверили их на каждое из этих значений?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "https://stackoverflow.com/questions/15985875/effect-of-declared-and-undeclared-variables",
@@ -169,8 +139,6 @@
     "id": 13,
     "question": "Что\n такое замыкание и как/для чего его используют?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures",
@@ -192,8 +160,6 @@
     "id": 15,
     "question": "Можете\n ли вы описать основное различие между циклом `.forEach` и циклом `.map()`? И\n в каких случаях каждый из них используется?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "https://codeburst.io/javascript-map-vs-foreach-f38111822c0f"
@@ -214,8 +180,6 @@
     "id": 16,
     "question": "В\n каких случаях обычно используются анонимные функции?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "https://www.quora.com/What-is-a-typical-usecase-for-anonymous-functions",
@@ -237,8 +201,6 @@
     "id": 18,
     "question": "Как\n вы организуете свой код? (module pattern, classical inheritance)",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "https://medium.com/@dan_abramov/how-to-use-classes-and-sleep-at-night-9af8de78ccb4"
@@ -259,8 +221,6 @@
     "id": 19,
     "question": "В\n чем разница между host-объектами и нативными объектами?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "https://stackoverflow.com/questions/7614317/what-is-the-difference-between-native-objects-and-host-objects"
@@ -281,8 +241,6 @@
     "id": 20,
     "question": "В\n чем разница между: `function Person(){}`, `var person = Person()`, и `var\n person = new Person()`?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new"
@@ -303,8 +261,6 @@
     "id": 21,
     "question": "В\n чем разница между `.call` и `.apply`?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -323,8 +279,6 @@
     "id": 22,
     "question": "Что\n делает и для чего нужна функция `Function.prototype.bind`?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_objects/Function/bind"
@@ -345,8 +299,6 @@
     "id": 23,
     "question": "В\n каких случаях используется `document.write()`?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "https://www.quirksmode.org/blog/archives/2005/06/three_javascrip_1.html",
@@ -368,8 +320,6 @@
     "id": 25,
     "question": "В\n чем разница между feature detection (определение возможностей браузера),\n feature inference (предположение возможностей) и анализом строки user-agent?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection",
@@ -392,8 +342,6 @@
     "id": 28,
     "question": "Расскажите\n об Ajax как можно более подробно",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "https://en.wikipedia.org/wiki/Ajax_(programming)",
@@ -415,8 +363,6 @@
     "id": 30,
     "question": "Какие\n преимущества и недостатки в использовании Ajax?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -435,8 +381,6 @@
     "id": 31,
     "question": "Объясните,\n как работает JSONP (и почему это не совсем AJAX)",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "https://stackoverflow.com/a/2067584/1751946"
@@ -457,8 +401,6 @@
     "id": 32,
     "question": "Вы\n когда-нибудь использовали шаблонизацию на JavaScript? Если да, то какие\n библиотеки вы использовали?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -477,8 +419,6 @@
     "id": 33,
     "question": "Расскажите,\n что такое поднятие (hoisting)",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -497,8 +437,6 @@
     "id": 34,
     "question": "Объясните,\n что такое всплытие событий (event bubbling)",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "https://stackoverflow.com/questions/6003819/properties-and-attributes-in-html"
@@ -519,8 +457,6 @@
     "id": 35,
     "question": "Почему\n не следует расширять нативные JavaScript-объекты?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "http://lucybain.com/blog/2014/js-extending-built-in-objects/"
@@ -541,8 +477,6 @@
     "id": 36,
     "question": "В\n чем разница между событием `load` и событием `DOMContentLoaded`?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded",
@@ -564,8 +498,6 @@
     "id": 38,
     "question": "В\n чем разница между `==` и `===`?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "https://stackoverflow.com/questions/359494/which-equals-operator-vs-should-be-used-in-javascript-comparisons"
@@ -586,8 +518,6 @@
     "id": 39,
     "question": "Объясните\n same-origin policy в контексте JavaScript",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "https://en.wikipedia.org/wiki/Same-origin_policy"
@@ -608,8 +538,6 @@
     "id": 40,
     "question": "Сделайте\n так, чтобы этот код работал: duplicate([1, 2, 3, 4, 5]); //\n [1,2,3,4,5,1,2,3,4,5]",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -628,8 +556,6 @@
     "id": 41,
     "question": "Почему\n тернарный оператор так называется?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Conditional_Operator"
@@ -650,8 +576,6 @@
     "id": 42,
     "question": "Что\n делает строчка “use strict”;? Какие достоинства и недостатки от ее\n использования?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "http://2ality.com/2011/10/strict-mode-hatred.html",
@@ -673,8 +597,6 @@
     "id": 44,
     "question": "Напишите\n цикл, который перебирает числа до 100, возвращая ”fizz” на числа кратные 3,\n ”buzz” на числа кратные 5 и ”fizzbuzz” на числа кратные 3 и 5.",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "https://gist.github.com/jaysonrowe/1592432"
@@ -695,8 +617,6 @@
     "id": 45,
     "question": "Почему\n считается хорошим тоном оставить глобальную область видимости (global scope)\n в нетронутом состоянии?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -715,8 +635,6 @@
     "id": 46,
     "question": "Для\n чего используют событие `load`? Есть ли у этого события недостатки? Знаете ли\n вы какие-либо альтернативы, и в каких случаях бы стали их использовать?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onload"
@@ -737,8 +655,6 @@
     "id": 47,
     "question": "Расскажите,\n что такое одностраничное приложение, и как сделать его SEO-оптимизированным.",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "https://github.com/grab/front-end-guide#single-page-apps-spas",
@@ -762,8 +678,6 @@
     "id": 51,
     "question": "Насколько\n вы опытны в работе с промисами (promises) и/или их полифилами?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261"
@@ -784,8 +698,6 @@
     "id": 52,
     "question": "Какие\n преимущества и недостатки при использовании промисов вместо колбэков\n (callbacks)?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "https://github.com/getify/You-Dont-Know-JS/blob/master/async%20%26%20performance/ch3.md"
@@ -806,8 +718,6 @@
     "id": 53,
     "question": "Каковы\n преимущества и недостатки написания JavaScript-кода на языке, который\n компилируется в JavaScript?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "https://softwareengineering.stackexchange.com/questions/72569/what-are-the-pros-and-cons-of-coffeescript"
@@ -828,8 +738,6 @@
     "id": 54,
     "question": "Какие\n инструменты и методы вы используете при отладке кода?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "https://hackernoon.com/twelve-fancy-chrome-devtools-tips-dc1e39d10d9d",
@@ -851,8 +759,6 @@
     "id": 56,
     "question": "Какие\n языковые конструкции вы используете для итерации по свойствам объекта и\n элементам массива?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "http://2ality.com/2015/08/getting-started-es6.html#from-for-to-foreach-to-for-of",
@@ -874,8 +780,6 @@
     "id": 58,
     "question": "Объясните\n разницу между синхронными и асинхронными функциями",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "https://2014.jsconf.eu/speakers/philip-roberts-what-the-heck-is-the-event-loop-anyway.html",
@@ -897,8 +801,6 @@
     "id": 60,
     "question": "Объясните\n разницу при использовании `foo` в `function foo() {}` и `var foo = function()\n {}`",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function"
@@ -919,8 +821,6 @@
     "id": 61,
     "question": "В\n чем различие между переменными, созданными при помощи `let`, `var` и `const`?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let",
@@ -943,8 +843,6 @@
     "id": 64,
     "question": "В\n чем разница между классом в ES6 и функцией-конструктором в ES5?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance",
@@ -966,8 +864,6 @@
     "id": 66,
     "question": "Можете\n ли вы привести пример использования стрелочных функции =&gt;? Чем они\n отличаются от других функций?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -986,8 +882,6 @@
     "id": 67,
     "question": "В\n чем преимущество использования стрелочных функций для метода в конструкторе?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions",
@@ -1009,8 +903,6 @@
     "id": 69,
     "question": "Дайте\n определение функции высшего порядка",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "https://medium.com/javascript-scene/higher-order-functions-composing-software-5365cf2cbe99",
@@ -1033,8 +925,6 @@
     "id": 72,
     "question": "Можете\n ли вы привести пример деструктуризации объекта или массива?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment",
@@ -1056,8 +946,6 @@
     "id": 74,
     "question": "Шаблонные\n строки в ES6 намного упрощают создание строк, можете ли вы привести пример их\n использования?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals"
@@ -1078,8 +966,6 @@
     "id": 75,
     "question": "Можете\n ли вы привести пример каррированной функции (curry function) и в чем их\n преимущество?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "https://hackernoon.com/currying-in-js-d9ddc64f162e"
@@ -1100,8 +986,6 @@
     "id": 76,
     "question": "В\n чем преимущества использования spread оператора и чем он отличается от rest\n оператора?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax",
@@ -1124,8 +1008,6 @@
     "id": 79,
     "question": "Каким\n образом можно обмениваться кодом между файлами?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "http://requirejs.org/docs/whyamd.html",
@@ -1148,8 +1030,6 @@
     "id": 82,
     "question": "Для\n чего используются статические члены класса?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "https://stackoverflow.com/questions/21155438/when-to-use-static-variables-methods-and-when-to-use-instance-variables-methods"
@@ -1170,8 +1050,6 @@
     "id": 83,
     "question": "Можете\n ли вы описать разницу между прогрессивным улучшением и изящной деградацией?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1190,8 +1068,6 @@
     "id": 84,
     "question": "Как\n можно оптимизировать загрузку внешних ресурсов на странице?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1210,8 +1086,6 @@
     "id": 85,
     "question": "Объясните,\n что такое ARIA и скринридеры, а также как сделать сайт доступным.",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1230,8 +1104,6 @@
     "id": 86,
     "question": "Какие\n преимущества и недостатки у CSS и JavaScript анимаций?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1250,8 +1122,6 @@
     "id": 87,
     "question": "Что\n означает CORS и какую проблему решает?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1270,8 +1140,6 @@
     "id": 88,
     "question": "Как\n следует оформлять страницу, содержимое которой может быть на разных языках?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1290,8 +1158,6 @@
     "id": 89,
     "question": "На\n что необходимо обратить внимание при разработке мультиязычных сайтов?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1310,8 +1176,6 @@
     "id": 90,
     "question": "Для\n чего нужны атрибуты, начинающиеся с data-?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1330,8 +1194,6 @@
     "id": 91,
     "question": "Представьте\n HTML5 как открытую веб-платформу. Из каких блоков состоит HTML5?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1350,8 +1212,6 @@
     "id": 92,
     "question": "Объясните\n разницу между cookie, sessionStorage и localStorage.",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1370,8 +1230,6 @@
     "id": 93,
     "question": "Объясните\n разницу между &lt;script&gt;, &lt;script async&gt; и &lt;script defer&gt;.",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1390,8 +1248,6 @@
     "id": 94,
     "question": "Что\n такое прогрессивная отрисовка?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1410,8 +1266,6 @@
     "id": 95,
     "question": "Что\n такое прогрессивный рендеринг?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1430,8 +1284,6 @@
     "id": 97,
     "question": "Для\n чего используется атрибут srcset в теге изображения? Опишите процесс, который\n использует браузер при оценке содержимого этого атрибута.",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1450,8 +1302,6 @@
     "id": 98,
     "question": "Приходилось\n ли вам работать с языками HTML-шаблонизации?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1470,8 +1320,6 @@
     "id": 99,
     "question": "В\n чем разница между «сбросом» и «нормализацией» CSS? Что бы вы выбрали и\n почему?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1490,8 +1338,6 @@
     "id": 100,
     "question": "Какие\n вы знаете методы запрета обтекания (clearing) и в каких случаях они\n применяются?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1510,8 +1356,6 @@
     "id": 101,
     "question": "Использовали\n ли вы систему сеток, и если да, то какую вы предпочитаете?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1530,8 +1374,6 @@
     "id": 102,
     "question": "Можете\n ли вы привести пример свойства @media, отличного от screen?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1550,8 +1392,6 @@
     "id": 103,
     "question": "Объясните,\n что такое псевдоэлементы и для чего они нужны.",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1570,8 +1410,6 @@
     "id": 104,
     "question": "Объясните\n своими словами, что такое блочная модель.",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1590,8 +1428,6 @@
     "id": 105,
     "question": "Что\n делает * { box-sizing: border-box; }? В чем его преимущества?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1610,8 +1446,6 @@
     "id": 106,
     "question": "В\n чем разница между строчным и блочно-строчным элементом?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1630,8 +1464,6 @@
     "id": 107,
     "question": "Что\n вы думаете о AMD против CommonJS?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1650,8 +1482,6 @@
     "id": 108,
     "question": "В\n чём разница между классом в ES6 и функцией-конструктором в ES5?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1670,8 +1500,6 @@
     "id": 109,
     "question": "В\n чём различие между юнит-тестами и функциональными/интеграционными тестами?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1690,8 +1518,6 @@
     "id": 110,
     "question": "Объясните\n разницу между раскладкой (layout), painting и композитингом (compositing).",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1710,8 +1536,6 @@
     "id": 111,
     "question": "В\n чём различия между Long-Polling, Websockets и Server-Sent Events?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [
         "https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events",
@@ -1735,8 +1559,6 @@
     "id": 115,
     "question": "Опишите\n следующие заголовки HTTP-запросов и ответов:",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1755,8 +1577,6 @@
     "id": 116,
     "question": "Что\n такое HTTP-методы? Перечислите все HTTP-методы, которые вы знаете, и\n объясните их.",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1775,8 +1595,6 @@
     "id": 117,
     "question": "Вопрос:\n Чему равно foo? var foo = 10 + '20'",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1795,8 +1613,6 @@
     "id": 118,
     "question": "Что\n выводит код ниже? console.log(0.1 + 0.2 == 0.3);",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1815,8 +1631,6 @@
     "id": 119,
     "question": "Как\n сделать, чтобы это выражение работало?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1835,8 +1649,6 @@
     "id": 120,
     "question": "Какое\n значение возвращает данное выражение?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1855,8 +1667,6 @@
     "id": 121,
     "question": "Чему\n равно window.foo?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1875,8 +1685,6 @@
     "id": 122,
     "question": "Что\n покажут эти два alert?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1895,8 +1703,6 @@
     "id": 123,
     "question": "Чему\n равно foo.length?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1915,8 +1721,6 @@
     "id": 124,
     "question": "Чему\n равно foo.x?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1935,8 +1739,6 @@
     "id": 125,
     "question": "Что\n выводит код ниже?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1955,8 +1757,6 @@
     "id": 126,
     "question": "Реализовать\n методы, которые в процессе выполнения строки (2).plus(3).minus(1) дали бы на\n выходе 4.",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1975,8 +1775,6 @@
     "id": 127,
     "question": "Дана\n функция, она принимает в качестве аргументов строки '*', '1', 'b', '1c',\n реализуйте ее так, что бы она вернула строку '1*b*1c'",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -1995,8 +1793,6 @@
     "id": 128,
     "question": "Можно\n ли из js менять значения в before, after?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2015,8 +1811,6 @@
     "id": 129,
     "question": "Вместить\n три блока 20X20px в ряд, в блок шириной 60px, при этом у блоков должны быть\n границы.",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2035,8 +1829,6 @@
     "id": 130,
     "question": "Как\n применяются скругленные углы для элементов и стили для текста(шрифт, тип\n шрифта, цветащте и тд)?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2055,8 +1847,6 @@
     "id": 131,
     "question": "Что\n такое ресет стилей?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2075,8 +1865,6 @@
     "id": 132,
     "question": "Требуется\n сверстать попап по центру, его размеры нам известны, но мы не хотим что бы он\n прокручивался вместе со страницей, причем по высоте может и не влезать в\n высоту экрана.",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2095,8 +1883,6 @@
     "id": 133,
     "question": "Нарисовать\n стилями полукруг.",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2115,8 +1901,6 @@
     "id": 134,
     "question": "Есть\n массив в котором лежат объекты с датами, отсортировать по датам.",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2135,8 +1919,6 @@
     "id": 135,
     "question": "Есть\n несколько слов, определить состоят ли они из одних и тех же букв('кот',\n 'ток', 'окт')",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2155,8 +1937,6 @@
     "id": 136,
     "question": "И\n конечно вопрос на засыпку: «Каким образом можно обойтись без промисов?».",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2175,8 +1955,6 @@
     "id": 137,
     "question": "У\n нас есть три запроса к серверу, один возвращает нам имя пользователя, второй\n его данные, а третий изображение для аватарки, мы для каждого запроса\n используем по промису, объединяя их в цепочку, что будет если в одном из\n запросов произойдет ошибка, довыполнится ли цепочка?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2195,8 +1973,6 @@
     "id": 138,
     "question": "Промисы\n все разрастаются и на смену Callback Hell приходит Promise Hell. Что же\n делать?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2215,8 +1991,6 @@
     "id": 139,
     "question": "Вообще\n вопросы на setTimeout и setInterval весьма актуальны.Меня спрашивали: «Какое\n минимальное время можно задать?»",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2235,8 +2009,6 @@
     "id": 140,
     "question": "Надо\n написать функцию, которая вернет «hello world», но при этом в теле функции\n нельзя использовать ни цифры, ни буквы, а циклы, массивы, объекты можно, но\n без цифр.",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2255,8 +2027,6 @@
     "id": 141,
     "question": "От\n них же. Числа от 1 до 100 лежат в массиве, они хаотично перемешанные, от туда\n изъяли одно число, надо найти, что это за число. алгоритм не должен превышать\n O(n^2) сложности.",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2275,8 +2045,6 @@
     "id": 142,
     "question": "Как\n быстрее всего найти сумму элементов массива?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2295,8 +2063,6 @@
     "id": 143,
     "question": "Реализовать\n Foo",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2315,8 +2081,6 @@
     "id": 144,
     "question": "Задача\n про палиндром",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2335,8 +2099,6 @@
     "id": 145,
     "question": "Чем\n opacity отличается от visible: hidden и что это такое, отличие от overflow:\n hidden?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2355,8 +2117,6 @@
     "id": 146,
     "question": "Реализовать\n функцию f: f(2, 3) -&gt; 5, при вызове f(2)(3), тоже вернет 5",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2375,8 +2135,6 @@
     "id": 147,
     "question": "На\n собесе на прошлую работу мне попался вопрос: 'Что такое live/die'",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2395,8 +2153,6 @@
     "id": 148,
     "question": "JSONP,\n как реализовать",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2415,8 +2171,6 @@
     "id": 149,
     "question": "Ускорение\n загрузки страницы.",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2435,8 +2189,6 @@
     "id": 150,
     "question": "Еще\n интересный пример. Реализовать методы seven, plus, one, five, minus, two.\n seven(plus(one())) -&gt; 8. five(minus(two())) -&gt; 3",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2455,8 +2207,6 @@
     "id": 151,
     "question": "Сортировка\n пузырьком.",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2475,8 +2225,6 @@
     "id": 152,
     "question": "Обратная\n польская нотация.",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2495,8 +2243,6 @@
     "id": 153,
     "question": "Есть\n div, в нем другой div, у второго задан padding 50%, как это все будет\n выглядеть?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2515,8 +2261,6 @@
     "id": 154,
     "question": "Есть\n строка, состоящая из разных скобок, проверить закрыты ли все. Пример строки:\n \"())({}}{()][][\"",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2535,8 +2279,6 @@
     "id": 155,
     "question": "Напишите\n код, который при клике на любой div внутри root будет выводить в консоль его\n id.",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2555,8 +2297,6 @@
     "id": 156,
     "question": "Напишите\n код, который сделает из массива объект",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2575,8 +2315,6 @@
     "id": 157,
     "question": "Что\n выведется в результате?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2595,8 +2333,6 @@
     "id": 158,
     "question": "Есть\n функция и объект. Напишите все известные вам способы, чтобы вывести в консоли\n значение x из объекта используя функцию",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2615,8 +2351,6 @@
     "id": 159,
     "question": "Что\n вернет метод?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2635,8 +2369,6 @@
     "id": 160,
     "question": "В\n js переменные объявленные следующим образом: <br>\n a=3; b=«hello»; <br>\n ",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2655,8 +2387,6 @@
     "id": 161,
     "question": "Что\n вернёт этот код — typeof (function(){})()",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2675,8 +2405,6 @@
     "id": 162,
     "question": "Что\n будет если задать margin: -10px;",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2695,8 +2423,6 @@
     "id": 163,
     "question": "Почему\n 0.1 + 0.2 даст 0.30000000000000004",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2715,8 +2441,6 @@
     "id": 164,
     "question": "Написать\n полифилл для Promise.",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2735,8 +2459,6 @@
     "id": 165,
     "question": "Реализовать\n аналог Promise.all.",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2755,8 +2477,6 @@
     "id": 166,
     "question": "Задача:\n Реализовать аналог Promise.all.",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2775,8 +2495,6 @@
     "id": 167,
     "question": "Задача:\n Реализовать аналог Function.prototype.bind.",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2795,8 +2513,6 @@
     "id": 168,
     "question": "Что\n такое делегирование событий? Плюсы/минусы/подводные камни.",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2815,8 +2531,6 @@
     "id": 169,
     "question": "Задача:\n Логическое продолжение предыдущего вопроса — реализовать делегирование.",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2835,8 +2549,6 @@
     "id": 170,
     "question": "Задача:\n Уникализация значений в массиве.",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2855,8 +2567,6 @@
     "id": 171,
     "question": "Задача:\n «Расплющивание» массива.",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2875,8 +2585,6 @@
     "id": 172,
     "question": "Задача:\n Написать функцию, принимающую аргументом массив чисел и возвращающую новый\n массив, состоящий из удвоенных значений первого.",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2895,8 +2603,6 @@
     "id": 173,
     "question": "Задача:\n Обход дерева",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2915,8 +2621,6 @@
     "id": 174,
     "question": "Задача:\n Сумма вершин дерева",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2935,8 +2639,6 @@
     "id": 175,
     "question": "Задача:\n Сортировка нечётных.",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2955,8 +2657,6 @@
     "id": 176,
     "question": "Задача:\n Идентичный алфавит",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2975,8 +2675,6 @@
     "id": 177,
     "question": "Задача:\n Бомба",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -2995,8 +2693,6 @@
     "id": 178,
     "question": "Задача:\n «Сжатие строк»",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3015,8 +2711,6 @@
     "id": 179,
     "question": "Вопрос:\n Что получится в результате выполнения кода и почему?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3035,8 +2729,6 @@
     "id": 180,
     "question": "Вопрос:\n Как передать изображение размером 10Mb с помощью GET-запроса?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3055,8 +2747,6 @@
     "id": 181,
     "question": "Вопрос:\n Назовите известные вам HTTP-методы. Что такое CRUD?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3075,8 +2765,6 @@
     "id": 182,
     "question": "Палиндром",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3095,8 +2783,6 @@
     "id": 183,
     "question": "FizzBuzz",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3115,8 +2801,6 @@
     "id": 184,
     "question": "Анаграмма",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3135,8 +2819,6 @@
     "id": 185,
     "question": "Найти\n гласные",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3155,8 +2837,6 @@
     "id": 186,
     "question": "Фибоначчи",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3175,8 +2855,6 @@
     "id": 187,
     "question": "Что\n выведется в консоль ? Объясните почему.",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3195,8 +2873,6 @@
     "id": 188,
     "question": "Напишите\n простую функцию, чтобы узнать равен ли один из входных параметров 3.",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3215,8 +2891,6 @@
     "id": 189,
     "question": "Объедините\n два массива с вложенностью <br>\n [1, [1, 2, [3, 4]], [2, 4]] -&gt; [1, 1, 2, 3, 4, 2, 4] <br>\n ",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3235,8 +2909,6 @@
     "id": 190,
     "question": "В\n чем разница между standards mode и quirks mode?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3255,8 +2927,6 @@
     "id": 191,
     "question": "Что-такое\n хэш-таблица?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3275,8 +2945,6 @@
     "id": 192,
     "question": "Как\n получить параметры из URL’а текущего окна?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3295,8 +2963,6 @@
     "id": 193,
     "question": "Какое\n значение возвращает данное предложение? ~~3.14",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3315,8 +2981,6 @@
     "id": 194,
     "question": "var\n foo = {}; <br>\n foo.bar = 'hello'; <br>\n Вопрос: Чему равно foo.length? <br>\n ",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3335,8 +2999,6 @@
     "id": 195,
     "question": "армия\n функций",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3355,8 +3017,6 @@
     "id": 196,
     "question": "кофеварка",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3375,8 +3035,6 @@
     "id": 197,
     "question": "Что\n такое функциональное программирование и какие особенности JS позволяют\n говорить о нем как о функциональном языке программирования?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3395,8 +3053,6 @@
     "id": 198,
     "question": "Представьте\n HTML5 как открытую веб-платформу. Из каких блоков состоит HTML5?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3415,8 +3071,6 @@
     "id": 199,
     "question": "Мемоизация",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3435,8 +3089,6 @@
     "id": 200,
     "question": "Типы\n данных",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3455,8 +3107,6 @@
     "id": 201,
     "question": "queue",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3473,8 +3123,6 @@
     "id": 203,
     "question": "event\n loop",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3491,8 +3139,6 @@
     "id": 205,
     "question": "heap",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3509,8 +3155,6 @@
     "id": 207,
     "question": "call\n stack",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3527,8 +3171,6 @@
     "id": 209,
     "question": "web\n api",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3545,8 +3187,6 @@
     "id": 211,
     "question": "scope\n chain",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3563,8 +3203,6 @@
     "id": 213,
     "question": "scope",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3581,8 +3219,6 @@
     "id": 215,
     "question": "global\n scope",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3599,8 +3235,6 @@
     "id": 217,
     "question": "local\n scope",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3617,8 +3251,6 @@
     "id": 219,
     "question": "block\n scope",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3635,8 +3267,6 @@
     "id": 221,
     "question": "execution\n context",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3653,8 +3283,6 @@
     "id": 223,
     "question": "hoisting",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3671,8 +3299,6 @@
     "id": 225,
     "question": "service\n worker",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3689,8 +3315,6 @@
     "id": 227,
     "question": "stream\n of bytes",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3707,8 +3331,6 @@
     "id": 229,
     "question": "byte\n stream decoder",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3725,8 +3347,6 @@
     "id": 231,
     "question": "pre-parser",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3743,8 +3363,6 @@
     "id": 233,
     "question": "parser",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3761,8 +3379,6 @@
     "id": 235,
     "question": "Abstract\n Syntax Tree (AST)",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3779,8 +3395,6 @@
     "id": 237,
     "question": "interpreter",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3797,8 +3411,6 @@
     "id": 239,
     "question": "optimizing\n compiler",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3815,8 +3427,6 @@
     "id": 241,
     "question": "prototypal\n inheritance",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3833,8 +3443,6 @@
     "id": 243,
     "question": "\n <div style=\"left:3px;overflow:hidden;position:relative\">\n <div style=\"float:left\">prototype (у класса ссылка на constructor)</div>\n </div>",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3851,8 +3459,6 @@
     "id": 245,
     "question": "\n <div style=\"left:3px;overflow:hidden;position:relative\">\n <div style=\"float:left\">__proto__ (reference to Class.prototype)</div>\n </div>",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3869,8 +3475,6 @@
     "id": 247,
     "question": "prototype\n chain",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3887,8 +3491,6 @@
     "id": 249,
     "question": "generator\n functions",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3905,8 +3507,6 @@
     "id": 251,
     "question": "run-to-completion\n model",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3923,8 +3523,6 @@
     "id": 253,
     "question": "generator\n object",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3941,8 +3539,6 @@
     "id": 255,
     "question": "iterator",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3959,8 +3555,6 @@
     "id": 257,
     "question": "\n <div style=\"left:3px;overflow:hidden;position:relative\">\n <div style=\"float:left\">[Symbol.iterator] (можно добавить в объект и он будет\n итерируемым, как массив)</div>\n </div>",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3977,8 +3571,6 @@
     "id": 259,
     "question": "lazily\n evaluated",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -3995,8 +3587,6 @@
     "id": 261,
     "question": "Promise",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4013,8 +3603,6 @@
     "id": 263,
     "question": "Callback\n Hell",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4031,8 +3619,6 @@
     "id": 265,
     "question": "export\\import\n &amp;&amp; modules",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4049,8 +3635,6 @@
     "id": 267,
     "question": "Массивы",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4067,8 +3651,6 @@
     "id": 269,
     "question": "Стеки",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4085,8 +3667,6 @@
     "id": 271,
     "question": "Очереди",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4103,8 +3683,6 @@
     "id": 273,
     "question": "Связные\n списки",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4121,8 +3699,6 @@
     "id": 275,
     "question": "Деревья",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4139,8 +3715,6 @@
     "id": 277,
     "question": "Графы",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4157,8 +3731,6 @@
     "id": 279,
     "question": "\n <div style=\"left:3px;overflow:hidden;position:relative\">\n <div style=\"float:left\">Боры (в сущности, это тоже деревья, но их\n целесообразно рассмотреть отдельно). Префиксное дерево (Trie)</div>\n </div>",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4175,8 +3747,6 @@
     "id": 281,
     "question": "Хеш-таблицы",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4193,8 +3763,6 @@
     "id": 283,
     "question": "\n <div style=\"left:3px;overflow:hidden;position:relative\">\n <div style=\"float:left\">Компиляторы: AOT agead-of-time(компилируют до\n выполнения); JIT - Just-in-time</div>\n </div>",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4211,8 +3779,6 @@
     "id": 285,
     "question": "Inline\n caches",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4229,8 +3795,6 @@
     "id": 287,
     "question": "Hidden\n class",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4247,8 +3811,6 @@
     "id": 289,
     "question": "Компилятор\n Codegen",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4265,8 +3827,6 @@
     "id": 291,
     "question": "Компилятор\n Turbofan",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4283,8 +3843,6 @@
     "id": 293,
     "question": "Компилятор\n Crankshaft",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4301,8 +3859,6 @@
     "id": 295,
     "question": "Интерпретатор\n Ignition",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4319,8 +3875,6 @@
     "id": 297,
     "question": "\n <div style=\"left:3px;overflow:hidden;position:relative\">\n <div style=\"float:left\">S - single responsobility - все связи выносить в\n отдельные сущности (единственность зависимости)</div>\n </div>",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4337,8 +3891,6 @@
     "id": 299,
     "question": "\n <div style=\"left:3px;overflow:hidden;position:relative\">\n <div style=\"float:left\">O - open closed principles - можем расширять, но не\n менять</div>\n </div>",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4355,8 +3907,6 @@
     "id": 301,
     "question": "\n <div style=\"left:3px;overflow:hidden;position:relative\">\n <div style=\"float:left\">L - Liskov substitution principle - принцип\n подстановки, обьекты нследники должны иметь туже логику</div>\n </div>",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4373,8 +3923,6 @@
     "id": 303,
     "question": "\n <div style=\"left:3px;overflow:hidden;position:relative\">\n <div style=\"float:left\">I - Interface segregation principle - не использовать\n слишком большие не связаннные контракты, интерфейсы маленькие, чтобы не один\n обьет работал со всеми</div>\n </div>",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4391,8 +3939,6 @@
     "id": 305,
     "question": "\n <div style=\"left:3px;overflow:hidden;position:relative\">\n <div style=\"float:left\">D - Dependency inversion principle - decupling</div>\n </div>",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4409,8 +3955,6 @@
     "id": 307,
     "question": "Какие\n есть типы переменных?",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4427,8 +3971,6 @@
     "id": 309,
     "question": "В\n чем отличие null и undefined",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4445,8 +3987,6 @@
     "id": 311,
     "question": "Логические\n операторы",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4463,8 +4003,6 @@
     "id": 313,
     "question": "Различие\n операторов сравнения",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4481,8 +4019,6 @@
     "id": 315,
     "question": "Какие\n есть falsy значения",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4499,8 +4035,6 @@
     "id": 317,
     "question": "Блочная\n область видимости, функциональная",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4517,8 +4051,6 @@
     "id": 319,
     "question": "Чем\n отличаются друг от друга унарные, бинарные и тернарные операторы",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4535,8 +4067,6 @@
     "id": 321,
     "question": "Что\n такое hoisting",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4553,8 +4083,6 @@
     "id": 323,
     "question": "Замыкания\n и IIFE",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4571,8 +4099,6 @@
     "id": 325,
     "question": "Прототипы\n и прототипное наследование",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4589,8 +4115,6 @@
     "id": 327,
     "question": "Как\n сделать какое либо свойство объекта неизменяемым",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4607,8 +4131,6 @@
     "id": 329,
     "question": "Что\n такое Promise",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4625,8 +4147,6 @@
     "id": 331,
     "question": "Что\n такое event loop и как мы его используем",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4643,8 +4163,6 @@
     "id": 333,
     "question": "Что\n такое чистая функция",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4661,8 +4179,6 @@
     "id": 335,
     "question": "В\n чем разница между function expression и function declaration",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4679,8 +4195,6 @@
     "id": 337,
     "question": "Как\n появляется контекст у функции",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4697,8 +4211,6 @@
     "id": 339,
     "question": "Зачем\n нам нужны стрелочные функции",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4715,8 +4227,6 @@
     "id": 341,
     "question": "Что\n такое eval и почему его следует избегать",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4733,8 +4243,6 @@
     "id": 343,
     "question": "Откуда\n берется свойство length у массива",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4751,8 +4259,6 @@
     "id": 345,
     "question": "Что\n такое Map и Set",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4769,8 +4275,6 @@
     "id": 347,
     "question": "Зачем\n нужен use strict",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4787,8 +4291,6 @@
     "id": 349,
     "question": "Контекст\n вызова, arrow function, bind",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4805,8 +4307,6 @@
     "id": 351,
     "question": "High\n order functions и карриррование",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4823,8 +4323,6 @@
     "id": 353,
     "question": "Чем\n ООП в JS отличается от ООП в других языках",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4841,8 +4339,6 @@
     "id": 355,
     "question": "В\n чем заключается отличие классов в JS от классов в других языках",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4859,8 +4355,6 @@
     "id": 357,
     "question": "Как\n работают модули в ES modules",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4877,8 +4371,6 @@
     "id": 359,
     "question": "Можем\n ли мы поменять переменную в модуле извне",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4895,8 +4387,6 @@
     "id": 361,
     "question": "Как\n мы можем эмулировать модули не используя ES modules/require",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [
@@ -4913,8 +4403,6 @@
     "id": 362,
     "question": "",
     "description": "",
-    "prevDifficulty": [],
-    "nextDifficulty": [],
     "answer": {
       "link": [],
       "text": [

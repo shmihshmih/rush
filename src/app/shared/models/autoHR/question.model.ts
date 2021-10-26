@@ -3,8 +3,6 @@ export interface ITask {
   tableIndex?: number; // используется в таблицах
   question: string; // основная часть вопроса
   description: string; // описание задачи\вопроса
-  prevDifficulty?: {id: string, caption: 'string'}[]; // вопрос по теме, но полегче
-  nextDifficulty?: {id: string, caption: 'string'}[]; // вопрос по теме, но потруднее
   answer: {
     link?: string[]; // ссылка на ресурс
     text: string[]; // самописный ответ

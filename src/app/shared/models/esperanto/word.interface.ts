@@ -1,4 +1,5 @@
 export interface IWord {
+  _id?: any;
   esperanto: string;
   english: string;
   russian: string;

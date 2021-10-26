@@ -123,6 +123,7 @@ export class EsperantoService implements OnDestroy {
    * Редактирование списка слов с проверкой авторизации
    * @param wordList название списка
    */
+  // TODO
   updateWordList(wordList): Observable<any> {
     const params = wordList;
     const token = localStorage.getItem('token');
@@ -153,28 +154,29 @@ export class EsperantoService implements OnDestroy {
    * @param word слово
    */
   addWord(word): Observable<any> {
-    const params = word;
-    const token = localStorage.getItem('token');
-    if (token) {
-      return this.apiService.checkToken().pipe(
-        switchMap((isAuth): Observable<any> => {
-          if (isAuth.error) {
-            return of(false);
-          } else if (isAuth.token && isAuth.decoded) {
-            return of(true);
-          }
-        }),
-        switchMap(auth => {
-          if (auth) {
-            return this.httpClient.post(`${this.apiService.MAIN_SERVER}esperanto/word`, {params});
-          } else {
-            return of({message: 'Вы не можете совершить эту операцию!'});
-          }
-        })
-      );
-    } else {
-      return of({error: 'NoAuth', message: 'Залогиньтесь!'});
-    }
+    return of(word);
+    // const params = word;
+    // const token = localStorage.getItem('token');
+    // if (token) {
+    //   return this.apiService.checkToken().pipe(
+    //     switchMap((isAuth): Observable<any> => {
+    //       if (isAuth.error) {
+    //         return of(false);
+    //       } else if (isAuth.token && isAuth.decoded) {
+    //         return of(true);
+    //       }
+    //     }),
+    //     switchMap(auth => {
+    //       if (auth) {
+    //         return this.httpClient.post(`${this.apiService.MAIN_SERVER}esperanto/word`, {params});
+    //       } else {
+    //         return of({message: 'Вы не можете совершить эту операцию!'});
+    //       }
+    //     })
+    //   );
+    // } else {
+    //   return of({error: 'NoAuth', message: 'Залогиньтесь!'});
+    // }
   }
 
   /**
@@ -182,28 +184,29 @@ export class EsperantoService implements OnDestroy {
    * @param word название списка
    */
   delWord(word): Observable<any> {
-    const params = word._id;
-    const token = localStorage.getItem('token');
-    if (token) {
-      return this.apiService.checkToken().pipe(
-        switchMap((isAuth): Observable<any> => {
-          if (isAuth.error) {
-            return of(false);
-          } else if (isAuth.token && isAuth.decoded) {
-            return of(true);
-          }
-        }),
-        switchMap(auth => {
-          if (auth) {
-            return this.httpClient.delete(`${this.apiService.MAIN_SERVER}esperanto/word`, {params});
-          } else {
-            return of({message: 'Вы не можете совершить эту операцию!'});
-          }
-        })
-      );
-    } else {
-      return of({error: 'NoAuth', message: 'Залогиньтесь!'});
-    }
+    return of(word);
+    // const params = word._id;
+    // const token = localStorage.getItem('token');
+    // if (token) {
+    //   return this.apiService.checkToken().pipe(
+    //     switchMap((isAuth): Observable<any> => {
+    //       if (isAuth.error) {
+    //         return of(false);
+    //       } else if (isAuth.token && isAuth.decoded) {
+    //         return of(true);
+    //       }
+    //     }),
+    //     switchMap(auth => {
+    //       if (auth) {
+    //         return this.httpClient.delete(`${this.apiService.MAIN_SERVER}esperanto/word`, {params});
+    //       } else {
+    //         return of({message: 'Вы не можете совершить эту операцию!'});
+    //       }
+    //     })
+    //   );
+    // } else {
+    //   return of({error: 'NoAuth', message: 'Залогиньтесь!'});
+    // }
   }
 
   /**
@@ -211,28 +214,29 @@ export class EsperantoService implements OnDestroy {
    * @param word название списка
    */
   updateWord(word): Observable<any> {
-    const params = word;
-    const token = localStorage.getItem('token');
-    if (token) {
-      return this.apiService.checkToken().pipe(
-        switchMap((isAuth): Observable<any> => {
-          if (isAuth.error) {
-            return of(false);
-          } else if (isAuth.token && isAuth.decoded) {
-            return of(true);
-          }
-        }),
-        switchMap(auth => {
-          if (auth) {
-            return this.httpClient.put(`${this.apiService.MAIN_SERVER}esperanto/word`, {params});
-          } else {
-            return of({message: 'Вы не можете совершить эту операцию!'});
-          }
-        })
-      );
-    } else {
-      return of({error: 'NoAuth', message: 'Залогиньтесь!'});
-    }
+    return of(word);
+    // const params = word;
+    // const token = localStorage.getItem('token');
+    // if (token) {
+    //   return this.apiService.checkToken().pipe(
+    //     switchMap((isAuth): Observable<any> => {
+    //       if (isAuth.error) {
+    //         return of(false);
+    //       } else if (isAuth.token && isAuth.decoded) {
+    //         return of(true);
+    //       }
+    //     }),
+    //     switchMap(auth => {
+    //       if (auth) {
+    //         return this.httpClient.put(`${this.apiService.MAIN_SERVER}esperanto/word`, {params});
+    //       } else {
+    //         return of({message: 'Вы не можете совершить эту операцию!'});
+    //       }
+    //     })
+    //   );
+    // } else {
+    //   return of({error: 'NoAuth', message: 'Залогиньтесь!'});
+    // }
   }
 
   /**
