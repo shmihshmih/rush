@@ -1,11 +1,17 @@
 import {createReducer, on} from '@ngrx/store';
 import {
+  addWordListFail,
+  addWordListSuccess,
   clearSelectedWordLists,
   loadWordListsFail,
   loadWordListsSuccess,
   loadWordsFail,
   loadWordsSuccess,
-  setSelectedWordLists
+  removeWordListFail,
+  removeWordListSuccess,
+  setSelectedWordLists,
+  updateWordListFail,
+  updateWordListSuccess
 } from './words.actions';
 import {IWord} from '../../../shared/models/esperanto/word.interface';
 import {IWordList} from '../../../shared/models/esperanto/word_list.interface';
@@ -33,11 +39,39 @@ const initialWordListsState: IWordList[] = [];
 
 const createWordListsReducer = createReducer(
   initialWordListsState,
+  // 1. получение всех списков слов
   on(loadWordListsSuccess, (state, {wordLists}) => {
     return wordLists;
   }),
   on(loadWordListsFail, (state, {error}) => {
     return [];
+  }),
+  // 2. добавление нового списка слов
+  on(addWordListSuccess, (state, {newWordList}) => {
+    return [...state, newWordList];
+  }),
+  on(addWordListFail, (state, {error}) => {
+    return [...state];
+  }),
+  // 3. удаление списка слов
+  on(removeWordListSuccess, (state, {deleted}) => {
+    const newState = state.filter(el => (el.collection_caption !== deleted.collection_caption) && (el.title !== deleted.title));
+    return [...newState];
+  }),
+  on(removeWordListFail, (state, {error}) => {
+    return [...state];
+  }),
+  // 4. обновление списка слов
+  on(updateWordListSuccess, (state, {updatedWordList}) => {
+    const updatedIndex = state.findIndex((el) => {
+      return (el.collection_caption === updatedWordList.collection_caption) && (el.title === updatedWordList.title);
+    });
+    const newState = [...state];
+    newState[updatedIndex] = updatedWordList;
+    return newState;
+  }),
+  on(updateWordListFail, (state, {error}) => {
+    return [...state];
   })
 );
 

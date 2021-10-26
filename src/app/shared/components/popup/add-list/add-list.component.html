@@ -33,6 +33,8 @@
     </div>
 
     <button *ngIf="!data.wordList" mat-raised-button color="primary" (click)="addList()">add</button>
-    <button *ngIf="data && data.wordList && data.wordList._id" mat-raised-button color="primary" (click)="updateList(this.data.wordList._id)">update</button>
+    <button *ngIf="data && data.wordList && data.wordList._id" mat-raised-button color="primary"
+            (click)="updateList(this.data.wordList)">update
+    </button>
   </form>
 </div>

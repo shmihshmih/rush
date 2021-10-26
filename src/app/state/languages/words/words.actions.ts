@@ -15,14 +15,46 @@ export const loadWordsFail = createAction(WordsActionsTypes.loadWordsFail, props
 /** wordLists */
 
 enum wordListsActionsTypes {
+  // 1. получение всех списков слов
   loadWordLists = '[WORD LISTS] load wordLists',
   loadWordListsSuccess = '[WORD LISTS] load wordLists success',
-  loadWordListsFail = '[WORD LISTS] load wordLists fail'
+  loadWordListsFail = '[WORD LISTS] load wordLists fail',
+
+  // 2. добавление нового списка слов
+  addWordList = '[WORD LISTS] add new wordlist',
+  addWordListSuccess = '[WORD LISTS] add new wordlist success',
+  addWordListFail = '[WORD LISTS] add new wordlist fail',
+
+  // 3. удаление списка слов
+  removeWordList = '[WORD LISTS] remove word list',
+  removeWordListSuccess = '[WORD LISTS] remove word list success',
+  removeWordListFail = '[WORD LISTS] remove word list fail',
+
+  // 4. обновление списка слов
+  updateWordList = '[WORD LISTS] update word list',
+  updateWordListSuccess = '[WORD LISTS] update word list success',
+  updateWordListFail = '[WORD LISTS] update word list fail'
 }
 
+// 1. получение всех списков слов
 export const loadWordLists = createAction(wordListsActionsTypes.loadWordLists); // effect
 export const loadWordListsSuccess = createAction(wordListsActionsTypes.loadWordListsSuccess, props<{ wordLists }>());
 export const loadWordListsFail = createAction(wordListsActionsTypes.loadWordListsFail, props<{ error: string }>());
+
+// 2. добавление нового списка слов
+export const addWordList = createAction(wordListsActionsTypes.addWordList, props<{ newWordList }>()); // effect
+export const addWordListSuccess = createAction(wordListsActionsTypes.addWordListSuccess, props<{ newWordList }>());
+export const addWordListFail = createAction(wordListsActionsTypes.addWordListFail, props<{ error }>());
+
+// 3. удаление списка слов
+export const removeWordList = createAction(wordListsActionsTypes.removeWordList, props<{ wordList }>()); // effect
+export const removeWordListSuccess = createAction(wordListsActionsTypes.removeWordListSuccess, props<{ deleted }>());
+export const removeWordListFail = createAction(wordListsActionsTypes.removeWordListFail, props<{ error }>());
+
+// 4. обновление списка слов
+export const updateWordList = createAction(wordListsActionsTypes.updateWordList, props<{ updatedWordList }>()); // effect
+export const updateWordListSuccess = createAction(wordListsActionsTypes.updateWordListSuccess, props<{ updatedWordList }>());
+export const updateWordListFail = createAction(wordListsActionsTypes.updateWordListFail, props<{ error }>());
 
 /** selected wordLists */
 enum selectedWordListsActionTypes {

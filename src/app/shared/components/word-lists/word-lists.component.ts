@@ -5,11 +5,10 @@ import {Router} from '@angular/router';
 import {ApiService} from '../../../core/services/api.service';
 import {MatDialog} from '@angular/material/dialog';
 import {AddListComponent} from '../popup/add-list/add-list.component';
-import {takeUntil} from 'rxjs/operators';
 import {IWordList} from '../../models/esperanto/word_list.interface';
 import {Store} from '@ngrx/store';
 import {selectWordLists} from '../../../state/languages/words/words.selectors';
-import {loadWordLists} from '../../../state/languages/words/words.actions';
+import {removeWordList} from '../../../state/languages/words/words.actions';
 import {selectIsAuth} from '../../../state/auth/auth.selectors';
 
 @Component({
@@ -60,17 +59,6 @@ export class WordListsComponent implements OnInit, OnDestroy {
       panelClass: ['of-auto'],
       data: {}
     });
-
-    dialogRef.afterClosed().pipe(
-      takeUntil(this.unsubscribe$)
-    ).subscribe(result => {
-      if (!result) {
-        return;
-      }
-      if (result.item) {
-        this.store.dispatch(loadWordLists());
-      }
-    });
   }
 
   updateWordList(wordList): void {
@@ -78,29 +66,12 @@ export class WordListsComponent implements OnInit, OnDestroy {
       panelClass: ['of-auto'],
       data: {wordList}
     });
-
-    dialogRef.afterClosed().pipe(
-      takeUntil(this.unsubscribe$)
-    ).subscribe(result => {
-      if (!result) {
-        return;
-      }
-      if (result.item) {
-        this.store.dispatch(loadWordLists());
-      }
-    });
   }
 
   delWordList(vortListo: IWordList): void {
     const areYouSure = confirm('Точно удалить список?');
     if (areYouSure) {
-      this.esperantoService.delWordList(vortListo).pipe(
-        takeUntil(this.unsubscribe$)
-      ).subscribe(res => {
-        if (res.item) {
-          this.store.dispatch(loadWordLists());
-        }
-      });
+      this.store.dispatch(removeWordList({wordList: vortListo}));
     }
   }
 
