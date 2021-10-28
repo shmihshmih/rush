@@ -3,7 +3,7 @@ import {Observable, of, Subject} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
 import {Injectable, OnDestroy} from '@angular/core';
 import {ApiService} from '../api.service';
-import {map, switchMap} from 'rxjs/operators';
+import {map} from 'rxjs/operators';
 import {IWordList} from '../../../shared/models/esperanto/word_list.interface';
 
 @Injectable()
@@ -123,31 +123,33 @@ export class EsperantoService implements OnDestroy {
    * Редактирование списка слов с проверкой авторизации
    * @param wordList название списка
    */
-  // TODO
   updateWordList(wordList): Observable<any> {
-    const params = wordList;
-    const token = localStorage.getItem('token');
-    if (token) {
-      return this.apiService.checkToken().pipe(
-        switchMap((isAuth): Observable<any> => {
-          if (isAuth.error) {
-            return of(false);
-          } else if (isAuth.token && isAuth.decoded) {
-            return of(true);
-          }
-        }),
-        switchMap(auth => {
-          if (auth) {
-            return this.httpClient.put(`${this.apiService.MAIN_SERVER}esperanto/wordList`, {params});
-          } else {
-            return of({message: 'Вы не можете совершить эту операцию!'});
-          }
-        })
-      );
-    } else {
-      return of({error: 'NoAuth', message: 'Залогиньтесь!'});
-    }
+    return of(wordList);
   }
+
+  //   const params = wordList;
+  //   const token = localStorage.getItem('token');
+  //   if (token) {
+  //     return this.apiService.checkToken().pipe(
+  //       switchMap((isAuth): Observable<any> => {
+  //         if (isAuth.error) {
+  //           return of(false);
+  //         } else if (isAuth.token && isAuth.decoded) {
+  //           return of(true);
+  //         }
+  //       }),
+  //       switchMap(auth => {
+  //         if (auth) {
+  //           return this.httpClient.put(`${this.apiService.MAIN_SERVER}esperanto/wordList`, {params});
+  //         } else {
+  //           return of({message: 'Вы не можете совершить эту операцию!'});
+  //         }
+  //       })
+  //     );
+  //   } else {
+  //     return of({error: 'NoAuth', message: 'Залогиньтесь!'});
+  //   }
+  // }
 
   /**
    * Добавление нового слова с проверкой авторизации
