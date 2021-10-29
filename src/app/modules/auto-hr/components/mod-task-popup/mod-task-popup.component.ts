@@ -9,7 +9,7 @@ import {ITask} from '../../../../shared/models/autoHR/question.model';
   styleUrls: ['./mod-task-popup.component.css']
 })
 export class ModTaskPopupComponent implements OnInit {
-  // TODO
+  // TODO dobavit spravochnik
   types = ['question', 'exercise'];
   difficulties = ['beginner', 'junior', 'middle', 'senior'];
   popularities = ['1', '2', '3', '4', '5'];
