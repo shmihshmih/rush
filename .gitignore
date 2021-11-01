@@ -51,3 +51,10 @@ src/environments/environment.prod.ts
 
 /.github
 /public
+
+# Firebase
+.firebase
+*-debug.log
+.runtimeconfig.json
+
+./environments

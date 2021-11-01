@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "rushservice-f6ae4": {
+      "hosting": {
+        "rushservice": [
+          "rushservice-f6ae4"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "rushservice-f6ae4"
+  }
+}

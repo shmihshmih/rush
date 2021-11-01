@@ -9,7 +9,10 @@ describe('index page', () => {
 
     cy.get(':nth-child(1) > .mat-card-actions > .mat-focus-indicator').click();
 
+
     cy.get('button.mat-focus-indicator.mat-button.mat-button-base.mat-primary > span')
       .should('contain.text', 'Ответ');
+
+    cy.visit('/english/wordList/demandovortoj');
   })
 })

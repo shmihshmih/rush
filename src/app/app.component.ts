@@ -3,6 +3,8 @@ import {loadWordLists, loadWords} from './state/languages/words/words.actions';
 import {Store} from '@ngrx/store';
 import {setAuthDataFromLocalStorage} from './state/auth/auth.actions';
 import {loadCompetenceCatalog, loadDifficultyCatalog, loadPopularityCatalog, loadTasks} from './state/autoHR/autoHR.actions';
+import {collection, collectionData, Firestore} from '@angular/fire/firestore';
+import {Observable} from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -10,8 +12,15 @@ import {loadCompetenceCatalog, loadDifficultyCatalog, loadPopularityCatalog, loa
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  item$: Observable<any[]>;
 
-  constructor(private store: Store) {
+  constructor(private store: Store, firestore: Firestore) {
+
+    const words = collection(firestore, 'words');
+    this.item$ = collectionData(words);
+
+    this.item$.subscribe(w => console.log('ws: ', w));
+
     /** Загрузка данных для модуля с языками */
     // получение списков слов диспатч
     this.store.dispatch(loadWordLists());
