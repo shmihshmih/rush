@@ -19,7 +19,7 @@ export class AppComponent {
     const words = collection(firestore, 'words');
     this.item$ = collectionData(words);
 
-    this.item$.subscribe(w => console.log('ws!?: ', w));
+    this.item$.subscribe(w => console.log('ws!Nbgf ds[jlyq yj yflj rvvbn?: ', w));
 
     /** Загрузка данных для модуля с языками */
     // получение списков слов диспатч
