@@ -61,3 +61,5 @@ src/environments/environment.prod.ts
 
 environments
 src/environments/environment.ts
+
+.angular
