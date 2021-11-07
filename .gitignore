@@ -58,3 +58,6 @@ src/environments/environment.prod.ts
 .runtimeconfig.json
 
 ./environments
+
+environments
+src/environments/environment.ts
