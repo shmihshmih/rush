@@ -1,10 +1,10 @@
 import {Injectable, OnDestroy} from '@angular/core';
-import {Observable, of, Subject} from 'rxjs';
+import {from, Observable, Subject} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
 import {environment} from '../../../environments/environment';
 import {Store} from '@ngrx/store';
 import {selectIsAuth} from '../../state/auth/auth.selectors';
-import {logout} from '../../state/auth/auth.actions';
+import {AngularFireAuth} from '@angular/fire/compat/auth';
 
 @Injectable({
   providedIn: 'root'
@@ -17,7 +17,8 @@ export class ApiService implements OnDestroy {
 
   constructor(
     private httpClient: HttpClient,
-    private store: Store
+    private store: Store,
+    private afAuth: AngularFireAuth
   ) {
     // this.authWithToken().pipe(
     //   takeUntil(this.unsubscribe$)
@@ -35,13 +36,16 @@ export class ApiService implements OnDestroy {
   //   const authData = loginData;
   //   return this.httpClient.post(`${this.MAIN_SERVER_AUTH}auth`, authData);
   // }
-  login(): Observable<any> {
-    const authData = localStorage.getItem('authData');
-    return of(JSON.parse(authData));
+  login(email, password): Observable<any> {
+    return from(this.afAuth.signInWithEmailAndPassword(email, password));
   }
 
-  logout(): void {
-    this.store.dispatch(logout());
+  logout(): Observable<any> {
+    return from(this.afAuth.signOut());
+  }
+
+  checkAuth(): Observable<any> {
+    return this.afAuth.user;
   }
 
   checkToken(): Observable<any> {

@@ -35,6 +35,8 @@ import {getMessaging, provideMessaging} from '@angular/fire/messaging';
 import {getPerformance, providePerformance} from '@angular/fire/performance';
 import {getRemoteConfig, provideRemoteConfig} from '@angular/fire/remote-config';
 import {getStorage, provideStorage} from '@angular/fire/storage';
+import {AngularFireModule} from '@angular/fire/compat';
+import {AngularFireAuthModule} from '@angular/fire/compat/auth';
 
 @NgModule({
   declarations: [
@@ -77,7 +79,9 @@ import {getStorage, provideStorage} from '@angular/fire/storage';
     provideMessaging(() => getMessaging()),
     providePerformance(() => getPerformance()),
     provideRemoteConfig(() => getRemoteConfig()),
-    provideStorage(() => getStorage())
+    provideStorage(() => getStorage()),
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule
   ],
   providers: [
     ScreenTrackingService, UserTrackingService

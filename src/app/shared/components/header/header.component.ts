@@ -1,10 +1,11 @@
 import {Component, EventEmitter, HostBinding, OnInit, Output} from '@angular/core';
 import {OverlayContainer} from '@angular/cdk/overlay';
-import {AuthComponent} from '../auth/auth.component';
 import {MatDialog} from '@angular/material/dialog';
 import {ApiService} from '../../../core/services/api.service';
 import {selectIsAuth} from '../../../state/auth/auth.selectors';
 import {Store} from '@ngrx/store';
+import {AuthComponent} from '../auth/auth.component';
+import {logout} from '../../../state/auth/auth.actions';
 
 @Component({
   selector: 'app-header',
@@ -46,5 +47,9 @@ export class HeaderComponent implements OnInit {
         return;
       }
     });
+  }
+
+  logout(): void {
+    this.store.dispatch(logout());
   }
 }
