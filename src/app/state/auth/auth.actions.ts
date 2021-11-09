@@ -20,11 +20,12 @@ export const makeAuthorizationSuccess = createAction(AuthActionsTypes.makeAuthor
 export const makeAuthorizationFail = createAction(AuthActionsTypes.makeAuthorizationFail, props<{ error }>());
 export const setAuthDataFromLocalStorage = createAction(AuthActionsTypes.setAuthDataFromLocalStorage, props<{ authData }>());
 
+/** logout */
 export const logout = createAction(AuthActionsTypes.logout); // effect
 export const logoutSuccess = createAction(AuthActionsTypes.logoutSuccess);
-export const logoutFail = createAction(AuthActionsTypes.logoutFail);
+export const logoutFail = createAction(AuthActionsTypes.logoutFail, props<{ error }>());
 
-
+/** Проверка авторизации */
 export const checkAuth = createAction(AuthActionsTypes.checkAuth); // effect
 export const checkAuthSuccess = createAction(AuthActionsTypes.checkAuthSuccess, props<{ authData }>());
 export const checkAuthFail = createAction(AuthActionsTypes.checkAuthFail, props<{ error }>());

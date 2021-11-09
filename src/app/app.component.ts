@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {loadWordLists, loadWords} from './state/languages/words/words.actions';
 import {Store} from '@ngrx/store';
-import {checkAuth, setAuthDataFromLocalStorage} from './state/auth/auth.actions';
+import {checkAuth} from './state/auth/auth.actions';
 import {loadCompetenceCatalog, loadDifficultyCatalog, loadPopularityCatalog, loadTasks} from './state/autoHR/autoHR.actions';
 import {collection, collectionData, Firestore} from '@angular/fire/firestore';
 import {Observable} from 'rxjs';
@@ -35,11 +35,12 @@ export class AppComponent {
     this.store.dispatch(loadCompetenceCatalog());
     this.store.dispatch(loadPopularityCatalog());
 
-    // устанавливаем юзера из localStorage
-    const authData = JSON.parse(localStorage.getItem('authData'));
-    this.store.dispatch(setAuthDataFromLocalStorage({authData}));
-
     // проверяем автризован ли
     this.store.dispatch(checkAuth());
+
+    // устанавливаем юзера из localStorage
+    // const authData = JSON.parse(localStorage.getItem('authData'));
+    // this.store.dispatch(setAuthDataFromLocalStorage({authData}));
+
   }
 }

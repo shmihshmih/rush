@@ -5,12 +5,16 @@ import {
   checkAuth,
   checkAuthFail,
   checkAuthSuccess,
+  logout,
+  logoutFail,
+  logoutSuccess,
   makeAuthorization,
   makeAuthorizationFail,
   makeAuthorizationSuccess
 } from './auth.actions';
 import {catchError, mergeMap, of} from 'rxjs';
 import {map} from 'rxjs/operators';
+import {initialUserState} from './auth.reducer';
 
 @Injectable()
 export class AuthEffects {
@@ -23,7 +27,6 @@ export class AuthEffects {
     ofType(makeAuthorization),
     mergeMap((action) => this.apiService.login(action.email, action.password).pipe(
       map(authData => {
-        console.log('authData23423423: ', authData);
         const user = {
           refreshToken: authData.user.refreshToken,
           email: authData.user.email,
@@ -41,15 +44,30 @@ export class AuthEffects {
     ofType(checkAuth),
     mergeMap((action) => this.apiService.checkAuth().pipe(
       map(authData => {
-        const user = {
-          refreshToken: authData.refreshToken,
-          email: authData.email,
-          uid: authData.uid,
-          displayName: authData.displayName
-        };
-        return checkAuthSuccess({authData: user});
+        if (authData) {
+          const user = {
+            refreshToken: authData.refreshToken,
+            email: authData.email,
+            uid: authData.uid,
+            displayName: authData.displayName
+          };
+          return checkAuthSuccess({authData: user});
+        } else {
+          return checkAuthSuccess({authData: initialUserState});
+        }
       }),
-      catchError(error => of(checkAuthFail({error})))
+      catchError(error => {
+        return of(checkAuthFail({error}));
+      })
+    ))
+  ));
+
+  /** Логаут */
+  logout = createEffect(() => this.action$.pipe(
+    ofType(logout),
+    mergeMap((action) => this.apiService.logout().pipe(
+      map(() => logoutSuccess()),
+      catchError(error => of(logoutFail({error})))
     ))
   ));
 

@@ -2,8 +2,12 @@ export const authFeatureKey = 'authFeature';
 
 export interface State {
   isAuth: boolean;
-  user: {
-    email: string;
-    password: string;
-  };
+  user: UserState;
+}
+
+export interface UserState {
+  email: string;
+  displayName: string;
+  refreshToken: string;
+  uid: string;
 }

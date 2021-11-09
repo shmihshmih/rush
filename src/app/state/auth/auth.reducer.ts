@@ -1,9 +1,10 @@
 import {createReducer, on} from '@ngrx/store';
-import {State} from './index';
+import {State, UserState} from './index';
 import {
   checkAuthFail,
   checkAuthSuccess,
-  logout,
+  logoutFail,
+  logoutSuccess,
   makeAuthorizationFail,
   makeAuthorizationSuccess,
   setAuthDataFromLocalStorage
@@ -11,7 +12,14 @@ import {
 
 export const initialAuthState: State = {
   isAuth: false,
-  user: {email: '', password: ''}
+  user: {email: '', displayName: '', refreshToken: '', uid: ''}
+};
+
+export const initialUserState: UserState = {
+  email: '',
+  displayName: '',
+  refreshToken: '',
+  uid: ''
 };
 
 export const createAuthReducer = createReducer(initialAuthState,
@@ -22,19 +30,30 @@ export const createAuthReducer = createReducer(initialAuthState,
     return error;
   }),
   on(setAuthDataFromLocalStorage, (state, {authData}) => {
-    if (authData.email && authData.password) {
-      return {...state, user: authData};
+    if (authData?.email) {
+      return {...state, user: {...authData}};
     } else {
       return state;
     }
   }),
-  on(logout, (state) => {
-    localStorage.removeItem('token');
-    return {...state, isAuth: false};
+
+  // логаут
+  on(logoutSuccess, (state) => {
+    localStorage.removeItem('authData');
+    return {...state, isAuth: false, user: initialUserState};
   }),
+  on(logoutFail, (state, {error}) => {
+    return error;
+  }),
+
+  // проверка авторизации
   on(checkAuthSuccess, (state, {authData}) => {
-    console.log('authData: ', authData);
-    return state;
+    localStorage.setItem('authData', JSON.stringify(authData));
+    if (authData.email) {
+      return {...state, isAuth: true, user: {...authData}};
+    } else {
+      return {...state, isAuth: false, user: initialUserState};
+    }
   }),
   on(checkAuthFail, (state, {error}) => {
     return error;

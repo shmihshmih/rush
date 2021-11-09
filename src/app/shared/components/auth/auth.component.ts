@@ -4,7 +4,6 @@ import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
 import {ApiService} from '../../../core/services/api.service';
 import {Store} from '@ngrx/store';
 import {makeAuthorization} from '../../../state/auth/auth.actions';
-import {AngularFireAuth} from '@angular/fire/compat/auth';
 
 @Component({
   selector: 'app-auth',
@@ -19,8 +18,7 @@ export class AuthComponent implements OnInit {
     public fb: FormBuilder,
     public dialogRef: MatDialogRef<AuthComponent>,
     @Inject(MAT_DIALOG_DATA) public data,
-    private store: Store,
-    private afAuth: AngularFireAuth) {
+    private store: Store) {
   }
 
   ngOnInit(): void {
@@ -37,6 +35,7 @@ export class AuthComponent implements OnInit {
   closePopup(): void {
     const authData = {...this.authForm.value};
     this.store.dispatch(makeAuthorization({email: authData.email, password: authData.password}));
+    this.dialogRef.close();
   }
 
 }
