@@ -1,4 +1,7 @@
 export interface ITask {
+  _id: {
+    $oid: string;
+  }; // рудимент от монгодб
   id: string; // систменый id
   tableIndex?: number; // используется в таблицах
   question: string; // основная часть вопроса

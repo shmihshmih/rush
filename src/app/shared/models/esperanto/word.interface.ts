@@ -1,5 +1,8 @@
 export interface IWord {
-  _id?: any;
+  _id?: {
+    $oid: string;
+  }; // рудимент от монгодб
+  id: string;
   esperanto: string;
   english: string;
   russian: string;

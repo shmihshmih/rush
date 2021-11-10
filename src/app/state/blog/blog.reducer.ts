@@ -31,7 +31,7 @@ export function blogCatalogsReducer(state, action): IQuestBook[] {
 
 /** active quest book */
 const initialSelectedPart = {
-  _id: {},
+  _id: {$oid: ''},
   id: null,
   part: ''
 };
