@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 
-describe('index pages', () => {
+describe('index page', () => {
   it('должно показываться название страницы или что там показывается ', () => {
     cy.visit('/');
 
