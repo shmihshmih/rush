@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 
-describe('index page', () => {
+describe('index page fake again!', () => {
   it('должно показываться название страницы или что там показывается ', () => {
     cy.visit('/');
 
