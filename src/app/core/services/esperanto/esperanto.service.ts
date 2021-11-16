@@ -1,10 +1,13 @@
 import {IWord} from '../../../shared/models/esperanto/word.interface';
-import {Observable, of, Subject} from 'rxjs';
+import {from, mergeMap, Observable, of, Subject} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
 import {Injectable, OnDestroy} from '@angular/core';
 import {ApiService} from '../api.service';
 import {map} from 'rxjs/operators';
 import {IWordList} from '../../../shared/models/esperanto/word_list.interface';
+import {Store} from '@ngrx/store';
+import {selectIsAuth} from '../../../state/auth/auth.selectors';
+import {AngularFirestore, AngularFirestoreCollection} from '@angular/fire/compat/firestore';
 
 @Injectable()
 export class EsperantoService implements OnDestroy {
@@ -12,7 +15,9 @@ export class EsperantoService implements OnDestroy {
 
   constructor(
     private httpClient: HttpClient,
-    private apiService: ApiService
+    private apiService: ApiService,
+    private store: Store,
+    private readonly afs: AngularFirestore
   ) {
   }
 
@@ -33,7 +38,24 @@ export class EsperantoService implements OnDestroy {
   //   return this.httpClient.get<IWordList[]>(`${this.apiService.MAIN_SERVER}esperanto/wordLists`);
   // }
   getWordLists(): Observable<IWordList[]> {
-    return this.httpClient.get<IWordList[]>(`./assets/collections/wordlistmodels.json`);
+    return this.store.select(selectIsAuth).pipe(
+      mergeMap((isAuth) => {
+        if (isAuth) { // если авторизован, забираем из базы
+          const wordListsCollection: AngularFirestoreCollection<IWordList> = this.afs.collection<IWordList>('wordLists');
+          let wordLists: Observable<IWordList[]>;
+          wordLists = wordListsCollection.snapshotChanges().pipe(
+            map(actions => actions.map(a => {
+              const data = a.payload.doc.data() as IWordList;
+              const id = a.payload.doc.id;
+              return {id, ...data};
+            }))
+          );
+          return wordLists;
+        } else { // если не авторизован, то из json своего заберем
+          return this.httpClient.get<IWordList[]>(`./assets/collections/wordlistmodels.json`);
+        }
+      })
+    );
   }
 
   /**
@@ -63,30 +85,15 @@ export class EsperantoService implements OnDestroy {
    * Добавление нового списка слов с проверкой авторизации
    * @param wordList название списка
    */
-  addWordList(wordList): Observable<any> {
-    const params = wordList;
-    return of({...params});
-    // const token = localStorage.getItem('token');
-    // if (token) {
-    //   return this.apiService.checkToken().pipe(
-    //     switchMap((isAuth): Observable<any> => {
-    //       if (isAuth.error) {
-    //         return of(false);
-    //       } else if (isAuth.token && isAuth.decoded) {
-    //         return of(true);
-    //       }
-    //     }),
-    //     switchMap(auth => {
-    //       if (auth) {
-    //         return this.httpClient.post(`${this.apiService.MAIN_SERVER}esperanto/wordList`, {params});
-    //       } else {
-    //         return of({message: 'Вы не можете совершить эту операцию!'});
-    //       }
-    //     })
-    //   );
-    // } else {
-    //   return of({error: 'NoAuth', message: 'Залогиньтесь!'});
-    // }
+  addWordList(wordList): Observable<IWordList> {
+    const wordLists = this.afs.collection<IWord>('wordLists');
+    const id = this.afs.createId();
+    const params = {...wordList, id};
+    return from(wordLists.doc(id).set({...params})).pipe(
+      mergeMap((res) => {
+        return of({...params});
+      })
+    );
   }
 
   /**
@@ -94,29 +101,8 @@ export class EsperantoService implements OnDestroy {
    * @param wordList название списка
    */
   delWordList(wordList): Observable<any> {
-    const params = wordList._id;
-    return of(wordList);
-    // const token = localStorage.getItem('token');
-    // if (token) {
-    //   return this.apiService.checkToken().pipe(
-    //     switchMap((isAuth): Observable<any> => {
-    //       if (isAuth.error) {
-    //         return of(false);
-    //       } else if (isAuth.token && isAuth.decoded) {
-    //         return of(true);
-    //       }
-    //     }),
-    //     switchMap(auth => {
-    //       if (auth) {
-    //         return this.httpClient.delete(`${this.apiService.MAIN_SERVER}esperanto/wordList`, {params});
-    //       } else {
-    //         return of({message: 'Вы не можете совершить эту операцию!'});
-    //       }
-    //     })
-    //   );
-    // } else {
-    //   return of({error: 'NoAuth', message: 'Залогиньтесь!'});
-    // }
+    const wordListsCollection = this.afs.collection('wordLists');
+    return from(wordListsCollection.doc(wordList.id).delete());
   }
 
   /**
