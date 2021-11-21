@@ -84,7 +84,7 @@ export class AddWordComponent implements OnInit, OnDestroy {
   }
 
   updateWord(wordId): void {
-    this.store.dispatch(updateWord({updatedWord: {_id: wordId, ...this.wordForm.value}}));
+    this.store.dispatch(updateWord({updatedWord: {id: wordId, ...this.wordForm.value}}));
     this.dialogRef.close();
   }
 

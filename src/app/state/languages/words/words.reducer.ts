@@ -5,8 +5,14 @@ import {
   addWordListSuccess,
   addWordSuccess,
   clearSelectedWordLists,
+  clearWordLists,
+  clearWords,
+  loadWordListsByJSONFail,
+  loadWordListsByJSONSuccess,
   loadWordListsFail,
   loadWordListsSuccess,
+  loadWordsByJSONFail,
+  loadWordsByJSONSuccess,
   loadWordsFail,
   loadWordsSuccess,
   removeWordFail,
@@ -14,6 +20,7 @@ import {
   removeWordListSuccess,
   removeWordSuccess,
   setSelectedWordLists,
+  setSelectedWordListsByJSON,
   updateWordListFail,
   updateWordListSuccess,
   updateWordSuccess
@@ -34,6 +41,13 @@ const createdWordsReducer = createReducer(
   on(loadWordsFail, (state, {error}) => {
     return [];
   }),
+  // 1.1 Получение всех слов из JSON
+  on(loadWordsByJSONSuccess, (state, {words}) => {
+    return [...words];
+  }),
+  on(loadWordsByJSONFail, (state, {error}) => {
+    return [];
+  }),
   // 2. Добавление нового слова
   on(addWordSuccess, (state, {newWord}) => {
     return [...state, newWord];
@@ -44,8 +58,8 @@ const createdWordsReducer = createReducer(
   // 3. Удаление слова
   on(removeWordSuccess, (state, {deletedWord}) => {
     const newState = [...state];
-    const indexOfDeletedWord = newState.findIndex((w) => w._id.$oid === deletedWord._id.$oid);
-    newState.splice(indexOfDeletedWord, 1);
+    // const indexOfDeletedWord = newState.findIndex((w) => w._id.$oid === deletedWord._id.$oid);
+    // newState.splice(indexOfDeletedWord, 1);
     return [...newState];
   }),
   on(removeWordFail, (state, {error}) => {
@@ -54,9 +68,13 @@ const createdWordsReducer = createReducer(
   // 4. Редактирование слова
   on(updateWordSuccess, (state, {updatedWord}) => {
     const newState = [...state];
-    const indexOfUpdatedWord = newState.findIndex(w => w._id.$oid === updatedWord._id.$oid);
-    newState[indexOfUpdatedWord] = updatedWord;
+    // const indexOfUpdatedWord = newState.findIndex(w => w._id.$oid === updatedWord._id.$oid);
+    // newState[indexOfUpdatedWord] = updatedWord;
     return [...newState];
+  }),
+  // 5. Общие
+  on(clearWords, () => {
+    return [];
   })
 );
 
@@ -71,9 +89,16 @@ const createWordListsReducer = createReducer(
   initialWordListsState,
   // 1. получение всех списков слов
   on(loadWordListsSuccess, (state, {wordLists}) => {
-    return wordLists;
+    return [...wordLists];
   }),
   on(loadWordListsFail, (state, {error}) => {
+    return [];
+  }),
+  // 1.1 получение всех списков слов
+  on(loadWordListsByJSONSuccess, (state, {wordLists}) => {
+    return [...wordLists];
+  }),
+  on(loadWordListsByJSONFail, (state, {error}) => {
     return [];
   }),
   // 2. добавление нового списка слов
@@ -102,6 +127,9 @@ const createWordListsReducer = createReducer(
   }),
   on(updateWordListFail, (state, {error}) => {
     return [...state];
+  }),
+  on(clearWordLists, () => {
+    return [];
   })
 );
 
@@ -117,8 +145,11 @@ const createSelectedWordListsReducer = createReducer(
   on(setSelectedWordLists, (state, {selectedWordLists}) => {
     return selectedWordLists;
   }),
+  on(setSelectedWordListsByJSON, (state, {selectedWordLists}) => {
+    return selectedWordLists;
+  }),
   on(clearSelectedWordLists, () => {
-    return [];
+    return initialSelectedWordListsState;
   })
 );
 

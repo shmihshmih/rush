@@ -172,7 +172,7 @@ export class IndexComponent implements OnInit, AfterViewInit, OnDestroy {
 
       data = this.clearEmptyArrays(data);
 
-      if (data._id) {
+      if (data.id) {
         // update
         this.store.dispatch(updateTask({updatedTask: data}));
       } else {

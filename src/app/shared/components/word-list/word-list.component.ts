@@ -1,6 +1,6 @@
 import {Component, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
-import {Observable, Subject} from 'rxjs';
+import {concatMap, Observable, of, Subject} from 'rxjs';
 import {takeUntil} from 'rxjs/operators';
 import {IWord} from '../../models/esperanto/word.interface';
 import {MatTableDataSource} from '@angular/material/table';
@@ -9,7 +9,7 @@ import {MatSort} from '@angular/material/sort';
 import {MatDialog} from '@angular/material/dialog';
 import {AddWordComponent} from '../popup/add-word/add-word.component';
 import {select, Store} from '@ngrx/store';
-import {removeWord, setSelectedWordLists} from '../../../state/languages/words/words.actions';
+import {removeWord, setSelectedWordLists, setSelectedWordListsByJSON, updateWord} from '../../../state/languages/words/words.actions';
 import {selectWords, selectWordsFromSelectedLists} from '../../../state/languages/words/words.selectors';
 import {selectIsAuth} from '../../../state/auth/auth.selectors';
 
@@ -37,44 +37,59 @@ export class WordListComponent implements OnInit, OnDestroy {
               public dialog: MatDialog,
               private store: Store) {
 
-    // получаем список слов в зависимости от роута
-    this.activatedRoute.params.pipe(
-      takeUntil(this.unsubscribe$)
-    ).subscribe(params => {
-      this.loadListWords(params?.wordList);
-    });
 
     // будем ли отображать админские функции
-    this.isAuth$.subscribe(isAuth => {
-      if (isAuth) {
-        this.displayedColumns.push('actions');
-      } else {
-        this.displayedColumns = this.displayedColumns.filter(col => col !== 'actions');
+    this.isAuth$.pipe(
+      concatMap(isAuth => {
+        if (isAuth) {
+          this.displayedColumns.push('actions');
+        } else {
+          this.displayedColumns = this.displayedColumns.filter(col => col !== 'actions');
+        }
+        return of(isAuth);
+      })
+    ).subscribe(
+      (isAuth) => {
+        // получаем список слов в зависимости от роута
+        this.activatedRoute.params.pipe(
+          takeUntil(this.unsubscribe$)
+        ).subscribe(params => {
+          this.loadListWords(params?.wordList, isAuth);
+        });
       }
-    });
+    );
   }
 
   ngOnInit(): void {
     // подписываемся на список слов
     this.words$.subscribe((words) => {
       if (words) {
-        this.dataSource = new MatTableDataSource(words);
-        this.dataSource.paginator = this.paginator;
-        this.dataSource.sort = this.sort;
+        this.setWordsOnTheTable(words);
       }
     });
+  }
+
+  setWordsOnTheTable(words): void {
+    this.dataSource = new MatTableDataSource(words);
+    this.dataSource.paginator = this.paginator;
+    this.dataSource.sort = this.sort;
   }
 
   /**
    * Загрузить необходимый список слов. Либо все слова, если списка нет.
    * @param list string
+   * @param isAuth boolean
    */
-  loadListWords(list: string): void {
+  loadListWords(list: string, isAuth: boolean): void {
     if (!list) {
       this.words$ = this.store.pipe(select(selectWords));
     } else {
-      this.store.dispatch(setSelectedWordLists({selectedWordLists: [list]}));
       this.words$ = this.store.pipe(select(selectWordsFromSelectedLists));
+      if (isAuth) {
+        this.store.dispatch(setSelectedWordLists({selectedWordLists: [list]}));
+      } else {
+        this.store.dispatch(setSelectedWordListsByJSON({selectedWordLists: [list]}));
+      }
     }
   }
 
@@ -103,8 +118,9 @@ export class WordListComponent implements OnInit, OnDestroy {
   /**
    * обновить слово
    * @param word IWord
+   * @param isAuth boolean
    */
-  updateWord(word): void {
+  updateWord(word, isAuth: boolean): void {
     const dialogRef = this.dialog.open(AddWordComponent, {
       panelClass: ['of-auto'],
       data: {word}
@@ -117,8 +133,9 @@ export class WordListComponent implements OnInit, OnDestroy {
         return;
       }
       if (result.item) {
+        this.store.dispatch(updateWord(result.item));
         // TODO в будущем не перезагружать и работать со списком, который уже вызван
-        this.loadListWords(result.item.params.word_type);
+        this.loadListWords(result.item.params.word_type, isAuth);
       }
     });
   }

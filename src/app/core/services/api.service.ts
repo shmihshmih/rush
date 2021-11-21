@@ -1,10 +1,21 @@
 import {Injectable, OnDestroy} from '@angular/core';
-import {from, Observable, Subject} from 'rxjs';
+import {from, Observable, of, Subject} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
 import {environment} from '../../../environments/environment';
 import {Store} from '@ngrx/store';
-import {selectIsAuth} from '../../state/auth/auth.selectors';
 import {AngularFireAuth} from '@angular/fire/compat/auth';
+import {ToastrService} from 'ngx-toastr';
+import {checkAuthFail, checkAuthSuccess, logoutFail, logoutSuccess} from '../../state/auth/auth.actions';
+import {initialUserState} from '../../state/auth/auth.reducer';
+import {loadWordLists, loadWordListsByJSON, loadWords, loadWordsByJSON} from '../../state/languages/words/words.actions';
+import {
+  loadCompetenceCatalog,
+  loadDifficultyCatalog,
+  loadPopularityCatalog,
+  loadTasks,
+  loadTasksByJSON
+} from '../../state/autoHR/autoHR.actions';
+import {Router} from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -12,40 +23,109 @@ import {AngularFireAuth} from '@angular/fire/compat/auth';
 export class ApiService implements OnDestroy {
   public MAIN_SERVER = environment.MAIN_SERVER;
   public MAIN_SERVER_AUTH = environment.MAIN_SERVER_AUTH;
-  public isAuth$: Observable<boolean> = this.store.select(selectIsAuth);
   unsubscribe$: Subject<boolean> = new Subject();
+
+  public user: {
+    refreshToken: string;
+    email: string;
+    uid: string;
+    displayName: string;
+  };
 
   constructor(
     private httpClient: HttpClient,
     private store: Store,
-    private afAuth: AngularFireAuth
+    private afAuth: AngularFireAuth,
+    private toastr: ToastrService,
+    private router: Router
   ) {
-    // this.authWithToken().pipe(
-    //   takeUntil(this.unsubscribe$)
-    // ).subscribe(isAuth => {
-    //   if (isAuth.error) {
-    //     this.isAuth.next(false);
-    //     localStorage.removeItem('token');
-    //   } else if (isAuth.token && isAuth.decoded) {
-    //     this.isAuth.next(true);
-    //   }
-    // });
   }
 
-  // login(loginData): Observable<any> {
-  //   const authData = loginData;
-  //   return this.httpClient.post(`${this.MAIN_SERVER_AUTH}auth`, authData);
-  // }
+  toastOptions = {
+    closeButton: true,
+    debug: false,
+    newestOnTop: true,
+    progressBar: true,
+    positionClass: 'toast-top-right',
+    preventDuplicates: true,
+    onclick: null,
+    showDuration: '30000',
+    hideDuration: '1000',
+    timeOut: 30000,
+    extendedTimeOut: 1000,
+    showEasing: 'swing',
+    hideEasing: 'linear',
+    showMethod: 'fadeIn',
+    hideMethod: 'fadeOut'
+  };
+
   login(email, password): Observable<any> {
     return from(this.afAuth.signInWithEmailAndPassword(email, password));
   }
 
-  logout(): Observable<any> {
-    return from(this.afAuth.signOut());
+  logout(): void {
+    this.afAuth.signOut()
+      .then((res) => {
+          this.store.dispatch(logoutSuccess());
+          location.reload();
+        },
+        (error) => {
+          this.store.dispatch(logoutFail({error: error.toString()}));
+        });
   }
 
-  checkAuth(): Observable<any> {
-    return this.afAuth.user;
+  checkAuth(): void {
+    this.afAuth.onAuthStateChanged(
+      (authData) => {
+        if (authData) {
+          const user = {
+            refreshToken: authData.refreshToken,
+            email: authData.email,
+            uid: authData.uid,
+            displayName: authData.displayName
+          };
+          this.user = user;
+          this.store.dispatch(checkAuthSuccess({authData: user}));
+        } else {
+          this.user = null;
+          this.store.dispatch(checkAuthSuccess({authData: initialUserState}));
+        }
+
+        if (!!this.user?.uid) {
+          // получение всех списков слов
+          this.store.dispatch(loadWordLists());
+
+          // получение всех слов
+          this.store.dispatch(loadWords());
+
+          // получение всех вопросов
+          this.store.dispatch(loadTasks());
+        } else {
+          // получение всех списков слов
+          this.store.dispatch(loadWordListsByJSON());
+
+          // получение всех слов
+          this.store.dispatch(loadWordsByJSON());
+
+          // получение всех вопросов
+          this.store.dispatch(loadTasksByJSON());
+        }
+
+        // Вещи в любом случае прогружаемые с фронта
+        // справочники autoHR
+        this.store.dispatch(loadDifficultyCatalog());
+        this.store.dispatch(loadCompetenceCatalog());
+        this.store.dispatch(loadPopularityCatalog());
+
+        // return user;
+      },
+      error => {
+        return of(checkAuthFail({error: error.toString()}));
+      },
+      () => {
+
+      });
+    // return this.afAuth.user;
   }
 
   checkToken(): Observable<any> {
@@ -64,6 +144,10 @@ export class ApiService implements OnDestroy {
    */
   public getDataFromJSON(q: string): Observable<any[]> {
     return this.httpClient.get<any[]>(q);
+  }
+
+  showError(error: string): void {
+    this.toastr.error(`${error}`, 'Ошибка!', this.toastOptions);
   }
 
   ngOnDestroy(): void {

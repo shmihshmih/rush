@@ -28,7 +28,16 @@ export class AutoHREffects {
     ofType(actions.loadTasks),
     mergeMap(() => this.autoHRService.getAllTasks().pipe(
       map(tasks => actions.loadTasksSuccess({tasks})),
-      catchError(error => of(actions.loadTasksFail({error})))
+      catchError(error => of(actions.loadTasksFail({error: error.toString()})))
+    ))
+  ));
+
+  // 1.1 Получение всех задач из JSON
+  loadTasksByJSON$ = createEffect(() => this.actions$.pipe(
+    ofType(actions.loadTasksByJSON),
+    mergeMap(() => this.autoHRService.getAllTasksByJSON().pipe(
+      map(tasks => actions.loadTasksByJSONSuccess({tasks})),
+      catchError(error => of(actions.loadTasksByJSONFail({error: error.toString()})))
     ))
   ));
 
@@ -37,7 +46,7 @@ export class AutoHREffects {
     ofType(addTask),
     mergeMap((action) => this.autoHRService.addTask(action.newTask).pipe(
       map((newTask) => addTaskSuccess({newTask})),
-      catchError((error) => of(addTaskFail({error})))
+      catchError((error) => of(addTaskFail({error: error.toString()})))
     ))
   ));
 
@@ -46,7 +55,7 @@ export class AutoHREffects {
     ofType(removeTask),
     mergeMap((action) => this.autoHRService.delTask(action.deletedTask).pipe(
       map((deletedTask) => removeTaskSuccess({deletedTask})),
-      catchError((error) => of(removeTaskFail({error})))
+      catchError((error) => of(removeTaskFail({error: error.toString()})))
     ))
   ));
   // 4. Редактирование задачи
@@ -54,7 +63,7 @@ export class AutoHREffects {
     ofType(updateTask),
     mergeMap((action) => this.autoHRService.updateTask(action.updatedTask).pipe(
       map((updatedTask) => updateTaskSuccess({updatedTask})),
-      catchError((error) => of(updateTaskFail({error}))))
+      catchError((error) => of(updateTaskFail({error: error.toString()}))))
     )
   ));
 
@@ -63,7 +72,7 @@ export class AutoHREffects {
     ofType(actions.loadDifficultyCatalog),
     mergeMap(() => this.autoHRService.getDifficulties().pipe(
       map(difficultyCatalog => actions.loadDifficultyCatalogSuccess({difficultyCatalog})),
-      catchError(error => of(actions.loadDifficultyCatalogFail({error})))
+      catchError(error => of(actions.loadDifficultyCatalogFail({error: error.toString()})))
     ))
   ));
 
@@ -72,7 +81,7 @@ export class AutoHREffects {
     ofType(actions.loadCompetenceCatalog),
     mergeMap(() => this.autoHRService.getCompetences().pipe(
       map(competenceCatalog => actions.loadCompetenceCatalogSuccess({competenceCatalog})),
-      catchError(error => of(actions.loadCompetenceCatalogFail({error})))
+      catchError(error => of(actions.loadCompetenceCatalogFail({error: error.toString()})))
     ))
   ));
 
@@ -81,7 +90,7 @@ export class AutoHREffects {
     ofType(actions.loadPopularityCatalog),
     mergeMap(() => this.autoHRService.getPopularity().pipe(
       map(popularityCatalog => actions.loadPopularityCatalogSuccess({popularityCatalog})),
-      catchError(error => of(actions.loadPopularityCatalogFail({error})))
+      catchError(error => of(actions.loadPopularityCatalogFail({error: error.toString()})))
     ))
   ));
 

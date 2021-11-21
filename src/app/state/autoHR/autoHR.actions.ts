@@ -7,6 +7,11 @@ enum AutoHRActionsTypes {
   loadTasksSuccess = '[AUTO HR] load tasks success',
   loadTasksFail = '[AUTO HR] load tasks fail',
 
+  // 1.1 Получение всех задач из JSON
+  loadTasksByJSON = '[AUTO HR] load tasks ByJSON',
+  loadTasksByJSONSuccess = '[AUTO HR] load tasks success ByJSON',
+  loadTasksByJSONFail = '[AUTO HR] load tasks fail ByJSON',
+
   // 2. Добавление новой задачи
   addTask = '[AUTO HR] add task',
   addTaskSuccess = '[AUTO HR] add task success',
@@ -47,6 +52,11 @@ enum AutoHRActionsTypes {
 export const loadTasks = createAction(AutoHRActionsTypes.loadTasks); // effect
 export const loadTasksSuccess = createAction(AutoHRActionsTypes.loadTasksSuccess, props<{ tasks }>());
 export const loadTasksFail = createAction(AutoHRActionsTypes.loadTasksFail, props<{ error }>());
+
+// 1.1 Получение всех задач из JSON
+export const loadTasksByJSON = createAction(AutoHRActionsTypes.loadTasksByJSON); // effect
+export const loadTasksByJSONSuccess = createAction(AutoHRActionsTypes.loadTasksByJSONSuccess, props<{ tasks }>());
+export const loadTasksByJSONFail = createAction(AutoHRActionsTypes.loadTasksByJSONFail, props<{ error }>());
 
 // 2. Добавление новой задачи
 export const addTask = createAction(AutoHRActionsTypes.addTask, props<{ newTask }>());

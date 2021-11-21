@@ -5,7 +5,6 @@ import {ApiService} from '../../../core/services/api.service';
 import {selectIsAuth} from '../../../state/auth/auth.selectors';
 import {Store} from '@ngrx/store';
 import {AuthComponent} from '../auth/auth.component';
-import {logout} from '../../../state/auth/auth.actions';
 
 @Component({
   selector: 'app-header',
@@ -50,6 +49,6 @@ export class HeaderComponent implements OnInit {
   }
 
   logout(): void {
-    this.store.dispatch(logout());
+    this.apiService.logout();
   }
 }

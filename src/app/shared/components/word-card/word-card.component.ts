@@ -1,15 +1,16 @@
 import {Component, HostListener, OnDestroy, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {takeUntil, tap} from 'rxjs/operators';
-import {Observable, Subject} from 'rxjs';
+import {concatMap, Observable, of, Subject} from 'rxjs';
 import {MatDialog} from '@angular/material/dialog';
 import {WordCardHelpComponent} from './popup/word-card-help/word-card-help.component';
 import {WordCardSettingsComponent} from './popup/word-card-settings/word-card-settings.component';
 import {IWord} from '../../models/esperanto/word.interface';
 import {Store} from '@ngrx/store';
-import {clearSelectedWordLists, setSelectedWordLists} from '../../../state/languages/words/words.actions';
+import {clearSelectedWordLists, setSelectedWordLists, setSelectedWordListsByJSON} from '../../../state/languages/words/words.actions';
 import {selectSelectedWordLists, selectWordsFromSelectedLists} from '../../../state/languages/words/words.selectors';
 import {IWordList} from '../../models/esperanto/word_list.interface';
+import {selectIsAuth} from '../../../state/auth/auth.selectors';
 
 @Component({
   selector: 'app-word-card',
@@ -17,6 +18,8 @@ import {IWordList} from '../../models/esperanto/word_list.interface';
   styleUrls: ['./word-card.component.scss']
 })
 export class WordCardComponent implements OnInit, OnDestroy {
+  isAuth$ = this.store.select(selectIsAuth);
+
   unsubscribe$: Subject<boolean> = new Subject();
   listWord$: Observable<IWord[]> = this.store.select(selectWordsFromSelectedLists);
   listWord: IWord[] = [];
@@ -43,19 +46,38 @@ export class WordCardComponent implements OnInit, OnDestroy {
               private router: Router,
               private store: Store) {
 
+
+    this.isAuth$.pipe(
+      concatMap(isAuth => {
+        if (isAuth) {
+
+        } else {
+        }
+        return of(isAuth);
+      })
+    ).subscribe(
+      (isAuth) => {
+        // получаем список для загрузки
+        this.activatedRoute.params.pipe(
+          tap(params => {
+            if (!params.wordList) {
+            } else {
+              if (isAuth) {
+                this.store.dispatch(setSelectedWordLists({selectedWordLists: [params.wordList]}));
+              } else {
+                this.store.dispatch(setSelectedWordListsByJSON({selectedWordLists: [params.wordList]}));
+              }
+            }
+          }),
+          takeUntil(this.unsubscribe$)
+        ).subscribe(params => {
+        });
+      }
+    );
+
     // получаем мод, для конечного языка
     this.finishLang = this.router.url.split('/')[1] as 'russian' | 'english' | 'esperanto';
 
-    // получаем список для загрузки
-    this.activatedRoute.params.pipe(
-      tap(params => {
-        if (params.wordList) {
-          this.store.dispatch(setSelectedWordLists({selectedWordLists: [params.wordList]}));
-        }
-      }),
-      takeUntil(this.unsubscribe$)
-    ).subscribe(params => {
-    });
   }
 
   ngOnInit(): void {

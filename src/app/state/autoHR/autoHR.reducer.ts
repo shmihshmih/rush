@@ -13,7 +13,14 @@ export const tasksReducer = createReducer(initialTasksState,
     return [...tasks];
   }),
   on(actions.loadTasksFail, (state, {error}) => {
-    return error;
+    return [];
+  }),
+  // 1.1 Получение всех задач из JSON
+  on(actions.loadTasksByJSONSuccess, (state, {tasks}) => {
+    return [...tasks];
+  }),
+  on(actions.loadTasksByJSONFail, (state, {error}) => {
+    return [];
   }),
   // 2. Добавление новой задачи
   on(addTaskSuccess, (state, {newTask}) => {
@@ -25,8 +32,8 @@ export const tasksReducer = createReducer(initialTasksState,
   // 3. Удаление задачи
   on(removeTaskSuccess, (state, {deletedTask}) => {
     const newState = [...state];
-    const indexOfDeletedTask = newState.findIndex(t => t.id === deletedTask.id);
-    newState.splice(indexOfDeletedTask, 1);
+    // const indexOfDeletedTask = newState.findIndex(t => t.id === deletedTask.id);
+    // newState.splice(indexOfDeletedTask, 1);
     return [...newState];
   }),
   on(removeTaskFail, (state, {error}) => {
@@ -65,25 +72,28 @@ export const configReducer = createReducer(initialConfigState,
 /** Справочники */
 export const initialCatalogState: string[] = [];
 export const catalogReducer = createReducer(initialCatalogState,
+  // Каталоги сложностей
   on(actions.loadDifficultyCatalogSuccess, (state, {difficultyCatalog}) => {
     return {...state, difficultyCatalog};
   }),
   on(actions.loadDifficultyCatalogFail, (state, {error}) => {
-    return error;
+    return {...state};
   }),
 
+  // Каталоги компетенций
   on(actions.loadCompetenceCatalogSuccess, (state, {competenceCatalog}) => {
     return {...state, competenceCatalog};
   }),
   on(actions.loadCompetenceCatalogFail, (state, {error}) => {
-    return error;
+    return {...state};
   }),
 
+  // Каталоги популярности
   on(actions.loadPopularityCatalogSuccess, (state, {popularityCatalog}) => {
     return {...state, popularityCatalog};
   }),
   on(actions.loadPopularityCatalogFail, (state, {error}) => {
-    return error;
+    return {...state};
   }),
 );
 

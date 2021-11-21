@@ -34,7 +34,7 @@
         <th mat-header-cell *matHeaderCellDef mat-sort-header> actions</th>
         <td mat-cell *matCellDef="let row" [style.color]="'black'">
           <div>
-            <button mat-raised-button color="primary"><em (click)="updateWord(row)"
+            <button mat-raised-button color="primary"><em (click)="updateWord(row, isAuth$)"
                                                           class="material-icons-outlined">edit</em></button>
             <button class="ml-16" mat-raised-button color="primary"><em (click)="delWord(row)"
                                                                         class="material-icons-outlined">delete</em>

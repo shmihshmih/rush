@@ -37,6 +37,7 @@ import {getRemoteConfig, provideRemoteConfig} from '@angular/fire/remote-config'
 import {getStorage, provideStorage} from '@angular/fire/storage';
 import {AngularFireModule} from '@angular/fire/compat';
 import {AngularFireAuthModule} from '@angular/fire/compat/auth';
+import {ToastrModule} from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -81,7 +82,8 @@ import {AngularFireAuthModule} from '@angular/fire/compat/auth';
     provideRemoteConfig(() => getRemoteConfig()),
     provideStorage(() => getStorage()),
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    ToastrModule.forRoot(),
   ],
   providers: [
     ScreenTrackingService, UserTrackingService

@@ -24,7 +24,7 @@ export class BlogEffects {
     ofType(loadQuestBooks),
     mergeMap(() => this.blogService.getBookQuestList().pipe(
       map((questBooks: IQuestBook[]) => loadQuestBooksSuccess({questBooks})),
-      catchError((error) => of(loadQuestBooksFail({error})))
+      catchError((error) => of(loadQuestBooksFail({error: error.toString()})))
     ))
   ));
 
@@ -38,7 +38,7 @@ export class BlogEffects {
           dataCollection: activeQuestBook,
           selectedPart: activeQuestBook[0]
         })),
-        catchError((error) => of(loadActiveQuestBookFail({error})))
+        catchError((error) => of(loadActiveQuestBookFail({error: error.toString()})))
       )
     )
   ));

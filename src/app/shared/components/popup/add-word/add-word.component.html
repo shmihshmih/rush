@@ -41,6 +41,8 @@
       <input matInput formControlName="russian" placeholder="russian">
     </mat-form-field>
     <button *ngIf="!data.word" mat-raised-button (click)="addWord()" color="primary">add</button>
-    <button *ngIf="data && data.word && data.word._id" mat-raised-button (click)="updateWord(this.data.word._id)" color="primary">update</button>
+    <button *ngIf="data && data.word && data.word.id" mat-raised-button
+            (click)="updateWord(this.data.word.id)" color="primary">update
+    </button>
   </form>
 </div>

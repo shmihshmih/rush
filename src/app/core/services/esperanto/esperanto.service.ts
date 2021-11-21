@@ -6,7 +6,6 @@ import {ApiService} from '../api.service';
 import {map} from 'rxjs/operators';
 import {IWordList} from '../../../shared/models/esperanto/word_list.interface';
 import {Store} from '@ngrx/store';
-import {selectIsAuth} from '../../../state/auth/auth.selectors';
 import {AngularFirestore, AngularFirestoreCollection} from '@angular/fire/compat/firestore';
 
 @Injectable()
@@ -21,64 +20,23 @@ export class EsperantoService implements OnDestroy {
   ) {
   }
 
-  /**
-   * get all words
-   */
-  // getWords(): Observable<IWord[]> {
-  //   return this.httpClient.get<IWord[]>(`${this.apiService.MAIN_SERVER}esperanto/allWords`);
-  // }
-  getWords(): Observable<IWord[]> {
-    return this.httpClient.get<IWord[]>(`./assets/collections/wordmodels.json`);
-  }
+  /** Списки слов */
 
-  /**
-   * get all word lists
-   */
-  // getWordLists(): Observable<IWordList[]> {
-  //   return this.httpClient.get<IWordList[]>(`${this.apiService.MAIN_SERVER}esperanto/wordLists`);
-  // }
+  /** get all word lists */
   getWordLists(): Observable<IWordList[]> {
-    return this.store.select(selectIsAuth).pipe(
-      mergeMap((isAuth) => {
-        if (isAuth) { // если авторизован, забираем из базы
-          const wordListsCollection: AngularFirestoreCollection<IWordList> = this.afs.collection<IWordList>('wordLists');
-          let wordLists: Observable<IWordList[]>;
-          wordLists = wordListsCollection.snapshotChanges().pipe(
-            map(actions => actions.map(a => {
-              const data = a.payload.doc.data() as IWordList;
-              const id = a.payload.doc.id;
-              return {id, ...data};
-            }))
-          );
-          return wordLists;
-        } else { // если не авторизован, то из json своего заберем
-          return this.httpClient.get<IWordList[]>(`./assets/collections/wordlistmodels.json`);
-        }
-      })
+    const wordListsCollection: AngularFirestoreCollection<IWordList> = this.afs.collection<IWordList>('wordLists');
+    return wordListsCollection.snapshotChanges().pipe(
+      map(actions => actions.map(a => {
+        const data = a.payload.doc.data() as IWordList;
+        const id = a.payload.doc.id;
+        return {id, ...data};
+      }))
     );
   }
 
-  /**
-   * get all words from word list
-   * @param wordList list we need
-   */
-  // getWordsByWordList(wordList): Observable<IWord[]> {
-  //   const params = {wordList};
-  //   return this.httpClient.get<IWord[]>(`${this.apiService.MAIN_SERVER}esperanto/wordList`, {params});
-  // }
-  getWordsByWordList(wordList): Observable<IWord[]> {
-    return this.httpClient.get<IWord[]>(`./assets/collections/wordmodels.json`)
-      .pipe(
-        map((res) => {
-          let wordsByWordList = [];
-          if (wordList) {
-            wordsByWordList = res.filter(word => word.word_type === wordList || word.word_type.includes(wordList));
-          } else {
-            wordsByWordList = res;
-          }
-          return wordsByWordList;
-        })
-      );
+  /** get word lists by JSON */
+  getWordListsByJSON(): Observable<IWordList[]> {
+    return this.httpClient.get<IWordList[]>(`./assets/collections/wordlistmodels.json`);
   }
 
   /**
@@ -86,7 +44,7 @@ export class EsperantoService implements OnDestroy {
    * @param wordList название списка
    */
   addWordList(wordList): Observable<IWordList> {
-    const wordLists = this.afs.collection<IWord>('wordLists');
+    const wordLists = this.afs.collection<IWordList>('wordLists');
     const id = this.afs.createId();
     const params = {...wordList, id};
     return from(wordLists.doc(id).set({...params})).pipe(
@@ -110,61 +68,62 @@ export class EsperantoService implements OnDestroy {
    * @param wordList название списка
    */
   updateWordList(wordList): Observable<any> {
-    return of(wordList);
+    const wordLists = this.afs.collection<IWordList>('wordLists');
+    return from(wordLists.doc(wordList.id).update({...wordList})).pipe(
+      mergeMap((res) => {
+        return of({...wordList});
+      })
+    );
   }
 
-  //   const params = wordList;
-  //   const token = localStorage.getItem('token');
-  //   if (token) {
-  //     return this.apiService.checkToken().pipe(
-  //       switchMap((isAuth): Observable<any> => {
-  //         if (isAuth.error) {
-  //           return of(false);
-  //         } else if (isAuth.token && isAuth.decoded) {
-  //           return of(true);
-  //         }
-  //       }),
-  //       switchMap(auth => {
-  //         if (auth) {
-  //           return this.httpClient.put(`${this.apiService.MAIN_SERVER}esperanto/wordList`, {params});
-  //         } else {
-  //           return of({message: 'Вы не можете совершить эту операцию!'});
-  //         }
-  //       })
-  //     );
-  //   } else {
-  //     return of({error: 'NoAuth', message: 'Залогиньтесь!'});
-  //   }
-  // }
+  /** Слова */
+  /**
+   * get all words from word list
+   * @param wordList list we need
+   */
+  getWordsByWordList(wordList?: string[]): Observable<IWord[]> {
+    const wordsCollection: AngularFirestoreCollection<IWord> = this.afs.collection<IWord>('words', ref => ref.where('word_type', 'array-contains', wordList[0]));
+    return wordsCollection.snapshotChanges().pipe(
+      map(actions => actions.map(a => {
+        const data = a.payload.doc.data() as IWord;
+        const id = a.payload.doc.id;
+        return {id, ...data};
+      }))
+    );
+  }
+
+  /**
+   * get all words from word list by JSON
+   * @param wordList list we need
+   */
+  getWordsByWordListByJSON(wordList?: string[]): Observable<IWord[]> {
+    return this.httpClient.get<IWord[]>(`./assets/collections/wordmodels.json`)
+      .pipe(
+        map((res) => {
+          let wordsByWordList = [];
+          if (wordList) {
+            wordsByWordList = res.filter(word => (word.word_type === wordList) || word.word_type.includes(wordList[0]));
+          } else {
+            wordsByWordList = res;
+          }
+          return wordsByWordList;
+        })
+      );
+  }
 
   /**
    * Добавление нового слова с проверкой авторизации
    * @param word слово
    */
   addWord(word): Observable<any> {
-    return of(word);
-    // const params = word;
-    // const token = localStorage.getItem('token');
-    // if (token) {
-    //   return this.apiService.checkToken().pipe(
-    //     switchMap((isAuth): Observable<any> => {
-    //       if (isAuth.error) {
-    //         return of(false);
-    //       } else if (isAuth.token && isAuth.decoded) {
-    //         return of(true);
-    //       }
-    //     }),
-    //     switchMap(auth => {
-    //       if (auth) {
-    //         return this.httpClient.post(`${this.apiService.MAIN_SERVER}esperanto/word`, {params});
-    //       } else {
-    //         return of({message: 'Вы не можете совершить эту операцию!'});
-    //       }
-    //     })
-    //   );
-    // } else {
-    //   return of({error: 'NoAuth', message: 'Залогиньтесь!'});
-    // }
+    const wordsCollection = this.afs.collection<IWord>('words');
+    const id = this.afs.createId();
+    const params = {...word, id};
+    return from(wordsCollection.doc(id).set({...params})).pipe(
+      mergeMap((res) => {
+        return of({...params});
+      })
+    );
   }
 
   /**
@@ -172,29 +131,8 @@ export class EsperantoService implements OnDestroy {
    * @param word название списка
    */
   delWord(word): Observable<any> {
-    return of(word);
-    // const params = word._id;
-    // const token = localStorage.getItem('token');
-    // if (token) {
-    //   return this.apiService.checkToken().pipe(
-    //     switchMap((isAuth): Observable<any> => {
-    //       if (isAuth.error) {
-    //         return of(false);
-    //       } else if (isAuth.token && isAuth.decoded) {
-    //         return of(true);
-    //       }
-    //     }),
-    //     switchMap(auth => {
-    //       if (auth) {
-    //         return this.httpClient.delete(`${this.apiService.MAIN_SERVER}esperanto/word`, {params});
-    //       } else {
-    //         return of({message: 'Вы не можете совершить эту операцию!'});
-    //       }
-    //     })
-    //   );
-    // } else {
-    //   return of({error: 'NoAuth', message: 'Залогиньтесь!'});
-    // }
+    const wordCollection = this.afs.collection('words');
+    return from(wordCollection.doc(word.id).delete());
   }
 
   /**
@@ -202,29 +140,36 @@ export class EsperantoService implements OnDestroy {
    * @param word название списка
    */
   updateWord(word): Observable<any> {
-    return of(word);
-    // const params = word;
-    // const token = localStorage.getItem('token');
-    // if (token) {
-    //   return this.apiService.checkToken().pipe(
-    //     switchMap((isAuth): Observable<any> => {
-    //       if (isAuth.error) {
-    //         return of(false);
-    //       } else if (isAuth.token && isAuth.decoded) {
-    //         return of(true);
-    //       }
-    //     }),
-    //     switchMap(auth => {
-    //       if (auth) {
-    //         return this.httpClient.put(`${this.apiService.MAIN_SERVER}esperanto/word`, {params});
-    //       } else {
-    //         return of({message: 'Вы не можете совершить эту операцию!'});
-    //       }
-    //     })
-    //   );
-    // } else {
-    //   return of({error: 'NoAuth', message: 'Залогиньтесь!'});
-    // }
+    const wordsCollection = this.afs.collection<IWord>('words');
+    return from(wordsCollection.doc(word.id).update({...word})).pipe(
+      mergeMap((res) => {
+        return of({...word});
+      })
+    );
+  }
+
+  /** get all words @deprecated */
+  // getWords(): Observable<IWord[]> {
+  //   return this.httpClient.get<IWord[]>(`${this.apiService.MAIN_SERVER}esperanto/allWords`);
+  // }
+  getWords(): Observable<IWord[]> {
+    const wordsCollection: AngularFirestoreCollection<IWord> = this.afs.collection<IWord>('words', ref => ref.where('word_type', 'array-contains', 'numeraloj'));
+    let words: Observable<IWord[]>;
+    words = wordsCollection.snapshotChanges().pipe(
+      map(actions => actions.map(a => {
+        const data = a.payload.doc.data() as IWord;
+        const id = a.payload.doc.id;
+        return {id, ...data};
+      }))
+    );
+    return words;
+  }
+
+  /**
+   * get all words from JSON
+   */
+  getWordsByJSON(): Observable<IWord[]> {
+    return this.httpClient.get<IWord[]>(`./assets/collections/wordmodels.json`);
   }
 
   /**

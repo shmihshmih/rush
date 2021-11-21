@@ -27,7 +27,7 @@ export const createAuthReducer = createReducer(initialAuthState,
     return {...state, user: authData, isAuth: true};
   }),
   on(makeAuthorizationFail, (state, {error}) => {
-    return error;
+    return {...state};
   }),
   on(setAuthDataFromLocalStorage, (state, {authData}) => {
     if (authData?.email) {
@@ -43,7 +43,7 @@ export const createAuthReducer = createReducer(initialAuthState,
     return {...state, isAuth: false, user: initialUserState};
   }),
   on(logoutFail, (state, {error}) => {
-    return error;
+    return {...state};
   }),
 
   // проверка авторизации
@@ -56,7 +56,7 @@ export const createAuthReducer = createReducer(initialAuthState,
     }
   }),
   on(checkAuthFail, (state, {error}) => {
-    return error;
+    return {...state};
   }),
 );
 

@@ -1,8 +1,10 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {Observable, of} from 'rxjs';
+import {from, mergeMap, Observable, of} from 'rxjs';
 import {ITask} from '../../../shared/models/autoHR/question.model';
 import {ApiService} from '../api.service';
+import {AngularFirestore, AngularFirestoreCollection} from '@angular/fire/compat/firestore';
+import {map} from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +13,8 @@ export class AutoHRService {
 
   constructor(
     private http: HttpClient,
-    private apiService: ApiService
+    private apiService: ApiService,
+    private readonly afs: AngularFirestore
   ) {
   }
 
@@ -20,88 +23,43 @@ export class AutoHRService {
   //   return this.http.get<ITask[]>(`${this.apiService.MAIN_SERVER}autohr/questionList`);
   // }
   getAllTasks(): Observable<ITask[]> {
-    return this.http.get<ITask[]>(`./assets/collections/questionmodels.json`);
+    const tasksCollection: AngularFirestoreCollection<ITask> = this.afs.collection<ITask>('tasks');
+    return tasksCollection.snapshotChanges().pipe(
+      map(actions => actions.map(a => {
+        const data = a.payload.doc.data() as ITask;
+        const id = a.payload.doc.id;
+        return {id, ...data};
+      }))
+    );
+    // return this.http.get<ITask[]>(`./assets/collections/questionmodels.json`);
   }
 
   // добавить вопрос
-  addTask(newTask): Observable<any> {
-    return of(newTask);
-    // const params = newTask;
-    // const token = localStorage.getItem('token');
-    // if (token) {
-    //   return this.apiService.checkToken().pipe(
-    //     switchMap((isAuth): Observable<any> => {
-    //       if (isAuth.error) {
-    //         return of(false);
-    //       } else if (isAuth.token && isAuth.decoded) {
-    //         return of(true);
-    //       }
-    //     }),
-    //     switchMap(auth => {
-    //       if (auth) {
-    //         return this.http.post(`${this.apiService.MAIN_SERVER}autohr/task`, {params});
-    //       } else {
-    //         return of({message: 'Вы не можете совершить эту операцию!'});
-    //       }
-    //     })
-    //   );
-    // } else {
-    //   return of({error: 'NoAuth', message: 'Залогиньтесь!'});
-    // }
+  addTask(newTask): Observable<ITask> {
+    const tasksCollection: AngularFirestoreCollection<ITask> = this.afs.collection<ITask>('tasks');
+    const id = this.afs.createId();
+    const params = {...newTask, id};
+    return from(tasksCollection.doc(id).set({...params})).pipe(
+      mergeMap((res) => {
+        return of({...params});
+      })
+    );
   }
 
   // удалить вопрос
   delTask(newTask): Observable<any> {
-    return of(newTask);
-    // const params = newTask._id;
-    // const token = localStorage.getItem('token');
-    // if (token) {
-    //   return this.apiService.checkToken().pipe(
-    //     switchMap((isAuth): Observable<any> => {
-    //       if (isAuth.error) {
-    //         return of(false);
-    //       } else if (isAuth.token && isAuth.decoded) {
-    //         return of(true);
-    //       }
-    //     }),
-    //     switchMap(auth => {
-    //       if (auth) {
-    //         return this.http.delete(`${this.apiService.MAIN_SERVER}autohr/task`, {params});
-    //       } else {
-    //         return of({message: 'Вы не можете совершить эту операцию!'});
-    //       }
-    //     })
-    //   );
-    // } else {
-    //   return of({error: 'NoAuth', message: 'Залогиньтесь!'});
-    // }
+    const tasksCollection: AngularFirestoreCollection<ITask> = this.afs.collection<ITask>('tasks');
+    return from(tasksCollection.doc(newTask.id).delete());
   }
 
   // обновить вопрос
   updateTask(task): Observable<any> {
-    return of(task);
-    // const params = task;
-    // const token = localStorage.getItem('token');
-    // if (token) {
-    //   return this.apiService.checkToken().pipe(
-    //     switchMap((isAuth): Observable<any> => {
-    //       if (isAuth.error) {
-    //         return of(false);
-    //       } else if (isAuth.token && isAuth.decoded) {
-    //         return of(true);
-    //       }
-    //     }),
-    //     switchMap(auth => {
-    //       if (auth) {
-    //         return this.http.put(`${this.apiService.MAIN_SERVER}autohr/task`, {params});
-    //       } else {
-    //         return of({message: 'Вы не можете совершить эту операцию!'});
-    //       }
-    //     })
-    //   );
-    // } else {
-    //   return of({error: 'NoAuth', message: 'Залогиньтесь!'});
-    // }
+    const tasksCollection: AngularFirestoreCollection<ITask> = this.afs.collection<ITask>('tasks');
+    return from(tasksCollection.doc(task.id).update({...task})).pipe(
+      mergeMap((res) => {
+        return of({...task});
+      })
+    );
   }
 
   getAllTasksByJSON(): Observable<ITask[]> {

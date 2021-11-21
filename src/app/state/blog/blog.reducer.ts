@@ -20,8 +20,8 @@ export const createBlogCatalogsReducer = createReducer(
   on(loadQuestBooksSuccess, (state, {questBooks}) => {
     return {...state, questBooks};
   }),
-  on(loadQuestBooksFail, (error) => {
-    return error;
+  on(loadQuestBooksFail, (state, error) => {
+    return {...state};
   })
 );
 
@@ -70,7 +70,7 @@ export const activeQuestBookReducer = createReducer(
     return {...state, selectedPart: {...state.selectedPart, id: +selectedPart, ...partWeNeed}};
   }),
   on(loadActiveQuestBookFail, (state, {error}) => {
-    return error;
+    return {...state};
   }),
   on(clearActiveQuestBook, () => {
     return initialActiveQuestBook;
