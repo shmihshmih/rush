@@ -52,7 +52,7 @@ export class EnglishSentencesCreatorComponent implements OnInit, OnDestroy {
     private store: Store
   ) {
     // инициализация конструктора, включает в себя загрузку слов (местоимения, глаголы)
-    this.store.dispatch(setSelectedWordLists({selectedWordLists: ['pronomoj', 'verbs']}));
+    this.store.dispatch(setSelectedWordLists({selectedWordLists: ['verbs', 'pronomoj']}));
     this.allWords$.pipe().subscribe(words => {
       this.pronouns = words.filter(word => word.word_type.includes('pronomoj'));
       this.verbs = words.filter(word => word.word_type.includes('verbs'));
