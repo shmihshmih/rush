@@ -14,7 +14,7 @@ export class AppComponent {
   constructor(private store: Store,
               private apiService: ApiService
   ) {
-    // проверяем авторизацию
+    // проверяем авторизацию1
     this.apiService.checkAuth();
     // this.store.dispatch(checkAuth());
   }
