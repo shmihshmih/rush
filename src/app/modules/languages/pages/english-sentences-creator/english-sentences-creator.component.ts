@@ -7,6 +7,7 @@ import {MatDialog} from '@angular/material/dialog';
 import {Store} from '@ngrx/store';
 import {setSelectedWordLists} from '../../../../state/languages/words/words.actions';
 import {selectWordsFromSelectedLists} from '../../../../state/languages/words/words.selectors';
+import { selectIsAuth } from 'src/app/state/auth/auth.selectors';
 
 @Component({
   selector: 'app-english-sentences-creator',
@@ -14,6 +15,7 @@ import {selectWordsFromSelectedLists} from '../../../../state/languages/words/wo
   styleUrls: ['./english-sentences-creator.component.scss']
 })
 export class EnglishSentencesCreatorComponent implements OnInit, OnDestroy {
+  isAuth$ = this.store.select(selectIsAuth);
   unsubscribe$: Subject<boolean> = new Subject();
   // все используемые слова в предложении
   pronouns: IWord[];
@@ -53,6 +55,45 @@ export class EnglishSentencesCreatorComponent implements OnInit, OnDestroy {
   ) {
     // инициализация конструктора, включает в себя загрузку слов (местоимения, глаголы)
     this.store.dispatch(setSelectedWordLists({selectedWordLists: ['verbs', 'pronomoj']}));
+
+
+    this.isAuth$.pipe(
+      concatMap(isAuth => {
+        if (isAuth) {
+
+        } else {
+        }
+        return of(isAuth);
+      })
+    ).subscribe(
+      (isAuth) => {
+        // получаем список для загрузки
+        this.activatedRoute.params.pipe(
+          tap(params => {
+            if (!params.wordList) {
+            } else {
+              if (isAuth) {
+                this.store.dispatch(setSelectedWordLists({selectedWordLists: [params.wordList]}));
+              } else {
+                this.store.dispatch(setSelectedWordListsByJSON({selectedWordLists: [params.wordList]}));
+              }
+            }
+          }),
+          takeUntil(this.unsubscribe$)
+        ).subscribe(params => {
+        });
+      }
+    );
+
+             if (isAuth) {
+                       this.store.dispatch(setSelectedWordLists({selectedWordLists: [params.wordList]}));
+                    } else {
+                     this.store.dispatch(setSelectedWordListsByJSON({selectedWordLists: [params.wordList]}));
+                    }
+
+
+
+
     this.allWords$.pipe().subscribe(words => {
       this.pronouns = words.filter(word => word.word_type.includes('pronomoj'));
       this.verbs = words.filter(word => word.word_type.includes('verbs'));
