@@ -82,7 +82,7 @@ export class EsperantoService implements OnDestroy {
    * @param wordList list we need
    */
   getWordsByWordList(wordList?: string[]): Observable<IWord[]> {
-    const wordsCollection: AngularFirestoreCollection<IWord> = this.afs.collection<IWord>('words', ref => ref.where('word_type', 'array-contains', wordList[0]));
+    const wordsCollection: AngularFirestoreCollection<IWord> = this.afs.collection<IWord>('words', ref => ref.where('word_type', 'array-contains-any', wordList));
     return wordsCollection.snapshotChanges().pipe(
       map(actions => actions.map(a => {
         const data = a.payload.doc.data() as IWord;
