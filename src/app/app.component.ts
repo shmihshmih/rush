@@ -15,7 +15,7 @@ export class AppComponent {
               private apiService: ApiService
   ) {
     // проверяем авторизацию1
-    this.apiService.checkAuth();
+    // this.apiService.checkAuth();
     // this.store.dispatch(checkAuth());
   }
 }

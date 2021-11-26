@@ -1,21 +1,13 @@
 import {Injectable, OnDestroy} from '@angular/core';
-import {from, Observable, of, Subject} from 'rxjs';
+import {from, Observable, Subject} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
 import {environment} from '../../../environments/environment';
 import {Store} from '@ngrx/store';
 import {AngularFireAuth} from '@angular/fire/compat/auth';
 import {ToastrService} from 'ngx-toastr';
-import {checkAuthFail, checkAuthSuccess, logoutFail, logoutSuccess} from '../../state/auth/auth.actions';
-import {initialUserState} from '../../state/auth/auth.reducer';
-import {loadWordLists, loadWordListsByJSON, loadWords, loadWordsByJSON} from '../../state/languages/words/words.actions';
-import {
-  loadCompetenceCatalog,
-  loadDifficultyCatalog,
-  loadPopularityCatalog,
-  loadTasks,
-  loadTasksByJSON
-} from '../../state/autoHR/autoHR.actions';
+import {logoutFail, logoutSuccess} from '../../state/auth/auth.actions';
 import {Router} from '@angular/router';
+import {IUserAdmin} from '../../shared/models/main.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -25,12 +17,7 @@ export class ApiService implements OnDestroy {
   public MAIN_SERVER_AUTH = environment.MAIN_SERVER_AUTH;
   unsubscribe$: Subject<boolean> = new Subject();
 
-  public user: {
-    refreshToken: string;
-    email: string;
-    uid: string;
-    displayName: string;
-  };
+  public user: IUserAdmin;
 
   constructor(
     private httpClient: HttpClient,
@@ -74,59 +61,59 @@ export class ApiService implements OnDestroy {
         });
   }
 
-  checkAuth(): void {
-    this.afAuth.onAuthStateChanged(
-      (authData) => {
-        if (authData) {
-          const user = {
-            refreshToken: authData.refreshToken,
-            email: authData.email,
-            uid: authData.uid,
-            displayName: authData.displayName
-          };
-          this.user = user;
-          this.store.dispatch(checkAuthSuccess({authData: user}));
-        } else {
-          this.user = null;
-          this.store.dispatch(checkAuthSuccess({authData: initialUserState}));
-        }
-
-        if (!!this.user?.uid) {
-          // получение всех списков слов
-          this.store.dispatch(loadWordLists());
-
-          // получение всех слов
-          this.store.dispatch(loadWords());
-
-          // получение всех вопросов
-          this.store.dispatch(loadTasks());
-        } else {
-          // получение всех списков слов
-          this.store.dispatch(loadWordListsByJSON());
-
-          // получение всех слов
-          this.store.dispatch(loadWordsByJSON());
-
-          // получение всех вопросов
-          this.store.dispatch(loadTasksByJSON());
-        }
-
-        // Вещи в любом случае прогружаемые с фронта
-        // справочники autoHR
-        this.store.dispatch(loadDifficultyCatalog());
-        this.store.dispatch(loadCompetenceCatalog());
-        this.store.dispatch(loadPopularityCatalog());
-
-        // return user;
-      },
-      error => {
-        return of(checkAuthFail({error: error.toString()}));
-      },
-      () => {
-
-      });
-    // return this.afAuth.user;
-  }
+  // checkAuth(): void {
+  //   this.afAuth.onAuthStateChanged(
+  //     (authData) => {
+  //       if (authData) {
+  //         const user = {
+  //           refreshToken: authData.refreshToken,
+  //           email: authData.email,
+  //           uid: authData.uid,
+  //           displayName: authData.displayName
+  //         };
+  //         this.user = user;
+  //         this.store.dispatch(checkAuthSuccess({authData: user}));
+  //       } else {
+  //         this.user = null;
+  //         this.store.dispatch(checkAuthSuccess({authData: initialUserState}));
+  //       }
+  //
+  //       if (!!this.user?.uid) {
+  //         // получение всех списков слов
+  //         this.store.dispatch(loadWordLists());
+  //
+  //         // получение всех слов
+  //         this.store.dispatch(loadWords());
+  //
+  //         // получение всех вопросов
+  //         this.store.dispatch(loadTasks());
+  //       } else {
+  //         // получение всех списков слов
+  //         this.store.dispatch(loadWordListsByJSON());
+  //
+  //         // получение всех слов
+  //         this.store.dispatch(loadWordsByJSON());
+  //
+  //         // получение всех вопросов
+  //         this.store.dispatch(loadTasksByJSON());
+  //       }
+  //
+  //       // Вещи в любом случае прогружаемые с фронта
+  //       // справочники autoHR
+  //       this.store.dispatch(loadDifficultyCatalog());
+  //       this.store.dispatch(loadCompetenceCatalog());
+  //       this.store.dispatch(loadPopularityCatalog());
+  //
+  //       // return user;
+  //     },
+  //     error => {
+  //       return of(checkAuthFail({error: error.toString()}));
+  //     },
+  //     () => {
+  //
+  //     });
+  //   // return this.afAuth.user;
+  // }
 
   checkToken(): Observable<any> {
     const token = localStorage.getItem('token');

@@ -102,7 +102,7 @@ export class EsperantoService implements OnDestroy {
         map((res) => {
           let wordsByWordList = [];
           if (wordList) {
-            wordsByWordList = res.filter(word => (word.word_type === wordList) || word.word_type.includes(wordList[0]));
+            wordsByWordList = res.filter(word => (word.word_type === wordList) || word.word_type.some(type => wordList.includes(type)));
           } else {
             wordsByWordList = res;
           }

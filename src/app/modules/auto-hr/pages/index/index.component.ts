@@ -10,7 +10,18 @@ import {ActivatedRoute} from '@angular/router';
 import {InterviewPopupComponent} from '../../components/interview-popup/interview-popup.component';
 import {TaskAnswerPopupComponent} from '../../components/task-answer-popup/task-answer-popup.component';
 import {ModTaskPopupComponent} from '../../components/mod-task-popup/mod-task-popup.component';
-import {addTask, clearAutoHRConfig, removeTask, setAutoHRConfig, updateTask} from '../../../../state/autoHR/autoHR.actions';
+import {
+  addTask,
+  clearAutoHRConfig,
+  loadCompetenceCatalog,
+  loadDifficultyCatalog,
+  loadPopularityCatalog,
+  loadTasks,
+  loadTasksByJSON,
+  removeTask,
+  setAutoHRConfig,
+  updateTask
+} from '../../../../state/autoHR/autoHR.actions';
 import {Store} from '@ngrx/store';
 import {
   selectAutoHRConfig,
@@ -19,8 +30,12 @@ import {
   selectPopularityCatalog,
   selectTasks
 } from '../../../../state/autoHR/autoHR.selectors';
-import {combineLatest, Observable} from 'rxjs';
+import {combineLatest, Observable, of} from 'rxjs';
 import {selectIsAuth} from '../../../../state/auth/auth.selectors';
+import {IUserAdmin} from '../../../../shared/models/main.interface';
+import {checkAuthFail, checkAuthSuccess} from '../../../../state/auth/auth.actions';
+import {initialUserState} from '../../../../state/auth/auth.reducer';
+import {AngularFireAuth} from '@angular/fire/compat/auth';
 
 @Component({
   selector: 'app-index',
@@ -65,10 +80,13 @@ export class IndexComponent implements OnInit, AfterViewInit, OnDestroy {
 
   @ViewChild(MatSort) sort: MatSort;
 
+  public user: IUserAdmin;
+
   constructor(
     public dialog: MatDialog,
     public activatedRoute: ActivatedRoute,
-    private store: Store
+    private store: Store,
+    private afAuth: AngularFireAuth,
   ) {
     combineLatest(this.tasks$, this.config$).subscribe(([tasks, config]) => {
       if (tasks && config) {
@@ -95,6 +113,46 @@ export class IndexComponent implements OnInit, AfterViewInit, OnDestroy {
     this.popularityList$.subscribe((popularity) => {
       this.popularityList = popularity;
     });
+
+    this.checkAuth();
+  }
+
+  checkAuth(): void {
+    this.afAuth.onAuthStateChanged(
+      (authData) => {
+        if (authData) {
+          const user = {
+            refreshToken: authData.refreshToken,
+            email: authData.email,
+            uid: authData.uid,
+            displayName: authData.displayName
+          };
+          this.user = user;
+          this.store.dispatch(checkAuthSuccess({authData: user}));
+        } else {
+          this.user = null;
+          this.store.dispatch(checkAuthSuccess({authData: initialUserState}));
+        }
+
+        if (!!this.user?.uid) {
+          // получение всех вопросов
+          this.store.dispatch(loadTasks());
+        } else {
+          // получение всех вопросов
+          this.store.dispatch(loadTasksByJSON());
+        }
+
+        // Вещи в любом случае прогружаемые с фронта
+        // справочники autoHR
+        this.store.dispatch(loadDifficultyCatalog());
+        this.store.dispatch(loadCompetenceCatalog());
+        this.store.dispatch(loadPopularityCatalog());
+      },
+      error => {
+        return of(checkAuthFail({error: error.toString()}));
+      },
+      () => {
+      });
   }
 
   ngAfterViewInit(): void {

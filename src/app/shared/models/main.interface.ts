@@ -7,3 +7,10 @@ export interface IAuthData {
   authData: UserState;
   type: string;
 }
+
+export interface IUserAdmin {
+  refreshToken: string;
+  email: string;
+  uid: string;
+  displayName: string;
+}

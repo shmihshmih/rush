@@ -1,13 +1,14 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {IWord} from '../../../../shared/models/esperanto/word.interface';
 import {Subject} from 'rxjs';
-import {takeUntil} from 'rxjs/operators';
+import {takeUntil, tap} from 'rxjs/operators';
 import {EscSettingsPopupComponent} from '../../components/esc-settings-popup/esc-settings-popup.component';
 import {MatDialog} from '@angular/material/dialog';
 import {Store} from '@ngrx/store';
-import {setSelectedWordLists} from '../../../../state/languages/words/words.actions';
+import {setSelectedWordLists, setSelectedWordListsByJSON} from '../../../../state/languages/words/words.actions';
 import {selectWordsFromSelectedLists} from '../../../../state/languages/words/words.selectors';
-import { selectIsAuth } from 'src/app/state/auth/auth.selectors';
+import {selectIsAuth} from 'src/app/state/auth/auth.selectors';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-english-sentences-creator',
@@ -51,57 +52,30 @@ export class EnglishSentencesCreatorComponent implements OnInit, OnDestroy {
 
   constructor(
     private dialog: MatDialog,
-    private store: Store
+    private store: Store,
+    public activatedRoute: ActivatedRoute
   ) {
-    // инициализация конструктора, включает в себя загрузку слов (местоимения, глаголы)
-    this.store.dispatch(setSelectedWordLists({selectedWordLists: ['verbs', 'pronomoj']}));
 
+  }
+
+  ngOnInit(): void {
 
     this.isAuth$.pipe(
-      concatMap(isAuth => {
+      tap(isAuth => {
         if (isAuth) {
-
+          // инициализация конструктора, включает в себя загрузку слов (местоимения, глаголы)
+          this.store.dispatch(setSelectedWordLists({selectedWordLists: ['verbs', 'pronomoj']}));
         } else {
+          this.store.dispatch(setSelectedWordListsByJSON({selectedWordLists: ['verbs', 'pronomoj']}));
         }
-        return of(isAuth);
       })
-    ).subscribe(
-      (isAuth) => {
-        // получаем список для загрузки
-        this.activatedRoute.params.pipe(
-          tap(params => {
-            if (!params.wordList) {
-            } else {
-              if (isAuth) {
-                this.store.dispatch(setSelectedWordLists({selectedWordLists: [params.wordList]}));
-              } else {
-                this.store.dispatch(setSelectedWordListsByJSON({selectedWordLists: [params.wordList]}));
-              }
-            }
-          }),
-          takeUntil(this.unsubscribe$)
-        ).subscribe(params => {
-        });
-      }
-    );
-
-             if (isAuth) {
-                       this.store.dispatch(setSelectedWordLists({selectedWordLists: [params.wordList]}));
-                    } else {
-                     this.store.dispatch(setSelectedWordListsByJSON({selectedWordLists: [params.wordList]}));
-                    }
-
-
-
+    ).subscribe();
 
     this.allWords$.pipe().subscribe(words => {
       this.pronouns = words.filter(word => word.word_type.includes('pronomoj'));
       this.verbs = words.filter(word => word.word_type.includes('verbs'));
       this.createRandomSentence();
     });
-  }
-
-  ngOnInit(): void {
   }
 
   // sentence type переводчик
