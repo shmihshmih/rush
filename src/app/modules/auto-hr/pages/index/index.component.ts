@@ -36,6 +36,7 @@ import {IUserAdmin} from '../../../../shared/models/main.interface';
 import {checkAuthFail, checkAuthSuccess} from '../../../../state/auth/auth.actions';
 import {initialUserState} from '../../../../state/auth/auth.reducer';
 import {AngularFireAuth} from '@angular/fire/compat/auth';
+import {MatPaginator} from '@angular/material/paginator';
 
 @Component({
   selector: 'app-index',
@@ -55,7 +56,9 @@ export class IndexComponent implements OnInit, AfterViewInit, OnDestroy {
   config$ = this.store.select(selectAutoHRConfig);
   // просто список тасков. Мы его не меняем, работаем и обрабатываем.
   tasks: ITask[] = [];
-  dataSource = new MatTableDataSource<ITask>();
+
+  dataSource = new MatTableDataSource<ITask>([]);
+
   columnsToDisplay = ['id', 'question', 'type', 'difficulty', 'popularity'];
   expandedElement: ITask | null = null;
   step: 'start' | 'interview' | 'catalog' = 'start';
@@ -79,6 +82,11 @@ export class IndexComponent implements OnInit, AfterViewInit, OnDestroy {
   config: ISobesConfigModel;
 
   @ViewChild(MatSort) sort: MatSort;
+
+  @ViewChild('taskPaginator')
+  set taskPaginator(value: MatPaginator) {
+    this.dataSource.paginator = value;
+  }
 
   public user: IUserAdmin;
 
@@ -156,6 +164,7 @@ export class IndexComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   ngAfterViewInit(): void {
+    this.dataSource.paginator = this.taskPaginator;
     this.dataSource.sort = this.sort;
   }
 
@@ -379,11 +388,11 @@ export class IndexComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   // связываем вручную пагинатор и таблицу и данные
-  pagination(paginator: any): void {
-    let paginatedTasks: any[] = this.tasks.slice(paginator._pageIndex * paginator._pageSize, paginator._pageIndex * paginator._pageSize + paginator._pageSize);
-    paginatedTasks = this.setTableIndex(paginator._pageIndex * paginator._pageSize, paginatedTasks);
-    this.dataSource = new MatTableDataSource(paginatedTasks);
-  }
+  // pagination(paginator: any): void {
+  //   let paginatedTasks: any[] = this.tasks.slice(paginator._pageIndex * paginator._pageSize, paginator._pageIndex * paginator._pageSize + paginator._pageSize);
+  //   paginatedTasks = this.setTableIndex(paginator._pageIndex * paginator._pageSize, paginatedTasks);
+  //   this.dataSource = new MatTableDataSource(paginatedTasks);
+  // }
 
   // проставляем индексы для таблицы
   setTableIndex(start: number, data: any[]): any[] {

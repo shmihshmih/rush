@@ -93,8 +93,7 @@
       </div>
     </div>
     <div class="mat-elevation-z8">
-      <table mat-table
-             [dataSource]="dataSource" multiTemplateDataRows matSort>
+      <table mat-table [dataSource]="dataSource" multiTemplateDataRows matSort>
         <!-- Id Column -->
         <ng-container matColumnDef="id">
           <th mat-header-cell *matHeaderCellDef> №</th>
@@ -182,8 +181,12 @@
         </tr>
         <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row"></tr>
       </table>
-      <mat-paginator #pagin [length]="tasks.length" (page)="pagination(pagin)" [pageSize]="tasks.length"
-                     [pageSizeOptions]="[5, 10, 25, 50, 100, tasks.length]" showFirstLastButtons></mat-paginator>
+      <mat-paginator #taskPaginator
+                     [length]="tasks.length"
+                     [pageSize]="10"
+                     [pageSizeOptions]="[5, 10, 25, 50, 100, +tasks.length]"
+                     [pageIndex]="0"
+                     [showFirstLastButtons]="true"></mat-paginator>
     </div>
   </div>
   <div *ngIf="(step === 'catalog') || (step === 'interview')" class="block-action">
