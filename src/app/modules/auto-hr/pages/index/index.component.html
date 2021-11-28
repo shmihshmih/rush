@@ -188,6 +188,7 @@
                      [pageIndex]="0"
                      [showFirstLastButtons]="true"></mat-paginator>
     </div>
+    <button *ngIf="isAuth$ | async" (click)="downloadObjectAsJson(tasks)">Снять дамп</button>
   </div>
   <div *ngIf="(step === 'catalog') || (step === 'interview')" class="block-action">
     <button mat-mini-fab color="accent" (click)="goToStart('close-block')" matTooltip="Вернуться на первую страницу">
