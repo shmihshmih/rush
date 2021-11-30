@@ -8,6 +8,7 @@ import {Store} from '@ngrx/store';
 import {selectWordLists} from '../../../state/languages/words/words.selectors';
 import {removeWordList} from '../../../state/languages/words/words.actions';
 import {selectIsAuth} from '../../../state/auth/auth.selectors';
+import {ApiService} from '../../../core/services/api.service';
 
 @Component({
   selector: 'app-word-lists',
@@ -21,11 +22,17 @@ export class WordListsComponent implements OnInit, OnDestroy {
 
   public vortlistoj$: Observable<IWordList[]> = this.store.select(selectWordLists);
 
+  wordLists: IWordList[];
+
   constructor(
     private router: Router,
     public dialog: MatDialog,
-    private store: Store
+    private store: Store,
+    private apiService: ApiService
   ) {
+    this.vortlistoj$.subscribe(wordLists => {
+      this.wordLists = wordLists;
+    });
   }
 
   ngOnInit(): void {
@@ -71,7 +78,15 @@ export class WordListsComponent implements OnInit, OnDestroy {
     }
   }
 
+  /**
+   * Снять дамп списков слов
+   */
+  dumpWordLists(): void {
+    this.apiService.downloadObjectAsJson(this.wordLists, `wordLists dump ${new Date()}`);
+  }
+
   ngOnDestroy(): void {
     this.unsubscribe$.complete();
   }
+
 }

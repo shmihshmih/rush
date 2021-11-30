@@ -37,6 +37,7 @@ import {checkAuthFail, checkAuthSuccess} from '../../../../state/auth/auth.actio
 import {initialUserState} from '../../../../state/auth/auth.reducer';
 import {AngularFireAuth} from '@angular/fire/compat/auth';
 import {MatPaginator} from '@angular/material/paginator';
+import {ApiService} from '../../../../core/services/api.service';
 
 @Component({
   selector: 'app-index',
@@ -95,6 +96,7 @@ export class IndexComponent implements OnInit, AfterViewInit, OnDestroy {
     public activatedRoute: ActivatedRoute,
     private store: Store,
     private afAuth: AngularFireAuth,
+    public apiService: ApiService
   ) {
     combineLatest(this.tasks$, this.config$).subscribe(([tasks, config]) => {
       if (tasks && config) {
@@ -403,15 +405,9 @@ export class IndexComponent implements OnInit, AfterViewInit, OnDestroy {
     return indexedData;
   }
 
-  /** Скачать дамп измененных данных */
-  downloadObjectAsJson(exportObj: ITask[], exportName = `tasks dump ${new Date()}`): void {
-    const dataStr = 'data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(exportObj));
-    const downloadAnchorNode = document.createElement('a');
-    downloadAnchorNode.setAttribute('href', dataStr);
-    downloadAnchorNode.setAttribute('download', exportName + '.json');
-    document.body.appendChild(downloadAnchorNode); // required for firefox
-    downloadAnchorNode.click();
-    downloadAnchorNode.remove();
+  // скачать дамп задач
+  downloadObjectAsJson(): void {
+    this.apiService.downloadObjectAsJson(this.tasks, `tasks dump ${new Date()}`);
   }
 
   ngOnDestroy(): void {

@@ -44,4 +44,12 @@
     </mat-card-content>
   </mat-card>
 
+  <mat-card *ngIf="(isAuth$ | async) === true" (click)="dumpWordLists()" class="esperanto-main-card add-list">
+    <mat-card-content fxFlex fxLayoutAlign="center center">
+      <button mat-raised-button color="primary" matTooltip="снять дамп списков">
+        <i class="material-icons-outlined">file_download</i>
+      </button>
+    </mat-card-content>
+  </mat-card>
+
 </div>
