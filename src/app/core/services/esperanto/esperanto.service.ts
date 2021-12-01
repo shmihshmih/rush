@@ -166,6 +166,22 @@ export class EsperantoService implements OnDestroy {
   }
 
   /**
+   * Снять все слова дамп
+   */
+  getAllWordsForDump(): Observable<IWord[]> {
+    const wordsCollection: AngularFirestoreCollection<IWord> = this.afs.collection<IWord>('words');
+    let words: Observable<IWord[]>;
+    words = wordsCollection.snapshotChanges().pipe(
+      map(actions => actions.map(a => {
+        const data = a.payload.doc.data() as IWord;
+        const id = a.payload.doc.id;
+        return {id, ...data};
+      }))
+    );
+    return words;
+  }
+
+  /**
    * get all words from JSON
    */
   getWordsByJSON(): Observable<IWord[]> {

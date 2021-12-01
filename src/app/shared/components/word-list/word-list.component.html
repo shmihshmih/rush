@@ -1,8 +1,4 @@
 <div>
-  <div *ngIf="isAuth$ | async">
-    <button fxFlex fxLayoutAlign="center" mat-button (click)="addWord()" color="primary">add new word</button>
-  </div>
-
   <mat-form-field>
     <mat-label>Filter</mat-label>
     <input matInput (keyup)="applyFilter($event)" placeholder="Найти слово" #input>
@@ -53,6 +49,14 @@
     </table>
 
     <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+  </div>
+
+  <div *ngIf="isAuth$ | async">
+    <button fxFlex fxLayoutAlign="center" mat-button (click)="addWord()" color="primary">add new word</button>
+  </div>
+
+  <div *ngIf="isAuth$ | async">
+    <button fxFlex fxLayoutAlign="center" mat-button (click)="dumpWords()" color="primary">dump all words</button>
   </div>
 
 </div>

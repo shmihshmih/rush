@@ -12,6 +12,8 @@ import {select, Store} from '@ngrx/store';
 import {removeWord, setSelectedWordLists, setSelectedWordListsByJSON, updateWord} from '../../../state/languages/words/words.actions';
 import {selectWords, selectWordsFromSelectedLists} from '../../../state/languages/words/words.selectors';
 import {selectIsAuth} from '../../../state/auth/auth.selectors';
+import {EsperantoService} from '../../../core/services/esperanto/esperanto.service';
+import {ApiService} from '../../../core/services/api.service';
 
 /**
  * Компонент содержащий списки слов. Таблица.
@@ -35,7 +37,9 @@ export class WordListComponent implements OnInit, OnDestroy {
 
   constructor(private activatedRoute: ActivatedRoute,
               public dialog: MatDialog,
-              private store: Store) {
+              private store: Store,
+              private esperantoService: EsperantoService,
+              private apiService: ApiService) {
 
 
     // будем ли отображать админские функции
@@ -151,8 +155,19 @@ export class WordListComponent implements OnInit, OnDestroy {
     }
   }
 
+  /**
+   * Снять дамп всех слов
+   */
+  dumpWords(): void {
+    const isDump = confirm('Точно снять дамп всех слов? Это тяжелая операция');
+    if (isDump) {
+      this.esperantoService.getAllWordsForDump().subscribe(words => {
+        this.apiService.downloadObjectAsJson(words, `words dump ${new Date()}`);
+      });
+    }
+  }
+
   ngOnDestroy(): void {
     this.unsubscribe$.complete();
   }
-
 }
