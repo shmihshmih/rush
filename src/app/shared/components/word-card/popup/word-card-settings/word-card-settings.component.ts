@@ -9,6 +9,8 @@ import {MatChipInputEvent} from '@angular/material/chips';
 import {IWordList} from '../../../../models/esperanto/word_list.interface';
 import {Store} from '@ngrx/store';
 import {selectSelectedWordLists, selectWordLists} from '../../../../../state/languages/words/words.selectors';
+import {selectIsAuth} from '../../../../../state/auth/auth.selectors';
+import {loadWordLists, loadWordListsByJSON} from '../../../../../state/languages/words/words.actions';
 
 @Component({
   selector: 'app-word-card-settings',
@@ -16,6 +18,7 @@ import {selectSelectedWordLists, selectWordLists} from '../../../../../state/lan
   styleUrls: ['./word-card-settings.component.scss']
 })
 export class WordCardSettingsComponent implements OnInit {
+  isAuth$ = this.store.select(selectIsAuth);
   wordCardSettingsForm: FormGroup;
   selectable = true;
   removable = true;
@@ -41,6 +44,18 @@ export class WordCardSettingsComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.isAuth$.pipe(
+      tap(isAuth => {
+        if (isAuth) {
+          // получение всех списков слов
+          this.store.dispatch(loadWordLists());
+        } else {
+          // получение всех списков слов
+          this.store.dispatch(loadWordListsByJSON());
+        }
+      })
+    ).subscribe();
+
     this.filteredLists = this.listCtrl.valueChanges.pipe(
       startWith(null),
       map((list: string | null) => list ? this._filter(list) : this.listsWithoutSelected())
@@ -49,7 +64,6 @@ export class WordCardSettingsComponent implements OnInit {
     combineLatest([this.allWordLists$, this.activeWordLists$]).pipe(
       tap((wordLists: [IWordList[], string[]]) => {
         if ((wordLists[0].length > 0) && (wordLists[1].length > 0)) {
-
           // листы, которые уже заняты
           this.allWordLists = wordLists[0];
           this.activeWordLists.forEach(activeWordList => {
