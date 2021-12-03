@@ -87,19 +87,29 @@ export class WordCardComponent implements OnInit, OnDestroy {
     });
   }
 
-
   nextWord(): void {
     this.isShowAnswer = false;
-    this.activeWord = null;
     if (this.listWord.length === 0) {
       return;
     }
-    const randomNumber = Math.floor(Math.random() * this.listWord.length);
+
+    let randomNumber = this.getRandomNumber();
     if (this.isRepeat) {
+      // если предыдущее слово равняется новому, то берем новое
+      if (this.activeWord.english === this.listWord[randomNumber].english
+        && this.activeWord.esperanto === this.listWord[randomNumber].esperanto
+        && this.activeWord.russian === this.listWord[randomNumber].russian) {
+        randomNumber = this.getRandomNumber();
+      }
+
       this.activeWord = this.listWord[randomNumber];
     } else {
       this.activeWord = this.listWord.splice(randomNumber, 1)[0];
     }
+  }
+
+  getRandomNumber(): number {
+    return Math.floor(Math.random() * this.listWord.length);
   }
 
   showAnswer(): void {
