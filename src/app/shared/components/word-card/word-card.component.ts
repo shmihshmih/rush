@@ -36,7 +36,7 @@ export class WordCardComponent implements OnInit, OnDestroy {
   // при нажатии на клавишу переключается слово
   @HostListener('window:keyup', ['$event'])
   keyEvent(event: KeyboardEvent): void {
-    if (event.key === 'ArrowRight' || event.key === ' ') {
+    if ((event.key === 'ArrowRight') || (event.key === ' ')) {
       this.showAnswer();
     }
   }
