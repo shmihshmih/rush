@@ -17,6 +17,9 @@
     border: 1px solid transparent;
 
     .img-container {
+      word-break: break-all;
+      white-space: break-spaces;
+
       display: flex;
       justify-content: center;
       align-items: center;
