@@ -7,7 +7,7 @@
     <div class="catalog-action">
       <div [ngStyle]="{'display': 'flex'}">
 
-        <mat-form-field class="example-form-field p-lr-8" [ngStyle]="{'width': '20%'}">
+        <mat-form-field class="example-form-field p-lr-8" [ngStyle]="{'width': '20%'}" appearance="outline">
           <mat-label>Кол-во вопросов</mat-label>
           <input type="number" matInput [(ngModel)]="tasksCount">
           <button mat-button *ngIf="tasksCount" matSuffix mat-icon-button aria-label="Clear" (click)="tasksCount=0">
@@ -21,7 +21,7 @@
           </div>
         </div>
 
-        <mat-form-field appearance="fill" [ngStyle]="{'width': '20%'}" class="p-lr-8">
+        <mat-form-field appearance="outline" [ngStyle]="{'width': '20%'}" class="p-lr-8">
           <mat-label>Сложность</mat-label>
           <mat-select [formControl]="difficultiesControl" multiple>
             <mat-select-trigger>
@@ -42,7 +42,7 @@
           </mat-select>
         </mat-form-field>
 
-        <mat-form-field appearance="fill" [ngStyle]="{'width': '20%'}" class="p-lr-8">
+        <mat-form-field appearance="outline" [ngStyle]="{'width': '20%'}" class="p-lr-8">
           <mat-label>Компетенции</mat-label>
           <mat-select [formControl]="competencesControl" multiple>
             <mat-select-trigger>
@@ -57,7 +57,7 @@
           </mat-select>
         </mat-form-field>
 
-        <mat-form-field appearance="fill" [ngStyle]="{'width': '20%'}" class="p-lr-8">
+        <mat-form-field appearance="outline" [ngStyle]="{'width': '20%'}" class="p-lr-8">
           <mat-label>Популярность</mat-label>
           <mat-select [formControl]="popularityControl" multiple>
             <mat-select-trigger>
@@ -86,7 +86,7 @@
         </button>
       </div>
       <div fxLayoutAlign="center" class="w-100">
-        <mat-form-field>
+        <mat-form-field appearance="outline">
           <mat-label>Поиск</mat-label>
           <input matInput (keyup)="applyFilter($event)" placeholder="Поиск" #input>
         </mat-form-field>

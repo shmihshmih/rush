@@ -1,7 +1,11 @@
 <div [ngStyle]="{'text-align': 'center', 'margin-top': '16px'}">
   <h2>
-    Здравствуй, кибер-странник! <a [ngStyle]="{'text-decoration': 'underline', 'color': 'blue'}" href="https://github.com/shmihshmih" target="_blank">Я</a> храню тут разные инструменты. Их можешь использовать и
-    <a target="_blank" [matTooltip]="'Ты большая умница'" href="https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D1%80%D0%B0%D0%BD%D0%BD%D0%B8%D0%BA" [ngStyle]="{'text-decoration': 'underline', 'color': 'blue'}">ты</a>.
+    Здравствуй, кибер-странник! <a [ngStyle]="{'text-decoration': 'underline', 'color': 'blue'}"
+                                   href="https://github.com/shmihshmih" target="_blank">Я</a> храню тут разные
+    инструменты. Их можешь использовать и
+    <a target="_blank" [matTooltip]="'Ты большая умница'"
+       href="https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D1%80%D0%B0%D0%BD%D0%BD%D0%B8%D0%BA"
+       [ngStyle]="{'text-decoration': 'underline', 'color': 'blue'}">ты</a>.
   </h2>
   <h2>
     Вот некоторые из них:
@@ -12,7 +16,8 @@
   <mat-card class="esperanto-main-card">
     <mat-card-header class="w-100">
       <mat-card-title fxLayout="row" fxLayoutAlign="space-between center" class="w-100">
-        <h1 [routerLink]="['english', 'wordCard', 'numeraloj']" [matTooltip]="'Карточки всех слов, которые есть в базе'" [matTooltipClass]="'toolTipClass'">Карточки слов</h1>
+        <h1 [routerLink]="['english', 'wordCard', 'numeraloj']" [matTooltip]="'Карточки всех слов, которые есть в базе'"
+            [matTooltipClass]="'toolTipClass'">Карточки слов</h1>
       </mat-card-title>
       <mat-card-subtitle>Тип: Генератор</mat-card-subtitle>
     </mat-card-header>
@@ -25,7 +30,8 @@
       </p>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-raised-button color="primary" [routerLink]="['english', 'wordCard', 'numeraloj']" [matTooltip]="'Открыть'" [matTooltipClass]="'toolTipClass'">
+      <button mat-raised-button color="primary" [routerLink]="['english', 'wordCard', 'numeraloj']"
+              [matTooltip]="'Открыть'" [matTooltipClass]="'toolTipClass'">
         <i class="material-icons-outlined">view_stream</i>
       </button>
     </mat-card-actions>
@@ -34,7 +40,9 @@
   <mat-card class="esperanto-main-card">
     <mat-card-header class="w-100">
       <mat-card-title fxLayout="row" fxLayoutAlign="space-between center" class="w-100">
-        <h1 [routerLink]="['english', 'wordList', 'numeraloj']" [matTooltip]="'Таблица-список всех слов, которые есть в базе'" [matTooltipClass]="'toolTipClass'">Список слов</h1>
+        <h1 [routerLink]="['english', 'wordList', 'numeraloj']"
+            [matTooltip]="'Таблица-список всех слов, которые есть в базе'" [matTooltipClass]="'toolTipClass'">Список
+          слов</h1>
       </mat-card-title>
       <mat-card-subtitle>Тип: Списки</mat-card-subtitle>
     </mat-card-header>
@@ -47,7 +55,8 @@
       </p>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-raised-button color="primary" [routerLink]="['english', 'wordList', 'numeraloj']" [matTooltip]="'Открыть'" [matTooltipClass]="'toolTipClass'">
+      <button mat-raised-button color="primary" [routerLink]="['english', 'wordList', 'numeraloj']"
+              [matTooltip]="'Открыть'" [matTooltipClass]="'toolTipClass'">
         <i class="material-icons-outlined">view_stream</i>
       </button>
     </mat-card-actions>
@@ -56,7 +65,9 @@
   <mat-card class="esperanto-main-card">
     <mat-card-header class="w-100">
       <mat-card-title fxLayout="row" fxLayoutAlign="space-between center" class="w-100">
-        <h1 [routerLink]="['english', 'sentences-creator']" [matTooltip]="'Генератор предложений по всем временам со всеми глаголами, которые есть в системе'" [matTooltipClass]="'toolTipClass'">Генератор предложений</h1>
+        <h1 [routerLink]="['english', 'sentences-creator']"
+            [matTooltip]="'Генератор предложений по всем временам со всеми глаголами, которые есть в системе'"
+            [matTooltipClass]="'toolTipClass'">Генератор предложений</h1>
       </mat-card-title>
       <mat-card-subtitle>Тип: Генератор</mat-card-subtitle>
     </mat-card-header>
@@ -69,7 +80,8 @@
       </p>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-raised-button color="primary" [routerLink]="['english', 'sentences-creator']" [matTooltip]="'Открыть'" [matTooltipClass]="'toolTipClass'">
+      <button mat-raised-button color="primary" [routerLink]="['english', 'sentences-creator']" [matTooltip]="'Открыть'"
+              [matTooltipClass]="'toolTipClass'">
         <i class="material-icons-outlined">view_stream</i>
       </button>
     </mat-card-actions>
@@ -78,7 +90,9 @@
   <mat-card class="esperanto-main-card">
     <mat-card-header class="w-100">
       <mat-card-title fxLayout="row" fxLayoutAlign="space-between center" class="w-100">
-        <h1 [routerLink]="['blog', 'bookquest', 'thestainlesssteelrat', 1]" [matTooltip]="'Демонстрация книжного квеста. Здесь просто \<Стальная крыса\> Гарри Гаррисона'" [matTooltipClass]="'toolTipClass'">Книжный квест</h1>
+        <h1 [routerLink]="['blog', 'bookquest', 'thestainlesssteelrat', 1]"
+            [matTooltip]="'Демонстрация книжного квеста. Здесь просто \<Стальная крыса\> Гарри Гаррисона'"
+            [matTooltipClass]="'toolTipClass'">Книжный квест</h1>
       </mat-card-title>
       <mat-card-subtitle>Тип: Генератор</mat-card-subtitle>
     </mat-card-header>
@@ -91,7 +105,8 @@
       </p>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-raised-button color="primary" [routerLink]="['blog', 'bookquest', 'thestainlesssteelrat', 1]" [matTooltip]="'Открыть'" [matTooltipClass]="'toolTipClass'">
+      <button mat-raised-button color="primary" [routerLink]="['blog', 'bookquest', 'thestainlesssteelrat', 1]"
+              [matTooltip]="'Открыть'" [matTooltipClass]="'toolTipClass'">
         <i class="material-icons-outlined">view_stream</i>
       </button>
     </mat-card-actions>
@@ -100,7 +115,8 @@
   <mat-card class="esperanto-main-card">
     <mat-card-header class="w-100">
       <mat-card-title fxLayout="row" fxLayoutAlign="space-between center" class="w-100">
-        <h1 [routerLink]="['autoHR']" [matTooltip]="'Пройти собеседование или посмотреть вопросы и ответы'" [matTooltipClass]="'toolTipClass'">autoHR</h1>
+        <h1 [routerLink]="['autoHR']" [matTooltip]="'Пройти собеседование или посмотреть вопросы и ответы'"
+            [matTooltipClass]="'toolTipClass'">autoHR</h1>
       </mat-card-title>
       <mat-card-subtitle>Тип: Генератор + Списки</mat-card-subtitle>
     </mat-card-header>
@@ -115,7 +131,8 @@
       </p>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-raised-button color="primary" [routerLink]="['autoHR']" [matTooltip]="'Открыть'" [matTooltipClass]="'toolTipClass'">
+      <button mat-raised-button color="primary" [routerLink]="['autoHR']" [matTooltip]="'Открыть'"
+              [matTooltipClass]="'toolTipClass'">
         <i class="material-icons-outlined">view_stream</i>
       </button>
     </mat-card-actions>
