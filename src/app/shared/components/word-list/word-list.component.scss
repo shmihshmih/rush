@@ -14,3 +14,18 @@ td, th {
 .mat-cell, .mat-footer-cell {
   font-size: 2em;
 }
+
+.word-list-actions {
+  align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .search-field {
+    width: 60%;
+  }
+
+  .actions {
+    display: flex;
+  }
+}
