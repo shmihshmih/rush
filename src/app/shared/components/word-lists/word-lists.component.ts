@@ -78,9 +78,7 @@ export class WordListsComponent implements OnInit, OnDestroy {
     }
   }
 
-  /**
-   * Снять дамп списков слов
-   */
+  /** Снять дамп списков слов */
   dumpWordLists(): void {
     this.apiService.downloadObjectAsJson(this.wordLists, `wordLists dump ${new Date()}`);
   }

@@ -118,10 +118,11 @@ tr.example-element-row:not(.example-expanded-row):active {
 }
 
 .block-action {
-  width: 80px;
   display: flex;
   height: 100%;
-  justify-content: flex-end;
+  margin-left: 32px;
+  width: 90px;
+  justify-content: space-between;
 }
 
 .w-100 {

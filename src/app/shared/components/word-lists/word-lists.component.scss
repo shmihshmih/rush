@@ -1,5 +1,6 @@
 :host ::ng-deep .mat-card-header-text {
   width: 100%;
+  margin: 0;
 }
 
 .main-container {
@@ -8,13 +9,15 @@
   justify-content: center;
 
   .esperanto-main-card {
-    display: inline-block;
-    margin: 8px;
-    min-width: 400px;
+    margin: 1px;
     max-width: 400px;
     transition: all 0.2s;
     box-sizing: border-box;
     border: 1px solid transparent;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 
     .img-container {
       word-break: break-all;
@@ -36,4 +39,9 @@
 
 ::ng-deep .toolTipClass {
   font-size: 200%;
+}
+
+.custom-mat-card-actions {
+  margin: 0 !important;
+  padding: 0 !important;
 }

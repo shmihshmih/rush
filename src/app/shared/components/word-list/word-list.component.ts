@@ -155,9 +155,7 @@ export class WordListComponent implements OnInit, OnDestroy {
     }
   }
 
-  /**
-   * Снять дамп всех слов
-   */
+  /** Снять дамп всех слов */
   dumpWords(): void {
     const isDump = confirm('Точно снять дамп всех слов? Это тяжелая операция');
     if (isDump) {
