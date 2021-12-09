@@ -1,5 +1,5 @@
 import {Component, OnDestroy, OnInit, ViewChild} from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 import {concatMap, Observable, of, Subject} from 'rxjs';
 import {takeUntil} from 'rxjs/operators';
 import {IWord} from '../../models/esperanto/word.interface';
@@ -35,11 +35,16 @@ export class WordListComponent implements OnInit, OnDestroy {
 
   words$: Observable<IWord[]>;
 
+  mode: 'russian' | 'english' | 'esperanto' = 'english';
+
+  collectionCaption: string;
+
   constructor(private activatedRoute: ActivatedRoute,
               public dialog: MatDialog,
               private store: Store,
               private esperantoService: EsperantoService,
-              private apiService: ApiService) {
+              private apiService: ApiService,
+              private router: Router) {
 
 
     // будем ли отображать админские функции
@@ -71,6 +76,20 @@ export class WordListComponent implements OnInit, OnDestroy {
         this.setWordsOnTheTable(words);
       }
     });
+
+    switch (this.router.url.split('/')[1]) {
+      case 'russian' :
+        this.mode = 'russian';
+        break;
+      case 'esperanto':
+        this.mode = 'esperanto';
+        break;
+      case 'english':
+        this.mode = 'english';
+        break;
+    }
+
+    this.collectionCaption = this.router.url.split('/')[3];
   }
 
   setWordsOnTheTable(words): void {
@@ -163,6 +182,10 @@ export class WordListComponent implements OnInit, OnDestroy {
         this.apiService.downloadObjectAsJson(words, `words dump ${new Date()}`);
       });
     }
+  }
+
+  openCardExercise(title: string): void {
+    this.router.navigate([this.mode, this.mode === 'esperanto' ? 'vortokarto' : 'wordCard', title]);
   }
 
   ngOnDestroy(): void {

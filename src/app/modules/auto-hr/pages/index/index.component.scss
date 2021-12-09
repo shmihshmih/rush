@@ -123,6 +123,11 @@ tr.example-element-row:not(.example-expanded-row):active {
   margin-left: 32px;
   width: 90px;
   justify-content: space-between;
+  flex-direction: column;
+
+  button:nth-child(2) {
+    margin-top: 32px;
+  }
 }
 
 .w-100 {

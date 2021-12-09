@@ -10,14 +10,24 @@
 
     <div class="actions">
       <div *ngIf="isAuth$ | async">
-        <button fxFlex fxLayoutAlign="center" mat-button (click)="addWord()" color="primary" matTooltip="add new word">
+        <button fxFlex fxLayoutAlign="center" mat-button (click)="addWord()" color="primary" matTooltip="add new word"
+                [matTooltipClass]="'toolTipClass'">
           <mat-icon>add</mat-icon>
+        </button>
+      </div>
+
+      <div>
+        <button mat-button color="primary" (click)="openCardExercise(collectionCaption)"
+                [matTooltip]="'Открыть карточки проверки слов по теме <' + collectionCaption + '>'"
+                [matTooltipClass]="'toolTipClass'">
+          <i class="material-icons-outlined">view_stream</i>
         </button>
       </div>
 
       <div *ngIf="isAuth$ | async">
         <button fxFlex fxLayoutAlign="center" mat-button (click)="dumpWords()" color="primary"
-                matTooltip="dump all words">
+                matTooltip="dump all words"
+                [matTooltipClass]="'toolTipClass'">
           <mat-icon>save</mat-icon>
         </button>
       </div>
