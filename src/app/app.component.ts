@@ -31,7 +31,7 @@ export class AppComponent {
     // this.item$.subscribe(w => console.log('collectionData(words): ', w));
 
     /** Загрузка данных для модуля с языками */
-    // получение списков слов диспатч
+    // получение списков слов диспатчей
     this.store.dispatch(loadWordLists());
 
     // получение слов
