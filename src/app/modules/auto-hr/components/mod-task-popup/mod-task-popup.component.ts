@@ -2,6 +2,9 @@ import {Component, Inject, OnInit} from '@angular/core';
 import {FormArray, FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
 import {ITask} from '../../../../shared/models/autoHR/question.model';
+import {Observable} from 'rxjs';
+import {selectCompetenceCatalog} from '../../../../state/autoHR/autoHR.selectors';
+import {Store} from '@ngrx/store';
 
 @Component({
   selector: 'app-mod-task-popup',
@@ -28,13 +31,16 @@ export class ModTaskPopupComponent implements OnInit {
     return this.taskForm.controls.answer.get('code') as FormArray;
   }
 
-  get competenceList() {
-    return this.taskForm.get('competence') as FormArray;
-  }
+  // get competenceList() {
+  //   return this.taskForm.get('competence') as FormArray;
+  // }
+
+  competencesList$: Observable<string[]> = this.store.select(selectCompetenceCatalog);
 
   constructor(private fb: FormBuilder,
               @Inject(MAT_DIALOG_DATA) public data: any,
-              public dialogRef: MatDialogRef<ModTaskPopupComponent>,) {
+              public dialogRef: MatDialogRef<ModTaskPopupComponent>,
+              private store: Store) {
   }
 
   ngOnInit(): void {
@@ -55,8 +61,9 @@ export class ModTaskPopupComponent implements OnInit {
       }),
       type: ['', Validators.required],
       difficulty: ['', Validators.required],
-      competence: this.fb.array([this.fb.control('', Validators.required)]),
-      popularity: ['', Validators.required]
+      // competence: this.fb.array([this.fb.control('', Validators.required)]),
+      popularity: ['', Validators.required],
+      competence: [[], Validators.required]
     });
   }
 
@@ -67,13 +74,14 @@ export class ModTaskPopupComponent implements OnInit {
       description: data.description,
       type: data.type,
       difficulty: data.difficulty,
-      popularity: data.popularity
+      popularity: data.popularity,
+      competence: data.competence
     });
     // очищаем все списки
     this.linkList.clear();
     this.textList.clear();
     this.codeList.clear();
-    this.competenceList.clear();
+    // this.competenceList.clear();
     // наполняем массивы
     data.answer.link?.forEach(link => {
       this.linkList.push(this.fb.control(link));
@@ -84,9 +92,9 @@ export class ModTaskPopupComponent implements OnInit {
     data.answer.code?.forEach(code => {
       this.codeList.push(this.fb.control(code));
     });
-    data.competence?.forEach(c => {
-      this.competenceList.push(this.fb.control(c));
-    });
+    // data.competence?.forEach(c => {
+    //   this.competenceList.push(this.fb.control(c));
+    // });
   }
 
   addControl(controlName: string): void {
@@ -99,9 +107,9 @@ export class ModTaskPopupComponent implements OnInit {
     if (controlName === 'code') {
       this.codeList.push(this.fb.control(''));
     }
-    if (controlName === 'competence') {
-      this.competenceList.push(this.fb.control(''));
-    }
+    // if (controlName === 'competence') {
+    //   this.competenceList.push(this.fb.control(''));
+    // }
   }
 
   removeControl(controlName: string, i: number): void {
@@ -114,9 +122,9 @@ export class ModTaskPopupComponent implements OnInit {
     if (controlName === 'code') {
       this.codeList.removeAt(i);
     }
-    if (controlName === 'competence') {
-      this.competenceList.removeAt(i);
-    }
+    // if (controlName === 'competence') {
+    //   this.competenceList.removeAt(i);
+    // }
   }
 
   submit(): void {

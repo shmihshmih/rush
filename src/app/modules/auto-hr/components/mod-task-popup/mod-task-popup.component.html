@@ -103,19 +103,35 @@
       </div>
       <h2>Компетенции</h2>
       <div class="mb-24">
-        <div formArrayName="competence">
-          <div *ngFor="let competence of competenceList.controls; let i=index">
-            <mat-form-field [style.width.%]="80" appearance="outline">
-              <mat-label>Компетенции {{i}}</mat-label>
-              <input matInput [formControlName]="i" placeholder="" value="{{competence}}">
-            </mat-form-field>
-            <button mat-icon-button color="warn" (click)="removeControl('competence', i)">
-              <mat-icon>delete</mat-icon>
-            </button>
-          </div>
-        </div>
-        <button mat-raised-button color="primary" (click)="addControl('competence')">Добавить компетенцию</button>
+        <mat-form-field appearance="outline" [ngStyle]="{'width': '100%'}">
+          <mat-label>Компетенции</mat-label>
+          <mat-select formControlName="competence" multiple #competence>
+            <mat-select-trigger>
+              {{competence.value ? competence.value[0] : ''}}
+              <span *ngIf="competence.value?.length > 1" class="example-additional-selection">
+                    (+{{competence.value.length - 1}} {{competence.value?.length === 2 ? 'other' : 'others'}})
+                  </span>
+            </mat-select-trigger>
+            <mat-option *ngFor="let competence of competencesList$ | async" [value]="competence">
+              {{competence}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
       </div>
+      <!--      <div class="mb-24">-->
+      <!--        <div formArrayName="competence">-->
+      <!--          <div *ngFor="let competence of competenceList.controls; let i=index">-->
+      <!--            <mat-form-field [style.width.%]="80" appearance="outline">-->
+      <!--              <mat-label>Компетенции {{i}}</mat-label>-->
+      <!--              <input matInput [formControlName]="i" placeholder="" value="{{competence}}">-->
+      <!--            </mat-form-field>-->
+      <!--            <button mat-icon-button color="warn" (click)="removeControl('competence', i)">-->
+      <!--              <mat-icon>delete</mat-icon>-->
+      <!--            </button>-->
+      <!--          </div>-->
+      <!--        </div>-->
+      <!--        <button mat-raised-button color="primary" (click)="addControl('competence')">Добавить компетенцию</button>-->
+      <!--      </div>-->
     </div>
   </div>
   <div class="mod-task-actions">
