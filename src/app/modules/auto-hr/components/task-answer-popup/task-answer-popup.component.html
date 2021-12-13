@@ -40,12 +40,10 @@
       Код:
     </h2>
   </div>
-  <pre *ngFor="let code of data.task.answer.code; let idx = index" class="paragraph">
-    <b>Код: {{idx}}</b>
-    <code data-language="javascript">
-      {{code}}
-    </code>
-  </pre>
+  <div *ngFor="let code of data.task.answer.code; let idx = index" class="paragraph">
+    <div><b class="b-for-code">Код: {{idx}}</b></div>
+    <pre><code>{{code.trim()}}</code></pre>
+  </div>
   <hr>
 </div>
 
@@ -56,7 +54,7 @@
     </h2>
   </div>
   <div *ngFor="let link of data.task.answer.link">
-    <a target="_blank" href="{{link}}">{{link}}</a>
+    <a class="answer-link" target="_blank" href="{{link}}">{{link}}</a>
   </div>
   <hr>
 </div>
