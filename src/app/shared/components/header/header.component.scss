@@ -4,24 +4,37 @@
   list-style: none;
   padding: 0;
   margin: 0;
+
   li {
     margin-left: 16px;
-    display:inline-block;
+    display: inline-block;
     text-decoration: none;
     cursor: pointer;
   }
+
   a {
     display: flex;
   }
 }
+
 .header-logo {
   display: flex;
   align-items: center;
   margin-left: 16px;
   height: 100%;
-  img {
-    height: 100%;
+
+  .logo {
+    color: rebeccapurple;
+    width: 2rem;
+    height: 2rem;
+    background: deepskyblue;
+    border: 8px solid grey;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
   a {
     margin-left: 16px;
   }
