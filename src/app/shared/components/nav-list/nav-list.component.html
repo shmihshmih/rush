@@ -7,6 +7,10 @@
     <mat-icon>home</mat-icon>
     <a>Главная</a>
   </li>
+  <li [routerLink]="['autoHR']">
+    <mat-icon>assignment</mat-icon>
+    <a>AutoHR</a>
+  </li>
   <li [routerLink]="['esperanto']">
     <mat-icon>language</mat-icon>
     <a>Эсперанто</a>
@@ -18,6 +22,10 @@
   <li [routerLink]="['blog']">
     <mat-icon>fact_check</mat-icon>
     <a>Блог</a>
+  </li>
+  <li [routerLink]="['blog', 'bookquest', 'thestainlesssteelrat', 1]">
+    <mat-icon>settings_ethernet</mat-icon>
+    <a>Book Quest</a>
   </li>
   <li *ngIf="(isAuth$| async) === true" (click)="apiService.logout()">
     <mat-icon>exit_to_app</mat-icon>
