@@ -23,14 +23,16 @@
           <div fxLayout="column" fxLayoutAlign="center" class="mb-24">
             <div formArrayName="text">
               <div *ngFor="let text of textList.controls; let i=index">
-                <mat-form-field [style.width.%]="94" appearance="outline">
-                  <mat-label>Ответ {{i}}</mat-label>
-                  <textarea class="w-100" cdkTextareaAutosize [formControlName]="i" [rows]="5" matInput
-                            placeholder="" value="{{text}}"></textarea>
-                </mat-form-field>
-                <button mat-icon-button color="warn" (click)="removeControl('text', i)">
-                  <mat-icon>delete</mat-icon>
-                </button>
+                <div fxFlex fxLayout="row">
+                  <mat-form-field [style.width.%]="94" appearance="outline">
+                    <mat-label>Ответ {{i}}</mat-label>
+                    <textarea class="w-100" cdkTextareaAutosize [formControlName]="i" [rows]="5" matInput
+                              placeholder="" value="{{text}}"></textarea>
+                  </mat-form-field>
+                  <button mat-icon-button color="warn" (click)="removeControl('text', i)">
+                    <mat-icon>delete</mat-icon>
+                  </button>
+                </div>
               </div>
             </div>
             <button mat-raised-button color="primary" (click)="addControl('text')">Добавить ответ</button>
@@ -39,14 +41,16 @@
           <div fxLayout="column" fxLayoutAlign="center" class="mb-24">
             <div formArrayName="code">
               <div *ngFor="let code of codeList.controls; let i=index">
-                <mat-form-field [style.width.%]="94" appearance="outline">
-                  <mat-label>Код {{i}}</mat-label>
-                  <textarea class="w-100" cdkTextareaAutosize [formControlName]="i" [rows]="5" matInput
-                            placeholder="" value="{{code}}"></textarea>
-                </mat-form-field>
-                <button mat-icon-button color="warn" (click)="removeControl('code', i)">
-                  <mat-icon>delete</mat-icon>
-                </button>
+                <div fxFlex fxLayout="row">
+                  <mat-form-field [style.width.%]="94" appearance="outline">
+                    <mat-label>Код {{i}}</mat-label>
+                    <textarea class="w-100" cdkTextareaAutosize [formControlName]="i" [rows]="5" matInput
+                              placeholder="" value="{{code}}"></textarea>
+                  </mat-form-field>
+                  <button mat-icon-button color="warn" (click)="removeControl('code', i)">
+                    <mat-icon>delete</mat-icon>
+                  </button>
+                </div>
               </div>
             </div>
             <button mat-raised-button color="primary" (click)="addControl('code')">Добавить код</button>
@@ -55,13 +59,15 @@
           <div fxLayout="column" fxLayoutAlign="center" class="mb-24">
             <div formArrayName="link">
               <div *ngFor="let link of linkList.controls; let i=index">
-                <mat-form-field [style.width.%]="94" appearance="outline">
-                  <mat-label>Ссылка {{i}}</mat-label>
-                  <input matInput [formControlName]="i" placeholder="" value="{{link}}">
-                </mat-form-field>
-                <button mat-icon-button color="warn" (click)="removeControl('link', i)">
-                  <mat-icon>delete</mat-icon>
-                </button>
+                <div fxFlex fxLayout="row">
+                  <mat-form-field [style.width.%]="94" appearance="outline">
+                    <mat-label>Ссылка {{i}}</mat-label>
+                    <input matInput [formControlName]="i" placeholder="" value="{{link}}">
+                  </mat-form-field>
+                  <button mat-icon-button color="warn" (click)="removeControl('link', i)">
+                    <mat-icon>delete</mat-icon>
+                  </button>
+                </div>
               </div>
             </div>
             <button mat-raised-button color="primary" (click)="addControl('link')">Добавить ссылку</button>
