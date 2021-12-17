@@ -54,7 +54,11 @@ a {
 }
 
 .fs-5vw {
-  font-size: 5vw;
+  font-size: 5vw !important;
+}
+
+.fs-2vw {
+  font-size: 2vw !important;
 }
 
 // обычно большой текст для карточек

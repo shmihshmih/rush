@@ -7,29 +7,52 @@
               [matTooltipClass]="'toolTipClass'" (click)="openSettings()">settings
     </mat-icon>
   </div>
-
-  <div *ngIf="randomSentence" class="w-100" fxLayout="row" fxFlex fxLayoutAlign="center center">
-    <div class="w-100 fs-5vw ow-anywhere lh-1" fxLayout="column" fxFlex>
-      <div>Местоимение</div>
-      <div>Время</div>
-      <div>Глагол</div>
-      <div>Тип</div>
-      <div>Ответ:</div>
-    </div>
-    <div *ngIf="randomSentence.Pronoun && randomSentence.Verb" class="w-100 fs-5vw ow-anywhere lh-1 h-100"
-         fxLayout="column" fxFlex fxLayoutAlign="start">
-      <div>{{randomSentence.Pronoun.russian}}</div>
-      <div>{{randomSentence.Time}}</div>
-      <div>{{randomSentence.Verb.russian}}</div>
-      <div>{{sentenceTypeTranslation(randomSentence.SentenceType)}}</div>
-      <div *ngIf="isShowAnswer">{{randomSentence.answer.toLowerCase()}}</div>
-    </div>
-  </div>
-
   <div>
     <div fxLayoutAlign="center center">
       <button color="primary" (click)="showAnswer()" mat-button="">Ответ</button>
       <button color="primary" (click)="nextSentence()" mat-button="">Следующее</button>
+    </div>
+  </div>
+
+  <div *ngIf="randomSentence" class="w-100" fxLayout="row" fxFlex fxLayoutAlign="center center">
+    <div *ngIf="randomSentence.Pronoun && randomSentence.Verb" class="w-100 ow-anywhere lh-1"
+         fxLayout="column">
+
+      <div fxFlex fxLayoutAlign="center center">
+        <mat-form-field appearance="outline" [style.width.%]="95">
+          <mat-label class="fs-2vw">Pronoun</mat-label>
+          <input class="fs-5vw" matInput value="{{randomSentence.Pronoun.russian}}">
+        </mat-form-field>
+      </div>
+
+      <div fxFlex fxLayoutAlign="center center">
+        <mat-form-field appearance="outline" [style.width.%]="95">
+          <mat-label class="fs-2vw">Time</mat-label>
+          <input class="fs-5vw" matInput value="{{randomSentence.Time}}">
+        </mat-form-field>
+      </div>
+
+      <div fxFlex fxLayoutAlign="center center">
+        <mat-form-field appearance="outline" [style.width.%]="95">
+          <mat-label class="fs-2vw">Verb</mat-label>
+          <input class="fs-5vw" matInput value="{{randomSentence.Verb.russian}}">
+        </mat-form-field>
+      </div>
+
+      <div fxFlex fxLayoutAlign="center center">
+        <mat-form-field appearance="outline" [style.width.%]="95">
+          <mat-label class="fs-2vw">Type</mat-label>
+          <input class="fs-5vw" matInput value="{{sentenceTypeTranslation(randomSentence.SentenceType)}}">
+        </mat-form-field>
+      </div>
+
+      <div *ngIf="isShowAnswer" fxFlex fxLayoutAlign="center center">
+        <mat-form-field appearance="outline" [style.width.%]="95">
+          <mat-label class="fs-2vw">Answer</mat-label>
+          <input class="fs-5vw" matInput value="{{randomSentence.answer.toLowerCase()}}">
+        </mat-form-field>
+      </div>
+
     </div>
   </div>
 
