@@ -1,32 +1,31 @@
 <div>
   <form fxLayout="column" fxFlex fxLayoutAlign="center center" [formGroup]="wordListForm">
-    <mat-form-field>
+    <mat-form-field appearance="outline">
       <mat-label>title</mat-label>
       <input matInput formControlName="title">
     </mat-form-field>
-    <mat-form-field>
+    <mat-form-field appearance="outline">
       <mat-label>collection_caption</mat-label>
       <input matInput formControlName="collection_caption">
     </mat-form-field>
-    <mat-form-field>
+    <mat-form-field appearance="outline">
       <mat-label>cover</mat-label>
       <input matInput formControlName="cover">
     </mat-form-field>
-    <mat-form-field>
+    <mat-form-field appearance="outline">
       <mat-label>level</mat-label>
       <input matInput formControlName="level">
     </mat-form-field>
-
     <div fxLayout="column" fxFlex fxLayoutAlign="center center" formGroupName="caption">
-      <mat-form-field>
+      <mat-form-field appearance="outline">
         <mat-label>esperanto</mat-label>
         <input matInput formControlName="esperanto">
       </mat-form-field>
-      <mat-form-field>
+      <mat-form-field appearance="outline">
         <mat-label>english</mat-label>
         <input matInput formControlName="english">
       </mat-form-field>
-      <mat-form-field>
+      <mat-form-field appearance="outline">
         <mat-label>russian</mat-label>
         <input matInput formControlName="russian">
       </mat-form-field>

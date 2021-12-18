@@ -1,7 +1,7 @@
 <div>
   <form fxFlex fxLayout="column" fxLayoutAlign="center center" [formGroup]="wordForm">
 
-    <mat-form-field class="example-chip-list">
+    <mat-form-field class="example-chip-list" appearance="outline">
       <mat-label>Списки</mat-label>
       <mat-chip-list #chipList aria-label="List selection">
         <mat-chip
@@ -28,15 +28,15 @@
       </mat-autocomplete>
     </mat-form-field>
 
-    <mat-form-field>
+    <mat-form-field appearance="outline">
       <mat-label>esperanto</mat-label>
       <input matInput formControlName="esperanto" placeholder="esperanto">
     </mat-form-field>
-    <mat-form-field>
+    <mat-form-field appearance="outline">
       <mat-label>english</mat-label>
       <input matInput formControlName="english" placeholder="english">
     </mat-form-field>
-    <mat-form-field>
+    <mat-form-field appearance="outline">
       <mat-label>russian</mat-label>
       <input matInput formControlName="russian" placeholder="russian">
     </mat-form-field>
