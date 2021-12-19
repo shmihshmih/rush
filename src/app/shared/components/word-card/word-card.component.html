@@ -1,18 +1,36 @@
 <div fxLayout="column" fxFlex fxLayoutAlign="center center" (keydown)="nextWord()">
-  <div *ngIf="activeWord as word">
-    <div>
-      <div fxLayoutAlign="center center" class="fs-10vw ow-anywhere lh-1">{{word[startLang]}}</div>
+
+  <div fxLayoutAlign="center center">
+    <button color="primary" (click)="showAnswer()" mat-button="">Ответ</button>
+    <button color="primary" (click)="nextWord()" mat-button="">Следующее</button>
+    <button color="primary" (click)="openSettings()" mat-button="">Настройки</button>
+    <button color="primary" (click)="openHelp()" mat-button="">Помощь</button>
+  </div>
+
+  <div *ngIf="activeWord as word" [style.width.%]="95">
+    <div fxLayoutAlign="center center" class=" ow-anywhere">
+      <mat-form-field [style.width.%]="100" class="example-form-field" appearance="outline">
+        <mat-label class="fs-2vw">{{startLang}}</mat-label>
+        <input class="fs-10vw" type="text" matInput value="{{word[startLang]}}">
+      </mat-form-field>
     </div>
     <div>
-      <div fxLayoutAlign="center center" class="fs-10vw ow-anywhere lh-1"
-           *ngIf="isShowAnswer">{{word[finishLang]}}</div>
-      <div fxLayoutAlign="center center" class="fs-10vw ow-anywhere lh-1" *ngIf="!isShowAnswer">?</div>
+
+      <div *ngIf="isShowAnswer" fxLayoutAlign="center center" class=" ow-anywhere">
+        <mat-form-field [style.width.%]="100" class="example-form-field" appearance="outline">
+          <mat-label class="fs-2vw">{{finishLang}}</mat-label>
+          <input class="fs-10vw" type="text" matInput value="{{word[finishLang]}}">
+        </mat-form-field>
+      </div>
+
+      <div *ngIf="!isShowAnswer" fxLayoutAlign="center center" class=" ow-anywhere">
+        <mat-form-field [style.width.%]="100" class="example-form-field" appearance="outline">
+          <mat-label class="fs-2vw">{{finishLang}}</mat-label>
+          <input class="fs-10vw" type="text" matInput value="?">
+        </mat-form-field>
+      </div>
+
     </div>
-    <div fxLayoutAlign="center center">
-      <button color="primary" (click)="showAnswer()" mat-button="">Ответ</button>
-      <button color="primary" (click)="nextWord()" mat-button="">Следующее</button>
-      <button color="primary" (click)="openSettings()" mat-button="">Настройки</button>
-      <button color="primary" (click)="openHelp()" mat-button="">Помощь</button>
-    </div>
+
   </div>
 </div>
