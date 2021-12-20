@@ -1,9 +1,10 @@
 import {IndexComponent} from './pages/index/index.component';
 import {NgModule} from '@angular/core';
-import {Routes, RouterModule} from '@angular/router';
+import {RouterModule, Routes} from '@angular/router';
 import {WordListComponent} from '../../shared/components/word-list/word-list.component';
 import {WordCardComponent} from '../../shared/components/word-card/word-card.component';
 import {EnglishSentencesCreatorComponent} from './pages/english-sentences-creator/english-sentences-creator.component';
+import {AtOnInExerciserComponent} from './pages/at-on-in-exerciser/at-on-in-exerciser.component';
 
 const routes: Routes = [
   {
@@ -54,6 +55,11 @@ const routes: Routes = [
   {
     path: 'sentences-creator',
     component: EnglishSentencesCreatorComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'at-on-in-exercises',
+    component: AtOnInExerciserComponent,
     pathMatch: 'full'
   }
 ];

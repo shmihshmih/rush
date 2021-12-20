@@ -90,6 +90,32 @@
   <mat-card class="esperanto-main-card">
     <mat-card-header class="w-100">
       <mat-card-title fxLayout="row" fxLayoutAlign="space-between center" class="w-100">
+        <h1 [routerLink]="['english', 'at-on-in-exercises']"
+            [matTooltip]="'Генератор упражнения для тренировки использования предлогов at, on, in'"
+            [matTooltipClass]="'toolTipClass'">Упражнения с предлогами</h1>
+      </mat-card-title>
+      <mat-card-subtitle>Тип: Генератор</mat-card-subtitle>
+    </mat-card-header>
+    <div class="img-container" [routerLink]="['english', 'at-on-in-exercises']">
+      🤸🎷🎷🎷🎷📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️⌚📌🕵️‍♀️🧷👨‍💼👨‍🎓⌚
+    </div>
+    <mat-card-content [routerLink]="['english', 'at-on-in-exercises']">
+      <p>
+        Упражнения с предлогами
+      </p>
+    </mat-card-content>
+    <mat-card-actions class="custom-mat-card-actions">
+      <button mat-raised-button color="primary" [routerLink]="['english', 'at-on-in-exercises']"
+              [matTooltip]="'Открыть'"
+              [matTooltipClass]="'toolTipClass'">
+        <i class="material-icons-outlined">view_stream</i>
+      </button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="esperanto-main-card">
+    <mat-card-header class="w-100">
+      <mat-card-title fxLayout="row" fxLayoutAlign="space-between center" class="w-100">
         <h1 [routerLink]="['blog', 'bookquest', 'thestainlesssteelrat', 1]"
             [matTooltip]="'Демонстрация книжного квеста. Здесь просто \<Стальная крыса\> Гарри Гаррисона'"
             [matTooltipClass]="'toolTipClass'">Книжный квест</h1>

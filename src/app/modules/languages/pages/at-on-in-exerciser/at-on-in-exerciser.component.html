@@ -1,0 +1,15 @@
+<div fxLayout="column" fxFlex fxLayoutAlign="center center" (keydown)="nextExercise()">
+
+  <div fxLayoutAlign="center center">
+    <button color="primary" (click)="showAnswer()" mat-button="">Ответ</button>
+    <button color="primary" (click)="nextExercise()" mat-button="">Следующее</button>
+    <button color="primary" (click)="openSettings()" mat-button="">Настройки</button>
+    <button color="primary" (click)="openHelp()" mat-button="">Помощь</button>
+  </div>
+
+  <div class="exercise-block fs-10rem" fxFlex fxLayoutAlign="center center">
+    <div class="preposition">on</div>
+    <div class="exercise-word">monday</div>
+  </div>
+
+</div>

@@ -7,10 +7,11 @@ import {LanguagesRoutingModule} from './languages-routing.module';
 import {SharedModule} from '../../shared/shared.module';
 import {EnglishSentencesCreatorComponent} from './pages/english-sentences-creator/english-sentences-creator.component';
 import {EscSettingsPopupComponent} from './components/esc-settings-popup/esc-settings-popup.component';
+import { AtOnInExerciserComponent } from './pages/at-on-in-exerciser/at-on-in-exerciser.component';
 
 
 @NgModule({
-  declarations: [IndexComponent, EnglishSentencesCreatorComponent, EscSettingsPopupComponent],
+  declarations: [IndexComponent, EnglishSentencesCreatorComponent, EscSettingsPopupComponent, AtOnInExerciserComponent],
   imports: [
     CommonModule,
     FlexModule,
