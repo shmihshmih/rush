@@ -36,10 +36,8 @@ export class AtOnInExerciserComponent implements OnInit {
 
 export interface IPrepositionExercise {
   id: string;
-  type: 'at' | 'on' | 'in';
-  data: {
-    preposition: 'at' | 'on' | 'in'; //
-    word: string; // monday
-    answer: string; // on monday
-  };
+  preposition: 'at' | 'on' | 'in'; //
+  word: string; // monday
 }
+
+const mockPrepositionExercises: IPrepositionExercise[] = [];
