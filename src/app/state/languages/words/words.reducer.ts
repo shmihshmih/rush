@@ -7,6 +7,10 @@ import {
   clearSelectedWordLists,
   clearWordLists,
   clearWords,
+  loadAtOnInSentencesByJsonFail,
+  loadAtOnInSentencesByJsonSuccess,
+  loadAtOnInSentencesFail,
+  loadAtOnInSentencesSuccess,
   loadWordListsByJSONFail,
   loadWordListsByJSONSuccess,
   loadWordListsFail,
@@ -28,6 +32,7 @@ import {
 import {IWord} from '../../../shared/models/esperanto/word.interface';
 import {IWordList} from '../../../shared/models/esperanto/word_list.interface';
 import {State} from './index';
+import {IPrepositionExercise} from '../../../shared/models/esperanto/at_on_in_sentence.interface';
 
 /** all words */
 const initialWordsState: IWord[] = [];
@@ -174,9 +179,33 @@ export function selectedWordListsReducer(state, action): string[] {
 //   return createWordsFromSelectedListsReducer(state, action);
 // }
 
+/** atonin sentences */
+const initialAtOnInSentencesSate: IPrepositionExercise[] = [];
+
+const createAtOnInReducer = createReducer(
+  initialAtOnInSentencesSate,
+  on(loadAtOnInSentencesSuccess, (state, {atOnInSentences}) => {
+    return atOnInSentences;
+  }),
+  on(loadAtOnInSentencesFail, (state, {error}) => {
+    return initialAtOnInSentencesSate;
+  }),
+  on(loadAtOnInSentencesByJsonSuccess, (state, {atOnInSentences}) => {
+    return atOnInSentences;
+  }),
+  on(loadAtOnInSentencesByJsonFail, (state, {error}) => {
+    return initialAtOnInSentencesSate;
+  })
+);
+
 export const initialWordsFeatureState: State = {
   words: initialWordsState,
   wordLists: initialWordListsState,
-  selectedWordLists: initialSelectedWordListsState
+  selectedWordLists: initialSelectedWordListsState,
+  atOnInSentences: initialAtOnInSentencesSate
   // wordsFromSelectedLists: [] а нам вообще нужна какая-либо работа с ними? Мб нет
 };
+
+export function atOnInReducer(state, action): IPrepositionExercise[] {
+  return createAtOnInReducer(state, action);
+}

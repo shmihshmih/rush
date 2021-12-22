@@ -10,6 +10,12 @@ import {
   addWordListFail,
   addWordListSuccess,
   addWordSuccess,
+  loadAtOnInSentences,
+  loadAtOnInSentencesByJson,
+  loadAtOnInSentencesByJsonFail,
+  loadAtOnInSentencesByJsonSuccess,
+  loadAtOnInSentencesFail,
+  loadAtOnInSentencesSuccess,
   loadWordLists,
   loadWordListsByJSON,
   loadWordListsByJSONFail,
@@ -170,4 +176,27 @@ export class WordsEffects {
     ))
   ));
 
+  /** получение atonin упражнений */
+  loadAtOnInSentences$ = createEffect(() => this.actions$.pipe(
+    ofType(loadAtOnInSentences),
+    mergeMap((action) => this.esperantoService.getAtOnInSentences().pipe(
+      map((atOnInSentences) => loadAtOnInSentencesSuccess({atOnInSentences})),
+      catchError(error => {
+        this.apiService.showError(error.toString());
+        return of(loadAtOnInSentencesFail({error: error.toString()}));
+      })
+    ))
+  ));
+
+  /** получение atonin упражнений by JSON */
+  loadAtOnInSentencesFromJson$ = createEffect(() => this.actions$.pipe(
+    ofType(loadAtOnInSentencesByJson),
+    mergeMap((action) => this.esperantoService.getAtOnInSentences().pipe(
+      map((atOnInSentences) => loadAtOnInSentencesByJsonSuccess({atOnInSentences})),
+      catchError(error => {
+        this.apiService.showError(error.toString());
+        return of(loadAtOnInSentencesByJsonFail({error: error.toString()}));
+      })
+    ))
+  ));
 }

@@ -7,6 +7,7 @@ import {map} from 'rxjs/operators';
 import {IWordList} from '../../../shared/models/esperanto/word_list.interface';
 import {Store} from '@ngrx/store';
 import {AngularFirestore, AngularFirestoreCollection} from '@angular/fire/compat/firestore';
+import {IPrepositionExercise} from '../../../shared/models/esperanto/at_on_in_sentence.interface';
 
 @Injectable()
 export class EsperantoService implements OnDestroy {
@@ -270,6 +271,25 @@ export class EsperantoService implements OnDestroy {
    */
   public makeNoun(root: string): string {
     return root + 'o';
+  }
+
+  /** at on in generator */
+
+  /** get all atonin sentences */
+  getAtOnInSentences(): Observable<IPrepositionExercise[]> {
+    const atOnInSentencesCollection: AngularFirestoreCollection<IPrepositionExercise> = this.afs.collection<IPrepositionExercise>('atOnInSentences');
+    return atOnInSentencesCollection.snapshotChanges().pipe(
+      map(actions => actions.map(a => {
+        const data = a.payload.doc.data() as IPrepositionExercise;
+        const id = a.payload.doc.id;
+        return {id, ...data};
+      }))
+    );
+  }
+
+  /** get all atonin sentences by JSON */
+  getAtOnInSentencesByJSON(): Observable<IPrepositionExercise[]> {
+    return this.httpClient.get<IPrepositionExercise[]>(`./assets/collections/atoninprepositionsmodels.json`);
   }
 
   ngOnDestroy(): void {

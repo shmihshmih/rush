@@ -144,3 +144,26 @@ export const clearSelectedWordLists = createAction(selectedWordListsActionTypes.
 //   props<{ wordsFromSelectedLists }>()
 // );
 // export const clearWordsFromSelectedLists = createAction(wordsFromSelectedListsActionTypes.clearWordsFromSelectedLists);
+
+/** atonin sentences */
+enum AtOnInSentencesActionsTypes {
+  // 1. получение всех упражнений
+  loadAtOnInSentences = '[ATONIN] load all atonin sentences',
+  loadAtOnInSentencesSuccess = '[ATONIN] load all atonin sentences Success',
+  loadAtOnInSentencesFail = '[ATONIN] load all atonin sentences fail',
+
+  // 1.1. получение всех упражнений из JSON
+  loadAtOnInSentencesByJson = '[ATONIN] load By Json all atonin sentences',
+  loadAtOnInSentencesByJsonSuccess = '[ATONIN] load By Json all atonin sentences Success',
+  loadAtOnInSentencesByJsonFail = '[ATONIN] load By Json all atonin sentences fail',
+}
+
+// 1. получение всех упражнений
+export const loadAtOnInSentences = createAction(AtOnInSentencesActionsTypes.loadAtOnInSentences); // effect
+export const loadAtOnInSentencesSuccess = createAction(AtOnInSentencesActionsTypes.loadAtOnInSentencesSuccess, props<{ atOnInSentences }>());
+export const loadAtOnInSentencesFail = createAction(AtOnInSentencesActionsTypes.loadAtOnInSentencesFail, props<{ error: string }>());
+
+// 1.1. получение всех упражнений из JSON
+export const loadAtOnInSentencesByJson = createAction(AtOnInSentencesActionsTypes.loadAtOnInSentencesByJson); // effect
+export const loadAtOnInSentencesByJsonSuccess = createAction(AtOnInSentencesActionsTypes.loadAtOnInSentencesByJsonSuccess, props<{ atOnInSentences }>());
+export const loadAtOnInSentencesByJsonFail = createAction(AtOnInSentencesActionsTypes.loadAtOnInSentencesByJsonFail, props<{ error: string }>());

@@ -44,3 +44,11 @@ export const selectWordsFromSelectedLists = createSelector(
     return wordsWeNeed;
   }
 );
+
+/** Получить все atOnIn упражнения */
+export const selectAtOnInExercises = createSelector(
+  selectWordsFeature,
+  (state: fromWords.State) => {
+    return state.atOnInSentences;
+  }
+);
