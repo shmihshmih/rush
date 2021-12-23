@@ -292,6 +292,21 @@ export class EsperantoService implements OnDestroy {
     return this.httpClient.get<IPrepositionExercise[]>(`./assets/collections/atoninprepositionsmodels.json`);
   }
 
+  /**
+   * Добавление нового atOnIn упражнения
+   * @param exercise exercise
+   */
+  addAtOnInExercise(exercise): Observable<any> {
+    const atOnInExercisesCollection = this.afs.collection<IPrepositionExercise>('atOnInSentences');
+    const id = this.afs.createId();
+    const params = {...exercise, id};
+    return from(atOnInExercisesCollection.doc(id).set({...params})).pipe(
+      mergeMap((res) => {
+        return of({...params});
+      })
+    );
+  }
+
   ngOnDestroy(): void {
     this.unsubscribe$.complete();
   }
