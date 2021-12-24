@@ -15,7 +15,13 @@ export class AtOnInExerciserComponent implements OnInit {
   isAuth$ = this.store.select(selectIsAuth);
 
   atoninSentences$: Observable<IPrepositionExercise[]> = this.store.select(selectAtOnInExercises);
-  atoninSentences: IPrepositionExercise[];
+  atoninSentencesList: IPrepositionExercise[];
+
+  isShowAnswer = false;
+
+  isRepeat = false;
+
+  activeExercise: IPrepositionExercise;
 
   constructor(private store: Store) {
     this.isAuth$.pipe().subscribe((isAuth) => {
@@ -29,18 +35,40 @@ export class AtOnInExerciserComponent implements OnInit {
 
   ngOnInit(): void {
     this.atoninSentences$.subscribe(atonins => {
-      this.atoninSentences = atonins;
-      console.log('this.atoninSentences: ', this.atoninSentences);
+      this.atoninSentencesList = [...atonins];
+      this.nextExercise();
     });
   }
 
 
   nextExercise(): void {
+    this.isShowAnswer = false;
 
+    if (this.atoninSentencesList.length === 0) {
+      return;
+    }
+
+    let randomNumber = this.getRandomNumber();
+
+    if (this.isRepeat) {
+      // если предыдущее слово равняется новому, то берем новое
+      if (this.activeExercise.id === this.atoninSentencesList[randomNumber].id) {
+        randomNumber = this.getRandomNumber();
+      }
+
+      this.activeExercise = this.atoninSentencesList[randomNumber];
+    } else {
+      this.activeExercise = this.atoninSentencesList.splice(randomNumber, 1)[0];
+    }
   }
 
   showAnswer(): void {
-
+    if (this.isShowAnswer === true) {
+      this.isShowAnswer = false;
+      this.nextExercise();
+    } else {
+      this.isShowAnswer = true;
+    }
   }
 
   openSettings(): void {
@@ -48,6 +76,10 @@ export class AtOnInExerciserComponent implements OnInit {
   }
 
   openHelp(): void {
+    alert('Упражнение поможет выроботать использование at on in');
+  }
 
+  getRandomNumber(): number {
+    return Math.floor(Math.random() * this.atoninSentencesList.length);
   }
 }

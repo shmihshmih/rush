@@ -185,13 +185,13 @@ const initialAtOnInSentencesSate: IPrepositionExercise[] = [];
 const createAtOnInReducer = createReducer(
   initialAtOnInSentencesSate,
   on(loadAtOnInSentencesSuccess, (state, {atOnInSentences}) => {
-    return atOnInSentences;
+    return [...atOnInSentences];
   }),
   on(loadAtOnInSentencesFail, (state, {error}) => {
     return initialAtOnInSentencesSate;
   }),
   on(loadAtOnInSentencesByJsonSuccess, (state, {atOnInSentences}) => {
-    return atOnInSentences;
+    return [...atOnInSentences];
   }),
   on(loadAtOnInSentencesByJsonFail, (state, {error}) => {
     return initialAtOnInSentencesSate;

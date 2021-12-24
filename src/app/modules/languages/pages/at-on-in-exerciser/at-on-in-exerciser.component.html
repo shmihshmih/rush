@@ -7,9 +7,10 @@
     <button color="primary" (click)="openHelp()" mat-button="">Помощь</button>
   </div>
 
-  <div class="exercise-block fs-10rem" fxFlex fxLayoutAlign="center center">
-    <div class="preposition">on</div>
-    <div class="exercise-word">monday</div>
+  <div *ngIf="activeExercise as exercise" class="exercise-block fs-10rem" fxFlex fxLayoutAlign="center center">
+    <div *ngIf="isShowAnswer" class="preposition">{{exercise.preposition}}</div>
+    <div *ngIf="!isShowAnswer" class="preposition">{{exercise.preposition}}</div>
+    <div class="exercise-word">{{exercise.word}}</div>
   </div>
 
 </div>
