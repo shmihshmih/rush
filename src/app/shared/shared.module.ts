@@ -15,6 +15,7 @@ import {AddListComponent} from './components/popup/add-list/add-list.component';
 import {AddWordComponent} from './components/popup/add-word/add-word.component';
 import {WordListsComponent} from './components/word-lists/word-lists.component';
 import {BookQuestComponent} from './components/book-quest/book-quest.component';
+import {HideAnswerPipe} from './pipes/hide-answer.pipe';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import {BookQuestComponent} from './components/book-quest/book-quest.component';
     AddListComponent,
     AddWordComponent,
     WordListsComponent,
-    BookQuestComponent
+    BookQuestComponent,
+    HideAnswerPipe
   ],
   imports: [
     CommonModule,
@@ -46,7 +48,8 @@ import {BookQuestComponent} from './components/book-quest/book-quest.component';
     WordCardComponent,
     ReactiveFormsModule,
     WordListsComponent,
-    BookQuestComponent
+    BookQuestComponent,
+    HideAnswerPipe
   ],
   entryComponents: [WordCardHelpComponent, WordCardSettingsComponent, AuthComponent, AddListComponent, AddWordComponent]
 })
