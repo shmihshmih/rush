@@ -1,0 +1,13 @@
+<div [formGroup]="atOnInExerciserConfig">
+  <div class="mb-16">
+    <mat-checkbox color="primary" formControlName="isRepeat" class="fw-600">Повторять слова</mat-checkbox>
+  </div>
+  <div class="mb-16">
+    <mat-checkbox color="primary" formControlName="isAuto" class="fw-600 mr-32">Таймер</mat-checkbox>
+    <mat-form-field>
+      <mat-label>Milliseconds</mat-label>
+      <input type="number" formControlName="timer" matInput placeholder="Milliseconds">
+    </mat-form-field>
+  </div>
+  <button color="primary" (click)="closePopup()" mat-button="">Ok</button>
+</div>
