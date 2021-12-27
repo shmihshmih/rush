@@ -948,5 +948,70 @@
     "id": "187",
     "preposition": "at",
     "word": "sunset"
+  },
+  {
+    "id": "188",
+    "preposition": "in",
+    "word": "February"
+  },
+  {
+    "id": "189",
+    "preposition": "in",
+    "word": "March"
+  },
+  {
+    "id": "190",
+    "preposition": "in",
+    "word": "April"
+  },
+  {
+    "id": "191",
+    "preposition": "in",
+    "word": "May"
+  },
+  {
+    "id": "192",
+    "preposition": "in",
+    "word": "June"
+  },
+  {
+    "id": "193",
+    "preposition": "in",
+    "word": "September"
+  },
+  {
+    "id": "194",
+    "preposition": "in",
+    "word": "October"
+  },
+  {
+    "id": "195",
+    "preposition": "in",
+    "word": "November"
+  },
+  {
+    "id": "196",
+    "preposition": "in",
+    "word": "December"
+  },
+  {
+    "id": "197",
+    "preposition": "on",
+    "word": "Wednesday"
+  },
+  {
+    "id": "198",
+    "preposition": "on",
+    "word": "Thursday"
+  },
+  {
+    "id": "199",
+    "preposition": "on",
+    "word": "Friday"
+  },
+  {
+    "id": "200",
+    "preposition": "on",
+    "word": "Saturday"
   }
 ]
