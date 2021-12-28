@@ -2,1016 +2,1567 @@
   {
     "id": "1",
     "preposition": "at",
-    "word": "the time"
+    "word": "the time",
+    "russian": "в тот момент",
+    "type": "simple"
   },
   {
     "id": "2",
     "preposition": "on",
-    "word": "the phone"
+    "word": "the phone",
+    "russian": "по телефону",
+    "type": "simple"
   },
   {
     "id": "3",
     "preposition": "on",
-    "word": "TV"
+    "word": "TV",
+    "russian": "по телевизору",
+    "type": "simple"
   },
   {
     "id": "4",
     "preposition": "on",
-    "word": "the internet"
+    "word": "the internet",
+    "russian": "в интернете",
+    "type": "simple"
   },
   {
     "id": "5",
     "preposition": "on",
-    "word": "foot"
+    "word": "foot",
+    "russian": "пешком",
+    "type": "simple"
   },
   {
     "id": "6",
     "preposition": "on",
-    "word": "thr radio"
+    "word": "the radio",
+    "russian": "по радио",
+    "type": "simple"
   },
   {
     "id": "7",
     "preposition": "on",
-    "word": "the left"
+    "word": "the left",
+    "russian": "слева",
+    "type": "simple"
   },
   {
     "id": "8",
     "preposition": "on",
-    "word": "the right"
+    "word": "the right",
+    "russian": "справа",
+    "type": "simple"
   },
   {
     "id": "9",
     "preposition": "on",
-    "word": "the menu"
+    "word": "the menu",
+    "russian": "в меню",
+    "type": "simple"
   },
   {
     "id": "10",
     "preposition": "on",
-    "word": "page 3"
+    "word": "page 3",
+    "russian": "на странице 3",
+    "type": "simple"
   },
   {
     "id": "11",
     "preposition": "on",
-    "word": "monday"
+    "word": "monday",
+    "russian": "в понедельник",
+    "type": "simple"
   },
   {
     "id": "12",
     "preposition": "on",
-    "word": "a bus"
+    "word": "a bus",
+    "russian": "на автобусе",
+    "type": "simple"
   },
   {
     "id": "13",
     "preposition": "at",
-    "word": "Thanksgiving"
+    "word": "Thanksgiving",
+    "russian": "в день благодарения",
+    "type": "simple"
   },
   {
     "id": "14",
     "preposition": "at",
-    "word": "the weekend"
+    "word": "the weekend",
+    "russian": "на выходных",
+    "type": "simple"
   },
   {
     "id": "15",
     "preposition": "at",
-    "word": "the moment"
+    "word": "the moment",
+    "russian": "в тот момент",
+    "type": "simple"
   },
   {
     "id": "16",
     "preposition": "at",
-    "word": "dinner time"
+    "word": "dinner time",
+    "russian": "в обеденное время",
+    "type": "simple"
   },
   {
     "id": "17",
     "preposition": "at",
-    "word": "Christmas"
+    "word": "Christmas",
+    "russian": "в рождество",
+    "type": "simple"
   },
   {
     "id": "18",
     "preposition": "at",
-    "word": "breakfast"
+    "word": "breakfast",
+    "russian": "на завтраке",
+    "type": "simple"
   },
   {
     "id": "19",
     "preposition": "at",
-    "word": "that time"
+    "word": "that time",
+    "russian": "в этот раз",
+    "type": "simple"
   },
   {
     "id": "20",
     "preposition": "at",
-    "word": "midnight"
+    "word": "midnight",
+    "russian": "в полночь",
+    "type": "simple"
   },
   {
     "id": "21",
     "preposition": "at",
-    "word": "8 o'clock"
+    "word": "8 o'clock",
+    "russian": "в 8 часов",
+    "type": "simple"
   },
   {
     "id": "22",
     "preposition": "at",
-    "word": "dinner"
+    "word": "dinner",
+    "russian": "в обед",
+    "type": "simple"
   },
   {
     "id": "23",
     "preposition": "at",
-    "word": "Easter"
+    "word": "Easter",
+    "russian": "на Пасху",
+    "type": "simple"
   },
   {
     "id": "24",
     "preposition": "at",
-    "word": "dawn"
+    "word": "dawn",
+    "russian": "на закате",
+    "type": "simple"
   },
   {
     "id": "25",
     "preposition": "at",
-    "word": "noon"
+    "word": "noon",
+    "russian": "в полдень",
+    "type": "simple"
   },
   {
     "id": "26",
     "preposition": "at",
-    "word": "night"
+    "word": "night",
+    "russian": "ночью",
+    "type": "simple"
   },
   {
     "id": "27",
     "preposition": "at",
-    "word": "dusk"
+    "word": "dusk",
+    "russian": "в сумерках",
+    "type": "simple"
   },
   {
     "id": "28",
     "preposition": "on",
-    "word": "my birthday"
+    "word": "my birthday",
+    "russian": "на мой день рождения",
+    "type": "simple"
   },
   {
     "id": "29",
     "preposition": "on",
-    "word": "the first day"
+    "word": "the first day",
+    "russian": "на первый день",
+    "type": "simple"
   },
   {
     "id": "30",
     "preposition": "on",
-    "word": "a warm day"
+    "word": "a warm day",
+    "russian": "в теплый день",
+    "type": "simple"
   },
   {
     "id": "31",
     "preposition": "on",
-    "word": "March 15th"
+    "word": "March 15th",
+    "russian": "пятнадцатого марта",
+    "type": "simple"
   },
   {
     "id": "32",
     "preposition": "on",
-    "word": "sunny day"
+    "word": "a sunny day",
+    "russian": "в солнечный день",
+    "type": "simple"
   },
   {
     "id": "33",
     "preposition": "on",
-    "word": "a hot day"
+    "word": "a hot day",
+    "russian": "в жаркий день",
+    "type": "simple"
   },
   {
     "id": "34",
     "preposition": "on",
-    "word": "June 13th"
+    "word": "June 13th",
+    "russian": "тринадцатого июня",
+    "type": "simple"
   },
   {
     "id": "35",
     "preposition": "on",
-    "word": "Sunday"
+    "word": "Sunday",
+    "russian": "в воскресенье",
+    "type": "simple"
   },
   {
     "id": "36",
     "preposition": "on",
-    "word": "Tuesday"
+    "word": "Tuesday",
+    "russian": "во вторник",
+    "type": "simple"
   },
   {
     "id": "37",
     "preposition": "on",
-    "word": "that day"
+    "word": "that day",
+    "russian": "в тот день",
+    "type": "simple"
   },
   {
     "id": "38",
     "preposition": "on",
-    "word": "holiday"
+    "word": "holiday",
+    "russian": "в выходной",
+    "type": "simple"
   },
   {
     "id": "39",
     "preposition": "on",
-    "word": "time"
+    "word": "time",
+    "russian": "вовремя",
+    "type": "simple"
   },
   {
     "id": "40",
     "preposition": "in",
-    "word": "the 16th century"
+    "word": "the 16th century",
+    "russian": "в 16 веке",
+    "type": "simple"
   },
   {
     "id": "41",
     "preposition": "in",
-    "word": "the afternoon"
+    "word": "the afternoon",
+    "russian": "после полудня",
+    "type": "simple"
   },
   {
     "id": "42",
     "preposition": "in",
-    "word": "the summer"
+    "word": "the summer",
+    "russian": "летом",
+    "type": "simple"
   },
   {
     "id": "43",
     "preposition": "in",
-    "word": "ten minutes"
+    "word": "ten minutes",
+    "russian": "через 10 минут",
+    "type": "simple"
   },
   {
     "id": "44",
     "preposition": "in",
-    "word": "the morning"
+    "word": "the morning",
+    "russian": "устром",
+    "type": "simple"
   },
   {
     "id": "45",
     "preposition": "in",
-    "word": "the evening"
+    "word": "the evening",
+    "russian": "вечером",
+    "type": "simple"
   },
   {
     "id": "46",
     "preposition": "in",
-    "word": "three hours"
+    "word": "three hours",
+    "russian": "через три часа",
+    "type": "simple"
   },
   {
     "id": "47",
     "preposition": "in",
-    "word": "the 1900s"
+    "word": "the 1900s",
+    "russian": "в 1980-ом",
+    "type": "simple"
   },
   {
     "id": "48",
     "preposition": "in",
-    "word": "the winter"
+    "word": "the winter",
+    "russian": "зимой",
+    "type": "simple"
   },
   {
     "id": "49",
     "preposition": "in",
-    "word": "the spring"
+    "word": "the spring",
+    "russian": "весной",
+    "type": "simple"
   },
   {
     "id": "50",
     "preposition": "in",
-    "word": "the past"
+    "word": "the past",
+    "russian": "в прошлом",
+    "type": "simple"
   },
   {
     "id": "51",
     "preposition": "in",
-    "word": "January"
+    "word": "January",
+    "russian": "в январе",
+    "type": "simple"
   },
   {
     "id": "52",
     "preposition": "in",
-    "word": "August"
+    "word": "August",
+    "russian": "в августе",
+    "type": "simple"
   },
   {
     "id": "52",
     "preposition": "in",
-    "word": "July"
+    "word": "July",
+    "russian": "в июле",
+    "type": "simple"
   },
   {
     "id": "52",
     "preposition": "in",
-    "word": "1876"
+    "word": "1876",
+    "russian": "в 1876-ом",
+    "type": "simple"
   },
   {
     "id": "53",
     "preposition": "at",
-    "word": "7 p.m."
+    "word": "7 p.m.",
+    "russian": "в 7 вечера",
+    "type": "simple"
   },
   {
     "id": "54",
     "preposition": "at",
-    "word": "10 o'clock"
-  },
-  {
-    "id": "55",
-    "preposition": "at",
-    "word": "10 o'clock"
+    "word": "10 o'clock",
+    "russian": "в 10 часов",
+    "type": "simple"
   },
   {
     "id": "56",
     "preposition": "in",
-    "word": "2020"
+    "word": "2020",
+    "russian": "в 2020-ом",
+    "type": "simple"
   },
   {
     "id": "57",
     "preposition": "in",
-    "word": "March"
+    "word": "March",
+    "russian": "в марте",
+    "type": "simple"
   },
   {
     "id": "58",
     "preposition": "in",
-    "word": "the fall"
+    "word": "the fall",
+    "russian": "осенью",
+    "type": "simple"
   },
   {
     "id": "59",
     "preposition": "on",
-    "word": "September 3"
+    "word": "September 3",
+    "russian": "третьего сентября",
+    "type": "simple"
   },
   {
     "id": "60",
     "preposition": "at",
-    "word": "home"
+    "word": "home",
+    "russian": "дома",
+    "type": "simple"
   },
   {
     "id": "61",
     "preposition": "at",
-    "word": "school"
+    "word": "school",
+    "russian": "в школе",
+    "type": "simple"
   },
   {
     "id": "62",
     "preposition": "at",
-    "word": "the airport"
+    "word": "the airport",
+    "russian": "в аэропорту",
+    "type": "simple"
   },
   {
     "id": "63",
     "preposition": "at",
-    "word": "university"
+    "word": "university",
+    "russian": "в университете",
+    "type": "simple"
   },
   {
     "id": "64",
     "preposition": "at",
-    "word": "5 o'clock"
-  },
-  {
-    "id": "65",
-    "preposition": "at",
-    "word": "5 o'clock"
+    "word": "5 o'clock",
+    "russian": "в 5 часов",
+    "type": "simple"
   },
   {
     "id": "66",
     "preposition": "at",
-    "word": "midday"
+    "word": "midday",
+    "russian": "в полдень",
+    "type": "simple"
   },
   {
     "id": "67",
     "preposition": "at",
-    "word": "the station"
+    "word": "the station",
+    "russian": "на станции",
+    "type": "simple"
   },
   {
     "id": "68",
     "preposition": "at",
-    "word": "the bottom"
+    "word": "the bottom",
+    "russian": "внизу",
+    "type": "simple"
   },
   {
     "id": "69",
     "preposition": "at",
-    "word": "work"
+    "word": "work",
+    "russian": "на работе",
+    "type": "simple"
   },
   {
     "id": "70",
     "preposition": "in",
-    "word": "the autumn"
+    "word": "the autumn",
+    "russian": "осенью",
+    "type": "simple"
   },
   {
     "id": "71",
     "preposition": "in",
-    "word": "a minute"
+    "word": "a minute",
+    "russian": "через минуту",
+    "type": "simple"
   },
   {
     "id": "72",
     "preposition": "in",
-    "word": "an hour"
+    "word": "an hour",
+    "russian": "через час",
+    "type": "simple"
   },
   {
     "id": "73",
     "preposition": "in",
-    "word": "a day"
+    "word": "a day",
+    "russian": "за один день",
+    "type": "simple"
   },
   {
     "id": "74",
     "preposition": "on",
-    "word": "weekend"
+    "word": "weekend",
+    "russian": "на выходных",
+    "type": "simple"
   },
   {
     "id": "75",
     "preposition": "on",
-    "word": "vacation"
+    "word": "vacation",
+    "russian": "в отпуске",
+    "type": "simple"
   },
   {
     "id": "76",
     "preposition": "on",
-    "word": "new year"
+    "word": "new year",
+    "russian": "на новый год",
+    "type": "simple"
   },
   {
     "id": "77",
     "preposition": "on",
-    "word": "the bus"
+    "word": "the bus",
+    "russian": "на автобусе",
+    "type": "simple"
   },
   {
     "id": "78",
     "preposition": "on",
-    "word": "the plane"
+    "word": "the plane",
+    "russian": "на самолете",
+    "type": "simple"
   },
   {
     "id": "79",
     "preposition": "on",
-    "word": "the ship"
-  },
-  {
-    "id": "80",
-    "preposition": "on",
-    "word": "the ship"
+    "word": "the ship",
+    "russian": "на корабле",
+    "type": "simple"
   },
   {
     "id": "81",
     "preposition": "in",
-    "word": "France"
+    "word": "France",
+    "russian": "во Франции",
+    "type": "simple"
   },
   {
     "id": "82",
     "preposition": "in",
-    "word": "the future"
+    "word": "the future",
+    "russian": "в будущем",
+    "type": "simple"
   },
   {
     "id": "83",
     "preposition": "in",
-    "word": "England"
+    "word": "England",
+    "russian": "в Англии",
+    "type": "simple"
   },
   {
     "id": "84",
     "preposition": "in",
-    "word": "a building"
+    "word": "a building",
+    "russian": "в строении",
+    "type": "simple"
   },
   {
     "id": "85",
     "preposition": "in",
-    "word": "a car"
+    "word": "a car",
+    "russian": "в машине",
+    "type": "simple"
   },
   {
     "id": "86",
     "preposition": "in",
-    "word": "a taxi"
+    "word": "a taxi",
+    "russian": "в такси",
+    "type": "simple"
   },
   {
     "id": "87",
     "preposition": "in",
-    "word": "a boat"
+    "word": "a boat",
+    "russian": "в лодке",
+    "type": "simple"
   },
   {
     "id": "88",
     "preposition": "in",
-    "word": "a helicopter"
+    "word": "a helicopter",
+    "russian": "в вертолете",
+    "type": "simple"
   },
   {
     "id": "89",
     "preposition": "in",
-    "word": "a traffic jam"
+    "word": "a traffic jam",
+    "russian": "в пробке",
+    "type": "simple"
   },
   {
     "id": "90",
     "preposition": "in",
-    "word": "Time Square"
+    "word": "Time Square",
+    "russian": "на площади времен",
+    "type": "simple"
   },
   {
     "id": "91",
     "preposition": "in",
-    "word": "the article"
+    "word": "the article",
+    "russian": "в статье",
+    "type": "simple"
   },
   {
     "id": "92",
     "preposition": "on",
-    "word": "a horse"
+    "word": "a horse",
+    "russian": "на лошади",
+    "type": "simple"
   },
   {
     "id": "93",
     "preposition": "on",
-    "word": "the floor"
+    "word": "the floor",
+    "russian": "на полу",
+    "type": "simple"
   },
   {
     "id": "94",
     "preposition": "on",
-    "word": "the page"
+    "word": "the page",
+    "russian": "на странице",
+    "type": "simple"
   },
   {
     "id": "95",
     "preposition": "on",
-    "word": "Oxford street"
+    "word": "Oxford street",
+    "russian": "на оксфордской улице",
+    "type": "simple"
   },
   {
     "id": "96",
     "preposition": "at",
-    "word": "675 State Street"
+    "word": "675 State Street",
+    "russian": "на Стейт-стрит, 675",
+    "type": "simple"
   },
   {
     "id": "97",
     "preposition": "at",
-    "word": "the bus stop"
+    "word": "the bus stop",
+    "russian": "на автобусной остановке",
+    "type": "simple"
   },
   {
     "id": "98",
     "preposition": "at",
-    "word": "the door"
+    "word": "the door",
+    "russian": "у двери",
+    "type": "simple"
   },
   {
     "id": "99",
     "preposition": "at",
-    "word": "the top of page"
+    "word": "the top of page",
+    "russian": "наверху страницы",
+    "type": "simple"
   },
   {
     "id": "100",
     "preposition": "at",
-    "word": "someone's house"
+    "word": "someone's house",
+    "russian": "в чьём-то доме",
+    "type": "simple"
   },
   {
     "id": "101",
     "preposition": "at",
-    "word": "the entrance"
+    "word": "the entrance",
+    "russian": "на входе",
+    "type": "simple"
   },
   {
     "id": "102",
     "preposition": "at",
-    "word": "the crossroads"
+    "word": "the crossroads",
+    "russian": "на перекрестке",
+    "type": "simple"
   },
   {
     "id": "103",
     "preposition": "at",
-    "word": "the front"
+    "word": "the front",
+    "russian": "напротив",
+    "type": "simple"
   },
   {
     "id": "104",
     "preposition": "at",
-    "word": "the back"
+    "word": "the back",
+    "russian": "в задней части",
+    "type": "simple"
   },
   {
     "id": "105",
     "preposition": "at",
-    "word": "the bottom"
+    "word": "the bottom",
+    "russian": "в нижней части",
+    "type": "simple"
   },
   {
     "id": "106",
     "preposition": "in",
-    "word": "demand"
+    "word": "demand",
+    "russian": "востребованный \ по запросу",
+    "type": "simple"
   },
   {
     "id": "107",
     "preposition": "in",
-    "word": "of focus"
+    "word": "of focus",
+    "russian": "в фокусе",
+    "type": "simple"
   },
   {
     "id": "108",
     "preposition": "in",
-    "word": "an uproar"
+    "word": "an uproar",
+    "russian": "шумит \ в замешательстве",
+    "type": "phrase",
+    "example": [
+      "The castle's in an uproar.",
+      "The council's in an uproar."
+    ]
   },
   {
     "id": "109",
     "preposition": "in",
-    "word": "answer to"
+    "word": "answer to",
+    "russian": "в ответ на",
+    "type": "phrase",
+    "example": [
+      "'That was a rest area,' said Hummin in answer to the unspoken question.,"
+    ]
   },
   {
     "id": "110",
     "preposition": "in",
-    "word": "anticipation of"
+    "word": "anticipation of",
+    "russian": "в ожидании \ в предвкушении",
+    "type": "phrase",
+    "example": [
+      "You've been stealing millions in anticipation of running away.",
+      "In anticipation of tonight."
+    ]
   },
   {
     "id": "111",
     "preposition": "in",
-    "word": "arrears"
+    "word": "arrears",
+    "russian": "в долгах (просроченная задолженность)",
+    "type": "phrase",
+    "example": [
+      "His company is maxed-out on its credit line, and is two months in arrears on its rent.",
+      "He was in arrears."
+    ]
   },
   {
     "id": "112",
     "preposition": "in",
-    "word": "danger"
+    "word": "danger",
+    "russian": "в опасности",
+    "type": "simple"
   },
   {
     "id": "113",
     "preposition": "in",
-    "word": "debt"
+    "word": "debt",
+    "russian": "в долгах",
+    "type": "simple"
   },
   {
     "id": "114",
     "preposition": "in",
-    "word": "decline"
+    "word": "decline",
+    "russian": "в упадке",
+    "type": "simple"
   },
   {
     "id": "115",
     "preposition": "in",
-    "word": "defence of"
+    "word": "defence of",
+    "russian": "в защиту",
+    "type": "simple"
   },
   {
     "id": "116",
     "preposition": "in",
-    "word": "detail"
+    "word": "detail",
+    "russian": "в деталях",
+    "type": "simple"
   },
   {
     "id": "117",
     "preposition": "in",
-    "word": "disgrace"
+    "word": "disgrace",
+    "russian": "в позоре",
+    "type": "simple"
   },
   {
     "id": "118",
     "preposition": "in",
-    "word": "disguise"
+    "word": "disguise",
+    "russian": "в маскировке",
+    "type": "simple",
+    "example": [
+      "Weren't we told she'd be in disguise?",
+      "You could be in disguise."
+    ]
   },
   {
     "id": "119",
     "preposition": "in",
-    "word": "fact"
+    "word": "fact",
+    "russian": "на самом деле",
+    "type": "simple"
   },
   {
     "id": "120",
     "preposition": "in",
-    "word": "fairness to"
+    "word": "fairness to",
+    "russian": "по справедливости к",
+    "type": "phrase",
+    "example": [
+      "In fairness to us, that sounds awful.",
+      "I don't believe in fairness."
+    ]
   },
   {
     "id": "120",
     "preposition": "in",
-    "word": "favor of"
+    "word": "favor of",
+    "russian": "в пользу",
+    "type": "phrase",
+    "example": [
+      "In light of this new evidence, the court must rule in favor of Mrs. Cole.",
+      "So you are in favor of the Sangreal documents staying buried forever?"
+    ]
   },
   {
     "id": "121",
     "preposition": "in",
-    "word": "fear of"
+    "word": "fear of",
+    "russian": "в страхе перед",
+    "type": "phrase",
+    "example": [
+      "Their greatest warriors take their own lives in fear of Caesar!",
+      "Every spy lives in fear of losing himself."
+    ]
   },
   {
     "id": "122",
     "preposition": "in",
-    "word": "flames"
+    "word": "flames",
+    "russian": "в огне",
+    "type": "phrase",
+    "example": [
+      "The world's going up in flames and they're still playing at toy soldiers!",
+      "It all went up in flames."
+    ]
   },
   {
     "id": "123",
     "preposition": "in",
-    "word": "flower"
+    "word": "flower",
+    "russian": "в цвету",
+    "type": "phrase",
+    "example": [
+      "They wrote your names in flowers.",
+      "The bugs are in the flowers!"
+    ]
   },
   {
     "id": "124",
     "preposition": "in",
-    "word": "full"
+    "word": "full",
+    "russian": "в полном объеме",
+    "type": "phrase",
+    "example": [
+      "Job done, paid in full."
+    ]
   },
   {
     "id": "125",
     "preposition": "in",
-    "word": "gear"
+    "word": "gear",
+    "russian": "в передачу",
+    "type": "phrase",
+    "example": [
+      "I can't get in gear.",
+      "Put it in top gear."
+    ]
   },
   {
     "id": "126",
     "preposition": "in",
-    "word": "general"
+    "word": "general",
+    "russian": "в общем",
+    "type": "phrase",
+    "example": [
+      "In general you could not assume that you were much safer in the country than in London.",
+      "Religion in general."
+    ]
   },
   {
     "id": "127",
     "preposition": "in",
-    "word": "good condition"
+    "word": "good condition",
+    "russian": "в хорошем состоянии",
+    "type": "phrase",
+    "example": [
+      "Looks to be in pretty good condition."
+    ]
   },
   {
     "id": "128",
     "preposition": "in",
-    "word": "good faith"
+    "word": "good faith",
+    "russian": "добросовестно \ по доброй воле",
+    "type": "phrase",
+    "example": [
+      "I bought them in good faith.",
+      "Monks, I do this in good faith!"
+    ]
   },
   {
     "id": "129",
     "preposition": "in",
-    "word": "hand"
-  },
-  {
-    "id": "130",
-    "preposition": "on",
-    "word": "watch"
+    "word": "hand",
+    "russian": "на руках",
+    "type": "phrase",
+    "example": [
+      "Evidence in hand."
+    ]
   },
   {
     "id": "131",
     "preposition": "on",
-    "word": "schedule"
-  },
-  {
-    "id": "132",
-    "preposition": "on",
-    "word": "schedule"
+    "word": "schedule",
+    "russian": "по расписанию",
+    "type": "simple"
   },
   {
     "id": "133",
     "preposition": "on",
-    "word": "the record"
+    "word": "the record",
+    "russian": "на записи",
+    "type": "simple"
   },
   {
     "id": "134",
     "preposition": "on",
-    "word": "the road"
+    "word": "the road",
+    "russian": "на дороге",
+    "type": "simple"
   },
   {
     "id": "135",
     "preposition": "on",
-    "word": "oath"
+    "word": "oath",
+    "russian": "под присягой",
+    "type": "phrase",
+    "example": [
+      "It's difficult to lie on oath."
+    ]
   },
   {
     "id": "136",
     "preposition": "on",
-    "word": "pain of"
+    "word": "pain of",
+    "russian": "под страхом",
+    "type": "phrase",
+    "example": [
+      "She ordered me not to open them on pain of death."
+    ]
   },
   {
     "id": "137",
     "preposition": "on",
-    "word": "the air"
+    "word": "the air",
+    "russian": "в прямом эфире",
+    "type": "phrase"
   },
   {
     "id": "138",
     "preposition": "on",
-    "word": "balance"
+    "word": "balance",
+    "russian": "в итоге",
+    "type": "phrase",
+    "example": [
+      "But on balance, I still think we did the right thing."
+    ]
   },
   {
     "id": "139",
     "preposition": "on",
-    "word": "a diet"
+    "word": "a diet",
+    "russian": "на диете",
+    "type": "simple"
   },
   {
     "id": "140",
     "preposition": "on",
-    "word": "a journey"
+    "word": "a journey",
+    "russian": "в путешествии",
+    "type": "simple"
   },
   {
     "id": "141",
     "preposition": "on",
-    "word": "a trip"
+    "word": "a trip",
+    "russian": "в поездке",
+    "type": "simple"
   },
   {
     "id": "142",
     "preposition": "on",
-    "word": "a large scale"
+    "word": "a large scale",
+    "russian": "в больших масштабах",
+    "type": "phrase",
+    "example": [
+      "I knew I couldn't expect a chance to show what could be done on a large scale."
+    ]
   },
   {
     "id": "143",
     "preposition": "on",
-    "word": "a small scale"
+    "word": "a small scale",
+    "russian": "в небольших масштабах",
+    "type": "phrase",
+    "example": [
+      "A big bang on a small scale."
+    ]
   },
   {
     "id": "144",
     "preposition": "on",
-    "word": "a pension"
+    "word": "a pension",
+    "russian": "на пенсии",
+    "type": "phrase",
+    "example": [
+      "I'm a retired investor on a pension.",
+      "I am retired, living on a pension... "
+    ]
   },
   {
     "id": "145",
     "preposition": "on",
-    "word": "a regular basis"
+    "word": "a regular basis",
+    "russian": "на регулярной основе",
+    "type": "phrase",
+    "example": [
+      "He eats veal on a regular basis?",
+      "241 attend on a regular basis."
+    ]
   },
   {
     "id": "146",
     "preposition": "on",
-    "word": "a spree"
+    "word": "a spree",
+    "russian": "на пирушке",
+    "type": "phrase",
+    "example": [
+      "Old Sebastian on a spree again.",
+      "I went on a shopping spree."
+    ]
   },
   {
     "id": "147",
     "preposition": "on",
-    "word": "a account of"
+    "word": "a account of",
+    "russian": "на счет",
+    "type": "phrase",
+    "example": [
+      "Dad says on account of atmosphere.",
+      "I'm not going, said Ostap, on account of my bashful pride."
+    ]
   },
   {
     "id": "148",
     "preposition": "on",
-    "word": "an expedition"
+    "word": "an expedition",
+    "russian": "в экспедиции",
+    "type": "simple"
   },
   {
     "id": "149",
     "preposition": "on",
-    "word": "an island"
-  },
-  {
-    "id": "150",
-    "preposition": "on",
-    "word": "approval"
+    "word": "an island",
+    "russian": "на острове",
+    "type": "simple"
   },
   {
     "id": "151",
     "preposition": "on",
-    "word": "average"
+    "word": "average",
+    "russian": "в среднем",
+    "type": "simple"
   },
   {
     "id": "152",
     "preposition": "on",
-    "word": "bail"
+    "word": "bail",
+    "russian": "под залог",
+    "type": "phrase",
+    "example": [
+      "Currently out on bail.",
+      "In five days he would be out again on bail."
+    ]
   },
   {
     "id": "153",
     "preposition": "on",
-    "word": "behalf of"
+    "word": "behalf of",
+    "russian": "от имени",
+    "type": "phrase",
+    "example": [
+      "On behalf of NASA, I welcome you.",
+      "My queen, please accept this gift on behalf of all of your loyal subjects in the Iron Islands."
+    ]
   },
   {
     "id": "154",
     "preposition": "on",
-    "word": "board"
+    "word": "board",
+    "russian": "на борту",
+    "type": "simple"
   },
   {
     "id": "155",
     "preposition": "on",
-    "word": "business"
+    "word": "business",
+    "russian": "по делам",
+    "type": "phrase",
+    "example": [
+      "I'm gonna focus on business, which is good.",
+      "Alex, I have to drive into Kingston on business.",
+      "My husband's always away on business."
+    ]
   },
   {
     "id": "156",
     "preposition": "on",
-    "word": "order"
+    "word": "order",
+    "russian": "по заказу \ по приказу",
+    "type": "phrase",
+    "example": [
+      "You killed on orders.",
+      "It's on order, OK?"
+    ]
   },
   {
     "id": "157",
     "preposition": "on",
-    "word": "remand"
+    "word": "remand",
+    "russian": "под стражей",
+    "type": "phrase",
+    "example": [
+      "We could say she's on remand for assault?",
+      "But Khalil's only on remand now."
+    ]
   },
   {
     "id": "158",
     "preposition": "at",
-    "word": "high speed"
+    "word": "high speed",
+    "russian": "на большой скорости",
+    "type": "simple"
   },
   {
     "id": "159",
     "preposition": "at",
-    "word": "risk"
+    "word": "risk",
+    "russian": "в зоне риска",
+    "type": "simple"
   },
   {
     "id": "160",
     "preposition": "at",
-    "word": "one's side"
+    "word": "one's side",
+    "russian": "на чьей-то стороне",
+    "type": "simple"
   },
   {
     "id": "161",
     "preposition": "at",
-    "word": "a fraction of"
+    "word": "a fraction of",
+    "russian": "на долю \ значительно \ за часть",
+    "type": "phrase",
+    "example": [
+      "I can sell it at a fraction of the cost of a normal mission."
+    ]
   },
   {
     "id": "162",
     "preposition": "at",
-    "word": "the outset"
+    "word": "the outset",
+    "russian": "в самом начале",
+    "type": "phrase",
+    "example": [
+      "She had stepped back, at the outset of the dispute, into the corner behind the fireplace."
+    ]
   },
   {
     "id": "163",
     "preposition": "at",
-    "word": "the end"
+    "word": "the end",
+    "russian": "в конце",
+    "type": "phrase",
+    "example": [
+      "The Hassassin stood at the end of the stone tunnel."
+    ]
   },
   {
     "id": "164",
     "preposition": "at",
-    "word": "sight"
+    "word": "sight",
+    "russian": "в поле зрения \ глядя \ при виде",
+    "type": "phrase",
+    "example": [
+      "At the sight of them I was a little taken aback."
+    ]
   },
   {
     "id": "165",
     "preposition": "at",
-    "word": "the double"
+    "word": "the double",
+    "russian": "в двойном",
+    "type": "simple"
   },
   {
     "id": "166",
     "preposition": "at",
-    "word": "one time"
+    "word": "one time",
+    "russian": "в одно время",
+    "type": "simple"
   },
   {
     "id": "167",
     "preposition": "at",
-    "word": "a discount"
+    "word": "a discount",
+    "russian": "со скидкой",
+    "type": "phrase",
+    "example": [
+      "Well, you can get him at a discount."
+    ]
   },
   {
     "id": "168",
     "preposition": "at",
-    "word": "a distance"
+    "word": "a distance",
+    "russian": "на расстоянии",
+    "type": "phrase",
+    "example": [
+      "Even at a distance his eyes looked lifeless-like two gray stones."
+    ]
   },
   {
     "id": "169",
     "preposition": "at",
-    "word": "a glance"
+    "word": "a glance",
+    "russian": "на первый взгляд",
+    "type": "phrase",
+    "example": [
+      "He opened the door and saw a girl who, at a glance, he decided was not to be ignored and concerning whom he was instantly curious."
+    ]
   },
   {
     "id": "170",
     "preposition": "at",
-    "word": "a guess"
+    "word": "a guess",
+    "russian": "предроложительно",
+    "type": "phrase",
+    "example": [
+      "At a guess, eight or nine million francs."
+    ]
   },
   {
     "id": "171",
     "preposition": "at",
-    "word": "a loose end"
+    "word": "a loose end",
+    "russian": "без дела",
+    "type": "phrase",
+    "example": [
+      "I was at a loose end."
+    ]
   },
   {
     "id": "172",
     "preposition": "at",
-    "word": "a loss"
+    "word": "a loss",
+    "russian": "в растерянности",
+    "type": "phrase",
+    "example": [
+      "Emma was quite at a loss."
+    ]
   },
   {
     "id": "173",
     "preposition": "at",
-    "word": "a low ebb"
+    "word": "a low ebb",
+    "russian": "на низком уровне",
+    "type": "phrase",
+    "example": [
+      "But then, at my lowest ebb, a moment of hope.",
+      "I nearly told my mother, once, when I was at a particularly low ebb."
+    ]
   },
   {
     "id": "174",
     "preposition": "at",
-    "word": "a price"
+    "word": "a price",
+    "russian": "по цене",
+    "type": "phrase",
+    "example": [
+      "He has found a way of mass-marketing critical equipment at a price far lower than his competitors.",
+      "Reliable transport at a reasonable price."
+    ]
   },
   {
     "id": "175",
     "preposition": "at",
-    "word": "a rate of"
+    "word": "a rate of",
+    "russian": "со скоростью",
+    "type": "phrase",
+    "example": [
+      "It's moving at a rate of 80km/hr.",
+      "Growing at a rate of several million a year."
+    ]
   },
   {
     "id": "176",
     "preposition": "at",
-    "word": "a speed of"
+    "word": "a speed of",
+    "russian": "со скоростью",
+    "type": "phrase",
+    "example": [
+      "The brain has 14 billion neurons firing at a speed of 450 miles per hour.",
+      "You know that drove at a speed of 140?"
+    ]
   },
   {
     "id": "177",
     "preposition": "at",
-    "word": "a standstill"
+    "word": "a standstill",
+    "russian": "в тупике \ на месте",
+    "type": "phrase",
+    "example": [
+      "27 trains are at a standstill!",
+      "We're at a standstill, Buzz."
+    ]
   },
   {
     "id": "178",
     "preposition": "at",
-    "word": "all costs"
+    "word": "all costs",
+    "russian": "любой ценой",
+    "type": "phrase",
+    "example": [
+      "At all costs, he must do his best to stay at liberty."
+    ]
   },
   {
     "id": "179",
     "preposition": "at",
-    "word": "all events"
+    "word": "all events",
+    "russian": "во всяком случае",
+    "type": "phrase",
+    "example": [
+      "But at all events he knew that Mildred was in town."
+    ]
   },
   {
     "id": "180",
     "preposition": "at",
-    "word": "issue"
+    "word": "issue",
+    "russian": "вопрос в",
+    "type": "phrase",
+    "example": [
+      "And manner of death isn't at issue here.",
+      "Semantics are not at issue here."
+    ]
   },
   {
     "id": "181",
     "preposition": "at",
-    "word": "large"
+    "word": "large",
+    "russian": "в целом \ на свободе",
+    "type": "phrase",
+    "example": [
+      "Public defender is saying battery, citing you personally and the department at large.",
+      "- Let us not forget that the Evil Queen is now at large."
+    ]
   },
   {
     "id": "182",
     "preposition": "at",
-    "word": "least"
+    "word": "least",
+    "russian": "по крайней мере",
+    "type": "phrase",
+    "example": [
+      "' It's a church, or at least it used to be."
+    ]
   },
   {
     "id": "183",
     "preposition": "at",
-    "word": "length"
+    "word": "length",
+    "russian": "в конце концов \ Подробно",
+    "type": "phrase",
+    "example": [
+      "\"You seem to have made yourself at home,\" I said at length.",
+      "She and I have discussed it at length."
+    ]
   },
   {
     "id": "184",
     "preposition": "at",
-    "word": "liberty"
+    "word": "liberty",
+    "russian": "свободен \ иметь право",
+    "type": "phrase",
+    "example": [
+      "I'm not at liberty to say.",
+      "Tracy said stiffly, \"I'm not at liberty to discuss it, but the professor happens to have some inside information.\""
+    ]
   },
   {
     "id": "185",
     "preposition": "at",
-    "word": "bedtime"
+    "word": "bedtime",
+    "russian": "во время сна",
+    "type": "simple"
   },
   {
     "id": "186",
     "preposition": "at",
-    "word": "sunrise"
+    "word": "sunrise",
+    "russian": "на восходе",
+    "type": "simple"
   },
   {
     "id": "187",
     "preposition": "at",
-    "word": "sunset"
+    "word": "sunset",
+    "russian": "на закате",
+    "type": "simple"
   },
   {
     "id": "188",
     "preposition": "in",
-    "word": "February"
+    "word": "February",
+    "russian": "в феврале",
+    "type": "simple"
   },
   {
     "id": "189",
     "preposition": "in",
-    "word": "March"
+    "word": "March",
+    "russian": "в марте",
+    "type": "simple"
   },
   {
     "id": "190",
     "preposition": "in",
-    "word": "April"
+    "word": "April",
+    "russian": "в апреле",
+    "type": "simple"
   },
   {
     "id": "191",
     "preposition": "in",
-    "word": "May"
+    "word": "May",
+    "russian": "в мае",
+    "type": "simple"
   },
   {
     "id": "192",
     "preposition": "in",
-    "word": "June"
+    "word": "June",
+    "russian": "в июне",
+    "type": "simple"
   },
   {
     "id": "193",
     "preposition": "in",
-    "word": "September"
+    "word": "September",
+    "russian": "в сентябре",
+    "type": "simple"
   },
   {
     "id": "194",
     "preposition": "in",
-    "word": "October"
+    "word": "October",
+    "russian": "в октябре",
+    "type": "simple"
   },
   {
     "id": "195",
     "preposition": "in",
-    "word": "November"
+    "word": "November",
+    "russian": "в ноябре",
+    "type": "simple"
   },
   {
     "id": "196",
     "preposition": "in",
-    "word": "December"
+    "word": "December",
+    "russian": "в декабре",
+    "type": "simple"
   },
   {
     "id": "197",
     "preposition": "on",
-    "word": "Wednesday"
+    "word": "Wednesday",
+    "russian": "в среду",
+    "type": "simple"
   },
   {
     "id": "198",
     "preposition": "on",
-    "word": "Thursday"
+    "word": "Thursday",
+    "russian": "в четверг",
+    "type": "simple"
   },
   {
     "id": "199",
     "preposition": "on",
-    "word": "Friday"
+    "word": "Friday",
+    "russian": "в пятницу",
+    "type": "simple"
   },
   {
     "id": "200",
     "preposition": "on",
-    "word": "Saturday"
+    "word": "Saturday",
+    "russian": "в субботу",
+    "type": "simple"
   }
 ]
