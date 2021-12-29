@@ -17,7 +17,7 @@ export class IndexComponent implements OnInit {
   public user: IUserAdmin;
 
   constructor(private afAuth: AngularFireAuth,
-              private store: Store,) {
+              private store: Store) {
   }
 
   ngOnInit(): void {

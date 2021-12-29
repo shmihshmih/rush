@@ -7,10 +7,17 @@
     <button color="primary" (click)="openHelp()" mat-button="">Помощь</button>
   </div>
 
-  <div *ngIf="activeExercise as exercise" class="exercise-block fs-10rem" fxFlex fxLayoutAlign="center center">
-    <div *ngIf="isShowAnswer" class="preposition">{{exercise.preposition}}</div>
-    <div *ngIf="!isShowAnswer" class="preposition">{{exercise.preposition | hideAnswer}}</div>
-    <div class="exercise-word">{{exercise.word}}</div>
+  <div *ngIf="activeExercise as exercise" class="exercise-block fs-6rem">
+    <div>
+      <div>{{exercise.russian}}</div>
+    </div>
+    <div fxFlex fxLayoutAlign="center center" class="fs-10rem">
+      <div *ngIf="isShowAnswer" class="preposition">{{exercise.preposition}}</div>
+      <div *ngIf="!isShowAnswer" class="preposition">{{exercise.preposition | hideAnswer}}</div>
+      <div class="exercise-word">{{exercise.word}}</div>
+    </div>
+    <div>
+      <div>{{exercise.type}}</div>
+    </div>
   </div>
-
 </div>

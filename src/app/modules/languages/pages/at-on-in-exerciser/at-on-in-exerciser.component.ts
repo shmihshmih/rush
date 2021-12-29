@@ -2,12 +2,15 @@ import {Component, OnDestroy, OnInit} from '@angular/core';
 import {IPrepositionExercise} from '../../../../shared/models/esperanto/at_on_in_sentence.interface';
 import {Store} from '@ngrx/store';
 import {selectAtOnInExercises} from '../../../../state/languages/words/words.selectors';
-import {Observable, Subject} from 'rxjs';
+import {Observable, of, Subject} from 'rxjs';
 import {loadAtOnInSentences, loadAtOnInSentencesByJson} from '../../../../state/languages/words/words.actions';
-import {selectIsAuth} from '../../../../state/auth/auth.selectors';
 import {takeUntil} from 'rxjs/operators';
 import {AtOnInSettingsPopupComponent} from '../../components/at-on-in-settings-popup/at-on-in-settings-popup.component';
 import {MatDialog} from '@angular/material/dialog';
+import {checkAuthFail, checkAuthSuccess} from '../../../../state/auth/auth.actions';
+import {initialUserState} from '../../../../state/auth/auth.reducer';
+import {AngularFireAuth} from '@angular/fire/compat/auth';
+import {IUserAdmin} from '../../../../shared/models/main.interface';
 
 @Component({
   selector: 'app-at-on-in-exerciser',
@@ -15,8 +18,6 @@ import {MatDialog} from '@angular/material/dialog';
   styleUrls: ['./at-on-in-exerciser.component.scss']
 })
 export class AtOnInExerciserComponent implements OnInit, OnDestroy {
-  isAuth$ = this.store.select(selectIsAuth);
-
   atoninSentences$: Observable<IPrepositionExercise[]> = this.store.select(selectAtOnInExercises);
   atoninSentencesList: IPrepositionExercise[];
 
@@ -34,18 +35,45 @@ export class AtOnInExerciserComponent implements OnInit, OnDestroy {
 
   exerciseInterval = null;
 
+  public user: IUserAdmin;
+
   constructor(private store: Store,
-              public dialog: MatDialog) {
-    this.isAuth$.pipe().subscribe((isAuth) => {
-      if (isAuth) {
-        this.store.dispatch(loadAtOnInSentences());
-      } else {
-        this.store.dispatch(loadAtOnInSentencesByJson());
-      }
-    });
+              public dialog: MatDialog,
+              private afAuth: AngularFireAuth) {
   }
 
   ngOnInit(): void {
+    this.afAuth.onAuthStateChanged(
+      (authData) => {
+        if (authData) {
+          const user = {
+            refreshToken: authData.refreshToken,
+            email: authData.email,
+            uid: authData.uid,
+            displayName: authData.displayName
+          };
+          this.user = user;
+          this.store.dispatch(checkAuthSuccess({authData: user}));
+        } else {
+          this.user = null;
+          this.store.dispatch(checkAuthSuccess({authData: initialUserState}));
+        }
+
+        if (!!this.user?.uid) {
+          // получение упражнений at on in
+          this.store.dispatch(loadAtOnInSentences());
+        } else {
+          // получение упражнений at on in ByJson
+          this.store.dispatch(loadAtOnInSentencesByJson());
+        }
+      },
+      error => {
+        return of(checkAuthFail({error: error.toString()}));
+      },
+      () => {
+
+      });
+
     this.atoninSentences$.subscribe(atonins => {
       this.atoninSentencesList = [...atonins];
       this.nextExercise();

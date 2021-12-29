@@ -1,4 +1,8 @@
 .exercise-block {
+  flex-direction: column;
+  box-sizing: border-box;
+  display: flex;
+
   .preposition {
     margin-right: 3rem;
   }

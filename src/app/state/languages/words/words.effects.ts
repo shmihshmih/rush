@@ -191,7 +191,7 @@ export class WordsEffects {
   /** получение atonin упражнений by JSON */
   loadAtOnInSentencesFromJson$ = createEffect(() => this.actions$.pipe(
     ofType(loadAtOnInSentencesByJson),
-    mergeMap((action) => this.esperantoService.getAtOnInSentences().pipe(
+    mergeMap((action) => this.esperantoService.getAtOnInSentencesByJSON().pipe(
       map((atOnInSentences) => loadAtOnInSentencesByJsonSuccess({atOnInSentences})),
       catchError(error => {
         this.apiService.showError(error.toString());

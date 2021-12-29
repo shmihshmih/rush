@@ -304,7 +304,7 @@
     "id": "44",
     "preposition": "in",
     "word": "the morning",
-    "russian": "устром",
+    "russian": "утром",
     "type": "simple"
   },
   {
@@ -731,7 +731,7 @@
     "id": "106",
     "preposition": "in",
     "word": "demand",
-    "russian": "востребованный \ по запросу",
+    "russian": "востребованный / по запросу",
     "type": "simple"
   },
   {
@@ -745,7 +745,7 @@
     "id": "108",
     "preposition": "in",
     "word": "an uproar",
-    "russian": "шумит \ в замешательстве",
+    "russian": "шумит / в замешательстве",
     "type": "phrase",
     "example": [
       "The castle's in an uproar.",
@@ -766,7 +766,7 @@
     "id": "110",
     "preposition": "in",
     "word": "anticipation of",
-    "russian": "в ожидании \ в предвкушении",
+    "russian": "в ожидании / в предвкушении",
     "type": "phrase",
     "example": [
       "You've been stealing millions in anticipation of running away.",
@@ -945,7 +945,7 @@
     "id": "128",
     "preposition": "in",
     "word": "good faith",
-    "russian": "добросовестно \ по доброй воле",
+    "russian": "добросовестно / по доброй воле",
     "type": "phrase",
     "example": [
       "I bought them in good faith.",
@@ -1171,7 +1171,7 @@
     "id": "156",
     "preposition": "on",
     "word": "order",
-    "russian": "по заказу \ по приказу",
+    "russian": "по заказу / по приказу",
     "type": "phrase",
     "example": [
       "You killed on orders.",
@@ -1214,7 +1214,7 @@
     "id": "161",
     "preposition": "at",
     "word": "a fraction of",
-    "russian": "на долю \ значительно \ за часть",
+    "russian": "на долю / значительно / за часть",
     "type": "phrase",
     "example": [
       "I can sell it at a fraction of the cost of a normal mission."
@@ -1244,7 +1244,7 @@
     "id": "164",
     "preposition": "at",
     "word": "sight",
-    "russian": "в поле зрения \ глядя \ при виде",
+    "russian": "в поле зрения / глядя / при виде",
     "type": "phrase",
     "example": [
       "At the sight of them I was a little taken aback."
@@ -1372,7 +1372,7 @@
     "id": "177",
     "preposition": "at",
     "word": "a standstill",
-    "russian": "в тупике \ на месте",
+    "russian": "в тупике / на месте",
     "type": "phrase",
     "example": [
       "27 trains are at a standstill!",
@@ -1414,7 +1414,7 @@
     "id": "181",
     "preposition": "at",
     "word": "large",
-    "russian": "в целом \ на свободе",
+    "russian": "в целом / на свободе",
     "type": "phrase",
     "example": [
       "Public defender is saying battery, citing you personally and the department at large.",
@@ -1435,7 +1435,7 @@
     "id": "183",
     "preposition": "at",
     "word": "length",
-    "russian": "в конце концов \ Подробно",
+    "russian": "в конце концов / Подробно",
     "type": "phrase",
     "example": [
       "\"You seem to have made yourself at home,\" I said at length.",
@@ -1446,7 +1446,7 @@
     "id": "184",
     "preposition": "at",
     "word": "liberty",
-    "russian": "свободен \ иметь право",
+    "russian": "свободен / иметь право",
     "type": "phrase",
     "example": [
       "I'm not at liberty to say.",
