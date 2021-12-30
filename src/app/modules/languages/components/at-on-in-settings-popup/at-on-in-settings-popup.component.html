@@ -1,5 +1,13 @@
 <div [formGroup]="atOnInExerciserConfig">
   <div class="mb-16">
+    <mat-checkbox color="primary" formControlName="russian" class="fw-600">Перевод</mat-checkbox>
+  </div>
+  <div class="mb-16">
+    <mat-checkbox color="primary" formControlName="phrase" class="fw-600">Фразы</mat-checkbox>
+    /
+    <mat-checkbox color="primary" formControlName="simple" class="fw-600">Обычные</mat-checkbox>
+  </div>
+  <div class="mb-16">
     <mat-checkbox color="primary" formControlName="isRepeat" class="fw-600">Повторять слова</mat-checkbox>
   </div>
   <div class="mb-16">

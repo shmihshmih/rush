@@ -23,7 +23,10 @@ export class AtOnInSettingsPopupComponent implements OnInit {
     this.atOnInExerciserConfig = this.fb.group({
       isRepeat: [config.isRepeat, Validators.required],
       isAuto: [config.isAuto, Validators.required],
-      timer: [config.timer, Validators.required]
+      timer: [config.timer, Validators.required],
+      russian: [config.russian, Validators.required],
+      phrase: [config.phrase, Validators.required],
+      simple: [config.simple, Validators.required],
     });
   }
 

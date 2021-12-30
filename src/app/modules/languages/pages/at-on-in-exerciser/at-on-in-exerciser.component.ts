@@ -28,7 +28,10 @@ export class AtOnInExerciserComponent implements OnInit, OnDestroy {
   config = {
     isRepeat: false,
     timer: null,
-    isAuto: false
+    isAuto: false,
+    russian: true,
+    phrase: true,
+    simple: true
   };
 
   unsubscribe$: Subject<boolean> = new Subject();
@@ -88,6 +91,17 @@ export class AtOnInExerciserComponent implements OnInit, OnDestroy {
       return;
     }
 
+    const filters = [];
+    if (this.config.phrase) {
+      filters.push('phrase');
+    }
+
+    if (this.config.simple) {
+      filters.push('simple');
+    }
+
+    this.atoninSentencesList = this.atoninSentencesList.filter(el => filters.includes(el.type));
+
     let randomNumber = this.getRandomNumber();
 
     if (this.config.isRepeat) {
@@ -125,6 +139,7 @@ export class AtOnInExerciserComponent implements OnInit, OnDestroy {
       }
       if (result) {
         this.config = result.config;
+        console.log('this.config: ', this.config);
         this.setExerciseInterval();
       }
     });
