@@ -1,41 +1,23 @@
 <ul class="nav-list">
+
   <li *ngIf="(isAuth$ | async) === true" [routerLink]="['']">
     <mat-icon>face</mat-icon>
     <a>Профиль</a>
   </li>
-  <li [routerLink]="['']">
-    <mat-icon>home</mat-icon>
-    <a>Главная</a>
+
+  <li *ngFor="let item of apiService.menuItems" [routerLink]="item.routerLink">
+    <mat-icon>{{item.icon}}</mat-icon>
+    <a>{{item.caption}}</a>
   </li>
-  <li [routerLink]="['autoHR']">
-    <mat-icon>assignment</mat-icon>
-    <a>AutoHR</a>
-  </li>
-  <li [routerLink]="['esperanto']">
-    <mat-icon>language</mat-icon>
-    <a>Эсперанто</a>
-  </li>
-  <li [routerLink]="['english']">
-    <mat-icon>chrome_reader_mode</mat-icon>
-    <a>Английский</a>
-  </li>
-  <li [routerLink]="['blog']">
-    <mat-icon>fact_check</mat-icon>
-    <a>Блог</a>
-  </li>
-  <li [routerLink]="['blog', 'bookquest', 'thestainlesssteelrat', 1]">
-    <mat-icon>settings_ethernet</mat-icon>
-    <a>Book Quest</a>
-  </li>
+
   <li *ngIf="(isAuth$| async) === true" (click)="apiService.logout()">
     <mat-icon>exit_to_app</mat-icon>
     <a>Выйти</a>
   </li>
-  <!--  <li *ngIf="(apiService.isAuth | async) === false" (click)="openAuth()">-->
-  <!--    <mat-icon>login</mat-icon><a >Войти</a>-->
-  <!--  </li>-->
+
   <li *ngIf="false" (click)="openAuth()">
     <mat-icon>login</mat-icon>
     <a>Войти</a>
   </li>
+
 </ul>

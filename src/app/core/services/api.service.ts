@@ -19,6 +19,39 @@ export class ApiService implements OnDestroy {
 
   public user: IUserAdmin;
 
+  menuItems = [
+    {
+      routerLink: [''],
+      icon: 'home',
+      caption: 'Главная'
+    },
+    {
+      routerLink: ['autoHR'],
+      icon: 'assignment',
+      caption: 'AutoHR'
+    },
+    {
+      routerLink: ['esperanto'],
+      icon: 'language',
+      caption: 'Эсперанто'
+    },
+    {
+      routerLink: ['english'],
+      icon: 'chrome_reader_mode',
+      caption: 'Английский'
+    },
+    {
+      routerLink: ['blog'],
+      icon: 'fact_check',
+      caption: 'Блог'
+    },
+    {
+      routerLink: ['blog', 'bookquest', 'thestainlesssteelrat', 1],
+      icon: 'settings_ethernet',
+      caption: 'Book Quest'
+    },
+  ];
+
   constructor(
     private httpClient: HttpClient,
     private store: Store,
