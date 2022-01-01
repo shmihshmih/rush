@@ -22,6 +22,7 @@
   align-items: center;
   margin-left: 16px;
   height: 100%;
+  position: relative;
 
   .logo {
     color: rebeccapurple;
@@ -38,4 +39,12 @@
   a {
     margin-left: 16px;
   }
+}
+
+.system-version {
+  position: absolute;
+  font-size: 0.7rem;
+  left: 9.5rem;
+  top: 0.5rem;
+  color: deepskyblue;
 }
