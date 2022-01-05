@@ -1,5 +1,7 @@
 .paragraph {
   margin-bottom: 16px;
+  white-space: pre-line;
+  word-break: break-word;
 }
 
 .answer-link {
