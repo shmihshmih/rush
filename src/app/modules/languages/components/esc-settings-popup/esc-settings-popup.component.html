@@ -2,6 +2,13 @@
   <div fxFlex fxLayout="column">
     <h1>Типы предложений</h1>
     <div formArrayName="sentenceType">
+      <div>
+        <p>
+          <mat-checkbox #allSentenceTypesCheckbox
+                        (click)="allSentenceTypes('all', !allSentenceTypesCheckbox.checked)">Все
+          </mat-checkbox>
+        </p>
+      </div>
       <div *ngFor="let sentenceType of sentenceType.controls; let inx = index;">
         <p>
           <mat-checkbox [formControlName]="inx">{{data.sentenceType[inx]}}</mat-checkbox>
@@ -24,7 +31,8 @@
     <div formArrayName="pronouns">
       <div *ngFor="let pronoun of pronouns.controls; let inx = index;">
         <p>
-          <mat-checkbox [formControlName]="inx">{{data.pronouns[inx].english}} - {{data.pronouns[inx].russian}}</mat-checkbox>
+          <mat-checkbox [formControlName]="inx">{{data.pronouns[inx].english}}
+            - {{data.pronouns[inx].russian}}</mat-checkbox>
         </p>
       </div>
     </div>
@@ -45,7 +53,8 @@
       <div formArrayName="verbs">
         <div *ngFor="let verb of verbs.controls; let inx = index;">
           <p>
-            <mat-checkbox [formControlName]="inx">{{data.verbs[inx].english}} - {{data.verbs[inx].russian}}</mat-checkbox>
+            <mat-checkbox [formControlName]="inx">{{data.verbs[inx].english}}
+              - {{data.verbs[inx].russian}}</mat-checkbox>
           </p>
         </div>
       </div>

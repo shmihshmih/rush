@@ -56,6 +56,7 @@ export class EscSettingsPopupComponent implements OnInit {
     return this.configForm?.controls['verbs'] as FormArray;
   }
 
+  /** Кнопка Выбрать все глаголы */
   setVerbs(mode: 'all' | 'irregular' | 'regular', status): void {
     switch (mode) {
       case 'all':
@@ -104,6 +105,18 @@ export class EscSettingsPopupComponent implements OnInit {
     }
   }
 
+  /** Кнопка Выбрать все глаголы */
+  allSentenceTypes(mode: string, checkbox: boolean): void {
+    console.log('allSentenceTypes: ', mode, checkbox);
+    switch (mode) {
+      case 'all':
+        this.sentenceType.controls.forEach((el, i) => {
+          this.sentenceType.controls[i].patchValue(checkbox);
+        });
+        break;
+    }
+  }
+
   submitConfigs(): void {
     const chosenTimes = this.configForm.value.times.map((el, i) => {
       return el === true ? this.data.times[i] : null;
@@ -124,5 +137,4 @@ export class EscSettingsPopupComponent implements OnInit {
   closePopup(): void {
     this.dialogRef.close();
   }
-
 }
