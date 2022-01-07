@@ -19,6 +19,13 @@
   <div fxFlex fxLayout="column">
     <h1>Времена</h1>
     <div formArrayName="times">
+      <div>
+        <p>
+          <mat-checkbox #allTimesCheckbox
+                        (click)="setAllTimes('all', !allTimesCheckbox.checked)">Все
+          </mat-checkbox>
+        </p>
+      </div>
       <div *ngFor="let time of times.controls; let inx = index;">
         <p>
           <mat-checkbox [formControlName]="inx">{{data.times[inx]}}</mat-checkbox>

@@ -105,13 +105,23 @@ export class EscSettingsPopupComponent implements OnInit {
     }
   }
 
-  /** Кнопка Выбрать все глаголы */
+  /** Кнопка Выбрать все типы предложений */
   allSentenceTypes(mode: string, checkbox: boolean): void {
-    console.log('allSentenceTypes: ', mode, checkbox);
     switch (mode) {
       case 'all':
         this.sentenceType.controls.forEach((el, i) => {
           this.sentenceType.controls[i].patchValue(checkbox);
+        });
+        break;
+    }
+  }
+
+  /** Кнопка Выбрать все времена */
+  setAllTimes(mode: string, checkbox: boolean): void {
+    switch (mode) {
+      case 'all':
+        this.times.controls.forEach((el, i) => {
+          this.times.controls[i].patchValue(checkbox);
         });
         break;
     }
