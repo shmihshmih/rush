@@ -36,6 +36,13 @@
   <div fxFlex fxLayout="column">
     <h1>Местоимения</h1>
     <div formArrayName="pronouns">
+      <div>
+        <p>
+          <mat-checkbox #allPronounsCheckbox
+                        (click)="setAllPronouns('all', !allPronounsCheckbox.checked)">Все
+          </mat-checkbox>
+        </p>
+      </div>
       <div *ngFor="let pronoun of pronouns.controls; let inx = index;">
         <p>
           <mat-checkbox [formControlName]="inx">{{data.pronouns[inx].english}}

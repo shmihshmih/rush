@@ -127,6 +127,17 @@ export class EscSettingsPopupComponent implements OnInit {
     }
   }
 
+  /** Кнопка Выбрать все местоимения */
+  setAllPronouns(mode: string, checkbox: boolean): void {
+    switch (mode) {
+      case 'all':
+        this.pronouns.controls.forEach((el, i) => {
+          this.pronouns.controls[i].patchValue(checkbox);
+        });
+        break;
+    }
+  }
+
   submitConfigs(): void {
     const chosenTimes = this.configForm.value.times.map((el, i) => {
       return el === true ? this.data.times[i] : null;
@@ -147,4 +158,5 @@ export class EscSettingsPopupComponent implements OnInit {
   closePopup(): void {
     this.dialogRef.close();
   }
+
 }
