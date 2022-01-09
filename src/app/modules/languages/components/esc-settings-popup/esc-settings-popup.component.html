@@ -1,20 +1,31 @@
 <div fxFlex fxLayout="row" [formGroup]="configForm">
   <div fxFlex fxLayout="column">
-    <h1>Типы предложений</h1>
-    <div formArrayName="sentenceType">
+    <div>
+      <h1>Типы предложений</h1>
+      <div formArrayName="sentenceType">
+        <div>
+          <p>
+            <mat-checkbox #allSentenceTypesCheckbox
+                          (click)="allSentenceTypes('all', !allSentenceTypesCheckbox.checked)">Все
+            </mat-checkbox>
+          </p>
+        </div>
+        <div *ngFor="let sentenceType of sentenceType.controls; let inx = index;">
+          <p>
+            <mat-checkbox [formControlName]="inx">{{data.sentenceType[inx]}}</mat-checkbox>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <hr>
       <div>
         <p>
-          <mat-checkbox #allSentenceTypesCheckbox
-                        (click)="allSentenceTypes('all', !allSentenceTypesCheckbox.checked)">Все
-          </mat-checkbox>
-        </p>
-      </div>
-      <div *ngFor="let sentenceType of sentenceType.controls; let inx = index;">
-        <p>
-          <mat-checkbox [formControlName]="inx">{{data.sentenceType[inx]}}</mat-checkbox>
+          <mat-checkbox [formControl]="withTranslateControl">С переводом</mat-checkbox>
         </p>
       </div>
     </div>
+
   </div>
   <div fxFlex fxLayout="column">
     <h1>Времена</h1>

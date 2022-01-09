@@ -1,6 +1,6 @@
 import {Component, Inject, OnInit} from '@angular/core';
 import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
-import {FormArray, FormBuilder, FormGroup} from '@angular/forms';
+import {FormArray, FormBuilder, FormControl, FormGroup} from '@angular/forms';
 
 @Component({
   selector: 'app-esc-settings-popup',
@@ -9,6 +9,9 @@ import {FormArray, FormBuilder, FormGroup} from '@angular/forms';
 })
 export class EscSettingsPopupComponent implements OnInit {
   configForm: FormGroup;
+
+  withTranslateControl = new FormControl();
+  withTranslate = false;
 
   constructor(
     public dialogRef: MatDialogRef<EscSettingsPopupComponent>,
@@ -21,6 +24,8 @@ export class EscSettingsPopupComponent implements OnInit {
       sentenceType: this.fb.array([]),
       verbs: this.fb.array([]),
     });
+
+    this.withTranslateControl.patchValue(data.withTranslate);
   }
 
   ngOnInit(): void {
@@ -151,7 +156,13 @@ export class EscSettingsPopupComponent implements OnInit {
     const chosenVerbs = this.configForm.value.verbs.map((el, i) => {
       return el === true ? this.data.verbs[i] : null;
     }).filter(el => el);
-    const config = {times: chosenTimes, pronouns: chosenPronouns, sentenceType: chosenSentenceType, verbs: chosenVerbs};
+    const config = {
+      times: chosenTimes,
+      pronouns: chosenPronouns,
+      sentenceType: chosenSentenceType,
+      verbs: chosenVerbs,
+      withTranslate: this.withTranslateControl.value
+    };
     this.dialogRef.close({config});
   }
 

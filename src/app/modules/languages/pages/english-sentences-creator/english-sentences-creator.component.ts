@@ -33,6 +33,7 @@ export class EnglishSentencesCreatorComponent implements OnInit, OnDestroy {
   ];
   // типы предложений
   sentenceType: ['affirmative', 'interrogative', 'negative'] = ['affirmative', 'interrogative', 'negative'];
+  withTranslate = false; // будет ли показываться перевод глагола
   randomSentence: {
     Time: string;
     SentenceType: string;
@@ -639,7 +640,13 @@ export class EnglishSentencesCreatorComponent implements OnInit, OnDestroy {
   openSettings(): void {
     const dialogRef = this.dialog.open(EscSettingsPopupComponent, {
       panelClass: ['of-auto'],
-      data: {times: this.times, sentenceType: this.sentenceType, pronouns: this.pronouns, verbs: this.verbs}
+      data: {
+        times: this.times,
+        sentenceType: this.sentenceType,
+        pronouns: this.pronouns,
+        verbs: this.verbs,
+        withTranslate: this.withTranslate
+      }
     });
 
     dialogRef.afterClosed().pipe(
@@ -660,6 +667,7 @@ export class EnglishSentencesCreatorComponent implements OnInit, OnDestroy {
     this.verbs = config.verbs;
     this.sentenceType = config.sentenceType;
     this.pronouns = config.pronouns;
+    this.withTranslate = config.withTranslate;
   }
 
   ngOnDestroy(): void {

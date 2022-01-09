@@ -35,7 +35,8 @@
       <div fxFlex fxLayoutAlign="center center">
         <mat-form-field appearance="outline" [style.width.%]="95">
           <mat-label class="fs-2vw">Verb</mat-label>
-          <input class="fs-5vw" matInput value="{{randomSentence.Verb.russian}}">
+          <input class="fs-5vw" matInput
+                 value="{{randomSentence.Verb.russian}} {{withTranslate ? '<' + randomSentence.Verb.english + '>' : null}}">
         </mat-form-field>
       </div>
 
