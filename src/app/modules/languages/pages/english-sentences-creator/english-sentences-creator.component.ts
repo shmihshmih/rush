@@ -670,7 +670,26 @@ export class EnglishSentencesCreatorComponent implements OnInit, OnDestroy {
     this.withTranslate = config.withTranslate;
   }
 
+  howToUseThisTime(): void {
+    window.open(timeTopic[this.randomSentence.Time], '_blank');
+  }
+
   ngOnDestroy(): void {
     this.unsubscribe$.complete();
   }
+}
+
+enum timeTopic {
+  'Present Simple' = 'https://www.englishpage.com/verbpage/simplepresent.html',
+  'Past Simple' = 'https://www.englishpage.com/verbpage/simplepast.html',
+  'Future Simple' = 'https://www.englishpage.com/verbpage/simplefuture.html',
+  'Present Continues' = 'https://www.englishpage.com/verbpage/presentcontinuous.html',
+  'Past Continues' = 'https://www.englishpage.com/verbpage/pastcontinuous.html',
+  'Future Continues' = 'https://www.englishpage.com/verbpage/futurecontinuous.html',
+  'Present Perfect' = 'https://www.englishpage.com/verbpage/presentperfect.html',
+  'Past Perfect' = 'https://www.englishpage.com/verbpage/pastperfect.html',
+  'Future Perfect' = 'https://www.englishpage.com/verbpage/futureperfect.html',
+  'Present Perfect Continues' = 'https://www.englishpage.com/verbpage/presentperfectcontinuous.html',
+  'Past Perfect Continues' = 'https://www.englishpage.com/verbpage/pastperfectcontinuous.html',
+  'Future Perfect Continues' = 'https://www.englishpage.com/verbpage/futureperfectcontinuous.html'
 }
