@@ -1,286 +1,353 @@
-[{
-  "_id": {
-    "$oid": "5fda4f8b59c30237e489e284"
+[
+  {
+    "id": "0ocZtyrZfFNn89bB6KU6",
+    "level": "fundamentoj",
+    "title": "numeraloj",
+    "cover": "🔟🔞📆🎱🔟🔞📆🎱🔟🔞📆🎱🔟🔞📆🎱",
+    "collection_caption": "numeraloj",
+    "_id": {
+      "$oid": "5fda4f8b59c30237e489e288"
+    },
+    "caption": {
+      "esperanto": "Numeraloj",
+      "russian": "Цифры",
+      "english": "Numbers"
+    }
   },
-  "title": "adjektivoj",
-  "collection_caption": "adjektivoj",
-  "cover": "💿📀💿📀💿📀💿📀💿📀💿📀💿📀💿📀💿",
-  "level": "fundamentoj",
-  "caption": {
-    "esperanto": "Adjektivoj",
-    "english": "Adjectives",
-    "russian": "Прилагательные"
+  {
+    "id": "2UiQM7iwaJIrLDjMctBL",
+    "collection_caption": "konjunkcioj",
+    "_id": {
+      "$oid": "5fda4f8b59c30237e489e287"
+    },
+    "title": "konjunkcioj",
+    "cover": "⏹➕⏺➕⏹➕⏺➕⏹➕⏺➕⏹➕⏺",
+    "level": "fundamentoj",
+    "caption": {
+      "esperanto": "Konjunkcioj",
+      "russian": "Союзы",
+      "english": "Conjunction"
+    }
+  },
+  {
+    "id": "ABHqHndqg6MCeLPY5DmC",
+    "_id": {
+      "$oid": "5fda4f8b59c30237e489e286"
+    },
+    "caption": {
+      "russian": "Фрукты",
+      "english": "Fruits",
+      "esperanto": "Fruktoj"
+    },
+    "title": "fruktoj",
+    "level": "fundamentoj",
+    "cover": "🍏🍎🍐🍊🍋🍌🍉🍇🍓🍈🍒🥥🥝🍅🍆🌶🥦",
+    "collection_caption": "fruktoj"
+  },
+  {
+    "id": "C67RxWCLccVNc7IBSltq",
+    "caption": {
+      "english": "Question words",
+      "russian": "Вопросительные слова",
+      "esperanto": "Demandovortoj"
+    },
+    "cover": "❔❓❕❗❔❓❕❗❔❓❕❗❔❓❕❗❔❓❕❗❔❓❕❗❔❓❕❗",
+    "title": "demandovortoj",
+    "collection_caption": "demandovortoj",
+    "level": "fundamentoj",
+    "_id": {
+      "$oid": "5fda4f8b59c30237e489e285"
+    }
+  },
+  {
+    "id": "C8r3ZArkmCNPMpNojf6z",
+    "cover": "🐶🐱🐭🐹🐰🐻🧸🐼🐻‍❄️🐨🐯🦁🦁🐮🐷",
+    "_id": {
+      "$oid": "60080158fa484e3ea08f4cac"
+    },
+    "title": "Animals",
+    "collection_caption": "animals",
+    "caption": {
+      "esperanto": " Bestoj",
+      "english": "Animals",
+      "russian": "Животные"
+    },
+    "level": "fundamentoj",
+    "__v": 0
+  },
+  {
+    "id": "GFiXCpyYYogRe8PcAZ5j",
+    "collection_caption": "verboj",
+    "level": "fundamentoj",
+    "_id": {
+      "$oid": "5fda4f8b59c30237e489e28c"
+    },
+    "caption": {
+      "esperanto": "Verboj",
+      "english": "Verbs",
+      "russian": "Глаголы"
+    },
+    "cover": "🏋️‍♀️⛷🤼🤸‍♂️🙋‍♂️🧏‍♂️😭🏋️‍♀️⛷🤼🤸‍♂️🙋‍♂️🧏‍♂️😭🏋️‍♀️⛷🤼",
+    "title": "verboj"
+  },
+  {
+    "id": "HD8p20UJdvtUPEVo5XtE",
+    "caption": {
+      "english": "The tale of Five Wizards",
+      "russian": "История и пяти волшебниках",
+      "esperanto": "La rakonto de Kvin Sorĉistoj"
+    },
+    "level": "entry",
+    "title": "The tale of Five Wizards",
+    "collection_caption": "tale_five_wizards",
+    "cover": "🙃"
+  },
+  {
+    "id": "IyLWksRz8QxRUPfgbAES",
+    "cover": "💿📀💿📀💿📀💿📀💿📀💿📀💿📀💿📀💿",
+    "_id": {
+      "$oid": "5fda4f8b59c30237e489e284"
+    },
+    "level": "fundamentoj",
+    "title": "adjektivoj",
+    "collection_caption": "adjektivoj",
+    "caption": {
+      "english": "Adjectives",
+      "russian": "Прилагательные",
+      "esperanto": "Adjektivoj"
+    }
+  },
+  {
+    "id": "Ke0xKNrplr8SCyA7c5uO",
+    "title": "Gravity Falls (2s)",
+    "level": "expert",
+    "collection_caption": "gravity_falls",
+    "_id": {
+      "$oid": "60080224fa484e3ea08f4cad"
+    },
+    "cover": "👦👩✍👀👁🧔🌿🌱🌏🐷⚽🎅⛩🛑🔫🪓💡",
+    "__v": 0,
+    "caption": {
+      "esperanto": "Gravity Falls",
+      "english": "Gravity Falls",
+      "russian": "Гравити Фолз"
+    }
+  },
+  {
+    "id": "Q9D2gwB2qf05StgtiBJE",
+    "title": "Неправильные глаголы",
+    "level": "fundamentoj",
+    "cover": "🏋️‍♀️⛷🤼🤸‍♂️🙋‍♂️🧏‍♂️😭🏋️‍♀️㊙🉐🈴🏋️‍♀️⛷🤼🤸‍♂️🙋‍♂️🧏‍♂️",
+    "_id": {
+      "$oid": "6008252bfa484e3ea08f4cb0"
+    },
+    "caption": {
+      "russian": "Неправильные глаголы",
+      "esperanto": "Neregulaj verboj",
+      "english": "Irregular verbs"
+    },
+    "collection_caption": "irregular_verbs",
+    "__v": 0
+  },
+  {
+    "id": "RNXUc80AHRZjshLv2FEu",
+    "__v": 0,
+    "collection_caption": "oxygen_not_included",
+    "cover": "❤💏🦢🌔⚡🔥💥❄💦💧🥣🧁🍧🎯🎬🎼🚇🏦",
+    "_id": {
+      "$oid": "602639aec4a39213c513f7cf"
+    },
+    "title": "Oxygen not included",
+    "caption": {
+      "esperanto": "Oxygen not included",
+      "russian": "Oxygen not included",
+      "english": "Oxygen not included"
+    },
+    "level": "master"
+  },
+  {
+    "id": "WMiBcwqFBXv02TCaJvLo",
+    "caption": {
+      "russian": "Ход королевы",
+      "esperanto": "La Quin's Gambito",
+      "english": "The Quin's Gambit"
+    },
+    "cover": "👩‍🦰👨‍🦱👩‍🦱🤙🎼🎹🎲♟👩‍🦰👨‍🦱👩‍🦱🤙🎼🎹🎲♟👩‍🦰👨‍🦱👩‍🦱",
+    "_id": {
+      "$oid": "60054c1ebe827e0ec72dd229"
+    },
+    "collection_caption": "quins_gambit",
+    "level": "expert",
+    "__v": 0,
+    "title": "The Quin's Gambit"
+  },
+  {
+    "id": "Y7DcUhNlK4CLFGQBg2Ja",
+    "title": "Verbs",
+    "caption": {
+      "esperanto": "verboj",
+      "russian": "Глаголы",
+      "english": "verbs"
+    },
+    "collection_caption": "verbs",
+    "__v": 0,
+    "cover": "🏋️‍♀️⛷🤼🤸‍♂️🙋‍♂️🧏‍♂️😭🏋️‍♀️⛷🤼🤸‍♂️🙋‍♂️🧏‍♂️😭🏋️‍♀️⛷🤼",
+    "level": "entry",
+    "_id": {
+      "$oid": "601e6b8077875fb348f4dd8c"
+    }
+  },
+  {
+    "id": "a1PtpLlcR5yRsFXrSS6g",
+    "level": "pro",
+    "collection_caption": "darkest_dungeon",
+    "__v": 0,
+    "cover": "⚔⚔⚔💣💣💣🧨🧨🧨🪓⛏⚔⚔⚔💣💣💣🧨🧨",
+    "_id": {
+      "$oid": "60479d6dc4a39213c513f7f3"
+    },
+    "title": "Darkest Dungeon",
+    "caption": {
+      "esperanto": "La plej malluma kelkarcero",
+      "english": "Darkest Dungeon",
+      "russian": "Самое темное подземелье"
+    }
+  },
+  {
+    "id": "a6mV1pYiJ3bj2Td52Gre",
+    "cover": "🪕🎸🏅🧘☘🌏☀⭐❄💥⚡⚔🗡⚔🛡✂👕🪓🪓",
+    "caption": {
+      "esperanto": "Mandalorian",
+      "english": "Mandalorian",
+      "russian": "Мандалорец"
+    },
+    "collection_caption": "mandalorian",
+    "__v": 0,
+    "level": "expert",
+    "_id": {
+      "$oid": "6008027cfa484e3ea08f4cae"
+    },
+    "title": "Mandalorian"
+  },
+  {
+    "id": "bLqTIzZKCWsOhHFHyYlf",
+    "collection_caption": "tempo",
+    "cover": "⌚⏱⏲⏰🕰⏳🕗⌚⏱⏲⏰🕰⏳🕗⌚⏱⏲⏰",
+    "title": "tempo",
+    "_id": {
+      "$oid": "5fda4f8b59c30237e489e28b"
+    },
+    "caption": {
+      "russian": "Время",
+      "english": "Time",
+      "esperanto": "Tempo"
+    },
+    "level": "fundamentoj"
+  },
+  {
+    "id": "dAOTUJ7qGXtojyE7IZYy",
+    "title": "Valheim",
+    "collection_caption": "valheim",
+    "__v": 0,
+    "cover": "🐷🐻🐺🐳🍙🦵🦢🌵🎷🌙🐄🐂🌈🌧⚓⛩🔨⚒",
+    "_id": {
+      "$oid": "60604ff5c4a39213c513f81e"
+    },
+    "level": "entry",
+    "caption": {
+      "english": "valheim",
+      "esperanto": "valheim",
+      "russian": "Вальхейм"
+    }
+  },
+  {
+    "id": "dgpS336TFEEY1h7S2X1U",
+    "caption": {
+      "esperanto": "kuirejo",
+      "english": "kitchen",
+      "russian": "Кухня"
+    },
+    "title": "kitchen",
+    "level": "entry",
+    "cover": "(__)(__)",
+    "collection_caption": "kitchen"
+  },
+  {
+    "id": "gHj6pCkV8d1TpuUSKhpv",
+    "title": "prepozicioj",
+    "level": "fundamentoj",
+    "_id": {
+      "$oid": "5fda4f8b59c30237e489e289"
+    },
+    "cover": "🔨🚕🛫🛬🔨🚕🛫🛬🔨🚕🛫🛬🔨🚕🛫🛬",
+    "collection_caption": "prepozicioj",
+    "caption": {
+      "english": "Prepositions",
+      "esperanto": "Prepozicioj",
+      "russian": "Предлоги"
+    }
+  },
+  {
+    "id": "h0I7nZn83tg0Fm4Z8frl",
+    "level": "expert",
+    "title": "Berserk(40manga)",
+    "__v": 0,
+    "caption": {
+      "russian": "Берсерк",
+      "esperanto": "Berserk",
+      "english": "Berserk"
+    },
+    "_id": {
+      "$oid": "6007fe52fa484e3ea08f4cab"
+    },
+    "collection_caption": "berserk_manga",
+    "cover": "😇☠👻👺🦴💪🤴🌠⚓🛹💊🗝🔑🪓🔨🗡⚔🔪"
+  },
+  {
+    "id": "nw34pMtbvGiE4yUG3iM7",
+    "title": "Вводные слова",
+    "collection_caption": "introductory_phrases",
+    "caption": {
+      "russian": "Вводные слова",
+      "esperanto": "Introductory phrases",
+      "english": "Introductory phrases"
+    },
+    "__v": 0,
+    "level": "fundamentoj",
+    "_id": {
+      "$oid": "600802e2fa484e3ea08f4caf"
+    },
+    "cover": "🧭🧰🦯⚖💎🧮🧧💍🕶💼📂♈✴🈲❌📂♈✴"
+  },
+  {
+    "id": "yVGFI9HSsOhvoUcMwBsR",
+    "caption": {
+      "russian": "Пожарник",
+      "esperanto": "fajrohorloĝo ",
+      "english": "firewatch"
+    },
+    "collection_caption": "firewatch",
+    "cover": "🏞🛣⛺🌋🗻🏔🍌🌞🍄🍀☘🌿🌴🏞🛣⛺🌋🗻",
+    "_id": {
+      "$oid": "6059cdbfc4a39213c513f7f8"
+    },
+    "title": "Firewatch",
+    "__v": 0,
+    "level": "pro"
+  },
+  {
+    "id": "zzFK5ZN8bI6WvSsdoN7F",
+    "_id": {
+      "$oid": "5fda4f8b59c30237e489e28a"
+    },
+    "cover": "⏮⬇✔⚫🕎⏮⬇✔⚫🕎⏮⬇✔⚫🕎",
+    "level": "fundamentoj",
+    "collection_caption": "pronomoj",
+    "caption": {
+      "esperanto": "Pronomoj",
+      "english": "Pronouns",
+      "russian": "Местоимения"
+    },
+    "title": "pronomoj"
   }
-},{
-  "_id": {
-    "$oid": "5fda4f8b59c30237e489e285"
-  },
-  "title": "demandovortoj",
-  "collection_caption": "demandovortoj",
-  "cover": "❔❓❕❗❔❓❕❗❔❓❕❗❔❓❕❗❔❓❕❗❔❓❕❗❔❓❕❗",
-  "level": "fundamentoj",
-  "caption": {
-    "esperanto": "Demandovortoj",
-    "english": "Question words",
-    "russian": "Вопросительные слова"
-  }
-},{
-  "_id": {
-    "$oid": "5fda4f8b59c30237e489e286"
-  },
-  "title": "fruktoj",
-  "collection_caption": "fruktoj",
-  "cover": "🍏🍎🍐🍊🍋🍌🍉🍇🍓🍈🍒🥥🥝🍅🍆🌶🥦",
-  "level": "fundamentoj",
-  "caption": {
-    "esperanto": "Fruktoj",
-    "english": "Fruits",
-    "russian": "Фрукты"
-  }
-},{
-  "_id": {
-    "$oid": "5fda4f8b59c30237e489e287"
-  },
-  "title": "konjunkcioj",
-  "collection_caption": "konjunkcioj",
-  "cover": "⏹➕⏺➕⏹➕⏺➕⏹➕⏺➕⏹➕⏺",
-  "level": "fundamentoj",
-  "caption": {
-    "esperanto": "Konjunkcioj",
-    "english": "Conjunction",
-    "russian": "Союзы"
-  }
-},{
-  "_id": {
-    "$oid": "5fda4f8b59c30237e489e288"
-  },
-  "title": "numeraloj",
-  "collection_caption": "numeraloj",
-  "cover": "🔟🔞📆🎱🔟🔞📆🎱🔟🔞📆🎱🔟🔞📆🎱",
-  "level": "fundamentoj",
-  "caption": {
-    "esperanto": "Numeraloj",
-    "english": "Numbers",
-    "russian": "Цифры"
-  }
-},{
-  "_id": {
-    "$oid": "5fda4f8b59c30237e489e289"
-  },
-  "title": "prepozicioj",
-  "collection_caption": "prepozicioj",
-  "cover": "🔨🚕🛫🛬🔨🚕🛫🛬🔨🚕🛫🛬🔨🚕🛫🛬",
-  "level": "fundamentoj",
-  "caption": {
-    "esperanto": "Prepozicioj",
-    "english": "Prepositions",
-    "russian": "Предлоги"
-  }
-},{
-  "_id": {
-    "$oid": "5fda4f8b59c30237e489e28a"
-  },
-  "title": "pronomoj",
-  "collection_caption": "pronomoj",
-  "cover": "⏮⬇✔⚫🕎⏮⬇✔⚫🕎⏮⬇✔⚫🕎",
-  "level": "fundamentoj",
-  "caption": {
-    "esperanto": "Pronomoj",
-    "english": "Pronouns",
-    "russian": "Местоимения"
-  }
-},{
-  "_id": {
-    "$oid": "5fda4f8b59c30237e489e28b"
-  },
-  "title": "tempo",
-  "collection_caption": "tempo",
-  "cover": "⌚⏱⏲⏰🕰⏳🕗⌚⏱⏲⏰🕰⏳🕗⌚⏱⏲⏰",
-  "level": "fundamentoj",
-  "caption": {
-    "esperanto": "Tempo",
-    "english": "Time",
-    "russian": "Время"
-  }
-},{
-  "_id": {
-    "$oid": "5fda4f8b59c30237e489e28c"
-  },
-  "title": "verboj",
-  "collection_caption": "verboj",
-  "cover": "🏋️‍♀️⛷🤼🤸‍♂️🙋‍♂️🧏‍♂️😭🏋️‍♀️⛷🤼🤸‍♂️🙋‍♂️🧏‍♂️😭🏋️‍♀️⛷🤼",
-  "level": "fundamentoj",
-  "caption": {
-    "esperanto": "Verboj",
-    "english": "Verbs",
-    "russian": "Глаголы"
-  }
-},{
-  "_id": {
-    "$oid": "60054c1ebe827e0ec72dd229"
-  },
-  "title": "The Quin's Gambit",
-  "collection_caption": "quins_gambit",
-  "cover": "👩‍🦰👨‍🦱👩‍🦱🤙🎼🎹🎲♟👩‍🦰👨‍🦱👩‍🦱🤙🎼🎹🎲♟👩‍🦰👨‍🦱👩‍🦱",
-  "level": "expert",
-  "caption": {
-    "esperanto": "La Quin's Gambito",
-    "english": "The Quin's Gambit",
-    "russian": "Ход королевы"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "6007fe52fa484e3ea08f4cab"
-  },
-  "title": "Berserk(40manga)",
-  "collection_caption": "berserk_manga",
-  "cover": "😇☠👻👺🦴💪🤴🌠⚓🛹💊🗝🔑🪓🔨🗡⚔🔪",
-  "level": "expert",
-  "caption": {
-    "esperanto": "Berserk",
-    "english": "Berserk",
-    "russian": "Берсерк"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "60080158fa484e3ea08f4cac"
-  },
-  "title": "Animals",
-  "collection_caption": "animals",
-  "cover": "🐶🐱🐭🐹🐰🐻🧸🐼🐻‍❄️🐨🐯🦁🦁🐮🐷",
-  "level": "fundamentoj",
-  "caption": {
-    "esperanto": " Bestoj",
-    "english": "Animals",
-    "russian": "Животные"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "60080224fa484e3ea08f4cad"
-  },
-  "title": "Gravity Falls (2s)",
-  "collection_caption": "gravity_falls",
-  "cover": "👦👩✍👀👁🧔🌿🌱🌏🐷⚽🎅⛩🛑🔫🪓💡",
-  "level": "expert",
-  "caption": {
-    "esperanto": "Gravity Falls",
-    "english": "Gravity Falls",
-    "russian": "Гравити Фолз"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "6008027cfa484e3ea08f4cae"
-  },
-  "title": "Mandalorian",
-  "collection_caption": "mandalorian",
-  "cover": "🪕🎸🏅🧘☘🌏☀⭐❄💥⚡⚔🗡⚔🛡✂👕🪓🪓",
-  "level": "expert",
-  "caption": {
-    "esperanto": "Mandalorian",
-    "english": "Mandalorian",
-    "russian": "Мандалорец"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "600802e2fa484e3ea08f4caf"
-  },
-  "title": "Вводные слова",
-  "collection_caption": "introductory_phrases",
-  "cover": "🧭🧰🦯⚖💎🧮🧧💍🕶💼📂♈✴🈲❌📂♈✴",
-  "level": "fundamentoj",
-  "caption": {
-    "esperanto": "Introductory phrases",
-    "english": "Introductory phrases",
-    "russian": "Вводные слова"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "6008252bfa484e3ea08f4cb0"
-  },
-  "title": "Неправильные глаголы",
-  "collection_caption": "irregular_verbs",
-  "cover": "🏋️‍♀️⛷🤼🤸‍♂️🙋‍♂️🧏‍♂️😭🏋️‍♀️㊙🉐🈴🏋️‍♀️⛷🤼🤸‍♂️🙋‍♂️🧏‍♂️",
-  "level": "fundamentoj",
-  "caption": {
-    "esperanto": "Neregulaj verboj",
-    "english": "Irregular verbs",
-    "russian": "Неправильные глаголы"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "601e6b8077875fb348f4dd8c"
-  },
-  "title": "Verbs",
-  "collection_caption": "verbs",
-  "cover": "🏋️‍♀️⛷🤼🤸‍♂️🙋‍♂️🧏‍♂️😭🏋️‍♀️⛷🤼🤸‍♂️🙋‍♂️🧏‍♂️😭🏋️‍♀️⛷🤼",
-  "level": "entry",
-  "caption": {
-    "esperanto": "verboj",
-    "english": "verbs",
-    "russian": "Глаголы"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "602639aec4a39213c513f7cf"
-  },
-  "title": "Oxygen not included",
-  "collection_caption": "oxygen_not_included",
-  "cover": "❤💏🦢🌔⚡🔥💥❄💦💧🥣🧁🍧🎯🎬🎼🚇🏦",
-  "level": "master",
-  "caption": {
-    "esperanto": "Oxygen not included",
-    "english": "Oxygen not included",
-    "russian": "Oxygen not included"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "60479d6dc4a39213c513f7f3"
-  },
-  "title": "Darkest Dungeon",
-  "collection_caption": "darkest_dungeon",
-  "cover": "⚔⚔⚔💣💣💣🧨🧨🧨🪓⛏⚔⚔⚔💣💣💣🧨🧨",
-  "level": "pro",
-  "caption": {
-    "esperanto": "La plej malluma kelkarcero",
-    "english": "Darkest Dungeon",
-    "russian": "Самое темное подземелье"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "6059cdbfc4a39213c513f7f8"
-  },
-  "title": "Firewatch",
-  "collection_caption": "firewatch",
-  "cover": "🏞🛣⛺🌋🗻🏔🍌🌞🍄🍀☘🌿🌴🏞🛣⛺🌋🗻",
-  "level": "pro",
-  "caption": {
-    "esperanto": "fajrohorloĝo ",
-    "english": "firewatch",
-    "russian": "Пожарник"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "60604ff5c4a39213c513f81e"
-  },
-  "title": "Valheim",
-  "collection_caption": "valheim",
-  "cover": "🐷🐻🐺🐳🍙🦵🦢🌵🎷🌙🐄🐂🌈🌧⚓⛩🔨⚒",
-  "level": "entry",
-  "caption": {
-    "esperanto": "valheim",
-    "english": "valheim",
-    "russian": "Вальхейм"
-  },
-  "__v": 0
-}]
+]
