@@ -132,7 +132,6 @@
       }
     }
   },
-  "defaultProject": "rushservice",
   "cli": {
     "analytics": false
   }
