@@ -18,40 +18,39 @@ import {BookQuestComponent} from './components/book-quest/book-quest.component';
 import {HideAnswerPipe} from './pipes/hide-answer.pipe';
 
 @NgModule({
-  declarations: [
-    HeaderComponent,
-    NavListComponent,
-    WordListComponent,
-    WordCardComponent,
-    WordCardHelpComponent,
-    WordCardSettingsComponent,
-    AuthComponent,
-    AddListComponent,
-    AddWordComponent,
-    WordListsComponent,
-    BookQuestComponent,
-    HideAnswerPipe
-  ],
-  imports: [
-    CommonModule,
-    MaterialModule,
-    RouterModule,
-    FlexLayoutModule,
-    ReactiveFormsModule,
-  ],
-  exports: [
-    MaterialModule,
-    HeaderComponent,
-    NavListComponent,
-    FlexLayoutModule,
-    WordListComponent,
-    WordCardComponent,
-    ReactiveFormsModule,
-    WordListsComponent,
-    BookQuestComponent,
-    HideAnswerPipe
-  ],
-  entryComponents: [WordCardHelpComponent, WordCardSettingsComponent, AuthComponent, AddListComponent, AddWordComponent]
+    declarations: [
+        HeaderComponent,
+        NavListComponent,
+        WordListComponent,
+        WordCardComponent,
+        WordCardHelpComponent,
+        WordCardSettingsComponent,
+        AuthComponent,
+        AddListComponent,
+        AddWordComponent,
+        WordListsComponent,
+        BookQuestComponent,
+        HideAnswerPipe
+    ],
+    imports: [
+        CommonModule,
+        MaterialModule,
+        RouterModule,
+        FlexLayoutModule,
+        ReactiveFormsModule,
+    ],
+    exports: [
+        MaterialModule,
+        HeaderComponent,
+        NavListComponent,
+        FlexLayoutModule,
+        WordListComponent,
+        WordCardComponent,
+        ReactiveFormsModule,
+        WordListsComponent,
+        BookQuestComponent,
+        HideAnswerPipe
+    ]
 })
 export class SharedModule {
 }
