@@ -1,6 +1,6 @@
 import {Component, Inject, OnInit} from '@angular/core';
 import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
-import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {UntypedFormBuilder, UntypedFormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-at-on-in-settings-popup',
@@ -8,11 +8,11 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
   styleUrls: ['./at-on-in-settings-popup.component.scss']
 })
 export class AtOnInSettingsPopupComponent implements OnInit {
-  atOnInExerciserConfig: FormGroup;
+  atOnInExerciserConfig: UntypedFormGroup;
 
   constructor(public dialogRef: MatDialogRef<AtOnInSettingsPopupComponent>,
               @Inject(MAT_DIALOG_DATA) public data: any,
-              private fb: FormBuilder) {
+              private fb: UntypedFormBuilder) {
   }
 
   ngOnInit(): void {

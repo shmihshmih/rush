@@ -2,7 +2,7 @@ import {AfterViewInit, Component, OnDestroy, OnInit, ViewChild} from '@angular/c
 import {animate, state, style, transition, trigger} from '@angular/animations';
 import {ITask} from '../../../../shared/models/autoHR/question.model';
 import {MatTableDataSource} from '@angular/material/table';
-import {FormControl} from '@angular/forms';
+import {UntypedFormControl} from '@angular/forms';
 import {ISobesConfigModel} from '../../../../shared/models/autoHR/sobesConfig.model';
 import {MatSort} from '@angular/material/sort';
 import {MatDialog} from '@angular/material/dialog';
@@ -73,9 +73,9 @@ export class IndexComponent implements OnInit, AfterViewInit, OnDestroy {
   popularityList$: Observable<string[]> = this.store.select(selectPopularityCatalog);
   popularityList: string[] = [];
 
-  difficultiesControl = new FormControl();
-  competencesControl = new FormControl();
-  popularityControl = new FormControl();
+  difficultiesControl = new UntypedFormControl();
+  competencesControl = new UntypedFormControl();
+  popularityControl = new UntypedFormControl();
 
   tasksCount = 0;
   typeModel = 0;

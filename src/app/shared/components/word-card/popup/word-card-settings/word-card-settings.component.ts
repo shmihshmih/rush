@@ -1,6 +1,6 @@
 import {Component, ElementRef, Inject, OnInit, ViewChild} from '@angular/core';
 import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
-import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
+import {UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, Validators} from '@angular/forms';
 import {COMMA, ENTER} from '@angular/cdk/keycodes';
 import {combineLatest, Observable} from 'rxjs';
 import {MatAutocomplete, MatAutocompleteSelectedEvent} from '@angular/material/autocomplete';
@@ -19,11 +19,11 @@ import {loadWordLists, loadWordListsByJSON} from '../../../../../state/languages
 })
 export class WordCardSettingsComponent implements OnInit {
   isAuth$ = this.store.select(selectIsAuth);
-  wordCardSettingsForm: FormGroup;
+  wordCardSettingsForm: UntypedFormGroup;
   selectable = true;
   removable = true;
   separatorKeysCodes: number[] = [ENTER, COMMA];
-  listCtrl = new FormControl();
+  listCtrl = new UntypedFormControl();
   filteredLists: Observable<IWordList[]>;
 
   allWordLists$: Observable<IWordList[]> = this.store.select(selectWordLists);
@@ -38,7 +38,7 @@ export class WordCardSettingsComponent implements OnInit {
   constructor(
     public dialogRef: MatDialogRef<WordCardSettingsComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any,
-    public fb: FormBuilder,
+    public fb: UntypedFormBuilder,
     private store: Store
   ) {
   }

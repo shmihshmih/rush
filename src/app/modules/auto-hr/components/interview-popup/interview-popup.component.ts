@@ -1,6 +1,6 @@
 import {Component, Inject, OnInit} from '@angular/core';
 import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
-import {FormControl} from '@angular/forms';
+import {UntypedFormControl} from '@angular/forms';
 import {ISobesConfigModel} from '../../../../shared/models/autoHR/sobesConfig.model';
 
 @Component({
@@ -10,9 +10,9 @@ import {ISobesConfigModel} from '../../../../shared/models/autoHR/sobesConfig.mo
 })
 export class InterviewPopupComponent implements OnInit {
 
-  difficultiesControl = new FormControl();
-  competencesControl = new FormControl();
-  popularityControl = new FormControl();
+  difficultiesControl = new UntypedFormControl();
+  competencesControl = new UntypedFormControl();
+  popularityControl = new UntypedFormControl();
 
   tasksCount = 0;
   typeModel = 0;

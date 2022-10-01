@@ -2,7 +2,7 @@ import {createFeatureSelector, createSelector} from '@ngrx/store';
 import * as fromWords from './index';
 import * as fromRoot from '../../app.state';
 
-const selectWordsFeature = createFeatureSelector<fromRoot.AppState, fromWords.State>(fromWords.wordsFeatureKey);
+const selectWordsFeature = createFeatureSelector< fromWords.State>(fromWords.wordsFeatureKey);
 
 /** Получить все слова */
 export const selectWords = createSelector(

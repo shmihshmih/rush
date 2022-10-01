@@ -2,7 +2,7 @@ import {createFeatureSelector, createSelector} from '@ngrx/store';
 import * as fromRoot from '../app.state';
 import * as fromBlog from './index';
 
-const blogFeatureSelector = createFeatureSelector<fromRoot.AppState, fromBlog.State>(fromBlog.blogFeatureKey);
+const blogFeatureSelector = createFeatureSelector< fromBlog.State>(fromBlog.blogFeatureKey);
 
 /** quest books list */
 export const selectQuestBooksCatalog = createSelector(

@@ -1,6 +1,6 @@
 import {Component, Inject, OnInit} from '@angular/core';
 import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
-import {FormArray, FormBuilder, FormControl, FormGroup} from '@angular/forms';
+import {UntypedFormArray, UntypedFormBuilder, UntypedFormControl, UntypedFormGroup} from '@angular/forms';
 
 @Component({
   selector: 'app-esc-settings-popup',
@@ -8,15 +8,15 @@ import {FormArray, FormBuilder, FormControl, FormGroup} from '@angular/forms';
   styleUrls: ['./esc-settings-popup.component.scss']
 })
 export class EscSettingsPopupComponent implements OnInit {
-  configForm: FormGroup;
+  configForm: UntypedFormGroup;
 
-  withTranslateControl = new FormControl();
+  withTranslateControl = new UntypedFormControl();
   withTranslate = false;
 
   constructor(
     public dialogRef: MatDialogRef<EscSettingsPopupComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any,
-    private fb: FormBuilder
+    private fb: UntypedFormBuilder
   ) {
     this.configForm = this.fb.group({
       times: this.fb.array([]),
@@ -46,19 +46,19 @@ export class EscSettingsPopupComponent implements OnInit {
 
   // выставляем эти переменные как массив контролов из формы configForm
   get times(): any {
-    return this.configForm?.controls['times'] as FormArray;
+    return this.configForm?.controls['times'] as UntypedFormArray;
   }
 
   get pronouns(): any {
-    return this.configForm?.controls['pronouns'] as FormArray;
+    return this.configForm?.controls['pronouns'] as UntypedFormArray;
   }
 
   get sentenceType(): any {
-    return this.configForm?.controls['sentenceType'] as FormArray;
+    return this.configForm?.controls['sentenceType'] as UntypedFormArray;
   }
 
   get verbs(): any {
-    return this.configForm?.controls['verbs'] as FormArray;
+    return this.configForm?.controls['verbs'] as UntypedFormArray;
   }
 
   /** Кнопка Выбрать все глаголы */

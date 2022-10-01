@@ -1,6 +1,6 @@
 import {Component, ElementRef, Inject, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import {Observable, Subject} from 'rxjs';
-import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
+import {UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, Validators} from '@angular/forms';
 import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
 import {map, startWith, takeUntil} from 'rxjs/operators';
 import {MatAutocomplete, MatAutocompleteSelectedEvent} from '@angular/material/autocomplete';
@@ -24,17 +24,17 @@ export class AddWordComponent implements OnInit, OnDestroy {
   selectable = true;
   removable = true;
   separatorKeysCodes: number[] = [ENTER, COMMA];
-  listCtrl = new FormControl();
+  listCtrl = new UntypedFormControl();
   filteredLists: Observable<string[]>;
 
   @ViewChild('fruitInput') fruitInput: ElementRef<HTMLInputElement>;
   @ViewChild('auto') matAutocomplete: MatAutocomplete;
 
   unsubscribe$: Subject<boolean> = new Subject();
-  wordForm: FormGroup;
+  wordForm: UntypedFormGroup;
 
   constructor(
-    public fb: FormBuilder,
+    public fb: UntypedFormBuilder,
     public dialogRef: MatDialogRef<AddWordComponent>,
     @Inject(MAT_DIALOG_DATA) public data,
     private store: Store

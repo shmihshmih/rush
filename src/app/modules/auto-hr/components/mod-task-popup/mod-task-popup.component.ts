@@ -1,5 +1,5 @@
 import {Component, Inject, OnInit} from '@angular/core';
-import {FormArray, FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {UntypedFormArray, UntypedFormBuilder, UntypedFormGroup, Validators} from '@angular/forms';
 import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
 import {ITask} from '../../../../shared/models/autoHR/question.model';
 import {Observable} from 'rxjs';
@@ -17,18 +17,18 @@ export class ModTaskPopupComponent implements OnInit {
   difficulties = ['beginner', 'junior', 'middle', 'senior'];
   popularities = ['1', '2', '3', '4', '5'];
 
-  taskForm: FormGroup = new FormGroup({});
+  taskForm: UntypedFormGroup = new UntypedFormGroup({});
 
   get linkList() {
-    return this.taskForm.controls.answer.get('link') as FormArray;
+    return this.taskForm.controls.answer.get('link') as UntypedFormArray;
   }
 
   get textList() {
-    return this.taskForm.controls.answer.get('text') as FormArray;
+    return this.taskForm.controls.answer.get('text') as UntypedFormArray;
   }
 
   get codeList() {
-    return this.taskForm.controls.answer.get('code') as FormArray;
+    return this.taskForm.controls.answer.get('code') as UntypedFormArray;
   }
 
   // get competenceList() {
@@ -37,7 +37,7 @@ export class ModTaskPopupComponent implements OnInit {
 
   competencesList$: Observable<string[]> = this.store.select(selectCompetenceCatalog);
 
-  constructor(private fb: FormBuilder,
+  constructor(private fb: UntypedFormBuilder,
               @Inject(MAT_DIALOG_DATA) public data: any,
               public dialogRef: MatDialogRef<ModTaskPopupComponent>,
               private store: Store) {

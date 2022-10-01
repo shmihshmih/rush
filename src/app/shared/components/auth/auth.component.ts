@@ -1,5 +1,5 @@
 import {Component, Inject, OnInit} from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {UntypedFormBuilder, UntypedFormGroup, Validators} from '@angular/forms';
 import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
 import {ApiService} from '../../../core/services/api.service';
 import {Store} from '@ngrx/store';
@@ -11,11 +11,11 @@ import {makeAuthorization} from '../../../state/auth/auth.actions';
   styleUrls: ['./auth.component.scss']
 })
 export class AuthComponent implements OnInit {
-  authForm: FormGroup;
+  authForm: UntypedFormGroup;
 
   constructor(
     private apiService: ApiService,
-    public fb: FormBuilder,
+    public fb: UntypedFormBuilder,
     public dialogRef: MatDialogRef<AuthComponent>,
     @Inject(MAT_DIALOG_DATA) public data,
     private store: Store) {

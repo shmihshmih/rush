@@ -1,5 +1,5 @@
 import {Component, Inject, OnDestroy, OnInit} from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {UntypedFormBuilder, UntypedFormGroup, Validators} from '@angular/forms';
 import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
 import {Subject} from 'rxjs';
 import {Store} from '@ngrx/store';
@@ -12,11 +12,11 @@ import {IWordList} from '../../../models/esperanto/word_list.interface';
   styleUrls: ['./add-list.component.scss']
 })
 export class AddListComponent implements OnInit, OnDestroy {
-  wordListForm: FormGroup;
+  wordListForm: UntypedFormGroup;
   unsubscribe$: Subject<boolean> = new Subject();
 
   constructor(
-    public fb: FormBuilder,
+    public fb: UntypedFormBuilder,
     public dialogRef: MatDialogRef<AddListComponent>,
     @Inject(MAT_DIALOG_DATA) public data,
     private store: Store
