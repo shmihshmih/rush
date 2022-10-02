@@ -1,15 +1,15 @@
-import {IndexComponent} from './pages/index/index.component';
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {WordListComponent} from '../../shared/components/word-list/word-list.component';
 import {WordCardComponent} from '../../shared/components/word-card/word-card.component';
 import {EnglishSentencesCreatorComponent} from './pages/english-sentences-creator/english-sentences-creator.component';
 import {AtOnInExerciserComponent} from './pages/at-on-in-exerciser/at-on-in-exerciser.component';
+import {WordListsComponent} from '../../shared/components/word-lists/word-lists.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: IndexComponent,
+    component: WordListsComponent,
     pathMatch: 'full'
   },
   {

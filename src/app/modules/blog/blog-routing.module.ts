@@ -1,12 +1,12 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {IndexComponent} from './pages/index/index.component';
 import {BookQuestComponent} from '../../shared/components/book-quest/book-quest.component';
+import {BlogDashboardComponent} from './pages/blog-dashboard/blog-dashboard.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: IndexComponent,
+    component: BlogDashboardComponent,
     pathMatch: 'full'
   },
   {

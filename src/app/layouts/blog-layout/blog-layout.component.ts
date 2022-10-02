@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {loadQuestBooks} from '../../state/blog/blog.actions';
+import {Store} from '@ngrx/store';
 
 @Component({
   selector: 'app-blog-layout',
@@ -7,9 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogLayoutComponent implements OnInit {
 
-  constructor() { }
+  constructor(private store: Store) { }
 
   ngOnInit(): void {
+    this.store.dispatch(loadQuestBooks());
   }
 
 }

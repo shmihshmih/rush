@@ -2,7 +2,6 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {EsperantoService} from '../../core/services/esperanto/esperanto.service';
 import {FlexModule} from '@angular/flex-layout';
-import {IndexComponent} from './pages/index/index.component';
 import {LanguagesRoutingModule} from './languages-routing.module';
 import {SharedModule} from '../../shared/shared.module';
 import {EnglishSentencesCreatorComponent} from './pages/english-sentences-creator/english-sentences-creator.component';
@@ -12,7 +11,7 @@ import {AtOnInSettingsPopupComponent} from './components/at-on-in-settings-popup
 
 
 @NgModule({
-  declarations: [IndexComponent, EnglishSentencesCreatorComponent, EscSettingsPopupComponent, AtOnInExerciserComponent, AtOnInSettingsPopupComponent],
+  declarations: [EnglishSentencesCreatorComponent, EscSettingsPopupComponent, AtOnInExerciserComponent, AtOnInSettingsPopupComponent],
   imports: [
     CommonModule,
     FlexModule,

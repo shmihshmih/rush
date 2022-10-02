@@ -1,24 +1,21 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Subject} from 'rxjs';
+import {selectQuestBooksCatalog} from '../../../../state/blog/blog.selectors';
 import {Router} from '@angular/router';
 import {Store} from '@ngrx/store';
-import {loadQuestBooks} from '../../../../state/blog/blog.actions';
-import {selectQuestBooksCatalog} from '../../../../state/blog/blog.selectors';
 
 @Component({
-  selector: 'app-index',
-  templateUrl: './index.component.html',
-  styleUrls: ['./index.component.scss']
+  selector: 'app-blog-dashboard',
+  templateUrl: './blog-dashboard.component.html',
+  styleUrls: ['./blog-dashboard.component.scss']
 })
-export class IndexComponent implements OnInit, OnDestroy {
+export class BlogDashboardComponent implements OnInit, OnDestroy  {
   unsubscribe$: Subject<boolean> = new Subject();
   private questBooksList$ = this.store.select(selectQuestBooksCatalog);
   public bookQuestList = [];
 
   constructor(private router: Router,
-              private store: Store) {
-    this.store.dispatch(loadQuestBooks());
-  }
+              private store: Store) { }
 
   ngOnInit(): void {
     this.questBooksList$.subscribe(questBooks => {
@@ -31,6 +28,8 @@ export class IndexComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
+    this.unsubscribe$.next(true);
     this.unsubscribe$.complete();
   }
+
 }
