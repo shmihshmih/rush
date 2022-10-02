@@ -21,43 +21,27 @@ export class ApiService implements OnDestroy {
 
   menuItems = [
     {
-      routerLink: [''],
-      icon: 'home',
-      caption: 'Главная'
-    },
-    {
       routerLink: ['autoHR'],
       icon: 'assignment',
       caption: 'AutoHR'
     },
     {
-      routerLink: ['esperanto'],
+      routerLink: ['languages'],
       icon: 'language',
-      caption: 'Эсперанто'
-    },
-    {
-      routerLink: ['english'],
-      icon: 'chrome_reader_mode',
-      caption: 'Английский'
+      caption: 'Languages'
     },
     {
       routerLink: ['blog'],
       icon: 'fact_check',
-      caption: 'Блог'
-    },
-    {
-      routerLink: ['blog', 'bookquest', 'thestainlesssteelrat', 1],
-      icon: 'settings_ethernet',
-      caption: 'Book Quest'
-    },
+      caption: 'Blog'
+    }
   ];
 
   constructor(
     private httpClient: HttpClient,
     private store: Store,
     private afAuth: AngularFireAuth,
-    private toastr: ToastrService,
-    private router: Router
+    private toastr: ToastrService
   ) {
   }
 

@@ -38,12 +38,18 @@ import {getStorage, provideStorage} from '@angular/fire/storage';
 import {AngularFireModule} from '@angular/fire/compat';
 import {AngularFireAuthModule} from '@angular/fire/compat/auth';
 import {ToastrModule} from 'ngx-toastr';
+import { AutoHrLayoutComponent } from './layouts/auto-hr-layout/auto-hr-layout.component';
+import { BlogLayoutComponent } from './layouts/blog-layout/blog-layout.component';
+import { LanguagesLayoutComponent } from './layouts/languages-layout/languages-layout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NotFoundComponent,
-    IndexComponent
+    IndexComponent,
+    AutoHrLayoutComponent,
+    BlogLayoutComponent,
+    LanguagesLayoutComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +58,6 @@ import {ToastrModule} from 'ngx-toastr';
     FormsModule,
     HttpClientModule,
     SharedModule,
-    BlogModule,
     LanguagesModule,
     AutoHRModule,
     StoreModule.forRoot(StoreModuleReducers, {

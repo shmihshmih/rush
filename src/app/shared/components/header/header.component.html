@@ -6,12 +6,10 @@
   </div>
   <div class="header-logo">
     <div class="logo">A</div>
-    <a [routerLink]="['']">Системы <span class="system-version">Beta 0.0.5.1</span></a>
+    <a [routerLink]="['']">Systems <span class="system-version">Beta 0.0.6.1</span></a>
   </div>
   <div fxLayout fxFlex fxLayoutAlign="flex-end">
     <ul class="toolbar-list">
-
-      <li *ngIf="(isAuth$ | async) === true" fxHide.lt-md><a [routerLink]="['']">Профиль</a></li>
 
       <li *ngFor="let item of apiService.menuItems" fxHide.lt-md><a [routerLink]="item.routerLink">{{item.caption}}</a>
       </li>
@@ -20,9 +18,12 @@
 
       <li *ngIf="(isAuth$ | async) === false" fxHide.lt-md (click)="openAuth()"><a>Войти</a></li>
 
-      <li><a (click)="toggleTheme()">
-        <mat-icon>brightness_medium</mat-icon>
-      </a></li>
+<!--      <li>-->
+<!--        <a (click)="toggleTheme()">-->
+<!--          <mat-icon>brightness_medium</mat-icon>-->
+<!--        </a>-->
+<!--      </li>-->
+
     </ul>
   </div>
 </mat-toolbar>

@@ -23,10 +23,10 @@ export class HeaderComponent implements OnInit {
     private store: Store) {
   }
 
-  toggleTheme(): void {
-    this.componentCssClass === 'default-theme' ? this.componentCssClass = 'dark-theme' : this.componentCssClass = 'default-theme';
-    this.overlayContainer.getContainerElement().classList.add(this.componentCssClass);
-  }
+  // toggleTheme(): void {
+  //   this.componentCssClass === 'default-theme' ? this.componentCssClass = 'dark-theme' : this.componentCssClass = 'default-theme';
+  //   this.overlayContainer.getContainerElement().classList.add(this.componentCssClass);
+  // }
 
   ngOnInit(): void {
   }

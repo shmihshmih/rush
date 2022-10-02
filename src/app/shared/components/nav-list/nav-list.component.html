@@ -1,10 +1,5 @@
 <ul class="nav-list">
 
-  <li *ngIf="(isAuth$ | async) === true" [routerLink]="['']">
-    <mat-icon>face</mat-icon>
-    <a>Профиль</a>
-  </li>
-
   <li *ngFor="let item of apiService.menuItems" [routerLink]="item.routerLink">
     <mat-icon>{{item.icon}}</mat-icon>
     <a>{{item.caption}}</a>
@@ -12,12 +7,12 @@
 
   <li *ngIf="(isAuth$| async) === true" (click)="apiService.logout()">
     <mat-icon>exit_to_app</mat-icon>
-    <a>Выйти</a>
+    <a>Logout</a>
   </li>
 
   <li *ngIf="false" (click)="openAuth()">
     <mat-icon>login</mat-icon>
-    <a>Войти</a>
+    <a>Login</a>
   </li>
 
 </ul>
