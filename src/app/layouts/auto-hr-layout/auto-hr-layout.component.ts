@@ -77,7 +77,7 @@ export class AutoHrLayoutComponent implements OnInit, AfterViewInit, OnDestroy {
   tasksCount = 0;
   typeModel = 0;
 
-  config: ISobesConfigModel;
+  config: ISobesConfigModel = {count: 0, type: 0, difficulty: [], competence: [], popularity: []};
 
   @ViewChild(MatSort) sort: MatSort;
 
