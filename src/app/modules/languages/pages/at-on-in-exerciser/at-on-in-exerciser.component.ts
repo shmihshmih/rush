@@ -139,7 +139,6 @@ export class AtOnInExerciserComponent implements OnInit, OnDestroy {
       }
       if (result) {
         this.config = result.config;
-        console.log('this.config: ', this.config);
         this.setExerciseInterval();
       }
     });

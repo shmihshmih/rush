@@ -185,7 +185,7 @@ export class WordListComponent implements OnInit, OnDestroy {
   }
 
   openCardExercise(title: string): void {
-    this.router.navigate([this.mode, this.mode === 'esperanto' ? 'vortokarto' : 'wordCard', title]);
+    this.router.navigate(['languages', 'wordCard', title]);
   }
 
   ngOnDestroy(): void {
