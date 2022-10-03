@@ -4,9 +4,12 @@
 }
 
 .main-container {
+  box-sizing: border-box;
   display: flex;
   flex-flow: wrap row;
   justify-content: center;
+  gap: 8px;
+  margin-bottom: 8px;
 
   .esperanto-main-card {
     margin: 1px;
@@ -34,6 +37,9 @@
       cursor: pointer;
       border: 1px solid grey;
     }
+    &-xs {
+      width: 100%;
+    }
   }
 }
 
@@ -44,4 +50,8 @@
 .custom-mat-card-actions {
   margin: 0 !important;
   padding: 0 !important;
+}
+
+h1 {
+  margin: 0;
 }

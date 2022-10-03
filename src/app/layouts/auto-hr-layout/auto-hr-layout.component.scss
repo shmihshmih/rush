@@ -13,9 +13,8 @@ body {
 
 .content {
   width: 100%;
-  display: flex;
   justify-content: center;
-  padding: 24px;
+  padding: 16px;
   box-sizing: border-box;
 }
 
@@ -36,7 +35,8 @@ body {
 }
 
 table {
-  width: 100%;
+  flex-wrap: wrap;
+  overflow-wrap: anywhere;
 }
 
 tr.example-detail-row {
@@ -100,12 +100,16 @@ tr.example-element-row:not(.example-expanded-row):active {
 }
 
 .catalog-action {
-  display: flex;
+  //display: flex;
   align-items: baseline;
+  mat-form-field {
+    width: 185px;
+  }
 }
 
 .filter-actions {
   display: flex;
+  justify-content: space-between;
 }
 
 .filter-actions > button {
@@ -120,14 +124,10 @@ tr.example-element-row:not(.example-expanded-row):active {
 .block-action {
   display: flex;
   height: 100%;
-  margin-left: 32px;
   width: 90px;
   justify-content: space-between;
-  flex-direction: column;
-
-  button:nth-child(2) {
-    margin-top: 32px;
-  }
+  align-items: center;
+  gap: 16px;
 }
 
 .w-100 {

@@ -1,7 +1,7 @@
 <div class="main-container">
-  <mat-card *ngFor="let vortListo of vortlistoj$ | async" class="esperanto-main-card">
+  <mat-card *ngFor="let vortListo of vortlistoj$ | async" class="esperanto-main-card" [ngClass.xs]="{'esperanto-main-card-xs': true}">
     <mat-card-header class="w-100">
-      <mat-card-title fxLayout="row" fxLayoutAlign="space-between center" class="w-100">
+      <mat-card-title fxLayout="row" fxLayoutAlign="space-between center" class="w-100 custom-mat-card-title">
         <h1 [routerLink]="[mode === 'esperanto' ? 'vortlisto' : 'wordList', vortListo.collection_caption]"
             [matTooltip]="'Карточки всех слов, которые есть в базе по теме <' + vortListo.collection_caption + '>'"
             [matTooltipClass]="'toolTipClass'"
@@ -13,10 +13,6 @@
       </mat-card-title>
       <mat-card-subtitle>{{vortListo.level}}</mat-card-subtitle>
     </mat-card-header>
-    <div class="img-container"
-         [routerLink]="[mode === 'esperanto' ? 'vortlisto' : 'wordList', vortListo.collection_caption]">
-      {{vortListo.cover}}
-    </div>
     <mat-card-content [routerLink]="[mode === 'esperanto' ? 'vortlisto' : 'wordList', vortListo.collection_caption]">
       <p>
         {{vortListo.caption.russian}}
@@ -36,7 +32,10 @@
     </mat-card-actions>
   </mat-card>
 
-  <mat-card *ngIf="(isAuth$ | async) === true" (click)="addList()" class="esperanto-main-card add-list">
+</div>
+
+<div class="w-100 f jc-center">
+  <mat-card *ngIf="(isAuth$ | async) === true" (click)="addList()" class="esperanto-main-card add-list" [ngClass.xs]="{'esperanto-main-card-xs': true}">
     <mat-card-content fxFlex fxLayoutAlign="center center">
       <button mat-raised-button color="primary">
         <i class="material-icons-outlined">add_circle_outline</i>
@@ -44,12 +43,11 @@
     </mat-card-content>
   </mat-card>
 
-  <mat-card *ngIf="(isAuth$ | async) === true" (click)="dumpWordLists()" class="esperanto-main-card add-list">
+  <mat-card *ngIf="(isAuth$ | async) === true" (click)="dumpWordLists()" class="esperanto-main-card add-list" [ngClass.xs]="{'esperanto-main-card-xs': true}">
     <mat-card-content fxFlex fxLayoutAlign="center center">
       <button mat-raised-button color="primary" matTooltip="снять дамп списков">
         <i class="material-icons-outlined">file_download</i>
       </button>
     </mat-card-content>
   </mat-card>
-
 </div>

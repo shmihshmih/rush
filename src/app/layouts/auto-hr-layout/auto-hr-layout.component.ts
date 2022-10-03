@@ -34,6 +34,7 @@ import {ActivatedRoute} from '@angular/router';
 import {Store} from '@ngrx/store';
 import {AngularFireAuth} from '@angular/fire/compat/auth';
 import {ApiService} from '../../core/services/api.service';
+import {MediaObserver} from '@angular/flex-layout';
 
 @Component({
   selector: 'app-auto-hr-layout',
@@ -56,7 +57,7 @@ export class AutoHrLayoutComponent implements OnInit, AfterViewInit, OnDestroy {
 
   dataSource = new MatTableDataSource<ITask>([]);
 
-  columnsToDisplay = ['id', 'question', 'type', 'difficulty', 'popularity'];
+  columnsToDisplay = [];
   expandedElement: ITask | null = null;
   step: 'start' | 'interview' | 'catalog' = 'start';
 
@@ -87,18 +88,30 @@ export class AutoHrLayoutComponent implements OnInit, AfterViewInit, OnDestroy {
 
   public user: IUserAdmin;
 
+  resolutionCode = '';
+
   constructor(
     public dialog: MatDialog,
     public activatedRoute: ActivatedRoute,
     private store: Store,
     private afAuth: AngularFireAuth,
-    public apiService: ApiService
+    public apiService: ApiService,
+    private mediaObserver: MediaObserver
   ) {
     combineLatest(this.tasks$, this.config$).subscribe(([tasks, config]) => {
       if (tasks && config) {
         this.tasks = tasks;
         this.config = config;
         this.setTableData(config);
+      }
+    });
+
+    this.mediaObserver.asObservable().subscribe(mo => {
+      this.resolutionCode = mo[0].mqAlias;
+      if (mo[0]?.mqAlias === 'xs') {
+        this.columnsToDisplay = ['question'];
+      } else {
+        this.columnsToDisplay = ['id', 'question', 'type', 'difficulty', 'popularity'];
       }
     });
   }

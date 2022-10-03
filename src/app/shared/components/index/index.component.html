@@ -13,155 +13,94 @@
 </div>
 <div class="main-container">
 
-  <mat-card class="esperanto-main-card">
+  <mat-card class="esperanto-main-card" [ngClass.xs]="{'esperanto-main-card-xs': true}" [routerLink]="['english', 'wordCard', 'numeraloj']">
     <mat-card-header class="w-100">
       <mat-card-title fxLayout="row" fxLayoutAlign="space-between center" class="w-100">
-        <h1 [routerLink]="['english', 'wordCard', 'numeraloj']" [matTooltip]="'Карточки всех слов, которые есть в базе'"
+        <h1 [matTooltip]="'Карточки всех слов, которые есть в базе'"
             [matTooltipClass]="'toolTipClass'">Карточки слов</h1>
       </mat-card-title>
       <mat-card-subtitle>Тип: Генератор</mat-card-subtitle>
     </mat-card-header>
-    <div class="img-container" [routerLink]="['english', 'wordCard', 'numeraloj']">
-      🦵🐶🌕🌏🍉⚽🤸‍♂️🚆⌚🛏🦵🐶🌕🌏🍉⚽🤸‍♂️🦵🐶🌕🌏🍉⚽🤸‍♂️🚆⌚🛏🦵🐶🌕🌏🍉⚽🤸‍♂️🦵🐶🌕🌏🍉⚽🤸‍♂️🚆⌚🛏🦵🐶🌕🌏🍉⚽🤸‍♂️
-    </div>
-    <mat-card-content [routerLink]="['english', 'wordCard', 'numeraloj']">
+    <mat-card-content>
       <p>
         Карточки слов
       </p>
     </mat-card-content>
-    <mat-card-actions class="custom-mat-card-actions">
-      <button mat-raised-button color="primary" [routerLink]="['english', 'wordCard', 'numeraloj']"
-              [matTooltip]="'Открыть'" [matTooltipClass]="'toolTipClass'">
-        <i class="material-icons-outlined">view_stream</i>
-      </button>
-    </mat-card-actions>
   </mat-card>
 
-  <mat-card class="esperanto-main-card">
+  <mat-card class="esperanto-main-card" [ngClass.xs]="{'esperanto-main-card-xs': true}" [routerLink]="['english', 'wordList', 'numeraloj']">
     <mat-card-header class="w-100">
       <mat-card-title fxLayout="row" fxLayoutAlign="space-between center" class="w-100">
-        <h1 [routerLink]="['english', 'wordList', 'numeraloj']"
-            [matTooltip]="'Таблица-список всех слов, которые есть в базе'" [matTooltipClass]="'toolTipClass'">Список
+        <h1 [matTooltip]="'Таблица-список всех слов, которые есть в базе'" [matTooltipClass]="'toolTipClass'">Список
           слов</h1>
       </mat-card-title>
       <mat-card-subtitle>Тип: Списки</mat-card-subtitle>
     </mat-card-header>
-    <div class="img-container" [routerLink]="['english', 'wordList', 'numeraloj']">
-      🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷
-    </div>
-    <mat-card-content [routerLink]="['english', 'wordList', 'numeraloj']">
+    <mat-card-content >
       <p>
         Список слов
       </p>
     </mat-card-content>
-    <mat-card-actions class="custom-mat-card-actions">
-      <button mat-raised-button color="primary" [routerLink]="['english', 'wordList', 'numeraloj']"
-              [matTooltip]="'Открыть'" [matTooltipClass]="'toolTipClass'">
-        <i class="material-icons-outlined">view_stream</i>
-      </button>
-    </mat-card-actions>
   </mat-card>
 
-  <mat-card class="esperanto-main-card">
+  <mat-card class="esperanto-main-card" [ngClass.xs]="{'esperanto-main-card-xs': true}" [routerLink]="['english', 'sentences-creator']">
     <mat-card-header class="w-100">
       <mat-card-title fxLayout="row" fxLayoutAlign="space-between center" class="w-100">
-        <h1 [routerLink]="['english', 'sentences-creator']"
-            [matTooltip]="'Генератор предложений по всем временам со всеми глаголами, которые есть в системе'"
+        <h1 [matTooltip]="'Генератор предложений по всем временам со всеми глаголами, которые есть в системе'"
             [matTooltipClass]="'toolTipClass'">Генератор предложений</h1>
       </mat-card-title>
       <mat-card-subtitle>Тип: Генератор</mat-card-subtitle>
     </mat-card-header>
-    <div class="img-container" [routerLink]="['english', 'sentences-creator']">
-      🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂🪂
-    </div>
-    <mat-card-content [routerLink]="['english', 'sentences-creator']">
+    <mat-card-content>
       <p>
         Генератор предложений
       </p>
     </mat-card-content>
-    <mat-card-actions class="custom-mat-card-actions">
-      <button mat-raised-button color="primary" [routerLink]="['english', 'sentences-creator']" [matTooltip]="'Открыть'"
-              [matTooltipClass]="'toolTipClass'">
-        <i class="material-icons-outlined">view_stream</i>
-      </button>
-    </mat-card-actions>
   </mat-card>
 
-  <mat-card class="esperanto-main-card">
+  <mat-card class="esperanto-main-card" [ngClass.xs]="{'esperanto-main-card-xs': true}" [routerLink]="['english', 'at-on-in-exercises']">
     <mat-card-header class="w-100">
       <mat-card-title fxLayout="row" fxLayoutAlign="space-between center" class="w-100">
-        <h1 [routerLink]="['english', 'at-on-in-exercises']"
-            [matTooltip]="'Генератор упражнения для тренировки использования предлогов at, on, in'"
+        <h1 [matTooltip]="'Генератор упражнения для тренировки использования предлогов at, on, in'"
             [matTooltipClass]="'toolTipClass'">Упражнения с предлогами</h1>
       </mat-card-title>
       <mat-card-subtitle>Тип: Генератор</mat-card-subtitle>
     </mat-card-header>
-    <div class="img-container" [routerLink]="['english', 'at-on-in-exercises']">
-      🤸🎷🎷🎷🎷📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️⌚📌🕵️‍♀️🧷👨‍💼👨‍🎓⌚
-    </div>
-    <mat-card-content [routerLink]="['english', 'at-on-in-exercises']">
+    <mat-card-content>
       <p>
         Упражнения с предлогами
       </p>
     </mat-card-content>
-    <mat-card-actions class="custom-mat-card-actions">
-      <button mat-raised-button color="primary" [routerLink]="['english', 'at-on-in-exercises']"
-              [matTooltip]="'Открыть'"
-              [matTooltipClass]="'toolTipClass'">
-        <i class="material-icons-outlined">view_stream</i>
-      </button>
-    </mat-card-actions>
   </mat-card>
 
-  <mat-card class="esperanto-main-card">
+  <mat-card class="esperanto-main-card" [ngClass.xs]="{'esperanto-main-card-xs': true}" [routerLink]="['blog', 'bookquest', 'thestainlesssteelrat', 1]">
     <mat-card-header class="w-100">
       <mat-card-title fxLayout="row" fxLayoutAlign="space-between center" class="w-100">
-        <h1 [routerLink]="['blog', 'bookquest', 'thestainlesssteelrat', 1]"
-            [matTooltip]="'Демонстрация книжного квеста. Здесь просто \<Стальная крыса\> Гарри Гаррисона'"
+        <h1 [matTooltip]="'Демонстрация книжного квеста. Здесь просто \<Стальная крыса\> Гарри Гаррисона'"
             [matTooltipClass]="'toolTipClass'">Книжный квест</h1>
       </mat-card-title>
       <mat-card-subtitle>Тип: Генератор</mat-card-subtitle>
     </mat-card-header>
-    <div class="img-container" [routerLink]="['blog', 'bookquest', 'thestainlesssteelrat', 1]">
-      📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️📗🧛‍♂️
-    </div>
-    <mat-card-content [routerLink]="['blog', 'bookquest', 'thestainlesssteelrat', 1]">
+    <mat-card-content>
       <p>
         Книжный квест
       </p>
     </mat-card-content>
-    <mat-card-actions class="custom-mat-card-actions">
-      <button mat-raised-button color="primary" [routerLink]="['blog', 'bookquest', 'thestainlesssteelrat', 1]"
-              [matTooltip]="'Открыть'" [matTooltipClass]="'toolTipClass'">
-        <i class="material-icons-outlined">view_stream</i>
-      </button>
-    </mat-card-actions>
   </mat-card>
 
-  <mat-card class="esperanto-main-card">
+  <mat-card class="esperanto-main-card" [ngClass.xs]="{'esperanto-main-card-xs': true}" [routerLink]="['autoHR']">
     <mat-card-header class="w-100">
       <mat-card-title fxLayout="row" fxLayoutAlign="space-between center" class="w-100">
-        <h1 [routerLink]="['autoHR']" [matTooltip]="'Пройти собеседование или посмотреть вопросы и ответы'"
+        <h1 [matTooltip]="'Пройти собеседование или посмотреть вопросы и ответы'"
             [matTooltipClass]="'toolTipClass'">autoHR</h1>
       </mat-card-title>
       <mat-card-subtitle>Тип: Генератор + Списки</mat-card-subtitle>
     </mat-card-header>
-    <div class="img-container" [routerLink]="['autoHR']">
-      ⌚📌🕵️‍♀️🧷👨‍💼👨‍🎓⌚📌🕵️‍♀️🧷👨‍💼👨‍🎓⌚📌🕵️‍♀️🧷👨‍💼👨‍🎓
-      ⌚📌🕵️‍♀️🧷👨‍💼👨‍🎓⌚📌🕵️‍♀️🧷👨‍💼👨‍🎓⌚📌🕵️‍♀️🧷👨‍💼👨‍🎓
-      ⌚📌🕵️‍♀️🧷👨‍💼👨‍🎓⌚📌🕵️‍♀️🧷👨‍💼👨‍🎓⌚📌🕵️‍♀️🧷👨‍💼👨‍🎓
-    </div>
-    <mat-card-content [routerLink]="['autoHR']">
+    <mat-card-content>
       <p>
         Генератор собеседований
       </p>
     </mat-card-content>
-    <mat-card-actions class="custom-mat-card-actions">
-      <button mat-raised-button color="primary" [routerLink]="['autoHR']" [matTooltip]="'Открыть'"
-              [matTooltipClass]="'toolTipClass'">
-        <i class="material-icons-outlined">view_stream</i>
-      </button>
-    </mat-card-actions>
   </mat-card>
 
 </div>
