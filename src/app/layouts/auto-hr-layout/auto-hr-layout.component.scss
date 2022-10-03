@@ -92,14 +92,17 @@ tr.example-element-row:not(.example-expanded-row):active {
 
 .mat-column-type {
   padding: 16px !important;
+  overflow-wrap: break-word;
 }
 
 .mat-column-difficulty {
   padding: 16px !important;
+  overflow-wrap: break-word;
 }
 
 .mat-column-popularity {
   padding: 16px !important;
+  overflow-wrap: break-word;
 }
 
 .catalog-action {
