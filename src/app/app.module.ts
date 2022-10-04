@@ -4,7 +4,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {HttpClientModule} from '@angular/common/http';
+import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {NotFoundComponent} from './shared/components/not-found/not-found.component';
 import {FormsModule} from '@angular/forms';
 import {LanguagesModule} from './modules/languages/languages.module';
@@ -41,6 +41,8 @@ import { AutoHrLayoutComponent } from './layouts/auto-hr-layout/auto-hr-layout.c
 import { BlogLayoutComponent } from './layouts/blog-layout/blog-layout.component';
 import { LanguagesLayoutComponent } from './layouts/languages-layout/languages-layout.component';
 import {JWT_OPTIONS, JwtHelperService} from '@auth0/angular-jwt';
+import {AuthInterceptor} from './core/interceptors/auth.interceptor';
+import {LoaderInterceptor} from './core/interceptors/loader.interceptor';
 
 @NgModule({
   declarations: [
@@ -94,6 +96,8 @@ import {JWT_OPTIONS, JwtHelperService} from '@auth0/angular-jwt';
     ScreenTrackingService, UserTrackingService,
     { provide: JWT_OPTIONS, useValue: JWT_OPTIONS },
     JwtHelperService,
+    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
+    { provide: HTTP_INTERCEPTORS, useClass: LoaderInterceptor, multi: true },
   ],
   bootstrap: [AppComponent]
 })

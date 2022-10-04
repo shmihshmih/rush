@@ -16,6 +16,7 @@ import {AddWordComponent} from './components/popup/add-word/add-word.component';
 import {WordListsComponent} from './components/word-lists/word-lists.component';
 import {BookQuestComponent} from './components/book-quest/book-quest.component';
 import {HideAnswerPipe} from './pipes/hide-answer.pipe';
+import {SpinnerOverlayComponent} from './components/spinner-overlay/spinner-overlay.component';
 
 @NgModule({
     declarations: [
@@ -30,15 +31,16 @@ import {HideAnswerPipe} from './pipes/hide-answer.pipe';
         AddWordComponent,
         WordListsComponent,
         BookQuestComponent,
-        HideAnswerPipe
+        HideAnswerPipe,
+      SpinnerOverlayComponent
     ],
-    imports: [
-        CommonModule,
-        MaterialModule,
-        RouterModule,
-        FlexLayoutModule,
-        ReactiveFormsModule,
-    ],
+  imports: [
+    CommonModule,
+    MaterialModule,
+    RouterModule,
+    FlexLayoutModule,
+    ReactiveFormsModule
+  ],
     exports: [
         MaterialModule,
         HeaderComponent,
@@ -49,7 +51,8 @@ import {HideAnswerPipe} from './pipes/hide-answer.pipe';
         ReactiveFormsModule,
         WordListsComponent,
         BookQuestComponent,
-        HideAnswerPipe
+        HideAnswerPipe,
+      SpinnerOverlayComponent
     ]
 })
 export class SharedModule {

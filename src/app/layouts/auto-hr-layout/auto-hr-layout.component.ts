@@ -320,25 +320,25 @@ export class AutoHrLayoutComponent implements OnInit, AfterViewInit, OnDestroy {
     });
 
     const matchedQuestionsRandom = [];
-    for (let i = 0; i < matchedQuestions.length; i++) {
+    for (const item of matchedQuestions) {
       const it = this.randomizer(matchedQuestions);
       matchedQuestionsRandom.push(it);
     }
 
     const matchedExercisesRandom = [];
-    for (let i = 0; i < matchedExercises.length; i++) {
+    for (const item of matchedExercises) {
       const it = this.randomizer(matchedExercises);
       matchedExercisesRandom.push(it);
     }
 
     const unmatchedQuestionsRandom = [];
-    for (let i = 0; i < unmatchedQuestions.length; i++) {
+    for (const item of unmatchedQuestions) {
       const it = this.randomizer(unmatchedQuestions);
       unmatchedQuestionsRandom.push(it);
     }
 
     const unmatchedExercisesRandom = [];
-    for (let i = 0; i < unmatchedExercises.length; i++) {
+    for (const item of unmatchedExercises) {
       const it = this.randomizer(unmatchedExercises);
       unmatchedExercisesRandom.push(it);
     }

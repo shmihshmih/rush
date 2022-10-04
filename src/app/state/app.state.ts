@@ -13,15 +13,13 @@ export interface AppState {
   [fromAuth.authFeatureKey]: fromAuth.State;
   [fromTasks.autoHRFeatureKey]: fromTasks.State;
   [fromBlog.blogFeatureKey]: fromBlog.State;
-  error: string;
 }
 
 const initialState: AppState = {
   [fromWords.wordsFeatureKey]: initialWordsFeatureState,
   [fromAuth.authFeatureKey]: initialAuthState,
   [fromTasks.autoHRFeatureKey]: initialAutoHRState,
-  [fromBlog.blogFeatureKey]: initialBlogState,
-  error: ''
+  [fromBlog.blogFeatureKey]: initialBlogState
 };
 
 export const StoreModuleReducers = createReducer(initialState);

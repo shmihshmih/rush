@@ -18,73 +18,38 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatCardModule} from '@angular/material/card';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatSliderModule} from '@angular/material/slider';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+
+const materialModules = [
+  MatToolbarModule,
+  MatSidenavModule,
+  MatIconModule,
+  MatButtonModule,
+  MatTableModule,
+  MatInputModule,
+  MatFormFieldModule,
+  MatPaginatorModule,
+  MatSortModule,
+  MatDialogModule,
+  MatCheckboxModule,
+  MatRadioModule,
+  MatSelectModule,
+  MatChipsModule,
+  MatAutocompleteModule,
+  MatCardModule,
+  MatTooltipModule,
+  MatSliderModule,
+  MatProgressSpinnerModule
+];
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    MatToolbarModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatButtonModule,
-    MatTableModule,
-    MatInputModule,
-    MatFormFieldModule,
-    MatPaginatorModule,
-    MatSortModule,
-    MatDialogModule,
-    MatCheckboxModule,
-    MatRadioModule,
-    MatSelectModule,
-    MatChipsModule,
-    MatAutocompleteModule,
-    MatCardModule,
-    MatButtonModule,
-    MatTooltipModule,
-    MatInputModule,
-    MatButtonModule,
-    MatDialogModule,
-    MatTableModule,
-    MatSelectModule,
-    MatFormFieldModule,
-    MatSliderModule,
-    MatIconModule,
-    MatPaginatorModule,
-    MatChipsModule,
-    MatSortModule,
-    MatTooltipModule
+    ...materialModules
   ],
   exports: [
-    MatToolbarModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatButtonModule,
-    MatTableModule,
-    MatInputModule,
-    MatFormFieldModule,
-    MatPaginatorModule,
-    MatSortModule,
-    MatDialogModule,
-    MatCheckboxModule,
-    MatRadioModule,
-    MatSelectModule,
-    MatChipsModule,
-    MatAutocompleteModule,
-    MatCardModule,
-    MatButtonModule,
-    MatTooltipModule,
-    MatInputModule,
-    MatButtonModule,
-    MatDialogModule,
-    MatTableModule,
-    MatSelectModule,
-    MatFormFieldModule,
-    MatSliderModule,
-    MatIconModule,
-    MatPaginatorModule,
-    MatChipsModule,
-    MatSortModule,
-    MatTooltipModule
+    ...materialModules
   ]
 })
 export class MaterialModule {
