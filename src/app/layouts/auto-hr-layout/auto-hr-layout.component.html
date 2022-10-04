@@ -1,9 +1,6 @@
 <div class="content" [ngClass.xs]="{'content-xs': true}">
-  <div *ngIf="step === 'start'" class="start-actions">
-    <button mat-stroked-button (click)="openInterviewPopup()">Собес</button>
-    <button mat-stroked-button (click)="step = 'catalog'">Справочник</button>
-  </div>
-  <div *ngIf="(step === 'catalog') || (step === 'interview')" class="catalog">
+
+  <div class="catalog">
     <div class="catalog-action">
       <div fxHide.xs fxShow [ngStyle]="{'display': 'flex'}">
 
@@ -85,6 +82,10 @@
                   (click)="openModTaskPopup()">
             <mat-icon>add</mat-icon>
           </button>
+          <button mat-mini-fab color="primary" matTooltip="Сгенерировать собеседование"
+                  (click)="openInterviewPopup()">
+            <mat-icon>speaker_notes</mat-icon>
+          </button>
         </div>
 
         <mat-form-field class="w-50" [ngClass.xs]="{'w-100': true}" appearance="outline">
@@ -92,13 +93,10 @@
           <input matInput (keyup)="applyFilter($event)" placeholder="Поиск" #input>
         </mat-form-field>
 
-        <div fxHide.xs fxShow *ngIf="(step === 'catalog') || (step === 'interview')" class="block-action">
+        <div fxHide.xs fxShow class="block-action">
           <button mat-mini-fab color="primary" *ngIf="isAuth$ | async" (click)="downloadObjectAsJson()"
                   matTooltip="Снять дамп">
             <mat-icon>save</mat-icon>
-          </button>
-          <button mat-mini-fab color="accent" (click)="goToStart('close-block')" matTooltip="Вернуться на первую страницу">
-            <mat-icon>close</mat-icon>
           </button>
         </div>
 

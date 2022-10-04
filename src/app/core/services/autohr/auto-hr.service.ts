@@ -15,13 +15,9 @@ export class AutoHRService {
     private http: HttpClient,
     private apiService: ApiService,
     private readonly afs: AngularFirestore
-  ) {
-  }
+  ) {}
 
-  // получить все вопросы
-  // getAllTasks(): Observable<ITask[]> {
-  //   return this.http.get<ITask[]>(`${this.apiService.MAIN_SERVER}autohr/questionList`);
-  // }
+  // get all tasks
   getAllTasks(): Observable<ITask[]> {
     const tasksCollection: AngularFirestoreCollection<ITask> = this.afs.collection<ITask>('tasks');
     return tasksCollection.snapshotChanges().pipe(
@@ -31,10 +27,9 @@ export class AutoHRService {
         return {id, ...data};
       }))
     );
-    // return this.http.get<ITask[]>(`./assets/collections/questionmodels.json`);
   }
 
-  // добавить вопрос
+  // add task
   addTask(newTask): Observable<ITask> {
     const tasksCollection: AngularFirestoreCollection<ITask> = this.afs.collection<ITask>('tasks');
     const id = this.afs.createId();
@@ -46,13 +41,13 @@ export class AutoHRService {
     );
   }
 
-  // удалить вопрос
+  // remove task
   delTask(newTask): Observable<any> {
     const tasksCollection: AngularFirestoreCollection<ITask> = this.afs.collection<ITask>('tasks');
     return from(tasksCollection.doc(newTask.id).delete());
   }
 
-  // обновить вопрос
+  // update task
   updateTask(task): Observable<any> {
     const tasksCollection: AngularFirestoreCollection<ITask> = this.afs.collection<ITask>('tasks');
     return from(tasksCollection.doc(task.id).update({...task})).pipe(
@@ -62,28 +57,26 @@ export class AutoHRService {
     );
   }
 
+  // get all tasks from JSON
   getAllTasksByJSON(): Observable<ITask[]> {
     return this.http.get<ITask[]>(`./assets/_tasks.json`);
   }
 
+  // dicts difficulties
   getDifficulties(): Observable<any[]> {
-    const difficulties = [
-      'beginner', 'junior', 'middle', 'senior'
-    ];
+    const difficulties = ['beginner', 'junior', 'middle', 'senior'];
     return of(difficulties);
   }
 
+  // dicts competemces
   getCompetences(): Observable<any[]> {
-    const competences = [
-      'common questions', 'javascript', 'typescript', 'angular', 'react', 'nodejs', 'html', 'css', 'frontend', 'backend'
-    ];
+    const competences = ['common questions', 'javascript', 'typescript', 'angular', 'react', 'nodejs', 'html', 'css', 'frontend', 'backend'];
     return of(competences);
   }
 
+  // dicts popularity
   getPopularity(): Observable<any[]> {
-    const popularity = [
-      '1', '2', '3', '4', '5'
-    ];
+    const popularity = ['1', '2', '3', '4', '5'];
     return of(popularity);
   }
 }

@@ -59,7 +59,6 @@ export class AutoHrLayoutComponent implements OnInit, AfterViewInit, OnDestroy {
 
   columnsToDisplay = [];
   expandedElement: ITask | null = null;
-  step: 'start' | 'interview' | 'catalog' = 'start';
 
   difficultiesList$: Observable<string[]> = this.store.select(selectDifficultyCatalog);
   difficultiesList: string[] = [];
@@ -196,7 +195,6 @@ export class AutoHrLayoutComponent implements OnInit, AfterViewInit, OnDestroy {
 
     dialogRef.afterClosed().subscribe(config => {
       if (config && config.count) {
-        this.step = 'interview';
         this.tasksCount = config.count;
         this.typeModel = config.type;
         this.difficultiesControl.patchValue(config.difficulty);
@@ -262,7 +260,6 @@ export class AutoHrLayoutComponent implements OnInit, AfterViewInit, OnDestroy {
 
   // открыть определенный ответ по id таска
   openSolution(id: string): void {
-    this.step = 'catalog';
     const task = this.tasks.filter(t => {
       return t.id === id;
     })[0];
@@ -383,10 +380,6 @@ export class AutoHrLayoutComponent implements OnInit, AfterViewInit, OnDestroy {
     this.popularityControl.reset();
     this.tasksCount = 0;
     this.typeModel = 0;
-
-    if (type === 'close-block') {
-      this.step = 'start';
-    }
   }
 
   // удаление таска
@@ -397,13 +390,6 @@ export class AutoHrLayoutComponent implements OnInit, AfterViewInit, OnDestroy {
     }
     this.store.dispatch(removeTask({deletedTask: task}));
   }
-
-  // связываем вручную пагинатор и таблицу и данные
-  // pagination(paginator: any): void {
-  //   let paginatedTasks: any[] = this.tasks.slice(paginator._pageIndex * paginator._pageSize, paginator._pageIndex * paginator._pageSize + paginator._pageSize);
-  //   paginatedTasks = this.setTableIndex(paginator._pageIndex * paginator._pageSize, paginatedTasks);
-  //   this.dataSource = new MatTableDataSource(paginatedTasks);
-  // }
 
   // проставляем индексы для таблицы
   setTableIndex(start: number, data: any[]): any[] {
