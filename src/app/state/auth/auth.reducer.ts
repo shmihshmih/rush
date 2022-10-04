@@ -9,6 +9,7 @@ import {
   makeAuthorizationSuccess,
   setAuthDataFromLocalStorage
 } from './auth.actions';
+import {clearUserFromLS, setUserToLS} from '../../core/utils/localStorage.util';
 
 export const initialAuthState: State = {
   isAuth: false,
@@ -24,6 +25,7 @@ export const initialUserState: UserState = {
 
 export const createAuthReducer = createReducer(initialAuthState,
   on(makeAuthorizationSuccess, (state, {authData}) => {
+    setUserToLS(authData);
     return {...state, user: authData, isAuth: true};
   }),
   on(makeAuthorizationFail, (state, {error}) => {
@@ -39,7 +41,7 @@ export const createAuthReducer = createReducer(initialAuthState,
 
   // логаут
   on(logoutSuccess, (state) => {
-    localStorage.removeItem('authData');
+    clearUserFromLS();
     return {...state, isAuth: false, user: initialUserState};
   }),
   on(logoutFail, (state, {error}) => {
@@ -48,7 +50,6 @@ export const createAuthReducer = createReducer(initialAuthState,
 
   // проверка авторизации
   on(checkAuthSuccess, (state, {authData}) => {
-    localStorage.setItem('authData', JSON.stringify(authData));
     if (authData.email) {
       return {...state, isAuth: true, user: {...authData}};
     } else {

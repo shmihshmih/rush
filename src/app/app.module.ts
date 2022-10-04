@@ -40,6 +40,7 @@ import {ToastrModule} from 'ngx-toastr';
 import { AutoHrLayoutComponent } from './layouts/auto-hr-layout/auto-hr-layout.component';
 import { BlogLayoutComponent } from './layouts/blog-layout/blog-layout.component';
 import { LanguagesLayoutComponent } from './layouts/languages-layout/languages-layout.component';
+import {JWT_OPTIONS, JwtHelperService} from '@auth0/angular-jwt';
 
 @NgModule({
   declarations: [
@@ -90,7 +91,9 @@ import { LanguagesLayoutComponent } from './layouts/languages-layout/languages-l
     ToastrModule.forRoot(),
   ],
   providers: [
-    ScreenTrackingService, UserTrackingService
+    ScreenTrackingService, UserTrackingService,
+    { provide: JWT_OPTIONS, useValue: JWT_OPTIONS },
+    JwtHelperService,
   ],
   bootstrap: [AppComponent]
 })

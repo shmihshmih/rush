@@ -6,7 +6,6 @@ import {Store} from '@ngrx/store';
 import {AngularFireAuth} from '@angular/fire/compat/auth';
 import {ToastrService} from 'ngx-toastr';
 import {logoutFail, logoutSuccess} from '../../state/auth/auth.actions';
-import {Router} from '@angular/router';
 import {IUserAdmin} from '../../shared/models/main.interface';
 
 @Injectable({
@@ -76,78 +75,6 @@ export class ApiService implements OnDestroy {
         (error) => {
           this.store.dispatch(logoutFail({error: error.toString()}));
         });
-  }
-
-  // checkAuth(): void {
-  //   this.afAuth.onAuthStateChanged(
-  //     (authData) => {
-  //       if (authData) {
-  //         const user = {
-  //           refreshToken: authData.refreshToken,
-  //           email: authData.email,
-  //           uid: authData.uid,
-  //           displayName: authData.displayName
-  //         };
-  //         this.user = user;
-  //         this.store.dispatch(checkAuthSuccess({authData: user}));
-  //       } else {
-  //         this.user = null;
-  //         this.store.dispatch(checkAuthSuccess({authData: initialUserState}));
-  //       }
-  //
-  //       if (!!this.user?.uid) {
-  //         // получение всех списков слов
-  //         this.store.dispatch(loadWordLists());
-  //
-  //         // получение всех слов
-  //         this.store.dispatch(loadWords());
-  //
-  //         // получение всех вопросов
-  //         this.store.dispatch(loadTasks());
-  //       } else {
-  //         // получение всех списков слов
-  //         this.store.dispatch(loadWordListsByJSON());
-  //
-  //         // получение всех слов
-  //         this.store.dispatch(loadWordsByJSON());
-  //
-  //         // получение всех вопросов
-  //         this.store.dispatch(loadTasksByJSON());
-  //       }
-  //
-  //       // Вещи в любом случае прогружаемые с фронта
-  //       // справочники autoHR
-  //       this.store.dispatch(loadDifficultyCatalog());
-  //       this.store.dispatch(loadCompetenceCatalog());
-  //       this.store.dispatch(loadPopularityCatalog());
-  //
-  //       // return user;
-  //     },
-  //     error => {
-  //       return of(checkAuthFail({error: error.toString()}));
-  //     },
-  //     () => {
-  //
-  //     });
-  //   // return this.afAuth.user;
-  // }
-
-  checkToken(): Observable<any> {
-    const token = localStorage.getItem('token');
-    return this.httpClient.post(`${this.MAIN_SERVER_AUTH}isAuth`, {token});
-  }
-
-  authWithToken(): Observable<any> {
-    const token = localStorage.getItem('token');
-    return this.httpClient.post(`${this.MAIN_SERVER_AUTH}isAuth`, {token});
-  }
-
-  /**
-   * Возвращает данные из json по адресу
-   * @param q полный адрес
-   */
-  public getDataFromJSON(q: string): Observable<any[]> {
-    return this.httpClient.get<any[]>(q);
   }
 
   showError(error: string): void {
