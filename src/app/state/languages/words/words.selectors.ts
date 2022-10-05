@@ -1,6 +1,5 @@
 import {createFeatureSelector, createSelector} from '@ngrx/store';
 import * as fromWords from './index';
-import * as fromRoot from '../../app.state';
 
 const selectWordsFeature = createFeatureSelector< fromWords.State>(fromWords.wordsFeatureKey);
 
@@ -41,7 +40,7 @@ export const selectWordsFromSelectedLists = createSelector(
         }
       });
     }
-    return wordsWeNeed;
+    return [...wordsWeNeed];
   }
 );
 

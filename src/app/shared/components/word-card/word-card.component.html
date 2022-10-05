@@ -1,6 +1,6 @@
 <div fxLayout="column" fxFlex fxLayoutAlign="center center" (keydown)="nextWord()">
 
-  <div fxLayoutAlign="center center">
+  <div fxShow fxHide.xs fxLayoutAlign="center center">
     <button color="primary" (click)="showAnswer()" mat-button="">Ответ</button>
     <button color="primary" (click)="nextWord()" mat-button="">Следующее</button>
     <button color="primary" (click)="openSettings()" mat-button="">Настройки</button>
@@ -33,4 +33,10 @@
     </div>
 
   </div>
+
+  <div fxHide fxShow.xs>
+    <button color="primary" (click)="showAnswer()" mat-button="">Ответ</button>
+    <button color="primary" (click)="nextWord()" mat-button="">Следующее</button>
+  </div>
+
 </div>

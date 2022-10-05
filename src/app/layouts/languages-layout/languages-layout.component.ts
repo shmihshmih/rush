@@ -42,15 +42,9 @@ export class LanguagesLayoutComponent implements OnInit {
         if (!!this.user?.uid) {
           // получение всех списков слов
           this.store.dispatch(loadWordLists());
-
-          // получение всех слов
-          this.store.dispatch(loadWords());
         } else {
           // получение всех списков слов
           this.store.dispatch(loadWordListsByJSON());
-
-          // получение всех слов
-          this.store.dispatch(loadWordsByJSON());
         }
       },
       error => {

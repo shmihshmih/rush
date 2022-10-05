@@ -1,14 +1,19 @@
 import {Component, HostListener, OnDestroy, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
-import {takeUntil, tap} from 'rxjs/operators';
+import {switchMap, takeUntil, tap} from 'rxjs/operators';
 import {concatMap, Observable, of, Subject} from 'rxjs';
 import {MatDialog} from '@angular/material/dialog';
 import {WordCardHelpComponent} from './popup/word-card-help/word-card-help.component';
 import {WordCardSettingsComponent} from './popup/word-card-settings/word-card-settings.component';
 import {IWord} from '../../models/esperanto/word.interface';
 import {Store} from '@ngrx/store';
-import {clearSelectedWordLists, setSelectedWordLists, setSelectedWordListsByJSON} from '../../../state/languages/words/words.actions';
-import {selectSelectedWordLists, selectWordsFromSelectedLists} from '../../../state/languages/words/words.selectors';
+import {
+  clearSelectedWordLists,
+  clearWords,
+  setSelectedWordLists,
+  setSelectedWordListsByJSON
+} from '../../../state/languages/words/words.actions';
+import {selectWordsFromSelectedLists} from '../../../state/languages/words/words.selectors';
 import {IWordList} from '../../models/esperanto/word_list.interface';
 import {selectIsAuth} from '../../../state/auth/auth.selectors';
 
@@ -21,16 +26,19 @@ export class WordCardComponent implements OnInit, OnDestroy {
   isAuth$ = this.store.select(selectIsAuth);
 
   unsubscribe$: Subject<boolean> = new Subject();
+
   listWord$: Observable<IWord[]> = this.store.select(selectWordsFromSelectedLists);
   listWord: IWord[] = [];
-  activeWordLists$: Observable<string[]> = this.store.select(selectSelectedWordLists);
+
+  // config
   isRepeat = false;
   startLang: 'russian' | 'english' | 'esperanto' = 'russian';
-  finishLang: 'russian' | 'english' | 'esperanto' = 'esperanto';
+  finishLang: 'russian' | 'english' | 'esperanto' = 'english';
   isShowAnswer = false;
   isAuto = false;
   timer = null;
   wordInterval = null;
+
   activeWord: IWord;
 
   // при нажатии на клавишу переключается слово
@@ -46,42 +54,32 @@ export class WordCardComponent implements OnInit, OnDestroy {
               private router: Router,
               private store: Store) {
 
-
     this.isAuth$.pipe(
       concatMap(isAuth => {
-        if (isAuth) {
-
-        } else {
-        }
-        return of(isAuth);
-      })
-    ).subscribe(
-      (isAuth) => {
-        // получаем список для загрузки
-        this.activatedRoute.params.pipe(
-          tap(params => {
-            if (!params.wordList) {
-            } else {
-              if (isAuth) {
-                this.store.dispatch(setSelectedWordLists({selectedWordLists: [params.wordList]}));
-              } else {
-                this.store.dispatch(setSelectedWordListsByJSON({selectedWordLists: [params.wordList]}));
-              }
-            }
+        return this.activatedRoute.params.pipe(
+          switchMap((params) => {
+            return of({isAuth, params});
           }),
           takeUntil(this.unsubscribe$)
-        ).subscribe(params => {
-        });
-      }
-    );
-
-    // получаем мод, для конечного языка
-    this.finishLang = this.router.url.split('/')[1] as 'russian' | 'english' | 'esperanto';
-
+        );
+      }),
+      tap(data => {
+        if (data.params.wordList) {
+          if (data.isAuth) {
+            this.store.dispatch(setSelectedWordLists({selectedWordLists: [data.params.wordList]}));
+          } else {
+            this.store.dispatch(setSelectedWordListsByJSON({selectedWordLists: [data.params.wordList]}));
+          }
+        }
+      }),
+      takeUntil(this.unsubscribe$)
+    ).subscribe();
   }
 
   ngOnInit(): void {
-    this.listWord$.subscribe(words => {
+    this.listWord$.pipe(
+      takeUntil(this.unsubscribe$)
+    ).subscribe(words => {
       this.listWord = words;
       this.nextWord();
     });
@@ -180,6 +178,8 @@ export class WordCardComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.store.dispatch(clearSelectedWordLists());
+    this.store.dispatch(clearWords());
+    this.unsubscribe$.next(true);
     this.unsubscribe$.complete();
   }
 }

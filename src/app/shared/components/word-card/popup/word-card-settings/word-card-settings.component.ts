@@ -1,23 +1,23 @@
-import {Component, ElementRef, Inject, OnInit, ViewChild} from '@angular/core';
+import {Component, ElementRef, Inject, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
 import {UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, Validators} from '@angular/forms';
 import {COMMA, ENTER} from '@angular/cdk/keycodes';
-import {combineLatest, Observable} from 'rxjs';
+import {combineLatest, Observable, Subject} from 'rxjs';
 import {MatAutocomplete, MatAutocompleteSelectedEvent} from '@angular/material/autocomplete';
-import {map, startWith, tap} from 'rxjs/operators';
+import {map, startWith, takeUntil, tap} from 'rxjs/operators';
 import {MatChipInputEvent} from '@angular/material/chips';
 import {IWordList} from '../../../../models/esperanto/word_list.interface';
 import {Store} from '@ngrx/store';
 import {selectSelectedWordLists, selectWordLists} from '../../../../../state/languages/words/words.selectors';
 import {selectIsAuth} from '../../../../../state/auth/auth.selectors';
-import {loadWordLists, loadWordListsByJSON} from '../../../../../state/languages/words/words.actions';
+import {clearSelectedWordLists, loadWordLists, loadWordListsByJSON} from '../../../../../state/languages/words/words.actions';
 
 @Component({
   selector: 'app-word-card-settings',
   templateUrl: './word-card-settings.component.html',
   styleUrls: ['./word-card-settings.component.scss']
 })
-export class WordCardSettingsComponent implements OnInit {
+export class WordCardSettingsComponent implements OnInit, OnDestroy {
   isAuth$ = this.store.select(selectIsAuth);
   wordCardSettingsForm: UntypedFormGroup;
   selectable = true;
@@ -34,6 +34,8 @@ export class WordCardSettingsComponent implements OnInit {
 
   @ViewChild('listInput') listInput: ElementRef<HTMLInputElement>;
   @ViewChild('auto') matAutocomplete: MatAutocomplete;
+
+  unsubscribe$: Subject<boolean> = new Subject();
 
   constructor(
     public dialogRef: MatDialogRef<WordCardSettingsComponent>,
@@ -53,7 +55,8 @@ export class WordCardSettingsComponent implements OnInit {
           // получение всех списков слов
           this.store.dispatch(loadWordListsByJSON());
         }
-      })
+      }),
+      takeUntil(this.unsubscribe$)
     ).subscribe();
 
     this.filteredLists = this.listCtrl.valueChanges.pipe(
@@ -154,6 +157,11 @@ export class WordCardSettingsComponent implements OnInit {
 
   closePopup(): void {
     this.dialogRef.close({settings: this.wordCardSettingsForm.value, wordLists: this.activeWordLists});
+  }
+
+  ngOnDestroy(): void {
+    this.unsubscribe$.next(true);
+    this.unsubscribe$.complete();
   }
 
 }
