@@ -19,7 +19,7 @@
     <div>
       <div>{{exercise.type}}</div>
     </div>
-    <div class="exercise-example" *ngIf="isShowAnswer">
+    <div class="exercise-example" *ngIf="isShowAnswer && exercise.example">
       <p *ngFor="let example of exercise.example">
         {{example}}
       </p>
