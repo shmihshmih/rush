@@ -28,11 +28,7 @@ export class HeaderComponent implements OnInit {
   //   this.overlayContainer.getContainerElement().classList.add(this.componentCssClass);
   // }
 
-  ngOnInit(): void {
-    this.isAuth$.subscribe((is) => {
-      console.log('is: ', is);
-    });
-  }
+  ngOnInit(): void {}
 
   sidenavToggle(): void {
     this.sidenav.emit();
