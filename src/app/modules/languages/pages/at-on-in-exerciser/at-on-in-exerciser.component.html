@@ -1,17 +1,17 @@
 <div fxLayout="column" fxFlex fxLayoutAlign="center center" (keydown)="nextExercise()">
 
-  <div fxLayoutAlign="center center">
+  <div fxShow fxHide.xs fxLayoutAlign="center center">
     <button color="primary" (click)="showAnswer()" mat-button="">Ответ</button>
     <button color="primary" (click)="nextExercise()" mat-button="">Следующее</button>
     <button color="primary" (click)="openSettings()" mat-button="">Настройки</button>
     <button color="primary" (click)="openHelp()" mat-button="">Помощь</button>
   </div>
 
-  <div *ngIf="activeExercise as exercise" class="exercise-block fs-6rem">
+  <div *ngIf="activeExercise as exercise" class="exercise-block fs-6rem" [ngClass.xs]="{'exercise-block-xs': true, 'fs-6rem': false, 'fs-2rem': true, 'lh-2rem': true}">
     <div *ngIf="config.russian">
       <div>{{exercise.russian}}</div>
     </div>
-    <div fxFlex fxLayoutAlign="center center" class="fs-10rem">
+    <div fxFlex class="f fs-10rem" [ngClass.xs]="{'fs-2rem': true, 'lh-2rem': true, 'fs-10rem': false}">
       <div *ngIf="isShowAnswer" class="preposition">{{exercise.preposition}}</div>
       <div *ngIf="!isShowAnswer" class="preposition">{{exercise.preposition | hideAnswer}}</div>
       <div class="exercise-word">{{exercise.word}}</div>
@@ -19,10 +19,15 @@
     <div>
       <div>{{exercise.type}}</div>
     </div>
-    <div class="exercise-example" *ngIf="!isShowAnswer">
+    <div class="exercise-example" *ngIf="isShowAnswer">
       <p *ngFor="let example of exercise.example">
         {{example}}
       </p>
     </div>
+  </div>
+
+  <div fxHide fxShow.xs class="mobile-actions">
+    <button color="primary" (click)="showAnswer()" mat-button="">Ответ</button>
+    <button color="primary" (click)="nextExercise()" mat-button="">Следующее</button>
   </div>
 </div>

@@ -2,6 +2,7 @@
   flex-direction: column;
   box-sizing: border-box;
   display: flex;
+  align-self: flex-start;
 
   .preposition {
     margin-right: 3rem;
@@ -17,4 +18,19 @@
     font-size: 3rem;
     line-height: 3rem;
   }
+  &-xs {
+    .exercise-example {
+      padding: 2rem;
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+    .preposition {
+      margin-right: 1rem;
+    }
+  }
+}
+
+.mobile-actions {
+  position: absolute;
+  bottom: 24px;
 }
