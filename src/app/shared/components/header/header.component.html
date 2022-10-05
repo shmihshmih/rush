@@ -6,14 +6,14 @@
   </div>
   <div class="header-logo">
     <div class="logo">A</div>
-    <a [routerLink]="['']">Systems <span class="system-version">Beta 0.0.6.1</span></a>
+    <a [routerLink]="['']">Systems <span class="system-version">Beta 0.0.6.2</span></a>
   </div>
   <div fxLayout fxFlex fxLayoutAlign="flex-end">
     <ul class="toolbar-list">
       <li *ngFor="let item of apiService.menuItems" fxHide.lt-md><a [routerLink]="item.routerLink">{{item.caption}}</a>
       </li>
-      <li *ngIf="(isAuth$ | async) === true" fxHide.lt-md (click)="logout()"><a>Logout</a></li>
-      <li *ngIf="(isAuth$ | async) === false" fxHide.lt-md (click)="openAuth()"><a>Login</a></li>
+      <li *ngIf="(isAuth$ | async) === true" (click)="logout()"><a>Logout</a></li>
+      <li *ngIf="(isAuth$ | async) === false" (click)="openAuth()"><a>Login</a></li>
     </ul>
   </div>
 </mat-toolbar>

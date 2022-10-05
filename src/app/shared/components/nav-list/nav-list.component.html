@@ -10,7 +10,7 @@
     <a>Logout</a>
   </li>
 
-  <li *ngIf="false" (click)="openAuth()">
+  <li *ngIf="(isAuth$| async) === false" (click)="openAuth()">
     <mat-icon>login</mat-icon>
     <a>Login</a>
   </li>

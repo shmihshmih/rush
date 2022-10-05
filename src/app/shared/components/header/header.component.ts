@@ -29,6 +29,9 @@ export class HeaderComponent implements OnInit {
   // }
 
   ngOnInit(): void {
+    this.isAuth$.subscribe((is) => {
+      console.log('is: ', is);
+    });
   }
 
   sidenavToggle(): void {

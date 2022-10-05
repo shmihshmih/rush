@@ -1,4 +1,5 @@
-<div fxLayout="row" fxFlex fxLayoutAlign="center center" class="w-100 lh-2rem fs-2rem">
+<div fxLayout="row" fxFlex fxLayoutAlign="center center" class="w-100 lh-2rem fs-2rem"
+     [ngClass.xs]="{'lh-2rem': false, 'fs-2rem': false, 'fs-1rem': true}">
   <div class="book-quest-part-container p-16">
       <span *ngFor="let part of questPart">
     <span *ngIf="part" ngSwitch="{{part.type}}">

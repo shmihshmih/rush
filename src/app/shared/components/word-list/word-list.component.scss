@@ -41,3 +41,18 @@
   }
 }
 
+.actions-block {
+  button {
+
+  }
+  &-xs {
+    button {
+      min-width: 0;
+      width: 32px;
+      padding: 0;
+      em {
+        font-size: 12px;
+      }
+    }
+  }
+}

@@ -34,3 +34,7 @@ pre code {
 .b-for-code {
   font-size: 10px;
 }
+
+a {
+  overflow-wrap: anywhere;
+}

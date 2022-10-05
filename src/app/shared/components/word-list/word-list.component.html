@@ -59,10 +59,10 @@
       <ng-container *ngIf="isAuth$ | async" matColumnDef="actions">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> actions</th>
         <td mat-cell *matCellDef="let row" [style.color]="'black'">
-          <div>
+          <div class="f actions-block" [ngClass.xs]="{'actions-block-xs': true}">
             <button mat-raised-button color="primary"><em (click)="updateWord(row, isAuth$)"
                                                           class="material-icons-outlined">edit</em></button>
-            <button class="ml-16" mat-raised-button color="primary"><em (click)="delWord(row)"
+            <button mat-raised-button color="primary"><em (click)="delWord(row)"
                                                                         class="material-icons-outlined">delete</em>
             </button>
           </div>
