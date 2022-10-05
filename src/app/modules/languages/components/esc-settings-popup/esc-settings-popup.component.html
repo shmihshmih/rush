@@ -1,90 +1,90 @@
-<div fxFlex fxLayout="row" [formGroup]="configForm">
-  <div fxFlex fxLayout="column">
-    <div>
-      <h1>Типы предложений</h1>
-      <div formArrayName="sentenceType">
+<div fxFlex fxLayout="column">
+  <div class="column-container" fxFlex fxLayout="row" fxLayout.xs="column" [ngStyle.xs]="{'minHeight': '100vh'}" [formGroup]="configForm">
+    <div class="column-container-item" [ngClass.xs]="{'column-container-item-xs': true}">
+      <div>
+        <h3><b>Types</b></h3>
+        <div formArrayName="sentenceType">
+          <div>
+            <div>
+              <mat-checkbox #allSentenceTypesCheckbox
+                            (click)="allSentenceTypes('all', !allSentenceTypesCheckbox.checked)">All
+              </mat-checkbox>
+            </div>
+          </div>
+          <div *ngFor="let sentenceType of sentenceType.controls; let inx = index;">
+            <div>
+              <mat-checkbox [formControlName]="inx">{{data.sentenceType[inx]}}</mat-checkbox>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <hr>
         <div>
-          <p>
-            <mat-checkbox #allSentenceTypesCheckbox
-                          (click)="allSentenceTypes('all', !allSentenceTypesCheckbox.checked)">Все
+          <div>
+            <mat-checkbox [formControl]="withTranslateControl">С переводом</mat-checkbox>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column-container-item" [ngClass.xs]="{'column-container-item-xs': true}" >
+      <h3><b>Times</b></h3>
+      <div formArrayName="times">
+        <div>
+          <div>
+            <mat-checkbox #allTimesCheckbox
+                          (click)="setAllTimes('all', !allTimesCheckbox.checked)">All
             </mat-checkbox>
-          </p>
+          </div>
         </div>
-        <div *ngFor="let sentenceType of sentenceType.controls; let inx = index;">
-          <p>
-            <mat-checkbox [formControlName]="inx">{{data.sentenceType[inx]}}</mat-checkbox>
-          </p>
+        <div *ngFor="let time of times.controls; let inx = index;">
+          <div>
+            <mat-checkbox [formControlName]="inx">{{data.times[inx]}}</mat-checkbox>
+          </div>
         </div>
       </div>
     </div>
-    <div>
-      <hr>
+    <div class="column-container-item" [ngClass.xs]="{'column-container-item-xs': true}">
+      <h3><b>Pronouns</b></h3>
+      <div formArrayName="pronouns">
+        <div>
+          <div>
+            <mat-checkbox #allPronounsCheckbox
+                          (click)="setAllPronouns('all', !allPronounsCheckbox.checked)">All
+            </mat-checkbox>
+          </div>
+        </div>
+        <div *ngFor="let pronoun of pronouns.controls; let inx = index;">
+          <div>
+            <mat-checkbox [formControlName]="inx">{{data.pronouns[inx].english}}</mat-checkbox>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column-container-item" [ngClass.xs]="{'column-container-item-xs': true}">
+      <h3><b>Verbs</b></h3>
       <div>
-        <p>
-          <mat-checkbox [formControl]="withTranslateControl">С переводом</mat-checkbox>
-        </p>
+        <div>
+          <mat-checkbox #checkbox1 (click)="setVerbs('all', !checkbox1.checked)">All verbs</mat-checkbox>
+        </div>
+        <div>
+          <mat-checkbox #checkbox2 (click)="setVerbs('regular', !checkbox2.checked)">regular verbs</mat-checkbox>
+        </div>
+        <div>
+          <mat-checkbox #checkbox3 (click)="setVerbs('irregular', !checkbox3.checked)">irregular verbs</mat-checkbox>
+        </div>
+        <hr>
+        <div formArrayName="verbs">
+          <div *ngFor="let verb of verbs.controls; let inx = index;">
+            <div>
+              <mat-checkbox [formControlName]="inx">{{data.verbs[inx].english}}({{data.verbs[inx].russian}})</mat-checkbox>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
 
-  </div>
-  <div fxFlex fxLayout="column">
-    <h1>Времена</h1>
-    <div formArrayName="times">
-      <div>
-        <p>
-          <mat-checkbox #allTimesCheckbox
-                        (click)="setAllTimes('all', !allTimesCheckbox.checked)">Все
-          </mat-checkbox>
-        </p>
-      </div>
-      <div *ngFor="let time of times.controls; let inx = index;">
-        <p>
-          <mat-checkbox [formControlName]="inx">{{data.times[inx]}}</mat-checkbox>
-        </p>
-      </div>
-    </div>
-  </div>
-  <div fxFlex fxLayout="column">
-    <h1>Местоимения</h1>
-    <div formArrayName="pronouns">
-      <div>
-        <p>
-          <mat-checkbox #allPronounsCheckbox
-                        (click)="setAllPronouns('all', !allPronounsCheckbox.checked)">Все
-          </mat-checkbox>
-        </p>
-      </div>
-      <div *ngFor="let pronoun of pronouns.controls; let inx = index;">
-        <p>
-          <mat-checkbox [formControlName]="inx">{{data.pronouns[inx].english}}
-            - {{data.pronouns[inx].russian}}</mat-checkbox>
-        </p>
-      </div>
-    </div>
-  </div>
-  <div fxFlex fxLayout="column">
-    <h1>Глаголы</h1>
-    <div>
-      <p>
-        <mat-checkbox #checkbox1 (click)="setVerbs('all', !checkbox1.checked)">Все глаголы</mat-checkbox>
-      </p>
-      <p>
-        <mat-checkbox #checkbox2 (click)="setVerbs('regular', !checkbox2.checked)">regular verbs</mat-checkbox>
-      </p>
-      <p>
-        <mat-checkbox #checkbox3 (click)="setVerbs('irregular', !checkbox3.checked)">irregular verbs</mat-checkbox>
-      </p>
-      <hr>
-      <div formArrayName="verbs">
-        <div *ngFor="let verb of verbs.controls; let inx = index;">
-          <p>
-            <mat-checkbox [formControlName]="inx">{{data.verbs[inx].english}}
-              - {{data.verbs[inx].russian}}</mat-checkbox>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
   <div class="actions">
     <button color="primary" (click)="closePopup()" mat-button="">Отмена</button>
     <button color="primary" (click)="submitConfigs()" mat-button="">Принять</button>

@@ -1,4 +1,4 @@
-<div>
+<div class="word-list-container" [ngClass.xs]="{'word-list-container-xs': true}">
 
   <div class="word-list-actions">
     <div class="search-field">
@@ -78,6 +78,6 @@
       </tr>
     </table>
 
-    <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+    <mat-paginator [pageSizeOptions]="[10, 25, 100]"></mat-paginator>
   </div>
 </div>

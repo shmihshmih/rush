@@ -9,6 +9,7 @@ import {setSelectedWordLists, setSelectedWordListsByJSON} from '../../../../stat
 import {selectWordsFromSelectedLists} from '../../../../state/languages/words/words.selectors';
 import {selectIsAuth} from 'src/app/state/auth/auth.selectors';
 import {ActivatedRoute} from '@angular/router';
+import {MediaObserver} from '@angular/flex-layout';
 
 @Component({
   selector: 'app-english-sentences-creator',
@@ -51,12 +52,17 @@ export class EnglishSentencesCreatorComponent implements OnInit, OnDestroy {
 
   allWords$ = this.store.select(selectWordsFromSelectedLists);
 
+  resolutionCode = '';
+
   constructor(
     private dialog: MatDialog,
     private store: Store,
-    public activatedRoute: ActivatedRoute
+    public activatedRoute: ActivatedRoute,
+    private mediaObserver: MediaObserver
   ) {
-
+    this.mediaObserver.asObservable().subscribe(mo => {
+      this.resolutionCode = mo[0].mqAlias;
+    });
   }
 
   ngOnInit(): void {
@@ -640,6 +646,8 @@ export class EnglishSentencesCreatorComponent implements OnInit, OnDestroy {
   openSettings(): void {
     const dialogRef = this.dialog.open(EscSettingsPopupComponent, {
       panelClass: ['of-auto'],
+      width:  this.resolutionCode === 'xs' ? '100vw' : 'auto',
+      height: this.resolutionCode === 'xs' ? '100vh' : 'auto',
       data: {
         times: this.times,
         sentenceType: this.sentenceType,

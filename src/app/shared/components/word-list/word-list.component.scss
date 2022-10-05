@@ -1,31 +1,43 @@
-table {
-  width: 100%;
-}
-
-.mat-form-field {
-  width: 100%;
-  font-size: 2em;
-}
-
-td, th {
-  width: 25%;
-}
-
-.mat-cell, .mat-footer-cell {
-  font-size: 2em;
-}
-
-.word-list-actions {
-  align-items: center;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-
-  .search-field {
-    width: 60%;
+.word-list-container {
+  table {
+    width: 100%;
   }
 
-  .actions {
+  .mat-form-field {
+    width: 100%;
+    font-size: 2em;
+  }
+
+  td, th {
+    width: 25%;
+  }
+
+  .mat-cell, .mat-footer-cell {
+    font-size: 2em;
+  }
+
+  .word-list-actions {
+    align-items: center;
+    width: 100%;
     display: flex;
+    justify-content: center;
+
+    .search-field {
+      width: 60%;
+    }
+
+    .actions {
+      display: flex;
+    }
+  }
+  &-xs {
+    .mat-form-field {
+      width: 100%;
+      font-size: 1em;
+    }
+    .mat-cell, .mat-footer-cell {
+      font-size: 1em;
+    }
   }
 }
+

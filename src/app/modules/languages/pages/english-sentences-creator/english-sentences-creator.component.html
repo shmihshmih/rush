@@ -1,17 +1,17 @@
 <div *ngIf="randomSentence" fxLayout="column" fxFlex fxLayoutAlign="center center">
 
   <div fxFlex fxLayoutAlign="center center">
-    <h1>Конструктор предложений</h1>
+    <h1>Sentence Constructor</h1>
     <mat-icon class="h1-icon"
               [matTooltip]="'Выбрать проверяемые времена, типы предложений, местоимения, глаголы и т.д.'"
               [matTooltipClass]="'toolTipClass'" (click)="openSettings()">settings
     </mat-icon>
   </div>
-  <div>
+  <div fxShow fxHide.xs>
     <div fxLayoutAlign="center center">
-      <button color="primary" (click)="showAnswer()" mat-button="">Ответ</button>
-      <button color="primary" (click)="nextSentence()" mat-button="">Следующее</button>
-      <button color="primary" (click)="howToUseThisTime()" mat-button="">Как использовать это время</button>
+      <button color="primary" (click)="showAnswer()" mat-button="">Answer</button>
+      <button color="primary" (click)="nextSentence()" mat-button="">Next</button>
+      <button color="primary" (click)="howToUseThisTime()" mat-button="">About time</button>
     </div>
   </div>
 
@@ -48,13 +48,21 @@
         </mat-form-field>
       </div>
 
-      <div *ngIf="isShowAnswer" fxFlex fxLayoutAlign="center center">
+      <div fxFlex fxLayoutAlign="center center">
         <mat-form-field appearance="outline" [style.width.%]="95">
           <mat-label class="fs-2vw">Answer</mat-label>
-          <input class="fs-5vw" matInput value="{{randomSentence.answer.toLowerCase()}}">
+          <input class="fs-5vw" matInput value="{{isShowAnswer ? randomSentence.answer.toLowerCase() : '***'}}">
         </mat-form-field>
       </div>
 
+    </div>
+  </div>
+
+  <div fxHide fxShow.xs>
+    <div fxLayoutAlign="center center">
+      <button color="primary" (click)="showAnswer()" mat-button="">Answer</button>
+      <button color="primary" (click)="nextSentence()" mat-button="">Next</button>
+      <button color="primary" (click)="howToUseThisTime()" mat-button="">About time</button>
     </div>
   </div>
 
